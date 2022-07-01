@@ -72,3 +72,18 @@ nav ul.navbar-nav>li {
 .bd-callout-warning {
     border-left-color: #f0ad4e;
 }
+
+footer a.nav-link,
+footer h5 {
+    color: #fff
+}
+
+footer a.nav-link:hover,
+footer a.nav-link:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer i {
+    margin-right: 10px
+}
