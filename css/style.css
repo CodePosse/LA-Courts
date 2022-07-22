@@ -65,6 +65,10 @@ nav.navbar ul.lablue1 a.nav-link,
     border-color: var(--court-dkblue);
 }
 
+.bg-dkblue-opacity {
+    background-color: rgba(1, 35, 98, .75)
+}
+
 .bg-info,
 .btn-info {
     background-color: var(--court-ltblue);
