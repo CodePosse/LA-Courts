@@ -1,55 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 :root,
 html,
 body {
     font-size: 16px;
-    --lablue1: #1A658E;
-    --lablue2: #0F2940;
-    --yellow1: rgba(255, 255, 0, 1);
-    --yellow2: rgba(252, 214, 0, 1);
-    font-family: 'Lato';
+    --court-black: #231f20;
+    --court-ltblue: #93b2dd;
+    --court-dkblue: #012362;
+    --court-yellow: #f3c727;
+    --court-grey: #95a3ab;
+    font-family: calibri, monotype;
 }
 
-.lablue1,
-nav.navbar ul.lablue1 a.nav-link,
-.bg-light a:not(.btn) {
-    color: var(--lablue1)
+.bg-primary,
+.btn-primary {
+    background-color: var(--court-dkblue);
 }
 
-.lablue2 {
-    color: var(--lablue2)
+.bg-info,
+.btn-info {
+    background-color: var(--court-ltblue);
 }
 
-.yellow1 {
-    color: var(--yellow1)
+.bd-callout-info,
+.border-info {
+    border-color: var(--court-ltblue) !important;
 }
 
-.yellow2 {
-    color: var(--yellow2)
+.bg-warning,
+.btn-warning {
+    background-color: var(--court-yellow);
 }
 
-.lablue1-bg {
-    background-color: var(--lablue1)
-}
-
-.lablue2-bg {
-    background-color: var(--lablue2)
-}
-
-.yellow1-bg {
-    background-color: var(--yellow1)
-}
-
-.yellow2-bg {
-    background-color: var(--yellow2)
-}
-
-nav {
-    text-transform: capitalize;
-}
-
-nav ul.navbar-nav>li {
-    font-weight: bold;
+.bd-callout-warning,
+.border-warning {
+    border-color: var(--court-yellow) !important;
 }
 
 .bd-callout+.bd-callout {
