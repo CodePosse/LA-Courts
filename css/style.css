@@ -12,7 +12,7 @@ body {
     --yellow1: rgba(255, 255, 0, 1);
     --yellow2: rgba(252, 214, 0, 1);
     font-family: calibri, monotype;
-    color: var(--court-black)
+    color: var(--court-black);
 }
 
 
@@ -22,10 +22,9 @@ body {
     color: var(--lablue2)
 }
 
-.lablue1,
-nav.navbar ul.lablue1 a.nav-link,
+nav.navbar ul.court-dkblue a.nav-link,
 .bg-light a:not(.btn) {
-    color: var(--lablue1)
+    color: var(--court-dkblue)
 }
 
 .yellow1 {
@@ -54,6 +53,10 @@ nav.navbar ul.lablue1 a.nav-link,
 
 
 /*new style overwrites Bootstrap colors*/
+
+.bg-court-dkblue {
+    background-color: var(--court-dkblue);
+}
 
 .bg-primary,
 .btn-primary {
@@ -89,6 +92,10 @@ nav.navbar ul.lablue1 a.nav-link,
     border-color: var(--court-yellow) !important;
 }
 
+.text-warning {
+    color: var(--court-yellow)
+}
+
 .bd-callout+.bd-callout {
     margin-top: -0.25rem;
 }
@@ -107,7 +114,7 @@ nav.navbar ul.lablue1 a.nav-link,
 }
 
 .bd-callout-warning {
-    border-left-color: #f0ad4e;
+    border-left-color: var(--court-yellow);
 }
 
 .chatbot {
