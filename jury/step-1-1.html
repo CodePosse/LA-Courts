@@ -24,39 +24,36 @@
     </header>
     <div class="container py-5" id="steps">
         <div class="row d-flex justify-content-center text-white">
-            <div class="col-2 p-2 bg-info border border-light rounded-start text-black">Step 1 </i>
+            <div class="col-2 p-2 fw-bold bg-info border border-light rounded-start text-black">Step 1 <i class="fa-solid fa-location-dot float-end mt-1"></i>
             </div>
-            <div class="col-2 p-2 bg-secondary border border-light">Step 2 </div>
-            <div class="col-2 p-2 bg-secondary border border-light">Step 3</div>
-            <div class="col-2 p-2 bg-secondary border border-light rounded-end">Step 4</div>
+            <div class="col-2 p-2 fw-bold bg-secondary border border-light">Step 2 </div>
+            <div class="col-2 p-2 fw-bold bg-secondary border border-light">Step 3</div>
+            <div class="col-2 p-2 fw-bold bg-secondary border border-light rounded-end">Step 4</div>
         </div>
     </div>
     <div class="container-fluid bg-light p-5">
         <div class="row">
             <div class="col-6">
                 <h1>My Summons</h1>
-                <p class="fs-3">Step 1 - Update personal info and complete questionnaire</p>
-                <p>Welcome Ramon Barnes</p>
-                <p>This page will tell you where and when to report for jury duty if you are eligible. First, verify your personal info and fill out the eligibility questionnaire. At step 2, we will tell you your juror status, and if eligible, reporting
-                    instructions.
+                <h2 class="fs-3">Update Personal Info and Complete Questionnaire</h2>
+                <p>Welcome Ramon Barnes! Complete the two forms linked below. When done, you will be automatically sent to Step 2 to help you prepare for jury duty.
                 </p>
             </div>
         </div>
     </div>
     <div class="container py-5">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <div class="col-md-4 h-100">
                 <div class="card border-warning">
-                    <h5 class="card-header">Personal Info - Verify <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5>
+                    <div class="card-header h5 fw-bold">Personal Info - Verify <i class="fa-solid fa-triangle-exclamation text-warning float-end mt-1"></i></div>
                     <div class="card-body">
                         <div class="row card-text">
                             <div class="col-12 pt-3">
                                 <p> We have some info for you on file. We need you to verify that it's up-to-date or make corrections.</p>
                             </div>
-                            <div class="col-4"><strong>Your Status:</strong></div>
-                            <div class="col-8"><span class="badge bg-danger">Incomplete</span></div>
+                            <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete</span></div>
                             <div class="col-12 mt-3">
-                                <div class="btn btn-primary">Verify Personal Info</div>
+                                <a class="btn btn-primary" href="info.html">Verify Personal Info</a>
                             </div>
                         </div>
                     </div>
@@ -64,17 +61,16 @@
             </div>
             <div class="col-md-4 h-100">
                 <div class="card border-warning">
-                    <h5 class="card-header">Eligibility Questionnaire <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5>
+                    <div class="card-header h5 fw-bold">Eligibility Questionnaire <i class="fa-solid fa-triangle-exclamation text-warning float-end mt-1"></i></div>
                     <div class="card-body">
                         <div class="row card-text">
                             <div class="col-12 pt-3">
                                 <p>We need you to answer some questions to determine if you are eligible for Jury Duty or not.</p>
 
                             </div>
-                            <div class="col-4"><strong>Your Status:</strong></div>
-                            <div class="col-8"><span class="badge bg-danger">Incomplete</span></div>
+                            <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete</span></div>
                             <div class="col-12 mt-3">
-                                <div class="btn btn-primary">Answer Eligibility Questions</div>
+                                <a class="btn btn-primary" href="questions.html">Answer Eligibility Questions</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +109,7 @@
                             </a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a data-bs-toggle="modal" href="#ADAModal" role="button" class="nav-link p-0">
+                            <a data-bs-toggle="modal" href="#" role="button" class="nav-link p-0">
                                 <span class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)
                             </a>
                         </li>

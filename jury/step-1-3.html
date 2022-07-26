@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <title>LA Court JDP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Hello, world!</title>
 </head>
 
 <body>
@@ -20,78 +22,69 @@
             <div><a href="./" class="text-white">Home</a></div>
         </div>
     </header>
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-        <div class="py-5">
-            <h1 class="display-5 fw-bold text-white">Creative Brief:</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="fs-5 mb-4">This is a user flow demo. the content herein is purely for suggestion and is not to be considered for production. This excersize is to get a look and flow, <em>not</em> to make a website, that conent will be edited and approved by others.</p>
-                <p class="fs-6 mb-4 text-warning">Not all the elements are heare, we focused on the prime real estate of the page by decluttering it. Anything that needs to return should only be done below what we see here. Eliminating the overload of the text from the previous site makes
-                    this userflow far more efficient for people that are not enthusiastic about jury service to get them easily processed and assigned.</p>
-                <p class="fs-6 mb-4">The rates of completion should increase; with FTA, customer support calls, and people igoring service will all decrease.</p>
+    <div class="container py-5" id="steps">
+        <div class="row d-flex justify-content-center text-white">
+            <div class="col-2 p-2 fw-bold bg-info border border-light rounded-start text-black">Step 1 <i class="fa-solid fa-location-dot float-end mt-1"></i>
+            </div>
+            <div class="col-2 p-2 fw-bold bg-secondary border border-light">Step 2 </div>
+            <div class="col-2 p-2 fw-bold bg-secondary border border-light">Step 3</div>
+            <div class="col-2 p-2 fw-bold bg-secondary border border-light rounded-end">Step 4</div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light p-5">
+        <div class="row">
+            <div class="col-6">
+                <h1>My Summons</h1>
+                <h2 class="fs-3">Update Personal Info and Complete Questionnaire</h2>
+                <p>Welcome Ramon Barnes! Complete the two forms linked below. When done, you will be automatically sent to Step 2 to help you prepare for jury duty.
+                </p>
             </div>
         </div>
     </div>
     <div class="container py-5">
-        <div class="row">
-            <div class="col-4 card border-primary mb-3 p-0">
-                <div class="card-header bg-primary text-white">User Flow</div>
-                <div class="card-body text-primary">
-                    <h5 class="card-title">Steps and States</h5>
-                    <p class="card-text bg-white">
-                        <ol>
-                            <li>Step 1: <small>Data Collection</small>
-                                <ol>
-                                    <li><a href="step-1-1.html">1.1 All items incomplete/unverified</a></li>
-                                    <li><a href="step-1-2.html">1.2 Some items incomplete/unverified</a></li>
-                                    <li><a href="step-1-3.html">1.3 All items completed/verified</a></li>
-                                    <li><a href="info.html">Personal Info Form</a></li>
-                                    <li><a href="questions.html">Eligibility Questionnaire</a></li>
-                                </ol>
-                            </li>
-                            <li>Step 2: <small>Pending</small>
-                                <ol>
-                                    <li>
-                                        <a href="step-2-1.html">2.1 Educate, Set Reminders</a>
-                                    </li>
-                                    <li><a href="step-2-2.html">2.2 Change Requested</a></li>
-                                    <li><a href="step-2-3.html">2.3 Change Resolution</a></li>
-                                </ol>
-                            </li>
-                            <li>Step 3: <small>Service Week</small>
-                                <ol>
-                                    <li>
-                                        <a href="step-3-1.html">3.1 On Call</a>
-                                    </li>
-                                    <li>
-                                        <a href="step-3-2.html">3.2 Assigned</a>
-                                    </li>
-                                </ol>
-                            </li>
-                            <li>Step 4: <small>End States</small>
-                                <ol>
-                                    <li>
-                                        <a href="step-4-1.html">4.1 Completed</a>
-                                    </li>
-                                    <li>
-                                        <a href="step-4-2.html">4.2 Excused</a>
-                                    </li>
-                                    <li>
-                                        <a href="step-4-3.html">4.3 Service Week Passed</a>
-                                    </li>
-                                    <li>
-                                        <a href="step-4-4.html">4.4 Failure To Appear</a>
-                                    </li>
-                                    <li>
-                                        <a href="step-4-5.html">4.5 Ineligible</a>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 h-100">
+                <div class="card border-success">
+                    <div class="card-header h5 fw-bold text-success">Personal Info - Verify <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
+                    <div class="card-body">
+                        <div class="row card-text">
+                            <div class="col-12 pt-3">
+                                <p> We have some info for you on file. We need you to verify that it's up-to-date or make corrections.</p>
+                            </div>
+                            <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-success">Complete</span></div>
+                            <div class="col-12 mt-3">
+                                <a class="btn btn-success" href="info.html">View Personal Info <i class="fa-solid fa-circle-check float-end ms-3 mt-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer border-primary"><a href="components.html">Components</a></div>
+            </div>
+            <div class="col-md-4 h-100">
+                <div class="card border-success">
+                    <div class="card-header h5 fw-bold text-success">Eligibility Questionnaire &nbsp; <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
+                    <div class="card-body">
+                        <div class="row card-text">
+                            <div class="col-12 pt-3">
+                                <p>We need you to answer some questions to determine if you are eligible for Jury Duty or not.</p>
+
+                            </div>
+                            <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-success">Complete</span></div>
+                            <div class="col-12 mt-3">
+                                <a class="btn btn-secondary" href="questions.html">Answer Eligibility Questions <i class="fa-solid fa-circle-check float-end ms-3 mt-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+
+
+
+    <!--chatbot-->
+    <div class="chatbot">
+        <span class="badge rounded-pill bg-court-dkblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span>
     </div>
     <!--generic footer-->
     <footer class="pt-5 pb-1 bg-dark text-white">
