@@ -7,10 +7,6 @@ body {
     --court-dkblue: #012362;
     --court-yellow: #f3c727;
     --court-grey: #95a3ab;
-    --lablue1: #1A658E;
-    --lablue2: #0F2940;
-    --yellow1: rgba(255, 255, 0, 1);
-    --yellow2: rgba(252, 214, 0, 1);
     font-family: calibri, monotype;
     color: var(--court-black);
 }
@@ -18,63 +14,37 @@ body {
 
 /*old style*/
 
-.lablue2 {
-    color: var(--lablue2)
-}
-
 nav.navbar ul.court-dkblue a.nav-link,
 .bg-light a:not(.btn) {
-    color: var(--court-dkblue)
-}
-
-.yellow1 {
-    color: var(--yellow1)
-}
-
-.yellow2 {
-    color: var(--yellow2)
-}
-
-.lablue1-bg {
-    background-color: var(--lablue1)
-}
-
-.lablue2-bg {
-    background-color: var(--lablue2)
-}
-
-.yellow1-bg {
-    background-color: var(--yellow1)
-}
-
-.yellow2-bg {
-    background-color: var(--yellow2)
+    color: var(--court-dkblue) !important;
 }
 
 
 /*new style overwrites Bootstrap colors*/
 
-.bg-court-dkblue {
-    background-color: var(--court-dkblue);
-}
-
+.bg-court-dkblue,
 .bg-primary,
 .btn-primary {
-    background-color: var(--court-dkblue);
+    background-color: var(--court-dkblue) !important;
+}
+
+.text-primary {
+    color: var(--court-dkblue) !important;
 }
 
 .bd-callout-primary,
+.border-primary,
 .btn-primary {
-    border-color: var(--court-dkblue);
+    border-color: var(--court-dkblue) !important;
 }
 
 .bg-dkblue-opacity {
-    background-color: rgba(1, 35, 98, .75)
+    background-color: rgba(1, 35, 98, .75) !important;
 }
 
 .bg-info,
 .btn-info {
-    background-color: var(--court-ltblue);
+    background-color: var(--court-ltblue) !important;
 }
 
 .bd-callout-info,
@@ -93,7 +63,7 @@ nav.navbar ul.court-dkblue a.nav-link,
 }
 
 .text-warning {
-    color: var(--court-yellow)
+    color: var(--court-yellow) !important;
 }
 
 .bd-callout+.bd-callout {
