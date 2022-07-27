@@ -1,7 +1,7 @@
 :root,
 html,
 body {
-    font-size: 16px;
+    font-size: 18px;
     --court-black: #231f20;
     --court-ltblue: #93b2dd;
     --court-dkblue: #012362;
@@ -46,6 +46,7 @@ nav.navbar ul.court-dkblue a.nav-link,
 .bg-info,
 .btn-info {
     background-color: var(--court-ltblue) !important;
+    color: var(--court-black);
 }
 
 .bd-callout-info,
@@ -56,6 +57,7 @@ nav.navbar ul.court-dkblue a.nav-link,
 .bg-warning,
 .btn-warning {
     background-color: var(--court-yellow);
+    color: var(--court-black);
 }
 
 .bd-callout-warning,
@@ -86,10 +88,6 @@ nav.navbar ul.court-dkblue a.nav-link,
 
 .bd-callout-warning {
     border-left-color: var(--court-yellow);
-}
-
-.card {
-    border-radius: .5rem
 }
 
 .chatbot {
