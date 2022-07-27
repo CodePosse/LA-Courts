@@ -26,6 +26,7 @@ nav.navbar ul.court-dkblue a.nav-link,
 .bg-primary,
 .btn-primary {
     background-color: var(--court-dkblue) !important;
+    color: #fff;
 }
 
 .text-primary {
@@ -75,8 +76,8 @@ nav.navbar ul.court-dkblue a.nav-link,
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     border: 1px solid #e9ecef;
-    border-left-width: 0.25rem;
-    border-radius: 0.25rem;
+    border-left-width: 0.35rem;
+    border-radius: 0.35rem;
 }
 
 .bd-callout-info {
@@ -85,6 +86,10 @@ nav.navbar ul.court-dkblue a.nav-link,
 
 .bd-callout-warning {
     border-left-color: var(--court-yellow);
+}
+
+.card {
+    border-radius: .5rem
 }
 
 .chatbot {
