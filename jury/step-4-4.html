@@ -36,8 +36,10 @@
             <div class="col-md-6">
                 <h1>Failure to Appear</h1>
 
-                <p>Welcome Ramon Barnes! I see you failed to report for jury service as instructed. </p>
-                <p> You will receive a postcard in the mail with a new service date. Click below to pick up where you left off.</p>
+                <p>We see you failed to report for jury service as instructed. </p>
+                <p> You will receive a postcard in the mail with a new service date. <span class="badge bg-danger text-white">Wednesday October 22, 2022</span></p>
+                <p>If you are unable to serve on the date assigned to you, you may click on the Reschedule tab above to determine if you are eligible for a postponement. If eligible, be sure to select a date when you are certain you can serve as further
+                    postponements may not be allowed.</p>
                 <p>
                     <a href="./" class="btn btn-primary">Get New Date</a>
                 </p>
@@ -47,16 +49,38 @@
             <div class="col-md-6 card border-danger mb-3 p-0">
                 <div class="fs-5 card-header fw-bold bg-danger text-white">What happens if you fail to appear?</div>
                 <div class="card-body">
-                    <p class="card-text">If you fail to appear for jury service…Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu justo ornare hendrerit. Nullam rutrum et ipsum vel semper. Donec sodales velit sed mauris dignissim vulputate vel
-                        vel odio. Duis interdum ullamcorper dui id feugiat. Nulla in felis ut nunc posuere eleifend quis et dui. Morbi at velit scelerisque, auctor justo eget, posuere diam. Quisque dignissim dapibus velit, ut varius nulla auctor sit amet.
-                        Ut imperdiet malesuada ipsum nec eleifend.</p>
+                    <p class="card-text">If you are unable to serve on the date assigned to you, you may <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Change(s) <i class="fa-solid fa-rotate mt-1"></i></a> to determine if you are
+                        eligible for a postponement. If eligible, be sure to select a date when you are certain you can serve as further postponements may not be allowed.</p>
                 </div>
             </div>
         </div>
     </div>
 
 
-
+    <!-- Changes Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-bold fs-5" id="exampleModalLabel">Request Changes</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    form for change requests
+                    <p><select class="form-select" aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--FAQ-->
     <div class="container mb-5">
