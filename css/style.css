@@ -125,4 +125,5 @@ footer i {
 #questionnaire .control-group:focus-within,
 #myinfo .card:focus-within {
     border-color: var(--court-dkblue) !important;
+    color: var(--court-dkblue) !important
 }
