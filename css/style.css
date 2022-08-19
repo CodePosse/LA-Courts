@@ -121,3 +121,8 @@ footer a.nav-link:visited {
 footer i {
     margin-right: 10px
 }
+
+#questionnaire .control-group:focus-within,
+#myinfo .card:focus-within {
+    border-color: var(--court-dkblue) !important;
+}
