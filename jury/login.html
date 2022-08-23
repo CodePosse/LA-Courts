@@ -37,12 +37,13 @@
     <!--body-->
     <div class="container py-5">
         <div class="row">
-            <form id="login" class="needs-validation col-md-5" novalidate>
+            <form id="login" class="needs-validation col-md-6" novalidate>
                 <div class="row">
                     <div class="col-12 mb-1">
                         <div class="card bordered">
                             <div class="card-body">
-                                <label for="jid" class="form-label"><span class="text-danger">*</span> Juror ID Number (JID):</label>
+                                <label for="jid" class="form-label"><span class="text-danger">*</span> Juror ID Number
+                                    (JID):</label>
                                 <input type="number" class="form-control" id="jid" required>
                                 <div class="invalid-feedback">
                                     JID is required.
@@ -53,7 +54,8 @@
                     <div class="col-12 mb-1">
                         <div class="card bordered">
                             <div class="card-body">
-                                <label for="pin" class="form-label"><span class="text-danger">*</span> Personal ID Number (PIN):</label>
+                                <label for="pin" class="form-label"><span class="text-danger">*</span> Personal ID
+                                    Number (PIN):</label>
                                 <input type="number" class="form-control" id="pin" required>
                                 <div class="invalid-feedback">
                                     PIN is required.
@@ -64,7 +66,8 @@
                     <div class="col-12 mb-2">
                         <div class="card bordered">
                             <div class="card-body">
-                                <label for="byear" class="form-label"><span class="text-danger">*</span> What is your Birth Year (YYYY)?</label>
+                                <label for="byear" class="form-label"><span class="text-danger">*</span> What is your
+                                    Birth Year (YYYY)?</label>
                                 <input type="number" class="form-control" id="byear" min="1900" max="2022" required />
                                 <div class="invalid-feedback">
                                     Birth Year is required.
@@ -72,21 +75,21 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-12 my-3">
                         <button class="btn btn-primary btn-lg" type="submit">
-                Confirm Your Info
-              </button>
+                            Confirm Your Info
+                        </button>
                         <button class="btn btn-primary btn-lg" type="reset">Reset</button>
                     </div>
                     <div class="col-12 mb-2">
                         <!-- forgot JID/PIN trigger modal -->
                         <a data-bs-toggle="modal" data-bs-target="#forgotJIDModal" href="javascript:void();">
-            Forgot Juror ID or PIN?
-            </a></div>
+                            Forgot Juror ID or PIN?
+                        </a>
+                    </div>
                 </div>
             </form>
-            <div class="col-7 bg-dark"><img src="" alt="" class="img-fluid"></div>
+            <div class="col-md-6"><img src="/img/mail-summons.jpg" alt="" class="img-fluid"></div>
         </div>
     </div>
 
@@ -105,7 +108,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label"><span class="text-danger">*</span> What is your Last Name?</label>
+                                <label for="exampleFormControlInput1" class="form-label"><span
+                                        class="text-danger">*</span> What is your Last Name?</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1" required>
                                 <div class="invalid-feedback">
                                     Last Name is required.
@@ -114,7 +118,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="zip" class="form-label"><span class="text-danger">*</span> What is your Zip Code?</label>
+                                <label for="zip" class="form-label"><span class="text-danger">*</span> What is your Zip
+                                    Code?</label>
                                 <input type="number" class="form-control" id="zip" min="00001" max="99999" required />
                                 <div class="invalid-feedback">
                                     Zip code is required.
@@ -123,7 +128,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="month" class="form-label"><span class="text-danger">*</span> What is your Birth Month (MM)?</label>
+                                <label for="month" class="form-label"><span class="text-danger">*</span> What is your
+                                    Birth Month (MM)?</label>
                                 <input type="number" class="form-control" id="month" required min="01" max="12" />
                                 <div class="invalid-feedback">
                                     Birth Month is required.
@@ -132,7 +138,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="year" class="form-label"><span class="text-danger">*</span> What is your Birth Year (YYYY)?</label>
+                                <label for="year" class="form-label"><span class="text-danger">*</span> What is your
+                                    Birth Year (YYYY)?</label>
                                 <input type="number" class="form-control" id="year" min="1900" max="2022" required />
                                 <div class="invalid-feedback">
                                     Birth Year is required.
@@ -143,7 +150,7 @@
                     <div class="modal-footer">
                         <button class="btn btn-primary btn-lg" type="submit">
                             Confirm Your Info
-                          </button>
+                        </button>
                         <button class="btn btn-primary btn-lg" type="reset">Reset</button>
                     </div>
                 </div>
