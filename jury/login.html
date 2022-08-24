@@ -82,10 +82,28 @@
                         <button class="btn btn-primary btn-lg" type="reset">Reset</button>
                     </div>
                     <div class="col-12 mb-2">
+                        <div class="card bordered border-warning">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="fs-5">Filing for someone else?</div>
+                                        <div>If you are here on someone else's behalf, please follow this link. Some reasons are medical, incarceration, or deceased.
+                                            <!-- proxy trigger modal -->
+                                            <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#proxyModal">
+                                              Notify court on behalf of someone else
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-2">
                         <!-- forgot JID/PIN trigger modal -->
-                        <a data-bs-toggle="modal" data-bs-target="#forgotJIDModal" href="javascript:void();">
+                        <p><a data-bs-toggle="modal" data-bs-target="#forgotJIDModal" href="javascript:void();">
                             Forgot Juror ID or PIN?
-                        </a>
+                        </a></p>
+                        <p><strong><a data-bs-toggle="modal" data-bs-target="#languageModal" href="javascript:void();">[language glyphs]</a></strong></p>
                     </div>
                 </div>
             </form>
@@ -157,7 +175,44 @@
             </form>
         </div>
     </div>
-
+    <!-- Proxy Modal -->
+    <div class="modal fade" id="proxyModal" tabindex="-1" aria-labelledby="proxyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="proxyModalLabel">Filing for someone else</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            This is where we have messaging/process for people maybe medically unable, incarcerated or deceased to have someone on their behalf.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--language modal-->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">Non-English Speakers</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">This is where non-english speakers get prompts for dismissal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--chatbot-->
     <div class="chatbot">
         <span class="badge rounded-pill bg-court-dkblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span>
