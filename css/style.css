@@ -49,6 +49,12 @@ nav.navbar ul.court-dkblue a.nav-link,
     border-color: var(--court-dkblue) !important;
 }
 
+.bd-callout-danger,
+.border-danger,
+.btn-danger {
+    border-color: red !important;
+}
+
 .bg-dkblue-opacity {
     background-color: rgba(1, 35, 98, .75) !important;
 }
