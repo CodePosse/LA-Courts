@@ -135,6 +135,7 @@ footer i {
     color: var(--court-dkblue) !important
 }
 
-.custom-tooltip {
-    --bs-tooltip-bg: var(--bs-primary);
+.bg-danger>a.fa-solid,
+.bg-success>a.fa-solid {
+    color: white !important
 }
