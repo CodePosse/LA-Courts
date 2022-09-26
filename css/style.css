@@ -134,3 +134,7 @@ footer i {
     border-color: var(--court-dkblue) !important;
     color: var(--court-dkblue) !important
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
