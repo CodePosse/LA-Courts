@@ -128,6 +128,9 @@ footer i {
     margin-right: 10px
 }
 
+
+/* form fixes */
+
 #questionnaire .control-group:focus-within,
 #myinfo .card:focus-within,
 #login .card:focus-within {
@@ -135,7 +138,28 @@ footer i {
     color: var(--court-dkblue) !important
 }
 
+#questionnaire .control-group:focus-within .badge {
+    outline: 2px solid var(--court-dkblue);
+    background-color: var(--court-yellow) !important;
+    color: var(--court-black) !important
+}
+
 .bg-danger>a.fa-solid,
 .bg-success>a.fa-solid {
     color: white !important
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 .25rem rgba(0, 255, 0, 0.3);
+}
+
+.form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+
+.myaddress {
+    color: var(--court-dkblue);
+    font-style: italic;
+    display: inline-block;
 }
