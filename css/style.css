@@ -173,3 +173,7 @@ footer i {
     font-style: italic;
     display: inline-block;
 }
+
+#editAddr {
+    display: none;
+}

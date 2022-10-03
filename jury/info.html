@@ -123,9 +123,10 @@
                                 This is the address we have on record. If this is incorrect, please click the "edit" button.
                             </p>
                             <p class="myaddress p-3 border border-info rounded bg-light">***** Lyans Drive<br> La Canada-Flintridge CA, 91011</p>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-12 pb-3 row">
-                                    <fieldset class="form-group row">
+                            <p> <a onclick="toggleEdit()" id="editButton" class="btn btn-primary">Enable Editing</a></p>
+                            <div class="row" id="editAddr">
+                                <div class="col-12 pb-3">
+                                    <fieldset class="form-group row px-3">
                                         <legend class="sr-only">Address type</legend>
                                         <div class="form-check col-md-3">
                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
@@ -221,7 +222,7 @@
                                                 </div>
 
                                                 <div class="col-12 pt-3 d-flex justify-content-end">
-                                                    <button class="btn btn-primary">Edit</button>
+                                                    <button class="btn btn-primary">Save</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -540,6 +541,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/form-validation.js"></script>
     <script src="../js/global.js"></script>
+    <script>
+        function toggleEdit() {
+            // get the edit
+            var myEdit = document.getElementById('editAddr');
+
+            // get the current value of the edit's display property
+            var displaySetting = myEdit.style.display;
+
+            // also get the edit button, so we can change what it says
+            var editButton = document.getElementById('editButton');
+
+            // now toggle the edit and the button text, depending on current state
+            if (displaySetting == 'block') {
+                // edit is visible. hide it
+                myEdit.style.display = 'none';
+                // change button text
+                editButton.innerHTML = 'Enable Editing';
+            } else {
+                // edit is hidden. show it
+                myEdit.style.display = 'block';
+                // change button text
+                editButton.innerHTML = 'Hide Editing';
+            }
+        }
+    </script>
 </body>
 
 </html>
