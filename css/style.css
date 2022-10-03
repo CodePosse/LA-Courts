@@ -144,16 +144,6 @@ footer i {
     color: var(--court-black) !important
 }
 
-#questionnaire .form-check {
-    border: 1px solid green;
-}
-
-#questionnaire .form-check {
-    border: 1px solid;
-}
-
-#questionnaire .form-check>* {}
-
 .bg-danger>a.fa-solid,
 .bg-success>a.fa-solid {
     color: white !important

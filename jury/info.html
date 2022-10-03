@@ -65,7 +65,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                If you are filing on someone else's behalf and they are unable to complete this form themselves, please contact the court at (213) 555-1212.
+                                If you are filling out on someone else's behalf and they are unable to complete this form themselves, please contact the court at (213) 555-1212.
                             </p>
                             <div class="row"></div>
                         </div>
@@ -122,225 +122,333 @@
                             <p class="card-text">
                                 This is the address we have on record. If this is incorrect, please click the "edit" button.
                             </p>
-                            <p class="myaddress p-3 border border-info rounded bg-light">***** Lyans Drive<br> La Canada-Flintridge CA, 91011</p>
-                            <p> <a onclick="toggleEdit()" id="editButton" class="btn btn-primary">Enable Editing</a></p>
-                            <div class="row" id="editAddr">
-                                <div class="col-12 pb-3">
-                                    <fieldset class="form-group row px-3">
-                                        <legend class="sr-only">Address type</legend>
-                                        <div class="form-check col-md-3">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                        LA County
-                      </label>
-                                        </div>
-                                        <div class="form-check col-md-3">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                        Outside LA County
-                      </label>
-                                        </div>
-                                        <div class="form-check col-md-3">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
-                                            <label class="form-check-label" for="flexRadioDefault4">
-                        Foreign/Military Address
-                      </label>
-                                        </div>
-                                        <div class="form-check col-md-3">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
-                                            <label class="form-check-label" for="flexRadioDefault3">
-                        PO Box
-                      </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card text-dark bg-light mb-3">
-                                        <div class="card-header">Current Address:</div>
-                                        <div class="card-body">
-                                            <div class="row d-flex justify-content-between">
-                                                <div class="col-md-2 py-2">
-                                                    <label for="housenum" class="form-label">House number
+                            <p class="myaddress p-3 border border-info rounded bg-light">
+                                ***** Lyans Drive<br /> La Canada-Flintridge CA, 91011
+                            </p>
+                            <p>
+                                <a onclick="toggleEdit()" id="editButton" class="btn btn-primary">Enable Editing</a
+                  >
+                </p>
+                <div class="row" id="editAddr">
+                  <div class="col-12 pb-3">
+                    <fieldset class="form-group row px-3">
+                      <legend class="sr-only">Address type</legend>
+                      <div class="form-check col-md-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          LA County
+                        </label>
+                      </div>
+                      <div class="form-check col-md-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Outside LA County
+                        </label>
+                      </div>
+                      <div class="form-check col-md-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault4"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault4">
+                          Foreign/Military Address
+                        </label>
+                      </div>
+                      <div class="form-check col-md-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault3"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault3">
+                          PO Box
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card text-dark bg-light mb-3">
+                      <div class="card-header">Current Address:</div>
+                      <div class="card-body">
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-2 py-2">
+                            <label for="housenum" class="form-label"
+                              >House number
                             </label>
-                                                    <input type="number" class="form-control" id="housenum" value="2119" required />
-                                                    <div class="invalid-feedback">
-                                                        Please enter a house number.
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2 py-2">
-                                                    <label for="fraction" class="form-label">Fraction
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="housenum"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please enter a house number.
+                            </div>
+                          </div>
+                          <div class="col-md-2 py-2">
+                            <label for="fraction" class="form-label"
+                              >Fraction
                             </label>
 
-                                                    <select name="" id="fraction" class="form-select">
+                            <select name="" id="fraction" class="form-select">
                               <option value=""></option>
                               <option value="">1/2</option>
                               <option value="">1/3</option>
                               <option value="">1/4</option>
                             </select>
-                                                </div>
-                                                <div class="col-sm-5 py-2">
-                                                    <label for="stname" class="form-label">Street name
+                          </div>
+                          <div class="col-sm-5 py-2">
+                            <label for="stname" class="form-label"
+                              >Street name
                             </label>
-                                                    <input type="" class="form-control" id="stname" value="Lyans" required />
-                                                    <div class="invalid-feedback">
-                                                        Please enter a street name.
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2 py-2">
-                                                    <label for="suffix" class="form-label">Suffix
+                            <input
+                              type=""
+                              class="form-control"
+                              id="stname"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please enter a street name.
+                            </div>
+                          </div>
+                          <div class="col-md-2 py-2">
+                            <label for="suffix" class="form-label"
+                              >Suffix
                             </label>
 
-                                                    <select name="" id="suffix" class="form-select">
+                            <select name="" id="suffix" class="form-select">
                               <option value=""></option>
                               <option value="">Lane</option>
                               <option value="">Avenue</option>
                               <option value="">Boulevard</option>
-                              <option value="" selected>Drive</option>
+                              <option value="">Drive</option>
                             </select>
-                                                </div>
-                                                <div class="col-md-1 py-2">
-                                                    <label for="apt" class="form-label">Apartment
+                          </div>
+                          <div class="col-md-1 py-2">
+                            <label for="apt" class="form-label"
+                              >Apartment
                             </label>
-                                                    <input type="" class="form-control" id="apt" />
-                                                </div>
+                            <input type="" class="form-control" id="apt" />
+                          </div>
 
-                                                <div class="col-md-4 py-2">
-                                                    <label for="city" class="form-label">City </label>
-                                                    <input type="" class="form-control" id="city" value="La Canada Flintridge" />
-                                                </div>
+                          <div class="col-md-4 py-2">
+                            <label for="city" class="form-label">City </label>
+                            <input type="" class="form-control" id="city" />
+                          </div>
 
-                                                <div class="col-sm-2">
-                                                    <label for="state" class="form-label">State </label>
-                                                    <input type="" class="form-control" id="state" value="CA" disabled required />
-                                                </div>
-                                                <div class="col-sm-3 py-2">
-                                                    <label for="zip" class="form-label">Zip </label>
-                                                    <input type="number" class="form-control" id="zip" value="91011" required />
-                                                    <div class="invalid-feedback">
-                                                        Zip code required.
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12 pt-3 d-flex justify-content-end">
-                                                    <button class="btn btn-primary">Save</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                          <div class="col-sm-2">
+                            <label for="state" class="form-label">State </label>
+                            <input
+                              type=""
+                              class="form-control"
+                              id="state"
+                              required
+                            />
+                          </div>
+                          <div class="col-sm-3 py-2">
+                            <label for="zip" class="form-label">Zip </label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="zip"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Zip code required.
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!--contact info-->
-                <div class="col-12 py-2">
-                    <div class="card">
-                        <div class="card-header">Contact Information</div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <span class="text-danger">*</span> Please provide at least one phone number in the fields below.
-                            </p>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <label for="homePhone" class="form-label">Home phone number
-                    </label>
-                                    <input type="number" class="form-control" id="homePhone" placeholder="" value="" min="2012222222" max="9989989999" />
-                                </div>
+                          </div>
 
-                                <div class="col-sm-4">
-                                    <label for="workPhone" class="form-label">Work phone number
-                    </label>
-                                    <input type="number" class="form-control" id="workPhone" placeholder="" value="" min="2012222222" max="9989989999" />
-                                </div>
-                                <div class="col-sm-2">
-                                    <label for="workExtPhone" class="form-label">Work extension
-                    </label>
-                                    <input type="number" class="form-control" id="workExtPhone" placeholder="" value="" size="7" />
-                                </div>
-                                <div class="col-sm-4">
-                                    <label for="mobilePhone" class="form-label">Mobile phone number
-                    </label>
-                                    <input type="number" class="form-control" id="mobilePhone" placeholder="" value="" min="2012222222" max="9989989999" />
-                                </div>
-                            </div>
+                          <div class="col-12 pt-3 d-flex justify-content-end">
+                            <button class="btn btn-primary">Save</button>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!--notification info-->
-                <div class="col-12 py-2">
-                    <div class="card">
-                        <div class="card-header">Notification Preference</div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Besides returning to the site to see your status, is there any other notification method you would like us to use?
-                            </p>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label for="notificationMethod" class="form-label">Notification method
+              </div>
+            </div>
+          </div>
+          <!--contact info-->
+          <div class="col-12 py-2">
+            <div class="card">
+              <div class="card-header">Contact Information</div>
+              <div class="card-body">
+                <p class="card-text">
+                  <span class="text-danger">*</span> Please provide at least one
+                  phone number in the fields below.
+                </p>
+                <div class="row">
+                  <div class="col-sm-4 mb-2">
+                    <label for="homePhone" class="form-label"
+                      >Home phone number
                     </label>
-                                    <select class="form-select" id="notificationMethod" required>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="homePhone"
+                      placeholder=""
+                      value=""
+                      min="2012222222"
+                      max="9989989999"
+                    />
+                  </div>
+
+                  <div class="col-sm-4 mb-2">
+                    <label for="workPhone" class="form-label"
+                      >Work phone number
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="workPhone"
+                      placeholder=""
+                      value=""
+                      min="2012222222"
+                      max="9989989999"
+                    />
+                  </div>
+                  <div class="col-sm-2 mb-2">
+                    <label for="workExtPhone" class="form-label"
+                      >Work extension
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="workExtPhone"
+                      placeholder=""
+                      value=""
+                      size="7"
+                    />
+                  </div>
+                  <div class="col-sm-4 mb-2">
+                    <label for="mobilePhone" class="form-label"
+                      >Mobile phone number
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="mobilePhone"
+                      placeholder=""
+                      value=""
+                      min="2012222222"
+                      max="9989989999"
+                    />
+                  </div>
+                  <div class="col-sm-4 mb-2">
+                    <label for="email" class="form-label">E-mail </label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--notification info-->
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <div class="card-header">Notification Preference</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Besides returning to the site to see your status, is there any
+                  other notification method you would like us to use?
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <label for="notificationMethod" class="form-label"
+                      >Notification Preference
+                    </label>
+                    <select class="form-select" id="notificationMethod">
                       <option value="">Choose...</option>
                       <option value="">Text</option>
                       <option value="">E-mail</option>
-                      <option value="">Mail</option>
+                      <option value="">Text and Email</option>
                     </select>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid Notification method.
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="mobileCarrier" class="form-label">Mobile carrier
-                    </label>
-                                    <select class="form-select" id="mobileCarrier" required>
-                      <option value="">Choose...</option>
-                      <option value="">T-mobile</option>
-                      <option value="">Verizon</option>
-                      <option value="">AT&T</option>
-                    </select>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid Mobile carrier.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <!--Employment-->
-                <div class="col-12 py-2">
-                    <div class="card border-info">
-                        <div class="card-header">Employment Information</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label for="workStatus" class="form-label">Employment status
+              </div>
+            </div>
+          </div>
+          <!--Employment-->
+          <div class="col-md-8 py-2">
+            <div class="card border-info">
+              <div class="card-header">Employment Information</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6 mb-2">
+                    <label for="workStatus" class="form-label"
+                      >Employment status
                     </label>
-                                    <select class="form-select" id="workStatus" required>
-                      <option value="">Choose...</option>
-                      <option value="">Fulltime</option>
-                      <option value="">Parttime</option>
+                    <select class="form-select" id="workStatus" required>
+                        <option value="" disabled selected>Choose one...</option>
+                      <option value="">Employed</option>
+                      <option value="">Self-Employed</option>
                       <option value="">Unemployed</option>
                       <option value="">Retired</option>
-                      <option value="">Home maker</option>
-                      <option value="">Disabled</option>
+                      <option value="">Home Maker</option>
+                      <option value="">Student</option>
                     </select>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid employment status.
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="covered" class="form-label">Days covered by employer</label
+                    <div class="invalid-feedback">
+                      Please provide a valid employment status.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-2"><div class="mb-3">Government Employee?</div>
+                    <fieldset class="form-group d-flex">
+                        <legend class="sr-only">Select Yes or No</legend>
+                        <div></div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <label for="covered" class="form-label"
+                      >Days covered by employer</label
                     >
-                    <select id="covered" class="form-select" required>
-                      <option value="">None</option>
-                      <option value="">1-5 days</option>
-                      <option value="">6-10 days</option>
-                      <option value="">11-15 days</option>
-                      <option value="">More than 15 days</option>
-                    </select>
+                    <input id="covered" class="form-control" required />
+
                     <div class="invalid-feedback">
                       Please provide a valid date range.
                     </div>
                   </div>
+                  <div class="col-md-6 mb-2"><div class="form-check pt-5">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Check for Unlimited
+                    </label>
+                  </div></div>
                 </div>
               </div>
             </div>
@@ -364,208 +472,320 @@
 
                   <div class="col-sm-4">
                     <label for="emerName" class="form-label">Name </label>
-                                    <input type="text" class="form-control" id="emerName" placeholder="" value="" required />
-                                    <div class="invalid-feedback">
-                                        Contact name is required.
-                                    </div>
-                                </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="emerName"
+                      placeholder=""
+                      value=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Contact name is required.
+                    </div>
+                  </div>
 
-                                <div class="col-sm-4">
-                                    <label for="emerRelationship" class="form-label">Relationship
+                  <div class="col-sm-4">
+                    <label for="emerRelationship" class="form-label"
+                      >Relationship
                     </label>
-                                    <input type="text" class="form-control" id="emerRelationship" placeholder="" value="" required />
-                                    <div class="invalid-feedback">
-                                        Contact relationship is required.
-                                    </div>
-                                </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="emerRelationship"
+                      placeholder=""
+                      value=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Contact relationship is required.
+                    </div>
+                  </div>
 
-                                <div class="col-sm-4">
-                                    <label for="emerPhone" class="form-label">Phone number
+                  <div class="col-sm-4">
+                    <label for="emerPhone" class="form-label"
+                      >Phone number
                     </label>
-                                    <input type="number" class="form-control" id="emerPhone" placeholder="" value="" min="2012222222" max="9989989999" required />
-                                    <div class="invalid-feedback">
-                                        Contact number is required.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="emerPhone"
+                      placeholder=""
+                      value=""
+                      min="2012222222"
+                      max="9989989999"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Contact number is required.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--perjury-->
+          <div class="col-12 pt-3">
+            <div class="bd-callout bd-callout-danger p-3">
+                <div class="mb-1"><strong>
+                    It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="perjury-ack" required>
+                    <label class="form-check-label" for="perjury-ack">
+                        
+                             I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct
+                            (CCP Sec. 2015.5(b)).</label>
+                    <div class="invalid-feedback">
+                        * You must agree before submitting.
                     </div>
                 </div>
-                <!--disclaimer-->
-                <div class="col-12 py-2">
-                    <div class="card border-danger my-3 p-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required />
-                            <div class="invalid-feedback">Please confirm.</div>
-                            <label class="form-check-label" for="flexCheckDefault">
-                  I confirm:
-                </label>
-                        </div>
-                        By selecting email and/or text as a notification method, I authorize the Superior Court of California, County of Los Angeles to send me electronic notification (email and/or text messaging) regarding my jury service, including instructions on when and
-                        where to report for service. There is no charge by the Court for this courtesy notice. Standard text or data changes may be assessed by your cellular service provider.
-                    </div>
-                    <button class="btn btn-primary btn-lg" type="submit">
-              Confirm Your Info
-            </button>
-                    <button class="btn btn-primary btn-lg" type="reset">Reset</button>
-                </div>
+
             </div>
         </div>
+          <!--disclaimer-->
+          <div class="col-12 py-2">
+            <div class="bd-callout bd-callout-warning my-3 p-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"                  
+                />               
+                <label class="form-check-label" for="flexCheckDefault">
+                  I confirm:
+                </label>
+              </div>
+              By selecting email and/or text as a notification method, I
+              authorize the Superior Court of California, County of Los Angeles
+              to send me electronic notification (email and/or text messaging)
+              regarding my jury service, including instructions on when and
+              where to report for service. There is no charge by the Court for
+              this courtesy notice. Standard text or data changes may be
+              assessed by your cellular service provider.
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">
+              Confirm Your Info
+            </button>
+            <button class="btn btn-primary btn-lg" type="reset">Reset</button>
+          </div>
+        </div>
+      </div>
     </form>
     <!--FAQ-->
     <div class="container mb-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="fs-3 mb-2">FAQs</div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div class="row">
+        <div class="col-12">
+          <div class="fs-3 mb-2">FAQs</div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
                   Accordion Item #1
                 </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
-                                well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
                   Accordion Item #2
                 </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
                   Accordion Item #3
                 </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--chatbot-->
     <div class="chatbot">
-        <span class="badge rounded-pill bg-court-dkblue">Chatbot <i class="fa-solid fa-comment-dots"></i
+      <span class="badge rounded-pill bg-court-dkblue"
+        >Chatbot <i class="fa-solid fa-comment-dots"></i
       ></span>
     </div>
     <!--generic footer-->
     <footer class="pt-5 pb-1 bg-dark text-white">
-        <div class="container">
-            <div class="justify-content-md-between row border-bottom pb-3 mb-3">
-                <div class="col-md-5">
-                    <div class="h5">Bureau of Street Lighting</div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="https://www.google.com/maps/place/1149+S+Broadway+%23200,+Los+Angeles,+CA+90015/@34.0400865,-118.2640439,15.67z/data=!4m5!3m4!1s0x80c2c7c93afaaaa9:0xc20ddd4db28e0adf!8m2!3d34.0388841!4d-118.2605651" class="nav-link p-0" target="_blank">
-                                <span class="fas fa-map-marker-alt"></span> 1149 S. Broadway, Suite 200 Los Angeles, CA 90015
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="tel:12138471440" class="nav-link p-0">
-                                <span class="fas fa-phone"></span> (213) 847-1400
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="/contact.html" class="nav-link p-0">
-                                <span class="fas fa-envelope"></span> Contact Us
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a data-bs-toggle="modal" href="./" role="button" class="nav-link p-0">
-                                <span class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)
-                            </a>
-                        </li>
-                    </ul>
+      <div class="container">
+        <div class="justify-content-md-between row border-bottom pb-3 mb-3">
+          <div class="col-md-5">
+            <div class="h5">Bureau of Street Lighting</div>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="https://www.google.com/maps/place/1149+S+Broadway+%23200,+Los+Angeles,+CA+90015/@34.0400865,-118.2640439,15.67z/data=!4m5!3m4!1s0x80c2c7c93afaaaa9:0xc20ddd4db28e0adf!8m2!3d34.0388841!4d-118.2605651"
+                  class="nav-link p-0"
+                  target="_blank"
+                >
+                  <span class="fas fa-map-marker-alt"></span> 1149 S. Broadway,
+                  Suite 200 Los Angeles, CA 90015
+                </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="tel:12138471440" class="nav-link p-0">
+                                        <span class="fas fa-phone"></span> (213) 847-1400
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="/contact.html" class="nav-link p-0">
+                                        <span class="fas fa-envelope"></span> Contact Us
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a data-bs-toggle="modal" href="./" role="button" class="nav-link p-0">
+                                        <span class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)
+                                    </a>
+                                </li>
+                                </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="h5">Stay Connected</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="https://www.lacity.org/tweets" target="_blank" class="nav-link p-0">
+                                        <span class="fas fa-hashtag"></span> Today's Trending News
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="https://twitter.com/lalight" target="_blank" class="nav-link p-0">
+                                        <span class="fab fa-twitter"></span> Twitter
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="https://www.instagram.com/lastreetlights/" target="_blank" class="nav-link p-0">
+                                        <span class="fab fa-facebook-f"></span> Facebook
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="h5">Covid 19 Information</div>
+                            <p>
+                                As a measure of caution in relation to COVID-19, the Bureau of Street Lighting is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center pt-2">
+                        <p>
+                            © Copyright
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            City of Los Angeles Public Works, Bureau of Street Lighting. All rights reserved.
+                            <a href="/sitemap.html" class="text-white">Site Map</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="h5">Stay Connected</div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="https://www.lacity.org/tweets" target="_blank" class="nav-link p-0">
-                                <span class="fas fa-hashtag"></span> Today's Trending News
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="https://twitter.com/lalight" target="_blank" class="nav-link p-0">
-                                <span class="fab fa-twitter"></span> Twitter
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="https://www.instagram.com/lastreetlights/" target="_blank" class="nav-link p-0">
-                                <span class="fab fa-facebook-f"></span> Facebook
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <div class="h5">Covid 19 Information</div>
-                    <p>
-                        As a measure of caution in relation to COVID-19, the Bureau of Street Lighting is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 text-center pt-2">
-                <p>
-                    © Copyright
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    City of Los Angeles Public Works, Bureau of Street Lighting. All rights reserved.
-                    <a href="/sitemap.html" class="text-white">Site Map</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="../js/form-validation.js"></script>
-    <script src="../js/global.js"></script>
-    <script>
-        function toggleEdit() {
-            // get the edit
-            var myEdit = document.getElementById('editAddr');
+                </footer>
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+                <script src="../js/form-validation.js"></script>
+                <script src="../js/global.js"></script>
+                <script>
+                    function toggleEdit() {
+                        // get the edit
+                        var myEdit = document.getElementById("editAddr");
 
-            // get the current value of the edit's display property
-            var displaySetting = myEdit.style.display;
+                        // get the current value of the edit's display property
+                        var displaySetting = myEdit.style.display;
 
-            // also get the edit button, so we can change what it says
-            var editButton = document.getElementById('editButton');
+                        // also get the edit button, so we can change what it says
+                        var editButton = document.getElementById("editButton");
 
-            // now toggle the edit and the button text, depending on current state
-            if (displaySetting == 'block') {
-                // edit is visible. hide it
-                myEdit.style.display = 'none';
-                // change button text
-                editButton.innerHTML = 'Enable Editing';
-            } else {
-                // edit is hidden. show it
-                myEdit.style.display = 'block';
-                // change button text
-                editButton.innerHTML = 'Hide Editing';
-            }
-        }
-    </script>
+                        // now toggle the edit and the button text, depending on current state
+                        if (displaySetting == "block") {
+                            // edit is visible. hide it
+                            myEdit.style.display = "none";
+                            // change button text
+                            editButton.innerHTML = "Enable Editing";
+                        } else {
+                            // edit is hidden. show it
+                            myEdit.style.display = "block";
+                            // change button text
+                            editButton.innerHTML = "Hide Editing";
+                        }
+                    }
+                </script>
 </body>
 
 </html>
