@@ -66,20 +66,43 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    form for change requests
-                    <p><select class="form-select" aria-label="Default select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                  </select></p>
+
+                    <div class="border border-warning rounded px-2 py-1 my-1">
+                        <p>You are requesting an excuse from jury service The law requires that the excuse that you provide be in writing and legally sufficient. By law there are a limited number of reasons for excuse from service.</p>
+                        <p>Please note that it is perjury to provide any false information on this form Please select the reason(s) that describes your current situation.</p>
+                        <p>If your situation is not covered by the selections listed please call (213) 972-0970 to speak to an agent during the hours of 8:00 AM to 4-30 PM (Pacific Standard Time) Monday through Friday.</p>
+                    </div>
+                    <div class="col-md-6 my-3"><select class="form-select" aria-label="Default select example">
+                                                    <option disabled>Please select one</option>
+                                                    <option value="1">Medical Excuse</option>
+                                                    <option value="2">Financial Hardship</option>
+                                                    <option value="3">Personal Obligation (Fulltime Care)</option>
+													<option value="4">Transportation</option>
+													<option value="5">Prior Service</option>
+													<option value="6">Other</option>
+                                                  </select></div>
+                    <div class="bd-callout bd-callout-danger p-3 col-12 mb-1">
+                        <div class="mb-1"><strong>
+                        It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="perjury-ack" required>
+                            <label class="form-check-label" for="perjury-ack">
+                            
+                                 I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct
+                                (CCP Sec. 2015.5(b)).</label>
+                            <div class="invalid-feedback">
+                                * You must agree before submitting.
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer"> <button type="button" class="btn btn-primary">Submit</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!--FAQ-->
