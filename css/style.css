@@ -144,6 +144,20 @@ footer i {
     color: var(--court-black) !important
 }
 
+#questionnaire fieldset {
+    margin: 10px 0 0
+}
+
+#questionnaire .boxed {
+    border: 1px solid transparent;
+    padding: 1px 0 1px 5px;
+    margin-top: 5px
+}
+
+#questionnaire .boxed.indicated {
+    border-color: var(--court-black)
+}
+
 .bg-danger>a.fa-solid,
 .bg-success>a.fa-solid {
     color: white !important
