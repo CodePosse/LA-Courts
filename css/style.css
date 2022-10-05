@@ -7,7 +7,7 @@ body {
     --court-dkblue: #012362;
     --court-yellow: #f3c727;
     --court-grey: #95a3ab;
-    font-family: calibri, monotype;
+    font-family: calibri, Tahoma, Arial, monotype;
     color: var(--court-black);
 }
 
