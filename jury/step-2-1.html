@@ -97,15 +97,71 @@
                             <div class="col-12 pt-3">
                                 <p>Learn how to prepare for jury duty.</p>
                             </div>
-
                             <div class="col-12 mt-3">
-                                <div class="btn btn-info">Preperation Checklist</div>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#prepModal">Preperation Checklist</button>
                             </div>
                             <div class="col-12 mt-3">
-                                <div class="btn btn-info">Watch Orientation Video</div>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#quizModalToggle">Watch Orientation Video</button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preperation Modal -->
+    <div class="modal fade" id="prepModal" tabindex="-1" aria-labelledby="prepModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="prepModalLabel">Preperation Checklist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Item</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--video/quiz modal-->
+    <div class="modal fade" id="quizModalToggle" aria-hidden="true" aria-labelledby="quizModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quizModalToggleLabel">Orientation Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#quizModalToggle2" data-bs-toggle="modal">Take Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="quizModalToggle2" aria-hidden="true" aria-labelledby="quizModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quizModalToggleLabel2">Orientation Quiz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Quiz step 1 here.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#quizModalToggle" data-bs-toggle="modal">Rewatch Video</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
