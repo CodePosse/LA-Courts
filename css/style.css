@@ -181,3 +181,7 @@ footer i {
 #editAddr {
     display: none;
 }
+
+.exempt {
+    background-color: aliceblue;
+}
