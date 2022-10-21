@@ -1,20 +1,44 @@
 {
-  "name": "la-courts",
-  "description": "LA County Court Jury Duty Portal",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodePosse/LA-Courts.git"
-  },
-  "author": "Tim Hunold",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodePosse/LA-Courts/issues"
-  },
-  "homepage": "https://github.com/CodePosse/LA-Courts#readme"
+    "name": "la-courts",
+    "description": "LA County Court Jury Duty Portal",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CodePosse/LA-Courts.git"
+    },
+    "author": "Tim Hunold",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CodePosse/LA-Courts/issues"
+    },
+    "homepage": "https://github.com/CodePosse/LA-Courts#readme",
+    "devDependencies": {
+        "clean-css": "^5.2.4",
+        "gulp": "^4.0.2",
+        "gulp-add-src": "^1.0.0",
+        "gulp-cheerio": "^1.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-html-minifier": "^0.1.7",
+        "gulp-htmlclean": "^2.7.22",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-if": "^3.0.0",
+        "gulp-inject": "^5.0.5",
+        "gulp-plumber": "^1.2.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-uglifycss": "^1.1.0",
+        "gulp-util": "^3.0.8"
+    },
+    "dependencies": {
+        "gulp-open": "^3.0.1",
+        "gulp-prettify": "^0.5.0",
+        "lodash": "^4.17.15",
+        "lodash.template": "^4.5.0",
+        "minimatch": "^4.1.1",
+        "minimist": "^1.2.5"
+    }
 }
