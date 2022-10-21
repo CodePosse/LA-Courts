@@ -1,1 +1,20 @@
-{}
+{
+  "name": "la-courts",
+  "description": "LA County Court Jury Duty Portal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodePosse/LA-Courts.git"
+  },
+  "author": "Tim Hunold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodePosse/LA-Courts/issues"
+  },
+  "homepage": "https://github.com/CodePosse/LA-Courts#readme"
+}
