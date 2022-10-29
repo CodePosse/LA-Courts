@@ -129,6 +129,34 @@ footer i {
 }
 
 
+/* form steps option 2 */
+
+.wizard .col>div {
+    padding: 5px 10px
+}
+
+.wizard strong {
+    font-size: 22px;
+    display: block;
+}
+
+.step-active div {
+    background-color: lightblue;
+}
+
+.step-disabled div {
+    background-color: lightgray;
+}
+
+.step-error div {
+    background-color: lightyellow;
+}
+
+.step-complete div {
+    background-color: lightgreen;
+}
+
+
 /* form fixes */
 
 #questionnaire .control-group:focus-within,
