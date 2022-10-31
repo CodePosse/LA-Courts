@@ -131,11 +131,13 @@ footer i {
 
 /* form steps option 2 */
 
-.wizard .col>div {
+.wizard .col>div,
+.wizard2 .col>div {
     padding: 5px 10px
 }
 
-.wizard strong {
+.wizard strong,
+.wizard2 strong {
     font-size: 22px;
     display: block;
 }
@@ -154,6 +156,11 @@ footer i {
 
 .step-complete div {
     background-color: lightgreen;
+}
+
+.wizard2 .border {
+    border-color: var(--court-dkblue) !important;
+    color: var(--court-dkblue);
 }
 
 
