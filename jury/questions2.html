@@ -533,5 +533,14 @@
       }
     </script>
     <script src="../js/global.js"></script>
+    <script>
+      function toggleEdit()
+      {
+        var e = document.getElementById("editAddr"),
+          t = e.style.display,
+          n = document.getElementById("editButton");
+        "block" == t ? (e.style.display = "none", n.innerHTML = "Enable Editing") : (e.style.display = "block", n.innerHTML = "Hide Editing")
+      }
+    </script>
   </body>
 </html>
