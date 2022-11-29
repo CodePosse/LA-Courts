@@ -220,3 +220,5 @@ footer i {
 option.exempt {
     background-color: aliceblue;
 }
+
+.accordion-collapse.collapse.show .accordion-body{background-color: #bfbfbf;}
