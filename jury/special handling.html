@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>special handling</title>
+</head>
+
+<body>
+<div>
+  <div id="deathpnl" class="infoblock"> <span id="errlbl" style="color:Red"></span>
+    <p><u class="fw-bold">Juror is deceased</u></p>
+    <p>Please select one of the following:</p>
+    <fieldset>
+      <legend></legend>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2"><p>
+                <label for="rbdeathoutside" id="Label1" style=" text-decoration:underline; font-weight:bold">Juror died outside Los Angeles County</label>
+              </p></td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top; width:30px;"><span aria-label="Juror died outside Los Angeles County">
+              <input id="rbdeathoutside" type="radio" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$deathrb" value="rbdeathoutside" onclick="disablefields();">
+              </span></td>
+            <td><p style="margin-top:0px;"> If the juror is deceased and he/she died outside Los Angeles County, please indicate that the juror is deceased 
+                in Section D, return the jury summons and a <b>copy</b> of the death certificate to this address: </p>
+              <p> Los Angeles Superior Court<br>
+                Juror Services Division<br>
+                PO Box 53378<br>
+                Los Angeles, CA 90053-0378 </p></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p>
+                <label for="rbdeathinside" id="Label2" style="text-decoration:underline; font-weight:bold">Juror died within Los Angeles County</label>
+              </p></td>
+          </tr>
+          <tr>
+            <td style="vertical-align:top;"><span aria-label="Juror died within Los Angeles County">
+              <input id="rbdeathinside" type="radio" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$deathrb" value="rbdeathinside" onclick="disablefields();">
+              </span></td>
+            <td><p style="margin-top:0px;"> If the juror is deceased and he/she died within Los Angeles County, please fill out the 
+                sections below and click the "Submit" button. We will review the information and respond back 
+                to you within twenty business days. </p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><p>Name of person filling out this form:</p></td>
+                    <td style="vertical-align:top"><input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$fillernametext" type="text" id="fillernametext" aria-label="Enter your name" disabled="" class="disable"></td>
+                  </tr>
+                  <tr>
+                    <td><p>Name of decedent as it appears on the death certificate:</p></td>
+                    <td style="vertical-align:top"><input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$deathnametext" type="text" id="deathnametext" aria-label="enter name of decedent as it appears on the death certificate" disabled="" class="disable"></td>
+                  </tr>
+                  <tr>
+                    <td><p>Date of death<br>
+                        (MM/DD/YYYY):</p></td>
+                    <td style="vertical-align:top"><input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$datedeathtext" type="text" id="datedeathtext" aria-label="enter decedent's date of death" disabled="" class="disable"></td>
+                  </tr>
+                  <tr>
+                    <td><p>Date of birth<br>
+                        (MM/DD/YYYY):</p></td>
+                    <td style="vertical-align:top"><input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$datebirthtext" type="text" id="datebirthtext" aria-label="enter decedent's date of birth" disabled="" class="disable"></td>
+                  </tr>
+                  <tr>
+                    <td><p>City of death:</p></td>
+                    <td style="vertical-align:top"><input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$citydeathtext" type="text" id="citydeathtext" aria-label="enter decedent's city of death" disabled="" class="disable"></td>
+                  </tr>
+                  <tr>
+                    <td><p>Your phone number:</p></td>
+                    <td style="vertical-align:top"><input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$phone1text" type="text" maxlength="3" id="phone1text" aria-label="enter your phone number's area code" onkeyup="moveOnMax('phone1text','phone2text')" style="width:32px;" disabled="" class="disable">
+                      -
+                      <input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$phone2text" type="text" maxlength="3" id="phone2text" aria-label="enter your phone number's prefix" onkeyup="moveOnMax('phone2text','phone3text')" style="width:32px;" disabled="" class="disable">
+                      -
+                      <input name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$phone3text" type="text" maxlength="4" id="phone3text" aria-label="enter your phone number's line number" style="width:42px;" disabled="" class="disable"></td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <br>
+    <table style="border-collapse: collapse;">
+      <tbody>
+        <tr style="color: White; background-color: Gray">
+          <td style="padding-right: 5px; vertical-align: top"><input id="certifycheck" type="checkbox" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$certifycheck"></td>
+          <td><label for="certifycheck" id="lbl_certify">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)). </label></td>
+        </tr>
+        <tr style="color: White; background-color: Gray">
+          <td style="padding-right: 5px; vertical-align: top"><span aria-label="I allow the Court to use this as my electronic signature. ">
+            <input id="digitalcheck" type="checkbox" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$digitalcheck">
+            </span></td>
+          <td><label for="digitalcheck" id="Label3">I allow the Court to use this as my electronic signature. </label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$submitbtn" value="Submit" onclick="return certifycheck();" id="submitbtn"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="priorpnl" class="infoblock">
+    <p><u class="fw-bold">Served within last 12 months</u></p>
+    <p> By law, you are only required to serve once every 12 months. If you have been summoned 
+      to serve within 12 months of your last service, you may request to be excused or elect 
+      to serve again. </p>
+    <p><u class="fw-bold">I do not wish to serve</u></p>
+    <p> If you have served within the last twelve months and you wish to be excused, please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “MyInfo” tab and complete the information on that page.</p>
+      </li>
+      <li>
+        <p>Click on the "My Summons" tab and complete the information there by following the prompts.</p>
+      </li>
+      <li>
+        <p> Click on the “Excuse” tab and click on the “Prior Service” reason. Follow 
+          the remainder of the prompts to complete your request for excuse based on your previous service. </p>
+      </li>
+    </ol>
+    <p><u class="fw-bold">I wish to serve</u></p>
+    <p> If you have served within the last twelve months and you wish to serve again, please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “MyInfo” tab and complete the information on that page.</p>
+      </li>
+      <li>
+        <p> Complete your summons and register for service by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1. Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p> Press the “Submit” button on the page to submit your summons for processing. </p>
+      </li>
+      <li>
+        <p> On the confirmation page, confirm your service week and the 
+          location that has summoned you OR request a postponement or transfer of location as needed. </p>
+      </li>
+    </ol>
+  </div>
+  <div id="militarypnl" class="infoblock" style="">
+    <p><u class="fw-bold">Active military service</u></p>
+    <p><u class="fw-bold">Juror/I will be deployed soon</u></p>
+    <p>If you are on active military duty AND will be deployed soon, please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “MyInfo" tab and complete the information on that page.</p>
+      </li>
+      <li>
+        <p> Complete your summons and register for jury service by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1, ensuring that you answer question number 8. 
+          Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p>Press the “Submit” button on the page to submit your summons for processing.</p>
+      </li>
+    </ol>
+    <p> If you are a family member responding for the juror and the juror is currently deployed, please use the summons 
+      form that was mailed to the juror and indicate that the juror is deployed in Section D of the summons. 
+      Please sign and date the summons in Section G. Please return the form to the Court in the self-addressed 
+      envelope provided or mail it to: </p>
+    <p> Los Angeles Superior Court <br>
+      Juror Services <br>
+      PO Box 53378 <br>
+      Los Angeles, CA 90053 </p>
+    <p><u class="fw-bold">Juror is/I am returning from deployment</u></p>
+    <p> If you have recently returned from military deployment overseas and need additional time to 
+      perform your jury service, please call (213) 972-0970 to request a postponement of your service. </p>
+    <p> If you need further assistance, please call (213) 972-0970 between the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. </p>
+  </div>
+  <div id="oocpnl" class="infoblock" style="display:none;">
+    <p><u class="fw-bold">Reside outside Los Angeles County</u></p>
+    <p> If you are not the juror and do not know where the juror lives, please return the summons to 
+      the post office. If you are a family member and/or know where the juror lives, please forward 
+      the summons to the juror. </p>
+    <p> If you are the juror, and you reside outside Los Angeles County, please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “MyInfo” tab and complete the information on that page, ensuring that you change your address as appropriate.</p>
+      </li>
+      <li>
+        <p> Mail in your COMPLETED summons. Be sure to complete the following sections: </p>
+        <ul>
+          <li>
+            <p>Step 1.</p>
+          </li>
+          <li>
+            <p>Step 2.</p>
+          </li>
+          <li>
+            <p>Section F.</p>
+          </li>
+          <li>
+            <p>Section G.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p> Also mail in one of the following: </p>
+        <ol>
+          <li>
+            <p>Utility Bill with your new address.</p>
+          </li>
+          <li>
+            <p>Proof of Voter Registration in your new County.</p>
+          </li>
+          <li>
+            <p>Driver's License with your new address.</p>
+          </li>
+          <li>
+            <p>Property tax bill with your new address.</p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p> If you need further assistance or are unable to complete registration via the “My Jury Duty Portal,” 
+      please call (213) 972-0970 during the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), 
+      Monday through Friday.  You may speak to an agent regarding your address change. </p>
+  </div>
+  <div id="studentpnl" class="infoblock" style="display:none;">
+    <p><u class="fw-bold">Student or Teacher</u></p>
+    <p> You do not qualify for an excuse if you are a full time student or a teacher. If you are a student 
+      or a teacher and cannot serve when summoned due to your class schedule, please follow these instructions: </p>
+    <ol>
+      <li>
+        <p>Click on the “MyInfo” tab and complete the information on that page.</p>
+      </li>
+      <li>
+        <p> Complete your summons and register for jury service by clicking on the "My Summons" 
+          tab. Please answer all the questions in Section A, Step 1. Complete the remainder of the form 
+          as prompted. </p>
+      </li>
+      <li>
+        <p>Press the "Submit" button on the page to submit your summons for processing.</p>
+      </li>
+      <li>
+        <p> Click on the "Reschedule" tab, then the "Postponement" tab, and postpone to a week when you have 
+          a break from school (i.e. Spring Break, Summer Break or Winter Break). </p>
+      </li>
+    </ol>
+    <p> You are able to postpone for three months or less on the “My Jury Duty Portal.”  If you do not see a week 
+      that coincides with your school break, please call (213) 972-0970 between the hours of 8:00 AM 
+      to 4:30 PM, Pacific Standard Time, Monday through Friday.  You will need to speak to an agent to postpone to a period greater 
+      than three months. </p>
+  </div>
+  <div id="wrongaddresspnl" class="infoblock" style="display:none;">
+    <p><u class="fw-bold">Resides within Los Angeles County</u></p>
+    <p> If you are not the juror and do not know where the juror lives, please return the summons 
+      to the post office. If you are a family member and/or know where the juror lives, please 
+      forward the summons to the juror. </p>
+    <p> If you are the juror and you reside within Los Angeles County, please do the following: </p>
+    <ol>
+      <li>
+        <p> Click on the “MyInfo” tab and complete the information on that page, 
+          ensuring that you change your address as appropriate. </p>
+      </li>
+      <li>
+        <p> Complete your summons and register for jury service by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1.Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p>Press the “Submit” button on the page to submit your summons for processing. </p>
+      </li>
+    </ol>
+  </div>
+  <div id="agepnl" class="infoblock">
+    <p><u class="fw-bold">Over 70</u></p>
+    <p> Please note that there is no exemption based on age. Jury duty is an obligation of citizenship 
+      regardless of age. You are required to perform jury service. Please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the "MyInfo" tab and complete the information on that page. </p>
+      </li>
+      <li>
+        <p> Complete your summons and register for jury duty by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1. Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p>Press the "Submit" button on the page to submit your summons for processing. </p>
+      </li>
+    </ol>
+    <p><u class="fw-bold">Over 70 with medical excuse</u></p>
+    <p> Jurors who are 70 years of age or over receive special consideration if they need to be excused due to 
+      a medical reason.  If you are 70 years of age and are unable to serve due to a medical condition, please 
+      do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “Myinfo” tab and complete the information on that page. </p>
+      </li>
+      <li>
+        <p> Click your summons and register for jury duty by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1. 
+          Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p>Press the “Submit” button on the page to submit your summons for processing.</p>
+      </li>
+      <li>
+        <p> Click on the “Excuse” tab and select “Medical Excuse”.  Follow the prompts on the page to complete a 
+          request for a medical excuse. </p>
+      </li>
+    </ol>
+    <p><u class="fw-bold">Over 70 and wish to transfer</u></p>
+    <p> Jurors who are 70 years of age or over receive special consideration if they need a change of court location 
+      due to a medical condition or lack of transportation. If you are 70 years of age or over and are able to serve 
+      but need to change your court location due to a medical reason or transportation problem, please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “Myinfo” tab and complete the information on that page. </p>
+      </li>
+      <li>
+        <p> Complete your summons and register for jury duty by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1.  Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p> Press the “Submit” button on the page to submit your summons for processing. </p>
+      </li>
+      <li>
+        <p> Click on the “Reschedule” tab and then the “Transfer” tab. Follow the prompts to submit your request for a transfer. </p>
+      </li>
+    </ol>
+  </div>
+  <div id="mompnl" class="infoblock">
+    <p><u class="fw-bold">Breastfeeding Mother</u></p>
+    <p> For potential jurors who are lactating mothers: <br>
+      While the Los Angeles Superior Court makes every reasonable effort to provide a private, 
+      locked room for lactating mothers to express milk, such accommodations are not available 
+      at many courthouses. Recognizing this fact, the Court allows a mother who is breastfeeding a child to defer jury service. 
+      You are able to postpone your service up to three months through the "My Jury Duty Portal." </p>
+    <p><u class="fw-bold">Postpone three months or less</u></p>
+    <p> If you need to postpone three months or less, please do the following: </p>
+    <ol>
+      <li>
+        <p>Click on the “MyInfo” tab and complete the information on the page. </p>
+      </li>
+      <li>
+        <p> Please complete your summons and register for jury duty by clicking on the "My Summons" tab. 
+          Please answer all the questions in Section A, Step 1. Complete the remainder of the form as prompted. </p>
+      </li>
+      <li>
+        <p>Press the "Submit" button on the page to submit your summons for processing.</p>
+      </li>
+      <li>
+        <p> Click on the “Reschedule” tab and then the “Postpone” tab. 
+          Select your new reporting week and click the "Submit" button on that page. </p>
+      </li>
+    </ol>
+    <p><u class="fw-bold">Postpone more than three months</u></p>
+    <p> If you need to postpone for more than three months, please call (213) 972-0970 between 
+      the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday.  You will need to 
+      speak to an agent to postpone for more than three months. </p>
+  </div>
+  <div id="adapnl" class="infoblock">
+    <p><u class="fw-bold">Request For Special Accommodation</u></p>
+    <p><u class="fw-bold">Assistive Listening System (ALS)</u></p>
+    <p> Portable Assistive Listening Systems (ALS) are available and may be requested from courtroom staff. </p>
+    <p><u class="fw-bold">Interpreter Services</u></p>
+    <p> Jurors requiring a sign language interpreter must contact the Jury Coordinator at 1-888-354-0441 (TTY) 
+      to coordinate their jury duty and sign language interpreter services. </p>
+    <p><u class="fw-bold">Telecommunications Device for the Deaf (TDD)</u></p>
+    <p> Hearing Impaired Jurors must contact the Court’s Telephone Center using Dialogue Text Telephone (TDD/TTY) 
+      No. 1-888-354-0441. This line has been installed to arrange for special interpreter services, or for any 
+      questions relating to jury service. </p>
+    <p><u class="fw-bold">Mobility Impairment</u></p>
+    <p> Mobility Impaired Jurors with disabilities may request accommodation by contacting the court at the assembly room phone number 
+      on your summons. </p>
+    <p><u class="fw-bold">For Additional Accommodations</u></p>
+    <p> Persons with disabilities who require a special accommodation may request the needed accommodation by filling out the Request for 
+      Accommodations by Persons with Disabilities and Order form. Forms are available by clicking on the link form below. You may submit 
+      and mail the form to the Juror Services Division at 320 W. Temple Street, Room 1510, Los Angeles, CA 90012. <br>
+      <br>
+      <a href="http://www.lasuperiorcourt.org/ada/pdf/mc410.pdf" target="_blank">Request for Accommodations by Persons with Disabilities and Response form</a> </p>
+  </div>
+</div>
+</body>
+</html>
