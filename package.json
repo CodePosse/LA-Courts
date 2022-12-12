@@ -20,6 +20,7 @@
         "clean-css": "~5.3.1",
         "gulp": "^4.0.2",
         "gulp-add-src": "^1.0.0",
+        "gulp-cheerio": "^1.0.0",
         "gulp-concat": "~2.6.1",
         "gulp-html-minifier": "^0.1.7",
         "gulp-htmlclean": "~2.7.22",
