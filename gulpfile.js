@@ -29,7 +29,7 @@ gulp.task('unstyle', async function(resolve) {
         .pipe(plumber())
         .pipe(
             cheerio(function($, file) {
-                $("*").removeAttr("cols");
+                $("span").removeAttr("id");
             }),
           )
           .pipe(prettify())
