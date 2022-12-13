@@ -29,8 +29,9 @@ gulp.task('unstyle', async function(resolve) {
         .pipe(plumber())
         .pipe(
             cheerio(function($, file) {
-                $("*").removeAttr("onchange");
+                $("*").removeAttr("cols");
             }),
           )
+          .pipe(prettify())
         .pipe(gulp.dest('./jury/')); //DUDE, CHANGE ME
 });
