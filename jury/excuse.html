@@ -3,13 +3,13 @@
   <head>
     <title>Jury Duty Portal Demo Components</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="width=device-width,initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>LA Court JDP</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <meta name="theme-color" content="##0DFF39" />
+    <meta content="##0DFF39">
   </head>
   <body>
     <header>
@@ -25,7 +25,7 @@
             <p> You are requesting an excuse from jury service. The law requires that the excuse that you provide be in writing and legally sufficient. By law, there are a limited number of reasons for excuse from service. </p>
             <p> Please note that it is perjury to provide any false information on this form. Please select the reason(s) that describes your current situation. </p>
             <p> If your situation is not covered by the selections listed, please call (213) 972-0970 to speak to an agent during the hours of 8:00 AM to 4:30 PM (Pacific Standard Time), Monday through Friday. </p>
-            <select name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$excuseddl" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_excuseddl" aria-label="Excuse reason list" onchange="showhidediv()">
+            <select class="form-select" id="_excuseddl">
               <option value="-1">--Please select one--</option>
               <option value="7">Medical Excuse</option>
               <option value="8">Financial Hardship</option>
@@ -42,21 +42,21 @@
               <tbody>
                 <tr>
                   <td>
-                    <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_above70rb" type="radio" value="above70rb" onclick="radiochange();">
+                    <input id="_above70rb" class="form-check-input" type="radio" value="above70rb">
                   </td>
                   <td>
                     <p>
-                      <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_above70rb" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblOver70">I am 70 years old or older and I have a physical or mental disability or impairment that prevents me from serving.</label>
+                      <label for="_above70rb" id="_lblOver70">I am 70 years old or older and I have a physical or mental disability or impairment that prevents me from serving.</label>
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_below70rb" type="radio" value="below70rb" onclick="radiochange();">
+                    <input id="_below70rb" class="form-check-input" type="radio" value="below70rb">
                   </td>
                   <td>
                     <p>
-                      <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_below70rb" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblUnder70">I am under 70 years old and I have a physical or mental disability or impairment that prevents me from serving.</label>
+                      <label for="_below70rb" id="_lblUnder70">I am under 70 years old and I have a physical or mental disability or impairment that prevents me from serving.</label>
                     </p>
                   </td>
                 </tr>
@@ -75,7 +75,7 @@
                   </td>
                   <td>
                     <span>*</span>
-                    <input type="text" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_adulttext" aria-label="Enter the number of adults living in your household">
+                    <input type="text" class="form-control" id="_adulttext">
                   </td>
                 </tr>
                 <tr>
@@ -84,14 +84,14 @@
                   </td>
                   <td>
                     <span>*</span>
-                    <input type="text" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_minortext" aria-label="Enter the number of minors living in your household">
+                    <input type="text" class="form-control" id="_minortext">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p> Yearly income of entire household (including social security payments, alimony, child support, retirement benefits, etc.): </p>
                   </td>&quot; &quot; <td>
-                    <span>*</span>$<input type="text" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_incometext" aria-label="Enter the yearly income of entire household">
+                    <span>*</span>$<input type="text" class="form-control" id="_incometext">
                   </td>
                 </tr>
                 <tr>
@@ -99,7 +99,7 @@
                     <p>Monthly Household Expenses:</p>
                   </td>
                   <td>
-                    <span>*</span>$<input type="text" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_expensetext" aria-label="Enter the monthly household expenses">
+                    <span>*</span>$<input type="text" class="form-control" id="_expensetext">
                   </td>
                 </tr>
               </tbody>
@@ -109,7 +109,7 @@
             <div id="reasonpnl">
               <p><span id="reasonlbl">Please provide additional information which should be considered to support your financial hardship excuse in the box below:<br>(300 characters max)</span></p>
               <div id="reasondiv">
-                <textarea rows="2" cols="20" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_reasontext" aria-label="Please explain the reason in the box" onkeydown="checkTextAreaMaxLength(this, event, &apos;300&apos;);"></textarea>
+                <textarea class="form-control" cols="20" id="_reasontext"></textarea>
               </div>
               <div id="birthdiv">
               </div>
@@ -124,7 +124,7 @@
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_monthserveddl" aria-label="Please select a month">
+                      <select class="form-select" id="_monthserveddl">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -146,7 +146,7 @@
                       <p>Location served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_courtlocationddl" aria-label="Please select a court location">
+                      <select class="form-select" id="_courtlocationddl">
                         <option value="-1">--Please select one--</option>
                         <option value="49">Airport Courthouse</option>
                         <option value="11">Alhambra Courthouse</option>
@@ -195,14 +195,14 @@
                     <td>
                       <p>Location:</p>
                     </td>
-                    <td><input type="text" maxlength="50" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_textfedlocation" aria-label="Federal court location"></td>
+                    <td><input type="text" class="form-control" id="_textfedlocation"></td>
                   </tr>
                   <tr>
                     <td>
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjurormonth" aria-label="Please select the month when you served">
+                      <select class="form-select" id="_ddlfedjurormonth">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -222,7 +222,7 @@
                   <tr>
                     <td>Year Served:</td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjuroryear" aria-label="Please select the year when you served">
+                      <select class="form-select" id="_ddlfedjuroryear">
                         <option value="-1">--Please select one--</option>
                         <option value="2021">2021</option>
                         <option value="2022">2022</option>
@@ -235,7 +235,7 @@
           </div>
           <hr>
           <h1>obligations</h1>
-          <div id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_obligationpnl">
+          <div id="_obligationpnl">
             <p> I have a personal obligation to provide full time care to a relative from the hours of 8:00 AM to 5:00 PM, Monday through Friday. Please complete the information in the boxes below. </p>
             <p> Please note that if you are a paid professional care provider, you may not be eligible for this excuse. If you are a paid professional care provider and jury duty would be a financial hardship for you, please select the &#x201C;Financial Hardship&#x201D; reason in the dropdown box above. </p>
             <table>
@@ -245,7 +245,7 @@
                     <p>Relationship:</p>
                   </td>
                   <td>
-                    <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_obligationddl" aria-label="Obligation list" onchange="relationshipchange()">
+                    <select class="form-select" id="_obligationddl">
                       <option value="-1">--Please Select One--</option>
                       <option value="child">Son and/or Daughter</option>
                       <option value="parent">Parent</option>
@@ -259,12 +259,12 @@
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_numberlbl">Number of people:</span>
+                      <span id="_numberlbl">Number of people:</span>
                     </p>
                   </td>
                   <td></td>
                   <td>
-                    <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_numberddl" aria-label="Select the number of people" onchange="numberchange()">
+                    <select class="form-select" id="_numberddl">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -285,111 +285,111 @@
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_namelbl1">Name:</span>
+                      <span id="_namelbl1">Name:</span>
                     </p>
                   </td>
                   <td colspan="3">
-                    <span id="nt1">*</span><input type="text" maxlength="100" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext1" aria-label="Enter the first person&apos;s name">
+                    <span id="nt1">*</span><input type="text" class="form-control" id="_nametext1">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agelbl1">Age:</span>
+                      <span id="_agelbl1">Age:</span>
                     </p>
                   </td>
                   <td colspan="3">
-                    <span id="at1">*</span><input type="text" maxlength="3" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext1" aria-label="Enter the first person&apos;s age">
+                    <span id="at1">*</span><input type="text" class="form-control" id="_agetext1">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_namelbl2">Name:</span>
+                      <span id="_namelbl2">Name:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="nt2">*</span><input type="text" maxlength="100" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext2" aria-label="Enter the second person&apos;s name">
+                    <span id="nt2">*</span><input type="text" class="form-control" id="_nametext2">
                   </td>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agelbl2">Age:</span>
+                      <span id="_agelbl2">Age:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="at2">*</span><input type="text" maxlength="3" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext2" aria-label="Enter the second person&apos;s age">
+                    <span id="at2">*</span><input type="text" class="form-control" id="_agetext2">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_namelbl3">Name:</span>
+                      <span id="_namelbl3">Name:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="nt3">*</span><input type="text" maxlength="100" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext3" aria-label="Enter the third person&apos;s name">
+                    <span id="nt3">*</span><input type="text" class="form-control" id="_nametext3">
                   </td>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agelbl3">Age:</span>
+                      <span id="_agelbl3">Age:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="at3">*</span><input type="text" maxlength="3" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext3" aria-label="Enter the third person&apos;s age">
+                    <span id="at3">*</span><input type="text" class="form-control" id="_agetext3">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_namelbl4">Name:</span>
+                      <span id="_namelbl4">Name:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="nt4">*</span><input type="text" maxlength="100" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext4" aria-label="Enter the fourth person&apos;s name">
+                    <span id="nt4">*</span><input type="text" class="form-control" id="_nametext4">
                   </td>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agelbl4">Age:</span>
+                      <span id="_agelbl4">Age:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="at4">*</span><input type="text" maxlength="3" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext4" aria-label="Enter the fourth person&apos;s age">
+                    <span id="at4">*</span><input type="text" class="form-control" id="_agetext4">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_namelbl5">Name:</span>
+                      <span id="_namelbl5">Name:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="nt5">*</span><input type="text" maxlength="100" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext5" aria-label="Enter the fifth person&apos;s name">
+                    <span id="nt5">*</span><input type="text" class="form-control" id="_nametext5">
                   </td>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agelbl5">Age:</span>
+                      <span id="_agelbl5">Age:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="at5">*</span><input type="text" maxlength="3" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext5" aria-label="enter the fifth person&apos;s age">
+                    <span id="at5">*</span><input type="text" class="form-control" id="_agetext5">
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_namelbl6">Name:</span>
+                      <span id="_namelbl6">Name:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="nt6">*</span><input type="text" maxlength="100" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext6" aria-label="Enter the sixth person&apos;s name">
+                    <span id="nt6">*</span><input type="text" class="form-control" id="_nametext6">
                   </td>
                   <td>
                     <p>
-                      <span id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agelbl6">Age:</span>
+                      <span id="_agelbl6">Age:</span>
                     </p>
                   </td>
                   <td>
-                    <span id="at6">*</span><input type="text" maxlength="3" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext6" aria-label="Enter the sixth person&apos;s age">
+                    <span id="at6">*</span><input type="text" class="form-control" id="_agetext6">
                   </td>
                 </tr>
               </tbody>
@@ -399,7 +399,7 @@
             <div id="reasonpnl">
               <p><span id="reasonlbl"><span>*</span>Please provide the type of full-time care that you provide for the person. Also, if you work, please provide your work schedule.<br>(300 characters max)</span></p>
               <div id="reasondiv">
-                <textarea rows="2" cols="20" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_reasontext" aria-label="Please explain the reason in the box" onkeydown="checkTextAreaMaxLength(this, event, &apos;300&apos;);"></textarea>
+                <textarea class="form-control" cols="20" id="_reasontext"></textarea>
               </div>
               <div id="birthdiv">
               </div>
@@ -414,7 +414,7 @@
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_monthserveddl" aria-label="Please select a month">
+                      <select class="form-select" id="_monthserveddl">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -436,7 +436,7 @@
                       <p>Location served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_courtlocationddl" aria-label="Please select a court location">
+                      <select class="form-select" id="_courtlocationddl">
                         <option value="-1">--Please select one--</option>
                         <option value="49">Airport Courthouse</option>
                         <option value="11">Alhambra Courthouse</option>
@@ -485,14 +485,14 @@
                     <td>
                       <p>Location:</p>
                     </td>
-                    <td><input type="text" maxlength="50" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_textfedlocation" aria-label="Federal court location"></td>
+                    <td><input type="text" class="form-control" id="_textfedlocation"></td>
                   </tr>
                   <tr>
                     <td>
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjurormonth" aria-label="Please select the month when you served">
+                      <select class="form-select" id="_ddlfedjurormonth">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -512,7 +512,7 @@
                   <tr>
                     <td>Year Served:</td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjuroryear" aria-label="Please select the year when you served">
+                      <select class="form-select" id="_ddlfedjuroryear">
                         <option value="-1">--Please select one--</option>
                         <option value="2021">2021</option>
                         <option value="2022">2022</option>
@@ -533,7 +533,7 @@
             <div id="reasonpnl">
               <p><span id="reasonlbl"><span>*</span>Please explain in the box below:<br>(300 characters max)</span></p>
               <div id="reasondiv">
-                <textarea rows="2" cols="20" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_reasontext" aria-label="Please explain the reason in the box" onkeydown="checkTextAreaMaxLength(this, event, &apos;300&apos;);"></textarea>
+                <textarea class="form-control" cols="20" id="_reasontext"></textarea>
               </div>
               <div id="birthdiv">
               </div>
@@ -548,7 +548,7 @@
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_monthserveddl" aria-label="Please select a month">
+                      <select class="form-select" id="_monthserveddl">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -570,7 +570,7 @@
                       <p>Location served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_courtlocationddl" aria-label="Please select a court location">
+                      <select class="form-select" id="_courtlocationddl">
                         <option value="-1">--Please select one--</option>
                         <option value="49">Airport Courthouse</option>
                         <option value="11">Alhambra Courthouse</option>
@@ -619,14 +619,14 @@
                     <td>
                       <p>Location:</p>
                     </td>
-                    <td><input type="text" maxlength="50" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_textfedlocation" aria-label="Federal court location"></td>
+                    <td><input type="text" class="form-control" id="_textfedlocation"></td>
                   </tr>
                   <tr>
                     <td>
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjurormonth" aria-label="Please select the month when you served">
+                      <select class="form-select" id="_ddlfedjurormonth">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -646,7 +646,7 @@
                   <tr>
                     <td>Year Served:</td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjuroryear" aria-label="Please select the year when you served">
+                      <select class="form-select" id="_ddlfedjuroryear">
                         <option value="-1">--Please select one--</option>
                         <option value="2021">2021</option>
                         <option value="2022">2022</option>
@@ -664,21 +664,21 @@
               <tbody>
                 <tr>
                   <td>
-                    <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lajuryrb" type="radio" value="lajuryrb" onclick="juryradiochange();">
+                    <input id="_lajuryrb" class="form-check-input" type="radio" value="lajuryrb">
                   </td>
                   <td>
                     <p>
-                      <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lajuryrb" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblServedAsGrandTrial">I have served as a Grand juror or Trial juror in the last 12 months.</label>
+                      <label for="_lajuryrb" id="_lblServedAsGrandTrial">I have served as a Grand juror or Trial juror in the last 12 months.</label>
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_fedjuryrb" type="radio" value="fedjuryrb" onclick="juryradiochange();">
+                    <input id="_fedjuryrb" class="form-check-input" type="radio" value="fedjuryrb">
                   </td>
                   <td>
                     <p>
-                      <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_fedjuryrb" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblServedAsFed">I am serving or just served as a juror in the Federal Court.</label>
+                      <label for="_fedjuryrb" id="_lblServedAsFed">I am serving or just served as a juror in the Federal Court.</label>
                     </p>
                   </td>
                 </tr>
@@ -686,13 +686,13 @@
             </table>
           </div>
           <hr>
-          <h1>other/student/teacher/breasfeeding</h1>
+          <h1>other/student/teacher/breastfeeding</h1>
           <div id="otherpnl"> Full-time student status, occupation as a teacher, and age do not qualify for an excuse. Service can be schedule to a more convenient time. Breast feeding a child will qualify for postponement reason. Only serious matters will be considered using this reason. </div>
           <div>
             <div id="reasonpnl">
               <p><span id="reasonlbl"><span>*</span>Please explain in the box below:<br>(300 characters max)</span></p>
               <div id="reasondiv">
-                <textarea rows="2" cols="20" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_reasontext" aria-label="Please explain the reason in the box" onkeydown="checkTextAreaMaxLength(this, event, &apos;300&apos;);"></textarea>
+                <textarea class="form-control" cols="20" id="_reasontext"></textarea>
               </div>
               <div id="birthdiv">
               </div>
@@ -707,7 +707,7 @@
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_monthserveddl" aria-label="Please select a month">
+                      <select class="form-select" id="_monthserveddl">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -729,7 +729,7 @@
                       <p>Location served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_courtlocationddl" aria-label="Please select a court location">
+                      <select class="form-select" id="_courtlocationddl">
                         <option value="-1">--Please select one--</option>
                         <option value="49">Airport Courthouse</option>
                         <option value="11">Alhambra Courthouse</option>
@@ -778,14 +778,14 @@
                     <td>
                       <p>Location:</p>
                     </td>
-                    <td><input type="text" maxlength="50" id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_textfedlocation" aria-label="Federal court location"></td>
+                    <td><input type="text" class="form-control" id="_textfedlocation"></td>
                   </tr>
                   <tr>
                     <td>
                       <p>Month Served:</p>
                     </td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjurormonth" aria-label="Please select the month when you served">
+                      <select class="form-select" id="_ddlfedjurormonth">
                         <option value="00">--Please select a month--</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -805,7 +805,7 @@
                   <tr>
                     <td>Year Served:</td>
                     <td>
-                      <select id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjuroryear" aria-label="Please select the year when you served">
+                      <select class="form-select" id="_ddlfedjuroryear">
                         <option value="-1">--Please select one--</option>
                         <option value="2021">2021</option>
                         <option value="2022">2022</option>
