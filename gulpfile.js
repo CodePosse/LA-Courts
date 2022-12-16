@@ -19,7 +19,7 @@ gulp.task('miniHTML', async function() {
 });
 
 gulp.task('prettyHTML', async function(resolve) {
-    gulp.src('./jury/excuse.html') //DUDE, CHANGE ME
+    gulp.src('./jury/*.html') //DUDE, CHANGE ME
         .pipe(plumber())
         .pipe(prettify())
         .pipe(gulp.dest('./jury/')); //DUDE, CHANGE ME
