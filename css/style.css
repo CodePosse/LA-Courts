@@ -223,3 +223,8 @@ option.exempt {
 
 .accordion-collapse.collapse.show .accordion-body{background-color: aliceblue;}
 code{color:black !important}
+
+@media (min-width: 1200px){
+.modal-xl {
+    max-width: 90vw;
+}}

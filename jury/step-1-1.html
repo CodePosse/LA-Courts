@@ -538,7 +538,7 @@
     </div>
     <!--special handling modals-->
     <div class="modal fade" id="specHandModalDemo" tabindex="-1" aria-labelledby="specHandModalDemo" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header bg-info">
             <h1 class="modal-title fs-5" id="questionModalLabel">Special Handling Request</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -549,7 +549,7 @@
     </div>
     <!-- question madal -->
     <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header bg-info">
             <h1 class="modal-title fs-5" id="questionModalLabel">Eligibility Questionnaire</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -557,7 +557,7 @@
           <div class="modal-body">
             <form class="container needs-validation" novalidate id="questionnaire">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6">
                   <div class="control-group border row">
                     <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">1</span> I am a citizen of the United States.<div class="col-12 ps-md-5"><label for="x1" class="form-label">If NO, I am a citizen of:</label> <input type="text" class="form-control" id="x1" value></div>
                       <div class="col-12 ps-md-5 pt-2"><label for="x2" class="form-label">Alien Registration number:</label> <input type="text" class="form-control" id="x2" value></div>
@@ -636,7 +636,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6">
                   <div class="control-group border row">
                     <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">7</span> I am under a court-appointed conservatorship.</div>
                     <div class="pb-2 bg-light col-3">
@@ -721,7 +721,7 @@
     </div>
     <!-- info modal -->
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header bg-info">
             <h1 class="modal-title fs-5" id="infoModalLabel">Verify Personal Information</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -745,14 +745,14 @@
                       <div class="card-body">
                         <p class="card-text">Please note that if you have legally changed your name, or your name as shown is incorrect, you may execute a name change only when you report for service. A valid, government issued picture ID such as a driver&apos;s license or passport is required to effect a name change.</p>
                         <div class="row">
-                          <div class="col-sm-3"><label for="firstName" class="form-label">First name</label> <input type="text" class="form-control" id="firstName" placeholder value="Keith" disabled="disabled">
+                          <div class="col-md-3"><label for="firstName" class="form-label">First name</label> <input type="text" class="form-control" id="firstName" placeholder value="Keith" disabled="disabled">
                             <div class="invalid-feedback">Valid first name is required.</div>
                           </div>
-                          <div class="col-sm-3"><label for="middleName" class="form-label">Middle initial</label> <input type="text" class="form-control" id="middleName" placeholder value="A" size="4" disabled="disabled"></div>
-                          <div class="col-sm-3"><label for="lastName" class="form-label">Last name</label> <input type="text" class="form-control" id="lastName" placeholder value="Teruya" disabled="disabled">
+                          <div class="col-md-3"><label for="middleName" class="form-label">Middle initial</label> <input type="text" class="form-control" id="middleName" placeholder value="A" size="4" disabled="disabled"></div>
+                          <div class="col-md-3"><label for="lastName" class="form-label">Last name</label> <input type="text" class="form-control" id="lastName" placeholder value="Teruya" disabled="disabled">
                             <div class="invalid-feedback">Valid last name is required.</div>
                           </div>
-                          <div class="col-sm-2"><label for="birthYear" class="form-label">Birth year</label> <input type="number" class="form-control" id="birthYear" placeholder value="1947" size="4" min="1900" max="2022" disabled="disabled">
+                          <div class="col-md-2"><label for="birthYear" class="form-label">Birth year</label> <input type="number" class="form-control" id="birthYear" placeholder value="1947" size="4" min="1900" max="2022" disabled="disabled">
                             <div class="invalid-feedback">Valid birth year is required.</div>
                           </div>
                         </div>
@@ -790,7 +790,7 @@
                                       <option value>1/3</option>
                                       <option value>1/4</option>
                                     </select></div>
-                                  <div class="col-sm-5 py-2"><label for="stname" class="form-label">Street name</label> <input type class="form-control" id="stname" required>
+                                  <div class="col-md-5 py-2"><label for="stname" class="form-label">Street name</label> <input type class="form-control" id="stname" required>
                                     <div class="invalid-feedback">Please enter a street name.</div>
                                   </div>
                                   <div class="col-md-2 py-2"><label for="suffix" class="form-label">Suffix</label> <select name id="suffix" class="form-select">
@@ -821,11 +821,11 @@
                       <div class="card-body">
                         <p class="card-text"><span class="text-danger">*</span> Please provide at least one phone number in the fields below.</p>
                         <div class="row">
-                          <div class="col-sm-4 mb-2"><label for="homePhone" class="form-label">Home phone number</label> <input type="number" class="form-control" id="homePhone" placeholder value min="2012222222" max="9989989999"></div>
-                          <div class="col-sm-4 mb-2"><label for="workPhone" class="form-label">Work phone number</label> <input type="number" class="form-control" id="workPhone" placeholder value min="2012222222" max="9989989999"></div>
-                          <div class="col-sm-2 mb-2"><label for="workExtPhone" class="form-label">Work extension</label> <input type="number" class="form-control" id="workExtPhone" placeholder value size="7"></div>
-                          <div class="col-sm-4 mb-2"><label for="mobilePhone" class="form-label">Mobile phone number</label> <input type="number" class="form-control" id="mobilePhone" placeholder value min="2012222222" max="9989989999"></div>
-                          <div class="col-sm-4 mb-2"><label for="email" class="form-label">E-mail</label> <input type="email" class="form-control" id="email"></div>
+                          <div class="col-md-4 mb-2"><label for="homePhone" class="form-label">Home phone number</label> <input type="number" class="form-control" id="homePhone" placeholder value min="2012222222" max="9989989999"></div>
+                          <div class="col-md-4 mb-2"><label for="workPhone" class="form-label">Work phone number</label> <input type="number" class="form-control" id="workPhone" placeholder value min="2012222222" max="9989989999"></div>
+                          <div class="col-md-2 mb-2"><label for="workExtPhone" class="form-label">Work extension</label> <input type="number" class="form-control" id="workExtPhone" placeholder value size="7"></div>
+                          <div class="col-md-4 mb-2"><label for="mobilePhone" class="form-label">Mobile phone number</label> <input type="number" class="form-control" id="mobilePhone" placeholder value min="2012222222" max="9989989999"></div>
+                          <div class="col-md-4 mb-2"><label for="email" class="form-label">E-mail</label> <input type="email" class="form-control" id="email"></div>
                         </div>
                       </div>
                     </div>
@@ -888,13 +888,13 @@
                         <p class="card-text"><span class="text-danger">*</span> Please provide an emergency contact in the fields below.</p>
                         <div class="row">
                           <div class="col-12 py-2">This is for your safety! In case of an emergency, we will need to contact someone for you. This information is kept confidential and will not be used for any other purpose. Please make this information as accurate as possible.</div>
-                          <div class="col-sm-4"><label for="emerName" class="form-label">Name</label> <input type="text" class="form-control" id="emerName" placeholder value required>
+                          <div class="col-md-4"><label for="emerName" class="form-label">Name</label> <input type="text" class="form-control" id="emerName" placeholder value required>
                             <div class="invalid-feedback">Contact name is required.</div>
                           </div>
-                          <div class="col-sm-4"><label for="emerRelationship" class="form-label">Relationship</label> <input type="text" class="form-control" id="emerRelationship" placeholder value required>
+                          <div class="col-md-4"><label for="emerRelationship" class="form-label">Relationship</label> <input type="text" class="form-control" id="emerRelationship" placeholder value required>
                             <div class="invalid-feedback">Contact relationship is required.</div>
                           </div>
-                          <div class="col-sm-4"><label for="emerPhone" class="form-label">Phone number</label> <input type="number" class="form-control" id="emerPhone" placeholder value min="2012222222" max="9989989999" required>
+                          <div class="col-md-4"><label for="emerPhone" class="form-label">Phone number</label> <input type="number" class="form-control" id="emerPhone" placeholder value min="2012222222" max="9989989999" required>
                             <div class="invalid-feedback">Contact number is required.</div>
                           </div>
                         </div>
