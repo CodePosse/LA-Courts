@@ -139,7 +139,7 @@
                                 Complete the remainder of the form as prompted. </p>
                             </li>
                             <li>
-                              <p> Press the “Submit” button on the page to submit your summons for processing. </p>
+                              <p> Press the "Submit" button on the form to submit your summons for processing. </p>
                             </li>
                             <li>
                               <p> On the confirmation page, confirm your service week and the 
@@ -173,7 +173,7 @@
                                 </tr>
                                 <tr>
                                   <td style="vertical-align:top; width:30px;"><span aria-label="Juror died outside Los Angeles County">
-                                    <input id="rbdeathoutside" type="radio" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$deathrb" value="rbdeathoutside" onclick="disablefields();">
+                                    <input id="rbdeathoutside" type="radio" class="form-check-input" value="rbdeathoutside">
                                     </span></td>
                                   <td><p style="margin-top:0px;"> If the juror is deceased and he/she died outside Los Angeles County, please indicate that the juror is deceased 
                                       in Section D, return the jury summons and a <b>copy</b> of the death certificate to this address: </p>
@@ -189,7 +189,7 @@
                                 </tr>
                                 <tr>
                                   <td style="vertical-align:top;"><span aria-label="Juror died within Los Angeles County">
-                                    <input id="rbdeathinside" type="radio" name="" value="rbdeathinside" onclick="disablefields();">
+                                    <input id="rbdeathinside" type="radio" name="" value="rbdeathinside" class="form-check-input">
                                     </span></td>
                                   <td><p style="margin-top:0px;"> If the juror is deceased and he/she died within Los Angeles County, please fill out the 
                                       sections below and click the "Submit" button. We will review the information and respond back 
@@ -229,23 +229,24 @@
                             </table>
                           </fieldset>
                           <br>
-                          <table style="border-collapse: collapse;">
+                          <div class="bd-callout bd-callout-danger p-3 bg-white">
+                          <table>
                             <tbody>
-                              <tr style="color: White; background-color: Gray">
-                                <td style="padding-right: 5px; vertical-align: top"><input id="certifycheck" type="checkbox" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$certifycheck"></td>
+                              <tr>
+                                <td valign="top" class="p-2"><input id="certifycheck" type="checkbox" class="form-check-input"></td>
                                 <td><label for="certifycheck" id="lbl_certify">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)). </label></td>
                               </tr>
-                              <tr style="color: White; background-color: Gray">
-                                <td style="padding-right: 5px; vertical-align: top"><span aria-label="I allow the Court to use this as my electronic signature. ">
-                                  <input id="digitalcheck" type="checkbox" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$digitalcheck">
+                              <tr>
+                                <td valign="top" class="p-2"><span aria-label="I allow the Court to use this as my electronic signature. ">
+                                  <input id="digitalcheck" type="checkbox" class="form-check-input">
                                   </span></td>
                                 <td><label for="digitalcheck" id="Label3">I allow the Court to use this as my electronic signature. </label></td>
                               </tr>
                               <tr>
-                                <td colspan="2"><input type="submit" name="ctl00$ctl00$ctl00$siteMasterHolder$basicBodyHolder$ContentPlaceHolder1$submitbtn" value="Submit" onclick="return certifycheck();" id="submitbtn"></td>
+                                <td colspan="2"><button type="button" value="Submit" class="btn btn-primary" id="submitbtn">Submit</button></td>
                               </tr>
                             </tbody>
-                          </table>
+                          </table></div>
                         </div>
                       </div>
                     </div>
@@ -365,7 +366,7 @@
                               as prompted. </p>
                           </li>
                           <li>
-                            <p>Press the "Submit" button on the page to submit your summons for processing.</p>
+                            <p>Press the "Submit" button on the form to submit your summons for processing.</p>
                           </li>
                           <li>
                             <p> Click on the "Reschedule" tab, then the "Postponement" tab, and postpone to a week when you have 
@@ -399,7 +400,7 @@
                               Complete the remainder of the form as prompted. </p>
                           </li>
                           <li>
-                            <p>Press the "Submit" button on the page to submit your summons for processing. </p>
+                            <p>Press the "Submit" button on the form to submit your summons for processing. </p>
                           </li>
                         </ol>
                         <p><u class="fw-bold">Over 70 with medical excuse</u></p>
@@ -416,7 +417,7 @@
                               Complete the remainder of the form as prompted. </p>
                           </li>
                           <li>
-                            <p>Press the “Submit” button on the page to submit your summons for processing.</p>
+                            <p>Press the "Submit" button on the form to submit your summons for processing.</p>
                           </li>
                           <li>
                             <p> Click on the “Excuse” tab and select “Medical Excuse”.  Follow the prompts on the page to complete a 
@@ -436,7 +437,7 @@
                                Complete the remainder of the form as prompted. </p>
                           </li>
                           <li>
-                            <p> Press the “Submit” button on the page to submit your summons for processing. </p>
+                            <p> Press the "Submit" button on the form to submit your summons for processing. </p>
                           </li>
                           <li>
                             <p> Click on the “Reschedule” tab and then the “Transfer” tab. Follow the prompts to submit your request for a transfer. </p>
@@ -471,7 +472,7 @@
                               Complete the remainder of the form as prompted. </p>
                           </li>
                           <li>
-                            <p>Press the "Submit" button on the page to submit your summons for processing.</p>
+                            <p>Press the "Submit" button on the form to submit your summons for processing.</p>
                           </li>
                           <li>
                             <p> Click on the “Reschedule” tab and then the “Postpone” tab. 
