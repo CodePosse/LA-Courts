@@ -22,7 +22,7 @@
 </button>
 	<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+  <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -51,7 +51,7 @@
       <table id="chart">
         <tbody>
           <tr>
-            <td class="radio"><input id="jobrb" type="radio" name="$reasonrbl" value="jobrb"></td>
+            <td class="radio"><input id="jobrb" class="form-check-input" type="radio" name="$reasonrbl" value="jobrb"></td>
             <td><div class="popup">
               <p>
                 <label for="jobrb" id="lblJobSchoolRelated">Job or school related</label>
@@ -68,7 +68,7 @@
             </div></td>
           </tr>
           <tr>
-            <td class="radio"><input id="distancerb" type="radio" name="$reasonrbl" value="distancerb"></td>
+            <td class="radio"><input id="distancerb" class="form-check-input" type="radio" name="$reasonrbl" value="distancerb"></td>
             <td><div class="popup">
               <p>
                 <label for="distancerb" id="lblGreaterMileage">Greater than 20 miles</label>
@@ -78,7 +78,7 @@
             </div></td>
           </tr>
           <tr>
-            <td class="radio"><input id="healthrb" type="radio" name="$reasonrbl" value="healthrb"></td>
+            <td class="radio"><input id="healthrb" class="form-check-input" type="radio" name="$reasonrbl" value="healthrb"></td>
             <td><div class="popup">
               <p>
                 <label for="healthrb" id="lblHealth">Health reasons</label>
@@ -88,7 +88,7 @@
             </div></td>
           </tr>
           <tr>
-            <td class="radio"><input id="carerb" type="radio" name="$reasonrbl" value="carerb"></td>
+            <td class="radio"><input id="carerb" class="form-check-input" type="radio" name="$reasonrbl" value="carerb"></td>
             <td><div class="popup">
               <p>
                 <label for="carerb" id="lblEssentialCare">Essential care of others</label>
@@ -98,7 +98,7 @@
             </div></td>
           </tr>
           <tr>
-            <td class="radio"><input id="transportrb" type="radio" name="$reasonrbl" value="transportrb"></td>
+            <td class="radio"><input id="transportrb" class="form-check-input" type="radio" name="$reasonrbl" value="transportrb"></td>
             <td><div class="popup">
               <p>
                 <label for="transportrb" id="lbltransportation">No feasible transportation</label>
@@ -108,7 +108,7 @@
             </div></td>
           </tr>
           <tr>
-            <td class="radio"><input id="otherrb" type="radio" name="$reasonrbl" value="otherrb"></td>
+            <td class="radio"><input id="otherrb" class="form-check-input" type="radio" name="$reasonrbl" value="otherrb"></td>
             <td><div class="popup">
               <p>
                 <label for="otherrb" id="lblOtherReason">Other reason</label>
@@ -126,12 +126,12 @@
             </tr>
             <tr>
               <td><p>Address:</p></td>
-              <td><input name="$empaddrtext" type="text" id="empaddrtext" aria-label="Enter your work or school address"></td>
+              <td><input name="$empaddrtext" class="form-control" type="text" id="empaddrtext" aria-label="Enter your work or school address"></td>
               <td><span class="asterisk">*</span></td>
             </tr>
             <tr>
               <td><p>City:</p></td>
-              <td><input name="$empcitytext" type="text" id="empcitytext" aria-label="Enter your work or school city"></td>
+              <td><input name="$empcitytext" class="form-control" type="text" id="empcitytext" aria-label="Enter your work or school city"></td>
               <td><span class="asterisk">*</span></td>
             </tr>
           </tbody>
@@ -176,7 +176,7 @@
             </tr>
             <tr>
               <td><p>Dependent's Age:</p></td>
-              <td><input name="$agetext" type="text" maxlength="3" id="agetext" aria-label="Enter dependent's age"></td>
+              <td><input name="$agetext" class="form-control" type="text" maxlength="3" id="agetext" aria-label="Enter dependent's age"></td>
               <td><span class="asterisk">*</span></td>
             </tr>
           </tbody>
@@ -201,28 +201,28 @@
             </tr>
             <tr>
               <td> 1. </td>
-              <td><input name="$textBusName1" type="text" id="textBusName1" aria-label="Enter the first bus name"></td>
-              <td><input name="$textBusLine1" type="text" id="textBusLine1" aria-label="Enter the first bus line"></td>
+              <td><input name="$textBusName1" class="form-control" type="text" id="textBusName1" aria-label="Enter the first bus name"></td>
+              <td><input name="$textBusLine1" class="form-control" type="text" id="textBusLine1" aria-label="Enter the first bus line"></td>
             </tr>
             <tr>
               <td> 2. </td>
-              <td><input name="$textBusName2" type="text" id="textBusName2" aria-label="Enter the second bus name"></td>
-              <td><input name="$textBusLine2" type="text" id="textBusLine2" aria-label="Enter the second bus line"></td>
+              <td><input name="$textBusName2" class="form-control" type="text" id="textBusName2" aria-label="Enter the second bus name"></td>
+              <td><input name="$textBusLine2" class="form-control" type="text" id="textBusLine2" aria-label="Enter the second bus line"></td>
             </tr>
             <tr>
               <td> 3. </td>
-              <td><input name="$textBusName3" type="text" id="textBusName3" aria-label="Enter the third bus name"></td>
-              <td><input name="$textBusLine3" type="text" id="textBusLine3" aria-label="Enter the third bus line"></td>
+              <td><input name="$textBusName3" class="form-control" type="text" id="textBusName3" aria-label="Enter the third bus name"></td>
+              <td><input name="$textBusLine3" class="form-control" type="text" id="textBusLine3" aria-label="Enter the third bus line"></td>
             </tr>
             <tr>
               <td> 4. </td>
-              <td><input name="$textBusName4" type="text" id="textBusName4" aria-label="Enter the fourth bus name"></td>
-              <td><input name="$textBusLine4" type="text" id="textBusLine4" aria-label="Enter the fourth bus line"></td>
+              <td><input name="$textBusName4" class="form-control" type="text" id="textBusName4" aria-label="Enter the fourth bus name"></td>
+              <td><input name="$textBusLine4" class="form-control" type="text" id="textBusLine4" aria-label="Enter the fourth bus line"></td>
             </tr>
             <tr>
               <td> 5. </td>
-              <td><input name="$textBusName5" type="text" id="textBusName5" aria-label="Enter the fifth bus name"></td>
-              <td><input name="$textBusLine5" type="text" id="textBusLine5" aria-label="Enter the fifth bus line"></td>
+              <td><input name="$textBusName5" class="form-control" type="text" id="textBusName5" aria-label="Enter the fifth bus name"></td>
+              <td><input name="$textBusLine5" class="form-control" type="text" id="textBusLine5" aria-label="Enter the fifth bus line"></td>
             </tr>
           </tbody>
         </table>
@@ -239,37 +239,36 @@
     </div>
     <div style="clear:both"></div>
   </div>
-  <div class="burgandy">
+  <div class="bd-callout bd-callout-danger p-3 col-12 mb-1">
     <div>
       <table>
         <tbody>
           <tr>
-            <td valign="top"><input id="certifybox" type="checkbox" name="$certifybox"></td>
-            <td><label for="certifybox" id="lblCertifyBox">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)). </label></td>
+            <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="$certifybox"><label for="certifybox" id="lblCertifyBox">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)). </label></div>
           </tr>
           <tr>
-            <td><input id="signaturecb" type="checkbox" name="$signaturecb"></td>
-            <td><label for="signaturecb" id="Label31"> I allow the Court to use this as my electronic signature.</label></td>
+            <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="$signaturecb">
+            <label for="signaturecb" id="Label31"> I allow the Court to use this as my electronic signature.</label></div>
           </tr>
         </tbody>
       </table>
       <table>
         <tbody>
           <tr>
-            <td><input type="button" value="Submit"></td>
-            <td><input type="submit" name="$cancelbtn" value="Cancel" id="cancelbtn"></td>
+            <td><button type="button" class="btn btn-primary" value="Submit">Submit</button></td>
+            <td><button type="submit" class="btn btn-primary" name="$cancelbtn" value="Cancel" id="cancelbtn">Cancel</button></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  <div id="submitFormWindow" class="modal_window">
+  <div id="submitFormWindow" class="bd-callout bd-callout-warning p-3 col-12 mb-1">
     <p> By clicking the "Submit Request" button below, you understand that you are requesting a transfer to a different court location. </p>
     <p> There is also a chance that you will receive a new service date. </p>
     <p> If you do not wish to request a transfer, click the "Cancel" button. </p>
     <div>
-      <input type="submit" name="$Submitbtn" value="Submit Request">
-      <input type="button" value="Cancel" >
+      <button type="submit" class="btn btn-primary" name="$Submitbtn" value="Submit Request">Submit Request</button>
+      <button type="button" class="btn btn-primary" value="Cancel" >Cancel</button>
     </div>
   </div>
 </div>
