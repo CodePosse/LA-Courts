@@ -15,6 +15,11 @@
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <meta name="theme-color" content="##0DFF39" />
+  <style>
+    .box {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -49,19 +54,19 @@
                 <div class="row py-2">
                   <div class="col">
                     <strong>Transfer Reason:</strong>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example"  id="select_transfer">
                       <option selected>Open this select menu</option>
-                      <option value="1">Job or school related</option>
-                      <option value="2">Greater than 20 miles</option>
-                      <option value="3">Health reasons</option>
-                      <option value="4">Essential care of others</option>
-                      <option value="5">No feasable transportation</option>
-                      <option value="6">Other reason</option>
+                      <option value="job">Job or school related</option>
+                      <option value="distance">Greater than 20 miles</option>
+                      <option value="health">Health reasons</option>
+                      <option value="care">Essential care of others</option>
+                      <option value="transpo">No feasable transportation</option>
+                      <option value="other">Other reason</option>
                     </select>
                   </div>
                 </div>
                 <hr noshade="">
-                <div class="row border" id="job">
+                <div class="row border box job" id="job">
                   <div class="col-md-12">
                     <div class="row">
                       <p>
@@ -82,7 +87,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row border" id="distance">
+                <div class="row border box distance" id="distance">
                   <div class="col">
                     <div class="row">
                       <p>
@@ -95,7 +100,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row border" id="health">
+                <div class="row border box health" id="health">
                   <div class="col">
                     <div class="row">
                       <p>
@@ -108,7 +113,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row border" id="care">
+                <div class="row border box care" id="care">
                   <div class="col">
                     <div class="row">
                       <p>
@@ -121,7 +126,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row border" id="transpo">
+                <div class="row border box transpo" id="transpo">
                   <div class="col">
                     <div class="row">
                       <p>
@@ -135,7 +140,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row border" id="other">
+                <div class="row border box other" id="other">
                   <div class="col">
                     <div class="row">
                       <p>
@@ -353,12 +358,21 @@
     crossorigin="anonymous"></script>
   <script src="../js/global.js"></script>
   <script>
-    window.onload = () => {
-      $("#dangerModal").modal("show")
-    };
-    (function blink() {
-      $('.blink_me').fadeOut(500).fadeIn(500, blink);
-    })();
+    //https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div-using-select-box
+    $(document).ready(function () {
+      $("#select_transfer").change(function () {
+        $(this).find("option:selected").each(function () {
+          var optionValue = $(this).attr("value");
+          if (optionValue) {
+            $(".box").not("." + optionValue).hide();
+            $("." + optionValue).show();
+          }
+          else {
+            $(".box").hide();
+          }
+        });
+      }).change();
+    });
   </script>
 </body>
 
