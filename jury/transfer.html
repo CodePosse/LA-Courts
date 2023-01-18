@@ -198,7 +198,7 @@
                         <div class="col-md-6">
                           <p>Relationship to Dependent</p>
                         </div>
-                        <div class="col-md-6"><select name="$dependentddl" id="dependentddl"
+                        <div class="col-md-6"><select class="form-select"
                             aria-label="Select relationship to dependent from the list">
                             <option value="-1">--Please Select One--</option>
                             <option value="SPOUSE">Spouse</option>
@@ -206,7 +206,7 @@
                             <option value="CHILD">Child</option>
                             <option value="SIBLING">Sibling</option>
                           </select></div>
-                        <div class="col-md-6"><span class="asterisk">*</span></div>
+                        
                       </div>
                       <div class="row">
                         <div class="col-md-6">
@@ -215,7 +215,7 @@
                         <div class="col-md-6"><input name="$agetext" class="form-control" type="text" maxlength="3"
                             id="agetext" aria-label="Enter dependent's age">
                         </div>
-                        <div class="col-md-6"><span class="asterisk">*</span></div>
+                        
                       </div>
                     </tbody>
                   </table>
@@ -223,11 +223,11 @@
 
                 <div>
                   <div id="reasondiv">
-                    <p> <span class="asterisk">*</span> <span id="reasonspan"> Explain
+                    <p>Explain
                         reason(s) for transfer
-                        (required): </span> <br>
+                        (required): <br>
                       (300 characters max): </p>
-                    <textarea name="$reasonbox" rows="2" cols="20" id="reasonbox"
+                    <textarea name="$reasonbox" rows="4" id="reasonbox"
                       aria-label="Please explain the reasons for transfer."></textarea>
                   </div>
                   <div id="transportsuppdiv">
