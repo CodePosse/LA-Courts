@@ -86,6 +86,26 @@
                       </div>
                     </div>
                   </div>
+                    <div class="col-md-12">
+                      <strong>Your Work or School Address:</strong>
+                    </div>
+                    <div class="col-md-12 pt-3">
+                      Address:
+                    <input name="$empaddrtext" class="form-control" type="text" id="empaddrtext"
+                        aria-label="Enter your work or school address"></div>              
+                    <div class="col-md-12 pb-3">
+                     City
+                    <input name="$empcitytext" class="form-control" type="text" id="empcitytext"
+                        aria-label="Enter your work or school city"></div>
+                        <div class="col-12 pb-3" id="reasondiv">
+                          <p>Explain
+                              reason(s) for transfer
+                              (required): <br>
+                            (300 characters max): </p>
+                          <textarea name="$reasonbox" rows="4" id="reasonbox"
+                            aria-label="Please explain the reasons for transfer." class="w-100"></textarea>
+                        </div>
+                  
                 </div>
                 <div class="row border box distance" id="distance">
                   <div class="col">
@@ -98,6 +118,41 @@
                         to a closer
                         courthouse would be less of a hardship. </div>
                     </div>
+                    <div class="row">
+                      <p>The mileage was computed based on the current address we have for you
+                          shown below.
+                          If your address has changed, please click on the "MyInfo" tab and enter your
+                          new address on the
+                          page.
+                          Return back to this page to complete this process.</p>
+    </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <strong>Current Address:</strong>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Address:</p>
+                        </div>
+                        <div class="col-md-6"> 32519 XXXXXXXXXXXX </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>City:</p>
+                        </div>
+                        <div class="col-md-6"> WESTLAKE VILLAGE </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 pb-3" id="reasondiv">
+                          <p>Explain
+                              reason(s) for transfer
+                              (required): <br>
+                            (300 characters max): </p>
+                          <textarea name="$reasonbox" rows="4" id="reasonbox" class="w-100"
+                            aria-label="Please explain the reasons for transfer."></textarea>
+                        </div>
+                      </div>
                   </div>
                 </div>
                 <div class="row border box health" id="health">
@@ -150,45 +205,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <strong>Your Work or School Address:</strong>
-                  </div>
-                  <div class="col-md-12 pt-2">
-                    Address:
-                  <input name="$empaddrtext" class="form-control" type="text" id="empaddrtext"
-                      aria-label="Enter your work or school address"></div>              
-                  <div class="col-md-12">
-                   City
-                  <input name="$empcitytext" class="form-control" type="text" id="empcitytext"
-                      aria-label="Enter your work or school city"></div>
-                </div>
+                
 
-                <div class="row">
-                  <p>The mileage was computed based on the current address we have for you
-                      shown below.
-                      If your address has changed, please click on the "MyInfo" tab and enter your
-                      new address on the
-                      page.
-                      Return back to this page to complete this process.</p>
 
-                  <div class="row">
-                    <div class="col-md-6">
-                      <strong>Current Address:</strong>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <p>Address:</p>
-                    </div>
-                    <div class="col-md-6"> 32519 XXXXXXXXXXXX </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <p>City:</p>
-                    </div>
-                    <div class="col-md-6"> WESTLAKE VILLAGE </div>
-                  </div>
+    
 
                 </div>
                 <div id="essentialcarepnl">
@@ -227,7 +247,7 @@
                 </div>
 
                 <div>
-                  <div id="reasondiv">
+                  <div class="col-12 pb-3" id="reasondiv">
                     <p>Explain
                         reason(s) for transfer
                         (required): <br>
