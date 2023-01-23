@@ -909,7 +909,9 @@
                 randomly selected to the courthouse
                 that has summoned them. You have been randomly selected to your courthouse. If you wish to move your
                 service, you must request
-                the change based on one of the legally sufficient reasons listed below.
+                the change based on one of the legally sufficient reasons listed below. Place your cursor over each
+                item and you will receive a
+                detailed explanation of the reason.
               </div>
               <div class="container">
                 <div class="row py-2">
@@ -1263,13 +1265,13 @@
           <div id="agepnl" class="p-1 med box">
             <div class="row">
               <div class="col-1 text-center ms-1 pe-0">
-                <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_above70rb"
+                <input id="_above70rb"
                   class="form-check-input" type="radio" value="above70rb" />
               </div>
               <div class="col">
                 <p>
-                  <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_above70rb"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblOver70">I am 70
+                  <label for="_above70rb"
+                    id="_lblOver70">I am 70
                     years
                     old or older and I have a physical or mental disability or impairment that prevents me from
                     serving.</label>
@@ -1278,13 +1280,13 @@
             </div>
             <div class="row">
               <div class="col-1 text-center ms-1 pe-0">
-                <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_below70rb"
+                <input id="_below70rb"
                   class="form-check-input" type="radio" value="below70rb" />
               </div>
               <div class="col">
                 <p>
-                  <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_below70rb"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblUnder70">I am
+                  <label for="_below70rb"
+                    id="_lblUnder70">I am
                     under 70
                     years old and I have a physical or mental disability or impairment that prevents me from
                     serving.</label>
@@ -1294,51 +1296,48 @@
           </div>
           <div id="financepnl" class="p-1 fin box">
             <p> Number of persons in your household. Include all adults and minors living in your household. </p>
-            <div class="row">
-              <div class="col">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-3 text-end">
                 <strong>Adults:</strong>
               </div>
-              <div class="col-3 d-flex align-items-center">
-                <span class="asterisk">*</span>
+              <div class="col-md-3">
                 <input type="text" class="form-control"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_adulttext" />
+                  id="_adulttext" />
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
+          
+              <div class="col-md-3 text-end">
                 <strong>Minors:</strong>
               </div>
-              <div class="col-3 d-flex align-items-center">
-                <span class="asterisk">*</span>
+              <div class="col-md-3">
                 <input type="text" class="form-control"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_minortext" />
+                  id="_minortext" />
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-12">
                 <strong> Yearly income of entire household (including social security payments, alimony, child
                   support,
                   retirement benefits, etc.): </strong>
               </div>
-              <div class="col-3 d-flex align-items-center">
-                <span class="asterisk">*</span>$<input type="text" class="form-control"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_incometext" />
+              <div class="col-md-6 d-flex align-items-center">
+                $<input type="text" class="form-control"
+                  id="_incometext" />
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-12">
                 <strong>Monthly Household Expenses:</strong>
               </div>
-              <div class="col-3 d-flex align-items-center">
-                <span class="asterisk">*</span>$<input type="text" class="form-control"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_expensetext" />
+              <div class="col-md-6 d-flex align-items-center">
+                $<input type="text" class="form-control"
+                  id="_expensetext" />
               </div>
             </div>
             <div class="row">
               <div class="col">
                 <hr noshade>
                 <p>
-                  <span class="asterisk">*</span>Please provide additional information which should be considered
+                  Please provide additional information which should be considered
                   to
                   support your financial hardship excuse in the box below:<br />(300 characters max)
                 </p>
@@ -1352,7 +1351,7 @@
             <hr noshade>
 
             <p>
-              <span class="asterisk">*</span>Please explain in the box below:<br />(300 characters max)
+              Please explain in the box below:<br />(300 characters max)
             </p>
             <textarea class="form-control"></textarea>
           </div>
@@ -1363,7 +1362,7 @@
             <hr noshade>
 
             <p>
-              <span class="asterisk">*</span>Please explain in the box below:<br />(300 characters max)
+              Please explain in the box below:<br />(300 characters max)
             </p>
             <textarea class="form-control"></textarea>
           </div>
@@ -1376,13 +1375,13 @@
               you are a paid professional care provider and jury duty would be a financial hardship for you,
               please select
               the &#x201C;Financial Hardship&#x201D; reason in the dropdown box above. </p>
-            <div class="row">
-              <div class="col">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-4 text-end">
                 <strong>Relationship:</strong>
               </div>
-              <div class="col">
+              <div class="col-md-5">
                 <select class="form-select"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_obligationddl">
+                  id="_obligationddl">
                   <option value="-1">--Please Select One--</option>
                   <option value="child">Son and/or Daughter</option>
                   <option value="parent">Parent</option>
@@ -1391,16 +1390,16 @@
                   <option value="other">Other</option>
                 </select>
               </div>
-              <div class="col"><span class="asterisk">*</span></div>
+
             </div>
-            <div class="row">
-              <div class="col">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-4 text-end">
                 <strong>Number of people:</strong>
               </div>
-              <div class="col"></div>
-              <div class="col">
+              
+              <div class="col-md-5">
                 <select class="form-select"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_numberddl">
+                  id="_numberddl">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -1411,114 +1410,114 @@
               </div>
             </div>
             <div class="row">
-              <div class="col"> If your child is under the age of 1, please enter &quot;1&quot; as their age.
+              <div class="col"><em> If your child is under the age of 1, please enter &quot;1&quot; as their age.</em>
               </div>
             </div>
 
 
             <div class="row">
-              <div class="col-3">
+              <div class="col-3 text-end">
                 <strong>Name</strong>
               </div>
               <div class="col-3 d-flex align-items-center">
-                <span class="asterisk">*</span><input type="text" class="form-control" maxlength="100"
-                  id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext1" />
+                <input type="text" class="form-control" maxlength="100"
+                  id="_nametext1" />
                 </td>
               </div>
-              <div class="row">
-                <div class="col-3">
+              
+                <div class="col-3 text-end">
                   <strong>Age</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="3"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext1" />
+                  <input type="text" class="form-control" maxlength="3"
+                    id="_agetext1" />
                 </div>
               </div>
               <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Name</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="100"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext2" />
+                  <input type="text" class="form-control" maxlength="100"
+                    id="_nametext2" />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Age</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="3"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext2" />
+                  <input type="text" class="form-control" maxlength="3"
+                    id="_agetext2" />
                 </div>
               </div>
               <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Name</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="100"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext3" />
+                  <input type="text" class="form-control" maxlength="100"
+                    id="_nametext3" />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Age</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="3"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext3" />
+                  <input type="text" class="form-control" maxlength="3"
+                    id="_agetext3" />
                 </div>
               </div>
               <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Name</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="100"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext4" />
+                  <input type="text" class="form-control" maxlength="100"
+                    id="_nametext4" />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Age</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="3"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext4" />
+                  <input type="text" class="form-control" maxlength="3"
+                    id="_agetext4" />
                 </div>
               </div>
               <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Name</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="100"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext5" />
+                  <input type="text" class="form-control" maxlength="100"
+                    id="_nametext5" />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Age</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="3"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext5" />
+                  <input type="text" class="form-control" maxlength="3"
+                    id="_agetext5" />
                 </div>
               </div>
               <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Name</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="100"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_nametext6" />
+                  <input type="text" class="form-control" maxlength="100"
+                    id="_nametext6" />
                 </div>
-                <div class="col-3">
+                <div class="col-3 text-end">
                   <strong>Age</strong>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                  <span class="asterisk">*</span><input type="text" class="form-control" maxlength="3"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_agetext6" />
+                  <input type="text" class="form-control" maxlength="3"
+                    id="_agetext6" />
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <hr noshade>
                   <p>
-                    <span class="asterisk">*</span>Please provide the type of full-time care that you provide for
+                    Please provide the type of full-time care that you provide for
                     the
                     person. Also, if you work, please provide your work schedule.<br />(300 characters max)
                   </p>
@@ -1529,26 +1528,26 @@
             <div id="jurypnl" class="border p-1 pri box">
               <div class="row">
                 <div class="col">
-                  <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lajuryrb"
+                  <input id="_lajuryrb"
                     class="form-check-input" type="radio" value="lajuryrb" />
                 </div>
                 <div class="col">
                   <p>
-                    <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lajuryrb"
-                      id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblServedAsGrandTrial">I
+                    <label for="_lajuryrb"
+                      id="_lblServedAsGrandTrial">I
                       have served as a Grand juror or Trial juror in the last 12 months.</label>
                   </p>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <input id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_fedjuryrb"
+                  <input id="_fedjuryrb"
                     class="form-check-input" type="radio" value="fedjuryrb" />
                 </div>
                 <div class="col">
                   <p>
-                    <label for="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_fedjuryrb"
-                      id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_lblServedAsFed">I
+                    <label for="_fedjuryrb"
+                      id="_lblServedAsFed">I
                       am
                       serving or just served as a juror in the Federal Court.</label>
                   </p>
@@ -1568,7 +1567,7 @@
                 </div>
                 <div class="col">
                   <select class="form-select"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_monthserveddl">
+                    id="_monthserveddl">
                     <option value="00">--Please select a month--</option>
                     <option value="January">January</option>
                     <option value="February">February</option>
@@ -1591,7 +1590,7 @@
                 </div>
                 <div class="col">
                   <select class="form-select"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_courtlocationddl">
+                    id="_courtlocationddl">
                     <option value="-1">--Please select one--</option>
                     <option value="49">Airport Courthouse</option>
                     <option value="11">Alhambra Courthouse</option>
@@ -1643,7 +1642,7 @@
                 </div>
                 <div class="col">
                   <input type="text" class="form-control" maxlength="50"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_textfedlocation" />
+                    id="_textfedlocation" />
                 </div>
               </div>
               <div class="row">
@@ -1652,7 +1651,7 @@
                 </div>
                 <div class="col">
                   <select class="form-select"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjurormonth">
+                    id="_ddlfedjurormonth">
                     <option value="00">--Please select a month--</option>
                     <option value="January">January</option>
                     <option value="February">February</option>
@@ -1673,7 +1672,7 @@
                 <div class="col"><strong>Year Served:</strong></div>
                 <div class="col">
                   <select class="form-select"
-                    id="ctl00_ctl00_ctl00_siteMasterHolder_basicBodyHolder_ContentPlaceHolder1_ddlfedjuroryear">
+                    id="_ddlfedjuroryear">
                     <option value="-1">--Please select one--</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
