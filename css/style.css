@@ -11,6 +11,7 @@ body {
   --court-grey: #95a3ab;
   font-family: "Poppins", calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
+  background-color: #f0f4fc
 }
 
 .rounded-start {
