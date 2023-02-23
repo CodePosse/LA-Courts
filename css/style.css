@@ -233,6 +233,6 @@ code {
   }
 }
 
-.card {
+.custom-shadow {
   box-shadow: 0px 0 30px rgb(1 41 112 / 10%);
 }
