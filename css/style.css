@@ -173,11 +173,7 @@ footer i {
   color: var(--court-dkblue) !important;
 }
 
-#questionnaire .control-group:focus-within .badge {
-  outline: 2px solid var(--court-dkblue);
-  background-color: var(--court-yellow) !important;
-  color: var(--court-black) !important;
-}
+
 
 #questionnaire fieldset {
   margin: 10px 0 0;
