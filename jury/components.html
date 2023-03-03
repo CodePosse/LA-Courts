@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Jury Duty Portal Demo Components</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,327 +9,326 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>LA Court JDP</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<meta name="theme-color" content="##0DFF39" /></head>
-
-<body>
+    <meta name="theme-color" content="##0DFF39" />
+  </head>
+  <body>
     <header class="py-2 px-0 bg-primary text-white">
-        <div class="container-fluid">
-            <div><a href="./" class="text-white">Home</a></div>
-        </div>
+      <div class="container-fluid">
+        <div><a href="./" class="text-white">Home</a></div>
+      </div>
     </header>
-<div class="container pt-3 pb-0"><div class="row"><div class="col-12 text-center"><h1>LA County Superior Court</h1><h2>Jury Service Portal</h2></div></div></div>
+    <div class="container pt-3 pb-0">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>LA County Superior Court</h1>
+          <h2>Jury Service Portal</h2>
+        </div>
+      </div>
+    </div>
     <div class="container py-2 py-md-5" id="steps">
-        <div class="row d-flex justify-content-center text-white">
-            <div class="col-md-3 py-2 px-3 fw-bold bg-secondary border border-light rounded-start">Step 1 <i class="fa-solid fa-circle-xmark float-end mt-1"></i></div>
-            <div class="col-md-3 py-2 px-3 fw-bold bg-success border border-light">Step 2 <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
-            <div class="col-md-3 py-2 px-3 fw-bold bg-warning border border-light text-black">Step 3 <i class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
-            <div class="col-md-3 py-2 px-3 fw-bold bg-primary border border-light rounded-end">Step 4 <i class="fa-solid fa-location-dot float-end mt-1"></i></div>
-        </div>
+      <div class="row d-flex justify-content-center text-white">
+        <div class="col-md-3 py-2 px-3 fw-bold bg-secondary border border-light rounded-start">Step 1 <i class="fa-solid fa-circle-xmark float-end mt-1"></i></div>
+        <div class="col-md-3 py-2 px-3 fw-bold bg-success border border-light">Step 2 <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
+        <div class="col-md-3 py-2 px-3 fw-bold bg-warning border border-light text-black">Step 3 <i class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
+        <div class="col-md-3 py-2 px-3 fw-bold bg-primary border border-light rounded-end">Step 4 <i class="fa-solid fa-location-dot float-end mt-1"></i></div>
+      </div>
     </div>
     <div class="container py-2 py-md-3">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard2">
-            <div class="col step-active p-1">
-                <div class="d-flex align-items-center border rounded">
-                    <div class="flex-grow-1 ms-1">
-                        <strong>Step 1 <span class="d-lg-none">of 4</span>
-                           </strong> Summons
-                    </div>
-                    <div class="flex-shrink-0">
-                        <i class="fa-solid fa-location-dot fs-1"></i>
-                    </div>
-                </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard2">
+        <div class="col step-active p-1">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 1 <span class="d-lg-none">of 4</span>
+              </strong> Summons
             </div>
-            <div class="col p-1 d-none d-lg-block">
-                <div class="d-flex align-items-center border rounded">
-                    <div class="flex-grow-1 ms-1">
-                        <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
-                    </div>
-                </div>
+            <div class="flex-shrink-0">
+              <i class="fa-solid fa-location-dot fs-1"></i>
             </div>
-            <div class="col p-1 d-none d-lg-block">
-                <div class="d-flex align-items-center border rounded">
-                    <div class="flex-grow-1 ms-1">
-                        <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
-                    </div>
-                </div>
-            </div>
-            <div class="col p-1 d-none d-lg-block">
-                <div class="d-flex align-items-center border rounded">
-                    <div class="flex-grow-1 ms-1">
-                        <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col p-1 d-none d-lg-block">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
+            </div>
+          </div>
+        </div>
+        <div class="col p-1 d-none d-lg-block">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
+            </div>
+          </div>
+        </div>
+        <div class="col p-1 d-none d-lg-block">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container py-2 py-md-3">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard">
-            <div class="col step-active p-1">
-                <div class="d-flex align-items-center border border-primary rounded">
-                    <div class="flex-shrink-0">
-                        <i class="fa-solid fa-location-dot fs-1 text-primary"></i>
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <strong>Step 1 <span class="d-lg-none">of 4</span></strong> Summons
-                    </div>
-                </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard">
+        <div class="col step-active p-1">
+          <div class="d-flex align-items-center border border-primary rounded">
+            <div class="flex-shrink-0">
+              <i class="fa-solid fa-location-dot fs-1 text-primary"></i>
             </div>
-            <div class="col step-disabled p-1">
-                <div class="d-flex align-items-center border border-secondary rounded">
-                    <div class="flex-shrink-0">
-                        <i class="fa-solid fa-circle-xmark fs-1 text-secondary"></i>
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
-                    </div>
-                </div>
+            <div class="flex-grow-1 ms-3">
+              <strong>Step 1 <span class="d-lg-none">of 4</span></strong> Summons
             </div>
-            <div class="col step-complete p-1">
-                <div class="d-flex align-items-center border border-success rounded">
-                    <div class="flex-shrink-0">
-                        <i class="fa-regular fa-circle-check fs-1 text-success"></i>
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
-                    </div>
-                </div>
-            </div>
-            <div class="col step-error p-1">
-                <div class="d-flex align-items-center border border-warning rounded">
-                    <div class="flex-shrink-0">
-                        <i class="fa-solid fa-triangle-exclamation fs-1 text-warning"></i>
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col step-disabled p-1">
+          <div class="d-flex align-items-center border border-secondary rounded">
+            <div class="flex-shrink-0">
+              <i class="fa-solid fa-circle-xmark fs-1 text-secondary"></i>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
+            </div>
+          </div>
+        </div>
+        <div class="col step-complete p-1">
+          <div class="d-flex align-items-center border border-success rounded">
+            <div class="flex-shrink-0">
+              <i class="fa-regular fa-circle-check fs-1 text-success"></i>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
+            </div>
+          </div>
+        </div>
+        <div class="col step-error p-1">
+          <div class="d-flex align-items-center border border-warning rounded">
+            <div class="flex-shrink-0">
+              <i class="fa-solid fa-triangle-exclamation fs-1 text-warning"></i>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container col-xxl-8 px-4 py-0">
-        <div class="row flex-lg-row-reverse align-items-center py-2">
-            <div class="col-10 col-sm-8 col-lg-6"><img src="../img/gavel.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"></div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Step/salutation</h1>
-                <p class="lead">Subtitle of section</p>
-                <p>Personalized greeting and friendly text about progress</p>
-            </div>
+      <div class="row flex-lg-row-reverse align-items-center py-2">
+        <div class="col-10 col-sm-8 col-lg-6"><img src="../img/gavel.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"></div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Step/salutation</h1>
+          <p class="lead">Subtitle of section</p>
+          <p>Personalized greeting and friendly text about progress</p>
         </div>
+      </div>
     </div>
     <div class="container py-4">
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card custom-shadow border-warning">
-                    <div class="fs-5 card-header fw-bold">Warning Card <i class="fa-solid fa-triangle-exclamation float-end mt-1 blink_me"></i></div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>court defined brand yellow color</p>
-                            </div>
-                            <div class="col-4"><strong>Your Status:</strong></div>
-                            <div class="col-8"><span class="badge bg-danger">Incomplete</span></div>
-                            <div class="col-12 mt-3">
-                                <div class="btn btn-warning">Warning Button</div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow border-warning">
+            <div class="fs-5 card-header fw-bold">Warning Card <i class="fa-solid fa-triangle-exclamation float-end mt-1 blink_me"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>court defined brand yellow color</p>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card custom-shadow border-success">
-                    <div class="fs-5 card-header fw-bold text-success">Success Card <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
-                            </div>
-                            <div class="col-4"><strong>Your Status:</strong></div>
-                            <div class="col-8"><span class="badge bg-danger">Incomplete</span></div>
-                            <div class="col-12 mt-3">
-                                <div class="btn btn-success">Review Button</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-4"><strong>Your Status:</strong></div>
+                <div class="col-8"><span class="badge bg-danger">Incomplete</span></div>
+                <div class="col-12 mt-3">
+                  <div class="btn btn-warning">Warning Button</div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card custom-shadow border-info">
-                    <div class="fs-5 card-header fw-bold bg-info">Info Card <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>this is the court&apos;s brand for light blue.</p>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <div class="btn btn-info">Info Button</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card custom-shadow border-danger">
-                    <div class="fs-5 card-header fw-bold text-danger">Danger Card <i class="fa-solid fa-circle-xmark float-end mt-1"></i></div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <div class="btn btn-danger">Danger Button</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card custom-shadow border-primary">
-                    <div class="fs-5 card-header fw-bold text-primary">Primary Card</div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>This is the court&apos;s defined dark blue</p>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <div class="btn btn-primary">Primary Button</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card custom-shadow border-primary">
-                    <div class="fs-5 card-header fw-bold bg-primary">Primary Card</div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>This is the court&apos;s defined dark blue as an INVERTED card. All cards can be inverted</p>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <div class="btn btn-primary">Primary Button</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card border">
-                    <div class="fs-5 card-header fw-bold">Plain Card</div>
-                    <div class="card-body">
-                        <div class="row card-text">
-                            <div class="col-12 pt-3">
-                                <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
-                            </div>
-                            <div class="col-12"><a class="btn btn-link">Plain Button</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 mb-4">
-                <div class="card custom-shadow border-success">
-                    <div class="card-header bg-transparent border-success">Header</div>
-                    <div class="card-body text-success">
-                        <div class="fs-5 card-title fw-bold">other card title</div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
-                    </div>
-                    <div class="card-footer border-success">Footer</div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow border-success">
+            <div class="fs-5 card-header fw-bold text-success">Success Card <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
+                </div>
+                <div class="col-4"><strong>Your Status:</strong></div>
+                <div class="col-8"><span class="badge bg-danger">Incomplete</span></div>
+                <div class="col-12 mt-3">
+                  <div class="btn btn-success">Review Button</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow border-info">
+            <div class="fs-5 card-header fw-bold bg-info">Info Card <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>this is the court&apos;s brand for light blue.</p>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="btn btn-info">Info Button</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow border-danger">
+            <div class="fs-5 card-header fw-bold text-danger">Danger Card <i class="fa-solid fa-circle-xmark float-end mt-1"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="btn btn-danger">Danger Button</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow border-primary">
+            <div class="fs-5 card-header fw-bold text-primary">Primary Card</div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>This is the court&apos;s defined dark blue</p>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="btn btn-primary">Primary Button</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow border-primary">
+            <div class="fs-5 card-header fw-bold bg-primary">Primary Card</div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>This is the court&apos;s defined dark blue as an INVERTED card. All cards can be inverted</p>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="btn btn-primary">Primary Button</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border">
+            <div class="fs-5 card-header fw-bold">Plain Card</div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
+                </div>
+                <div class="col-12"><a class="btn btn-link">Plain Button</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card custom-shadow border-success">
+            <div class="card-header bg-transparent border-success">Header</div>
+            <div class="card-body text-success">
+              <div class="fs-5 card-title fw-bold">other card title</div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</p>
+            </div>
+            <div class="card-footer border-success">Footer</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container mb-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="fs-3 mb-2">FAQs</div>
-                <div class="accordion custom-shadow" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button></h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                though the transition does limit overflow.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button></h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                though the transition does limit overflow.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button></h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                though the transition does limit overflow.</div>
-                        </div>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="fs-3 mb-2">FAQs</div>
+          <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button></h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+              </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button></h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button></h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="chatbot"><span class="badge rounded-pill bg-court-dkblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dangerModal">Launch demo modal</button>
     <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-            <div class="modal-content">
-                <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title" id="dangerModalLabel">ALERT: Court Closure <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5>
-                    <a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
-                </div>
-                <div class="modal-body">
-                    <p>This is an area with closure or urgent information the juror needs to see. It can appear on any page</p>
-                </div>
-                <div class="modal-footer bg-light"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button></div>
-            </div>
+      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="dangerModalLabel">ALERT: Court Closure <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5>
+            <a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
+          </div>
+          <div class="modal-body">
+            <p>This is an area with closure or urgent information the juror needs to see. It can appear on any page</p>
+          </div>
+          <div class="modal-footer bg-light"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button></div>
         </div>
+      </div>
     </div>
     <footer class="pt-5 pb-1 bg-dark text-white">
-        <div class="container">
-            <div class="justify-content-md-between row border-bottom pb-3 mb-3">
-                <div class="col-md-5">
-                    <div class="h5">Bureau of Street Lighting</div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="https://www.google.com/maps/place/1149+S+Broadway+%23200,+Los+Angeles,+CA+90015/@34.0400865,-118.2640439,15.67z/data=!4m5!3m4!1s0x80c2c7c93afaaaa9:0xc20ddd4db28e0adf!8m2!3d34.0388841!4d-118.2605651" class="nav-link p-0"
-                                target="_blank"><span class="fas fa-map-marker-alt"></span> 1149 S. Broadway, Suite 200 Los Angeles, CA 90015</a></li>
-                        <li class="nav-item mb-2"><a href="tel:12138471440" class="nav-link p-0"><span class="fas fa-phone"></span> (213) 847-1400</a></li>
-                        <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0"><span class="fas fa-envelope"></span> Contact Us</a></li>
-                        <li class="nav-item mb-2"><a data-bs-toggle="modal" href="./" role="button" class="nav-link p-0"><span class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <div class="h5">Stay Connected</div>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="https://www.lacity.org/tweets" target="_blank" class="nav-link p-0"><span class="fas fa-hashtag"></span> Today&apos;s Trending News</a></li>
-                        <li class="nav-item mb-2"><a href="https://twitter.com/lalight" target="_blank" class="nav-link p-0"><span class="fab fa-twitter"></span> Twitter</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.instagram.com/lastreetlights/" target="_blank" class="nav-link p-0"><span class="fab fa-facebook-f"></span> Facebook</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <div class="h5">Covid 19 Information</div>
-                    <p>As a measure of caution in relation to COVID-19, the Bureau of Street Lighting is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.</p>
-                </div>
-            </div>
-            <div class="col-12 text-center pt-2">
-                <p>&#xA9; Copyright
-                    <script>
-                        document.write((new Date).getFullYear())
-                    </script>City of Los Angeles Public Works, Bureau of Street Lighting. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a></p>
-            </div>
+      <div class="container">
+        <div class="justify-content-md-between row border-bottom pb-3 mb-3">
+          <div class="col-md-5">
+            <div class="h5">Bureau of Street Lighting</div>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.google.com/maps/place/1149+S+Broadway+%23200,+Los+Angeles,+CA+90015/@34.0400865,-118.2640439,15.67z/data=!4m5!3m4!1s0x80c2c7c93afaaaa9:0xc20ddd4db28e0adf!8m2!3d34.0388841!4d-118.2605651" class="nav-link p-0" target="_blank"><span class="fas fa-map-marker-alt"></span> 1149 S. Broadway, Suite 200 Los Angeles, CA 90015</a></li>
+              <li class="nav-item mb-2"><a href="tel:12138471440" class="nav-link p-0"><span class="fas fa-phone"></span> (213) 847-1400</a></li>
+              <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0"><span class="fas fa-envelope"></span> Contact Us</a></li>
+              <li class="nav-item mb-2"><a data-bs-toggle="modal" href="./" role="button" class="nav-link p-0"><span class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="h5">Stay Connected</div>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.lacity.org/tweets" target="_blank" class="nav-link p-0"><span class="fas fa-hashtag"></span> Today&apos;s Trending News</a></li>
+              <li class="nav-item mb-2"><a href="https://twitter.com/lalight" target="_blank" class="nav-link p-0"><span class="fab fa-twitter"></span> Twitter</a></li>
+              <li class="nav-item mb-2"><a href="https://www.instagram.com/lastreetlights/" target="_blank" class="nav-link p-0"><span class="fab fa-facebook-f"></span> Facebook</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <div class="h5">Covid 19 Information</div>
+            <p>As a measure of caution in relation to COVID-19, the Bureau of Street Lighting is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.</p>
+          </div>
         </div>
+        <div class="col-12 text-center pt-2">
+          <p>&#xA9; Copyright <script>
+              document.write((new Date).getFullYear())
+            </script>City of Los Angeles Public Works, Bureau of Street Lighting. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a></p>
+        </div>
+      </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/global.js"></script>
     <script>
-        window.onload = () => {
-            $("#dangerModal").modal("show")
-        };
-        (function blink() {
-            $('.blink_me').fadeOut(500).fadeIn(500, blink);
-        })();
+      window.onload = () =>
+      {
+        $("#dangerModal").modal("show")
+      };
+      (function blink()
+      {
+        $('.blink_me').fadeOut(500).fadeIn(500, blink);
+      })();
     </script>
-</body>
-
+  </body>
 </html>

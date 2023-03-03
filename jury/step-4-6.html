@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>flow</title>
-  <meta name="theme-color" content="##0DFF39" /></head>
+    <meta name="theme-color" content="##0DFF39" />
+  </head>
   <body>
     <header class="py-2 px-0 bg-primary text-white">
       <div class="container-fluid">
         <div><a href="./" class="text-white">Home</a></div>
       </div>
     </header>
-<div class="container pt-3 pb-0"><div class="row"><div class="col-12 text-center"><h1>LA County Superior Court</h1><h2>Jury Service Portal</h2></div></div></div>
+    <div class="container pt-3 pb-0">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>LA County Superior Court</h1>
+          <h2>Jury Service Portal</h2>
+        </div>
+      </div>
+    </div>
     <div class="container py-2 py-md-5" id="steps">
       <div class="row d-flex justify-content-center text-white">
         <div class="col-md-3 py-2 px-3 fw-bold bg-success border border-light rounded-start">Step 1 <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
@@ -37,16 +45,17 @@
     <!--FAQs-->
     <div class="container mb-5">
       <div class="row">
-        <div class="col-12">
-          <div class="fs-3 mb-2">FAQs</div>
-          <div class="accordion custom-shadow" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Do I get proof of my jury service? </button></h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+        <div class="col-12 card border-info">
+          <div class="fs-5 card-header fw-bold">FAQs</div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Do I get proof of my jury service? </button></h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
