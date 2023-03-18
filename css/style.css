@@ -10,12 +10,15 @@ body {
   --court-dkblue: #012362;
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
-  font-family: "Poppins", calibri, Tahoma, Arial, monotype;
+  font-family: calibri, Tahoma, Arial, monotype;
   background-color: var(--court-paleblue);
   color: var(--court-black);
   font-display: swap;
 }
-
+header{border-bottom: var(--court-yellow) 4px solid;}
+header a{color: #fff; text-decoration: none;
+}
+div.lasc-logo{background-color: #1f303e;}
 .rounded-start {
   border-bottom-left-radius: 0.75rem !important;
   border-top-left-radius: 0.75rem !important;
