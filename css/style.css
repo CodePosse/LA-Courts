@@ -146,7 +146,7 @@ footer i {
 .wizard2 .col > div {
   padding: 5px 10px;
 }
-
+.wizard2>.col:not(.step-active)>div{ background: rgba(230,230,230,.9)}
 .wizard strong,
 .wizard2 strong {
   font-size: 22px;
