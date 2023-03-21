@@ -18,6 +18,7 @@ body {
 header{border-bottom: var(--court-yellow) 4px solid;}
 header a, footer a{color: #fff; text-decoration: none;
 }
+.splash{background: red url("../jury/img/splash4.jpg");background-position: center bottom; background-size: cover; background-repeat: no-repeat;}
 footer{border-top: var(--court-yellow) 4px solid;}
 div.lasc-logo{background-color: #1f303e;}
 .rounded-start {
