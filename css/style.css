@@ -16,8 +16,9 @@ body {
   font-display: swap;
 }
 header{border-bottom: var(--court-yellow) 4px solid;}
-header a{color: #fff; text-decoration: none;
+header a, footer a{color: #fff; text-decoration: none;
 }
+footer{border-top: var(--court-yellow) 4px solid;}
 div.lasc-logo{background-color: #1f303e;}
 .rounded-start {
   border-bottom-left-radius: 0.75rem !important;
@@ -43,6 +44,10 @@ nav.navbar ul.court-dkblue a.nav-link,
 .btn-primary {
   background-color: var(--court-dkblue) !important;
   color: #fff;
+}
+.bg-court-ltblue {
+  background-color: var(--court-ltblue) !important;
+  color: #333;
 }
 
 .text-primary {
