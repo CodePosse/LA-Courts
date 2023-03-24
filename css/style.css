@@ -122,6 +122,9 @@ nav.navbar ul.court-dkblue a.nav-link,
   bottom: 25px;
   font-size: 1.5rem;
 }
+footer{    position: relative;
+  width: 100%;
+  bottom: 0;}
 
 footer a.nav-link,
 footer h5 {
