@@ -9,105 +9,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>LA Court JDP</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <meta name="theme-color" content="##0DFF39" />
+    <meta name="theme-color" content="##0DFF39">
     <style>
       .box
       {
-        display: none;
+        display: none
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <!-- Button trigger modal -->
-        <div class="col-6">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferModal"> Transfer request </button>
-        </div>
-        <!-- Transfer Modal -->
+        <div class="col-6"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferModal">Transfer request</button></div>
         <div class="modal fade" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
             <div class="modal-content">
               <div class="modal-header bg-info">
-                <h5 class="modal-title fs-5" id="transferModalLabel">Transfer Request </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title fs-5" id="transferModalLabel">Transfer Request</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div class="bd-callout bd-callout-danger p-3 col-12 mb-1"> Please select one of the following reasons for your transfer. The law requires that jurors be randomly selected to the courthouse that has summoned them. You have been randomly selected to your courthouse. If you wish to move your service, you must request the change based on one of the legally sufficient reasons listed below. Place your cursor over each item and you will receive a detailed explanation of the reason. </div>
+                <div class="bd-callout bd-callout-danger p-3 col-12 mb-1">Please select one of the following reasons for your transfer. The law requires that jurors be randomly selected to the courthouse that has summoned them. You have been randomly selected to your courthouse. If you wish to move your service, you must request the change based on one of the legally sufficient reasons listed below. Place your cursor over each item and you will receive a detailed explanation of the reason.</div>
                 <div class="container">
                   <div class="row py-2">
-                    <div class="col">
-                      <strong>Transfer Reason:</strong>
-                      <select class="form-select" aria-label="Default select example" id="select_transfer">
-                        <option selected>Open this select menu</option>
+                    <div class="col"><strong>Transfer Reason:</strong> <select class="form-select" aria-label="Default select example" id="select_transfer">
+                        <option selected="selected">Open this select menu</option>
                         <option value="job">Job or school related</option>
                         <option value="distance">Greater than 20 miles</option>
                         <option value="health">Health reasons</option>
                         <option value="care">Essential care of others</option>
                         <option value="transpo">No feasable transportation</option>
                         <option value="other">Other reason</option>
-                      </select>
-                    </div>
+                      </select></div>
                   </div>
                   <hr noshade="">
                   <div class="row box job" id="job">
                     <div class="col-md-12">
                       <div class="row">
-                        <p>
-                          <strong>Job or school related</strong>
-                        </p>
+                        <p><strong>Job or school related</strong></p>
                         <div class="col-12">
                           <ol>
-                            <li> My employer requires that I report to work before, during or immediately after jury service each workday. I must move my service to a courthouse closer to my work. </li>
-                            <li> I am a sole proprietor or I am a physician, lawyer, dentist, or in another profession which requires me to be on-call and available to my clients while on jury service. I must move to a courthouse closer to my business. </li>
+                            <li>My employer requires that I report to work before, during or immediately after jury service each workday. I must move my service to a courthouse closer to my work.</li>
+                            <li>I am a sole proprietor or I am a physician, lawyer, dentist, or in another profession which requires me to be on-call and available to my clients while on jury service. I must move to a courthouse closer to my business.</li>
                           </ol>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <strong>Your Work or School Address:</strong>
-                    </div>
-                    <div class="col-md-12 pt-3"> Address: <input name="$empaddrtext" class="form-control" type="text" id="empaddrtext" aria-label="Enter your work or school address">
-                    </div>
-                    <div class="col-md-12 pb-3"> City <input name="$empcitytext" class="form-control" type="text" id="empcitytext" aria-label="Enter your work or school city">
-                    </div>
+                    <div class="col-md-12"><strong>Your Work or School Address:</strong></div>
+                    <div class="col-md-12 pt-3">Address: <input name="$empaddrtext" class="form-control" type="text" id="empaddrtext" aria-label="Enter your work or school address"></div>
+                    <div class="col-md-12 pb-3">City <input name="$empcitytext" class="form-control" type="text" id="empcitytext" aria-label="Enter your work or school city"></div>
                     <div class="col-12 pb-3">
-                      <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small> </p>
-                      <textarea name="$reasonbox" rows="4" aria-label="Please explain the reasons for transfer." class="w-100"></textarea>
+                      <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small></p><textarea name="$reasonbox" rows="4" aria-label="Please explain the reasons for transfer." class="w-100"></textarea>
                     </div>
                   </div>
                   <div class="row box distance" id="distance">
                     <div class="col">
                       <div class="row">
-                        <p>
-                          <strong>Greater than 20 miles</strong>
-                        </p>
-                        <div class="col-12"> I live more than 20 miles from the courthouse that summoned me and moving my service to a closer courthouse would be less of a hardship. </div>
+                        <p><strong>Greater than 20 miles</strong></p>
+                        <div class="col-12">I live more than 20 miles from the courthouse that summoned me and moving my service to a closer courthouse would be less of a hardship.</div>
                       </div>
                       <div class="row">
                         <p>The mileage was computed based on the current address we have for you shown below. If your address has changed, please click on the "MyInfo" tab and enter your new address on the page. Return back to this page to complete this process.</p>
                       </div>
                       <div class="row">
-                        <div class="col-md-6">
-                          <strong>Current Address:</strong>
-                        </div>
+                        <div class="col-md-6"><strong>Current Address:</strong></div>
                       </div>
                       <div class="row">
                         <div class="col-md-6">
                           <p>Address:</p>
                         </div>
-                        <div class="col-md-6"> 32519 XXXXXXXXXXXX </div>
+                        <div class="col-md-6">32519 XXXXXXXXXXXX</div>
                       </div>
                       <div class="row">
                         <div class="col-md-6">
                           <p>City:</p>
                         </div>
-                        <div class="col-md-6"> WESTLAKE VILLAGE </div>
+                        <div class="col-md-6">WESTLAKE VILLAGE</div>
                       </div>
                       <div class="row">
                         <div class="col-12 pb-3">
-                          <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small> </p>
-                          <textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
+                          <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small></p><textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
                         </div>
                       </div>
                     </div>
@@ -115,29 +95,23 @@
                   <div class="row box health" id="health">
                     <div class="col">
                       <div class="row">
-                        <p>
-                          <strong>Health reasons</strong>
-                        </p>
-                        <div class="col-12"> I have a health/medical issue that requires me to be close to my home, my health care provider or health care facility. </div>
+                        <p><strong>Health reasons</strong></p>
+                        <div class="col-12">I have a health/medical issue that requires me to be close to my home, my health care provider or health care facility.</div>
                       </div>
                       <div class="row">
                         <div class="col-12 py-3">
-                          <p> On your original summons, please complete Section A, Steps 1 and 2; Section B, 10; the medical release portion in Section E, and sign and date the form in Section G. Have your physician fill out Section E. After the form is completed, please mail it to the Court in the self-addressed envelope or to: </p>
+                          <p>On your original summons, please complete Section A, Steps 1 and 2; Section B, 10; the medical release portion in Section E, and sign and date the form in Section G. Have your physician fill out Section E. After the form is completed, please mail it to the Court in the self-addressed envelope or to:</p>
                         </div>
                         <div class="col-md-6 pb-3">
-                          <p> Los Angeles Superior Court<br> Juror Services Division<br> PO Box 53378<br> Los Angeles, CA 90053-0378 </p>
+                          <p>Los Angeles Superior Court<br>Juror Services Division<br>PO Box 53378<br>Los Angeles, CA 90053-0378</p>
                         </div>
-                        <div class="col-md-6 pb-3">
-                          <img src="img/sec-e.jpg" class="img-respinsive" alt="This is an example of section E image">
-                        </div>
+                        <div class="col-md-6 pb-3"><img src="img/sec-e.jpg" class="img-respinsive" alt="This is an example of section E image"></div>
                       </div>
                     </div>
                   </div>
                   <div class="row box care" id="care">
-                    <div class="col-12">
-                      <strong>Essential care of others</strong>
-                    </div>
-                    <div class="col-12"> I provide care for another person before and after jury duty or during the lunch hour and must be at a closer courthouse to provide this care. </div>
+                    <div class="col-12"><strong>Essential care of others</strong></div>
+                    <div class="col-12">I provide care for another person before and after jury duty or during the lunch hour and must be at a closer courthouse to provide this care.</div>
                     <div class="row">
                       <div class="col-md-6">
                         <p>Dependent Information:</p>
@@ -159,37 +133,31 @@
                       <div class="col-md-6">
                         <p>Dependent's Age:</p>
                       </div>
-                      <div class="col-md-6"><input name="$agetext" class="form-control" type="text" maxlength="3" id="agetext" aria-label="Enter dependent's age">
-                      </div>
+                      <div class="col-md-6"><input name="$agetext" class="form-control" type="text" maxlength="3" id="agetext" aria-label="Enter dependent's age"></div>
                     </div>
                     <div class="row">
                       <div class="col-12 pb-3">
-                        <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small></p>
-                        <textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
+                        <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small></p><textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="row box transpo" id="transpo">
                     <div class="col">
                       <div class="row">
-                        <p>
-                          <strong>No feasible transportation</strong>
-                        </p>
-                        <div class="col-12"> I do not have a working vehicle and/or I do not drive and I must take three or more bus/public transportation transfers to arrive at the courthouse I am summoned to. A move to a closer courthouse would be less of a hardship. </div>
+                        <p><strong>No feasible transportation</strong></p>
+                        <div class="col-12">I do not have a working vehicle and/or I do not drive and I must take three or more bus/public transportation transfers to arrive at the courthouse I am summoned to. A move to a closer courthouse would be less of a hardship.</div>
                       </div>
                       <div class="row">
                         <div class="col-12 py-1">
-                          <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small>
-                          </p>
-                          <textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
+                          <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small></p><textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-12 pt-3"> If you must take a bus, please list the bus name and line below. NOTE: In order to qualify for a transfer, you must take more than 2 bus lines. </div>
+                        <div class="col-12 pt-3">If you must take a bus, please list the bus name and line below. NOTE: In order to qualify for a transfer, you must take more than 2 bus lines.</div>
                       </div>
                       <div class="row py-1">
-                        <div class="col-md-6"> Bus Name: </div>
-                        <div class="col-md-6"> Bus Line: </div>
+                        <div class="col-md-6">Bus Name:</div>
+                        <div class="col-md-6">Bus Line:</div>
                       </div>
                       <div class="row py-1">
                         <div class="col-md-6"><input name="$textBusName1" class="form-control" type="text" id="textBusName1" aria-label="Enter the first bus name"></div>
@@ -197,62 +165,47 @@
                       </div>
                       <div class="row py-1">
                         <div class="col-md-6"><input name="$textBusName2" class="form-control" type="text" id="textBusName2" aria-label="Enter the second bus name"></div>
-                        <div class="col-md-6"><input name="$textBusLine2" class="form-control" type="text" id="textBusLine2" aria-label="Enter the second bus line">
-                        </div>
+                        <div class="col-md-6"><input name="$textBusLine2" class="form-control" type="text" id="textBusLine2" aria-label="Enter the second bus line"></div>
                       </div>
                       <div class="row py-1">
-                        <div class="col-md-6"><input name="$textBusName3" class="form-control" type="text" id="textBusName3" aria-label="Enter the third bus name">
-                        </div>
-                        <div class="col-md-6"><input name="$textBusLine3" class="form-control" type="text" id="textBusLine3" aria-label="Enter the third bus line">
-                        </div>
+                        <div class="col-md-6"><input name="$textBusName3" class="form-control" type="text" id="textBusName3" aria-label="Enter the third bus name"></div>
+                        <div class="col-md-6"><input name="$textBusLine3" class="form-control" type="text" id="textBusLine3" aria-label="Enter the third bus line"></div>
                       </div>
                       <div class="row py-1">
-                        <div class="col-md-6"><input name="$textBusName4" class="form-control" type="text" id="textBusName4" aria-label="Enter the fourth bus name">
-                        </div>
-                        <div class="col-md-6"><input name="$textBusLine4" class="form-control" type="text" id="textBusLine4" aria-label="Enter the fourth bus line">
-                        </div>
+                        <div class="col-md-6"><input name="$textBusName4" class="form-control" type="text" id="textBusName4" aria-label="Enter the fourth bus name"></div>
+                        <div class="col-md-6"><input name="$textBusLine4" class="form-control" type="text" id="textBusLine4" aria-label="Enter the fourth bus line"></div>
                       </div>
                       <div class="row pt-1 pb-3">
-                        <div class="col-md-6"><input name="$textBusName5" class="form-control" type="text" id="textBusName5" aria-label="Enter the fifth bus name">
-                        </div>
-                        <div class="col-md-6"><input name="$textBusLine5" class="form-control" type="text" id="textBusLine5" aria-label="Enter the fifth bus line">
-                        </div>
+                        <div class="col-md-6"><input name="$textBusName5" class="form-control" type="text" id="textBusName5" aria-label="Enter the fifth bus name"></div>
+                        <div class="col-md-6"><input name="$textBusLine5" class="form-control" type="text" id="textBusLine5" aria-label="Enter the fifth bus line"></div>
                       </div>
                     </div>
                   </div>
                   <div class="row box other" id="other">
                     <div class="col-12">
-                      <p>
-                        <strong>Other reason</strong>
-                      </p>
+                      <p><strong>Other reason</strong></p>
                     </div>
-                    <div class="col-12"> Describe your need to transfer in the box to the right. </div>
+                    <div class="col-12">Describe your need to transfer in the box to the right.</div>
                     <div class="row">
                       <div class="col-12 pb-3">
-                        <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small> </p>
-                        <textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
+                        <p>Explain reason(s) for transfer (required): <small>(300 characters max):</small></p><textarea name="$reasonbox" rows="4" class="w-100" aria-label="Please explain the reasons for transfer."></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="bd-callout bd-callout-danger col-12 my-3">
                   <div class="px-1 row">
-                    <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="$certifybox"><label for="certifybox" id="lblCertifyBox">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)). </label></div>
+                    <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="$certifybox"><label for="certifybox" id="lblCertifyBox">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)).</label></div>
                   </div>
                   <div class="px-1 row">
-                    <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="$signaturecb">
-                      <label for="signaturecb" id="Label31"> I allow the Court to use this as my electronic signature.</label>
-                    </div>
+                    <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="$signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use this as my electronic signature.</label></div>
                   </div>
                 </div>
                 <div id="submitFormWindow" class="bd-callout bd-callout-warning px-3 col-12 my-3">
-                  <p> By clicking the "Submit Request" button below, you understand that you are requesting a transfer to a different court location. </p>
-                  <p> There is also a chance that you will receive a new service date. </p>
-                  <p> If you do not wish to request a transfer, click the "Cancel" button. </p>
-                  <div>
-                    <button type="submit" class="btn btn-primary" name="$Submitbtn" value="Submit Request">Submit Request</button>
-                    <button type="button" class="btn btn-primary" value="Cancel">Cancel</button>
-                  </div>
+                  <p>By clicking the "Submit Request" button below, you understand that you are requesting a transfer to a different court location.</p>
+                  <p>There is also a chance that you will receive a new service date.</p>
+                  <p>If you do not wish to request a transfer, click the "Cancel" button.</p>
+                  <div><button type="submit" class="btn btn-primary" name="$Submitbtn" value="Submit Request">Submit Request</button> <button type="button" class="btn btn-primary" value="Cancel">Cancel</button></div>
                 </div>
               </div>
             </div>
@@ -260,30 +213,20 @@
         </div>
       </div>
     </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/global.js"></script>
     <script>
-      //https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div-using-select-box
       $(document).ready(function()
       {
         $("#select_transfer").change(function()
         {
           $(this).find("option:selected").each(function()
           {
-            var optionValue = $(this).attr("value");
-            if (optionValue)
-            {
-              $(".box").not("." + optionValue).hide();
-              $("." + optionValue).show();
-            }
-            else
-            {
-              $(".box").hide();
-            }
-          });
-        }).change();
-      });
+            var e = $(this).attr("value");
+            e ? ($(".box").not("." + e).hide(), $("." + e).show()) : $(".box").hide()
+          })
+        }).change()
+      })
     </script>
   </body>
 </html>

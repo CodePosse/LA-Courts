@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>LA Court JDP</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <meta name="theme-color" content="##0DFF39" />
+    <meta name="theme-color" content="##0DFF39">
     <style>
       .box
       {
-        display: none;
+        display: none
       }
 
       .checkitem
@@ -25,7 +25,7 @@
       {
         text-decoration: none;
         font-size: 1.125rem;
-        font-weight: bold
+        font-weight: 700
       }
 
       .answer
@@ -34,202 +34,124 @@
       }
     </style>
   </head>
-  <body>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prepModal"> Prep Checklist </button>
-    <!-- prep checklist Modal -->
+  <body><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prepModal">Prep Checklist</button>
     <div class="modal fade" id="prepModal" tabindex="-1" aria-labelledby="prepModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-fullscreen-md-down">
         <div class="modal-content">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="prepModalLabel">Preperation Checklist</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="prepModalLabel">Preperation Checklist</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="accordion accordion-flush" id="accordionExample">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> I understand my reasponsibility as a juror </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I understand my reasponsibility as a juror</label></div>
+                  </button></h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> I watched the orientation video </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I watched the orientation video</label></div>
+                  </button></h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> I confirm my info is current and correct </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I confirm my info is current and correct</label></div>
+                  </button></h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> I printed out or have a copy or my summons </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I printed out or have a copy or my summons</label></div>
+                  </button></h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> I have read the details about the courthouse </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingFive"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I have read the details about the courthouse</label></div>
+                  </button></h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> I have notified my employer/school or arranged healthcare for dependents </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingSix"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I have notified my employer/school or arranged healthcare for dependents</label></div>
+                  </button></h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault"> What can I bring to the court </label>
-                    </div>
-                  </button>
-                </h2>
+                <h2 class="accordion-header" id="headingSeven"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">What can I bring to the court</label></div>
+                  </button></h2>
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                  <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"> Launch demo modal2 </button>
-    <!-- prep checklist Modal2 -->
+    </div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Launch demo modal2</button>
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-fullscreen-md-down">
         <div class="modal-content">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="exampleModal2Label">Preperation Checklist</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="exampleModal2Label">Preperation Checklist</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">I understand my reasonability as a juror</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I understand my reasonability as a juror</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">I watched the orientation video</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I watched the orientation video</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">I confirm my info is current and correct</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I confirm my info is current and correct</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">I printed out or have a copy or my summons</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I printed out or have a copy or my summons</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">I have read the details about the courthouse</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I have read the details about the courthouse</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">I have notified my employer/school or arranged healthcare for dependents</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">I have notified my employer/school or arranged healthcare for dependents</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
             <div class="checkitem rounded border py-2 px-3">
               <div class="question d-flex justify-content-between">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">What can I bring to the court</label>
-                </div> <a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault">What can I bring to the court</label></div><a href="javascript:void();" class="expand badge rounded-pill bg-light border border-info text-dark">+</a>
               </div>
-              <div class="answer px-2">yay </div>
+              <div class="answer px-2">yay</div>
             </div>
           </div>
         </div>
@@ -240,8 +162,8 @@
     <script>
       $(".expand").click(function()
       {
-        $(this).closest('.checkitem').children('.answer').toggle("fast");
-      });
+        $(this).closest(".checkitem").children(".answer").toggle("fast")
+      })
     </script>
   </body>
 </html>
