@@ -144,7 +144,7 @@ footer i {
 .wizard2 .col > div {
   padding: 5px 10px;
 }
-.wizard2>.col:not(.step-active)>div{ background: rgba(230,230,230,.9)}
+.wizard2>.col-md-2:not(.step-active)>div{ background: rgba(230,230,230,.9)}
 .wizard strong,
 .wizard2 strong {
   font-size: 22px;
@@ -226,7 +226,7 @@ option.exempt {
 }
 
 .accordion-collapse.collapse.show .accordion-body {
-  background-color: aliceblue;
+  box-shadow: 0px 0 30px rgb(1 41 112 / 10%);
 }
 code {
   color: black !important;
