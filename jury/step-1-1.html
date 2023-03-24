@@ -1,688 +1,511 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <title>Step 1: Questionnaire</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <title>flow</title>
-  <meta name="theme-color" content="##0DFF39" />
-</head>
-
-<body>
-  <header class="py-2 px-0 bg-primary text-white">
-    <div class="container">
-      <div class="row">
-        <h3 class="col-md-4 pt-1">
-          <a href="https://www.courts.ca.gov" target="_blank">Judicial Branch of California</a>
-        </h3>
-        <div class="col-md-8 d-flex justify-content-between mt-3">
-          <a href="https://www.courts.ca.gov/supremecourt.htm" target="_blank">Supreme Court</a>
-          <a href="https://www.courts.ca.gov/courtsofappeal.htm" target="_blank">Courts of Appeal</a>
-          <a href="https://www.courts.ca.gov/superiorcourts.htm" target="_blank">Superior Courts</a>
-          <a href="https://www.courts.ca.gov/policyadmin-jc.htm" target="_blank">Judicial Council</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container-fluid lasc-logo py-1">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="height:80px"></a>
-        </div>
-        <div class="col-md-6 d-flex justify-content-between mt-4"><a href="" class="text-white">English</a> <a href=""
-            class="text-white">Spanish</a> <a href="" class="text-white">Other</a> <a href=""
-            class="text-white">Other</a> <a href="" class="text-white">Other</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid splash pt-3 pb-0">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1>LA County Superior Court</h1>
-        <h2>Jury Service Portal</h2>
-      </div>
-    </div>
-    <div class="container py-2 py-md-3">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard2">
-        <div class="col step-active p-1">
-          <div class="d-flex align-items-center border rounded">
-            <div class="flex-grow-1 ms-1">
-              <strong>Step 1 <span class="d-lg-none">of 4</span>
-              </strong> Summons
-            </div>
-            <div class="flex-shrink-0">
-              <i class="fa-solid fa-location-dot fs-1"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col p-1 d-none d-lg-block">
-          <div class="d-flex align-items-center border rounded">
-            <div class="flex-grow-1 ms-1">
-              <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
-            </div>
-          </div>
-        </div>
-        <div class="col p-1 d-none d-lg-block">
-          <div class="d-flex align-items-center border rounded">
-            <div class="flex-grow-1 ms-1">
-              <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
-            </div>
-          </div>
-        </div>
-        <div class="col p-1 d-none d-lg-block">
-          <div class="d-flex align-items-center border rounded">
-            <div class="flex-grow-1 ms-1">
-              <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
+  <head>
+    <title>Step 1: Questionnaire</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>flow</title>
+    <meta name="theme-color" content="##0DFF39" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid lasc-logo py-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="height:80px"></a></div>
+            <div class="col-md-6 d-flex justify-content-between mt-4">
+              <h1 class="display-6 text-white">Jury Duty Portal</h1>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  <div class="container py-md-3">
-    <div class="row">
-      <div class="col-md-6 border bg-light p-md-2">
-        <h2 class="fs-2">My Summons</h2>
-        <h3 class="fs-4">Update Personal Info and Complete Questionnaire</h3>
-        <p><strong>Welcome Keith Teruya.</strong> Complete the two forms linked below. When done, you will be
-          automatically sent to Step 2 to help you prepare for jury duty.</p>
-      </div>
-    </div>
-  </div>  
-</div>
-  <div class="container py-4">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-4 h-100">
-        <div class="card custom-shadow border-warning">
-          <div class="fs-5 card-header fw-bold">Personal Info <i
-              class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
-          <div class="card-body">
-            <div class="row card-text">
-              <div class="col-12 pt-3">
-                <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make
-                  corrections.</p>
+    </header>
+    <div class="container-fluid splash pt-3 pb-0">
+            <div class="container py-2 py-md-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard2">
+          <div class="col step-active p-1">
+            <div class="d-flex align-items-center border rounded">
+              <div class="flex-grow-1 ms-1">
+                <strong>Step 1 <span class="d-lg-none">of 4</span>
+                </strong> Summons
               </div>
-              <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete <span
-                    class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip"
-                    data-bs-placement="bottom" title="Tooltip on bottom"></span></span></div>
-              <div class="col-12 mt-3"><button class="btn btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#infoModal">Verify</button></div>
+              <div class="flex-shrink-0">
+                <i class="fa-solid fa-location-dot fs-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col p-1 d-none d-lg-block">
+            <div class="d-flex align-items-center border rounded">
+              <div class="flex-grow-1 ms-1">
+                <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
+              </div>
+            </div>
+          </div>
+          <div class="col p-1 d-none d-lg-block">
+            <div class="d-flex align-items-center border rounded">
+              <div class="flex-grow-1 ms-1">
+                <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
+              </div>
+            </div>
+          </div>
+          <div class="col p-1 d-none d-lg-block">
+            <div class="d-flex align-items-center border rounded">
+              <div class="flex-grow-1 ms-1">
+                <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 h-100">
-        <div class="card custom-shadow border-warning">
-          <div class="fs-5 card-header fw-bold">Juror Summons <i
-              class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
-          <div class="card-body">
-            <div class="row card-text">
-              <div class="col-12 pt-3">
-                <p>We need you to answer some questions to determine if you are eligible for Jury Duty or not.</p>
-              </div>
-              <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete <span
-                    class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip"
-                    data-bs-placement="bottom" title="Tooltip on bottom"></span></span></div>
-              <div class="col-12 mt-3"><button class="btn btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#questionModal">Answer</button></div>
-            </div>
+      <div class="container py-md-3">
+        <div class="row">
+          <div class="col-md-6 border bg-light p-md-2">
+            <h2 class="fs-2">My Summons</h2>
+            <h3 class="fs-4">Update Personal Info and Complete Questionnaire</h3>
+            <p><strong>Welcome Keith Teruya.</strong> Complete the two forms linked below. When done, you will be automatically sent to Step 2 to help you prepare for jury duty.</p>
           </div>
         </div>
       </div>
-      <!--special handling-->
-      <div class="col-md-8 mt-4">
-        <div class="card custom-shadow border-info">
-          <div class="fs-5 card-header fw-bold bg-info">Special Handling <i
-              class="fa-solid fa-person-circle-question text-primary float-end mt-1"></i></div>
-          <div class="card-body">
-            <div class="row card-text">
-              <div class="col-12 pt-3">
-                <p>If you have received a summons and cannot serve due to one of the reasons below, please click on the
-                  reason for instructions on how to proceed.</p>
-                <p>If you have received a summons for a person called to jury service in your household, and/or related
-                  to that person and know that the juror cannot serve due to one of the reasons below, please select
-                  that reason for instructions on how to proceed.</p>
+    </div>
+    <div class="container py-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 h-100">
+          <div class="card custom-shadow border-warning">
+            <div class="fs-5 card-header fw-bold">Personal Info <i class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>We have some info for you on file. We need you to verify that it&apos;s up-to-date or make corrections.</p>
+                </div>
+                <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete <span class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></span></span></div>
+                <div class="col-12 mt-3"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal">Verify</button></div>
               </div>
-              <div class="col-12">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Juror has/I have served within the last twelve months. </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="priorpnl" class="infoblock">
-                          <p><u class="fw-bold">Served within last 12 months</u></p>
-                          <p> By law, you are only required to serve once every 12 months. If you have been summoned to
-                            serve within 12 months of your last service, you may request to be excused or elect to serve
-                            again. You must first register to proceed with either option. </p>
-                          <p><u class="fw-bold">I do not wish to serve</u></p>
-                          <p> If you have served within the last twelve months and you wish to be excused: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
-                                on that page.</p>
-                            </li>
-                            <li>
-                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the
-                                information on that page. </p>
-                            </li>
-                            <li>
-                              <p> You are now registered. Next, click on the "<a href>Excuse</a>" link. </p>
-                            </li>
-                            <li>
-                              <p>Select the "<strong>Prior Service</strong>" reason. Follow the remainder of the prompts
-                                to fill out your request. </p>
-                            </li>
-                            <li>
-                              <p>Click the "<strong>Submit</strong>" button to submit your request for processing. </p>
-                            </li>
-                          </ol>
-                          <p><u class="fw-bold">I wish to serve</u></p>
-                          <p> If you have served within the last twelve months and you wish to serve again: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the Update your "<a href="#">Verify Personal Info</a>" button and complete the
-                                information on that page.</p>
-                            </li>
-                            <li>
-                              <p> Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the
-                                information on that page. </p>
-                            </li>
-                            <li>
-                              <p> You are now registered. </p>
-                            </li>
-                            <li>
-                              <p> Follow "<strong>Reporting Instructions</strong>" for your service week and the
-                                location that has summoned you OR request a postponement or transfer of location as
-                                needed </p>
-                            </li>
-                          </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 h-100">
+          <div class="card custom-shadow border-warning">
+            <div class="fs-5 card-header fw-bold">Juror Summons <i class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>We need you to answer some questions to determine if you are eligible for Jury Duty or not.</p>
+                </div>
+                <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete <span class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></span></span></div>
+                <div class="col-12 mt-3"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#questionModal">Answer</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--special handling-->
+        <div class="col-md-8 mt-4">
+          <div class="card custom-shadow border-info">
+            <div class="fs-5 card-header fw-bold bg-info">Special Handling <i class="fa-solid fa-person-circle-question text-primary float-end mt-1"></i></div>
+            <div class="card-body">
+              <div class="row card-text">
+                <div class="col-12 pt-3">
+                  <p>If you have received a summons and cannot serve due to one of the reasons below, please click on the reason for instructions on how to proceed.</p>
+                  <p>If you have received a summons for a person called to jury service in your household, and/or related to that person and know that the juror cannot serve due to one of the reasons below, please select that reason for instructions on how to proceed.</p>
+                </div>
+                <div class="col-12">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Juror has/I have served within the last twelve months. </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="priorpnl" class="infoblock">
+                            <p><u class="fw-bold">Served within last 12 months</u></p>
+                            <p> By law, you are only required to serve once every 12 months. If you have been summoned to serve within 12 months of your last service, you may request to be excused or elect to serve again. You must first register to proceed with either option. </p>
+                            <p><u class="fw-bold">I do not wish to serve</u></p>
+                            <p> If you have served within the last twelve months and you wish to be excused: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              </li>
+                              <li>
+                                <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> You are now registered. Next, click on the "<a href>Excuse</a>" link. </p>
+                              </li>
+                              <li>
+                                <p>Select the "<strong>Prior Service</strong>" reason. Follow the remainder of the prompts to fill out your request. </p>
+                              </li>
+                              <li>
+                                <p>Click the "<strong>Submit</strong>" button to submit your request for processing. </p>
+                              </li>
+                            </ol>
+                            <p><u class="fw-bold">I wish to serve</u></p>
+                            <p> If you have served within the last twelve months and you wish to serve again: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the Update your "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              </li>
+                              <li>
+                                <p> Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> You are now registered. </p>
+                              </li>
+                              <li>
+                                <p> Follow "<strong>Reporting Instructions</strong>" for your service week and the location that has summoned you OR request a postponement or transfer of location as needed </p>
+                              </li>
+                            </ol>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Juror is deceased. </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="deathpnl" class="infoblock"> <span id="errlbl" style="color:Red"></span>
-                          <p><u class="fw-bold">Juror is deceased</u></p>
-                          <p>Please select one of the following:</p>
-                          <fieldset>
-                            <legend></legend>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <td colspan="2">
-                                    <p>
-                                      <label for="rbdeathoutside" id="Label1"
-                                        style=" text-decoration:underline; font-weight:bold">Juror died outside Los
-                                        Angeles County</label>
-                                    </p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align:top; width:30px;"><span
-                                      aria-label="Juror died outside Los Angeles County">
-                                      <input id="rbdeathoutside" type="radio" class="form-check-input"
-                                        value="rbdeathoutside">
-                                    </span></td>
-                                  <td>
-                                    <p style="margin-top:0px;"> If the juror is deceased and he/she died outside Los
-                                      Angeles County, please indicate that the juror is deceased in Section D, return
-                                      the jury summons and a <b>copy</b> of the death certificate to this address: </p>
-                                    <p> Los Angeles Superior Court<br> Juror Services Division<br> PO Box 53378<br> Los
-                                      Angeles, CA 90053-0378 </p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td colspan="2">
-                                    <p>
-                                      <label for="rbdeathinside" id="Label2"
-                                        style="text-decoration:underline; font-weight:bold">Juror died within Los
-                                        Angeles County</label>
-                                    </p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align:top;"><span
-                                      aria-label="Juror died within Los Angeles County">
-                                      <input id="rbdeathinside" type="radio" name="" value="rbdeathinside"
-                                        class="form-check-input">
-                                    </span></td>
-                                  <td>
-                                    <p style="margin-top:0px;"> If the juror is deceased and he/she died within Los
-                                      Angeles County, please fill out the sections below and click the
-                                      "<strong>Submit</strong>" button. We will review the information and respond back
-                                      to you within twenty business days. </p>
-                                    <table>
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <p>Name of person filling out this form:</p>
-                                          </td>
-                                          <td style="vertical-align:top"><input name="" type="text" class="form-control"
-                                              id="fillernametext" aria-label="Enter your name"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <p>Name of decedent as it appears on the death certificate:</p>
-                                          </td>
-                                          <td style="vertical-align:top"><input name="" type="text" class="form-control"
-                                              id="deathnametext"
-                                              aria-label="enter name of decedent as it appears on the death certificate">
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <p>Date of death<br> (MM/DD/YYYY):</p>
-                                          </td>
-                                          <td style="vertical-align:top"><input name="" type="text" class="form-control"
-                                              id="datedeathtext" aria-label="enter decedent's date of death"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <p>Date of birth<br> (MM/DD/YYYY):</p>
-                                          </td>
-                                          <td style="vertical-align:top"><input class="form-control" type="text"
-                                              id="datebirthtext" aria-label="enter decedent's date of birth"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <p>City of death:</p>
-                                          </td>
-                                          <td style="vertical-align:top"><input class="form-control" type="text"
-                                              id="citydeathtext" aria-label="enter decedent's city of death"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <p>Your phone number:</p>
-                                          </td>
-                                          <td style="vertical-align:top"><input class="form-control" type="number"
-                                              maxlength="10" id="phone1text" aria-label="enter your phone number"></td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </fieldset>
-                          <br>
-                          <div class="bd-callout bd-callout-danger p-3 bg-white">
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <td valign="top" class="p-2"><input id="certifycheck" type="checkbox"
-                                      class="form-check-input"></td>
-                                  <td><label for="certifycheck" id="lbl_certify">It is perjury to falsify any
-                                      information on this form. Perjury is a felony punishable by up to four years in
-                                      state prison (Penal Code Sec. 126). I certify under penalty of perjury under the
-                                      laws of the State of California that the foregoing is true and correct (Code of
-                                      Civil Procedure Sec. 2015.5(b)). </label></td>
-                                </tr>
-                                <tr>
-                                  <td valign="top" class="p-2"><span
-                                      aria-label="I allow the Court to use this as my electronic signature.">
-                                      <input id="digitalcheck" type="checkbox" class="form-check-input">
-                                    </span></td>
-                                  <td><label for="digitalcheck" id="Label3">I allow the Court to use this as my
-                                      electronic signature. </label></td>
-                                </tr>
-                                <tr>
-                                  <td colspan="2"><button type="button" value="<strong>Submit</strong>"
-                                      class="btn btn-primary" id="submitbtn">Submit</button></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Juror is deceased. </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="deathpnl" class="infoblock"> <span id="errlbl" style="color:Red"></span>
+                            <p><u class="fw-bold">Juror is deceased</u></p>
+                            <p>Please select one of the following:</p>
+                            <fieldset>
+                              <legend></legend>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td colspan="2">
+                                      <p>
+                                        <label for="rbdeathoutside" id="Label1" style=" text-decoration:underline; font-weight:bold">Juror died outside Los Angeles County</label>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="vertical-align:top; width:30px;"><span aria-label="Juror died outside Los Angeles County">
+                                        <input id="rbdeathoutside" type="radio" class="form-check-input" value="rbdeathoutside">
+                                      </span></td>
+                                    <td>
+                                      <p style="margin-top:0px;"> If the juror is deceased and he/she died outside Los Angeles County, please indicate that the juror is deceased in Section D, return the jury summons and a <b>copy</b> of the death certificate to this address: </p>
+                                      <p> Los Angeles Superior Court<br> Juror Services Division<br> PO Box 53378<br> Los Angeles, CA 90053-0378 </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">
+                                      <p>
+                                        <label for="rbdeathinside" id="Label2" style="text-decoration:underline; font-weight:bold">Juror died within Los Angeles County</label>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="vertical-align:top;"><span aria-label="Juror died within Los Angeles County">
+                                        <input id="rbdeathinside" type="radio" name="" value="rbdeathinside" class="form-check-input">
+                                      </span></td>
+                                    <td>
+                                      <p style="margin-top:0px;"> If the juror is deceased and he/she died within Los Angeles County, please fill out the sections below and click the "<strong>Submit</strong>" button. We will review the information and respond back to you within twenty business days. </p>
+                                      <table>
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <p>Name of person filling out this form:</p>
+                                            </td>
+                                            <td style="vertical-align:top"><input name="" type="text" class="form-control" id="fillernametext" aria-label="Enter your name"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p>Name of decedent as it appears on the death certificate:</p>
+                                            </td>
+                                            <td style="vertical-align:top"><input name="" type="text" class="form-control" id="deathnametext" aria-label="enter name of decedent as it appears on the death certificate">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p>Date of death<br> (MM/DD/YYYY):</p>
+                                            </td>
+                                            <td style="vertical-align:top"><input name="" type="text" class="form-control" id="datedeathtext" aria-label="enter decedent's date of death"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p>Date of birth<br> (MM/DD/YYYY):</p>
+                                            </td>
+                                            <td style="vertical-align:top"><input class="form-control" type="text" id="datebirthtext" aria-label="enter decedent's date of birth"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p>City of death:</p>
+                                            </td>
+                                            <td style="vertical-align:top"><input class="form-control" type="text" id="citydeathtext" aria-label="enter decedent's city of death"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p>Your phone number:</p>
+                                            </td>
+                                            <td style="vertical-align:top"><input class="form-control" type="number" maxlength="10" id="phone1text" aria-label="enter your phone number"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </fieldset>
+                            <br>
+                            <div class="bd-callout bd-callout-danger p-3 bg-white">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td valign="top" class="p-2"><input id="certifycheck" type="checkbox" class="form-check-input"></td>
+                                    <td><label for="certifycheck" id="lbl_certify">It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (Penal Code Sec. 126). I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)). </label></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" class="p-2"><span aria-label="I allow the Court to use this as my electronic signature.">
+                                        <input id="digitalcheck" type="checkbox" class="form-check-input">
+                                      </span></td>
+                                    <td><label for="digitalcheck" id="Label3">I allow the Court to use this as my electronic signature. </label></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2"><button type="button" value="<strong>Submit</strong>" class="btn btn-primary" id="submitbtn">Submit</button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Juror/I am in the military. </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="militarypnl" class="infoblock">
+                            <p><u class="fw-bold">Active military service</u></p>
+                            <p><u class="fw-bold">Juror/I will be deployed soon</u></p>
+                            <p>If you are on active military duty AND will be deployed soon, please do the following: </p>
+                            <ol>
+                              <li>
+                                <p> Click on the "<a href>Verify My Info</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> You must register and complete your summons by clicking on the "<a href>Answer Eligibility Questions</a>" button and answering all questions 1-12, <u>ensuring that you answer question number 8</u>. Complete the remainder of the form as prompted. </p>
+                              </li>
+                              <li>
+                                <p> Click the "Submit Answers" button on the page to submit your summons for processing. </p>
+                              </li>
+                            </ol>
+                            <p> If you are a family member responding for the juror and the juror is currently deployed, please use the summons form that was mailed to the juror and indicate that the juror is deployed in Section D of the summons. Please sign and date the summons in Section G. Please return the form to the Court in the self-addressed envelope provided or mail it to: </p>
+                            <p> Los Angeles Superior Court <br> Juror Services <br> PO Box 53378 <br> Los Angeles, CA 90053 </p>
+                            <p><u class="fw-bold">Juror is/I am returning from deployment</u></p>
+                            <p> If you have recently returned from military deployment overseas and need additional time to perform your jury service, please call (213) 972-0970 to request a postponement of your service. </p>
+                            <p> If you need further assistance, please call (213) 972-0970 between the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"> Juror has/I have moved out of Los Angeles County. </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="oocpnl" class="infoblock">
+                            <p><u class="fw-bold">Reside outside Los Angeles County</u></p>
+                            <p> If you are not the juror and do not know where the juror lives, please return the summons to the post office. If you are a family member and/or know where the juror lives, please forward the summons to the juror. </p>
+                            <p> If you are the juror, and you reside outside Los Angeles County, please do the following: </p>
+                            <ol>
+                              <li>
+                                <p> Click on the "<a href>Verify My Info</a>" button. In the "<strong>Address Information</strong>" section, click the "<strong>Enable Editing</strong>" button, enter your new address, and click "<strong>Save</strong>". </p>
+                              </li>
+                              <li>
+                                <p> Complete the remainder of the page as prompted and click on the "<strong>Confirm your Info</strong>" button to update your information. </p>
+                              </li>
+                              <li>
+                                <p> Mail in your COMPLETED summons. Be sure to complete the following sections: </p>
+                                <ul>
+                                  <li>
+                                    <p>Step 1.</p>
+                                  </li>
+                                  <li>
+                                    <p>Step 2.</p>
+                                  </li>
+                                  <li>
+                                    <p>Section F.</p>
+                                  </li>
+                                  <li>
+                                    <p>Section G.</p>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <p> Also mail in one of the following: </p>
+                                <ol>
+                                  <li>
+                                    <p>Utility Bill with your new address.</p>
+                                  </li>
+                                  <li>
+                                    <p>Proof of Voter Registration in your new County.</p>
+                                  </li>
+                                  <li>
+                                    <p>Driver's License with your new address.</p>
+                                  </li>
+                                  <li>
+                                    <p>Property tax bill with your new address.</p>
+                                  </li>
+                                </ol>
+                              </li>
+                            </ol>
+                            <p> If you need further assistance or are unable to complete registration via the "My Jury Duty Portal," please call (213) 972-0970 during the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. You may speak to an agent regarding your address change. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> I am a student or teacher. </button>
+                      </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="studentpnl" class="infoblock">
+                            <p><u class="fw-bold">Student or Teacher</u></p>
+                            <p> You do not qualify for an excuse if you are a full time student or a teacher. If you are a student or a teacher and cannot serve when summoned due to your class schedule, please follow these instructions: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on that page.</p>
+                              </li>
+                              <li>
+                                <p> Click on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted. </p>
+                              </li>
+                              <li>
+                                <p>Click the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              </li>
+                              <li>
+                                <p> Click on the "<strong>Request Change</strong>" link, then the "<strong>Postponement</strong>" link, and postpone to a week when you have a break from school (i.e. Spring Break, Summer Break or Winter Break). </p>
+                              </li>
+                              <li>
+                                <p>Click on the "<strong>Submit</strong>" button to process your request. </p>
+                              </li>
+                            </ol>
+                            <p> You are able to postpone for three months or less on the "My Jury Duty Portal." If you do not see a week that coincides with your school break, please call (213) 972-0970 between the hours of 8:00 AM to 4:30 PM, Pacific Standard Time, Monday through Friday. You will need to speak to an agent to postpone to a period greater than three months. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> I am over 70 years of age. </button>
+                      </h2>
+                      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="agepnl" class="infoblock">
+                            <p><u class="fw-bold">Over 70</u></p>
+                            <p> Please note that there is no exemption based on age. Jury duty is an obligation of citizenship regardless of age. You are required to perform jury service. Please do the following: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted. </p>
+                              </li>
+                              <li>
+                                <p>Click on the "<strong>Submit</strong>" button on the form to submit your summons for processing. </p>
+                              </li>
+                            </ol>
+                            <p><u class="fw-bold">Over 70 with medical excuse</u></p>
+                            <p> Jurors who are 70 years of age or over receive special consideration if they need to be excused due to a medical reason. If you are 70 years of age and are unable to serve due to a medical condition, please do the following: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted. </p>
+                              </li>
+                              <li>
+                                <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              </li>
+                              <li>
+                                <p> In the "<strong>Request Change(s)</strong>" section, click on the "<strong>Excuse</strong>" link and select "Medical Excuse". Follow the prompts on the page and then click on the "<strong>Submit</strong>" button to complete the request for a medical excuse. </p>
+                              </li>
+                            </ol>
+                            <p><u class="fw-bold">Over 70 and wish to transfer</u></p>
+                            <p> Jurors who are 70 years of age or over receive special consideration if they need a change of court location due to a medical condition or lack of transportation. If you are 70 years of age or over and are able to serve but need to change your court location due to a medical reason or transportation problem, please do the following: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted. </p>
+                              </li>
+                              <li>
+                                <p> Press the "<strong>Submit</strong>" button on the form to submit your summons for processing. </p>
+                              </li>
+                              <li>
+                                <p> Click on the "Reschedule" link and then the "<strong>Transfer</strong>" tab. Follow the prompts to submit your request for a transfer. </p>
+                              </li>
+                              <li>
+                                <p> In the "<strong>Request Change(s)</strong>" section, click on the "<strong>Transfer</strong>" button. Follow the prompts on the page and then click on the "<strong>Submit</strong>" button to complete the request for a transfer. </p>
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"> I am a breastfeeding mother. </button>
+                      </h2>
+                      <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="mompnl" class="infoblock">
+                            <p><u class="fw-bold">Breastfeeding Mother</u></p>
+                            <p> For potential jurors who are lactating mothers: <br> While the Los Angeles Superior Court makes every reasonable effort to provide a private, locked room for lactating mothers to express milk, such accommodations are not available at many courthouses. Recognizing this fact, the Court allows a mother who is breastfeeding a child to defer jury service. You are able to postpone your service up to three months through the "My Jury Duty Portal." </p>
+                            <p><u class="fw-bold">Postpone three months or less</u></p>
+                            <p> If you need to postpone three months or less, please do the following: </p>
+                            <ol>
+                              <li>
+                                <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on that page. </p>
+                              </li>
+                              <li>
+                                <p> Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted. </p>
+                              </li>
+                              <li>
+                                <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              </li>
+                              <li>
+                                <p> Click on the "Request Change" link and then the "<strong>Postpone</strong>" tab. Select your new reporting week and click the "<strong>Submit</strong>" button to complete the request to postpone. </p>
+                              </li>
+                            </ol>
+                            <p><u class="fw-bold">Postpone more than three months</u></p>
+                            <p> If you need to postpone for more than three months, please call (213) 972-0970 between the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. You will need to speak to an agent to postpone for more than three months. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"> I need ADA accommodations. </button>
+                      </h2>
+                      <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div id="adapnl" class="infoblock">
+                            <p><u class="fw-bold">Request For Special Accommodation</u></p>
+                            <p><u class="fw-bold">Assistive Listening System (ALS)</u></p>
+                            <p> Portable Assistive Listening Systems (ALS) are available and may be requested from courtroom staff. </p>
+                            <p><u class="fw-bold">Interpreter Services</u></p>
+                            <p> Jurors requiring a sign language interpreter must contact the Jury Coordinator at 1-888-354-0441 (TTY) to coordinate their jury duty and sign language interpreter services. </p>
+                            <p><u class="fw-bold">Telecommunications Device for the Deaf (TDD)</u></p>
+                            <p> Hearing Impaired Jurors must contact the Court’s Telephone Center using Dialogue Text Telephone (TDD/TTY) No. 1-888-354-0441. This line has been installed to arrange for special interpreter services, or for any questions relating to jury service. </p>
+                            <p><u class="fw-bold">Mobility Impairment</u></p>
+                            <p> Mobility Impaired Jurors with disabilities may request accommodation by contacting the court at the assembly room phone number on your summons. </p>
+                            <p><u class="fw-bold">For Additional Accommodations</u></p>
+                            <p> Persons with disabilities who require a special accommodation may request the needed accommodation by filling out the Request for Accommodations by Persons with Disabilities and Order form. Forms are available by clicking on the link form below. You may submit and mail the form to the Juror Services Division at 320 W. Temple Street, Room 1510, Los Angeles, CA 90012. <br>
+                              <br>
+                              <a href="http://www.lasuperiorcourt.org/ada/pdf/mc410.pdf" target="_blank">Request for Accommodations by Persons with Disabilities and Response form</a>
+                            </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Juror/I am in the military. </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="militarypnl" class="infoblock">
-                          <p><u class="fw-bold">Active military service</u></p>
-                          <p><u class="fw-bold">Juror/I will be deployed soon</u></p>
-                          <p>If you are on active military duty AND will be deployed soon, please do the following: </p>
-                          <ol>
-                            <li>
-                              <p> Click on the "<a href>Verify My Info</a>" button and complete the information on that
-                                page. </p>
-                            </li>
-                            <li>
-                              <p> You must register and complete your summons by clicking on the "<a href>Answer
-                                  Eligibility Questions</a>" button and answering all questions 1-12, <u>ensuring that
-                                  you answer question number 8</u>. Complete the remainder of the form as prompted. </p>
-                            </li>
-                            <li>
-                              <p> Click the "Submit Answers" button on the page to submit your summons for processing.
-                              </p>
-                            </li>
-                          </ol>
-                          <p> If you are a family member responding for the juror and the juror is currently deployed,
-                            please use the summons form that was mailed to the juror and indicate that the juror is
-                            deployed in Section D of the summons. Please sign and date the summons in Section G. Please
-                            return the form to the Court in the self-addressed envelope provided or mail it to: </p>
-                          <p> Los Angeles Superior Court <br> Juror Services <br> PO Box 53378 <br> Los Angeles, CA
-                            90053 </p>
-                          <p><u class="fw-bold">Juror is/I am returning from deployment</u></p>
-                          <p> If you have recently returned from military deployment overseas and need additional time
-                            to perform your jury service, please call (213) 972-0970 to request a postponement of your
-                            service. </p>
-                          <p> If you need further assistance, please call (213) 972-0970 between the hours of 8:00 AM
-                            and 4:30 PM (Pacific Standard Time), Monday through Friday. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        Juror has/I have moved out of Los Angeles County. </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="oocpnl" class="infoblock">
-                          <p><u class="fw-bold">Reside outside Los Angeles County</u></p>
-                          <p> If you are not the juror and do not know where the juror lives, please return the summons
-                            to the post office. If you are a family member and/or know where the juror lives, please
-                            forward the summons to the juror. </p>
-                          <p> If you are the juror, and you reside outside Los Angeles County, please do the following:
-                          </p>
-                          <ol>
-                            <li>
-                              <p> Click on the "<a href>Verify My Info</a>" button. In the "<strong>Address
-                                  Information</strong>" section, click the "<strong>Enable Editing</strong>" button,
-                                enter your new address, and click "<strong>Save</strong>". </p>
-                            </li>
-                            <li>
-                              <p> Complete the remainder of the page as prompted and click on the "<strong>Confirm your
-                                  Info</strong>" button to update your information. </p>
-                            </li>
-                            <li>
-                              <p> Mail in your COMPLETED summons. Be sure to complete the following sections: </p>
-                              <ul>
-                                <li>
-                                  <p>Step 1.</p>
-                                </li>
-                                <li>
-                                  <p>Step 2.</p>
-                                </li>
-                                <li>
-                                  <p>Section F.</p>
-                                </li>
-                                <li>
-                                  <p>Section G.</p>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <p> Also mail in one of the following: </p>
-                              <ol>
-                                <li>
-                                  <p>Utility Bill with your new address.</p>
-                                </li>
-                                <li>
-                                  <p>Proof of Voter Registration in your new County.</p>
-                                </li>
-                                <li>
-                                  <p>Driver's License with your new address.</p>
-                                </li>
-                                <li>
-                                  <p>Property tax bill with your new address.</p>
-                                </li>
-                              </ol>
-                            </li>
-                          </ol>
-                          <p> If you need further assistance or are unable to complete registration via the "My Jury
-                            Duty Portal," please call (213) 972-0970 during the hours of 8:00 AM and 4:30 PM (Pacific
-                            Standard Time), Monday through Friday. You may speak to an agent regarding your address
-                            change. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> I
-                        am a student or teacher. </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="studentpnl" class="infoblock">
-                          <p><u class="fw-bold">Student or Teacher</u></p>
-                          <p> You do not qualify for an excuse if you are a full time student or a teacher. If you are a
-                            student or a teacher and cannot serve when summoned due to your class schedule, please
-                            follow these instructions: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on
-                                that page.</p>
-                            </li>
-                            <li>
-                              <p> Click on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all
-                                the questions 1-12 and complete the remainder of the form as prompted. </p>
-                            </li>
-                            <li>
-                              <p>Click the "<strong>Submit</strong>" button on the form to submit your summons for
-                                processing.</p>
-                            </li>
-                            <li>
-                              <p> Click on the "<strong>Request Change</strong>" link, then the
-                                "<strong>Postponement</strong>" link, and postpone to a week when you have a break from
-                                school (i.e. Spring Break, Summer Break or Winter Break). </p>
-                            </li>
-                            <li>
-                              <p>Click on the "<strong>Submit</strong>" button to process your request. </p>
-                            </li>
-                          </ol>
-                          <p> You are able to postpone for three months or less on the "My Jury Duty Portal." If you do
-                            not see a week that coincides with your school break, please call (213) 972-0970 between the
-                            hours of 8:00 AM to 4:30 PM, Pacific Standard Time, Monday through Friday. You will need to
-                            speak to an agent to postpone to a period greater than three months. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> I
-                        am over 70 years of age. </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                      data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="agepnl" class="infoblock">
-                          <p><u class="fw-bold">Over 70</u></p>
-                          <p> Please note that there is no exemption based on age. Jury duty is an obligation of
-                            citizenship regardless of age. You are required to perform jury service. Please do the
-                            following: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on
-                                that page. </p>
-                            </li>
-                            <li>
-                              <p> Complete your summons and register for jury duty by clicking on the "<a
-                                  href="#">Answer Eligibility Questions</a>" button. Please answer all the questions
-                                1-12 and complete the remainder of the form as prompted. </p>
-                            </li>
-                            <li>
-                              <p>Click on the "<strong>Submit</strong>" button on the form to submit your summons for
-                                processing. </p>
-                            </li>
-                          </ol>
-                          <p><u class="fw-bold">Over 70 with medical excuse</u></p>
-                          <p> Jurors who are 70 years of age or over receive special consideration if they need to be
-                            excused due to a medical reason. If you are 70 years of age and are unable to serve due to a
-                            medical condition, please do the following: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on
-                                that page. </p>
-                            </li>
-                            <li>
-                              <p> Complete your summons and register for jury duty by clicking on the "<a
-                                  href="#">Answer Eligibility Questions</a>" button. Please answer all the questions
-                                1-12 and complete the remainder of the form as prompted. </p>
-                            </li>
-                            <li>
-                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for
-                                processing.</p>
-                            </li>
-                            <li>
-                              <p> In the "<strong>Request Change(s)</strong>" section, click on the
-                                "<strong>Excuse</strong>" link and select "Medical Excuse". Follow the prompts on the
-                                page and then click on the "<strong>Submit</strong>" button to complete the request for
-                                a medical excuse. </p>
-                            </li>
-                          </ol>
-                          <p><u class="fw-bold">Over 70 and wish to transfer</u></p>
-                          <p> Jurors who are 70 years of age or over receive special consideration if they need a change
-                            of court location due to a medical condition or lack of transportation. If you are 70 years
-                            of age or over and are able to serve but need to change your court location due to a medical
-                            reason or transportation problem, please do the following: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on
-                                that page. </p>
-                            </li>
-                            <li>
-                              <p> Complete your summons and register for jury duty by clicking on the "<a
-                                  href="#">Answer Eligibility Questions</a>" button. Please answer all the questions
-                                1-12 and complete the remainder of the form as prompted. </p>
-                            </li>
-                            <li>
-                              <p> Press the "<strong>Submit</strong>" button on the form to submit your summons for
-                                processing. </p>
-                            </li>
-                            <li>
-                              <p> Click on the "Reschedule" link and then the "<strong>Transfer</strong>" tab. Follow
-                                the prompts to submit your request for a transfer. </p>
-                            </li>
-                            <li>
-                              <p> In the "<strong>Request Change(s)</strong>" section, click on the
-                                "<strong>Transfer</strong>" button. Follow the prompts on the page and then click on the
-                                "<strong>Submit</strong>" button to complete the request for a transfer. </p>
-                            </li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        I am a breastfeeding mother. </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="mompnl" class="infoblock">
-                          <p><u class="fw-bold">Breastfeeding Mother</u></p>
-                          <p> For potential jurors who are lactating mothers: <br> While the Los Angeles Superior Court
-                            makes every reasonable effort to provide a private, locked room for lactating mothers to
-                            express milk, such accommodations are not available at many courthouses. Recognizing this
-                            fact, the Court allows a mother who is breastfeeding a child to defer jury service. You are
-                            able to postpone your service up to three months through the "My Jury Duty Portal." </p>
-                          <p><u class="fw-bold">Postpone three months or less</u></p>
-                          <p> If you need to postpone three months or less, please do the following: </p>
-                          <ol>
-                            <li>
-                              <p>Click on the "<a href>Verify Personal Info</a>" button and complete the information on
-                                that page. </p>
-                            </li>
-                            <li>
-                              <p> Complete your summons and register for jury duty by clicking on the "<a
-                                  href="#">Answer Eligibility Questions</a>" button. Please answer all the questions
-                                1-12 and complete the remainder of the form as prompted. </p>
-                            </li>
-                            <li>
-                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for
-                                processing.</p>
-                            </li>
-                            <li>
-                              <p> Click on the "Request Change" link and then the "<strong>Postpone</strong>" tab.
-                                Select your new reporting week and click the "<strong>Submit</strong>" button to
-                                complete the request to postpone. </p>
-                            </li>
-                          </ol>
-                          <p><u class="fw-bold">Postpone more than three months</u></p>
-                          <p> If you need to postpone for more than three months, please call (213) 972-0970 between the
-                            hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. You will need
-                            to speak to an agent to postpone for more than three months. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingEight">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                        I need ADA accommodations. </button>
-                    </h2>
-                    <div id="flush-collapseEight" class="accordion-collapse collapse"
-                      aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">
-                        <div id="adapnl" class="infoblock">
-                          <p><u class="fw-bold">Request For Special Accommodation</u></p>
-                          <p><u class="fw-bold">Assistive Listening System (ALS)</u></p>
-                          <p> Portable Assistive Listening Systems (ALS) are available and may be requested from
-                            courtroom staff. </p>
-                          <p><u class="fw-bold">Interpreter Services</u></p>
-                          <p> Jurors requiring a sign language interpreter must contact the Jury Coordinator at
-                            1-888-354-0441 (TTY) to coordinate their jury duty and sign language interpreter services.
-                          </p>
-                          <p><u class="fw-bold">Telecommunications Device for the Deaf (TDD)</u></p>
-                          <p> Hearing Impaired Jurors must contact the Court’s Telephone Center using Dialogue Text
-                            Telephone (TDD/TTY) No. 1-888-354-0441. This line has been installed to arrange for special
-                            interpreter services, or for any questions relating to jury service. </p>
-                          <p><u class="fw-bold">Mobility Impairment</u></p>
-                          <p> Mobility Impaired Jurors with disabilities may request accommodation by contacting the
-                            court at the assembly room phone number on your summons. </p>
-                          <p><u class="fw-bold">For Additional Accommodations</u></p>
-                          <p> Persons with disabilities who require a special accommodation may request the needed
-                            accommodation by filling out the Request for Accommodations by Persons with Disabilities and
-                            Order form. Forms are available by clicking on the link form below. You may submit and mail
-                            the form to the Juror Services Division at 320 W. Temple Street, Room 1510, Los Angeles, CA
-                            90012. <br>
-                            <br>
-                            <a href="http://www.lasuperiorcourt.org/ada/pdf/mc410.pdf" target="_blank">Request for
-                              Accommodations by Persons with Disabilities and Response form</a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -690,378 +513,272 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- question madal -->
-  <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-      <div class="modal-content">
-        <div class="modal-header bg-info">
-          <h1 class="modal-title fs-5" id="questionModalLabel">Juror Summons</h1><button type="button"
-            class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="container needs-validation" novalidate id="questionnaire">
-            <div class="row custom-shadow">
-              <div class="col-xl-6">
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">1</span> I am a citizen
-                    of the United States.<div class="col-12 ps-md-5"><label for="x1" class="form-label">If NO, I am a
-                        citizen of:</label> <input type="text" class="form-control" id="x1" value></div>
-                    <div class="col-12 ps-md-5 pt-2"><label for="x2" class="form-label">Alien Registration
-                        number:</label> <input type="text" class="form-control" id="x2" value></div>
-                  </div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions1" id="inlineRadio1" value="yes"> <label class="form-check-label"
-                            for="inlineRadio1">Yes</label></div>
-                      </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions1" id="inlineRadio2" value="no"> <label class="form-check-label"
-                            for="inlineRadio2">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">2</span> I am able to
-                    read and understand English.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions2" id="inlineRadio3" value="yes"> <label class="form-check-label"
-                            for="inlineRadio3">Yes</label></div>
-                      </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions2" id="inlineRadio4" value="no"> <label class="form-check-label"
-                            for="inlineRadio4">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">3</span> I am a resident
-                    of the County of Los Angeles.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions3" id="inlineRadio5" value="yes"> <label class="form-check-label"
-                            for="inlineRadio5">Yes</label></div>
-                      </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions3" id="inlineRadio6" value="no"> <label class="form-check-label"
-                            for="inlineRadio6">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">4</span> I am atleast 18
-                    years of age.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions4" id="inlineRadio7" value="yes"> <label class="form-check-label"
-                            for="inlineRadio7">Yes</label></div>
-                      </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions4" id="inlineRadio8" value="no"> <label class="form-check-label"
-                            for="inlineRadio8">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">5</span> I am now serving
-                    as a grand or trial juror in any court of this state under a different JID number.<div
-                      class="col-12 ps-md-5 pt-2"><label for="x3" class="form-label">Juror ID Number:</label> <input
-                        type="text" class="form-control" id="x3" value></div>
-                  </div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions5" id="inlineRadio9" value="yes"> <label class="form-check-label"
-                            for="inlineRadio9">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions5" id="inlineRadio10" value="no"> <label class="form-check-label"
-                            for="inlineRadio10">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6</span> I have been
-                    convicted of malfeasance in office. (if No, skip question 6A below)<div class="p-2 row">
-                      <div class="col-md-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6A</span> If you have
-                        been convicted of malfeasance in office, have your rights been restored by a pardon, or has your
-                        conviction been expunged under PC&#xA7;17, &#xA7;1203.4, or &#xA7;1203.4a?</div>
-                      <fieldset class="form-group col-md-3 bg-light py-2">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
-                            name="inlineRadioOptionsx" id="inlineRadiox" value="yes"> <label class="form-check-label"
-                            for="inlineRadiox">Yes</label></div>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
-                            name="inlineRadioOptionsx2" id="inlineRadiox2" value="no"> <label class="form-check-label"
-                            for="inlineRadiox2">No</label></div>
-                      </fieldset>
+    <!-- question madal -->
+    <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h1 class="modal-title fs-5" id="questionModalLabel">Juror Summons</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="container needs-validation" novalidate id="questionnaire">
+              <div class="row custom-shadow">
+                <div class="col-xl-6">
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">1</span> I am a citizen of the United States.<div class="col-12 ps-md-5"><label for="x1" class="form-label">If NO, I am a citizen of:</label> <input type="text" class="form-control" id="x1" value></div>
+                      <div class="col-12 ps-md-5 pt-2"><label for="x2" class="form-label">Alien Registration number:</label> <input type="text" class="form-control" id="x2" value></div>
+                    </div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions1" id="inlineRadio1" value="yes"> <label class="form-check-label" for="inlineRadio1">Yes</label></div>
+                        </span><span class="boxed col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions1" id="inlineRadio2" value="no"> <label class="form-check-label" for="inlineRadio2">No</label></div>
+                        </span></fieldset>
                     </div>
                   </div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions6" id="inlineRadio11" value="yes"> <label class="form-check-label"
-                            for="inlineRadio11">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions6" id="inlineRadio12" value="no"> <label class="form-check-label"
-                            for="inlineRadio12">No</label></div>
-                      </span></fieldset>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">2</span> I am able to read and understand English.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions2" id="inlineRadio3" value="yes"> <label class="form-check-label" for="inlineRadio3">Yes</label></div>
+                        </span><span class="boxed col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions2" id="inlineRadio4" value="no"> <label class="form-check-label" for="inlineRadio4">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">3</span> I am a resident of the County of Los Angeles.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions3" id="inlineRadio5" value="yes"> <label class="form-check-label" for="inlineRadio5">Yes</label></div>
+                        </span><span class="boxed col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions3" id="inlineRadio6" value="no"> <label class="form-check-label" for="inlineRadio6">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">4</span> I am atleast 18 years of age.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions4" id="inlineRadio7" value="yes"> <label class="form-check-label" for="inlineRadio7">Yes</label></div>
+                        </span><span class="boxed col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions4" id="inlineRadio8" value="no"> <label class="form-check-label" for="inlineRadio8">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">5</span> I am now serving as a grand or trial juror in any court of this state under a different JID number.<div class="col-12 ps-md-5 pt-2"><label for="x3" class="form-label">Juror ID Number:</label> <input type="text" class="form-control" id="x3" value></div>
+                    </div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions5" id="inlineRadio9" value="yes"> <label class="form-check-label" for="inlineRadio9">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions5" id="inlineRadio10" value="no"> <label class="form-check-label" for="inlineRadio10">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6</span> I have been convicted of malfeasance in office. (if No, skip question 6A below)<div class="p-2 row">
+                        <div class="col-md-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6A</span> If you have been convicted of malfeasance in office, have your rights been restored by a pardon, or has your conviction been expunged under PC&#xA7;17, &#xA7;1203.4, or &#xA7;1203.4a?</div>
+                        <fieldset class="form-group col-md-3 bg-light py-2">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptionsx" id="inlineRadiox" value="yes"> <label class="form-check-label" for="inlineRadiox">Yes</label></div>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptionsx2" id="inlineRadiox2" value="no"> <label class="form-check-label" for="inlineRadiox2">No</label></div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions6" id="inlineRadio11" value="yes"> <label class="form-check-label" for="inlineRadio11">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions6" id="inlineRadio12" value="no"> <label class="form-check-label" for="inlineRadio12">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">7</span> I am under a court-appointed conservatorship.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions7" id="inlineRadio13" value="yes"> <label class="form-check-label" for="inlineRadio13">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions7" id="inlineRadio14" value="no"> <label class="form-check-label" for="inlineRadio14">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">8</span> I am on active military duty and/or not domiciled in this state.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions8" id="inlineRadio15" value="yes"> <label class="form-check-label" for="inlineRadio15">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions8" id="inlineRadio16" value="no"> <label class="form-check-label" for="inlineRadio16">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">9</span> I am a peace officer appointed under PC &#xA7;830.1, &#xA7;830.15, &#xA7;830.2(a), or &#xA7;830.33(a).</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions9" id="inlineRadio17" value="yes"> <label class="form-check-label" for="inlineRadio17">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions9" id="inlineRadio18" value="no"> <label class="form-check-label" for="inlineRadio18">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">10</span> I am currently incarcerated in prison or jail.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions10" id="inlineRadio19" value="yes"> <label class="form-check-label" for="inlineRadio19">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions10" id="inlineRadio20" value="no"> <label class="form-check-label" for="inlineRadio20">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">11</span> I have been convicted of a felony and am currently on parole. postrelease community supervision. felony probation, or mandated supervision for the conviction of a felony. I am required to register as a sex offender pursuant to Section 290 of the penal code for the conviction of a felony.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions11" id="inlineRadio21" value="yes"> <label class="form-check-label" for="inlineRadio21">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions11" id="inlineRadio22" value="no"> <label class="form-check-label" for="inlineRadio22">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                  <div class="control-group border row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">12</span> I am required to register as a sex offender pursuant to Section 290 of the penal code for the conviction of a felony.</div>
+                    <div class="pb-2 bg-light col-3">
+                      <fieldset class="form-group row"><span class="boxed col-lg-6">
+                          <legend class="sr-only">Select Yes or No</legend>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions12" id="inlineRadio23" value="yes"> <label class="form-check-label" for="inlineRadio23">Yes</label></div>
+                        </span><span class="boxed indicated col-lg-6">
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions12" id="inlineRadio24" value="no"> <label class="form-check-label" for="inlineRadio24">No</label></div>
+                        </span></fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 pt-3">
+                  <div class="bd-callout bd-callout-danger p-3">
+                    <div class="mb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                    <div class="form-check"><input type="checkbox" class="form-check-input" id="perjury-ack" required>
+                      <label class="form-check-label" for="perjury-ack">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (CCP Sec. 2015.5(b)).</label>
+                      <div class="invalid-feedback">* You must agree before submitting.</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">7</span> I am under a
-                    court-appointed conservatorship.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions7" id="inlineRadio13" value="yes"> <label class="form-check-label"
-                            for="inlineRadio13">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions7" id="inlineRadio14" value="no"> <label class="form-check-label"
-                            for="inlineRadio14">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">8</span> I am on active
-                    military duty and/or not domiciled in this state.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions8" id="inlineRadio15" value="yes"> <label class="form-check-label"
-                            for="inlineRadio15">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions8" id="inlineRadio16" value="no"> <label class="form-check-label"
-                            for="inlineRadio16">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">9</span> I am a peace
-                    officer appointed under PC &#xA7;830.1, &#xA7;830.15, &#xA7;830.2(a), or &#xA7;830.33(a).</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions9" id="inlineRadio17" value="yes"> <label class="form-check-label"
-                            for="inlineRadio17">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions9" id="inlineRadio18" value="no"> <label class="form-check-label"
-                            for="inlineRadio18">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">10</span> I am currently
-                    incarcerated in prison or jail.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions10" id="inlineRadio19" value="yes"> <label class="form-check-label"
-                            for="inlineRadio19">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions10" id="inlineRadio20" value="no"> <label class="form-check-label"
-                            for="inlineRadio20">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">11</span> I have been
-                    convicted of a felony and am currently on parole. postrelease community supervision. felony
-                    probation, or mandated supervision for the conviction of a felony. I am required to register as a
-                    sex offender pursuant to Section 290 of the penal code for the conviction of a felony.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions11" id="inlineRadio21" value="yes"> <label class="form-check-label"
-                            for="inlineRadio21">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions11" id="inlineRadio22" value="no"> <label class="form-check-label"
-                            for="inlineRadio22">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-                <div class="control-group border row">
-                  <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">12</span> I am required
-                    to register as a sex offender pursuant to Section 290 of the penal code for the conviction of a
-                    felony.</div>
-                  <div class="pb-2 bg-light col-3">
-                    <fieldset class="form-group row"><span class="boxed col-lg-6">
-                        <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions12" id="inlineRadio23" value="yes"> <label class="form-check-label"
-                            for="inlineRadio23">Yes</label></div>
-                      </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
-                            name="inlineRadioOptions12" id="inlineRadio24" value="no"> <label class="form-check-label"
-                            for="inlineRadio24">No</label></div>
-                      </span></fieldset>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 pt-3">
-                <div class="bd-callout bd-callout-danger p-3">
-                  <div class="mb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony
-                      punishable by up to four years in state prison (PC Sec. 126).</strong></div>
-                  <div class="form-check"><input type="checkbox" class="form-check-input" id="perjury-ack" required>
-                    <label class="form-check-label" for="perjury-ack">I certify under penalty of perjury under the laws
-                      of the State of California that the foregoing is true and correct (CCP Sec. 2015.5(b)).</label>
-                    <div class="invalid-feedback">* You must agree before submitting.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer"><button class="btn btn-primary btn-lg my-1" type="Submit" id="submit-elgibility"
-                disabled="disabled">Submit Questions</button> <button class="btn btn-primary btn-lg my-1"
-                type="reset">Reset</button></div>
-          </form>
+              <div class="modal-footer"><button class="btn btn-primary btn-lg my-1" type="Submit" id="submit-elgibility" disabled="disabled">Submit Questions</button> <button class="btn btn-primary btn-lg my-1" type="reset">Reset</button></div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- info modal -->
-  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-      <div class="modal-content">
-        <div class="modal-header bg-info">
-          <h1 class="modal-title fs-5" id="infoModalLabel">Verify Personal Information</h1><button type="button"
-            class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="needs-validation" id="myinfo" novalidate>
-            <div class="container">
-              <div class="row d-flex justify-content-center">
-                <div class="col-12 py-2">
-                  <div class="card custom-shadow border-danger">
-                    <div class="card-header text-danger">Filling Out For Someone Else?</div>
-                    <div class="card-body">
-                      <p class="card-text">If you are filling out on someone else&apos;s behalf and they are unable to
-                        complete this form themselves, please contact the court at (213) 555-1212.</p>
-                      <div class="row"></div>
+    <!-- info modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h1 class="modal-title fs-5" id="infoModalLabel">Verify Personal Information</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" id="myinfo" novalidate>
+              <div class="container">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12 py-2">
+                    <div class="card custom-shadow border-danger">
+                      <div class="card-header text-danger">Filling Out For Someone Else?</div>
+                      <div class="card-body">
+                        <p class="card-text">If you are filling out on someone else&apos;s behalf and they are unable to complete this form themselves, please contact the court at (213) 555-1212.</p>
+                        <div class="row"></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 py-2">
-                  <div class="card custom-shadow">
-                    <div class="card-header">Personal Information</div>
-                    <div class="card-body">
-                      <p class="card-text">Please note that if you have legally changed your name, or your name as shown
-                        is incorrect, you may execute a name change only when you report for service. A valid,
-                        government issued picture ID such as a driver&apos;s license or passport is required to effect a
-                        name change.</p>
-                      <div class="row">
-                        <div class="col-md-3"><label for="firstName" class="form-label">First name</label> <input
-                            type="text" class="form-control" id="firstName" placeholder value="Keith"
-                            disabled="disabled">
-                          <div class="invalid-feedback">Valid first name is required.</div>
-                        </div>
-                        <div class="col-md-3"><label for="middleName" class="form-label">Middle initial</label> <input
-                            type="text" class="form-control" id="middleName" placeholder value="A" size="4"
-                            disabled="disabled"></div>
-                        <div class="col-md-3"><label for="lastName" class="form-label">Last name</label> <input
-                            type="text" class="form-control" id="lastName" placeholder value="Teruya"
-                            disabled="disabled">
-                          <div class="invalid-feedback">Valid last name is required.</div>
-                        </div>
-                        <div class="col-md-2"><label for="birthYear" class="form-label">Birth year</label> <input
-                            type="number" class="form-control" id="birthYear" placeholder value="1947" size="4"
-                            min="1900" max="2022" disabled="disabled">
-                          <div class="invalid-feedback">Valid birth year is required.</div>
+                  <div class="col-12 py-2">
+                    <div class="card custom-shadow">
+                      <div class="card-header">Personal Information</div>
+                      <div class="card-body">
+                        <p class="card-text">Please note that if you have legally changed your name, or your name as shown is incorrect, you may execute a name change only when you report for service. A valid, government issued picture ID such as a driver&apos;s license or passport is required to effect a name change.</p>
+                        <div class="row">
+                          <div class="col-md-3"><label for="firstName" class="form-label">First name</label> <input type="text" class="form-control" id="firstName" placeholder value="Keith" disabled="disabled">
+                            <div class="invalid-feedback">Valid first name is required.</div>
+                          </div>
+                          <div class="col-md-3"><label for="middleName" class="form-label">Middle initial</label> <input type="text" class="form-control" id="middleName" placeholder value="A" size="4" disabled="disabled"></div>
+                          <div class="col-md-3"><label for="lastName" class="form-label">Last name</label> <input type="text" class="form-control" id="lastName" placeholder value="Teruya" disabled="disabled">
+                            <div class="invalid-feedback">Valid last name is required.</div>
+                          </div>
+                          <div class="col-md-2"><label for="birthYear" class="form-label">Birth year</label> <input type="number" class="form-control" id="birthYear" placeholder value="1947" size="4" min="1900" max="2022" disabled="disabled">
+                            <div class="invalid-feedback">Valid birth year is required.</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 py-2">
-                  <div class="card custom-shadow">
-                    <div class="card-header">Address Information</div>
-                    <div class="card-body">
-                      <p class="card-text">This is the address we have on record. If this is incorrect, please click the
-                        &quot;edit&quot; button.</p>
-                      <p class="myaddress p-3 border border-info rounded bg-light">***** Lyans Drive<br>La
-                        Canada-Flintridge CA, 91011</p>
-                      <p><a onclick="toggleEdit()" id="editButton" class="btn btn-primary">Enable Editing</a></p>
-                      <div class="row" id="editAddr">
-                        <div class="col-12 pb-3">
-                          <fieldset class="form-group row px-3">
-                            <legend class="sr-only">Address type</legend>
-                            <div class="form-check col-md-3"><input class="form-check-input" type="radio"
-                                name="flexRadioDefault1" id="flexRadioDefault1" checked="checked"> <label
-                                class="form-check-label" for="flexRadioDefault1">LA County</label></div>
-                            <div class="form-check col-md-3"><input class="form-check-input" type="radio"
-                                name="flexRadioDefault2" id="flexRadioDefault2"> <label class="form-check-label"
-                                for="flexRadioDefault2">Outside LA County</label></div>
-                            <div class="form-check col-md-3"><input class="form-check-input" type="radio"
-                                name="flexRadioDefault4" id="flexRadioDefault4"> <label class="form-check-label"
-                                for="flexRadioDefault4">Foreign/Military Address</label></div>
-                            <div class="form-check col-md-3"><input class="form-check-input" type="radio"
-                                name="flexRadioDefault3" id="flexRadioDefault3"> <label class="form-check-label"
-                                for="flexRadioDefault3">PO Box</label></div>
-                          </fieldset>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="card text-dark bg-light mb-3">
-                            <div class="card-header">Current Address:</div>
-                            <div class="card-body">
-                              <div class="row d-flex justify-content-between">
-                                <div class="col-md-2 py-2"><label for="housenum" class="form-label">House number</label>
-                                  <input type="number" class="form-control" id="housenum" required>
-                                  <div class="invalid-feedback">Please enter a house number.</div>
+                  <div class="col-12 py-2">
+                    <div class="card custom-shadow">
+                      <div class="card-header">Address Information</div>
+                      <div class="card-body">
+                        <p class="card-text">This is the address we have on record. If this is incorrect, please click the &quot;edit&quot; button.</p>
+                        <p class="myaddress p-3 border border-info rounded bg-light">***** Lyans Drive<br>La Canada-Flintridge CA, 91011</p>
+                        <p><a onclick="toggleEdit()" id="editButton" class="btn btn-primary">Enable Editing</a></p>
+                        <div class="row" id="editAddr">
+                          <div class="col-12 pb-3">
+                            <fieldset class="form-group row px-3">
+                              <legend class="sr-only">Address type</legend>
+                              <div class="form-check col-md-3"><input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked="checked"> <label class="form-check-label" for="flexRadioDefault1">LA County</label></div>
+                              <div class="form-check col-md-3"><input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">Outside LA County</label></div>
+                              <div class="form-check col-md-3"><input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4"> <label class="form-check-label" for="flexRadioDefault4">Foreign/Military Address</label></div>
+                              <div class="form-check col-md-3"><input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3"> <label class="form-check-label" for="flexRadioDefault3">PO Box</label></div>
+                            </fieldset>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="card text-dark bg-light mb-3">
+                              <div class="card-header">Current Address:</div>
+                              <div class="card-body">
+                                <div class="row d-flex justify-content-between">
+                                  <div class="col-md-2 py-2"><label for="housenum" class="form-label">House number</label>
+                                    <input type="number" class="form-control" id="housenum" required>
+                                    <div class="invalid-feedback">Please enter a house number.</div>
+                                  </div>
+                                  <div class="col-md-2 py-2"><label for="fraction" class="form-label">Fraction</label>
+                                    <select name id="fraction" class="form-select">
+                                      <option value></option>
+                                      <option value>1/2</option>
+                                      <option value>1/3</option>
+                                      <option value>1/4</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-5 py-2"><label for="stname" class="form-label">Street name</label>
+                                    <input type class="form-control" id="stname" required>
+                                    <div class="invalid-feedback">Please enter a street name.</div>
+                                  </div>
+                                  <div class="col-md-2 py-2"><label for="suffix" class="form-label">Suffix</label> <select name id="suffix" class="form-select">
+                                      <option value></option>
+                                      <option value>Lane</option>
+                                      <option value>Avenue</option>
+                                      <option value>Boulevard</option>
+                                      <option value>Drive</option>
+                                    </select></div>
+                                  <div class="col-md-1 py-2"><label for="apt" class="form-label">Apartment</label> <input type class="form-control" id="apt"></div>
+                                  <div class="col-md-4 py-2"><label for="city" class="form-label">City</label> <input type class="form-control" id="city"></div>
+                                  <div class="col-sm-2"><label for="state" class="form-label">State</label> <input type class="form-control" id="state" required></div>
+                                  <div class="col-sm-3 py-2"><label for="zip" class="form-label">Zip</label> <input type="number" class="form-control" id="zip" required>
+                                    <div class="invalid-feedback">Zip code required.</div>
+                                  </div>
+                                  <div class="col-12 pt-3 d-flex justify-content-end"><button class="btn btn-primary">Save</button></div>
                                 </div>
-                                <div class="col-md-2 py-2"><label for="fraction" class="form-label">Fraction</label>
-                                  <select name id="fraction" class="form-select">
-                                    <option value></option>
-                                    <option value>1/2</option>
-                                    <option value>1/3</option>
-                                    <option value>1/4</option>
-                                  </select></div>
-                                <div class="col-md-5 py-2"><label for="stname" class="form-label">Street name</label>
-                                  <input type class="form-control" id="stname" required>
-                                  <div class="invalid-feedback">Please enter a street name.</div>
-                                </div>
-                                <div class="col-md-2 py-2"><label for="suffix" class="form-label">Suffix</label> <select
-                                    name id="suffix" class="form-select">
-                                    <option value></option>
-                                    <option value>Lane</option>
-                                    <option value>Avenue</option>
-                                    <option value>Boulevard</option>
-                                    <option value>Drive</option>
-                                  </select></div>
-                                <div class="col-md-1 py-2"><label for="apt" class="form-label">Apartment</label> <input
-                                    type class="form-control" id="apt"></div>
-                                <div class="col-md-4 py-2"><label for="city" class="form-label">City</label> <input type
-                                    class="form-control" id="city"></div>
-                                <div class="col-sm-2"><label for="state" class="form-label">State</label> <input type
-                                    class="form-control" id="state" required></div>
-                                <div class="col-sm-3 py-2"><label for="zip" class="form-label">Zip</label> <input
-                                    type="number" class="form-control" id="zip" required>
-                                  <div class="invalid-feedback">Zip code required.</div>
-                                </div>
-                                <div class="col-12 pt-3 d-flex justify-content-end"><button
-                                    class="btn btn-primary">Save</button></div>
                               </div>
                             </div>
                           </div>
@@ -1069,212 +786,158 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 py-2">
-                  <div class="card custom-shadow">
-                    <div class="card-header">Contact Information</div>
-                    <div class="card-body">
-                      <p class="card-text"><span class="text-danger">*</span> Please provide at least one phone number
-                        in the fields below.</p>
-                      <div class="row">
-                        <div class="col-md-4 mb-2"><label for="homePhone" class="form-label">Home phone number</label>
-                          <input type="number" class="form-control" id="homePhone" placeholder value min="2012222222"
-                            max="9989989999"></div>
-                        <div class="col-md-4 mb-2"><label for="workPhone" class="form-label">Work phone number</label>
-                          <input type="number" class="form-control" id="workPhone" placeholder value min="2012222222"
-                            max="9989989999"></div>
-                        <div class="col-md-2 mb-2"><label for="workExtPhone" class="form-label">Work extension</label>
-                          <input type="number" class="form-control" id="workExtPhone" placeholder value size="7"></div>
-                        <div class="col-md-4 mb-2"><label for="mobilePhone" class="form-label">Mobile phone
-                            number</label> <input type="number" class="form-control" id="mobilePhone" placeholder value
-                            min="2012222222" max="9989989999"></div>
-                        <div class="col-md-4 mb-2"><label for="email" class="form-label">E-mail</label> <input
-                            type="email" class="form-control" id="email"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 py-2">
-                  <div class="card custom-shadow">
-                    <div class="card-header">Notification Preference</div>
-                    <div class="card-body">
-                      <p class="card-text">Besides returning to the site to see your status, is there any other
-                        notification method you would like us to use?</p>
-                      <div class="row">
-                        <div class="col"><label for="notificationMethod" class="form-label">Notification
-                            Preference</label> <select class="form-select" id="notificationMethod">
-                            <option value>Choose...</option>
-                            <option value>Text</option>
-                            <option value>E-mail</option>
-                            <option value>Text and Email</option>
-                          </select></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-8 py-2">
-                  <div class="card custom-shadow border-info">
-                    <div class="card-header">Employment Information</div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-sm-6 mb-2"><label for="workStatus" class="form-label">Employment status</label>
-                          <select class="form-select" id="workStatus" required>
-                            <option value disabled="disabled" selected="selected">Choose one...</option>
-                            <option value>Employed</option>
-                            <option value>Self-Employed</option>
-                            <option value>Unemployed</option>
-                            <option value class="exempt">Retired</option>
-                            <option value class="exempt">Home Maker</option>
-                            <option value class="exempt">Student</option>
-                          </select>
-                          <div class="invalid-feedback">Please provide a valid employment status.</div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                          <div class="mb-3">Government Employee?</div>
-                          <fieldset class="form-group d-flex">
-                            <legend class="sr-only">Select Yes or No</legend>
-                            <div></div>
-                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
-                                name="govt" id="govt"> <label class="form-check-label" for="govt">Yes</label></div>
-                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
-                                name="govtno" id="govtno" checked="checked"> <label class="form-check-label"
-                                for="govtno">No</label></div>
-                          </fieldset>
-                        </div>
-                        <div class="col-md-4 mb-2"><label for="covered" class="form-label">Days covered by
-                            employer</label> <input id="covered" class="form-control" required>
-                          <div class="invalid-feedback">Please provide a valid date range.</div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                          <div class="form-check pt-5"><input class="form-check-input" type="checkbox" value id="unltd">
-                            <label class="form-check-label" for="unltd">Check for Unlimited</label></div>
+                  <div class="col-12 py-2">
+                    <div class="card custom-shadow">
+                      <div class="card-header">Contact Information</div>
+                      <div class="card-body">
+                        <p class="card-text"><span class="text-danger">*</span> Please provide at least one phone number in the fields below.</p>
+                        <div class="row">
+                          <div class="col-md-4 mb-2"><label for="homePhone" class="form-label">Home phone number</label>
+                            <input type="number" class="form-control" id="homePhone" placeholder value min="2012222222" max="9989989999">
+                          </div>
+                          <div class="col-md-4 mb-2"><label for="workPhone" class="form-label">Work phone number</label>
+                            <input type="number" class="form-control" id="workPhone" placeholder value min="2012222222" max="9989989999">
+                          </div>
+                          <div class="col-md-2 mb-2"><label for="workExtPhone" class="form-label">Work extension</label>
+                            <input type="number" class="form-control" id="workExtPhone" placeholder value size="7">
+                          </div>
+                          <div class="col-md-4 mb-2"><label for="mobilePhone" class="form-label">Mobile phone number</label> <input type="number" class="form-control" id="mobilePhone" placeholder value min="2012222222" max="9989989999"></div>
+                          <div class="col-md-4 mb-2"><label for="email" class="form-label">E-mail</label> <input type="email" class="form-control" id="email"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 py-2">
-                  <div class="card custom-shadow border-info">
-                    <div class="card-header">Emergency Contact(s)</div>
-                    <div class="card-body">
-                      <p class="card-text"><span class="text-danger">*</span> Please provide an emergency contact in the
-                        fields below.</p>
-                      <div class="row">
-                        <div class="col-12 py-2">This is for your safety! In case of an emergency, we will need to
-                          contact someone for you. This information is kept confidential and will not be used for any
-                          other purpose. Please make this information as accurate as possible.</div>
-                        <div class="col-md-4"><label for="emerName" class="form-label">Name</label> <input type="text"
-                            class="form-control" id="emerName" placeholder value required>
-                          <div class="invalid-feedback">Contact name is required.</div>
-                        </div>
-                        <div class="col-md-4"><label for="emerRelationship" class="form-label">Relationship</label>
-                          <input type="text" class="form-control" id="emerRelationship" placeholder value required>
-                          <div class="invalid-feedback">Contact relationship is required.</div>
-                        </div>
-                        <div class="col-md-4"><label for="emerPhone" class="form-label">Phone number</label> <input
-                            type="number" class="form-control" id="emerPhone" placeholder value min="2012222222"
-                            max="9989989999" required>
-                          <div class="invalid-feedback">Contact number is required.</div>
+                  <div class="col-md-4 py-2">
+                    <div class="card custom-shadow">
+                      <div class="card-header">Notification Preference</div>
+                      <div class="card-body">
+                        <p class="card-text">Besides returning to the site to see your status, is there any other notification method you would like us to use?</p>
+                        <div class="row">
+                          <div class="col"><label for="notificationMethod" class="form-label">Notification Preference</label> <select class="form-select" id="notificationMethod">
+                              <option value>Choose...</option>
+                              <option value>Text</option>
+                              <option value>E-mail</option>
+                              <option value>Text and Email</option>
+                            </select></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 pt-3">
-                  <div class="bd-callout bd-callout-danger p-3">
-                    <div class="mb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony
-                        punishable by up to four years in state prison (PC Sec. 126).</strong></div>
-                    <div class="form-check"><input type="checkbox" class="form-check-input" id="perjury-ack2" required>
-                      <label class="form-check-label" for="perjury-ack2">I certify under penalty of perjury under the
-                        laws of the State of California that the foregoing is true and correct (CCP Sec.
-                        2015.5(b)).</label>
-                      <div class="invalid-feedback">* You must agree before submitting.</div>
+                  <div class="col-md-8 py-2">
+                    <div class="card custom-shadow border-info">
+                      <div class="card-header">Employment Information</div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-6 mb-2"><label for="workStatus" class="form-label">Employment status</label>
+                            <select class="form-select" id="workStatus" required>
+                              <option value disabled="disabled" selected="selected">Choose one...</option>
+                              <option value>Employed</option>
+                              <option value>Self-Employed</option>
+                              <option value>Unemployed</option>
+                              <option value class="exempt">Retired</option>
+                              <option value class="exempt">Home Maker</option>
+                              <option value class="exempt">Student</option>
+                            </select>
+                            <div class="invalid-feedback">Please provide a valid employment status.</div>
+                          </div>
+                          <div class="col-md-6 mb-2">
+                            <div class="mb-3">Government Employee?</div>
+                            <fieldset class="form-group d-flex">
+                              <legend class="sr-only">Select Yes or No</legend>
+                              <div></div>
+                              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="govt" id="govt"> <label class="form-check-label" for="govt">Yes</label></div>
+                              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="govtno" id="govtno" checked="checked"> <label class="form-check-label" for="govtno">No</label></div>
+                            </fieldset>
+                          </div>
+                          <div class="col-md-4 mb-2"><label for="covered" class="form-label">Days covered by employer</label> <input id="covered" class="form-control" required>
+                            <div class="invalid-feedback">Please provide a valid date range.</div>
+                          </div>
+                          <div class="col-md-6 mb-2">
+                            <div class="form-check pt-5"><input class="form-check-input" type="checkbox" value id="unltd">
+                              <label class="form-check-label" for="unltd">Check for Unlimited</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 py-2">
+                    <div class="card custom-shadow border-info">
+                      <div class="card-header">Emergency Contact(s)</div>
+                      <div class="card-body">
+                        <p class="card-text"><span class="text-danger">*</span> Please provide an emergency contact in the fields below.</p>
+                        <div class="row">
+                          <div class="col-12 py-2">This is for your safety! In case of an emergency, we will need to contact someone for you. This information is kept confidential and will not be used for any other purpose. Please make this information as accurate as possible.</div>
+                          <div class="col-md-4"><label for="emerName" class="form-label">Name</label> <input type="text" class="form-control" id="emerName" placeholder value required>
+                            <div class="invalid-feedback">Contact name is required.</div>
+                          </div>
+                          <div class="col-md-4"><label for="emerRelationship" class="form-label">Relationship</label>
+                            <input type="text" class="form-control" id="emerRelationship" placeholder value required>
+                            <div class="invalid-feedback">Contact relationship is required.</div>
+                          </div>
+                          <div class="col-md-4"><label for="emerPhone" class="form-label">Phone number</label> <input type="number" class="form-control" id="emerPhone" placeholder value min="2012222222" max="9989989999" required>
+                            <div class="invalid-feedback">Contact number is required.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pt-3">
+                    <div class="bd-callout bd-callout-danger p-3">
+                      <div class="mb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                      <div class="form-check"><input type="checkbox" class="form-check-input" id="perjury-ack2" required>
+                        <label class="form-check-label" for="perjury-ack2">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (CCP Sec. 2015.5(b)).</label>
+                        <div class="invalid-feedback">* You must agree before submitting.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 py-2">
+                    <div class="bd-callout bd-callout-warning my-3 p-3">
+                      <div class="form-check"><input class="form-check-input" type="checkbox" value id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">I confirm:</label>
+                      </div>By selecting email and/or text as a notification method, I authorize the Superior Court of California, County of Los Angeles to send me electronic notification (email and/or text messaging) regarding my jury service, including instructions on when and where to report for service. There is no charge by the Court for this courtesy notice. Standard text or data changes may be assessed by your cellular service provider.
                     </div>
                   </div>
                 </div>
-                <div class="col-12 py-2">
-                  <div class="bd-callout bd-callout-warning my-3 p-3">
-                    <div class="form-check"><input class="form-check-input" type="checkbox" value id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">I confirm:</label></div>By selecting email
-                    and/or text as a notification method, I authorize the Superior Court of California, County of Los
-                    Angeles to send me electronic notification (email and/or text messaging) regarding my jury service,
-                    including instructions on when and where to report for service. There is no charge by the Court for
-                    this courtesy notice. Standard text or data changes may be assessed by your cellular service
-                    provider.
-                  </div>
+                <div class="card-footer bg-white"><button class="btn btn-primary btn-lg my-1" type="Submit">Confirm Your Info</button> <button class="btn btn-primary btn-lg my-1" type="reset">Reset</button>
                 </div>
               </div>
-              <div class="card-footer bg-white"><button class="btn btn-primary btn-lg my-1" type="Submit">Confirm Your
-                  Info</button> <button class="btn btn-primary btn-lg my-1" type="reset">Reset</button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--FAQs-->
-  <div class="container mb-5">
-    <div class="row">
-      <div class="col">
-        <div class="card custom-shadow border-info">
-          <div class="fs-5 card-header fw-bold">FAQs</div>
-          <div class="card-body">
-            <div class="accordion accordion-flush" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">I need to register and complete my summons. </button></h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown
-                    by default, until the collapse plugin adds the appropriate classes that we use to style each
-                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
-                    transitions. You can modify any of this with custom CSS or overriding our default variables.
-                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                    though the transition does limit overflow.</div>
+    <!--FAQs-->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col">
+          <div class="card custom-shadow border-info">
+            <div class="fs-5 card-header fw-bold">FAQs</div>
+            <div class="card-body">
+              <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">I need to register and complete my summons. </button></h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">Do I have to register if I am asking to be excused? </button></h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is
-                    hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
-                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
-                    transitions. You can modify any of this with custom CSS or overriding our default variables.
-                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                    though the transition does limit overflow.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Do I have to register if I am asking to be excused? </button></h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">What happens if I do not respond to a jury notice? </button></h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is
-                    hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
-                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
-                    transitions. You can modify any of this with custom CSS or overriding our default variables.
-                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                    though the transition does limit overflow.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What happens if I do not respond to a jury notice? </button></h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                    aria-controls="collapseFour">Why wasn’t I sent to a courthouse closer to my home? </button></h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body"><strong>This is the fourth item&apos;s accordion body.</strong> It is
-                    hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
-                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
-                    transitions. You can modify any of this with custom CSS or overriding our default variables.
-                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                    though the transition does limit overflow.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Why wasn’t I sent to a courthouse closer to my home? </button></h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><strong>This is the fourth item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1282,75 +945,48 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--chatbot-->
-  <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i
-        class="fa-solid fa-comment-dots"></i></span></div>
-  <!--footer-->
-  <footer class="pt-3 pb-1 bg-primary text-white">
-    <div class="container">
-      <div class="justify-content-md-between row border-bottom pb-3 mb-3">
-        <div class="col-md-5">
-          <div class="h5">LASC Jury Services</div>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a
-                href="https://www.google.com/maps/place/1149+S+Broadway+%23200,+Los+Angeles,+CA+90015/@34.0400865,-118.2640439,15.67z/data=!4m5!3m4!1s0x80c2c7c93afaaaa9:0xc20ddd4db28e0adf!8m2!3d34.0388841!4d-118.2605651"
-                class="nav-link p-0" target="_blank"><span class="fas fa-map-marker-alt"></span> 1149 S. Broadway, Suite
-                200 Los Angeles, CA 90015</a></li>
-            <li class="nav-item mb-2"><a href="tel:12138471440" class="nav-link p-0"><span class="fas fa-phone"></span>
-                (213) 847-1400</a></li>
-            <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0"><span class="fas fa-envelope"></span>
-                Contact Us</a></li>
-            <li class="nav-item mb-2"><a data-bs-toggle="modal" href="./" role="button" class="nav-link p-0"><span
-                  class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)</a></li>
-          </ul>
+    <!--chatbot-->
+    <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div>
+    <!--footer-->
+    <footer class="pt-3 pb-1 bg-primary text-white">
+      <div class="container">
+        <div class="justify-content-md-between row border-bottom pb-3 mb-3">
+          <div class="col-md-5">
+            <div class="h5">LASC Jury Services</div>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-5">
+            <div class="h5">Covid 19 Information</div>
+            <p>As a measure of caution in relation to COVID-19, the LASC Jury Services is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.</p>
+          </div>
         </div>
-        <div class="col-md-2">
-          <div class="h5">Stay Connected</div>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="https://www.lacity.org/tweets" target="_blank" class="nav-link p-0"><span
-                  class="fas fa-hashtag"></span> Today&apos;s Trending News</a></li>
-            <li class="nav-item mb-2"><a href="https://twitter.com/lalight" target="_blank" class="nav-link p-0"><span
-                  class="fab fa-twitter"></span> Twitter</a></li>
-            <li class="nav-item mb-2"><a href="https://www.instagram.com/lastreetlights/" target="_blank"
-                class="nav-link p-0"><span class="fab fa-facebook-f"></span> Facebook</a></li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <div class="h5">Covid 19 Information</div>
-          <p>As a measure of caution in relation to COVID-19, the LASC Jury Services is limiting the time that public
-            counters are open for the public. It is recommended that all activities that can be conducted online be done
-            that way.</p>
+        <div class="col-12 text-center pt-2">
+          <p>&#xA9; Copyright <script>
+              document.write((new Date).getFullYear())
+            </script> LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a>
+          </p>
         </div>
       </div>
-      <div class="col-12 text-center pt-2">
-        <p>&#xA9; Copyright
-          <script>
-            document.write((new Date).getFullYear())
-          </script> LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="../js/form-validation.js"></script>
-  <script>
-    document.getElementById("perjury-ack").onclick = function () {
-      var e = document.getElementById("submit-elgibility").disabled;
-      document.getElementById("submit-elgibility").disabled = !e
-    }
-  </script>
-  <script src="../js/global.js"></script>
-  <script>
-    function toggleEdit() {
-      var e = document.getElementById("editAddr"),
-        t = e.style.display,
-        n = document.getElementById("editButton");
-      "block" == t ? (e.style.display = "none", n.innerHTML = "Enable Editing") : (e.style.display = "block", n.innerHTML = "Hide Editing")
-    }
-  </script>
-</body>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/form-validation.js"></script>
+    <script>
+      document.getElementById("perjury-ack").onclick = function()
+      {
+        var e = document.getElementById("submit-elgibility").disabled;
+        document.getElementById("submit-elgibility").disabled = !e
+      }
+    </script>
+    <script src="../js/global.js"></script>
+    <script>
+      function toggleEdit()
+      {
+        var e = document.getElementById("editAddr"),
+          t = e.style.display,
+          n = document.getElementById("editButton");
+        "block" == t ? (e.style.display = "none", n.innerHTML = "Enable Editing") : (e.style.display = "block", n.innerHTML = "Hide Editing")
+      }
+    </script>
+  </body>
 </html>

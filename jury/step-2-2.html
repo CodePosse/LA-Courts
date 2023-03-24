@@ -11,45 +11,55 @@
     <meta name="theme-color" content="##0DFF39" />
   </head>
   <body>
-    <header class="py-2 px-0 bg-primary text-white">
-      <div class="container">
-        <div class="row">
-          <h3 class="col-md-4 pt-1">
-          <a href="https://www.courts.ca.gov" target="_blank">Judicial Branch of California</a>
-          </h3>
-          <div class="col-md-8 d-flex justify-content-between mt-3">
-          <a href="https://www.courts.ca.gov/supremecourt.htm" target="_blank">Supreme Court</a>
-          <a href="https://www.courts.ca.gov/courtsofappeal.htm" target="_blank">Courts of Appeal</a>
-          <a href="https://www.courts.ca.gov/superiorcourts.htm" target="_blank">Superior Courts</a>
-          <a href="https://www.courts.ca.gov/policyadmin-jc.htm" target="_blank">Judicial Council</a>
+    <header>
+      <div class="container-fluid lasc-logo py-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="height:80px"></a></div>
+            <div class="col-md-6 d-flex justify-content-between mt-4">
+              <h1 class="display-6 text-white">Jury Duty Portal</h1>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <div class="container-fluid lasc-logo py-1">
-      <div class="container">
-        <div class="row">
-        <div class="col-md-6"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="height:80px"></a></div>
-        <div class="col-md-6 d-flex justify-content-between mt-4"><a href="" class="text-white">English</a> <a href="" class="text-white">Spanish</a> <a href="" class="text-white">Other</a> <a href="" class="text-white">Other</a> <a href="" class="text-white">Other</a></div>
-      </div>
-    </div>
-    </div>
     <div class="container-fluid splash pt-3 pb-0">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1>LA County Superior Court</h1>
-          <h2>Jury Service Portal</h2>
+    <div class="container py-2 py-md-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 wizard2">
+        <div class="col step-active p-1">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 1 <span class="d-lg-none">of 4</span>
+              </strong> Summons
+            </div>
+            <div class="flex-shrink-0">
+              <i class="fa-solid fa-location-dot fs-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col p-1 d-none d-lg-block">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 2 <span class="d-lg-none">of 4</span></strong> Prepare
+            </div>
+          </div>
+        </div>
+        <div class="col p-1 d-none d-lg-block">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 3 <span class="d-lg-none">of 4</span></strong> Service Week
+            </div>
+          </div>
+        </div>
+        <div class="col p-1 d-none d-lg-block">
+          <div class="d-flex align-items-center border rounded">
+            <div class="flex-grow-1 ms-1">
+              <strong>Step 4 <span class="d-lg-none">of 4</span></strong> Completion
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container py-2 py-md-5" id="steps">
-      <div class="row d-flex justify-content-center text-white">
-        <div class="col-md-3 py-2 px-3 fw-bold bg-success border border-light rounded-start">Step 1 <i class="fa-solid fa-circle-check float-end mt-1"></i></div>
-        <div class="col-md-3 py-2 px-3 fw-bold bg-info border border-light text-black">Step 2 <i class="fa-solid fa-location-dot float-end mt-1"></i></div>
-        <div class="col-md-3 py-2 px-3 fw-bold bg-secondary border border-light">Step 3</div>
-        <div class="col-md-3 py-2 px-3 fw-bold bg-secondary border border-light rounded-end">Step 4</div>
-      </div>
-    </div>
+    </div>          </div>
     <div class="container-fluid bg-light p-md-5">
       <div class="row">
         <div class="col-md-7">
@@ -75,7 +85,7 @@
               <div class="row card-text">
                 <div class="col-12 pt-3">
                   <p>Learn how to prepare for jury duty.</p>
-                </div>                              
+                </div>
                 <div class="text-center mt-3"><a href="#preplist" class="btn btn-info">Juror Checklist</a></div>
                 <div class="text-center mt-3"><a href="#specialhandling" class="btn btn-info">Special Handling</a></div>
                 <div class="text-center mt-3"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#quizModalToggle">Watch Orientation Video</button></div>
@@ -89,8 +99,10 @@
             <div class="fs-5 card-header fw-bold bg-primary">Reporting Instructions <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
             <div class="card-body">
               <div class="row card-text">
-                <div class="col-12 pt-3"><p><strong>Your service week starts:</strong><br> Monday, August 21st, 2023 </p>
-                  <p><strong>REMEMBER:</strong><br> On <span class="text-danger">Friday, August 18 at 6:00 PM</span>, your reporting instructions will be displayed here. You will be told to either report to the courthouse on Monday or remain on call' for the next day. Mark your calendar to visit this website or call 213-555-1212 to receive your Jury duty reporting instructions. </p><p><a href="cal.ics" rel="noopener" target="_blank">Download Calender Reminder <i class="fa-solid fa-calendar-plus mt-1"></i></a></p>
+                <div class="col-12 pt-3">
+                  <p><strong>Your service week starts:</strong><br> Monday, August 21st, 2023 </p>
+                  <p><strong>REMEMBER:</strong><br> On <span class="text-danger">Friday, August 18 at 6:00 PM</span>, your reporting instructions will be displayed here. You will be told to either report to the courthouse on Monday or remain on call' for the next day. Mark your calendar to visit this website or call 213-555-1212 to receive your Jury duty reporting instructions. </p>
+                  <p><a href="cal.ics" rel="noopener" target="_blank">Download Calender Reminder <i class="fa-solid fa-calendar-plus mt-1"></i></a></p>
                   <p><a href="#">Failure to appear</a></p>
                 </div>
               </div>
@@ -753,20 +765,8 @@
         <div class="justify-content-md-between row border-bottom pb-3 mb-3">
           <div class="col-md-5">
             <div class="h5">LASC Jury Services</div>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="https://www.google.com/maps/place/1149+S+Broadway+%23200,+Los+Angeles,+CA+90015/@34.0400865,-118.2640439,15.67z/data=!4m5!3m4!1s0x80c2c7c93afaaaa9:0xc20ddd4db28e0adf!8m2!3d34.0388841!4d-118.2605651" class="nav-link p-0" target="_blank"><span class="fas fa-map-marker-alt"></span> 1149 S. Broadway, Suite 200 Los Angeles, CA 90015</a></li>
-              <li class="nav-item mb-2"><a href="tel:12138471440" class="nav-link p-0"><span class="fas fa-phone"></span> (213) 847-1400</a></li>
-              <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0"><span class="fas fa-envelope"></span> Contact Us</a></li>
-              <li class="nav-item mb-2"><a data-bs-toggle="modal" href="./" role="button" class="nav-link p-0"><span class="fas fa-universal-access"></span> Compliance with Americans with Disabilities Act (ADA)</a></li>
-            </ul>
           </div>
           <div class="col-md-2">
-            <div class="h5">Stay Connected</div>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="https://www.lacity.org/tweets" target="_blank" class="nav-link p-0"><span class="fas fa-hashtag"></span> Today&apos;s Trending News</a></li>
-              <li class="nav-item mb-2"><a href="https://twitter.com/lalight" target="_blank" class="nav-link p-0"><span class="fab fa-twitter"></span> Twitter</a></li>
-              <li class="nav-item mb-2"><a href="https://www.instagram.com/lastreetlights/" target="_blank" class="nav-link p-0"><span class="fab fa-facebook-f"></span> Facebook</a></li>
-            </ul>
           </div>
           <div class="col-md-5">
             <div class="h5">Covid 19 Information</div>
@@ -776,7 +776,7 @@
         <div class="col-12 text-center pt-2">
           <p>&#xA9; Copyright <script>
               document.write((new Date).getFullYear())
-            </script>  LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a>
+            </script> LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a>
           </p>
         </div>
       </div>
