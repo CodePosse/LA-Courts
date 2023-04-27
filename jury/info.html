@@ -49,9 +49,9 @@
           </div>
           <div class="col-12 py-2">
             <div class="card custom-shadow border-danger">
-              <div class="card-header text-danger">Filling Out For Someone Else?</div>
+              <div class="card-header text-danger">Please do not register for someone else.</div>
               <div class="card-body">
-                <p class="card-text">If you are filling out on someone else&apos;s behalf and they are unable to complete this form themselves, please contact the court at (213) 555-1212.</p>
+                <p class="card-text"><span class="text-danger">REMINDER:</span> To register for Jury Service, you must be the person named on the Summons. Do not complete the form for someone else. If you have any questions, please call (213) 555-1212.</p>
                 <div class="row"></div>
               </div>
             </div>
@@ -102,7 +102,7 @@
                             <div class="invalid-feedback">Please enter a house number.</div>
                           </div>
                           <div class="col-md-2 py-2"><label for="fraction" class="form-label">Fraction</label> <select name id="fraction" class="form-select">
-                              <option value></option>
+                              <option value>
                               <option value>1/2</option>
                               <option value>1/3</option>
                               <option value>1/4</option>
@@ -111,7 +111,7 @@
                             <div class="invalid-feedback">Please enter a street name.</div>
                           </div>
                           <div class="col-md-2 py-2"><label for="suffix" class="form-label">Suffix</label> <select name id="suffix" class="form-select">
-                              <option value></option>
+                              <option value>
                               <option value>Lane</option>
                               <option value>Avenue</option>
                               <option value>Boulevard</option>
@@ -155,7 +155,7 @@
                 <div class="row">
                   <div class="col"><label for="notificationMethod" class="form-label">Notification Preference</label> <select class="form-select" id="notificationMethod">
                       <option value>Choose...</option>
-                      <option value>Text</option>
+                      <option value>None</option><option value>Text</option>
                       <option value>E-mail</option>
                       <option value>Text and Email</option>
                     </select></div>
@@ -200,7 +200,7 @@
           </div>
           <div class="col-12 py-2">
             <div class="card custom-shadow border-info">
-              <div class="card-header">Emergency Contact(s)</div>
+              <div class="card-header">Emergency Contact</div>
               <div class="card-body">
                 <p class="card-text"><span class="text-danger">*</span> Please provide an emergency contact in the fields below.</p>
                 <div class="row">
