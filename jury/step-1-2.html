@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>flow</title>
     <meta name="theme-color" content="##0DFF39">
-    <style>.nonresident,.under18{display:none}</style>
+    <style>.nonresident,.under18, .malfeasance, .JID{display:none}</style>
   </head>
   <body>
     <header>
@@ -586,31 +586,31 @@
                     </div>
                   </div>
                   <div class="control-group border row">
-                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">5</span> I am now serving as a grand or trial juror in any court of this state under a different JID number.<div class="col-12 ps-md-5 pt-2"><label for="x3" class="form-label">Juror ID Number:</label> <input type="text" class="form-control" id="x3" value></div>
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">5</span> I am now serving as a grand or trial juror in any court of this state under a different JID number.<div class="JID p-2 m-2 border border-danger"><label for="x3" class="form-label">Juror ID Number:</label> <input type="text" class="form-control" id="x3" value></div>
                     </div>
                     <div class="pb-2 bg-light col-3">
                       <fieldset class="form-group row"><span class="boxed col-lg-6">
                           <legend class="sr-only">Select Yes or No</legend>
-                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions5" id="inlineRadio9" value="yes"> <label class="form-check-label" for="inlineRadio9">Yes</label></div>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="JID" id="JID" value="yes"> <label class="form-check-label" for="JID">Yes</label></div>
                         </span><span class="boxed indicated col-lg-6">
                           <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions5" id="inlineRadio10" value="no"> <label class="form-check-label" for="inlineRadio10">No</label></div>
                         </span></fieldset>
                     </div>
                   </div>
                   <div class="control-group border row">
-                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6</span> I have been convicted of malfeasance in office. (if No, skip question 6A below)<div class="p-2 row">
+                    <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6</span> I have been convicted of malfeasance in office. (if No, skip question 6A below)<div class="p-1 m-2 border border-danger malfeasance">
                         <div class="col-md-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6A</span> If you have been convicted of malfeasance in office, have your rights been restored by a pardon, or has your conviction been expunged under PC&#xA7;17, &#xA7;1203.4, or &#xA7;1203.4a?</div>
                         <fieldset class="form-group col-md-3 bg-light py-2">
                           <legend class="sr-only">Select Yes or No</legend>
                           <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptionsx" id="inlineRadiox" value="yes"> <label class="form-check-label" for="inlineRadiox">Yes</label></div>
-                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptionsx2" id="inlineRadiox2" value="no"> <label class="form-check-label" for="inlineRadiox2">No</label></div>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="ir2" id="ir2" value="no"> <label class="form-check-label" for="ir2">No</label></div>
                         </fieldset>
                       </div>
                     </div>
                     <div class="pb-2 bg-light col-3">
                       <fieldset class="form-group row"><span class="boxed col-lg-6">
                           <legend class="sr-only">Select Yes or No</legend>
-                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions6" id="inlineRadio11" value="yes"> <label class="form-check-label" for="inlineRadio11">Yes</label></div>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="malfeasance" id="malfeasance" value="yes"> <label class="form-check-label" for="malfeasance">Yes</label></div>
                         </span><span class="boxed indicated col-lg-6">
                           <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required name="inlineRadioOptions6" id="inlineRadio12" value="no"> <label class="form-check-label" for="inlineRadio12">No</label></div>
                         </span></fieldset>
@@ -947,7 +947,20 @@ $('#under18').focus(function() {
 $('#under18').blur(function() {
   $('.under18').hide();
 });
+$('#malfeasance').focus(function() {
+  $('.malfeasance').show();
+});
 
+$('#malfeasance').blur(function() {
+  $('.malfeasance').hide();
+});
+$('#JID').focus(function() {
+  $('.JID').show();
+});
+
+$('#JID').blur(function() {
+  $('.JID').hide();
+});
 });
       </script>
   </body>
