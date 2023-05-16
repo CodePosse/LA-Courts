@@ -766,11 +766,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions1" id="inlineRadio1" value="yes"> <label class="form-check-label"
                             for="inlineRadio1">Yes</label></div>
                       </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions1" id="citizen" value="no"> <label class="form-check-label"
                             for="citizen">No</label></div>
                       </span></fieldset>
@@ -779,16 +779,38 @@
                 <div class="control-group border row">
                   <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">2</span> I am able to
                     read and understand English.
-                    <div class="ESL p-2 m-2 border border-danger">ESL</div>
+                    <div class="ESL p-2 m-2 border border-danger"><label for="howlong" class="form-label">How long have you been in this country?
+                    </label> <input type="text" class="form-control" id="howlong" value>
+                    <br>
+                    <label for="prim" class="form-label">What is your primary language?
+                    </label> <input type="text" class="form-control" id="prim" value>
+                    <br>
+                    <label for="edu" class="form-label">What level of education have you completed? 
+                    </label> <select class="form-select" aria-label="Default select example" id="edu">
+                      <option selected>Please Select One</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <br>
+                    <label for="edu2" class="form-label">Did you complete your education in the US? 
+                    </label> <select class="form-select" aria-label="Default select example" id="edu2">
+                      <option selected>Please Select One</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+                    </select>
+                    <br>
+                    <label for="workplace" class="form-label">What language do you speak in the workplace?
+                    </label> <input type="text" class="form-control" id="workplace" value></div>
                   </div>
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions2" id="inlineRadio3" value="yes"> <label class="form-check-label"
                             for="inlineRadio3">Yes</label></div>
                       </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions2" id="ESL" value="no"> <label class="form-check-label"
                             for="ESL">No</label></div>
                       </span></fieldset>
@@ -805,11 +827,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions3" id="inlineRadio5" value="yes"> <label class="form-check-label"
                             for="inlineRadio5">Yes</label></div>
                       </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="nonresident" id="nonresident" value="no"> <label class="form-check-label"
                             for="nonresident">No</label></div>
                       </span></fieldset>
@@ -825,11 +847,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions4" id="inlineRadio7" value="yes"> <label class="form-check-label"
                             for="inlineRadio7">Yes</label></div>
                       </span><span class="boxed col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="under18" id="under18" value="no"> <label class="form-check-label"
                             for="under18">No</label></div>
                       </span></fieldset>
@@ -844,10 +866,10 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="JID" id="JID" value="yes"> <label class="form-check-label" for="JID">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions5" id="inlineRadio10" value="no"> <label class="form-check-label"
                             for="inlineRadio10">No</label></div>
                       </span></fieldset>
@@ -873,11 +895,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="malfeasance" id="malfeasance" value="yes"> <label class="form-check-label"
                             for="malfeasance">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions6" id="inlineRadio12" value="no"> <label class="form-check-label"
                             for="inlineRadio12">No</label></div>
                       </span></fieldset>
@@ -891,11 +913,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions7" id="inlineRadio13" value="yes"> <label class="form-check-label"
                             for="inlineRadio13">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions7" id="inlineRadio14" value="no"> <label class="form-check-label"
                             for="inlineRadio14">No</label></div>
                       </span></fieldset>
@@ -903,17 +925,50 @@
                 </div>
                 <div class="control-group border row">
                   <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">8</span> I am on active
-                    military duty and/or not domiciled in this state. <div class="MIL p-2 m-2 border border-danger">MIL
+                    military duty and/or not domiciled in this state. <div class="MIL p-2 m-2 border border-danger">
+                      <div class="col-12">
+                        Please choose one of the options below:
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="activeduty" id="activeduty" checked>
+                        <label class="form-check-label" for="activeduty">
+                        I am on active duty.
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="reserves" id="reserves">
+                        <label class="form-check-label" for="reserves">
+                        I am in the military reserves, but am not currently deployed.
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        I am a legal resident of Los Angeles County, but currently reside elsewhere for employment purposes.
+                        </label>
+                        </div>
+                        </div>
+                        <div class="col-12 pt-2">
+                          <label for="milloc" class="form-label">Location of Employment/Deployment
+                          </label> <input type="text" class="form-control" id="milloc" value>
+                          <br>
+                          <label for="milleng" class="form-label">Length of Employement/Deployment
+                          </label> <select class="form-select" aria-label="Default select example" id="milleng">
+                            <option selected>Please Select One</option>
+                            <option value="1">1-2 years</option>
+                            <option value="2">2-3 years</option>
+                            <option value="3">more than 3 years</option>
+                          </select>
+                          </div>
                     </div>
                   </div>
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions8" id="MIL" value="yes"> <label class="form-check-label"
                             for="MIL">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions8" id="inlineRadio16" value="no"> <label class="form-check-label"
                             for="inlineRadio16">No</label></div>
                       </span></fieldset>
@@ -925,11 +980,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions9" id="inlineRadio17" value="yes"> <label class="form-check-label"
                             for="inlineRadio17">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions9" id="inlineRadio18" value="no"> <label class="form-check-label"
                             for="inlineRadio18">No</label></div>
                       </span></fieldset>
@@ -941,11 +996,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions10" id="inlineRadio19" value="yes"> <label class="form-check-label"
                             for="inlineRadio19">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions10" id="inlineRadio20" value="no"> <label class="form-check-label"
                             for="inlineRadio20">No</label></div>
                       </span></fieldset>
@@ -959,11 +1014,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions11" id="inlineRadio21" value="yes"> <label class="form-check-label"
                             for="inlineRadio21">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions11" id="inlineRadio22" value="no"> <label class="form-check-label"
                             for="inlineRadio22">No</label></div>
                       </span></fieldset>
@@ -976,11 +1031,11 @@
                   <div class="pb-2 bg-light col-3">
                     <fieldset class="form-group row"><span class="boxed col-lg-6">
                         <legend class="sr-only">Select Yes or No</legend>
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions12" id="inlineRadio23" value="yes"> <label class="form-check-label"
                             for="inlineRadio23">Yes</label></div>
                       </span><span class="boxed indicated col-lg-6">
-                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio" required
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
                             name="inlineRadioOptions12" id="inlineRadio24" value="no"> <label class="form-check-label"
                             for="inlineRadio24">No</label></div>
                       </span></fieldset>
@@ -1312,14 +1367,19 @@
     crossorigin=" anonymous"></script>
   <script src="../js/global.js"></script>
   <script>
-
+      if(document.getElementById('citizen').checked) {
+    $(".citizen").show();
+} else {
+    $(".citizen").hide();
+};
     $(function () {
-      $('#citizen').focus(function () {
-        $('.citizen').show();
+
+      $('#citizen1').focus(function () {
+        $('.citizen1').show();
       });
 
-      $('#citizen').blur(function () {
-        $('.citizen').hide();
+      $('#citizen1').blur(function () {
+        $('.citizen1').hide();
       });
       $('#nonresident').focus(function () {
         $('.nonresident').show();
