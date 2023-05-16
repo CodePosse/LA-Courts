@@ -1367,19 +1367,14 @@
     crossorigin=" anonymous"></script>
   <script src="../js/global.js"></script>
   <script>
-      if(document.getElementById('citizen').checked) {
-    $(".citizen").show();
-} else {
-    $(".citizen").hide();
-};
     $(function () {
 
-      $('#citizen1').focus(function () {
-        $('.citizen1').show();
+      $('#citizen').focus(function () {
+        $('.citizen').show();
       });
 
-      $('#citizen1').blur(function () {
-        $('.citizen1').hide();
+      $('#citizen').blur(function () {
+        $('.citizen').hide();
       });
       $('#nonresident').focus(function () {
         $('.nonresident').show();
