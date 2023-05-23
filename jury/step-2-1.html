@@ -952,17 +952,18 @@
             <div id="agepnl" class="p-1 med box">
               <div class="row">
                 <div class="col-12"><strong>Medical Excuse</strong></div>
-                <div class="col-1 text-center ms-1 pe-0"><input id="_above70rb" class="form-check-input" type="radio" value="above70rb"></div>
-                <div class="col">
-                  <p><label for="_above70rb" id="_lblOver70">I am 70 years old or older and I have a physical or mental disability or impairment that prevents me from serving.</label></p>
+                <div class="row">
+                  <div class="col-md-6">
+                <div class="col form-check"><input id="_above70rb" class="form-check-input" type="radio" value="above70rb">
+                  <label for="_above70rb" id="_lblOver70" class="form-check-label">I am 70 years old or older and I have a physical or mental disability or impairment that prevents me from serving.</label>
+                </div>
+                <div class="col form-check"><input id="_below70rb" class="form-check-input" type="radio" value="below70rb">
+                  <label for="_below70rb" id="_lblUnder70" class="form-check-label">I am under 70 years old and I have a physical or mental disability or impairment that prevents me from serving.</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-1 text-center ms-1 pe-0"><input id="_below70rb" class="form-check-input" type="radio" value="below70rb"></div>
-                <div class="col">
-                  <p><label for="_below70rb" id="_lblUnder70">I am under 70 years old and I have a physical or mental disability or impairment that prevents me from serving.</label></p>
+            <div class="col-md-6"><span class="text-danger">Please explain your condition in the box below.</span> <textarea name="" id="" cols="40" rows="5"></textarea></div>
+            </div>
                 </div>
-              </div>
             </div>
             <div id="financepnl" class="p-1 fin box">
               <div><strong>Financial Hardship</strong></div>
@@ -1092,10 +1093,14 @@
             <div class="p-3 prior box">
               <hr noshade="noshade">
               <div id="lajurydiv" class="p-1">
-                <div><strong>Prior Service</strong></div>
-                <p>I have served as a Grand juror or Trial juror in the last 12 months.</p>
+                <div><strong>Prior Service</strong></div><div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                 I have served as a Grand juror or Trial juror in the last 12 months.</label>
+                </div>
+                <div class="prior p-2 border border-danger rounded m-2">
                 <p>Please enter the month and the location you served in:</p>
-                <div class="row d-flex justify-content-center py-1">
+                <div class="row d-flex justify-content-center">
                   <div class="col-md-3 text-end"><strong>Month Served:</strong></div>
                   <div class="col-md-6"><select class="form-select" id="_monthserveddl">
                       <option value="00">--Please select a month--</option>
@@ -1152,10 +1157,14 @@
                       <option value="24">Whittier Courthouse</option>
                     </select></div>
                 </div>
+              </div></div>         
+              <div id="fedjurydiv" class="p-1"><div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  I am serving or just served as a juror in the Federal Court. Please fill out the information below:</label>
               </div>
-              <hr noshade="noshade">
-              <div id="fedjurydiv" class="p-1">
-                <p>If you have served as a juror in the Federal Court and are not able to serve again, Please fill out the information below:</p>
+                <p></p>
+                <div class="fedprior p-2 border border-danger rounded m-2">
                 <div class="row d-flex justify-content-center">
                   <div class="col-md-3 text-end"><strong>Location:</strong></div>
                   <div class="col-md-6"><input type="text" class="form-control" maxlength="50" id="_textfedlocation">
@@ -1187,7 +1196,7 @@
                       <option value="2022">2022</option>
                     </select></div>
                 </div>
-              </div>
+              </div></div>
             </div>
             <div class="bd-callout bd-callout-danger col-12 my-3">
               <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
