@@ -247,3 +247,23 @@ code {
 .custom-shadow2 {
   box-shadow: -8px 12px 18px 0 #dadee8;
 }
+
+
+ol.bubble {
+  list-style: none;
+  counter-reset: item;
+}
+.bubble li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+.bubble li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: var(--court-ltblue);
+  border-radius: 100%;
+  color: white;
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
