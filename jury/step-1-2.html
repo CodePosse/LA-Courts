@@ -98,7 +98,7 @@
                   <p>We need you to answer some questions to determine if you are eligible for Jury Duty or not.</p>
                 </div>
                 <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Incomplete <a href="javascript:void();" class="fa-solid fa-circle-question text-decoration-none" data-bs-toggle=" tooltip " data-bs-placement=" bottom " title=" Tooltip on bottom"></a></span></div>
-                <div class="col-12 mt-3"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#questionModal">Answer</button></div>
+                <div class="col-12 mt-3"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#questionModal">Answer</button> <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#question2Modal">confirmed</button></div>
               </div>
             </div>
           </div>
@@ -533,6 +533,7 @@
         </div>
       </div>
     </footer>
+    <!--question modal-->
     <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
         <div class="modal-content">
@@ -730,6 +731,205 @@
         </div>
       </div>
     </div>
+        <!--question confirm modal-->
+      <div class="modal fade" id="question2Modal" tabindex="-1" aria-labelledby="question2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+          <div class="modal-content">
+            <div class="modal-header bg-info">
+              <h1 class="modal-title fs-5" id="question2ModalLabel">Juror Summons</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="container needs-validation" novalidate id="questionnaire2">
+                <div class="row custom-shadow">
+                  <div class="col-xl-6">
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">1</span> I am a citizen of the United States.<div class="citizen p-2 m-2 border border-danger"><label for="x1" class="form-label">If NO, I am a citizen of:</label> <input type="text" class="form-control" id="x1" value><br><label for="x2" class="form-label">Alien Registration number:</label> <input type="text" class="form-control" id="x2" value></div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="yes"> <label class="form-check-label" for="inlineRadio1">Yes</label></div>
+                          </span><span class="boxed col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions1" id="citizen" value="no"> <label class="form-check-label" for="citizen">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">2</span> I am able to read and understand English.<div class="ESL p-2 m-2 border border-danger"><label for="howlong" class="form-label">How long have you been in this country?</label> <input type="text" class="form-control" id="howlong" value><br><label for="prim" class="form-label">What is your primary language?</label> <input type="text" class="form-control" id="prim" value><br><label for="edu" class="form-label">What level of education have you completed?</label> <select class="form-select" aria-label="Default select example" id="edu">
+                            <option selected="selected">Please Select One</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select><br><label for="edu2" class="form-label">Did you complete your education in the US?</label> <select class="form-select" aria-label="Default select example" id="edu2">
+                            <option selected="selected">Please Select One</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                          </select><br><label for="workplace" class="form-label">What language do you speak in the workplace?</label> <input type="text" class="form-control" id="workplace" value></div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="yes"> <label class="form-check-label" for="inlineRadio3">Yes</label></div>
+                          </span><span class="boxed col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions2" id="ESL" value="no"> <label class="form-check-label" for="ESL">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">3</span> I am a resident of the County of Los Angeles.<div class="nonresident p-1 m-2 border border-danger">You have indicated that you live outside Los Angeles County, however, our records indicate otherwise. Please exit this form and return to the "Personal Info" form and correct your address. If you need further assistance, please call (213) 972-0970.</div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio5" value="yes"> <label class="form-check-label" for="inlineRadio5">Yes</label></div>
+                          </span><span class="boxed col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="nonresident" id="nonresident" value="no"> <label class="form-check-label" for="nonresident">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">4</span> I am atleast 18 years of age.<div class="under18 p-1 m-2 border border-danger">You have indicated that you are under the age of 18. However, our records indicate you will be at least 18 years old by your reporting date. If this is incorrect, please call (213) 972-0970.</div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed indicated col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio7" value="yes"> <label class="form-check-label" for="inlineRadio7">Yes</label></div>
+                          </span><span class="boxed col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="under18" id="under18" value="no"> <label class="form-check-label" for="under18">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">5</span> I am now serving as a grand or trial juror in any court of this state under a different JID number.<div class="JID p-2 m-2 border border-danger"><label for="x3" class="form-label">Juror ID Number:</label> <input type="text" class="form-control" id="x3" value></div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="JID" id="JID" value="yes"> <label class="form-check-label" for="JID">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio10" value="no"> <label class="form-check-label" for="inlineRadio10">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6</span> I have been convicted of malfeasance in office. (if No, skip question 6A below)<div class="p-1 m-2 border border-danger malfeasance">
+                          <div class="col-md-9"><span class="badge rounded-pill bg-primary fs-6 me-2">6A</span> If you have been convicted of malfeasance in office, have your rights been restored by a pardon, or has your conviction been expunged under PC&#xA7;17, &#xA7;1203.4, or &#xA7;1203.4a?</div>
+                          <fieldset class="form-group col-md-3 bg-light py-2">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptionsx" id="inlineRadiox" value="yes"> <label class="form-check-label" for="inlineRadiox">Yes</label></div>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="ir2" id="ir2" value="no"> <label class="form-check-label" for="ir2">No</label></div>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="malfeasance" id="malfeasance" value="yes"> <label class="form-check-label" for="malfeasance">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio12" value="no"> <label class="form-check-label" for="inlineRadio12">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">7</span> I am under a court-appointed conservatorship.</div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio13" value="yes"> <label class="form-check-label" for="inlineRadio13">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio14" value="no"> <label class="form-check-label" for="inlineRadio14">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">8</span> I am on active military duty and/or not domiciled in this state.<div class="MIL p-2 m-2 border border-danger">
+                          <div class="col-12">Please choose one of the options below:<div class="form-check"><input class="form-check-input" type="radio" name="activeduty" id="activeduty" checked="checked"> <label class="form-check-label" for="activeduty">I am on active duty.</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" name="reserves" id="reserves"> <label class="form-check-label" for="reserves">I am in the military reserves, but am not currently deployed.</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">I am a legal resident of Los Angeles County, but currently reside elsewhere for employment purposes.</label></div>
+                          </div>
+                          <div class="col-12 pt-2"><label for="milloc" class="form-label">Location of Employment/Deployment</label> <input type="text" class="form-control" id="milloc" value><br><label for="milleng" class="form-label">Length of Employement/Deployment</label> <select class="form-select" aria-label="Default select example" id="milleng">
+                              <option selected="selected">Please Select One</option>
+                              <option value="1">1-2 years</option>
+                              <option value="2">2-3 years</option>
+                              <option value="3">more than 3 years</option>
+                            </select></div>
+                        </div>
+                      </div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions8" id="MIL" value="yes"> <label class="form-check-label" for="MIL">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio16" value="no"> <label class="form-check-label" for="inlineRadio16">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">9</span> I am a peace officer appointed under PC &#xA7;830.1, &#xA7;830.15, &#xA7;830.2(a), or &#xA7;830.33(a).</div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio17" value="yes"> <label class="form-check-label" for="inlineRadio17">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio18" value="no"> <label class="form-check-label" for="inlineRadio18">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">10</span> I am currently incarcerated in prison or jail.</div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio19" value="yes"> <label class="form-check-label" for="inlineRadio19">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio20" value="no"> <label class="form-check-label" for="inlineRadio20">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">11</span> I have been convicted of a felony and am currently on parole. postrelease community supervision. felony probation, or mandated supervision for the conviction of a felony. I am required to register as a sex offender pursuant to Section 290 of the penal code for the conviction of a felony.</div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio21" value="yes"> <label class="form-check-label" for="inlineRadio21">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio22" value="no"> <label class="form-check-label" for="inlineRadio22">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                    <div class="control-group border row">
+                      <div class="p-2 col-9"><span class="badge rounded-pill bg-primary fs-6 me-2">12</span> I am required to register as a sex offender pursuant to Section 290 of the penal code for the conviction of a felony.</div>
+                      <div class="pb-2 bg-light col-3">
+                        <fieldset class="form-group row"><span class="boxed col-lg-6">
+                            <legend class="sr-only">Select Yes or No</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio23" value="yes"> <label class="form-check-label" for="inlineRadio23">Yes</label></div>
+                          </span><span class="boxed indicated col-lg-6">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio24" value="no"> <label class="form-check-label" for="inlineRadio24">No</label></div>
+                          </span></fieldset>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pt-3">
+                    <div class="bd-callout bd-callout-danger col-12 my-3">
+                      <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                      <div class="ps-2 py-2 row">
+                        <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="$certifybox"><label for="certifybox" id="lblCertifyBox">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)).</label></div>
+                      </div>
+                      <div class="ps-2 row">
+                        <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="$signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use this as my electronic signature.</label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">You have completed all of Step 1, you will now be taken to Step 2, <span class="text-primary">How to Prepare</span> <button class="btn btn-success btn-lg my-1" type="reset">OK</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--info modal-->
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
         <div class="modal-content">
