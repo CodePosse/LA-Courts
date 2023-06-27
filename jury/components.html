@@ -253,14 +253,32 @@
       </div>
     </div>
     <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dangerModal">Launch demo modal</button>
+   <!--Alert modal-->
     <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+      <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header bg-danger text-white">
-            <h5 class="modal-title" id="dangerModalLabel">ALERT: Court Closure <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5><a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
+            <h5 class="modal-title" id="dangerModalLabel">COURT ALERTS <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5><a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
           </div>
           <div class="modal-body">
-            <p>This is an area with closure or urgent information the juror needs to see. It can appear on any page</p>
+            <div class="tasks">
+              <div id="task-list-two" class="task-list-items">
+                <div class="card mb-2 border-danger border-3">
+                  <div class="card-body p-3">
+                    <div class="d-flex justify-content-between"><h5 class="text-body fw-bold">Court Closure</h5> <span>January 14, 2023</span></div>
+                    <p class="mb-0"><span class="pe-2 mb-2 d-inline-block"> Due to the Holiday Weekend, the courts are closed January 12-14. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span></p>                   
+                    <p class="mb-0 d-flex justify-content-between"><span class="">- Jury Services</span></p>
+                  </div>
+                </div>
+                <div class="card mb-2 border-warning border-3">
+                  <div class="card-body p-3">
+                    <div class="d-flex justify-content-between"><h5 class="text-body fw-bold">Location Change</h5>  <span>January 1, 2023</span></div>
+                    <p class="mb-0"><span class="pe-2 mb-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></p>             
+                    <p class="mb-0 d-flex justify-content-between"><span class="">- Jury Services</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="modal-footer bg-light"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Submit</button></div>
         </div>
