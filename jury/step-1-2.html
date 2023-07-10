@@ -1145,7 +1145,7 @@
                                 for="flexRadioDefault2">Outside LA County</label></div>
                             <div class="form-check col-md-3"><input class="form-check-input" type="radio"
                                 name="flexRadioDefault4" id="flexRadioDefault4"> <label class="form-check-label"
-                                for="flexRadioDefault4">Foreign/Military Address</label></div>
+                                for="flexRadioDefault4">Foreign Address</label></div>
                             <div class="form-check col-md-3"><input class="form-check-input" type="radio"
                                 name="flexRadioDefault3" id="flexRadioDefault3"> <label class="form-check-label"
                                 for="flexRadioDefault3">PO Box</label></div>
@@ -1168,7 +1168,20 @@
                                     <option value>1/4</option>
                                   </select>
                                 </div>
-                                <div class="col-md-5 py-2"><label for="stname" class="form-label">Street name</label>
+                                <div class="col-md-1 py-2"><label for="direction" class="form-label">Directionction</label>
+                                  <select name id="direction" class="form-select">
+                                    <option value></option>
+                                    <option value>N</option>
+                                    <option value>E</option>
+                                    <option value>W</option>
+                                    <option value>S</option>
+                                    <option value>NW</option>
+                                    <option value>SW</option>
+                                    <option value>NE</option>
+                                    <option value>SE</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-4 py-2"><label for="stname" class="form-label">Street name</label>
                                   <input type class="form-control" id="stname" required>
                                   <div class="invalid-feedback">Please enter a street name.</div>
                                 </div>
