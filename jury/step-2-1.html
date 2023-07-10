@@ -656,7 +656,8 @@
             <h1 class="modal-title fs-5" id="inboxModalLabel">Court Messages</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="tasks">
+            <div class="read">
+              <div class="col"><div class="mb-3"><button type="button" class="inbox btn btn-outline-secondary">Ask a question</button></div></div>
               <div id="task-list-two" class="task-list-items">
                 <div class="card mb-2 border-info border-3">
                   <div class="card-body p-3">
@@ -674,8 +675,24 @@
                 </div>
               </div>
             </div>
+            <div class="compose"><div class="mb-3"><strong>Compose</strong></div>
+              <div class="mb-3">
+                <label for="askq" class="form-label">Subject</label>
+                <select class="form-select" aria-label="Default select example" id="askq">
+                  <option selected>Pick a reason</option>
+                  <option value="1">Location</option>
+                  <option value="2">Hours</option>
+                  <option value="3">Other (ask below)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ask your question</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary inbox">Submit</button> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
-          <div class="modal-footer d-flex justify-content-start"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+         
         </div>
       </div>
     </div>
@@ -1412,7 +1429,11 @@
     <script src="../js/global.js"></script>
     <script>
       $(document).ready(function()
-      {
+      {$(".compose").hide();
+        $(".inbox").click(function () {
+          
+    $(".compose, .read").toggle();
+  });
         $("#select_excuse").change(function()
         {
           $(this).find("option:selected").each(function()
