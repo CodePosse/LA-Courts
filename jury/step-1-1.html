@@ -733,6 +733,9 @@
                                       <option value>Avenue</option>
                                       <option value>Boulevard</option>
                                       <option value>Drive</option>
+                                      <option value>Place</option>
+                                      <option value>Court</option>
+                                      <option value>Circle</option>
                                     </select>
                                   </div>
                                   <div class="col-md-2 py-2"><label for="apt" class="form-label">Apartment</label> <input type class="form-control" id="apt"></div>
@@ -754,39 +757,10 @@
                                   <div class="col-md-2 py-2"><label for="housenum" class="form-label">House number</label>
                                     <input type="number" class="form-control" id="housenum" required>
                                     <div class="invalid-feedback">Please enter a house number.</div>
-                                  </div>
-                                  <div class="col-md-1 py-2"><label for="fraction" class="form-label">Fraction</label>
-                                    <select name id="fraction" class="form-select">
-                                      <option value></option>
-                                      <option value>1/2</option>
-                                      <option value>1/3</option>
-                                      <option value>1/4</option>
-                                    </select>
-                                  </div>
-                                  <div class="col-md-1 py-2"><label for="direction" class="form-label">Direction</label>
-                                    <select name id="direction" class="form-select">
-                                      <option value></option>
-                                      <option value>N</option>
-                                      <option value>E</option>
-                                      <option value>W</option>
-                                      <option value>S</option>
-                                      <option value>NW</option>
-                                      <option value>SW</option>
-                                      <option value>NE</option>
-                                      <option value>SE</option>
-                                    </select>
-                                  </div>
-                                  <div class="col-md-4 py-2"><label for="stname" class="form-label">Street name</label>
+                                  </div>                          
+                                  <div class="col-md-5 py-2"><label for="stname" class="form-label">Street name</label>
                                     <input type class="form-control" id="stname" required>
                                     <div class="invalid-feedback">Please enter a street name.</div>
-                                  </div>
-                                  <div class="col-md-2 py-2"><label for="suffix" class="form-label">Suffix</label> <select name id="suffix" class="form-select">
-                                      <option value></option>
-                                      <option value>Lane</option>
-                                      <option value>Avenue</option>
-                                      <option value>Boulevard</option>
-                                      <option value>Drive</option>
-                                    </select>
                                   </div>
                                   <div class="col-md-2 py-2"><label for="apt" class="form-label">Apartment</label> <input type class="form-control" id="apt"></div>
                                   <div class="col-md-4 py-2"><label for="city" class="form-label">City</label> <input type class="form-control" id="city"></div>
@@ -805,7 +779,7 @@
                               <div class="card-body">
                                 <div class="row d-flex justify-content-between">
                                   <div class="col py-2"><label for="fff" class="form-label">Address</label>
-                                    <textarea class="form-control" id="fff" required></textarea>
+                                    <textarea class="form-control" id="fff" rows="4" required></textarea>
                                     <div class="invalid-feedback">Please enter information.</div>
                                   </div>
                                   <div class="col-12 pt-3 d-flex justify-content-end"><button class="btn btn-outline-primary me-2">Reset</button>
@@ -819,29 +793,11 @@
                               <div class="card-body">
                                 <div class="row d-flex justify-content-between">
                                   <div class="col-12 text-danger">Please note your juror mileage will be calculated using your original address. </div>
-                                  <div class="col-md-2 py-2"><label for="housenum" class="form-label">Street number</label>
-                                    <input type="number" class="form-control" id="housenum" required>
-                                    <div class="invalid-feedback">Please enter a Street number.</div>
+                                  <div class="col-12 py-2"><label for="POpo" class="form-label">Address</label>
+                                    <textarea required id="POpo" class="form-control" placeholder="1234 Example Street \nBox 1000 \nLos Angeles CA 90064" rows="4"></textarea>
+                                    <div class="invalid-feedback">Please enter valid info.</div>
                                   </div>
-                                  <div class="col-md-4 py-2"><label for="stname" class="form-label">Street name</label>
-                                    <input type class="form-control" id="stname" required>
-                                    <div class="invalid-feedback">Please enter a street name.</div>
-                                  </div>
-                                  <div class="col-md-2 py-2"><label for="suffix" class="form-label">Suffix</label> <select name id="suffix" class="form-select">
-                                      <option value></option>
-                                      <option value>Lane</option>
-                                      <option value>Avenue</option>
-                                      <option value>Boulevard</option>
-                                      <option value>Drive</option>
-                                      <option value>Place</option>
-                                      <option value>Court</option>
-                                      <option value>Circle</option>
-                                    </select>
-                                  </div>
-                                  <div class="col-md-2 py-2"><label for="apt" class="form-label">Box Number</label> <input type class="form-control" id="apt"></div>
-                                  <div class="col-md-4 py-2"><label for="city" class="form-label">City</label> <input type class="form-control" id="city"></div>
-                                  <div class="col-sm-2"><label for="state" class="form-label">State</label> <input type class="form-control" id="state" required></div>
-                                  <div class="col-sm-3 py-2"><label for="zip" class="form-label">Zip</label> <input type="number" class="form-control" id="zip" required>
+  <div class="col-sm-3 py-2"><label for="zip" class="form-label">Re-enter Zip</label> <input type="number" class="form-control" id="zip" required>
                                     <div class="invalid-feedback">Zip code required.</div>
                                   </div>
                                   <div class="col-12 pt-3 d-flex justify-content-end"><button class="btn btn-outline-primary me-2">Reset</button>
@@ -1106,7 +1062,12 @@
           t = e.style.display,
           n = document.getElementById("editButton");
         "block" == t ? (e.style.display = "none", n.innerHTML = "Enable Editing") : (e.style.display = "block", n.innerHTML = "Cancel Editing")
-      }
+      };
+      var textAreas = document.getElementsByTagName('textarea');
+
+Array.prototype.forEach.call(textAreas, function(elem) {
+    elem.placeholder = elem.placeholder.replace(/\\n/g, '\n');
+});
     </script>
   </body>
 </html>
