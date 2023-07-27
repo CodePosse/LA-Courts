@@ -793,10 +793,13 @@
                               <div class="card-body">
                                 <div class="row d-flex justify-content-between">
                                   <div class="col-12 text-danger">Please note your juror mileage will be calculated using your original address. </div>
-                                  <div class="col-12 py-2"><label for="POpo" class="form-label">Address</label>
-                                    <textarea required id="POpo" class="form-control" placeholder="1234 Example Street \nBox 1000 \nLos Angeles CA 90064" rows="4"></textarea>
-                                    <div class="invalid-feedback">Please enter valid info.</div>
+                                  <div class="col-md-4 py-2"><label for="st2name" class="form-label">Box Number</label>
+                                    <input type class="form-control" id="st2name" required>
+                                    <div class="invalid-feedback">Please enter a number.</div>
                                   </div>
+                                  <div class="w-100"></div>
+                                  <div class="col-md-5 py-2"><label for="city2" class="form-label">City</label> <input type class="form-control" id="city2"></div>
+                                  <div class="col-sm-3"><label for="state2" class="form-label">State</label> <input type class="form-control" id="state2" value="California" disabled></div>
   <div class="col-sm-3 py-2"><label for="zip" class="form-label">Zip Code</label> <input type="number" class="form-control" id="zip" required>
                                     <div class="invalid-feedback">Zip code required.</div>
                                   </div>
