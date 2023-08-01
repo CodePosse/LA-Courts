@@ -34,9 +34,11 @@
         "jshint": "^2.13.6"
     },
     "dependencies": {
+        "g": "^2.0.1",
         "gulp-open": "~3.0.1",
         "gulp-prettify": "~0.5.0",
         "minimatch": "~5.1.0",
-        "minimist": "~1.2.7"
+        "minimist": "~1.2.7",
+        "underscore": "^1.13.6"
     }
 }
