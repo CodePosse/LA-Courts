@@ -267,3 +267,4 @@ ol.bubble {
   text-align: center;
   display: inline-block;
 }
+#steps .col:has(i){text-wrap: nowrap;}
