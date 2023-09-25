@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 :root,
 html,
@@ -15,10 +15,20 @@ body {
   color: var(--court-black);
   font-display: swap;
 }
-header a, footer a{color: #fff; text-decoration: none;
+header a,
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
-.splash{background: silver url("../jury/img/splash4.jpg");background-position: center bottom; background-size: cover; background-repeat: no-repeat;}
-div.lasc-logo{background-color: #1f303e;}
+.splash {
+  background: silver url("../jury/img/splash4.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.lasc-logo {
+  background-color: #1f303e;
+}
 .rounded-start {
   border-bottom-left-radius: 0.75rem !important;
   border-top-left-radius: 0.75rem !important;
@@ -122,9 +132,11 @@ nav.navbar ul.court-dkblue a.nav-link,
   bottom: 25px;
   font-size: 1.5rem;
 }
-footer{    position: relative;
+footer {
+  position: relative;
   width: 100%;
-  bottom: 0;}
+  bottom: 0;
+}
 
 footer a.nav-link,
 footer h5 {
@@ -147,7 +159,9 @@ footer i {
 .wizard2 .col > div {
   padding: 5px 10px;
 }
-.wizard2>.col-md-2:not(.step-active)>div{ background: rgba(230,230,230,.9)}
+.wizard2 > .col-md-2:not(.step-active) > div {
+  background: rgba(230, 230, 230, 0.9);
+}
 .wizard strong,
 .wizard2 strong {
   font-size: 22px;
@@ -183,8 +197,6 @@ footer i {
   border-color: var(--court-dkblue) !important;
   color: var(--court-dkblue) !important;
 }
-
-
 
 #questionnaire fieldset {
   margin: 10px 0 0;
@@ -248,7 +260,6 @@ code {
   box-shadow: -8px 12px 18px 0 #dadee8;
 }
 
-
 ol.bubble {
   list-style: none;
   counter-reset: item;
@@ -267,4 +278,6 @@ ol.bubble {
   text-align: center;
   display: inline-block;
 }
-#steps .col:has(i){text-wrap: nowrap;}
+#steps .col:has(i) {
+  text-wrap: nowrap;
+}

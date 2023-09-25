@@ -12,12 +12,40 @@
     <meta name="theme-color" content="#0DFF39">
   </head>
   <body>
+    <!--toasts-->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast-container position-absolute top-0 end-0 p-3">
+        <!--privacy toast-->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-danger text-white">
+            <i class="fa-solid fa-triangle-exclamation float-end mt-1 me-2"></i>
+            <strong class="me-auto">Privacy</strong>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body"> The Los Angeles Superior Court does not and will not telephone jurors or potential jurors and ask them to disclose personal financial information. </div>
+        </div>
+        <!--labor code toast-->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-primary text-white">
+            <i class="fa-solid fa-triangle-exclamation float-end mt-1 me-2"></i>
+            <strong class="me-auto">LABOR CODE, SECTION 230 </strong>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            <p>California Labor Code, Section 230 protects jurors from employer misconduct related to employee performance of jury service. It is against the law to discharge or discriminate against an employee who is summoned to serve as a juror. </p>
+            <p>Please note that you must let your employer know well in advance of your service. You should let your employer know that you have been summoned as soon as you receive your summons. For further information please see <a href="javascript:void();" data-bs-toggle="tooltip" data-bs-placement="bottom" title="COMING SOON">Labor Code Section 230</a>. </p>
+            <p>For assistance with employer issues related to jury service, please call the California Department of Industrial Relations at <a href="tel:12136206330">213-620-6330</a>. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
     <header>
       <div class="container-fluid lasc-logo py-1">
         <div class="container">
           <div class="row">
             <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
-            <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">translations</span></a> <a class="fa-solid fa-question fs-1" href="#" title="Contact Us"></a></div>
+            <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">translations</span></a> <a class="fa-solid fa-question fs-1" href="#" title="Contact Us"></a></div>
           </div>
         </div>
       </div>
@@ -26,10 +54,14 @@
       <!--progress-->
       <div class="container py-2 py-md-3" id="steps">
         <div class="row">
-          <div class="col border rounded-start p-2 d-flex bg-light"><span class="badge rounded-pill bg-info fs-6 text-white">1</span> <span class="px-2 pt-1">Summons</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-info fs-6 text-white">2</span> <span class="px-2 pt-1 d-none d-md-inline">Prepare</span></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-info fs-6 text-white">3</span> <span class="px-2 pt-1 d-none d-md-inline">Service Week</span></div>
-          <div class="col border rounded-end p-2 d-flex bg-light"><span class="badge rounded-pill bg-info fs-6 text-white">4</span> <span class="px-2 pt-1 d-none d-md-inline">Completion</span></div>
+          <div class="col border rounded-start p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span class="px-2 pt-1">Summons</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
+          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span>
+            <span class="px-2 pt-1 d-none d-md-inline">Prepare</span>
+          </div>
+          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span>
+            <span class="px-2 pt-1 d-none d-md-inline">Service Week</span>
+          </div>
+          <div class="col border rounded-end p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span class="px-2 pt-1 d-none d-md-inline">Completion</span></div>
         </div>
       </div>
       <div class="container py-md-3">
