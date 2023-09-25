@@ -5,4 +5,4 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 //toasts
 $(".toast").show();
-$(".toast button").click(function () { $(".toast").hide() });
+$(".toast button").click(function () { $(this).closest(".toast").hide() });
