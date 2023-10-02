@@ -23,7 +23,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
-            <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">Translate</span></a> <a class="fa-solid fa-question fs-1" href="#" title="Contact Us"><span class="sr-only">Contact</span></a></div>
+            <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">Translate</span></a> <a class="fa-solid fa-question fs-1" href="#" title="Contact Us"><span class="sr-only">Contact</span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -33,8 +34,12 @@
       <div class="container py-2 py-md-3" id="steps">
         <div class="row">
           <div class="col border rounded-start p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span class="px-2 pt-1 d-none d-md-inline">Summons</span></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span> <span class="px-2 pt-1">Prepare</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span> <span class="px-2 pt-1 d-none d-md-inline">Service Week</span></div>
+          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span>
+            <span class="px-2 pt-1">Prepare</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i>
+          </div>
+          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span>
+            <span class="px-2 pt-1 d-none d-md-inline">Service Week</span>
+          </div>
           <div class="col border rounded-end p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span class="px-2 pt-1 d-none d-md-inline">Completion</span></div>
         </div>
       </div>
@@ -78,7 +83,7 @@
                 </div>
                 <div class="col-12 row d-flex justify-content-center m-0 p-0">
                   <div class="col-md-8 mt-3"><a href="#preplist" class="btn btn-info w-100 border-primary">Juror Checklist</a></div>
-                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#quizModalToggle">Watch Orientation Video</button></div>
+                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#videoModalToggle">Watch Orientation Video</button></div>
                   <hr><span>Additional information:</span>
                   <div class="col-md-8 mt-3"><a href="#specialhandling" class="btn btn-info w-100">Special Handling</a>
                   </div>
@@ -643,18 +648,6 @@
         </div>
       </div>
     </div>
-    <!--quiz modal-->
-    <div class="modal fade" id="quizModalToggle" aria-hidden="true" aria-labelledby="quizModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-        <div class="modal-content border-2 border-info">
-          <div class="modal-header bg-info">
-            <h5 class="modal-title" id="quizModalToggleLabel">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body"><iframe width="100%" height="auto" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#quizModalToggle2" data-bs-toggle="modal">Take Quiz</button></div>
-        </div>
-      </div>
-    </div>
     <!--inbox modal-->
     <div class="modal fade" id="inboxModal" tabindex="-1" aria-labelledby="inboxModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
@@ -738,18 +731,47 @@
         </div>
       </div>
     </div>
-    <!--orientation quiz modal-->
-    <div class="modal fade" id="quizModalToggle2" aria-hidden="true" aria-labelledby="quizModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-lg">
+    <!--quiz modal-->
+    <div class="modal fade" id="videoModalToggle" aria-hidden="true" aria-labelledby="videoModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
         <div class="modal-content border-2 border-info">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="quizModalToggleLabel2">Orientation Quiz</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="videoModalToggleLabel">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">Quiz step 1 here.</div>
-          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#quizModalToggle" data-bs-toggle="modal">Rewatch Video</button> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+          <div class="modal-body">
+            <p>The law requires that you participate in the orientation process each time you are summoned for jury service to ensure you understand your role and responsibilities as a trial juror. You must complete the orientation prior to reporting for jury service.</p>
+            <p>Completing the orientation process online requires that you view the orientation video in its entirety. The orientation process takes approximately 15 minutes to complete. </p>
+            <p>Please note that the orientation video is hosted on YouTube. If you experience difficulties playing the video, it may be because:
+            <ul>
+              <li>the YouTube site is down,</li>
+              <li>your browser does not support YouTube, or</li>
+              <li>the YouTube site is blocked or restricted on your device.</li>
+            </ul>
+            </p>
+            <p> If you are not able to complete the online orientation for any reason, you may do so by:
+            <ul>
+              <li>Calling the Court’s Serve Jury telephone system at (213) 972-0970. After entering your JID and PIN numbers, select the orientation option. The recording is approximately 5 minutes in length and you must listen to the entire recording to receive credit.</li>
+              <li>Reading the orientation script included in the mailing with your summons prior to reporting for service. </li>
+            </ul>
+            </p>
+          </div>
+          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#videoModalToggle2" data-bs-toggle="modal">Watch Video</button></div>
         </div>
       </div>
     </div>
+    <!--video modal-->
+    <div class="modal fade" id="videoModalToggle2" aria-hidden="true" aria-labelledby="videoModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
+        <div class="modal-content border-2 border-info">
+          <div class="modal-header bg-info">
+            <h5 class="modal-title" id="videoModalToggleLabel2">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"><iframe width="100%" height="400px" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="modal-footer bg-light"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <!--faqs-->
     <div class="container mb-5">
       <div class="row d-flex justify-content-center">
         <div class="col-md-8">
