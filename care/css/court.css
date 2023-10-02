@@ -1,0 +1,11 @@
+:root,
+*,
+html,
+body {
+  --court-black: #231f20;
+  --court-ltblue: #93b2dd;
+  --court-paleblue: #f0f4fc;
+  --court-dkblue: #012362;
+  --court-yellow: #f3c727;
+  --court-grey: #95a3ab;
+}
