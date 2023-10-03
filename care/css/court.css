@@ -12,3 +12,5 @@ body {
 .hero{background: var(--court-ltblue);}
 h1, h2, h3,
 h4, h5, h6 {color:var(--court-dkblue)}
+.accordion-button{font-size: 18px; font-weight:600}
+.accordion-button:not(.collapsed){background-color: transparent; box-shadow: none;}
