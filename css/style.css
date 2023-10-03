@@ -282,3 +282,5 @@ ol.bubble {
 #steps .col:has(i) {
   text-wrap: nowrap;
 }
+.modal #timer > strong {color:var(--court-dkblue);background-color: #f1f1f1; padding:0 10px}
+.modal #timer > strong > span {color:var(--court-black);}
