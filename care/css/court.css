@@ -31,9 +31,12 @@ footer {
   background-color: var(--court-dkgrey);
   color: #fff;
 }
-footer * {
+footer a {
   color: var(--court-grey);
   font-size: 24px;
+}
+footer a:hover {
+  color: #fff;
 }
 .court-topbar {
   background-color: var(--court-dkblue);
@@ -95,6 +98,9 @@ footer * {
 .social-media a {
   padding: 10px;
 }
+/*court services icons*/
+.court-services img{padding:5px;width:20px;height:20px; background-color: red;}
+/*Youtube*/
 .fluid-yt > iframe {
   display: block;
   width: 100%;
