@@ -8,7 +8,7 @@ body {
   --court-black: #231f20;
   --court-ltblue: #eef6f9;
   --court-paleblue: #eef6f9;
-  --court-dkblue: #012362;
+  --court-dkblue: #232f3d;
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-gold: #f5c04f;
@@ -22,6 +22,10 @@ h5,
 h6 {
 }
 nav {
+}
+nav a {
+}
+nav #google_translate_element span {
 }
 footer {
   background-color: var(--court-dkgrey);
@@ -40,7 +44,9 @@ footer * {
   font-weight: bold;
   padding: 10px 0;
 }
-.hero{font-size: 16px;}
+.hero {
+  font-size: 16px;
+}
 .accordion-button {
   font-size: 18px;
   font-weight: 600;
@@ -66,7 +72,11 @@ footer * {
   background-color: var(--court-dkgrey) !important;
   color: #fff;
 }
-#petition .col img{width: 75px;height:75px;background-color: #f3c727;}
+#petition .col img {
+  width: 75px;
+  height: 75px;
+  background-color: #f3c727;
+}
 .bg-card1 {
   background-color: #305687;
 }
@@ -90,18 +100,18 @@ footer * {
   height: 100%;
 }
 @supports not (aspect-ratio: 16 / 9) {
-  .fluid-yt { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden; 
+  .fluid-yt {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
   }
-  .fluid-yt > iframe { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+  .fluid-yt > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
