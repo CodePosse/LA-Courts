@@ -1,16 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 :root,
 *,
 html,
 body {
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "Lato", sans-serif;
   --court-black: #231f20;
-  --court-ltblue: #EEF6F9;
-  --court-paleblue: #f0f4fc;
+  --court-ltblue: #eef6f9;
+  --court-paleblue: #eef6f9;
   --court-dkblue: #012362;
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
+  --court-gold: #f5c04f;
+  --court-dkgrey: #333333;
 }
-.hero{background: var(--court-ltblue);}
-h1, h2, h3,
-h4, h5, h6 {color:var(--court-dkblue)}
-.accordion-button{font-size: 18px; font-weight:600}
-.accordion-button:not(.collapsed){background-color: transparent; box-shadow: none;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+nav {
+}
+footer {
+  background-color: var(--court-dkgrey);
+  color: #fff;
+}
+footer * {
+  color: var(--court-grey);
+  font-size: 24px;
+}
+.court-topbar {
+  background-color: var(--court-dkblue);
+  color: #fff;
+  border-bottom: 5px solid var(--court-gold);
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.bg-paleblue {
+  background: var(--court-ltblue);
+}
+.bg-court-dkblue,
+.bg-primary,
+.btn-primary {
+  background-color: var(--court-dkblue) !important;
+  color: #fff;
+}
+.bg-court-ltblue {
+  background-color: var(--court-ltblue) !important;
+  color: #333;
+}
+.bg-court-dkgrey {
+  background-color: var(--court-dkgrey) !important;
+  color: #fff;
+}
+.bg-card1 {
+  background-color: #305687;
+}
+.bg-card2 {
+  background-color: #0065b8;
+}
+.bg-card3 {
+  background-color: #00a0e2;
+  color: #000;
+}
+.bg-card4 {
+  background-color: #dbe9f7;
+  color: #000;
+}
+.social-media a {
+  padding: 20px;
+}
