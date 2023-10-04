@@ -2,7 +2,7 @@
 :root,
 html,
 body {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
   font-family: "Lato", sans-serif;
   --court-black: #231f20;
@@ -43,12 +43,10 @@ footer a:hover {
   color: #fff;
   border-bottom: 5px solid var(--court-gold);
   text-align: center;
-  font-size: 16px;
   font-weight: bold;
   padding: 10px 0;
 }
 .hero {
-  font-size: 16px;
 }
 .accordion-button {
   font-size: 18px;
