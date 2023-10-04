@@ -66,6 +66,7 @@ footer * {
   background-color: var(--court-dkgrey) !important;
   color: #fff;
 }
+#petition .col img{width: 75px;height:75px;background-color: #f3c727;}
 .bg-card1 {
   background-color: #305687;
 }
