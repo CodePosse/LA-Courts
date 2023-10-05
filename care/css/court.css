@@ -20,12 +20,18 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 nav {
+  color: var(--court-black);
 }
 nav a {
+  color: var(--court-black);
 }
-nav #google_translate_element span {
+nav #google_translate_element {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
 }
 footer {
   background-color: var(--court-dkgrey);
@@ -47,6 +53,7 @@ footer a:hover {
   padding: 10px 0;
 }
 .hero {
+  font-family: "Lato", sans-serif;
 }
 .accordion-button {
   font-size: 18px;
