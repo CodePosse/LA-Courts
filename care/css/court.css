@@ -103,6 +103,8 @@ footer a:hover {
   background-color: #dbe9f7;
   color: #000;
 }
+.text-gold{color: var(--court-gold)}
+.text-dkblue{color: var(--court-dkblue)}
 .social-media a {
   padding: 10px;
 }
