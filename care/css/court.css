@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 :root,
 html,
 body {
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+font-weight: 700;
 }
 nav {
   color: var(--court-black);
@@ -140,7 +140,7 @@ footer a:hover {
 
 
 .accordion-button{font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
