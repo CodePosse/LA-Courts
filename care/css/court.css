@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 :root,
 html,
 body {
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-font-weight: 700;
+  font-weight: 700;
 }
 nav {
   color: var(--court-black);
@@ -65,7 +65,9 @@ footer a:hover {
 .bg-paleblue {
   background: var(--court-ltblue);
 }
-.bg-gold{background-color: var(--court-gold);}
+.bg-gold {
+  background-color: var(--court-gold);
+}
 .bg-court-dkblue,
 .bg-primary,
 .btn-primary {
@@ -101,8 +103,12 @@ footer a:hover {
   background-color: #dbe9f7;
   color: #000;
 }
-.text-gold{color: var(--court-gold)}
-.text-dkblue{color: var(--court-dkblue)}
+.text-gold {
+  color: var(--court-gold);
+}
+.text-dkblue {
+  color: var(--court-dkblue);
+}
 .social-media a {
   padding: 10px;
 }
@@ -136,16 +142,25 @@ footer a:hover {
   }
 }
 
-
-.accordion-button, .accordion-button:not(.collapsed){font-size: 24px;
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  font-size: 24px;
   font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
-  letter-spacing: normal;color:var(--court-black)}
- 
-  .process{font-size:14px}
-  .featurette{position: relative;}
-.next-arrow-bottom{position: absolute;
+  letter-spacing: normal;
+  color: var(--court-black);
+}
+
+.process {
+  font-size: 14px;
+}
+.featurette {
+  position: relative;
+}
+.next-arrow-bottom {
+  position: absolute;
   bottom: 0;
-  right: 0;}
+  right: 0;
+}
