@@ -144,3 +144,7 @@ footer a:hover {
   line-height: 1;
   letter-spacing: normal;}
   .process{font-size:14px}
+  .featurette{position: relative;}
+.next-arrow-bottom{position: absolute;
+  bottom: 0;
+  right: 0;}
