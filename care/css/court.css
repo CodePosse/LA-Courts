@@ -137,12 +137,13 @@ footer a:hover {
 }
 
 
-.accordion-button{font-size: 24px;
+.accordion-button, .accordion-button:not(.collapsed){font-size: 24px;
   font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
-  letter-spacing: normal;}
+  letter-spacing: normal;color:var(--court-black)}
+ 
   .process{font-size:14px}
   .featurette{position: relative;}
 .next-arrow-bottom{position: absolute;
