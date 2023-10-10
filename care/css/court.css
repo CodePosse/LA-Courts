@@ -57,11 +57,13 @@ footer a:hover {
 .accordion-button {
   font-size: 18px;
   font-weight: 600;
+  background-color: transparent;
 }
 .accordion-button:not(.collapsed) {
   background-color: transparent;
   box-shadow: none;
 }
+#faq .accordion *{background-color: #F3F3F3}
 .bg-paleblue {
   background: var(--court-ltblue);
 }
