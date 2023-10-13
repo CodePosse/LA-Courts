@@ -32,6 +32,7 @@ nav #google_translate_element {
   font-family: "Lato", sans-serif;
   font-size: 18px;
 }
+
 footer {
   background-color: var(--court-dkgrey);
   color: #fff;
@@ -54,6 +55,7 @@ footer a:hover {
 .hero {
   font-family: "Lato", sans-serif;
 }
+
 .bg-paleblue {
   background: var(--court-ltblue);
 }
@@ -132,7 +134,14 @@ footer a:hover {
     height: 100%;
   }
 }
+.accordion-button {
 
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#faq .accordion *, .bg-midgrey{background-color: #F3F3F3}
 .accordion-button,
 .accordion-button:not(.collapsed) {
   font-size: 24px;
@@ -143,7 +152,7 @@ footer a:hover {
   letter-spacing: normal;
   color: var(--court-black);
 }
-#faq .accordion *{background-color: #F3F3F3;border:0 solid transparent;}
+
 .process {
   font-size: 14px;
 }
