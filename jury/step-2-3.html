@@ -1,130 +1,176 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Step 2: Change request resolution</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>flow</title>
-    <meta name="theme-color" content="#0DFF39">
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid lasc-logo py-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
-            <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">Translate</span></a> <a class="fa-solid fa-question fs-1" href="#" title="Contact Us"></a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="container-fluid splash pt-3 pb-0">
-      <!--progress-->
-      <div class="container py-2 py-md-3" id="steps">
+
+<head>
+  <title>Step 2: Change request resolution</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>flow</title>
+  <meta name="theme-color" content="#0DFF39">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid lasc-logo py-1">
+      <div class="container">
         <div class="row">
-          <div class="col border rounded-start p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span class="px-2 pt-1 d-none d-md-inline">Summons</span></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span> <span class="px-2 pt-1">Prepare</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span> <span class="px-2 pt-1 d-none d-md-inline">Service Week</span></div>
-          <div class="col border rounded-end p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span class="px-2 pt-1 d-none d-md-inline">Completion</span></div>
+          <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt=""
+                style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
+          <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal"
+              data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span
+                  class="visually-hidden">unread messages</span> </span></a><a href="#"
+              class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">Translate</span></a> <a
+              class="fa-solid fa-question fs-1" href="#" title="Contact Us"></a></div>
         </div>
       </div>
-      <div class="container py-md-1">
-        <!--top content-->
-        <div class="row d-flex justify-content-center">
-          <!--greeting box-->
-          <div class="col-md-4 border border-info border-4 rounded bg-light py-md-2 px-3 m-1 custom-shadow2" id="greeting">
-            <div class="p-0 mb-2 border-bottom border-secondary"><strong class="fs-3 d-block text-primary">How to Prepare</strong>
-              <em class="fw-italic">Your Jury Duty Status and What To Do Next</em>
-            </div>
-            <p>Welcome <strong class="text-primary">Keith Teruya</strong>.</p> <strong class="fs-5">Juror Status:</strong>
-            <span class="badge rounded-pill bg-success fs-6">Eligible <a href="javascript:void();" class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></a></span> <span class="fs-6 badge rounded-pill border border-success text-primary mt-2">Transfer Request Granted <a href="javascript:void();" class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Tooltip on bottom" aria-label="Tooltip on bottom"></a></span>
+    </div>
+  </header>
+  <div class="container-fluid splash pt-3 pb-0">
+    <!--progress-->
+    <div class="container py-2 py-md-3" id="steps">
+      <div class="row">
+        <div class="col border rounded-start p-2 d-flex bg-light"><span
+            class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span
+            class="px-2 pt-1 d-none d-md-inline">Summons</span></div>
+        <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span>
+          <span class="px-2 pt-1">Prepare</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
+        <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span>
+          <span class="px-2 pt-1 d-none d-md-inline">Service Week</span></div>
+        <div class="col border rounded-end p-2 d-flex bg-light"><span
+            class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span
+            class="px-2 pt-1 d-none d-md-inline">Completion</span></div>
+      </div>
+    </div>
+    <div class="container py-md-1">
+      <!--top content-->
+      <div class="row d-flex justify-content-center">
+        <!--greeting box-->
+        <div class="col-md-4 border border-info border-4 rounded bg-light py-md-2 px-3 m-1 custom-shadow2"
+          id="greeting">
+          <div class="p-0 mb-2 border-bottom border-secondary"><strong class="fs-3 d-block text-primary">How to
+              Prepare</strong>
+            <em class="fw-italic">Your Jury Duty Status and What To Do Next</em>
           </div>
-          <!--important box-->
-          <div class="col-md-6 rounded border border-info p-0 m-1 bg-light d-flex custom-shadow2" id="important">
-            <div class="flex-shrink-0 pt-3 px-2 bg-info text-white"><i class="fa-solid fa-message fs-1 p-2"></i></div>
-            <div class="flex-grow-1 ms-3 p-2"><strong class="fs-5 text-primary">Here's how to get started.</strong>
-              <p> You have finished registering for jury duty and are ready to serve. </p>
-              <ul>
-                <li> Review the "Juror Checklist". </li>
-                <li> Watch the Orientation video before August 20, 2023, 9:00 PM prior to reporting for service. </li>
-                <li> Read your reporting instructions below. </li>
-              </ul>
-            </div>
+          <p>Welcome <strong class="text-primary">Keith Teruya</strong>.</p> <strong class="fs-5">Juror Status:</strong>
+          <span class="badge rounded-pill bg-success fs-6">Eligible <a href="javascript:void();"
+              class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Tooltip on bottom"></a></span> <span
+            class="fs-6 badge rounded-pill border border-success text-primary mt-2">Transfer Request Granted <a
+              href="javascript:void();" class="fa-solid fa-circle-info text-decoration-none" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" title="" data-bs-original-title="Tooltip on bottom"
+              aria-label="Tooltip on bottom"></a></span>
+        </div>
+        <!--important box-->
+        <div class="col-md-6 rounded border border-info p-0 m-1 bg-light d-flex custom-shadow2" id="important">
+          <div class="flex-shrink-0 pt-3 px-2 bg-info text-white"><i class="fa-solid fa-message fs-1 p-2"></i></div>
+          <div class="flex-grow-1 ms-3 p-2"><strong class="fs-5 text-primary">Here's how to get started.</strong>
+            <p> You have finished registering for jury duty and are ready to serve. </p>
+            <ul>
+              <li> Review the "Juror Checklist". </li>
+              <li> Watch the Orientation video before August 20, 2023, 9:00 PM prior to reporting for service. </li>
+              <li> Read your reporting instructions below. </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="container py-4">
-      <div class="row d-flex justify-content-center">
-        <!--get ready card-->
-        <div class="col-md-4 mb-4">
-          <div class="card custom-shadow2 border-info" id="getready">
-            <div class="fs-5 card-header fw-bold bg-info">Get Ready <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
-            <div class="card-body">
-              <div class="row card-text">
-                <div class="col-12 pt-1">
-                  <p>Learn how to prepare for jury duty.</p>
+  </div>
+  <div class="container py-4">
+    <div class="row d-flex justify-content-center">
+      <!--get ready card-->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-shadow2 border-info" id="getready">
+          <div class="fs-5 card-header fw-bold bg-info">Get Ready <i class="fa-solid fa-circle-info float-end mt-1"></i>
+          </div>
+          <div class="card-body">
+            <div class="row card-text">
+              <div class="col-12 pt-1">
+                <p>Learn how to prepare for jury duty.</p>
+              </div>
+              <div class="col-12 row d-flex justify-content-center m-0 p-0">
+                <div class="col-md-8 mt-3"><a href="#preplist" class="btn btn-info w-100 border-primary">Juror
+                    Checklist</a></div>
+                <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary"
+                    data-bs-toggle="modal" data-bs-target="#quizModalToggle">Watch Orientation Video</button></div>
+                <hr><span>Additional information:</span>
+                <div class="col-md-8 mt-3"><a href="#specialhandling" class="btn btn-info w-100">Special Handling</a>
                 </div>
-                <div class="col-12 row d-flex justify-content-center m-0 p-0">
-                  <div class="col-md-8 mt-3"><a href="#preplist" class="btn btn-info w-100 border-primary">Juror Checklist</a></div>
-                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#quizModalToggle">Watch Orientation Video</button></div>
-                  <hr><span>Additional information:</span>
-                  <div class="col-md-8 mt-3"><a href="#specialhandling" class="btn btn-info w-100">Special Handling</a></div>
-                  <div class="col-md-8 mt-3"><a href="#faqs" class="btn btn-info w-100">FAQs</a></div>
-                  <div class="col-md-8 mt-3"><a href="#" class="btn btn-info w-100">Personal Info</a></div>
-                </div>
+                <div class="col-md-8 mt-3"><a href="#faqs" class="btn btn-info w-100">FAQs</a></div>
+                <div class="col-md-8 mt-3"><a href="#" class="btn btn-info w-100">Personal Info</a></div>
               </div>
             </div>
           </div>
         </div>
-        <!--reporting card-->
-        <div class="col-md-4 mb-4">
-          <div class="card custom-shadow2 border-primary" id="reporting">
-            <div class="fs-5 card-header fw-bold bg-primary">Reporting Instructions <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
-            <div class="card-body">
-              <div class="row card-text">
-                <div class="col-12 pt-3">
-                  <p><strong>Your service week starts:</strong><br>Monday, October 2, 2023</p>
-                  <p><strong>Check Between:</strong><br>Check between Friday, September 29, 2023 7:00 PM and Monday, October 1, 2023 6:00 AM </p>
-                  <p><a href="cal.ics" rel="noopener" target="_blank">Download Calender Reminder <i class="fa-solid fa-calendar-plus mt-1"></i></a></p>
-                  <p>How to avoid a <a href="#" data-bs-toggle="modal" data-bs-target="#FTAModal">Failure to Appear</a> notice?</p>
-                </div>
+      </div>
+      <!--reporting card-->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-shadow2 border-primary" id="reporting">
+          <div class="fs-5 card-header fw-bold bg-primary">Reporting Instructions <i
+              class="fa-solid fa-circle-info float-end mt-1"></i></div>
+          <div class="card-body">
+            <div class="row card-text">
+              <div class="col-12 pt-3">
+                <p><strong>Your service week starts:</strong><br>Monday, October 2, 2023</p>
+                <p><strong>Check Between:</strong><br>Check between Friday, September 29, 2023 7:00 PM and Monday,
+                  October 1, 2023 6:00 AM </p>
+                <p><a href="cal.ics" rel="noopener" target="_blank">Download Calender Reminder <i
+                      class="fa-solid fa-calendar-plus mt-1"></i></a></p>
+                <p>How to avoid a <a href="#" data-bs-toggle="modal" data-bs-target="#FTAModal">Failure to Appear</a>
+                  notice?</p>
               </div>
             </div>
           </div>
         </div>
-        <!--location card-->
-        <div class="col-md-4 mb-4">
-          <div class="card custom-shadow2 border-primary">
-            <div class="fs-5 card-header fw-bold bg-primary">Courthouse Location <i class="fa-solid fa-location-dot float-end mt-1"></i></div>
-            <div class="card-body">
-              <div class="row card-text">
-                <div class="col-12 pt-3"><span class="fw-bold">Airport Courthouse</span><br>11701 S. La Cienega<br>Los Angeles, CA 90045<br><p><a href="javascript:void();" class="text-danger" data-bs-toggle="modal" data-bs-target="#importantInfoModal">IMPORTANT INFORMATION</a></p><a href="https://www.google.com/maps/dir/34.1128172,-118.4399073/Airport+Courthouse,+11701+La+Cienega+Blvd,+Los+Angeles,+CA+90045/@34.0203271,-118.4884257,12z/data=!3m2!4b1!5s0x80c2eb0795f133af:0x837d1aae18446a98!4m17!1m6!3m5!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2sAirport+Courthouse!8m2!3d33.9281959!4d-118.371315!4m9!1m1!4e1!1m5!1m1!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2m2!1d-118.371315!2d33.9281959!3e0" target="_blank">Get Directions <i class="fa-solid fa-location-dot mt-1"></i></a><br><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#court-info-Modal">General info: Parking, Services, More <i class="fa-solid fa-magnifying-glass-location"></i></a>
-                  <p></p><span class="fw-bold">Jury Assembly Room:</span>
-                  <p>Room 43, Fifth floor</p><span class="fw-bold">Courthouse Hours:</span>
-                  <p>Weekdays 8am to 5pm</p>
-                  <p class="mb-0 pb-0"><span class="fw-bold">Request Change(s)</span></p>
-                  <div class="text-secondary mb-3">Based on your status and/or prior actions, you may not be eligible for all change options. Please call (213) 972-0970 if you need further assistance. </div>
-                  <ul>
-                    <li>Be <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#excuseModal">excused</a> from jury duty</li>
-                    <li><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#postponeModal">Postpone</a> your service week</li>
-                    <li><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#transferModal">Transfer</a> to a different courthouse</li>
-                  </ul>
-                </div>
+      </div>
+      <!--location card-->
+      <div class="col-md-4 mb-4">
+        <div class="card custom-shadow2 border-primary">
+          <div class="fs-5 card-header fw-bold bg-primary">Courthouse Location <i
+              class="fa-solid fa-location-dot float-end mt-1"></i></div>
+          <div class="card-body">
+            <div class="row card-text">
+              <div class="col-12 pt-3"><span class="fw-bold">Airport Courthouse</span><br>11701 S. La Cienega<br>Los
+                Angeles, CA 90045<br>
+                <p><a href="javascript:void();" class="text-danger" data-bs-toggle="modal"
+                    data-bs-target="#importantInfoModal">IMPORTANT INFORMATION</a></p><a
+                  href="https://www.google.com/maps/dir/34.1128172,-118.4399073/Airport+Courthouse,+11701+La+Cienega+Blvd,+Los+Angeles,+CA+90045/@34.0203271,-118.4884257,12z/data=!3m2!4b1!5s0x80c2eb0795f133af:0x837d1aae18446a98!4m17!1m6!3m5!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2sAirport+Courthouse!8m2!3d33.9281959!4d-118.371315!4m9!1m1!4e1!1m5!1m1!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2m2!1d-118.371315!2d33.9281959!3e0"
+                  target="_blank">Get Directions <i class="fa-solid fa-location-dot mt-1"></i></a><br><a
+                  href="javascript:void();" data-bs-toggle="modal" data-bs-target="#court-info-Modal">General info:
+                  Parking, Services, More <i class="fa-solid fa-magnifying-glass-location"></i></a>
+                <p></p><span class="fw-bold">Jury Assembly Room:</span>
+                <p>Room 43, Fifth floor</p><span class="fw-bold">Courthouse Hours:</span>
+                <p>Weekdays 8am to 5pm</p>
+                <p class="mb-0 pb-0"><span class="fw-bold">Request Change(s)</span></p>
+                <div class="text-secondary mb-3">Based on your status and/or prior actions, you may not be eligible for
+                  all change options. Please call (213) 972-0970 if you need further assistance. </div>
+                <ul>
+                  <li>Be <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#excuseModal">excused</a>
+                    from jury duty</li>
+                  <li><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#postponeModal">Postpone</a>
+                    your service week</li>
+                  <li><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#transferModal">Transfer</a>
+                    to a different courthouse</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-     
+
       <div class="col-md-8 mb-4" id="preplist">
         <div class="card custom-shadow2 border-info">
-          <div class="fs-5 card-header fw-bold bg-info">Juror Checklist <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
+          <div class="fs-5 card-header fw-bold bg-info">Juror Checklist <i
+              class="fa-solid fa-circle-info float-end mt-1"></i></div>
           <div class="card-body row">
-            <div class="col-1 text-center"><a href="#"><i class="fa-solid fa-caret-right fs-2 mt-1"></i><span class="sr-only">previous</span></a></div>
+            <div class="col-1 text-center"><a href="#"><i class="fa-solid fa-caret-right fs-2 mt-1"></i><span
+                  class="sr-only">previous</span></a></div>
             <div class="col-10"><select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 <option value="">Table of Contents</option>
                 <optgroup label="Before Your Service Week">
@@ -144,7 +190,8 @@
                   <option value="">5. I understand available amenities for jurors at the courthouse</option>
                 </optgroup>
               </select></div>
-            <div class="col-1 text-center"><a href="#"><i class="fa-solid fa-caret-right fs-2 mt-1"></i><span class="sr-only">next</span></a></div>
+            <div class="col-1 text-center"><a href="#"><i class="fa-solid fa-caret-right fs-2 mt-1"></i><span
+                  class="sr-only">next</span></a></div>
             <div class="col-12">
               <div class="py-2 px-3 border rounded">
                 <h3 class="fs-5">Table Of Contents</h3>
@@ -173,36 +220,49 @@
       </div>
       <div class="col-md-8 mt-4" id="specialhandling">
         <div class="card custom-shadow2 border-info">
-          <div class="fs-5 card-header fw-bold bg-info">Special Handling <i class="fa-solid fa-person-circle-question text-primary float-end mt-1"></i></div>
+          <div class="fs-5 card-header fw-bold bg-info">Special Handling <i
+              class="fa-solid fa-person-circle-question text-primary float-end mt-1"></i></div>
           <div class="card-body">
             <div class="row card-text">
               <div class="col-12 pt-3">
-                <p>If you have received a summons and cannot serve due to one of the reasons below, please click on the reason for instructions on how to proceed.</p>
-                <p>If you have received a summons for a person called to jury service in your household, and/or related to that person and know that the juror cannot serve due to one of the reasons below, please select that reason for instructions on how to proceed.</p>
+                <p>If you have received a summons and cannot serve due to one of the reasons below, please click on the
+                  reason for instructions on how to proceed.</p>
+                <p>If you have received a summons for a person called to jury service in your household, and/or related
+                  to that person and know that the juror cannot serve due to one of the reasons below, please select
+                  that reason for instructions on how to proceed.</p>
               </div>
               <div class="col-12">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Juror has/I have served within the last twelve months.</button></h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                        aria-expanded="false" aria-controls="flush-collapseOne">Juror has/I have served within the last
+                        twelve months.</button></h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="priorpnl" class="infoblock">
                           <p><u class="fw-bold">Served within last 12 months</u></p>
-                          <p>By law, you are only required to serve once every 12 months. If you have been summoned to serve within 12 months of your last service, you may request to be excused or elect to serve again. You must first register to proceed with either option.</p>
+                          <p>By law, you are only required to serve once every 12 months. If you have been summoned to
+                            serve within 12 months of your last service, you may request to be excused or elect to serve
+                            again. You must first register to proceed with either option.</p>
                           <p><u class="fw-bold">I do not wish to serve</u></p>
                           <p>If you have served within the last twelve months and you wish to be excused:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
+                                on that page.</p>
                             </li>
                             <li>
-                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the
+                                information on that page.</p>
                             </li>
                             <li>
                               <p>You are now registered. Next, click on the "<a href="#">Excuse</a>" link.</p>
                             </li>
                             <li>
-                              <p>Select the "<strong>Prior Service</strong>" reason. Follow the remainder of the prompts to fill out your request.</p>
+                              <p>Select the "<strong>Prior Service</strong>" reason. Follow the remainder of the prompts
+                                to fill out your request.</p>
                             </li>
                             <li>
                               <p>Click the "<strong>Submit</strong>" button to submit your request for processing.</p>
@@ -212,16 +272,19 @@
                           <p>If you have served within the last twelve months and you wish to serve again:</p>
                           <ol>
                             <li>
-                              <p>Click on the Update your "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the Update your "<a href="#">Verify Personal Info</a>" button and complete the
+                                information on that page.</p>
                             </li>
                             <li>
-                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button and complete the
+                                information on that page.</p>
                             </li>
                             <li>
                               <p>You are now registered.</p>
                             </li>
                             <li>
-                              <p>Follow "<strong>Reporting Instructions</strong>" for your service week and the location that has summoned you OR request a postponement or transfer of location as needed</p>
+                              <p>Follow "<strong>Reporting Instructions</strong>" for your service week and the location
+                                that has summoned you OR request a postponement or transfer of location as needed</p>
                             </li>
                           </ol>
                         </div>
@@ -229,8 +292,11 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Juror is deceased.</button></h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false" aria-controls="flush-collapseTwo">Juror is deceased.</button></h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="deathpnl" class="infoblock"><span id="errlbl" style="color:Red"></span>
                           <p><u class="fw-bold">Juror is deceased</u></p>
@@ -241,62 +307,84 @@
                               <tbody>
                                 <tr>
                                   <td colspan="2">
-                                    <p><label for="rbdeathoutside" id="Label1" style="text-decoration:underline;font-weight:700">Juror died outside Los Angeles County</label></p>
+                                    <p><label for="rbdeathoutside" id="Label1"
+                                        style="text-decoration:underline;font-weight:700">Juror died outside Los Angeles
+                                        County</label></p>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="vertical-align:top;width:30px"><span aria-label="Juror died outside Los Angeles County"><input id="rbdeathoutside" type="radio" class="form-check-input" value="rbdeathoutside"></span></td>
+                                  <td style="vertical-align:top;width:30px"><span
+                                      aria-label="Juror died outside Los Angeles County"><input id="rbdeathoutside"
+                                        type="radio" class="form-check-input" value="rbdeathoutside"></span></td>
                                   <td>
-                                    <p style="margin-top:0">If the juror is deceased and he/she died outside Los Angeles County, please indicate that the juror is deceased in Section D, return the jury summons and a <b>copy</b> of the death certificate to this address:</p>
-                                    <p>Los Angeles Superior Court<br>Juror Services Division<br>PO Box 53378<br>Los Angeles, CA 90053-0378</p>
+                                    <p style="margin-top:0">If the juror is deceased and he/she died outside Los Angeles
+                                      County, please indicate that the juror is deceased in Section D, return the jury
+                                      summons and a <b>copy</b> of the death certificate to this address:</p>
+                                    <p>Los Angeles Superior Court<br>Juror Services Division<br>PO Box 53378<br>Los
+                                      Angeles, CA 90053-0378</p>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td colspan="2">
-                                    <p><label for="rbdeathinside" id="Label2" style="text-decoration:underline;font-weight:700">Juror died within Los Angeles County</label></p>
+                                    <p><label for="rbdeathinside" id="Label2"
+                                        style="text-decoration:underline;font-weight:700">Juror died within Los Angeles
+                                        County</label></p>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="vertical-align:top"><span aria-label="Juror died within Los Angeles County"><input id="rbdeathinside" type="radio" name="" value="rbdeathinside" class="form-check-input"></span></td>
+                                  <td style="vertical-align:top"><span
+                                      aria-label="Juror died within Los Angeles County"><input id="rbdeathinside"
+                                        type="radio" name="" value="rbdeathinside" class="form-check-input"></span></td>
                                   <td>
-                                    <p style="margin-top:0">If the juror is deceased and he/she died within Los Angeles County, please fill out the sections below and click the "<strong>Submit</strong>" button. We will review the information and respond back to you within twenty business days.</p>
+                                    <p style="margin-top:0">If the juror is deceased and he/she died within Los Angeles
+                                      County, please fill out the sections below and click the "<strong>Submit</strong>"
+                                      button. We will review the information and respond back to you within twenty
+                                      business days.</p>
                                     <table>
                                       <tbody>
                                         <tr>
                                           <td>
                                             <p>Name of person filling out this form:</p>
                                           </td>
-                                          <td style="vertical-align:top"><input name="" type="text" class="form-control" id="fillernametext" aria-label="Enter your name"></td>
+                                          <td style="vertical-align:top"><input name="" type="text" class="form-control"
+                                              id="fillernametext" aria-label="Enter your name"></td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <p>Name of decedent as it appears on the death certificate:</p>
                                           </td>
-                                          <td style="vertical-align:top"><input name="" type="text" class="form-control" id="deathnametext" aria-label="enter name of decedent as it appears on the death certificate"></td>
+                                          <td style="vertical-align:top"><input name="" type="text" class="form-control"
+                                              id="deathnametext"
+                                              aria-label="enter name of decedent as it appears on the death certificate">
+                                          </td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <p>Date of death<br>(MM/DD/YYYY):</p>
                                           </td>
-                                          <td style="vertical-align:top"><input name="" type="text" class="form-control" id="datedeathtext" aria-label="enter decedent's date of death"></td>
+                                          <td style="vertical-align:top"><input name="" type="text" class="form-control"
+                                              id="datedeathtext" aria-label="enter decedent's date of death"></td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <p>Date of birth<br>(MM/DD/YYYY):</p>
                                           </td>
-                                          <td style="vertical-align:top"><input class="form-control" type="text" id="datebirthtext" aria-label="enter decedent's date of birth"></td>
+                                          <td style="vertical-align:top"><input class="form-control" type="text"
+                                              id="datebirthtext" aria-label="enter decedent's date of birth"></td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <p>City of death:</p>
                                           </td>
-                                          <td style="vertical-align:top"><input class="form-control" type="text" id="citydeathtext" aria-label="enter decedent's city of death"></td>
+                                          <td style="vertical-align:top"><input class="form-control" type="text"
+                                              id="citydeathtext" aria-label="enter decedent's city of death"></td>
                                         </tr>
                                         <tr>
                                           <td>
                                             <p>Your phone number:</p>
                                           </td>
-                                          <td style="vertical-align:top"><input class="form-control" type="number" maxlength="10" id="phone1text" aria-label="enter your phone number"></td>
+                                          <td style="vertical-align:top"><input class="form-control" type="number"
+                                              maxlength="10" id="phone1text" aria-label="enter your phone number"></td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -306,12 +394,18 @@
                             </table>
                           </fieldset><br>
                           <div class="bd-callout bd-callout-danger col-12 my-3">
-                            <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                            <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is
+                                a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
                             <div class="ps-2 py-2 row">
-                              <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="certifybox"><label for="certifybox" id="lblCertifyBox">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)).</label></div>
+                              <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input"
+                                  name="certifybox"><label for="certifybox" id="lblCertifyBox">I certify under penalty
+                                  of perjury under the laws of the State of California that the foregoing is true and
+                                  correct (Code of Civil Procedure Sec. 2015.5(b)).</label></div>
                             </div>
                             <div class="ps-2 row">
-                              <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use this as my electronic signature.</label></div>
+                              <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input"
+                                  name="signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use
+                                  this as my electronic signature.</label></div>
                             </div>
                           </div>
                         </div>
@@ -319,8 +413,12 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Juror/I am in the military.</button></h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                        aria-expanded="false" aria-controls="flush-collapseThree">Juror/I am in the military.</button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="militarypnl" class="infoblock">
                           <p><u class="fw-bold">Active military service</u></p>
@@ -328,38 +426,58 @@
                           <p>If you are on active military duty AND will be deployed soon, please do the following:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify My Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify My Info</a>" button and complete the information on
+                                that page.</p>
                             </li>
                             <li>
-                              <p>You must register and complete your summons by clicking on the "<a href="#">Answer Eligibility Questions</a>" button and answering all questions 1-12, <u>ensuring that you answer question number 8</u>. Complete the remainder of the form as prompted.</p>
+                              <p>You must register and complete your summons by clicking on the "<a href="#">Answer
+                                  Eligibility Questions</a>" button and answering all questions 1-12, <u>ensuring that
+                                  you answer question number 8</u>. Complete the remainder of the form as prompted.</p>
                             </li>
                             <li>
-                              <p>Click the "Submit Answers" button on the page to submit your summons for processing.</p>
+                              <p>Click the "Submit Answers" button on the page to submit your summons for processing.
+                              </p>
                             </li>
                           </ol>
-                          <p>If you are a family member responding for the juror and the juror is currently deployed, please use the summons form that was mailed to the juror and indicate that the juror is deployed in Section D of the summons. Please sign and date the summons in Section G. Please return the form to the Court in the self-addressed envelope provided or mail it to:</p>
+                          <p>If you are a family member responding for the juror and the juror is currently deployed,
+                            please use the summons form that was mailed to the juror and indicate that the juror is
+                            deployed in Section D of the summons. Please sign and date the summons in Section G. Please
+                            return the form to the Court in the self-addressed envelope provided or mail it to:</p>
                           <p>Los Angeles Superior Court<br>Juror Services<br>PO Box 53378<br>Los Angeles, CA 90053</p>
                           <p><u class="fw-bold">Juror is/I am returning from deployment</u></p>
-                          <p>If you have recently returned from military deployment overseas and need additional time to perform your jury service, please call (213) 972-0970 to request a postponement of your service.</p>
-                          <p>If you need further assistance, please call (213) 972-0970 between the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday.</p>
+                          <p>If you have recently returned from military deployment overseas and need additional time to
+                            perform your jury service, please call (213) 972-0970 to request a postponement of your
+                            service.</p>
+                          <p>If you need further assistance, please call (213) 972-0970 between the hours of 8:00 AM and
+                            4:30 PM (Pacific Standard Time), Monday through Friday.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Juror has/I have moved out of Los Angeles County.</button></h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingFour"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                        aria-expanded="false" aria-controls="flush-collapseFour">Juror has/I have moved out of Los
+                        Angeles County.</button></h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="oocpnl" class="infoblock">
                           <p><u class="fw-bold">Reside outside Los Angeles County</u></p>
-                          <p>If you are not the juror and do not know where the juror lives, please return the summons to the post office. If you are a family member and/or know where the juror lives, please forward the summons to the juror.</p>
-                          <p>If you are the juror, and you reside outside Los Angeles County, please do the following:</p>
+                          <p>If you are not the juror and do not know where the juror lives, please return the summons
+                            to the post office. If you are a family member and/or know where the juror lives, please
+                            forward the summons to the juror.</p>
+                          <p>If you are the juror, and you reside outside Los Angeles County, please do the following:
+                          </p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify My Info</a>" button. In the "<strong>Address Information</strong>" section, click the "<strong>Enable Editing</strong>" button, enter your new address, and click "<strong>Save</strong>".</p>
+                              <p>Click on the "<a href="#">Verify My Info</a>" button. In the "<strong>Address
+                                  Information</strong>" section, click the "<strong>Enable Editing</strong>" button,
+                                enter your new address, and click "<strong>Save</strong>".</p>
                             </li>
                             <li>
-                              <p>Complete the remainder of the page as prompted and click on the "<strong>Confirm your Info</strong>" button to update your information.</p>
+                              <p>Complete the remainder of the page as prompted and click on the "<strong>Confirm your
+                                  Info</strong>" button to update your information.</p>
                             </li>
                             <li>
                               <p>Mail in your COMPLETED summons. Be sure to complete the following sections:</p>
@@ -396,91 +514,136 @@
                               </ol>
                             </li>
                           </ol>
-                          <p>If you need further assistance or are unable to complete registration via the "My Jury Duty Portal," please call (213) 972-0970 during the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. You may speak to an agent regarding your address change.</p>
+                          <p>If you need further assistance or are unable to complete registration via the "My Jury Duty
+                            Portal," please call (213) 972-0970 during the hours of 8:00 AM and 4:30 PM (Pacific
+                            Standard Time), Monday through Friday. You may speak to an agent regarding your address
+                            change.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">I am a student or teacher.</button></h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingFive"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                        aria-expanded="false" aria-controls="flush-collapseFive">I am a student or teacher.</button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                      data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="studentpnl" class="infoblock">
                           <p><u class="fw-bold">Student or Teacher</u></p>
-                          <p>You do not qualify for an excuse if you are a full time student or a teacher. If you are a student or a teacher and cannot serve when summoned due to your class schedule, please follow these instructions:</p>
+                          <p>You do not qualify for an excuse if you are a full time student or a teacher. If you are a
+                            student or a teacher and cannot serve when summoned due to your class schedule, please
+                            follow these instructions:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
+                                on that page.</p>
                             </li>
                             <li>
-                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted.</p>
+                              <p>Click on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all
+                                the questions 1-12 and complete the remainder of the form as prompted.</p>
                             </li>
                             <li>
-                              <p>Click the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              <p>Click the "<strong>Submit</strong>" button on the form to submit your summons for
+                                processing.</p>
                             </li>
                             <li>
-                              <p>Click on the "<strong>Request Change</strong>" link, then the "<strong>Postponement</strong>" link, and postpone to a week when you have a break from school (i.e. Spring Break, Summer Break or Winter Break).</p>
+                              <p>Click on the "<strong>Request Change</strong>" link, then the
+                                "<strong>Postponement</strong>" link, and postpone to a week when you have a break from
+                                school (i.e. Spring Break, Summer Break or Winter Break).</p>
                             </li>
                             <li>
                               <p>Click on the "<strong>Submit</strong>" button to process your request.</p>
                             </li>
                           </ol>
-                          <p>You are able to postpone for three months or less on the "My Jury Duty Portal." If you do not see a week that coincides with your school break, please call (213) 972-0970 between the hours of 8:00 AM to 4:30 PM, Pacific Standard Time, Monday through Friday. You will need to speak to an agent to postpone to a period greater than three months.</p>
+                          <p>You are able to postpone for three months or less on the "My Jury Duty Portal." If you do
+                            not see a week that coincides with your school break, please call (213) 972-0970 between the
+                            hours of 8:00 AM to 4:30 PM, Pacific Standard Time, Monday through Friday. You will need to
+                            speak to an agent to postpone to a period greater than three months.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">I am over 70 years of age.</button></h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingSix"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                        aria-expanded="false" aria-controls="flush-collapseSix">I am over 70 years of age.</button></h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                      data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="agepnl" class="infoblock">
                           <p><u class="fw-bold">Over 70</u></p>
-                          <p>Please note that there is no exemption based on age. Jury duty is an obligation of citizenship regardless of age. You are required to perform jury service. Please do the following:</p>
+                          <p>Please note that there is no exemption based on age. Jury duty is an obligation of
+                            citizenship regardless of age. You are required to perform jury service. Please do the
+                            following:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
+                                on that page.</p>
                             </li>
                             <li>
-                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted.</p>
+                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer
+                                  Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete
+                                the remainder of the form as prompted.</p>
                             </li>
                             <li>
-                              <p>Click on the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              <p>Click on the "<strong>Submit</strong>" button on the form to submit your summons for
+                                processing.</p>
                             </li>
                           </ol>
                           <p><u class="fw-bold">Over 70 with medical excuse</u></p>
-                          <p>Jurors who are 70 years of age or over receive special consideration if they need to be excused due to a medical reason. If you are 70 years of age and are unable to serve due to a medical condition, please do the following:</p>
+                          <p>Jurors who are 70 years of age or over receive special consideration if they need to be
+                            excused due to a medical reason. If you are 70 years of age and are unable to serve due to a
+                            medical condition, please do the following:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
+                                on that page.</p>
                             </li>
                             <li>
-                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted.</p>
+                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer
+                                  Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete
+                                the remainder of the form as prompted.</p>
                             </li>
                             <li>
-                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for
+                                processing.</p>
                             </li>
                             <li>
-                              <p>In the "<strong>Request Change(s)</strong>" section, click on the "<strong>Excuse</strong>" link and select "Medical Excuse". Follow the prompts on the page and then click on the "<strong>Submit</strong>" button to complete the request for a medical excuse.</p>
+                              <p>In the "<strong>Request Change(s)</strong>" section, click on the
+                                "<strong>Excuse</strong>" link and select "Medical Excuse". Follow the prompts on the
+                                page and then click on the "<strong>Submit</strong>" button to complete the request for
+                                a medical excuse.</p>
                             </li>
                           </ol>
                           <p><u class="fw-bold">Over 70 and wish to transfer</u></p>
-                          <p>Jurors who are 70 years of age or over receive special consideration if they need a change of court location due to a medical condition or lack of transportation. If you are 70 years of age or over and are able to serve but need to change your court location due to a medical reason or transportation problem, please do the following:</p>
+                          <p>Jurors who are 70 years of age or over receive special consideration if they need a change
+                            of court location due to a medical condition or lack of transportation. If you are 70 years
+                            of age or over and are able to serve but need to change your court location due to a medical
+                            reason or transportation problem, please do the following:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
+                                on that page.</p>
                             </li>
                             <li>
-                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted.</p>
+                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer
+                                  Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete
+                                the remainder of the form as prompted.</p>
                             </li>
                             <li>
-                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for
+                                processing.</p>
                             </li>
                             <li>
-                              <p>Click on the "Reschedule" link and then the "<strong>Transfer</strong>" tab. Follow the prompts to submit your request for a transfer.</p>
+                              <p>Click on the "Reschedule" link and then the "<strong>Transfer</strong>" tab. Follow the
+                                prompts to submit your request for a transfer.</p>
                             </li>
                             <li>
-                              <p>In the "<strong>Request Change(s)</strong>" section, click on the "<strong>Transfer</strong>" button. Follow the prompts on the page and then click on the "<strong>Submit</strong>" button to complete the request for a transfer.</p>
+                              <p>In the "<strong>Request Change(s)</strong>" section, click on the
+                                "<strong>Transfer</strong>" button. Follow the prompts on the page and then click on the
+                                "<strong>Submit</strong>" button to complete the request for a transfer.</p>
                             </li>
                           </ol>
                         </div>
@@ -488,50 +651,82 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">I am a breastfeeding mother.</button></h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingSeven"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                        aria-expanded="false" aria-controls="flush-collapseSeven">I am a breastfeeding mother.</button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="mompnl" class="infoblock">
                           <p><u class="fw-bold">Breastfeeding Mother</u></p>
-                          <p>For potential jurors who are lactating mothers:<br>While the Los Angeles Superior Court makes every reasonable effort to provide a private, locked room for lactating mothers to express milk, such accommodations are not available at many courthouses. Recognizing this fact, the Court allows a mother who is breastfeeding a child to defer jury service. You are able to postpone your service up to three months through the "My Jury Duty Portal."</p>
+                          <p>For potential jurors who are lactating mothers:<br>While the Los Angeles Superior Court
+                            makes every reasonable effort to provide a private, locked room for lactating mothers to
+                            express milk, such accommodations are not available at many courthouses. Recognizing this
+                            fact, the Court allows a mother who is breastfeeding a child to defer jury service. You are
+                            able to postpone your service up to three months through the "My Jury Duty Portal."</p>
                           <p><u class="fw-bold">Postpone three months or less</u></p>
                           <p>If you need to postpone three months or less, please do the following:</p>
                           <ol>
                             <li>
-                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information on that page.</p>
+                              <p>Click on the "<a href="#">Verify Personal Info</a>" button and complete the information
+                                on that page.</p>
                             </li>
                             <li>
-                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete the remainder of the form as prompted.</p>
+                              <p>Complete your summons and register for jury duty by clicking on the "<a href="#">Answer
+                                  Eligibility Questions</a>" button. Please answer all the questions 1-12 and complete
+                                the remainder of the form as prompted.</p>
                             </li>
                             <li>
-                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for processing.</p>
+                              <p>Press the "<strong>Submit</strong>" button on the form to submit your summons for
+                                processing.</p>
                             </li>
                             <li>
-                              <p>Click on the "Request Change" link and then the "<strong>Postpone</strong>" tab. Select your new reporting week and click the "<strong>Submit</strong>" button to complete the request to postpone.</p>
+                              <p>Click on the "Request Change" link and then the "<strong>Postpone</strong>" tab. Select
+                                your new reporting week and click the "<strong>Submit</strong>" button to complete the
+                                request to postpone.</p>
                             </li>
                           </ol>
                           <p><u class="fw-bold">Postpone more than three months</u></p>
-                          <p>If you need to postpone for more than three months, please call (213) 972-0970 between the hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. You will need to speak to an agent to postpone for more than three months.</p>
+                          <p>If you need to postpone for more than three months, please call (213) 972-0970 between the
+                            hours of 8:00 AM and 4:30 PM (Pacific Standard Time), Monday through Friday. You will need
+                            to speak to an agent to postpone for more than three months.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingEight"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">I need ADA accommodations.</button></h2>
-                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    <h2 class="accordion-header" id="flush-headingEight"><button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                        aria-expanded="false" aria-controls="flush-collapseEight">I need ADA accommodations.</button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div id="adapnl" class="infoblock">
                           <p><u class="fw-bold">Request For Special Accommodation</u></p>
                           <p><u class="fw-bold">Assistive Listening System (ALS)</u></p>
-                          <p>Portable Assistive Listening Systems (ALS) are available and may be requested from courtroom staff.</p>
+                          <p>Portable Assistive Listening Systems (ALS) are available and may be requested from
+                            courtroom staff.</p>
                           <p><u class="fw-bold">Interpreter Services</u></p>
-                          <p>Jurors requiring a sign language interpreter must contact the Jury Coordinator at 1-888-354-0441 (TTY) to coordinate their jury duty and sign language interpreter services.</p>
+                          <p>Jurors requiring a sign language interpreter must contact the Jury Coordinator at
+                            1-888-354-0441 (TTY) to coordinate their jury duty and sign language interpreter services.
+                          </p>
                           <p><u class="fw-bold">Telecommunications Device for the Deaf (TDD)</u></p>
-                          <p>Hearing Impaired Jurors must contact the Court's Telephone Center using Dialogue Text Telephone (TDD/TTY) No. 1-888-354-0441. This line has been installed to arrange for special interpreter services, or for any questions relating to jury service.</p>
+                          <p>Hearing Impaired Jurors must contact the Court's Telephone Center using Dialogue Text
+                            Telephone (TDD/TTY) No. 1-888-354-0441. This line has been installed to arrange for special
+                            interpreter services, or for any questions relating to jury service.</p>
                           <p><u class="fw-bold">Mobility Impairment</u></p>
-                          <p>Mobility Impaired Jurors with disabilities may request accommodation by contacting the court at the assembly room phone number on your summons.</p>
+                          <p>Mobility Impaired Jurors with disabilities may request accommodation by contacting the
+                            court at the assembly room phone number on your summons.</p>
                           <p><u class="fw-bold">For Additional Accommodations</u></p>
-                          <p>Persons with disabilities who require a special accommodation may request the needed accommodation by filling out the Request for Accommodations by Persons with Disabilities and Order form. Forms are available by clicking on the link form below. You may submit and mail the form to the Juror Services Division at 320 W. Temple Street, Room 1510, Los Angeles, CA 90012.<br><br><a href="http://www.lasuperiorcourt.org/ada/pdf/mc410.pdf" target="_blank">Request for Accommodations by Persons with Disabilities and Response form</a></p>
+                          <p>Persons with disabilities who require a special accommodation may request the needed
+                            accommodation by filling out the Request for Accommodations by Persons with Disabilities and
+                            Order form. Forms are available by clicking on the link form below. You may submit and mail
+                            the form to the Juror Services Division at 320 W. Temple Street, Room 1510, Los Angeles, CA
+                            90012.<br><br><a href="http://www.lasuperiorcourt.org/ada/pdf/mc410.pdf"
+                              target="_blank">Request for Accommodations by Persons with Disabilities and Response
+                              form</a></p>
                         </div>
                       </div>
                     </div>
@@ -543,37 +738,69 @@
         </div>
       </div>
     </div>
-    </div>
-    <div class="container mb-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-8">
-          <div class="card custom-shadow border-info">
-            <div class="fs-5 card-header fw-bold">FAQs</div>
-            <div class="card-body">
-              <div class="accordion accordion-flush" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How do I request an excuse from jury duty?</button></h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-                  </div>
+  </div>
+  <div class="container mb-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8">
+        <div class="card custom-shadow border-info">
+          <div class="fs-5 card-header fw-bold">FAQs</div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">How do I request an excuse from jury duty?</button></h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown
+                    by default, until the collapse plugin adds the appropriate classes that we use to style each
+                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                    transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.</div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How do I request a postponement?</button></h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">How do I request a postponement?</button></h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><strong>This is the second item&apos;s accordion body.</strong> It is
+                    hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
+                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                    transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.</div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What are the reasons for which I may be excused?</button></h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">What are the reasons for which I may be excused?</button></h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is
+                    hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
+                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                    transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.</div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapsefour">What should I do if I made a mistake while registering for jury service?</button></h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapsefour">What should I do if I made a mistake while registering for jury
+                    service?</button></h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><strong>This is the third item&apos;s accordion body.</strong> It is
+                    hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
+                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                    transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.</div>
                 </div>
               </div>
             </div>
@@ -581,130 +808,169 @@
         </div>
       </div>
     </div>
-    <!--chatbot-->
-    <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div>
-    <!--footer-->
-    <footer class="pt-3 pb-1 bg-primary text-white">
-      <div class="container">
-        <div class="justify-content-md-between row border-bottom pb-3 mb-3">
-          <div class="col-md-5">
-            <div class="h5">LASC Jury Services</div>
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-5">
-            <div class="h5">Covid 19 Information</div>
-            <p>As a measure of caution in relation to COVID-19, the LASC Jury Services is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.</p>
-          </div>
+  </div>
+  <!--chatbot-->
+  <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i
+        class="fa-solid fa-comment-dots"></i></span></div>
+  <!--footer-->
+  <footer class="pt-3 pb-1 bg-primary text-white">
+    <div class="container">
+      <div class="justify-content-md-between row border-bottom pb-3 mb-3">
+        <div class="col-md-5">
+          <div class="h5">LASC Jury Services</div>
         </div>
-        <div class="col-12 text-center pt-2">
-          <p>&#xA9; Copyright<script>
-              document.write((new Date).getFullYear())
-            </script>LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a></p>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="h5">Covid 19 Information</div>
+          <p>As a measure of caution in relation to COVID-19, the LASC Jury Services is limiting the time that public
+            counters are open for the public. It is recommended that all activities that can be conducted online be done
+            that way.</p>
         </div>
       </div>
-    </footer>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content border-2 border-info">
-          <div class="modal-header bg-info">
-            <div class="modal-title fw-bold fs-5" id="exampleModalLabel">Request to be Excused</div><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="border border-warning rounded px-2 py-1 my-1">
-              <p>You are requesting an excuse from jury service The law requires that the excuse that you provide be in writing and legally sufficient. By law there are a limited number of reasons for excuse from service.</p>
-              <p>Please note that it is perjury to provide any false information on this form Please select the reason(s) that describes your current situation.</p>
-              <p>If your situation is not covered by the selections listed please call (213) 972-0970 to speak to an agent during the hours of 8:00 AM to 4-30 PM (Pacific Standard Time) Monday through Friday.</p>
-            </div>
-            <div class="col-md-6 my-3"><select class="form-select" aria-label="Default select example">
-                <option disabled="disabled">Please select one</option>
-                <option value="1">Medical Excuse</option>
-                <option value="2">Financial Hardship</option>
-                <option value="3">Personal Obligation (Fulltime Care)</option>
-                <option value="4">Transportation</option>
-                <option value="5">Prior Service</option>
-                <option value="6">Other</option>
-              </select></div>
-            <div class="bd-callout bd-callout-danger p-3 col-12 mb-1">
-              <div class="mb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
-              <div class="form-check"><input type="checkbox" class="form-check-input" id="perjury-ack1" required> <label class="form-check-label" for="perjury-ack1">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (CCP Sec. 2015.5(b)).</label>
-                <div class="invalid-feedback">* You must agree before submitting.</div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer bg-light"><button type="button" class="btn btn-primary">Submit</button> <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
-        </div>
+      <div class="col-12 text-center pt-2">
+        <p>&#xA9; Copyright
+          <script>
+            document.write((new Date).getFullYear())
+          </script>LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a>
+        </p>
       </div>
     </div>
-            <!--court info Modal-->
-            <div class="modal fade" id="court-info-Modal" tabindex="-1" aria-labelledby="court-info-ModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
-                <div class="modal-content border-2 border-info">
-                  <div class="modal-header bg-info">
-                    <h1 class="modal-title fs-5" id="court-info-ModalLabel">More Court Info</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </footer>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content border-2 border-info">
+        <div class="modal-header bg-info">
+          <div class="modal-title fw-bold fs-5" id="exampleModalLabel">Request to be Excused</div><button type="button"
+            class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="border border-warning rounded px-2 py-1 my-1">
+            <p>You are requesting an excuse from jury service The law requires that the excuse that you provide be in
+              writing and legally sufficient. By law there are a limited number of reasons for excuse from service.</p>
+            <p>Please note that it is perjury to provide any false information on this form Please select the reason(s)
+              that describes your current situation.</p>
+            <p>If your situation is not covered by the selections listed please call (213) 972-0970 to speak to an agent
+              during the hours of 8:00 AM to 4-30 PM (Pacific Standard Time) Monday through Friday.</p>
+          </div>
+          <div class="col-md-6 my-3"><select class="form-select" aria-label="Default select example">
+              <option disabled="disabled">Please select one</option>
+              <option value="1">Medical Excuse</option>
+              <option value="2">Financial Hardship</option>
+              <option value="3">Personal Obligation (Fulltime Care)</option>
+              <option value="4">Transportation</option>
+              <option value="5">Prior Service</option>
+              <option value="6">Other</option>
+            </select></div>
+          <div class="bd-callout bd-callout-danger p-3 col-12 mb-1">
+            <div class="mb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony
+                punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+            <div class="form-check"><input type="checkbox" class="form-check-input" id="perjury-ack1" required> <label
+                class="form-check-label" for="perjury-ack1">I certify under penalty of perjury under the laws of the
+                State of California that the foregoing is true and correct (CCP Sec. 2015.5(b)).</label>
+              <div class="invalid-feedback">* You must agree before submitting.</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light"><button type="button" class="btn btn-primary">Submit</button> <button
+            type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+      </div>
+    </div>
+  </div>
+  <!--court info Modal-->
+  <div class="modal fade" id="court-info-Modal" tabindex="-1" aria-labelledby="court-info-ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
+      <div class="modal-content border-2 border-info">
+        <div class="modal-header bg-info">
+          <h1 class="modal-title fs-5" id="court-info-ModalLabel">More Court Info</h1><button type="button"
+            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 pb-5">
+                <div class="card border-info">
+                  <div class="fs-5 card-header fw-bold">Your Courthouse Location <i
+                      class="fa-solid fa-building-columns float-end mt-1"></i></div>
+                  <div class="card-body">
+                    <p>Bob Smith Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</p>
                   </div>
-                  <div class="modal-body">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6 pb-5">
-                          <div class="card border-info">
-                            <div class="fs-5 card-header fw-bold">Your Courthouse Location <i class="fa-solid fa-building-columns float-end mt-1"></i></div>
-                            <div class="card-body">
-                              <p>Bob Smith Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 pb-5">
-                          <div class="card border-info">
-                            <div class="fs-5 card-header fw-bold">Jury Assembly Room <i class="fa-solid fa-door-open float-end mt-1"></i></div>
-                            <div class="card-body">
-                              <p>Room L-4, First Floor</p><strong>Hours of Operation</strong>
-                              <p>Monday through Friday, 7:45 AM to 5:00 PM</p><strong>Phone Number</strong>
-                              <p>(213) 680-7625</p><strong>Phone Hours</strong>
-                              <p>Monday through Friday, 11:00 AM-12:00 PM and 2:00 Priv1-4:00 PM</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 pb-5">
-                          <div class="card border-info">
-                            <div class="fs-5 card-header fw-bold">Important Information <i class="fa-solid fa-circle-info float-end mt-1"></i></div>
-                            <div class="card-body">
-                              <p>All reporting jurors must be ready to serve at the Criminal Justice Center, the Stanley Mosk Courthouse, the Metropolitan Courthouse, the East Los Angeles Courthouse, Spring Street Courthouse, or the Hollywood Courthouse.</p><strong>Other Information</strong>
-                              <p>Snack Bars are located on the 5th and 13th floors of the building. The cafeteria is located on the 1st floor. There are vending machines inside the jury assembly room.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 pb-5">
-                          <div class="card border-info">
-                            <div class="fs-5 card-header fw-bold">title <i class="fa-solid fa-info float-end mt-1"></i></div>
-                            <div class="card-body">
-                              <p>lorem</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 pb-5">
-                          <div class="card border-info">
-                            <div class="fs-5 card-header fw-bold">Food <i class="fa-solid fa-utensils float-end mt-1"></i></div>
-                            <div class="card-body">
-                              <p>lorem</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 pb-5">
-                          <div class="card border-info">
-                            <div class="fs-5 card-header fw-bold">Parking <i class="fa-solid fa-car float-end mt-1"></i></div>
-                            <div class="card-body">
-                              <p>YOUR JURY SUMMONS OR JUROR BADGE TO ACCESS FREE PARKING. Parking is provided at the Disney Concert Hall Garage located at 111 S. Grand Avenue, (Corner of Grand and 2nd Street). Entrances are located at 2nd Street just West of Grand, and at Lower Grand Avenue just North of Gen. T. Kosciuszko Way. Jurors must bring in their summons or badge to enter and exit the parking structure. Jurors must scan their summons/badge bar code at the bar code scanner located at the parking entrance or exit. Jurors will only be allowed to enter and park for free if they have a summons or badge, and their group number has been called in to report for service. Note: Maximum overhead clearance for the facility is 8'2". Any vehicle exceeding the maximum overhead clearance will be directed by an attendant to a suitable parking area. Walking Directions to Courthouse: Please walk East on 1st Street approximately 3 blocks to Broadway. Turn left on Broadway then North 1 block. The courthouse is on the east side of Broadway. Enter through the rear of the building. Shuttle Directions: On the NE corner of Grand Ave. and 1st Street, the city offers the "B" route DASH shuttle bus for 50 cents, which travels north and drops passengers off in front of the Criminal Justice Center.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 pb-5">
+                <div class="card border-info">
+                  <div class="fs-5 card-header fw-bold">Jury Assembly Room <i
+                      class="fa-solid fa-door-open float-end mt-1"></i></div>
+                  <div class="card-body">
+                    <p>Room L-4, First Floor</p><strong>Hours of Operation</strong>
+                    <p>Monday through Friday, 7:45 AM to 5:00 PM</p><strong>Phone Number</strong>
+                    <p>(213) 680-7625</p><strong>Phone Hours</strong>
+                    <p>Monday through Friday, 11:00 AM-12:00 PM and 2:00 Priv1-4:00 PM</p>
                   </div>
-                  <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+                </div>
+              </div>
+              <div class="col-md-6 pb-5">
+                <div class="card border-info">
+                  <div class="fs-5 card-header fw-bold">Important Information <i
+                      class="fa-solid fa-circle-info float-end mt-1"></i></div>
+                  <div class="card-body">
+                    <p>All reporting jurors must be ready to serve at the Criminal Justice Center, the Stanley Mosk
+                      Courthouse, the Metropolitan Courthouse, the East Los Angeles Courthouse, Spring Street
+                      Courthouse, or the Hollywood Courthouse.</p><strong>Other Information</strong>
+                    <p>Snack Bars are located on the 5th and 13th floors of the building. The cafeteria is located on
+                      the 1st floor. There are vending machines inside the jury assembly room.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pb-5">
+                <div class="card border-info">
+                  <div class="fs-5 card-header fw-bold">title <i class="fa-solid fa-info float-end mt-1"></i></div>
+                  <div class="card-body">
+                    <p>lorem</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pb-5">
+                <div class="card border-info">
+                  <div class="fs-5 card-header fw-bold">Food <i class="fa-solid fa-utensils float-end mt-1"></i></div>
+                  <div class="card-body">
+                    <p>lorem</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 pb-5">
+                <div class="card border-info">
+                  <div class="fs-5 card-header fw-bold">Parking <i class="fa-solid fa-car float-end mt-1"></i></div>
+                  <div class="card-body">
+                    <p>YOUR JURY SUMMONS OR JUROR BADGE TO ACCESS FREE PARKING. Parking is provided at the Disney
+                      Concert Hall Garage located at 111 S. Grand Avenue, (Corner of Grand and 2nd Street). Entrances
+                      are located at 2nd Street just West of Grand, and at Lower Grand Avenue just North of Gen. T.
+                      Kosciuszko Way. Jurors must bring in their summons or badge to enter and exit the parking
+                      structure. Jurors must scan their summons/badge bar code at the bar code scanner located at the
+                      parking entrance or exit. Jurors will only be allowed to enter and park for free if they have a
+                      summons or badge, and their group number has been called in to report for service. Note: Maximum
+                      overhead clearance for the facility is 8'2". Any vehicle exceeding the maximum overhead clearance
+                      will be directed by an attendant to a suitable parking area. Walking Directions to Courthouse:
+                      Please walk East on 1st Street approximately 3 blocks to Broadway. Turn left on Broadway then
+                      North 1 block. The courthouse is on the east side of Broadway. Enter through the rear of the
+                      building. Shuttle Directions: On the NE corner of Grand Ave. and 1st Street, the city offers the
+                      "B" route DASH shuttle bus for 50 cents, which travels north and drops passengers off in front of
+                      the Criminal Justice Center.</p>
+                  </div>
                 </div>
               </div>
             </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="../js/global.js"></script>
-  </body>
+          </div>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../js/global.js"></script>
+</body>
+
 </html>
