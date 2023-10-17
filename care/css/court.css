@@ -151,6 +151,7 @@ footer a:hover {
 #faq .accordion * {
   background-color: #f3f3f3;
 }
+#additional .accordion *{background-color: #fff;border:none}
 .accordion-button,
 .accordion-button:not(.collapsed) {
   font-size: 24px;
