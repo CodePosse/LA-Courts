@@ -22,6 +22,8 @@ h5,
 h6 {
   font-weight: 700;
 }
+
+h3{font-size:1.5rem}
 nav {
   color: var(--court-black);
 }
