@@ -142,8 +142,7 @@ footer a:hover {
     height: 100%;
   }
 }
-.accordion-button {
-}
+
 .accordion-button:not(.collapsed) {
   background-color: transparent;
   box-shadow: none;
