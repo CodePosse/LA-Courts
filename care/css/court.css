@@ -23,7 +23,9 @@ h6 {
   font-weight: 700;
 }
 
-h3{font-size:1.5rem}
+h3 {
+  font-size: 1.5rem;
+}
 nav {
   color: var(--court-black);
 }
@@ -64,7 +66,10 @@ footer a:hover {
 .bg-gold {
   background-color: var(--court-gold);
 }
-.btn-blue{background:#2067e4;color:#fff}
+.btn-blue {
+  background: #2067e4;
+  color: #fff;
+}
 .bg-court-dkblue,
 .bg-primary,
 .btn-primary {
@@ -138,13 +143,14 @@ footer a:hover {
   }
 }
 .accordion-button {
-
 }
 .accordion-button:not(.collapsed) {
   background-color: transparent;
   box-shadow: none;
 }
-#faq .accordion * {background-color: #F3F3F3}
+#faq .accordion * {
+  background-color: #f3f3f3;
+}
 .accordion-button,
 .accordion-button:not(.collapsed) {
   font-size: 24px;
@@ -167,7 +173,16 @@ footer a:hover {
   bottom: 0;
   right: 0;
 }
-.bg-midgrey{background-color: #eee ;}
-.accordion-item {border-width: 0 !important;}
-ul.nobullet li {list-style: none;padding: .75rem 0;}
-ul.nobullet li>a {text-decoration: none;}
+.bg-midgrey {
+  background-color: #eee;
+}
+.accordion-item {
+  border-width: 0 !important;
+}
+ul.nobullet li {
+  list-style: none;
+  padding: 0.75rem 0;
+}
+ul.nobullet li > a {
+  text-decoration: none;
+}
