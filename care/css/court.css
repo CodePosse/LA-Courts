@@ -91,6 +91,7 @@ footer a:hover {
 #petition .col img {
   width: 85px;
 }
+.card_feature{width:314px}
 .bg-card1 {
   background-color: #305687;
 }
@@ -185,4 +186,7 @@ ul.nobullet li {
 }
 ul.nobullet li > a {
   text-decoration: none;
+}
+.scrolling-wrapper{
+	overflow-x: auto;
 }
