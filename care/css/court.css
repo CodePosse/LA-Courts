@@ -91,7 +91,9 @@ footer a:hover {
 #petition .col img {
   width: 85px;
 }
-.card_feature{width:314px}
+.card_feature {
+  width: 314px;
+}
 .bg-card1 {
   background-color: #305687;
 }
@@ -151,7 +153,10 @@ footer a:hover {
 #faq .accordion * {
   background-color: #f3f3f3;
 }
-#additional .accordion *{background-color: #fff;border:none}
+#additional .accordion * {
+  background-color: #fff;
+  border: none;
+}
 .accordion-button,
 .accordion-button:not(.collapsed) {
   font-size: 24px;
@@ -187,6 +192,6 @@ ul.nobullet li {
 ul.nobullet li > a {
   text-decoration: none;
 }
-.scrolling-wrapper{
-	overflow-x: auto;
+.scrolling-wrapper {
+  overflow-x: auto;
 }

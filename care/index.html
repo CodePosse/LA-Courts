@@ -1,395 +1,471 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CARE Court</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/court.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <meta name="theme-color" content="#0DFF39">
-  </head>
-  <body>
-    <nav class="container p-2 d-flex justify-content-between">
+
+<head>
+  <title>CARE Court</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/court.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta name="theme-color" content="#0DFF39">
+</head>
+
+<body>
+  <nav class="container p-2 d-flex justify-content-between">
+    <div class="row">
+      <div class="col order-first pe-0 pe-md-5 me-md-5"><a href="./"><span class="sr-only">Return to CARE Court
+            Homepage</span><img src="img/court-seal.png" alt="Return to CARE Court Homepage" class="img-fluid"></a>
+      </div>
+      <div class="col order-last text-end ps-md-0 ms-md-0">
+        <div id="google_translate_element"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid court-topbar">Welcome to CARE Court</div>
+  <div class="container-fluid bg-paleblue hero">
+    <div class="container">
       <div class="row">
-        <div class="col order-first pe-0 pe-md-5 me-md-5"><a href="./"><span class="sr-only">Return to CARE Court Homepage</span><img src="img/court-seal.png" alt="Return to CARE Court Homepage" class="img-fluid"></a>
-        </div>
-        <div class="col order-last text-end ps-md-0 ms-md-0">
-          <div id="google_translate_element"></div>
+        <div class="col-md-5 p-5"><img src="img/CARECourt Logo_FINAL_Square Version 1.png" alt="Care court logo"
+            class="img-fluid"></div>
+        <div class="col-md-7 p-md-5">
+          <h1>Welcome to Care Court</h1>
+          <p><strong>Beginning December 1, 2023,</strong> qualifying individuals or entities can petition the Superior
+            Court of Los Angeles County to help connect eligible individuals to a broad array of services, including
+            mental health and housing services, via a voluntary CARE Agreement or CARE Plan established and overseen by
+            a judicial officer.</p>
         </div>
       </div>
-    </nav>
-    <div class="container-fluid court-topbar">Welcome to CARE Court</div>
-    <div class="container-fluid bg-paleblue hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 p-5"><img src="img/CARECourt Logo_FINAL_Square Version 1.png" alt="Care court logo" class="img-fluid"></div>
-          <div class="col-md-7 p-md-5">
-            <h1>Welcome to Care Court</h1>
-            <p><strong>Beginning December 1, 2023,</strong> qualifying individuals or entities can petition the Superior Court of Los Angeles County to help connect eligible individuals to a broad array of services, including mental health and housing services, via a voluntary CARE Agreement or CARE Plan established and overseen by a judicial officer.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="accordion" id="participateAccordion">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#participate" aria-expanded="true" aria-controls="participate"> Who is eligible to
+            participate in Care Court? </button>
+        </h2>
+        <div id="participate" class="accordion-collapse collapse show" data-bs-parent="#participateAccordion">
+          <div class="accordion-body row p-1 p-md-0">
+            <div class="col-md-6 ">
+              <p>Individuals must meet all the following criteria to be eligible for CARE Court:</p>
+              <ul>
+                <li>18 years of age or older.</li>
+                <li>Diagnosed with a disorder within the "schizophrenia and other psychotic disorders" class of
+                  disorders and currently experiencing symptoms. <a href="javascript:void();" title="modal"
+                    data-bs-toggle="modal" data-bs-target="#diagnosisModal">*View full list of eligible diagnoses.</a>
+                </li>
+                <li>Not clinically stabilized in ongoing treatment.</li>
+                <li>The individual's mental health is substantially deteriorating, and they are unlikely to survive
+                  safely in the community without supervision AND/OR need services and support to prevent relapse and
+                  deterioration.</li>
+                <li>Participation in a CARE Plan is the least restrictive alternative and the individual is likely to
+                  benefit from participation in a CARE Plan.</li>
+              </ul>
+              <p>If you do not meet the requirements above, options for assistance are still available at <a
+                  href="//dmh.lacounty.gov/get-help-now" target="_blank">The Los Angeles County Department of Mental
+                  Health</a>.</p>
+            </div>
+            <div class="col-md-6 p-0 fluid-yt">
+              <iframe src="//www.youtube.com/embed/YP0zIlUex1Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="accordion" id="participateAccordion">
-        <div class="accordion-item border-0">
-          <h2 class="accordion-header">
-            <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#participate" aria-expanded="true" aria-controls="participate"> Who is eligible to participate in Care Court? </button>
-          </h2>
-          <div id="participate" class="accordion-collapse collapse show" data-bs-parent="#participateAccordion">
-            <div class="accordion-body row p-1 p-md-0">
-              <div class="col-md-6 ">
-                <p>Individuals must meet all the following criteria to be eligible for CARE Court:</p>
-                <ul>
-                  <li>18 years of age or older.</li>
-                  <li>Diagnosed with a disorder within the "schizophrenia and other psychotic disorders" class of disorders and currently experiencing symptoms. <a href="javascript:void();" title="modal" data-bs-toggle="modal" data-bs-target="#diagnosisModal">*View full list of eligible diagnoses.</a>
-                  </li>
-                  <li>Not clinically stabilized in ongoing treatment.</li>
-                  <li>The individual's mental health is substantially deteriorating, and they are unlikely to survive safely in the community without supervision AND/OR need services and support to prevent relapse and deterioration.</li>
-                  <li>Participation in a CARE Plan is the least restrictive alternative and the individual is likely to benefit from participation in a CARE Plan.</li>
+  </div>
+  <div class="container">
+    <div class="accordion row" id="petitionAccordion">
+      <div class="accordion-item border-0 col-12">
+        <h2 class="accordion-header">
+          <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#petition" aria-expanded="true" aria-controls="petition"> Who is eligible to petition?
+          </button>
+        </h2>
+        <div id="petition" class="accordion-collapse collapse show" data-bs-parent="#petitionAccordion">
+          <div class="accordion-body scrolling-wrapper row flex-row flex-nowrap p-1 p-md-0">
+            <div class="card_feature bg-card1 m-2 text-white rounded p-3 position-relative">
+              <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/Family-home.png" alt=""
+                  role="presentation">
+              </div>
+              <div class="text-white">
+                <h3 class="text-center fs-4">Family/Home</h3>
+                <ul class="ps-4">
+                  <li>Person with whom respondent resides</li>
+                  <li>Spouse, parent, sibling, child, grandparent or other individual in place of a parent</li>
+                  <li> Respondent (i.e., self-petition)</li>
                 </ul>
-                <p>If you do not meet the requirements above, options for assistance are still available at <a href="//dmh.lacounty.gov/get-help-now" target="_blank">The Los Angeles County Department of Mental Health</a>.</p>
               </div>
-              <div class="col-md-6 p-0 fluid-yt">
-                <iframe src="//www.youtube.com/embed/YP0zIlUex1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+              <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="card_feature bg-card2 m-2 text-white rounded p-3 position-relative">
+              <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/Community.png" alt=""
+                  role="presentation">
               </div>
+              <div>
+                <h3 class="text-center fs-4">Community</h3>
+                <ul class="ps-4">
+                  <li>First responder (e.g., peace officer, firefighter, paramedic, mobile crisis response, homeless
+                    outreach worker)</li>
+                  <li> Director of a hospital, or designee, in which respondent is hospitalized (including for 5150s,
+                    5250s)</li>
+                  <li> Licensed behavioral health professional, or designee treating respondent for mental illness</li>
+                  <li> Director of a public/charitable organization providing behavioral health services or whose
+                    institution respondent resides</li>
+                </ul>
+              </div>
+              <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="card_feature bg-card3 m-2 text-white rounded p-3 position-relative">
+              <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/County.png" alt=""
+                  role="presentation">
+              </div>
+              <div>
+                <h3 class="text-center fs-4">County</h3>
+                <ul class="ps-4">
+                  <li>County behavioral health director, or designee (e.g., LACDMH CARE-LA team)</li>
+                  <li> Public guardian, or designee</li>
+                  <li> Director of adult protective services, or designee</li>
+                </ul>
+              </div>
+              <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="card_feature bg-card4 m-2 rounded p-3 position-relative">
+              <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/Tribal.png" alt=""
+                  role="presentation">
+              </div>
+              <div>
+                <h3 class="text-center fs-4">Tribal Jurisdiction</h3>
+                <ul class="ps-4">
+                  <li>Director of a California Indian health services program, California tribal behavioral health
+                    department, or designee</li>
+                  <li>Judge of a tribal court located in CA, or designee </li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="accordion row" id="petitionAccordion">
-        <div class="accordion-item border-0 col-12">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="accordion col-md-6" id="petitionFileAccordion">
+        <div class="accordion-item border-0 bg-white">
           <h2 class="accordion-header">
-            <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#petition" aria-expanded="true" aria-controls="petition"> Who is eligible to petition? </button>
+            <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#petitionFile" aria-expanded="true" aria-controls="petitionFile"> How do I file a Care
+              Court petition? </button>
           </h2>
-          <div id="petition" class="accordion-collapse collapse show" data-bs-parent="#petitionAccordion">
-            <div class="accordion-body scrolling-wrapper row flex-row flex-nowrap p-1 p-md-0">
-              <div class="card_feature bg-card1 m-2 text-white rounded p-3 position-relative">
-                <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/Family-home.png" alt="" role="presentation">
-                </div>
-                <div class="text-white">
-                  <h3 class="text-center fs-4">Family/Home</h3>
-                  <ul class="ps-4">
-                    <li>Person with whom respondent resides</li>
-                    <li>Spouse, parent, sibling, child, grandparent or other individual in place of a parent</li>
-                    <li> Respondent (i.e., self-petition)</li>
-                  </ul>
-                </div>
-                <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+          <div id="petitionFile" class="accordion-collapse collapse show" data-bs-parent="#petitionFileAccordion">
+            <div class="accordion-body row p-1 p-md-0">
+              <div class="col-12">
+                <p>Beginning December 1, 2023, eligible petitioners must complete and submit the following materials to
+                  begin the CARE Court process:</p>
+                <ul>
+                  <li>
+                    <a href="//selfhelp.courts.ca.gov/jcc-form/CARE-100" target="_blank">CARE-100</a> form AND
+                  </li>
+                  <li><a href="//selfhelp.courts.ca.gov/jcc-form/CARE-101" target="_blank">CARE-101 Mental Health
+                      Declaration</a> from a licensed behavioral health provider <br><strong>OR</strong>
+                    <p>Provide evidence that the person in need of services was detained for a minimum of two periods of
+                      intensive treatment (<a
+                        href="//leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5250.&lawCode=WIC"
+                        target="_blank">WIC 5250 holds</a>) and the most recent event occurred within the past 60 days.
+                    </p>
+                    <p>Please note that the forms are available in Chinese, Korean, Spanish, Vietnamese and English.</p>
+                  </li>
+                </ul>
+                <p><button class="btn btn-lg bg-court-dkgrey me-md-1 px-md-2 my-1 rounded-2">Guided Form Assistance
+                    <small>(coming soon)</small></button> <a href="//selfhelp.lacourt.org/" target="_blank"
+                    class="btn btn-lg btn-light border-dark ms-md-1 px-md-2 my-1 rounded-2">Self-Help Center
+                    Assistance</a>
+                </p>
               </div>
-              <div class="card_feature bg-card2 m-2 text-white rounded p-3 position-relative">
-                <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/Community.png" alt="" role="presentation">
-                </div>
-                <div>
-                  <h3 class="text-center fs-4">Community</h3>
-                  <ul class="ps-4">
-                    <li>First responder (e.g., peace officer, firefighter, paramedic, mobile crisis response, homeless outreach worker)</li>
-                    <li> Director of a hospital, or designee, in which respondent is hospitalized (including for 5150s, 5250s)</li>
-                    <li> Licensed behavioral health professional, or designee treating respondent for mental illness</li>
-                    <li> Director of a public/charitable organization providing behavioral health services or whose institution respondent resides</li>
-                  </ul>
-                </div>
-                <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
-              </div>
-              <div class="card_feature bg-card3 m-2 text-white rounded p-3 position-relative">
-                <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/County.png" alt="" role="presentation">
-                </div>
-                <div>
-                  <h3 class="text-center fs-4">County</h3>
-                  <ul class="ps-4">
-                    <li>County behavioral health director, or designee (e.g., LACDMH CARE-LA team)</li>
-                    <li> Public guardian, or designee</li>
-                    <li> Director of adult protective services, or designee</li>
-                  </ul>
-                </div>
-                <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
-              </div>
-              <div class="card_feature bg-card4 m-2 rounded p-3 position-relative">
-                <div class="d-flex justify-content-center my-md-5 mx-5"> <img src="img/Tribal.png" alt="" role="presentation">
-                </div>
-                <div>
-                  <h3 class="text-center fs-4">Tribal Jurisdiction</h3>
-                  <ul class="ps-4">
-                    <li>Director of a California Indian health services program, California tribal behavioral health department, or designee</li>
-                    <li>Judge of a tribal court located in CA, or designee </li>
-                  </ul>
-                </div>
-              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion col-md-6 bg-midgrey" id="petitionWhereAccordion">
+        <div class="accordion-item border-0 bg-midgrey">
+          <h2 class="accordion-header">
+            <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#petitionWhere" aria-expanded="true" aria-controls="petitionWhere"> Where do I file a Care
+              Court petition? </button>
+          </h2>
+          <div id="petitionWhere" class="accordion-collapse collapse show" data-bs-parent="#petitionWhereAccordion">
+            <div class="accordion-body row p-1 p-md-0">
+              <div class="col-12">
+                <p>Beginning December 1, 2023, petitioners have the following options to file CARE Court petitions and
+                  supporting documentation:</p>
+                <ul>
+                  <li> Electronically at <a href="//www.lacourt.org/division/efiling/efiling2.aspx" target="_blank"
+                      class="text-dkblue">lacourt.org/division/efiling/efiling2.aspx</a>.</li>
+                  <li>In person at any of the filing locations listed below.</li>
+                </ul>
+                <p><button class="btn btn-lg bg-court-dkgrey mt-2 rounded-2">See all locations</button></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="accordion row" id="pAccordion">
+      <div class="accordion-item border-0 col-12">
+        <h2 class="accordion-header">
+          <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#submitx" aria-expanded="true" aria-controls="submitx"> Who is eligible to submit? </button>
+        </h2>
+        <div id="submitx" class="accordion-collapse collapse show" data-bs-parent="#submitxAccordion">
+          <div class="accordion-body scrolling-wrapper row flex-row flex-nowrap p-1 p-md-0">
+            <div class="card_feature bg-court-dkblue m-2 text-white rounded p-3 position-relative">
+              <div class="text-white">
+                <h3 class="text-center fs-4 pt-3">Assessment</h3>
+                <p> The Court will assess and evaluate the petition to determine if there is sufficient information to
+                  schedule an initial hearing for the individual or if more information is needed. The eligible
+                  individual may be contacted by the Los Angeles County Department of Mental Health (LACDMH) and may
+                  also be contacted by an appointed attorney. </p>
+              </div>
+              <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="card_feature bg-card1 m-2 text-white rounded p-3 position-relative">
+              <div class="text-white">
+                <h3 class="text-center fs-4 pt-3">Determination and Treatment Hearings</h3>
+                <p> Usually after the parties have begun exchanging information, the Court will hold closed hearings to
+                  determine whether the individual can participate in CARE Court. At the initial hearing, the Los
+                  Angeles County Department of Mental Health will become the petitioner in the CARE Court case and will
+                  remain the petitioner for the duration of the case. </p>
+              </div>
+              <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="card_feature bg-court-dkgrey m-2 text-white rounded p-3 position-relative">
+              <div class="text-white">
+                <h3 class="text-center fs-4 pt-3">Oversight and Treatment Implementation Hearings</h3>
+                <p>The Court will schedule hearings, to occur every 60 days at a minimum, to learn about the
+                  individual's progress. Progress reports can be scheduled for up to a year, if needed and extended for
+                  an additional year under certain circumstances..</p>
+              </div>
+              <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="card_feature bg-gold m-2 rounded p-3 position-relative">
+              <div class="">
+                <h3 class="text-center fs-4 pt-3">Ongoing Monitoring and Evaluation </h3>
+                <p>Throughout the duration of the CARE Court process, specialists monitor the individual's progress and
+                  adjustments are made as needed, whether there is a mutually entered into CARE Agreement or CARE Plan
+                  order requested by a judicial officer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid questions bg-court-dkgrey p-4">
     <div class="container">
       <div class="row">
-        <div class="accordion col-md-6" id="petitionFileAccordion">
-          <div class="accordion-item border-0 bg-white">
-            <h2 class="accordion-header">
-              <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#petitionFile" aria-expanded="true" aria-controls="petitionFile"> How do I file a Care Court petition? </button>
-            </h2>
-            <div id="petitionFile" class="accordion-collapse collapse show" data-bs-parent="#petitionFileAccordion">
-              <div class="accordion-body row p-1 p-md-0">
-                <div class="col-12">
-                  <p>Beginning December 1, 2023, eligible petitioners must complete and submit the following materials to begin the CARE Court process:</p>
-                  <ul>
-                    <li>
-                      <a href="//selfhelp.courts.ca.gov/jcc-form/CARE-100" target="_blank">CARE-100</a> form AND
-                    </li>
-                    <li><a href="//selfhelp.courts.ca.gov/jcc-form/CARE-101" target="_blank">CARE-101 Mental Health Declaration</a> from a licensed behavioral health provider <br><strong>OR</strong>
-                      <p>Provide evidence that the person in need of services was detained for a minimum of two periods of intensive treatment (<a href="//leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5250.&lawCode=WIC" target="_blank">WIC 5250 holds</a>) and the most recent event occurred within the past 60 days.</p>
-                      <p>Please note that the forms are available in Chinese, Korean, Spanish, Vietnamese and English.</p>
-                    </li>
-                  </ul>
-                  <p><button class="btn btn-lg bg-court-dkgrey me-md-1 px-md-2 my-1 rounded-2">Guided Form Assistance <small>(coming soon)</small></button> <a href="//selfhelp.lacourt.org/" target="_blank" class="btn btn-lg btn-light border-dark ms-md-1 px-md-2 my-1 rounded-2">Self-Help Center Assistance</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion col-md-6 bg-midgrey" id="petitionWhereAccordion">
-          <div class="accordion-item border-0 bg-midgrey">
-            <h2 class="accordion-header">
-              <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#petitionWhere" aria-expanded="true" aria-controls="petitionWhere"> Where do I file a Care Court petition? </button>
-            </h2>
-            <div id="petitionWhere" class="accordion-collapse collapse show" data-bs-parent="#petitionWhereAccordion">
-              <div class="accordion-body row p-1 p-md-0">
-                <div class="col-12">
-                  <p>Beginning December 1, 2023, petitioners have the following options to file CARE Court petitions and supporting documentation:</p>
-                  <ul>
-                    <li> Electronically at <a href="//www.lacourt.org/division/efiling/efiling2.aspx" target="_blank" class="text-dkblue">lacourt.org/division/efiling/efiling2.aspx</a>.</li>
-                    <li>In person at any of the filing locations listed below.</li>
-                  </ul>
-                  <p><button class="btn btn-lg bg-court-dkgrey mt-2 rounded-2">See all locations</button></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="fs-4 fw-bold">Have additional questions?</div>
+        <p>Visit our Frequently Asked Questions (FAQ) page, or choose from the additional resources below.</p>
       </div>
-    </div>
-    <div class="container">
-      <div class="accordion row" id="pAccordion">
-        <div class="accordion-item border-0 col-12">
-          <h2 class="accordion-header">
-            <button class="accordion-button ps-1 ps-md-0" type="button" data-bs-toggle="collapse" data-bs-target="#submitx" aria-expanded="true" aria-controls="submitx"> Who is eligible to submit? </button>
-          </h2>
-          <div id="submitx" class="accordion-collapse collapse show" data-bs-parent="#submitxAccordion">
-            <div class="accordion-body scrolling-wrapper row flex-row flex-nowrap p-1 p-md-0">
-              <div class="card_feature bg-court-dkblue m-2 text-white rounded p-3 position-relative">
-                <div class="text-white">
-                  <h3 class="text-center fs-4 pt-3">Assessment</h3>
-                  <p> The Court will assess and evaluate the petition to determine if there is sufficient information to schedule an initial hearing for the individual or if more information is needed. The eligible individual may be contacted by the Los Angeles County Department of Mental Health (LACDMH) and may also be contacted by an appointed attorney. </p>
-                </div>
-                <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
-              </div>
-              <div class="card_feature bg-card1 m-2 text-white rounded p-3 position-relative">
-                <div class="text-white">
-                  <h3 class="text-center fs-4 pt-3">Determination and Treatment Hearings</h3>
-                  <p> Usually after the parties have begun exchanging information, the Court will hold closed hearings to determine whether the individual can participate in CARE Court. At the initial hearing, the Los Angeles County Department of Mental Health will become the petitioner in the CARE Court case and will remain the petitioner for the duration of the case. </p>
-                </div>
-                <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
-              </div>
-              <div class="card_feature bg-court-dkgrey m-2 text-white rounded p-3 position-relative">
-                <div class="text-white">
-                  <h3 class="text-center fs-4 pt-3">Oversight and Treatment Implementation Hearings</h3>
-                  <p>The Court will schedule hearings, to occur every 60 days at a minimum, to learn about the individual's progress. Progress reports can be scheduled for up to a year, if needed and extended for an additional year under certain circumstances..</p>
-                </div>
-                <div class="next-arrow-bottom me-3 mb-2">Next <i class="fa-solid fa-arrow-right-long"></i></div>
-              </div>
-              <div class="card_feature bg-gold m-2 rounded p-3 position-relative">
-                <div class="">
-                  <h3 class="text-center fs-4 pt-3">Ongoing Monitoring and Evaluation </h3>
-                  <p>Throughout the duration of the CARE Court process, specialists monitor the individual's progress and adjustments are made as needed, whether there is a mutually entered into CARE Agreement or CARE Plan order requested by a judicial officer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid questions bg-court-dkgrey p-4">
-      <div class="container">
-        <div class="row">
-          <div class="fs-4 fw-bold">Have additional questions?</div>
-          <p>Visit our Frequently Asked Questions (FAQ) page, or choose from the additional resources below.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-2 text-center py-1 px-md-0"> <a href="faq.html" class="btn btn-lg btn-light border-dark rounded-2 px-md-3">FAQs</a>
-          </div>
-          <div class="col-md-5 text-center py-1 px-md-0"> <a href="//dmh.lacounty.gov" target="_blank" class="btn btn-lg btn-light border-dark px-2 rounded-2 px-md-4"><u>LA County Dept of Mental Health Resources</u></a>
-          </div>
-          <div class="col-md-2 text-center py-1 px-md-0"> <a href="//selfhelp.lacourt.org/" target="_blank" class="btn btn-lg btn-light border-dark text-nowrap rounded-2 px-md-3">Self-Help Center</a></div>
-          <div class="col-md-3 text-center py-1 px-md-0"> <a href="more-resources.html" class="btn btn-lg btn-light border-dark text-nowrap rounded-2 px-md-3">More Information</a></div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="container map p-0">
       <div class="row">
-        <div class="col-md-6 bg-card4 py-0 px-2"><img src="img/CARECourt_MAP.png" alt="Map of COurt locations" class="img-fluid">
+        <div class="col-md-2 text-center py-1 px-md-0"> <a href="faq.html"
+            class="btn btn-lg btn-light border-dark rounded-2 px-md-3">FAQs</a>
         </div>
-        <div class="col-md-6 p-5 bg-court-ltblue">
-          <div class="fs-4 fw-bold mb-4">CARE Court location and remote appearance options:</div>
-          <p>The Court will initially open CARE Court in Department B and Department Z at the Norwalk Courthouse on December 1, 2023, with plans to relocate CARE Court departments to a more central location in the County in the future. </p>
-          <p> Participants can attend in person or remotely. Remote appearance options are available from any location with an internet connection. In addition, dedicated private spaces for remote appearances will be available at 11 Self Help Centers across Los Angeles County and at the Hollywood Courthouse. To protect the confidentiality of CARE Court proceedings, instructions on how to appear remotely will be provided to all parties upon notice of hearing.</p>
+        <div class="col-md-5 text-center py-1 px-md-0"> <a href="//dmh.lacounty.gov" target="_blank"
+            class="btn btn-lg btn-light border-dark px-2 rounded-2 px-md-4"><u>LA County Dept of Mental Health
+              Resources</u></a>
+        </div>
+        <div class="col-md-2 text-center py-1 px-md-0"> <a href="//selfhelp.lacourt.org/" target="_blank"
+            class="btn btn-lg btn-light border-dark text-nowrap rounded-2 px-md-3">Self-Help Center</a></div>
+        <div class="col-md-3 text-center py-1 px-md-0"> <a href="more-resources.html"
+            class="btn btn-lg btn-light border-dark text-nowrap rounded-2 px-md-3">More Information</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container map p-0">
+    <div class="row">
+      <div class="col-md-6 bg-card4 py-0 px-2"><img src="img/CARECourt_MAP.png" alt="Map of COurt locations"
+          class="img-fluid">
+      </div>
+      <div class="col-md-6 p-5 bg-court-ltblue">
+        <div class="fs-4 fw-bold mb-4">CARE Court location and remote appearance options:</div>
+        <p>The Court will initially open CARE Court in Department B and Department Z at the Norwalk Courthouse on
+          December 1, 2023, with plans to relocate CARE Court departments to a more central location in the County in
+          the future. </p>
+        <p> Participants can attend in person or remotely. Remote appearance options are available from any location
+          with an internet connection. In addition, dedicated private spaces for remote appearances will be available at
+          11 Self Help Centers across Los Angeles County and at the Hollywood Courthouse. To protect the confidentiality
+          of CARE Court proceedings, instructions on how to appear remotely will be provided to all parties upon notice
+          of hearing.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid locations bg-light p-4">
+    <div class="container">
+      <div class="row">
+        <div class="fs-4 fw-bold col-12">Remote appearance and filing locations</div>
+        <div class="col-md-4 p-0 m-0">
+          <ol>
+            <li class="py-2"> Chatsworth Courthouse<br> 9425 Penfield Ave. Chatsworth, CA 91311<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+            <li class="py-2"> Compton Courthouse<br> 200 West Compton Blvd. Compton, CA 90220<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+            <li class="py-2"> Governor George Deukmejian Courthouse<br> 275 Magnolia Long Beach, CA 90802<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+            <li class="py-2"> Hollywood Courthouse<br> 5925 Hollywood Blvd. Los Angeles, CA 90028<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+              </span>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-4 p-0 m-0">
+          <ol start="5">
+            <li class="py-2"> Michael Antonovich Antelope Valley Courthouse<br> 42011 4th Street West Lancaster, CA
+              93534<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt="">
+              </span>
+            </li>
+            <li class="py-2"> Norwalk Courthouse<br> 12720 Norwalk Blvd Norwalk, CA 90650<br>
+              <span class="court-services"><img src="img/In-Person Hearing.svg" alt="">
+                <img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt="">
+              </span>
+            </li>
+            <li class="py-2"> Pasadena Courthouse<br> 300 East Walnut St. Pasadena, CA 91101<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt="">
+              </span>
+            </li>
+            <li class="py-2"> Pomona Courthouse South<br> 400 Civic Center Plaza Pomona, CA 91766<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-4 p-0 m-0">
+          <ol start="9">
+            <li class="py-2">Stanley Mosk Courthouse<br> 111 North Hill Street Los Angeles, CA 90012<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+            <li class="py-2">Torrance Courthouse<br> 825 Maple Ave. Torrance, CA 90503<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+            <li class="py-2">Van Nuys Courthouse East<br> 6230 Sylmar Ave. Van Nuys, CA 91401<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+            <li class="py-2">Whittier Courthouse<br> 7339 South Painter Ave. Whittier, CA 90602<br>
+              <span class="court-services"><img src="img/Filing.svg" alt="">
+                <img src="img/Remote Appearance.svg" alt="">
+                <img src="img/Self Help.svg" alt=""> </span>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-6 bg-card4 court-services my-5 p-3">
+          <p><img src="img/In-Person Hearing.svg" alt=""> In-Person Hearings</p>
+          <p><img src="img/Filing.svg" alt=""> Filing Documents</p>
+          <p><img src="img/Remote Appearance.svg" alt=""> Dedicated Private Spaces for Remote Appearance </p>
+          <p><img src="img/Self Help.svg" alt=""> Self-Help assistance available for non-represented individuals</p>
         </div>
       </div>
     </div>
-    <div class="container-fluid locations bg-light p-4">
-      <div class="container">
-        <div class="row">
-          <div class="fs-4 fw-bold col-12">Remote appearance and filing locations</div>
-          <div class="col-md-4 p-0 m-0">
-            <ol>
-              <li class="py-2"> Chatsworth Courthouse<br> 9425 Penfield Ave. Chatsworth, CA 91311<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-              <li class="py-2"> Compton Courthouse<br> 200 West Compton Blvd. Compton, CA 90220<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-              <li class="py-2"> Governor George Deukmejian Courthouse<br> 275 Magnolia Long Beach, CA 90802<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-              <li class="py-2"> Hollywood Courthouse<br> 5925 Hollywood Blvd. Los Angeles, CA 90028<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                </span>
-              </li>
-            </ol>
+  </div>
+  <footer class="container-fluid text-center pt-5 pb-3">
+    <div class="fs-2 fw-bold">Follow us on Social Media</div>
+    <div class="d-flex justify-content-center social-media">
+      <a href="#"><i class="fa-brands fa-facebook my-2 mx-1"></i><span class="sr-only">Facebook</span></a>
+      <a href="#"><i class="fa-brands fa-twitter my-2 mx-1"></i><span class="sr-only">Twitter</span></a>
+      <a href="#"><i class="fa-brands fa-linkedin my-2 mx-1"></i><span class="sr-only">Facebook</span></a>
+      <a href="#"><i class="fa-brands fa-google my-2 mx-1"></i><span class="sr-only">Google</span></a>
+      <a href="#"><i class="fa-brands fa-youtube my-2 mx-1"></i><span class="sr-only">Youtube</span></a>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="diagnosisModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true" aria-labelledby="diagnosisModalLabel">
+    <div class="modal-dialog modal-fullscreen-md-down modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <h1 class="modal-title fs-5 text-white" id="diagnosisModalLabel">Care Court is here to help, but it may not be
+            for everyone</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 pb-3">
+          <div class="container bg-court-ltblue p-3">The CARE Act focuses on a narrow community of vulnerable
+            Californians with the most severe mental health conditions to provide supportive services before people from
+            this community become involved with the criminal legal system, are committed to a state hospital, or end up
+            in conservatorship.</div>
+          <div class="container pt-4 px-1 px-md-5">
+            <p><strong>Eligible diagnoses may include:</strong></p>
+            <ul>
+              <li>Schizophrenia</li>
+              <li>Schizoaffective disorder</li>
+              <li>Schizophreniform disorder</li>
+              <li>Brief psychotic disorder</li>
+              <li>Delusional disorder</li>
+              <li>Schizotypal personality disorder</li>
+              <li>Catatonia associated with another mental disorder</li>
+              <li>Unspecified catatonia</li>
+              <li>Other specified or unspecified schizophrenia spectrum and other psychotic disorders</li>
+            </ul>
+            <p>Unless a person also has a diagnosis from the list above, the following conditions <strong>DO NOT meet
+                CARE criteria</strong>:</p>
+            <ul>
+              <li>Psychosis due to traumatic brain injury, autism, dementia or another condition</li>
+              <li>Catatonia associated with another medical condition</li>
+              <li>Major depression or bipolar disorder with psychotic features</li>
+              <li>Substance use disorders</li>
+            </ul>
           </div>
-          <div class="col-md-4 p-0 m-0">
-            <ol start="5">
-              <li class="py-2"> Michael Antonovich Antelope Valley Courthouse<br> 42011 4th Street West Lancaster, CA 93534<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt="">
-                </span>
-              </li>
-              <li class="py-2"> Norwalk Courthouse<br> 12720 Norwalk Blvd Norwalk, CA 90650<br>
-                <span class="court-services"><img src="img/In-Person Hearing.svg" alt="">
-                  <img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt="">
-                </span>
-              </li>
-              <li class="py-2"> Pasadena Courthouse<br> 300 East Walnut St. Pasadena, CA 91101<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt="">
-                </span>
-              </li>
-              <li class="py-2"> Pomona Courthouse South<br> 400 Civic Center Plaza Pomona, CA 91766<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-            </ol>
-          </div>
-          <div class="col-md-4 p-0 m-0">
-            <ol start="9">
-              <li class="py-2">Stanley Mosk Courthouse<br> 111 North Hill Street Los Angeles, CA 90012<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-              <li class="py-2">Torrance Courthouse<br> 825 Maple Ave. Torrance, CA 90503<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-              <li class="py-2">Van Nuys Courthouse East<br> 6230 Sylmar Ave. Van Nuys, CA 91401<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-              <li class="py-2">Whittier Courthouse<br> 7339 South Painter Ave. Whittier, CA 90602<br>
-                <span class="court-services"><img src="img/Filing.svg" alt="">
-                  <img src="img/Remote Appearance.svg" alt="">
-                  <img src="img/Self Help.svg" alt=""> </span>
-              </li>
-            </ol>
-          </div>
-          <div class="col-md-6 bg-card4 court-services my-5 p-3">
-            <p><img src="img/In-Person Hearing.svg" alt=""> In-Person Hearings</p>
-            <p><img src="img/Filing.svg" alt=""> Filing Documents</p>
-            <p><img src="img/Remote Appearance.svg" alt=""> Dedicated Private Spaces for Remote Appearance </p>
-            <p><img src="img/Self Help.svg" alt=""> Self-Help assistance available for non-represented individuals</p>
+          <div class="text-center">
+            <a href="javascript:void:();" data-bs-dismiss="modal" class="text-dkblue">Close</a>
           </div>
         </div>
       </div>
     </div>
-    <footer class="container-fluid text-center pt-5 pb-3">
-      <div class="fs-2 fw-bold">Follow us on Social Media</div>
-      <div class="d-flex justify-content-center social-media">
-        <a href="#"><i class="fa-brands fa-facebook my-2 mx-1"></i><span class="sr-only">Facebook</span></a>
-        <a href="#"><i class="fa-brands fa-twitter my-2 mx-1"></i><span class="sr-only">Twitter</span></a>
-        <a href="#"><i class="fa-brands fa-linkedin my-2 mx-1"></i><span class="sr-only">Facebook</span></a>
-        <a href="#"><i class="fa-brands fa-google my-2 mx-1"></i><span class="sr-only">Google</span></a>
-        <a href="#"><i class="fa-brands fa-youtube my-2 mx-1"></i><span class="sr-only">Youtube</span></a>
-      </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="diagnosisModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" aria-labelledby="diagnosisModalLabel">
-      <div class="modal-dialog modal-fullscreen-md-down modal-lg">
-        <div class="modal-content">
-          <div class="modal-header bg-danger">
-            <h1 class="modal-title fs-5 text-white" id="diagnosisModalLabel">Care Court is here to help, but it may not be for everyone</h1>
-            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0 pb-3">
-            <div class="container bg-court-ltblue p-3">The CARE Act focuses on a narrow community of vulnerable Californians with the most severe mental health conditions to provide supportive services before people from this community become involved with the criminal legal system, are committed to a state hospital, or end up in conservatorship.</div>
-            <div class="container pt-4 px-1 px-md-5">
-              <p><strong>Eligible diagnoses may include:</strong></p>
-              <ul>
-                <li>Schizophrenia</li>
-                <li>Schizoaffective disorder</li>
-                <li>Schizophreniform disorder</li>
-                <li>Brief psychotic disorder</li>
-                <li>Delusional disorder</li>
-                <li>Schizotypal personality disorder</li>
-                <li>Catatonia associated with another mental disorder</li>
-                <li>Unspecified catatonia</li>
-                <li>Other specified or unspecified schizophrenia spectrum and other psychotic disorders</li>
-              </ul>
-              <p>Unless a person also has a diagnosis from the list above, the following conditions <strong>DO NOT meet CARE criteria</strong>:</p>
-              <ul>
-                <li>Psychosis due to traumatic brain injury, autism, dementia or another condition</li>
-                <li>Catatonia associated with another medical condition</li>
-                <li>Major depression or bipolar disorder with psychotic features</li>
-                <li>Substance use disorders</li>
-              </ul>
-            </div>
-            <div class="text-center">
-              <a href="javascript:void:();" data-bs-dismiss="modal" class="text-dkblue">Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit()
-      {
-        new google.translate.TranslateElement(
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
         {
           pageLanguage: 'en'
         }, 'google_translate_element');
-      }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit">
-    </script>
-  </body>
+</script>
+</body>
+
 </html>
