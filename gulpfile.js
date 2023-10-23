@@ -19,10 +19,10 @@ gulp.task('miniHTML', async function() {
 });
 
 gulp.task('prettyHTML', async function(resolve) {
-    gulp.src('./care/*.html') //DUDE, CHANGE ME
+    gulp.src('./jury/*.html') //DUDE, CHANGE ME
         .pipe(plumber())
         .pipe(prettify())
-        .pipe(gulp.dest('./care/')); //DUDE, CHANGE ME
+        .pipe(gulp.dest('./jury/')); //DUDE, CHANGE ME
 });
 gulp.task('unstyle', async function(resolve) {
     gulp.src('./jury/excuse.html') //DUDE, CHANGE ME
