@@ -14,6 +14,7 @@ var domain = location.hostname;
       Location: "LA County Court",
       Site_Professional: "linkedin.com/in/itssobig",
       Domain: domain,
+      Site: location.hostname
     };
     console.info("%c T. Hunold github: codeposse" + location.hostname, "background: #222; color: #bada55");
     console.dir(a);
