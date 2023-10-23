@@ -7,12 +7,13 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 $(".toast").show();
 $(".toast button").click(function () { $(this).closest(".toast").hide() });
 var title = "codeposse";
+var domain = location.hostname;
     a = {
       Author: "T. Hunold",
       Github: title,
       Location: "LA County Court",
       Site_Professional: "linkedin.com/in/itssobig",
-
+      Domain: domain,
     };
     console.info("%c T. Hunold github: codeposse", "background: #222; color: #bada55");
     console.dir(a);
