@@ -88,7 +88,7 @@
               class="fa-solid fa-triangle-exclamation float-end mt-1"></i></div>
           <div class="card-body">
             <div class="row card-text">
-              <div class="col-12 pt-3">
+              <div class="col-12 pt-3 showdetails">
                 <p><strong class="fs-5">You do not need to report to the courthouse on Monday, Oct. 9, 2023.</strong>
                 </p>
                 <hr>
@@ -108,7 +108,8 @@
                     <strong class="seconds" class=""></strong></span>
                 </div>
               </div>
-              <div class="col-12 mt-3"><a href="javascript:void();">Failure to appear <i
+              <div class="col-12 p-5 hidedetails text-center"><span><i class="fa-solid fa-hourglass-half fs-1"></i></span></div>
+              <div class="col-12 mt-3 showdetails"><a href="javascript:void();">Failure to appear <i
                     class="fa-solid fa-triangle-exclamation mt-1"></i></a> <br><a href="cal.ics" rel="noopener"
                   target="_blank">Download Calender Reminder <i class="fa-solid fa-calendar-plus mt-1"></i></a></div>
             </div>
@@ -832,26 +833,31 @@
               class="fa-solid fa-triangle-exclamation text-warning"></i></h5>
         </div>
         <div class="modal-body">
-          <p><strong class="fs-5">You do not need to report to the courthouse on Monday, Oct. 9, 2023.</strong></p>
-          <hr>
-          <p>Check for your next instructions any time between:</p>
-          <div class="row">
-            <div class="col-md-9">Monday Oct. 9 2023 at 7:00PM </div>
-            <div class="col-md-4 text-center"><i class="fa-solid fa-arrows-up-down text-primary"></i></div>
-            <div class="col-md-9">Tuesday Oct. 10 2023 at 6:00AM </div>
+          <div class="hidedetails p-5 m-5 text-center">
+            <h5><strong>New reporting instructions are ready for you.</strong></h5>
+            <button class="btn btn-primary mt-4 toggledetails">View Instructions</button>
           </div>
-          <hr>
-          <div class="fw-bold text-center">Your next reporting instructions will be ready in:</div>
-          <div id="timer" class="px-3 py-1 d-flex justify-content-center">
-            <span class="border px-3 py-2">
-              <strong class="days" class=""></strong>
-              <strong class="hours" class=""></strong>
-              <strong class="minutes" class=""></strong>
-              <strong class="seconds" class=""></strong></span>
-          </div>
+          <span class="showdetails">
+            <p><strong class="fs-5">You do not need to report to the courthouse on Monday, Oct. 9, 2023.</strong></p>
+            <hr>
+            <p>Check for your next instructions any time between:</p>
+            <div class="row">
+              <div class="col-md-12 text-center">Monday Oct. 9 2023 at 7:00PM </div>
+              <div class="col-md-12 text-center"><i class="fa-solid fa-arrows-up-down text-primary"></i></div>
+              <div class="col-md-12 text-center">Tuesday Oct. 10 2023 at 6:00AM </div>
+            </div>
+            <hr>
+            <div class="fw-bold text-center">Your next reporting instructions will be ready in:</div>
+            <div id="timer" class="px-3 py-1 d-flex justify-content-center">
+              <span class="border px-3 py-2">
+                <strong class="days" class=""></strong>
+                <strong class="hours" class=""></strong>
+                <strong class="minutes" class=""></strong>
+                <strong class="seconds" class=""></strong></span>
+            </div>
+          </span>
         </div>
-        <div class="modal-footer bg-light"> <span class="me-2">By clicking "Acknowledge", I will receive credit for
-            checking reporting instructions as required. </span> <button type="button" class="btn btn-primary"
+        <div class="modal-footer bg-light showdetails"> <button type="button" class="btn btn-primary"
             data-bs-dismiss="modal">Acknowledge</button></div>
       </div>
     </div>
@@ -862,11 +868,16 @@
   <script src="../js/global.js"></script>
   <script>
     window.onload = () => {
-      $("#dangerModal").modal("show")
+      $("#dangerModal").modal("show");
+      $(".hidedetails").show();
+      $(".showdetails").hide();
+      $("button.toggledetails").click(function () {
+        $(".showdetails, .hidedetails").toggle();
+      });
     };
 
     function makeTimer() {
-      var endTime = new Date("23 Oct. 2023 9:56:00 GMT+01:00");
+      var endTime = new Date("23 Nov. 2023 9:56:00 GMT+01:00");
       endTime = (Date.parse(endTime) / 1000);
       var now = new Date();
       now = (Date.parse(now) / 1000);
