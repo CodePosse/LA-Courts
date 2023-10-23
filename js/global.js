@@ -14,5 +14,5 @@ var title = "codeposse";
       Site_Professional: "linkedin.com/in/itssobig",
       Site: location.hostname
     };
-    console.info("%c T. Hunold github: codeposse " + location.hostname, "background: #222; color: #bada55");
+    console.info("%c Author: T. Hunold; Git: codeposse; " + location.hostname, "background: #222; color: #bada55");
     console.dir(a);
