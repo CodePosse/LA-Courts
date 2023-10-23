@@ -15,5 +15,5 @@ var domain = location.hostname;
       Site_Professional: "linkedin.com/in/itssobig",
       Domain: domain,
     };
-    console.info("%c T. Hunold github: codeposse", "background: #222; color: #bada55");
+    console.info("%c T. Hunold github: codeposse" + location.hostname, "background: #222; color: #bada55");
     console.dir(a);
