@@ -611,7 +611,13 @@
     <script>
       window.onload = () =>
       {
-        $("#dangerModal").modal("show")
+        $("#dangerModal").modal("show");
+        $(".hidedetails").show();
+        $(".showdetails").hide();
+        $("button.toggledetails").click(function()
+        {
+          $(".showdetails, .hidedetails").toggle();
+        });
       };
     </script>
   </body>
