@@ -79,7 +79,8 @@
             <div class="fs-5 card-header fw-bold bg-warning">Reporting Instructions<i class="fa-solid fa-location-dot float-end mt-1"></i></div>
             <div class="card-body">
               <div class="row card-text">
-                <div class="col-12 pt-3">
+                <div class="col-12 p-5 hidedetails text-center"><span><i class="fa-solid fa-hourglass-half fs-1"></i></span></div>
+                <div class="col-12 pt-3 showdetails">
                   <h5 class="fw-bold">You have been selected to serve.</h5>
                   <p>Please see your reporting instructions below for the location, date and time to serve.</p>
                   <hr>
@@ -589,20 +590,26 @@
             <h5 class="modal-title" id="dangerModalLabel">Reporting Instructions <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5>
           </div>
           <div class="modal-body">
-            <h5 class="fw-bold">You have been selected to serve.</h5>
-            <p>Please see your reporting instructions below for the location, date and time to serve.</p>
-            <hr>
-            <div class="text-center py-2 fw-bold">REPORTING INSTRUCTIONS</div>
-            <p><span class="fw-bold">What to do:</span> Report to the courthouse Jury Assembly Room L-4, First Floor.</p>
-            <p> <span class="fw-bold">Report Date:</span> Monday August 20 2023 at 8:00AM. Please be on time.</p>
-            <p><span class="fw-bold">Airport Courthouse</span><br>11701 S. La Cienega<br>Los Angeles, CA 90045</p>
-            <p><strong>Jury Assembly Room</strong><br>
-              <strong>Room:</strong> L-4, First Floor<br>
-              <strong>Phone:</strong> (213) 555-1212<br>
-              <strong>Phone Hours:</strong> Monday through Friday 11:00AM - 12:00PM and 2:00PM - 4:00PM
-            </p>
+            <div class="hidedetails p-5 m-5 text-center">
+              <h5><strong>New reporting instructions are ready for you.</strong></h5>
+              <button class="btn btn-primary mt-4 toggledetails">View Instructions</button>
+            </div>
+            <span class="showdetails">
+              <h5 class="fw-bold">You have been selected to serve.</h5>
+              <p>Please see your reporting instructions below for the location, date and time to serve.</p>
+              <hr>
+              <div class="text-center py-2 fw-bold">REPORTING INSTRUCTIONS</div>
+              <p><span class="fw-bold">What to do:</span> Report to the courthouse Jury Assembly Room L-4, First Floor.</p>
+              <p> <span class="fw-bold">Report Date:</span> Monday August 20 2023 at 8:00AM. Please be on time.</p>
+              <p><span class="fw-bold">Airport Courthouse</span><br>11701 S. La Cienega<br>Los Angeles, CA 90045</p>
+              <p><strong>Jury Assembly Room</strong><br>
+                <strong>Room:</strong> L-4, First Floor<br>
+                <strong>Phone:</strong> (213) 555-1212<br>
+                <strong>Phone Hours:</strong> Monday through Friday 11:00AM - 12:00PM and 2:00PM - 4:00PM
+              </p>
+            </span>
           </div>
-          <div class="modal-footer bg-light"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Acknowledge</button></div>
+          <div class="modal-footer bg-light showdetails"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button></div>
         </div>
       </div>
     </div>
