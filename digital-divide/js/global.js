@@ -16,3 +16,7 @@ var title = "codeposse";
     };
     console.info("%c Author: T. Hunold; Git: codeposse; " + location.hostname, "background: #222; color: #bada55");
     console.dir(a);
+//img missing
+$('img').error(function(){ 
+  $(this).attr('src', './img/img-placeholder.webp');
+  });
