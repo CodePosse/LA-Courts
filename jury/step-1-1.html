@@ -1052,7 +1052,7 @@
                   <div class="answer bg-light p-2">
                     <p class="mb-0">Hello. I'm scheduled to report for Jury Duty starting next week. I recently tested positive for Covid and my quarantine period ends January 8th, therefore, I won't be able to attend in person. I have proof. but here I'm not given an option to add an attachment here. Please advise. </p>
                   </div>
-                  <p class="mb-0 d-flex justify-content-end"> <span><a href="#">Mark as Read</a> | <a class="btn btn-info" href="print.html" target="_blank">Print</a></span></p>
+                  <p class="mb-0 d-flex justify-content-end"> <span><a href="javascript:void();" class="readme">Mark as Read</a> <a class="btn btn-info" href="print.html" target="_blank">Print</a></span></p>
                 </div>
               </div>
             </div>
@@ -1151,6 +1151,12 @@
         $(".inbox").click(function()
         {
           $(".compose, .read, .inboxfooter").toggle();
+        });
+        $(".readme").click(function()
+        {
+          $(".readme").hide();
+          $(".bd-callout-success").addClass("bg-light");
+          $(".bd-callout.bd-callout-success").removeClass("bd-callout bd-callout-success");
         });
         $(".addyPO, .addyForeign, .addyOutside").hide();
         $("#addyPO").click(function()
