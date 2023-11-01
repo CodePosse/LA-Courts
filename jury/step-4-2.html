@@ -1,69 +1,125 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Step 4: Service Excused</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>flow</title>
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid lasc-logo py-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt="" style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
-            <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">Translate</span></a> <a class="fa-solid fa-question fs-1" href="#" title="Contact Us"></a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="container-fluid splash pt-3 pb-0">
-      <!--progress-->
-      <div class="container py-2 py-md-3" id="steps">
+
+<head>
+  <title>Step 4: Service Excused</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>flow</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid lasc-logo py-1">
+      <div class="container">
         <div class="row">
-          <div class="col border rounded-start p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span class="px-2 pt-1 d-none d-md-inline">Summons</span></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span> <span class="px-2 pt-1 d-none d-md-inline">Prepare</span></div>
-          <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span> <span class="px-2 pt-1 d-none d-md-inline">Service Week</span></div>
-          <div class="col border rounded-end p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span class="px-2 pt-1">Completion</span> <i class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
+          <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_transparent.png" alt=""
+                style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
+          <div class="col-md-3 d-flex justify-content-end mt-4 text-white"><a href="#" data-bs-toggle="modal"
+              data-bs-target="#inboxModal" class="fa-solid fa-envelope mx-4 position-relative fs-1"><span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span
+                  class="visually-hidden">unread messages</span> </span></a><a href="#"
+              class="fa-solid fa-globe fs-1 me-3"><span class="sr-only">Translate</span></a> <a
+              class="fa-solid fa-question fs-1" href="#" title="Contact Us"></a></div>
         </div>
       </div>
-      <div class="container py-md-1">
-        <!--top content-->
-        <div class="row d-flex justify-content-center">
-          <!--greeting box-->
-          <div class="col-md-4 border border-info border-4 rounded bg-light py-md-2 px-3 m-1 custom-shadow2" id="greeting">
-            <div class="p-0 mb-2 border-bottom border-secondary"><strong class="fs-3 d-block text-primary">Service Excused</strong>
-              <em class="fw-italic">No further action required</em>
-            </div>
-            <p>Welcome <strong class="text-primary">Keith Teruya</strong>.</p>
+    </div>
+  </header>
+  <div class="container-fluid splash pt-3 pb-0">
+    <!--progress-->
+    <div class="container py-1 py-md-2" id="steps">
+      <div class="row">
+        <div class="col border rounded-start p-2 d-flex bg-light"><span
+            class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span
+            class="px-2 pt-1 d-none d-md-inline">Summons</span></div>
+        <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span>
+          <span class="px-2 pt-1 d-none d-md-inline">Prepare</span>
+        </div>
+        <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span>
+          <span class="px-2 pt-1 d-none d-md-inline">Service Week</span>
+        </div>
+        <div class="col border rounded-end p-2 d-flex bg-light"><span
+            class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span class="px-2 pt-1">Completion</span> <i
+            class="fa-solid fa-location-dot float-end mt-1 pt-1"></i></div>
+      </div>
+    </div>
+    <div class="container py-1 py-md-2">
+      <!--top content-->
+      <div class="row d-flex justify-content-center">
+        <!--greeting box-->
+        <div class="col-md-4 border border-info border-4 rounded bg-light py-md-2 px-3 m-1 custom-shadow2 d-none"
+          id="greeting">
+          <div class="p-0 mb-2 border-bottom border-secondary"><strong class="fs-3 d-block text-primary">Service
+              Excused</strong>
+            <em class="fw-italic">No further action required</em>
           </div>
-          <!--important box-->
-          <div class="col-md-6 rounded border border-info p-0 m-1 bg-light d-flex custom-shadow2" id="important">
-            <div class="flex-shrink-0 pt-3 px-2 bg-info text-white"><i class="fa-solid fa-message fs-1 p-2"></i></div>
-            <div class="flex-grow-1 ms-3 p-2"><strong class="fs-5 text-primary">You have been excused</strong>
-              <p>You have been excused for this summoning period. This excusal does not have any bearing on future summonses. If the same condition exists when you are next summoned, you will need to renew your request to be excused. </p>
-              <p>You may now discard your summons. Thank you for your time. </p>
-            </div>
+          <p>Welcome <strong class="text-primary">Keith Teruya</strong>.</p>
+        </div>
+        <!--important box-->
+        <div class="col-md-8 border border-info p-0 mb-2 bg-light d-flex custom-shadow2" id="important">
+          <div class="flex-shrink-0 pt-3 px-2 bg-info text-white"><i class="fa-solid fa-message fs-1 p-2"></i></div>
+          <div class="flex-grow-1 ms-3 p-2">
+            <div class="border-bottom mb-2 pb-2 text-primary fw-bold"><span class="fs-5">Keith Teruya</span>, You have
+              been excused.</div>
+            You have been excused from jury service. No further action is required.
+
+            <p>This excusal is for the current summoning period only. It does not have any bearing on notices for future
+              service. </p>
+
+            <p>If the same condition exists when you are next summoned, you will need to renew your request to be
+              excused. </p>
+
+            <p>You may now discard your summons. Thank you for your time. </p>
+
+            <p>-Juror Services</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container mb-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-8">
-          <div class="card custom-shadow border-info">
-            <div class="fs-5 card-header fw-bold">FAQs</div>
-            <div class="card-body">
-              <div class="accordion accordion-flush" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Do I get proof of my jury service?</button></h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-                  </div>
+  </div>
+  <div class="container mb-5 py-md-1">
+    <div class="row d-flex justify-content-center">
+<!--suggestion box-->
+<div class="col-md-8 my-4">
+  <div class="card custom-shadow border-info">
+    <div class="fs-5 card-header fw-bold bg-info">We welcome your comments! <i class="fa-solid fa-inbox float-end mt-1"></i>
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+<p>
+  Drop a note in our <a href="">Suggestion Box</a>. Your feedback is important to us! 
+</p>  <p>
+  How was your experience using the "My Jury Duty Portal"? Take a quick survey <a href="">here</a>. 
+  
+  </p>
+      </div>
+    </div>
+  </div>
+</div>
+      <!--FAQs-->
+      <div class="col-md-8">
+        <div class="card custom-shadow border-info">
+          <div class="fs-5 card-header fw-bold">FAQs</div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">Do I get proof of my jury service?</button></h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><strong>This is the first item&apos;s accordion body.</strong> It is shown
+                    by default, until the collapse plugin adds the appropriate classes that we use to style each
+                    element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                    transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It&apos;s also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.</div>
                 </div>
               </div>
             </div>
@@ -71,29 +127,37 @@
         </div>
       </div>
     </div>
-    <!--chatbot-->
-    <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div>
-    <!--footer-->
-    <footer class="pt-3 pb-1 bg-primary text-white">
-      <div class="container">
-        <div class="justify-content-md-between row border-bottom pb-3 mb-3">
-          <div class="col-md-5">
-            <div class="h5">LASC Juror Services</div>
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-5">
-            <div class="h5">Covid 19 Information</div>
-            <p>As a measure of caution in relation to COVID-19, the LASC Jury Services is limiting the time that public counters are open for the public. It is recommended that all activities that can be conducted online be done that way.</p>
-          </div>
+  </div>
+  <!--chatbot-->
+  <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i
+        class="fa-solid fa-comment-dots"></i></span></div>
+  <!--footer-->
+  <footer class="pt-3 pb-1 bg-primary text-white">
+    <div class="container">
+      <div class="justify-content-md-between row border-bottom pb-3 mb-3">
+        <div class="col-md-5">
+          <div class="h5">LASC Juror Services</div>
         </div>
-        <div class="col-12 text-center pt-2">
-          <p>&#xA9; Copyright<script>
-              document.write((new Date).getFullYear())
-            </script>LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a></p>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="h5">Covid 19 Information</div>
+          <p>As a measure of caution in relation to COVID-19, the LASC Jury Services is limiting the time that public
+            counters are open for the public. It is recommended that all activities that can be conducted online be done
+            that way.</p>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="./js/global.js"></script>
-  </body>
+      <div class="col-12 text-center pt-2">
+        <p>&#xA9; Copyright
+          <script>
+            document.write((new Date).getFullYear())
+          </script>LASC Jury Services. All rights reserved. <a href="./sitemap.html" class="text-white">Site Map</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="./js/global.js"></script>
+</body>
+
 </html>
