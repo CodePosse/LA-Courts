@@ -31,6 +31,15 @@ footer a:hover{color:white; text-decoration: underline;}
 div.lasc-logo {
   background-color: #1f303e;
 }
+.court-topbar
+{
+  background-color: var(--court-dkblue);
+  color: #fff;
+  border-bottom: 5px solid var(--court-gold);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+}
 .rounded-start {
   border-bottom-left-radius: 0.75rem !important;
   border-top-left-radius: 0.75rem !important;
