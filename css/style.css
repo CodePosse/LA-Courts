@@ -16,6 +16,7 @@ body {
   color: var(--court-black);
   font-display: swap;
 }
+nav{background-color: #fff;;}
 header a, nav a,
 footer a {
   color: #fff;
