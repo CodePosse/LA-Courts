@@ -24,10 +24,10 @@ $(document).ready(function () {
         this.naturalWidth == 0) ||
       this.readyState == "uninitialized"
     ) {
-      $(this).attr(
-        "src",
-        "./img/img-placeholder.webp"
-      );
+      $(this).attr({
+        src: "./img/img-placeholder.webp",
+        alt: "broken"
+      });
     }
   });
   console.log('img 404 check complete')
