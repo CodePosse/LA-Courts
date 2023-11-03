@@ -7,15 +7,16 @@ body {
   --court-black: #231f20;
   --court-ltblue: #93b2dd;
   --court-paleblue: #f0f4fc;
-  --court-dkblue: #012362;
+  --court-dkblue: #232f3d;
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
+  --court-gold: #f5c04f;
   font-family: calibri, Tahoma, Arial, monotype;
   background-color: var(--court-paleblue);
   color: var(--court-black);
   font-display: swap;
 }
-header a,
+header a, nav a,
 footer a {
   color: #fff;
   text-decoration: none;
