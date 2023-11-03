@@ -179,7 +179,7 @@ footer i {
   display: block;
 }
 
-.step-active div {
+.wizard2 .step-active div {
   background-color: lightblue;
 }
 
