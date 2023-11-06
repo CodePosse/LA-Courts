@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root,
+html,
+body {
+  font-size: 16px;
+  --court-black: #231f20;
+  --court-ltblue: #93b2dd;
+  --court-paleblue: #f0f4fc;
+  --court-dkblue: #232f3d;
+  --court-yellow: #f3c727;
+  --court-grey: #95a3ab;
+  --court-gold: #f5c04f;
+  font-family: calibri, Tahoma, Arial, monotype;
+  color: var(--court-black);
+  font-display: swap;
+}
+:root,html,body{background-color: var(--court-black);}
+nav,main{background-color: #fff;}
+header a, nav a,
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover{color:white; text-decoration: underline;}
+div.lasc-logo {
+  background-color: #1f303e;
+}
+.court-topbar
+{
+  background-color: var(--court-dkblue);
+  color: #fff;
+  border-bottom: 5px solid var(--court-gold);
+  text-align: center;
+  font-weight: bold;
+}
+.bg-primary,.bg-dkblue,.btn-primary,footer{background-color: var(--court-dkblue) !important;color:#fff}
