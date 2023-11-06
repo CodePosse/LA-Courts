@@ -10,13 +10,13 @@ body {
   --court-dkblue: #232f3d;
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
+  --court-ltgrey: #eee;
   --court-gold: #f5c04f;
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
 }
-:root,html,body{background-color: var(--court-black);}
-nav,main{background-color: #fff;}
+nav{background-color: #fff;}
 header a, nav a,
 footer a {
   color: #fff;
@@ -35,3 +35,8 @@ div.lasc-logo {
   font-weight: bold;
 }
 .bg-primary,.bg-dkblue,.btn-primary,footer{background-color: var(--court-dkblue) !important;color:#fff}
+.bg-ltgrey{background-color: var(--court-ltgrey);}
+.accordion-body,.accordion-button,.accordion-body,.accordion-header,.accordion-item{background-color: transparent;}
+.accordion-item{border:0px solid green;border-bottom: 1px solid var(--court-black);}
+#components {background-color: #1f303e;}
+#components > .container{background-color: #fff;}
