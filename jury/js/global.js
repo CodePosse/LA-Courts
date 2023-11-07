@@ -6,6 +6,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 //toasts
 $(".toast").show();
 $(".toast button").click(function () { $(this).closest(".toast").hide() });
+$(".callout-hide").click(function () { $(this).closest(".bd-callout").hide() });
 var title = "codeposse";
 a = {
   Author: "T. Hunold",
