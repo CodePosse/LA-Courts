@@ -10,6 +10,7 @@
     referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="js/syntax/syntax.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -31,10 +32,12 @@
   <!--progress steps-->
   <div class="container bg-ltgrey">
     <div class="row py-3">
-      <div class="col-3"><h2>Step 1: <strong>Summons</strong></h2></div>
+      <div class="col-3">
+        <h2>Step 1: <strong>Summons</strong></h2>
+      </div>
       <div class="col-9">[steps]</div>
     </div>
-    </div>
+  </div>
   <hr>
   <div class="container">
     <div class="row bg-info">
@@ -165,6 +168,73 @@
           </div>
         </div>
       </div>
+    </div><!--syntax highlighter-->
+    <div class="row p-2">
+      <div class="col">
+        <pre class="brush: js;">
+  <div class='row py-5 bg-ltgrey'>
+    <div class='col-md-3'>
+      <h3>Title</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class='col-md-9 px-0'>
+      <div class='accordion' id='accordionExamplea'>
+        <div class='accordion-item'>
+          <h2 class='accordion-header'>
+            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+              data-bs-target='#collapseOne2' aria-expanded='false' aria-controls='collapseOne2'>
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id='collapseOne2' class='accordion-collapse collapse' data-bs-parent='#accordionExamplea'>
+            <div class='accordion-body'>
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class='accordion-item'>
+          <h2 class='accordion-header'>
+            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+              data-bs-target='#collapseTwo2' aria-expanded='false' aria-controls='collapseTwo2'>
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id='collapseTwo2' class='accordion-collapse collapse' data-bs-parent='#accordionExamplea'>
+            <div class='accordion-body'>
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class='accordion-item'>
+          <h2 class='accordion-header'>
+            <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse'
+              data-bs-target='#collapseThree2' aria-expanded='false' aria-controls='collapseThree2'>
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id='collapseThree2' class='accordion-collapse collapse' data-bs-parent='#accordionExamplea'>
+            <div class='accordion-body'>
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</pre>
+      </div>
     </div>
   </div>
   <hr>
@@ -175,18 +245,8 @@
       </div>
     </div>
     <div class="row bg-ltblue py-5">
-      <div class="col-md-3"><h3 class="mt-2">Light</h3></div>
       <div class="col-md-3">
-        <div class="card shadow1">
-          <div class="card-header bg-ltgrey">
-            <h3 class="p-0 m-0">Featured</h3>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        <h3 class="mt-2">Light</h3>
       </div>
       <div class="col-md-3">
         <div class="card shadow1">
@@ -200,11 +260,57 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3"><h3 class="mt-2">Featured</h3></div>
+      <div class="col-md-3">
+        <div class="card shadow1">
+          <div class="card-header bg-ltgrey">
+            <h3 class="p-0 m-0">Featured</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h3 class="mt-2">Featured</h3>
+      </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
+  <SCRIPT type=text/javascript src="js/syntax/shCore.js"></SCRIPT>
+  <SCRIPT type=text/javascript src="js/syntax/shBrushXml.js"></SCRIPT>
+  <SCRIPT type=text/javascript src="js/syntax/shBrushJScript.js"></SCRIPT>
+  <SCRIPT type=text/javascript src="js/syntax/shBrushCss.js"></SCRIPT>
+  <SCRIPT type=text/javascript src="js/syntax/shBrushPlain.js"></SCRIPT>
+  <SCRIPT type=text/javascript src="js/syntax/shBrushSql.js"></SCRIPT>
+  <SCRIPT type=text/javascript>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var themecssurl = "js/syntax/shThemeDefault.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		document.getElementsByTagName("head")[0].appendChild(themecss);
+	})();	SyntaxHighlighter.config.clipboardSwf = 'clipboard.swf';	
+	SyntaxHighlighter.config.strings.expandSource = 'show source';
+	SyntaxHighlighter.config.strings.viewSource = 'view source';
+	SyntaxHighlighter.config.strings.copyToClipboard = 'copy to clipboard';
+	SyntaxHighlighter.config.strings.copyToClipboardConfirmation = 'The code is in your clipboard now';
+	SyntaxHighlighter.config.strings.print = 'print';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.all();
+</SCRIPT>
 </body>
 
 </html>
