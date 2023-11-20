@@ -18,7 +18,7 @@ a = {
 console.info("%c Author: T. Hunold; Git: codeposse; " + location.hostname, "background: #222; color: #bada55");
 console.dir(a);
 //img missing
-$(document).ready(function () {
+/*$(document).ready(function () {
   $("img").each(function () {
     if (
       (typeof this.naturalWidth != "undefined" &&
@@ -32,4 +32,4 @@ $(document).ready(function () {
     }
   });
   console.log('img 404 check complete')
-});
+});*/
