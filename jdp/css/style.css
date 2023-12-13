@@ -16,31 +16,69 @@ body {
   color: var(--court-black);
   font-display: swap;
 }
-nav{background-color: #fff;}
-header a, nav a,
+nav {
+  background-color: #fff;
+}
+header a,
+nav a,
 footer a {
   color: #fff;
   text-decoration: none;
 }
-footer a:hover{color:white; text-decoration: underline;}
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
 div.lasc-logo {
   background-color: #1f303e;
 }
-.court-topbar
-{
+.court-topbar {
   background-color: var(--court-dkblue);
   color: #fff;
   border-bottom: 5px solid var(--court-gold);
   text-align: center;
   font-weight: bold;
 }
-.bg-primary,.bg-dkblue,.btn-primary,footer{background-color: var(--court-dkblue) !important;color:#fff}
-.bg-ltblue,.btn-ltblue{background-color: rgba(var(--court-ltblue), 0.9) !important}
-.bg-ltgrey{background-color: var(--court-ltgrey);}
-.accordion-body,.accordion-button,.accordion-body,.accordion-header,.accordion-item{background-color: transparent;}
-.accordion-item{border:0px solid green;border-bottom: 1px solid var(--court-grey);}
-#components {background-color: #1f303e;}
-#components > .container{background-color: #fff;}
-.shadow1{box-shadow: 2px 2px 1px #999;}
+.bg-primary,
+.bg-dkblue,
+.btn-primary,
+footer {
+  background-color: var(--court-dkblue) !important;
+  color: #fff;
+}
+.bg-ltblue,
+.btn-ltblue {
+  background-color: rgba(var(--court-ltblue), 0.9) !important;
+}
+.bg-ltgrey {
+  background-color: var(--court-ltgrey);
+}
+.accordion-body,
+.accordion-button,
+.accordion-body,
+.accordion-header,
+.accordion-item {
+  background-color: transparent;
+}
+.accordion-item {
+  border: 0px solid green;
+  border-bottom: 1px solid var(--court-grey);
+}
+#components {
+  background-color: #1f303e;
+}
+#components > .container {
+  background-color: #fff;
+}
+.shadow1 {
+  box-shadow: 2px 2px 1px #999;
+}
 
-.card-transparent, .card-transparent .card-header {background: transparent; border-color: transparent;}
+.card-transparent,
+.card-transparent .card-header {
+  background: transparent;
+  border-color: transparent;
+}
+.card-header {
+  border-color: transparent;
+}
