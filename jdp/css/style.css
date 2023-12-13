@@ -80,7 +80,7 @@ footer {
 }
 
 .card-transparent,
-.card-transparent .card-header, {
+.card-transparent .card-header {
   background: transparent;
   border-color: transparent;
 }
