@@ -4,6 +4,7 @@
 html,
 body {
   font-size: 16px;
+  --court-primary: #005498;
   --court-black: #231f20;
   --court-ltblue: 212, 229, 245;
   --court-paleblue: #f0f4fc;
@@ -11,11 +12,14 @@ body {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
-  --court-gold: #f5c04f;
+  --court-gold: #FA8939;
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
 }
+
+a{color:#0573BC}
+
 nav {
   background-color: #fff;
 }
@@ -29,6 +33,7 @@ footer a:hover {
   color: white;
   text-decoration: underline;
 }
+footer .list-group-item{padding:.125rem}
 div.lasc-logo {
   background-color: #1f303e;
 }
@@ -43,7 +48,7 @@ div.lasc-logo {
 .bg-dkblue,
 .btn-primary,
 footer {
-  background-color: var(--court-dkblue) !important;
+  background-color: #000 !important;
   color: #fff;
 }
 .bg-ltblue,
@@ -75,10 +80,12 @@ footer {
 }
 
 .card-transparent,
-.card-transparent .card-header {
+.card-transparent .card-header, {
   background: transparent;
   border-color: transparent;
 }
 .card-header {
   border-color: transparent;
 }
+.transparent, .transparent li {  background: transparent;
+  border-color: transparent;}
