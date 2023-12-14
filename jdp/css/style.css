@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: var(--court-primary);;
+  color: var(--court-primary);
 }
 
 nav {
@@ -60,6 +60,9 @@ footer {
 .btn-primary {
   border-color: var(--court-primary);
 }
+.text-primary {
+  color: var(--court-primary) !important;
+}
 .bg-ltblue,
 .btn-ltblue {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
@@ -69,7 +72,7 @@ footer {
 }
 .bg-gold,
 .btn-gold {
-  background-color:var(--court-gold);
+  background-color: var(--court-gold);
   color: #fff;
 }
 .btn-gold {
