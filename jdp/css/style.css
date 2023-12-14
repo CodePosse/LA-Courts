@@ -12,13 +12,15 @@ body {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
-  --court-gold: #FA8939;
+  --court-gold: #fa8939;
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
 }
 
-a{color:#0573BC}
+a {
+  color: var(--court-primary);;
+}
 
 nav {
   background-color: #fff;
@@ -30,12 +32,18 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: white;
+  color: #fff;
   text-decoration: underline;
 }
-footer .list-group-item{padding:.125rem}
+footer .list-group-item {
+  padding: 0.125rem;
+}
 div.lasc-logo {
   background-color: #1f303e;
+}
+footer {
+  background-color: #000 !important;
+  color: #fff;
 }
 .court-topbar {
   background-color: var(--court-dkblue);
@@ -44,16 +52,28 @@ div.lasc-logo {
   text-align: center;
   font-weight: bold;
 }
-.bg-primary,
-.bg-dkblue,
-.btn-primary,
-footer {
-  background-color: #000 !important;
+.bd-primary,
+.btn-primary {
+  background-color: var(--court-primary);
   color: #fff;
+}
+.btn-primary {
+  border-color: var(--court-primary);
 }
 .bg-ltblue,
 .btn-ltblue {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
+}
+.btn-ltblue {
+  border-color: var(--court-ltblue);
+}
+.bg-gold,
+.btn-gold {
+  background-color:var(--court-gold);
+  color: #fff;
+}
+.btn-gold {
+  border-color: var(--court-gold);
 }
 .bg-ltgrey {
   background-color: var(--court-ltgrey);
@@ -87,5 +107,8 @@ footer {
 .card-header {
   border-color: transparent;
 }
-.transparent, .transparent li {  background: transparent;
-  border-color: transparent;}
+.transparent,
+.transparent li {
+  background: transparent;
+  border-color: transparent;
+}
