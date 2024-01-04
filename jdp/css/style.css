@@ -115,3 +115,5 @@ footer {
   background: transparent;
   border-color: transparent;
 }
+.accordion-item.noline{border-bottom: 0 !important;padding-left:.125rem}
+.accordion-item.noline .accordion-collapse {background-color: white; padding: .125rem;}
