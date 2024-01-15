@@ -16,8 +16,11 @@ body {
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
+  background-color: var(--court-black);
 }
-
+.container {
+  background-color: #fff;
+}
 a {
   color: var(--court-primary);
 }
@@ -121,6 +124,15 @@ footer {
   background: transparent;
   border-color: transparent;
 }
-.accordion-item.noline{border-bottom: 0 !important;padding-left:.125rem;}
-.accordion-item.noline .accordion-collapse {background-color: white; padding: .125rem;}
-.noline button.accordion-button, .noline::marker{color:blue !important}
+.accordion-item.noline {
+  border-bottom: 0 !important;
+  padding-left: 0.125rem;
+}
+.accordion-item.noline .accordion-collapse {
+  background-color: white;
+  padding: 0.125rem;
+}
+.noline button.accordion-button,
+.noline::marker {
+  color: blue !important;
+}
