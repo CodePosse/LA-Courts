@@ -62,7 +62,10 @@ footer .list-group-item {
   background-size: cover;
   background-repeat: no-repeat;
 }
-button:disabled{background-color: var( --court-grey) !important;border-color: var( --court-grey) !important}
+button:disabled {
+  background-color: var(--court-grey) !important;
+  border-color: var(--court-grey) !important;
+}
 .bd-primary,
 .btn-primary {
   background-color: var(--court-primary);
