@@ -28,17 +28,26 @@ a {
 nav {
   background-color: #fff;
 }
+.court-topbar {
+  background-color: var(--court-dkblue);
+  color: #fff;
+  border-bottom: 5px solid var(--court-gold);
+  text-align: center;
+  font-weight: bold;
+}
+div.lasc-logo {
+  background-color: #1f303e;
+}
 header a,
 nav a,
 footer a {
   color: #fff;
   text-decoration: none;
 }
-.splash {
-  background: silver url("../img/splash4.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+footer {
+  background-color: #000 !important;
+  color: #fff;
 }
 footer a:hover {
   color: #fff;
@@ -47,20 +56,13 @@ footer a:hover {
 footer .list-group-item {
   padding: 0.125rem;
 }
-div.lasc-logo {
-  background-color: #1f303e;
+.splash {
+  background: silver url("../img/splash4.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-footer {
-  background-color: #000 !important;
-  color: #fff;
-}
-.court-topbar {
-  background-color: var(--court-dkblue);
-  color: #fff;
-  border-bottom: 5px solid var(--court-gold);
-  text-align: center;
-  font-weight: bold;
-}
+button:disabled{background-color: var( --court-grey) !important;border-color: var( --court-grey) !important}
 .bd-primary,
 .btn-primary {
   background-color: var(--court-primary);
