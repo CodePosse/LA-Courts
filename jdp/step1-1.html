@@ -21,7 +21,30 @@
 
 <body>
   <!--navigation-->
-  <header>header</header>
+  <header>
+    <div class="container bg-white lasc-logo py-1">
+      <div class="row">
+        <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_white.png" alt="" style="max-height:80px"
+              class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
+        <div class="col-md-3 d-flex justify-content-end mt-4 pe-md-5">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal"
+            class="fa-solid fa-envelope position-relative fs-2 text-dkblue"><span
+              class="position-absolute start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span
+                class="visually-hidden">unread messages</span> </span></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#dangerModal"
+            class="fa-solid fa-bullhorn ms-4 position-relative fs-2 text-dkblue"><span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span></a>
+          <a class="fa-solid fa-comments fs-2 ms-4 text-dkblue" href="#" title="Suggestion Box" data-bs-toggle="modal"
+            data-bs-target="#suggestionModal"></a>
+        </div>
+      </div>
+      <div class="row court-topbar">
+        <div class="col text-white py-2 fs-3 fw-light">Jury Duty Portal</div>
+      </div>
+    </div>
+  </header>
   <!--jumbotron-->
   <div class="container splash py-md-5">
     <!--top content-->
@@ -546,7 +569,8 @@
                   <p>Jurors requiring a sign language interpreter must contact the Jury Coordinator at
                     1-888-354-0441 (TTY) to coordinate their jury duty and sign language interpreter services.
                   </p>
-                  <p><span class="fw-bold border-bottom border-dark">Telecommunications Device for the Deaf (TDD)</span></p>
+                  <p><span class="fw-bold border-bottom border-dark">Telecommunications Device for the Deaf (TDD)</span>
+                  </p>
                   <p>Hearing Impaired Jurors must contact the Court's Telephone Center using Dialogue Text
                     Telephone (TDD/TTY) No. 1-888-354-0441. This line has been installed to arrange for special
                     interpreter services, or for any questions relating to jury service.</p>

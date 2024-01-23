@@ -77,6 +77,9 @@ button:disabled {
 .text-primary {
   color: var(--court-primary) !important;
 }
+.text-dkblue {
+  color: var(--court-dkblue) !important;
+}
 .bg-ltblue,
 .btn-ltblue {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
