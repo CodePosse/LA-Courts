@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   --court-primary: #005498;
   --court-black: #231f20;
-  --court-ltblue: 212, 229, 245;
+  --court-ltblue: rgba(212, 229, 245, 1);
   --court-paleblue: #f0f4fc;
   --court-dkblue: #232f3d;
   --court-yellow: #f3c727;
