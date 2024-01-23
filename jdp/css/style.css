@@ -81,10 +81,10 @@ button:disabled {
   color: var(--court-dkblue) !important;
 }
 .bg-ltblue,
-.btn-ltblue {
+.btn-ltblue, .btn-info {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
 }
-.btn-ltblue {
+.btn-ltblue, .btn-info {
   border-color: rgba(var(--court-ltblue), 0.9);
 }
 .bg-gold,
