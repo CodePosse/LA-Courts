@@ -770,7 +770,108 @@
   </footer>
 
   <!--MODALS-->
-
+  <!--inbox modal-->
+  <div class="modal fade" id="inboxModal" tabindex="-1" aria-labelledby="inboxModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-md-down modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h1 class="modal-title fs-5" id="inboxModalLabel">Court Messages</h1><button type="button"
+            class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="read">
+            <div class="card mb-2 bg-light">
+              <div class="card-body">
+                <h5 class="text-body"><small class="text-dark fs-6">Subject: </small> You have completed registration!
+                </h5>
+                <p>July 23, 2023</p>
+                <div class="ask p-2">
+                  <p>You have successfully registered for Jury Duty.</p>
+                  <p>Please see "Reporting Instructions" on this website for further information. Please do not forget
+                    to complete your paper summons and bring it with you if you have to report to jury duty.</p>
+                  <p class="mb-0">- Jury Services</p>
+                </div>
+                <p class="mb-0 p-2 d-flex justify-content-end"> <a class="btn btn-info" href="print.html"
+                    target="_blank">Print</a></span></p>
+              </div>
+            </div>
+            <div class="card mb-2 bd-callout bd-callout-success p-0">
+              <div class="card-body">
+                <h5 class="text-body"><small class="text-dark fs-6">Subject: </small> I tested positive for covid, what
+                  do I do?</h5>
+                <p>July 23, 2023</p>
+                <div class="ask p-2">
+                  <p>At this time, the court can postpone your service for a date that is within the next 90 days.
+                    Please provide a date of availability through email. </p>
+                  <p class="mb-0">- Jury Services</p>
+                </div>
+                <hr>
+                <div class="mt-3"> July 19, 2023 </div>
+                <div class="answer bg-light p-2">
+                  <p class="mb-0">Hello. I'm scheduled to report for Jury Duty starting next week. I recently tested
+                    positive for Covid and my quarantine period ends January 8th, therefore, I won't be able to attend
+                    in person. I have proof. but here I'm not given an option to add an attachment here. Please advise.
+                  </p>
+                </div>
+                <p class="mb-0 d-flex justify-content-end"> <span><a href="javascript:void();" class="readme">Mark as
+                      Read</a> <a class="btn btn-info" href="print.html" target="_blank">Print</a></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="compose">
+            <div class="mb-3"><strong>Compose</strong>
+              <p>Please enter your question to the Court's Jury Services staff to review. The response time may take up
+                to 10 business days.</p>
+            </div>
+            <div class="mb-3">
+              <label for="askq" class="form-label">Subject</label>
+              <input class="form-control" aria-label="Default select example" id="askq" maxlength="64">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Ask your question</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary inbox">Submit</button> <button type="button"
+              class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <div class="modal-footer inboxfooter bg-light"><button type="button"
+            class="inbox btn btn-primary btn-outline-secondary">Ask a question</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- suggestion Modal -->
+  <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-md-down modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h1 class="modal-title fs-5" id="suggestionModalLabel">Suggestion Box</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3"><strong>Suggestions to Improve Jury Service </strong>
+            <p>
+              Thank you for taking the time to provide your feedback. Your suggestions and comments are important for
+              our continued improvement of the jury service experience.
+            </p>
+          </div>
+          <div class="mb-3">
+            <label for="askq" class="form-label">Describe your suggestion(s) in detail (limit 1000 characters): </label>
+            <textarea class="form-control" aria-label="Default select example" id="askq" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Other comments or suggestions (limit 1000
+              characters): </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!--Alert modal-->
     <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true"
     data-bs-backdrop="static">
