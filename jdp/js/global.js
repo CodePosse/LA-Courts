@@ -2,10 +2,12 @@
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+});
+//dismissable callouts
+$(".callout-hide").click(function () { $(this).closest(".bd-callout").hide()});
 //toasts
 $(".toast").show();
-$(".toast button").click(function () { $(this).closest(".toast").hide() });
+$(".toast button").click(function () { $(this).closest(".toast").hide()});
 var title = "codeposse";
 a = {
   Author: "T. Hunold",
