@@ -1516,14 +1516,29 @@
             </p>
           </div>
           <div class="mb-3">
+            <select class="form-select form-select mb-3" aria-label="Survey Subjects">
+              <option selected value="summons">Summons</option>
+              <option value="serv-week">Service Week</option>
+              <option value="serv-term">Service Term</option>
+              <option value="serv-change">Service Changes (excuse, transfer, postpone)</option>
+              <option value="juror-orientation">Juror Orientation</option>
+              <option value="rep-instr">Reporting Instructions</option>
+              <option value="court-loc">Courthouse (location)</option>
+              <option value="court-info">Courthouse (facility, parking)</option>
+              <option value="JAR">Jury Assembly Room</option>
+              <option value="courtroom">Courtroom</option>
+              <option value="communications">Communication (notifications, interactions)</option>
+              <option value="serv-complete">Service Completion</option>
+              <option value="mu-jdp">My Jury Duty Portal</option>
+              <option value="exit-survey">Juror Exit Survey</option>
+              <option value="other">Other</option>
+              </select>
+          </div>
+          <div class="mb-3">
             <label for="askq" class="form-label">Describe your suggestion(s) in detail (limit 1000 characters): </label>
             <textarea class="form-control" aria-label="Default select example" id="askq" rows="3"></textarea>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Other comments or suggestions (limit 1000
-              characters): </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
