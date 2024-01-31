@@ -16,11 +16,8 @@ body {
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
-  background-color: var(--court-black);
 }
-.container {
-  background-color: #fff;
-}
+
 a {
   color: var(--court-primary);
 }
