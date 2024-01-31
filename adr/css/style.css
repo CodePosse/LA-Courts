@@ -78,10 +78,12 @@ button:disabled {
   color: var(--court-dkblue) !important;
 }
 .bg-ltblue,
-.btn-ltblue, .btn-info {
+.btn-ltblue,
+.btn-info {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
 }
-.btn-ltblue, .btn-info {
+.btn-ltblue,
+.btn-info {
   border-color: rgba(var(--court-ltblue), 0.9);
 }
 .bg-gold,
@@ -142,31 +144,9 @@ button:disabled {
   color: blue !important;
 }
 
-/*callouts*/
-.bd-callout + .bd-callout {
-  margin-top: -0.25rem;
+img {
+  background-color: aquamarine;
 }
-
-.bd-callout {
-  padding: 1.25rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border: 1px solid #e9ecef;
-  border-left-width: 0.35rem;
-  border-radius: 0.35rem;
-}
-.bd-callout-primary {
-  border-color: var(--court-dkblue) !important;
-}
-.bd-callout-danger {
-  border-color: red !important;
-}
-.bd-callout-success {
-  border-color: green !important;
-}
-.bd-callout-info {
-  border-color: var(--court-ltblue) !important;
-}
-.bd-callout-warning {
-  border-color: var(--court-yellow) !important;
+footer .card-header {
+  color: white;
 }
