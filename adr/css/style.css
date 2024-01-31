@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   --court-primary: #005498;
   --court-black: #231f20;
-  --court-ltblue: 212, 229, 245;
+  --court-ltblue: rgb(212, 229, 245);
   --court-paleblue: #f0f4fc;
   --court-dkblue: #232f3d;
   --court-yellow: #f3c727;
@@ -21,7 +21,9 @@ body {
 a {
   color: var(--court-primary);
 }
-
+.border-primary {
+  border-color: var(--court-primary) !important;
+}
 nav {
   background-color: #fff;
 }
@@ -111,7 +113,10 @@ button:disabled {
 .shadow1 {
   box-shadow: 0px 3px 1px #c0c0c0;
 }
-.card, .card-img-top {border-radius: 0 !important;}
+.card,
+.card-img-top {
+  border-radius: 0 !important;
+}
 .card-transparent,
 .card-transparent .card-header {
   background: transparent;
