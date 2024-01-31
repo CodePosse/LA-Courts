@@ -12,7 +12,7 @@ body {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
-  --court-gold: #fa8939;
+  --court-gold: #F5C04F;
   font-family: Lato, calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
@@ -43,7 +43,7 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
-
+.jumbotron i {font-size: 8rem;}
 footer {
   background-color: #000 !important;
   color: #fff;
@@ -79,10 +79,11 @@ button:disabled {
 .text-dkblue {
   color: var(--court-dkblue) !important;
 }
+.bg-paleblue{background-color: var(--court-paleblue);}
 .bg-ltblue,
 .btn-ltblue,
 .btn-info {
-  background-color: rgba(var(--court-ltblue), 0.9) !important;
+  background-color: var(--court-ltblue) !important;
 }
 .btn-ltblue,
 .btn-info {
