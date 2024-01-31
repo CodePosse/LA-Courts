@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 
 :root,
 html,
@@ -13,7 +13,7 @@ body {
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
   --court-gold: #fa8939;
-  font-family: calibri, Tahoma, Arial, monotype;
+  font-family: Lato, calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
 }
