@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root,
+html,
+body {
+  font-size: 16px;
+  --court-primary: #005498;
+  --court-black: #231f20;
+  --court-ltblue: 212, 229, 245;
+  --court-paleblue: #f0f4fc;
+  --court-dkblue: #232f3d;
+  --court-yellow: #f3c727;
+  --court-grey: #95a3ab;
+  --court-ltgrey: #eee;
+  --court-gold: #fa8939;
+  font-family: calibri, Tahoma, Arial, monotype;
+  color: var(--court-black);
+  font-display: swap;
+}
+
+a {
+  color: var(--court-primary);
+}
+
+nav {
+  background-color: #fff;
+}
+.court-topbar {
+  background-color: var(--court-dkblue);
+  color: #fff;
+  border-bottom: 5px solid var(--court-gold);
+  text-align: center;
+  font-weight: bold;
+}
+div.lasc-logo {
+  background-color: #1f303e;
+}
+header a,
+nav a,
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #000 !important;
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .list-group-item {
+  padding: 0.125rem;
+}
+.splash {
+  background: silver url("../img/splash4.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button:disabled {
+  background-color: var(--court-grey) !important;
+  border-color: var(--court-grey) !important;
+}
+.bd-primary,
+.btn-primary {
+  background-color: var(--court-primary);
+  color: #fff;
+}
+.btn-primary {
+  border-color: var(--court-primary);
+}
+.text-primary {
+  color: var(--court-primary) !important;
+}
+.text-dkblue {
+  color: var(--court-dkblue) !important;
+}
+.bg-ltblue,
+.btn-ltblue, .btn-info {
+  background-color: rgba(var(--court-ltblue), 0.9) !important;
+}
+.btn-ltblue, .btn-info {
+  border-color: rgba(var(--court-ltblue), 0.9);
+}
+.bg-gold,
+.btn-gold {
+  background-color: var(--court-gold);
+  color: #fff;
+}
+.btn-gold {
+  border-color: var(--court-gold);
+}
+.bg-ltgrey {
+  background-color: var(--court-ltgrey);
+}
+.accordion-body,
+.accordion-button,
+.accordion-body,
+.accordion-header,
+.accordion-item {
+  background-color: transparent;
+}
+.accordion-item {
+  border: 0px solid green;
+  border-bottom: 1px solid var(--court-grey);
+}
+#components {
+  background-color: #1f303e;
+}
+#components > .container {
+  background-color: #fff;
+}
+.shadow1 {
+  box-shadow: 2px 2px 1px #999;
+}
+
+.card-transparent,
+.card-transparent .card-header {
+  background: transparent;
+  border-color: transparent;
+}
+.card-header {
+  border-color: transparent;
+}
+.transparent,
+.transparent li {
+  background: transparent;
+  border-color: transparent;
+}
+.accordion-item.noline {
+  border-bottom: 0 !important;
+  padding-left: 0.125rem;
+}
+.accordion-item.noline .accordion-collapse {
+  background-color: white;
+  padding: 0.125rem;
+}
+.noline button.accordion-button,
+.noline::marker {
+  color: blue !important;
+}
+
+/*callouts*/
+.bd-callout + .bd-callout {
+  margin-top: -0.25rem;
+}
+
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: 0.35rem;
+  border-radius: 0.35rem;
+}
+.bd-callout-primary {
+  border-color: var(--court-dkblue) !important;
+}
+.bd-callout-danger {
+  border-color: red !important;
+}
+.bd-callout-success {
+  border-color: green !important;
+}
+.bd-callout-info {
+  border-color: var(--court-ltblue) !important;
+}
+.bd-callout-warning {
+  border-color: var(--court-yellow) !important;
+}
