@@ -12,7 +12,7 @@ body {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
-  --court-gold: #fa8939;
+  --court-gold: rgb(245,192,79);
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
