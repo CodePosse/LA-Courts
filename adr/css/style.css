@@ -66,8 +66,9 @@ button:disabled {
   border-color: var(--court-grey) !important;
 }
 .bd-primary,
-.btn-primary {
-  background-color: var(--court-primary);
+.btn-primary,
+.bg-primary {
+  background-color: var(--court-primary) !important;
   color: #fff;
 }
 .btn-primary {
