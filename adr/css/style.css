@@ -162,5 +162,6 @@ footer .card-header {
     .row {
       padding: 0px !important;
     }
+    .border-bottom, .card{border:none !important}
   }
 }
