@@ -12,7 +12,7 @@ body {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
-  --court-gold: #F5C04F;
+  --court-gold: #f5c04f;
   font-family: Lato, calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
@@ -43,7 +43,9 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
-.jumbotron i {font-size: 8rem;}
+.jumbotron i {
+  font-size: 8rem;
+}
 footer {
   background-color: #000 !important;
   color: #fff;
@@ -80,7 +82,9 @@ button:disabled {
 .text-dkblue {
   color: var(--court-dkblue) !important;
 }
-.bg-paleblue{background-color: var(--court-paleblue);}
+.bg-paleblue {
+  background-color: var(--court-paleblue);
+}
 .bg-ltblue,
 .btn-ltblue,
 .btn-info {
@@ -147,4 +151,16 @@ button:disabled {
 
 footer .card-header {
   color: white;
+}
+@media (width < 640px) {
+  .shadow1 {
+    box-shadow: 0 0 0 transparent;
+    border-right: none;
+  }
+  .container {
+    padding: 0px !important;
+    .row {
+      padding: 0px !important;
+    }
+  }
 }
