@@ -47,9 +47,9 @@ const classParam = urlParams.get('tab');
 // this grabs the value of the querystring,
 // matches it with classes on cards to show them and hide others
 $(function () {
-  $(".card:not(classParam)").hide();
-  $(".card." + classParam).show();
+  $(".programs .card:not(classParam)").hide();
+  $(".programs .card." + classParam).show();
   if (classParam == null || i == NULL) {
-    $(".card").show();
+    $(".programs .card").show();
   }
 });
