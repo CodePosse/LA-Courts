@@ -22,11 +22,15 @@ a = {
 console.dir(a);
 
 
-//filters
+// filters for program page
+
+// button functions
 $(function () {
   $("a.All").click(function () {
     $(".card").show();
   });
+  // get the id on a button and match it to the class on a card
+  // hide the ones without that class
   $("a").click(function () {
     val = $(this).attr("id");
     $(".card:not(val)").hide();
@@ -37,9 +41,11 @@ $(function () {
 // Get the query string from the URL
 const queryString = window.location.search;
 
-// Get the value of the 'class' parameter from the query string
+// Get the value of the 'tab' parameter from the query string
 const urlParams = new URLSearchParams(queryString);
 const classParam = urlParams.get('tab');
+// this grabs the value of the querystring,
+// matches it with classes on cards to show them and hide others
 $(function () {
   $(".card:not(classParam)").hide();
   $(".card." + classParam).show();
