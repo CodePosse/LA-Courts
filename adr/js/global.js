@@ -27,28 +27,23 @@ $(function () {
   $("a.All").click(function () {
     $(".card").show();
   });
-  $("a.showCH").click(function () {
-    $(".card:not(.ch)").hide();
-    $(".ch").show();
+  $("a").click(function () {
+    val = $(this).attr("id");
+    $(".card:not(val)").hide();
+    $(".card." + val).show();
   });
-  $("a.showSC").click(function () {
-    $(".card:not(.sc)").hide();
-    $(".sc").show();
-  });
-  $("a.showLC").click(function () {
-    $(".card:not(.lc)").hide();
-    $(".lc").show();
-  });
-  $("a.showUD").click(function () {
-    $(".card:not(.ud)").hide();
-    $(".ud").show();
-  });
-  $("a.showFL").click(function () {
-    $(".card:not(.fl)").hide();
-    $(".fl").show();
-  });
-  $("a.showPROB").click(function () {
-    $(".card:not(.prob)").hide();
-    $(".prob").show();
-  });
+});
+
+// Get the query string from the URL
+const queryString = window.location.search;
+
+// Get the value of the 'class' parameter from the query string
+const urlParams = new URLSearchParams(queryString);
+const classParam = urlParams.get('tab');
+$(function () {
+  $(".card:not(classParam)").hide();
+  $(".card." + classParam).show();
+  if (classParam == null || i == NULL) {
+    $(".card").show();
+  }
 });
