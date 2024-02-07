@@ -40,11 +40,10 @@ $(function () {
 
 // Get the query string from the URL
 const queryString = window.location.search;
-
 // Get the value of the 'tab' parameter from the query string
+// https://www.url.com/page.html?tab=MYVALUE
 const urlParams = new URLSearchParams(queryString);
 const classParam = urlParams.get('tab');
-// this grabs the value of the querystring,
 // matches it with classes on cards to show them and hide others
 $(function () {
   $(".programs .card:not(classParam)").hide();
