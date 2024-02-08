@@ -70,10 +70,26 @@
             <div class="row">
                 <!--progam navigation-->
                 <div class="col-md-2 px-1 px-md-3">
-                    <h3 class="fs-4">ADR Programs</h3>
-                    <div class="border-bottom border-primary mt-3 me-2 border-2"></div>
-                    <div><small>Sort by case type</small></div>
-                    <div class="pt-2">
+                    <h3 class="fs-4 d-none d-md-block">ADR Programs</h3>
+                    <div class="border-top border-primary mt-3 me-md-2 border-2 d-none d-md-block"><small>Sort by case type</small></div>
+            
+                    <div class="dropdown d-block d-md-none my-2 pb-2">
+                        <button class="btn btn-lg btn-primary dropdown-toggle w-100" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Learn more
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><strong class="mx-2">Select Case Type</strong></li>
+                            <li><a class="dropdown-item" href="programs.html">All</a></li>
+                            <li><a class="dropdown-item" href="programs.html?tab=sc">Small Claims</a></li>
+                            <li><a class="dropdown-item" href="programs.html?tab=ud">Unlawful Detainer</a></li>
+                            <li><a class="dropdown-item" href="programs.html?tab=lc">Limited Civil</a></li>
+                            <li><a class="dropdown-item" href="programs.html?tab=ch">Civil Harassment</a></li>
+                            <li><a class="dropdown-item" href="programs.html?tab=fl">Family Law</a></li>
+                            <li><a class="dropdown-item" href="programs.html?tab=prob">Probate</a></li>
+                        </ul>
+                    </div>
+                    <div class="pt-2 d-none d-md-block">
                         <p><a href="javascript:void();" class="showSC" id="sc">Small Claims</a></p>
                         <p><a href="javascript:void();" class="showUD" id="ud">Unlawful Disaster</a></p>
                         <p><a href="javascript:void();" class="showLC" id="lc">Limited Civil</a></p>
