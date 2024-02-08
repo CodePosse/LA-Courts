@@ -26,9 +26,6 @@ console.dir(a);
 
 // button functions
 $(function () {
-  $("a.All").click(function () {
-    $(".card").show();
-  });
   // get the id on a button and match it to the class on a card
   // hide the ones without that class
   $("a").click(function () {
@@ -36,7 +33,6 @@ $(function () {
     $(".card:not(val)").hide();
     $(".card." + val).show();
   });
-});
 
 // Get the query string from the URL
 const queryString = window.location.search;
@@ -45,10 +41,9 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const classParam = urlParams.get('tab');
 // matches it with classes on cards to show them and hide others
-$(function () {
   $(".programs .card:not(classParam)").hide();
   $(".programs .card." + classParam).show();
   if (classParam == null || i == NULL) {
     $(".programs .card").show();
-  }
+  };
 });
