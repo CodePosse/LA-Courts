@@ -12,7 +12,7 @@ body {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
-  --court-gold: rgb(245,192,79);
+  --court-gold: rgb(245, 192, 79);
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
   font-display: swap;
@@ -78,10 +78,12 @@ button:disabled {
   color: var(--court-dkblue) !important;
 }
 .bg-ltblue,
-.btn-ltblue, .btn-info {
+.btn-ltblue,
+.btn-info {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
 }
-.btn-ltblue, .btn-info {
+.btn-ltblue,
+.btn-info {
   border-color: rgba(var(--court-ltblue), 0.9);
 }
 .bg-gold,
@@ -169,4 +171,84 @@ button:disabled {
 }
 .bd-callout-warning {
   border-color: var(--court-yellow) !important;
+}
+
+/* progress bars */
+#progress {
+  .progressbar-wrapper {
+    background: #fff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+  .progressbar li > span {
+    font-size: 20px;
+    color: #666;
+  }
+  .progressbar li:active {
+    color: black;
+  }
+  .progressbar li:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid green;
+    display: block;
+    text-align: center;
+    margin: 0 auto 3px auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #333;
+    top: 15px;
+    left: -50%;
+    z-index: 0;
+  }
+  .progressbar li:first-child:after {
+    content: none;
+  }
+  .progressbar li.active + li:after {
+    background-color: #333;
+  }
+  .progressbar li.active:before {
+    background: #55b776;
+    background-size: 60%;
+  }
+  .progressbar li.success:before {
+    background-color: #55b776;
+    color: #fff;
+    border-color: #55b776;
+  }
+  .progressbar li.active:before {
+    background-color: #fff;
+    color: #fff;
+    border-width: 5px;
+  }
+  .progressbar li.inactive:before {
+    border: 2px solid grey;
+  }
+  .progressbar li::before {
+    background: #fff url(user.svg) no-repeat center center;
+    background-size: 60%;
+  }
+  .progressbar li:before {
+    content: "\2713";
+    color: white;
+    font-weight: bold;
+  }
 }
