@@ -190,7 +190,7 @@ button:disabled {
     text-align: center;
   }
   .progressbar li > span {
-    font-size: 20px;
+    font-size: 18px;
     color: #666;
   }
   .progressbar li:active {
