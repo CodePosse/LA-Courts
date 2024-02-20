@@ -17,11 +17,9 @@ body {
   color: var(--court-black);
   font-display: swap;
 }
-
 a {
   color: var(--court-primary);
 }
-
 nav {
   background-color: #fff;
 }
@@ -117,7 +115,6 @@ button:disabled {
 .shadow1 {
   box-shadow: 2px 2px 1px #999;
 }
-
 .card-transparent,
 .card-transparent .card-header {
   background: transparent;
@@ -148,7 +145,6 @@ button:disabled {
 .bd-callout + .bd-callout {
   margin-top: -0.25rem;
 }
-
 .bd-callout {
   padding: 1.25rem;
   margin-top: 1.25rem;
@@ -208,7 +204,6 @@ button:disabled {
     position: relative;
     z-index: 2;
   }
-
   .progressbar li:after {
     width: 100%;
     height: 2px;
