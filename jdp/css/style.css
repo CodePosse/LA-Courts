@@ -192,8 +192,9 @@ button:disabled {
     font-size: 18px;
     color: #666;
   }
-  .progressbar li:active {
+  .progressbar li.active {
     color: black;
+    font-weight: bold;
   }
   .progressbar li:before {
     width: 30px;
@@ -241,8 +242,8 @@ button:disabled {
   .progressbar li.inactive:before {
     border: 2px solid grey;
   }
-  .progressbar li::before {
-    background: #fff url(user.svg) no-repeat center center;
+  .progressbar li:before {
+    background: #fff;
     background-size: 60%;
   }
   .progressbar li:before {
