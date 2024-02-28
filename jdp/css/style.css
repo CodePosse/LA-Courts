@@ -122,6 +122,7 @@ button:disabled {
 }
 .card-header {
   border-color: transparent;
+h3{font-size: 1.5rem;}
 }
 .transparent,
 .transparent li {
