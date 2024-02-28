@@ -120,9 +120,10 @@ button:disabled {
   background: transparent;
   border-color: transparent;
 }
+.card h3{font-size: 1.5rem;}
 .card-header {
   border-color: transparent;
-h3{font-size: 1.5rem;}
+
 }
 .transparent,
 .transparent li {
