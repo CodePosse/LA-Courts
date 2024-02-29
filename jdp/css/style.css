@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap);
 :root,
-html,
-body {
+body,
+html {
   font-size: 16px;
   --court-primary: #005498;
   --court-black: #231f20;
@@ -28,18 +27,17 @@ nav {
   color: #fff;
   border-bottom: 5px solid var(--court-gold);
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 div.lasc-logo {
   background-color: #1f303e;
 }
+footer a,
 header a,
-nav a,
-footer a {
+nav a {
   color: #fff;
   text-decoration: none;
 }
-
 footer {
   background-color: #000 !important;
   color: #fff;
@@ -52,7 +50,7 @@ footer .list-group-item {
   padding: 0.125rem;
 }
 .splash {
-  background: silver url("../img/splash4.jpg");
+  background: silver url(../img/splash4.jpg);
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,12 +74,12 @@ button:disabled {
   color: var(--court-dkblue) !important;
 }
 .bg-ltblue,
-.btn-ltblue,
-.btn-info {
+.btn-info,
+.btn-ltblue {
   background-color: rgba(var(--court-ltblue), 0.9) !important;
 }
-.btn-ltblue,
-.btn-info {
+.btn-info,
+.btn-ltblue {
   border-color: rgba(var(--court-ltblue), 0.9);
 }
 .bg-gold,
@@ -97,13 +95,12 @@ button:disabled {
 }
 .accordion-body,
 .accordion-button,
-.accordion-body,
 .accordion-header,
 .accordion-item {
   background-color: transparent;
 }
 .accordion-item {
-  border: 0px solid green;
+  border: 0 solid green;
   border-bottom: 1px solid var(--court-grey);
 }
 #components {
@@ -117,17 +114,18 @@ button:disabled {
 }
 .card-transparent,
 .card-transparent .card-header {
-  background: transparent;
+  background: 0 0;
   border-color: transparent;
 }
-.card h3{font-size: 1.5rem;}
+.card h3 {
+  font-size: 1.5rem;
+}
 .card-header {
   border-color: transparent;
-
 }
 .transparent,
 .transparent li {
-  background: transparent;
+  background: 0 0;
   border-color: transparent;
 }
 .accordion-item.noline {
@@ -135,15 +133,13 @@ button:disabled {
   padding-left: 0.125rem;
 }
 .accordion-item.noline .accordion-collapse {
-  background-color: white;
+  background-color: #fff;
   padding: 0.125rem;
 }
 .noline button.accordion-button,
 .noline::marker {
-  color: blue !important;
+  color: #00f !important;
 }
-
-/*callouts*/
 .bd-callout + .bd-callout {
   margin-top: -0.25rem;
 }
@@ -170,82 +166,77 @@ button:disabled {
 .bd-callout-warning {
   border-color: var(--court-yellow) !important;
 }
-
-/* progress bars */
 #progress {
-  .progressbar-wrapper {
-    background: #fff;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 5px;
-  }
-  .progressbar li {
-    list-style-type: none;
-    width: 25%;
-    float: left;
-    position: relative;
-    text-align: center;
-  }
-  .progressbar li > span {
-    font-size: 18px;
-    color: #666;
-  }
-  .progressbar li.active {
-    color: black;
-    font-weight: bold;
-  }
-  .progressbar li:before {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border: 2px solid green;
-    display: block;
-    text-align: center;
-    margin: 0 auto 3px auto;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-  }
-  .progressbar li:after {
-    width: 100%;
-    height: 2px;
-    content: "";
-    position: absolute;
-    background-color: #333;
-    top: 15px;
-    left: -50%;
-    z-index: 0;
-  }
-  .progressbar li:first-child:after {
-    content: none;
-  }
-  .progressbar li.active + li:after {
-    background-color: #333;
-  }
-  .progressbar li.active:before {
-    background: #55b776;
-    background-size: 60%;
-  }
-  .progressbar li.success:before {
-    background-color: #55b776;
-    color: #fff;
-    border-color: #55b776;
-  }
-  .progressbar li.active:before {
-    background-color: #fff;
-    color: #fff;
-    border-width: 5px;
-  }
-  .progressbar li.inactive:before {
-    border: 2px solid grey;
-  }
-  .progressbar li:before {
-    background: #fff;
-    background-size: 60%;
-  }
-  .progressbar li:before {
-    content: "\2713";
-    color: white;
-    font-weight: bold;
-  }
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.progressbar li > span {
+  font-size: 18px;
+  color: #666;
+}
+.progressbar li.active {
+  color: #000;
+  font-weight: 700;
+}
+.progressbar li:before {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid green;
+  display: block;
+  text-align: center;
+  margin: 0 auto 3px auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #333;
+  top: 15px;
+  left: -50%;
+  z-index: 0;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active + li:after {
+  background-color: #333;
+}
+.progressbar li.active:before {
+  background: #55b776;
+  background-size: 60%;
+}
+.progressbar li.success:before {
+  background-color: #55b776;
+  color: #fff;
+  border-color: #55b776;
+}
+.progressbar li.active:before {
+  background-color: #fff;
+  color: #fff;
+  border-width: 5px;
+}
+.progressbar li.inactive:before {
+  border: 2px solid grey;
+}
+.progressbar li:before {
+  background: #fff;
+  background-size: 60%;
+}
+.progressbar li:before {
+  content: "\2713";
+  color: #fff;
+  font-weight: 700;
 }
