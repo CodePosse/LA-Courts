@@ -7,7 +7,7 @@ cheerio = require('gulp-cheerio'); //jquery
 
 
 gulp.task('miniHTML', async function() {
-    gulp.src('./jury/*.html') //DUDE, CHANGE ME
+    gulp.src('./jdp/*.html') //DUDE, CHANGE ME
         .pipe(plumber())
         .pipe(htmlmin({
             collapseWhitespace: true,
@@ -15,7 +15,7 @@ gulp.task('miniHTML', async function() {
             minifyCSS: true,
             minifyJS: true
         }))
-        .pipe(gulp.dest('./jury/')); //DUDE, CHANGE ME
+        .pipe(gulp.dest('./jdp/')); //DUDE, CHANGE ME
 });
 
 gulp.task('prettyHTML', async function(resolve) {
@@ -25,7 +25,7 @@ gulp.task('prettyHTML', async function(resolve) {
         .pipe(gulp.dest('./jdp/')); //DUDE, CHANGE ME
 });
 gulp.task('unstyle', async function(resolve) {
-    gulp.src('./jury/excuse.html') //DUDE, CHANGE ME
+    gulp.src('./jdp/excuse.html') //DUDE, CHANGE ME
         .pipe(plumber())
         .pipe(
             cheerio(function($, file) {
@@ -33,5 +33,5 @@ gulp.task('unstyle', async function(resolve) {
             }),
           )
           .pipe(prettify())
-        .pipe(gulp.dest('./jury/')); //DUDE, CHANGE ME
+        .pipe(gulp.dest('./jdp/')); //DUDE, CHANGE ME
 });
