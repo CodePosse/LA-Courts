@@ -169,6 +169,10 @@ footer .card-header {
     .row {
       padding: 0px !important;
     }
+   #prog .border-bottom,
+    #prog .card {
+      border: none !important;
+    }
     .xs-nopad {
       padding: 0 !important;
       em {
