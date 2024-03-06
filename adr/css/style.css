@@ -163,5 +163,8 @@ footer .card-header {
       padding: 0px !important;
     }
     .border-bottom, .card{border:none !important}
+    .xs-nopad {padding:0 !important;
+    em {padding-left:8px}
+  }
   }
 }
