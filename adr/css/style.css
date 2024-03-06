@@ -14,13 +14,13 @@ body {
   --court-ltgrey: #eee;
   --court-gold: #f5c04f;
   font-family: Lato, calibri, Tahoma, Arial, monotype;
-  color: var(--court-black);
+  color:#4C525A !important;
   font-display: swap;
 }
-h1{font-size: 48px !important}
-h2{font-size: 24px !important}
-h3{font-size: 18px !important;}
-h4{font-size: 16px !important;}
+h1{font-size: 48px !important;color: var(--court-black)}
+h2{font-size: 24px !important;color: var(--court-black)}
+h3{font-size: 18px !important;color: var(--court-black)}
+h4{font-size: 16px !important;color: var(--court-black)}
 a {
   color: var(--court-primary);
 }
@@ -126,6 +126,7 @@ button:disabled {
 .card-img-top {
   border-radius: 0 !important;
 }
+.card-text{color:#4C525A !important;}
 .card-transparent,
 .card-transparent .card-header {
   background: transparent;
@@ -167,10 +168,6 @@ footer .card-header {
     padding: 0px !important;
     .row {
       padding: 0px !important;
-    }
-    .border-bottom,
-    .card {
-      border: none !important;
     }
     .xs-nopad {
       padding: 0 !important;
