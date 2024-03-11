@@ -218,6 +218,10 @@ button:disabled {
   background: #55b776;
   background-size: 60%;
 }
+.progressbar li.error:before {
+  background: red;
+  background-size: 60%;
+}
 .progressbar li.success:before {
   background-color: #55b776;
   color: #fff;
@@ -238,5 +242,9 @@ button:disabled {
 .progressbar li:before {
   content: "\2713";
   color: #fff;
+  font-weight: 700;
+}
+.progressbar li.error:before {
+  color: red;
   font-weight: 700;
 }
