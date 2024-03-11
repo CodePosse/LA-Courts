@@ -245,6 +245,8 @@ button:disabled {
   font-weight: 700;
 }
 .progressbar li.error:before {
-  color: red;
+  content: "\2298";
+  color: #fff;
+  line-height: 25px;
   font-weight: 700;
 }
