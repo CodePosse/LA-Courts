@@ -28,7 +28,7 @@ console.dir(a);
 $(function () {
   // get the id on a button and match it to the class on a card
   // hide the ones without that class
-  $("a").click(function () {
+  $("a.links").click(function () {
     val = $(this).attr("id");
     $(".card:not(val)").hide();
     $(".card." + val).show();
