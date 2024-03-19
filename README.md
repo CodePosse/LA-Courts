@@ -9,6 +9,8 @@ This is just a scratch pad to show snippets to the city dev teams
 
 ![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/codeposse/LA-Courts/master/package-lock.json&query=$.devDependencies.gulp.version&label=gulp&logo=gulp)
 
+![Gulp](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/codeposse/LA-Courts/master/package-lock.json&query=$.dependencies.gulp.version&label=gulp&logo=gulp)
+
 
 - CARE Court: [demo](https://codeposse.github.io/LA-Courts/care/) | [prod](https://www.lacourt.org/care/)
 - Jury Duty Portal: [Demo1](https://codeposse.github.io/LA-Courts/jdp/) Demo2 | [prod](https://juryportal.lacourt.org/webportal/)
