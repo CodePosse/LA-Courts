@@ -1,96 +1,83 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <title>Jury Duty Portal:</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <meta name="theme-color" content="#012362">
-  <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
-</head>
-
-<body>
-  <div class="container my-2 bg-light py-0 my-0">
-    <div class="row">
-      <div class="col-md-5 card border-primary p-0">
-        <div class="card-header bg-primary text-white">User Flow</div>
-        <div class="card-body text-primary">
-          <h5 class="card-title">Steps and States</h5>
-          <p class="card-text bg-white"></p>
-          <ul>
-            <li><a href="components.html">Components</a></li>
-          </ul><strong>Steps:</strong>
-          <ol>
-            <li>Step 1: <small>(Data Collection)</small>
-              <ol>
-                <li><a href="step1-1.html">1.1 - All items incomplete</a></li>
-                <li><a href="#"><span class="text-danger">[COMING SOON]</span>1.2 - Some items incomplete/unverified</a>
-                </li>
-                <li><a href="#"><span class="text-danger">[COMING SOON]</span>1.3 - All items completed/verified</a>
-                </li>
-              </ol>
-            </li>
-            <li>Step 2: <small>(Pending)</small>
-              <ol>
-                <li><a href="step2-1.html">2.1 - Educate</a></li>
-                <li><a href="#"><span class="text-danger">[COMING SOON]</span>2.2 - Change Requested</a></li>
-                <li><a href="#"><span class="text-danger">[COMING SOON]</span>2.3 - Change Resolution</a></li>
-              </ol>
-            </li>
-            <li>Step 3: <small>(Service Week)</small>
-              <ol>
-                <li><a href="step3-1.html">3.1 - On Call</a></li>
-                <li><a href="#"><span class="text-danger">[COMING SOON]</span>3.2 - Assigned</a></li>
-              </ol>
-            </li>
-            <li>Step 4: <small>(End States)</small>
-              <ol>
-                <li><a href="step4-1.html">4.1 - Completed</a></li>
-                <li><a href="step4-2.html">4.2 - Excused</a></li>
-                <li>Service Week, reporting date passed/not enough call
-                  <ol type="a">
-                    <li><a href="step4-3a.html"><span class="text-danger">[COMING SOON]</span> TBD</a></li>
-                    <li><a href="step4-3b.html"><span class="text-danger">[COMING SOON]</span> TBD</a></li>
-                    <li><a href="step4-3c.html"><span class="text-danger">[COMING SOON]</span> TBD</a></li>
-                  </ol>
-                </li>
-                <li>Failure to appear
-                  <ol type="a">
-                    <li><a href="step4-4a.html">4.4a - FTA</a></li>
-                    <li><a href="step4-4b.html">4.4b - FTA no more postponing</a></li>
-                  </ol>
-                </li>
-                <li><a href="step4-5.html">4.5 - Ineligible</a></li>
-                <li>4.6 Deceased
-                  <ol type="a">
-                    <li><a href="step4-6a.html"><span class="text-danger">[COMING SOON]</span>4.6a - submitted req</a></li>
-                    <li><a href="step4-6b.html"><span class="text-danger">[COMING SOON]</span>4.6b - cert needed</a></li>
-                    <li><a href="step4-6c.html"><span class="text-danger">[COMING SOON]</span>4.6c - excused</a></li>
-                  </ol>
-                </li>
-                <li><a href="step4-7.html"><span class="text-danger">[COMING SOON]</span>4.7 - Record Not Found</a></li>
-                <li><a href="step4-8.html"><span class="text-danger">[COMING SOON]</span>4.8 - Sanctions</a></li>
-              </ol>
-            </li>
-
-
-          </ol>
+  <head>
+    <title>Jury Duty Portal:</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="theme-color" content="#012362">
+    <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+  </head>
+  <body>
+    <div class="container my-2 bg-light py-0 my-0">
+      <div class="row">
+        <div class="col-md-5 card border-primary p-0">
+          <div class="card-header bg-primary text-white">User Flow</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">Steps and States</h5>
+            <p class="card-text bg-white"></p>
+            <ul>
+              <li><a href="components.html">Components</a></li>
+            </ul><strong>Steps:</strong>
+            <ol>
+              <li>Step 1: <small>(Data Collection)</small>
+                <ol>
+                  <li><a href="step1-1.html">1.1 - All items incomplete</a></li>
+                  <li><a href="#"><span class="text-danger">[COMING SOON]</span>1.2 - Some items incomplete/unverified</a></li>
+                  <li><a href="#"><span class="text-danger">[COMING SOON]</span>1.3 - All items completed/verified</a></li>
+                </ol>
+              </li>
+              <li>Step 2: <small>(Pending)</small>
+                <ol>
+                  <li><a href="step2-1.html">2.1 - Educate</a></li>
+                  <li><a href="#"><span class="text-danger">[COMING SOON]</span>2.2 - Change Requested</a></li>
+                  <li><a href="#"><span class="text-danger">[COMING SOON]</span>2.3 - Change Resolution</a></li>
+                </ol>
+              </li>
+              <li>Step 3: <small>(Service Week)</small>
+                <ol>
+                  <li><a href="step3-1.html">3.1 - On Call</a></li>
+                  <li><a href="#"><span class="text-danger">[COMING SOON]</span>3.2 - Assigned</a></li>
+                </ol>
+              </li>
+              <li>Step 4: <small>(End States)</small>
+                <ol>
+                  <li><a href="step4-1.html">4.1 - Completed</a></li>
+                  <li><a href="step4-2.html">4.2 - Excused</a></li>
+                  <li>Service Week, reporting date passed/not enough call<ol type="a">
+                      <li><a href="step4-3a.html"><span class="text-danger">[COMING SOON]</span> Report Day Has Passed</a></li>
+                      <li><a href="step4-3b.html"><span class="text-danger">[COMING SOON]</span> Not Enough Calls</a></li>
+                      <li><a href="step4-3c.html"><span class="text-danger">[COMING SOON]</span> Report Time Has Passed</a></li>
+                    </ol>
+                  </li>
+                  <li>Failure to appear<ol type="a">
+                      <li><a href="step4-4a.html">4.4a - FTA</a></li>
+                      <li><a href="step4-4b.html">4.4b - FTA no more postponing</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="step4-5.html">4.5 - Ineligible</a></li>
+                  <li>4.6 Deceased<ol type="a">
+                      <li><a href="step4-6a.html"><span class="text-danger">[COMING SOON]</span>4.6a - submitted req</a></li>
+                      <li><a href="step4-6b.html"><span class="text-danger">[COMING SOON]</span>4.6b - cert needed</a></li>
+                      <li><a href="step4-6c.html"><span class="text-danger">[COMING SOON]</span>4.6c - excused</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="step4-7.html"><span class="text-danger">[COMING SOON]</span>4.7 - Record Not Found</a></li>
+                  <li><a href="step4-8.html"><span class="text-danger">[COMING SOON]</span>4.8 - Sanctions</a></li>
+                </ol>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <script src="./js/global.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="./js/global.js"></script>
+  </body>
 </html>
