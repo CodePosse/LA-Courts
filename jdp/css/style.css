@@ -190,7 +190,7 @@ button:disabled {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  border: 2px solid green;
+  border: 2px solid #55b776;
   display: block;
   text-align: center;
   margin: 0 auto 3px auto;
@@ -218,10 +218,6 @@ button:disabled {
   background: #55b776;
   background-size: 60%;
 }
-.progressbar li.error:before {
-  background: red;
-  background-size: 60%;
-}
 .progressbar li.success:before {
   background-color: #55b776;
   color: #fff;
@@ -245,8 +241,13 @@ button:disabled {
   font-weight: 700;
 }
 .progressbar li.error:before {
+  background: red;
+  background-size: 60%;
+  border: 5px solid red;
   content: "\2298";
-  color: #fff;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: 700;
+}
+.progressbar li.danger:before {
+  border: 5px solid red;
 }
