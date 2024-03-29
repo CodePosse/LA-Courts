@@ -11,6 +11,7 @@ html {
   --court-yellow: #f3c727;
   --court-grey: #95a3ab;
   --court-ltgrey: #eee;
+  --prog-green: #55b776;
   --court-gold: rgb(245, 192, 79);
   font-family: calibri, Tahoma, Arial, monotype;
   color: var(--court-black);
@@ -190,7 +191,7 @@ button:disabled {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  border: 2px solid #55b776;
+  border: 2px solid var(--court-grey);
   display: block;
   text-align: center;
   margin: 0 auto 3px auto;
@@ -215,13 +216,14 @@ button:disabled {
   background-color: #333;
 }
 .progressbar li.active:before {
-  background: #55b776;
+  background: var(--prog-green);
   background-size: 60%;
+  border-color: var(--prog-green);
 }
 .progressbar li.success:before {
-  background-color: #55b776;
+  background-color: var(--prog-green);
   color: #fff;
-  border-color: #55b776;
+  border-color: var(--prog-green);
 }
 .progressbar li.active:before {
   background-color: #fff;
