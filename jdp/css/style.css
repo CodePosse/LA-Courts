@@ -166,7 +166,7 @@ button:disabled {
 .bd-callout-warning {
   border-color: var(--court-yellow) !important;
 }
-#progress {
+#progress .progressbar {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 5px;
