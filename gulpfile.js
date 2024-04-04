@@ -1,7 +1,6 @@
 var gulp = require("gulp");
 var plumber = require('gulp-plumber'); //error handler
 var prettify = require('gulp-prettify'); //properly formats HTML
-var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin'); //html uglify
 cheerio = require('gulp-cheerio'); //jquery
 
@@ -35,3 +34,4 @@ gulp.task('unstyle', async function(resolve) {
           .pipe(prettify())
         .pipe(gulp.dest('./jdp/')); //DUDE, CHANGE ME
 });
+gulp.task('mega', gulp.series('miniHTML','prettyHTML'));
