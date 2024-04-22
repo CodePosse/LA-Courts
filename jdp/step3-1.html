@@ -97,31 +97,41 @@
       <div class="row py-md-4 px-md-3">
         <div class="col-md-4">
           <div class="card  card-transparent">
-          <div class="card-header"><h3 class="p-0 m-0">Check Here</h3></div>
-          <div class="card-body">
-           
+            <div class="card-header">
+              <h3 class="p-0 m-0">Check Here</h3>
+            </div>
+            <div class="card-body">
+
+            </div>
           </div>
-        </div></div>
+        </div>
         <div class="col-md-4">
           <div class="card  h-100 shadow1">
             <div class="card-header bg-ltgrey">
               <h3 class="p-0 m-0">Reporting Instructions</h3>
             </div>
             <div class="card-body">
-              <p>You <strong>do not</strong> need to report to the courthouse on <strong>Monday, Oct. 9, 2024</strong>.
-                Check for your next instructions any time between:</p>
-              <p><strong>Monday Oct. 9 2024 at 7:00PM -<br>Tuesday Oct. 10 2024 at 6:00AM</strong></p>
-              <p>Your next reporting instructions will be ready in: <strong>11 Days 13 Hours 05 Minutes 40
-                  Seconds</strong></p>
-              <p><a href="cal.ics" rel="noopener" target="_blank" class="btn btn-primary">Download Calender Reminder <i
-                    class="fa-solid fa-calendar-plus mt-1 ms-2"></i></a></p>
-              <p>How to avoid a <a href="#" data-bs-toggle="modal" data-bs-target="#FTAModal">Failure to Appear</a>
+              <p><strong>You do not need to report</strong> to the courthouse on Monday, December 9, 2023.
+              </p>
+              <p><strong>Check your next reporting instructions between: </strong>
+              <div class="text-center">Friday, December 15, 2023 7:00 PM <br><i
+                  class="fa-solid fa-arrows-up-down text-primary fs-3"></i><br>Monday, December 18, 2023 6:00 AM </div>
+              </p>
+              <p>Check your reporting instructions on this website or by
+                calling (213) 972-0970. You'll receive instructions to either report to the courthouse or to check again
+                for the next day. </p>
+              <hr>
+              <p class="text-center"><a href="cal.ics" rel="noopener" target="_blank" class="btn btn-primary">Download
+                  Calender Reminder <i class="fa-solid fa-calendar-plus mt-1 ms-2"></i></a></p>
+
+              <p class="text-center">How to avoid a <a href="#" data-bs-toggle="modal"
+                  data-bs-target="#FTAModal">Failure to Appear</a>
                 notice?</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow1">
+          <div class="card shadow1">
             <div class="card-header bg-ltgrey">
               <h3 class="p-0 m-0">Courthouse Location</h3>
             </div>
@@ -129,20 +139,25 @@
               <p class="card-text"><span class="fw-bold">Airport Courthouse</span><br>11701 S. La Cienega<br>Los
                 Angeles, CA 90045<br><a href="javascript:void();" class="text-danger" data-bs-toggle="modal"
                   data-bs-target="#importantInfoModal">IMPORTANT INFORMATION</a></p>
-       <hr>
-                  <p class="card-text"><a href="#" class="btn btn-primary">View Juror Checklist <i
-                    class="fa-solid fa-check ms-3"></i></a></p>
-              <p class="card-text"><a href="#" class="btn btn-gold text-dark">Watch Orientation Video <i
-                    class="fa-regular fa-circle-play ms-3"></i></a></p>
-              <p class="card-text"><a href="#safety" class="btn btn-warning">Important Safety Information <i
-                    class="fa-solid fa-shield ms-3"></i></a></p>
-              <p class="card-text"><a href="#spechand" class="btn btn-secondary">Special Handling</a></p>
-              <p class="card-text"><a href="#faqs" class="btn btn-dark">FAQs</a></p>
               <hr>
               <div class="row pb-3">
                 <div class="col-2 pe-5"><i class="fa-solid fa-wheelchair fs-3 mt-2 text-primary"></i></div>
                 <div class="col-9 p-0 m-0"><a href="#">Access Information for Persons with Disabilities</a></div>
               </div>
+
+            </div>
+          </div>
+          <div class="card shadow1 mt-4">
+            <div class="card-header bg-ltgrey">
+              <h3 class="p-0 m-0">Get Ready</h3>
+            </div>
+            <div class="card-body text-center">
+              <p class="card-text"><a href="#" class="btn btn-primary w-75">View Juror Checklist <i
+                    class="fa-solid fa-list-check ms-3"></i></a></p>
+              <p class="card-text"><a href="#" class="btn btn-gold text-dark w-75">Watch Orientation Video <i
+                    class="fa-regular fa-circle-play ms-3"></i></a></p>
+              <p class="card-text"><a href="#faqs" class="btn btn-primary w-75">FAQs</a></p>
+
             </div>
           </div>
         </div>
@@ -873,6 +888,93 @@
       </div>
     </div>
   </footer>
+
+
+  <!--FTA Modal -->
+  <div class="modal fade" id="FTAModal" tabindex="-1" aria-labelledby="FTAModalLabel" aria-hidden="true">
+    <div class="modal-dialog border border-danger">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h1 class="modal-title fs-5" id="FTAModalLabel">Failure to Appear</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-danger"> Be sure to check your reporting instructions by visiting this website or by
+          calling (213) 972-0970. Your calls and your visits to this website are monitored. Failure to check reporting
+          instructions during your reporting week as instructed on even one day may result in a Failure to Appear notice
+          to be mailed to you and your jury service will be rescheduled. </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Request to be Excused modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
+      <div class="modal-content border-2 border-info">
+        <div class="modal-header bg-info">
+          <div class="modal-title fw-bold fs-5" id="exampleModalLabel">Request to be Excused</div><button type="button"
+            class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="border border-warning rounded px-2 py-1 my-1">
+            <p>You are requesting an excuse from jury service The law requires that the excuse that you provide be in
+              writing and legally sufficient. By law there are a limited number of reasons for excuse from service.</p>
+            <p>Please note that it is perjury to provide any false information on this form Please select the reason(s)
+              that describes your current situation.</p>
+            <p>If your situation is not covered by the selections listed please call (213) 972-0970 to speak to an agent
+              during the hours of 8:00 AM to 4-30 PM (Pacific Standard Time) Monday through Friday.</p>
+          </div>
+          <div class="col-md-6 my-3"><select class="form-select" aria-label="Default select example">
+              <option disabled="disabled">Please select one</option>
+              <option value="1">Medical Excuse</option>
+              <option value="2">Financial Hardship</option>
+              <option value="3">Personal Obligation (Fulltime Care)</option>
+              <option value="4">Transportation</option>
+              <option value="5">Prior Service</option>
+              <option value="6">Other</option>
+            </select></div>
+          <div class="bd-callout bd-callout-danger col-12 my-3">
+            <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony
+                punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+            <div class="ps-2 py-2 row">
+              <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input"
+                  name="certifybox"><label for="certifybox" id="lblCertifyBox">I certify under penalty of perjury under
+                  the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure
+                  Sec. 2015.5(b)).</label></div>
+            </div>
+            <div class="ps-2 row">
+              <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input"
+                  name="signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use this as my
+                  electronic signature.</label></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light"><button type="button" class="btn btn-primary">Submit</button> <button
+            type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- Important Imnfo Modal -->
+  <div class="modal fade" id="importantInfoModal" tabindex="-1" aria-labelledby="importantInfoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-xl-down">
+      <div class="modal-content">
+        <div class="modal-header bg-info ">
+          <h1 class="modal-title fs-5" id="importantInfoModalLabel">Important Information</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>All reporting jurors must be ready to serve at the Criminal Justice Center, the Stanley Mosk Courthouse,
+            the Metropolitan Courthouse, the East Los Angeles Courthouse, Spring Street Courthouse, or the Hollywood
+            Courthouse.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
   <script src="./js/global.js"></script>
