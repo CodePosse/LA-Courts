@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-12 row d-flex justify-content-center m-0 p-0">
                   <div class="col-md-8 mt-3"><a href="#preplist" class="btn btn-info w-100 border-primary">Juror Checklist</a></div>
-                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#videoModalToggle">Watch Orientation Video</button></div>
+                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Orientation Video</button></div>
                   <hr><span>Additional information:</span>
                   <div class="col-md-8 mt-3"><a href="#specialhandling" class="btn btn-info w-100">Special Handling</a>
                   </div>
@@ -122,7 +122,7 @@
             <div class="card-body">
               <div class="row card-text">
                 <div class="col-12 pt-3"><span class="fw-bold">Airport Courthouse</span><br>11701 S. La Cienega<br>Los Angeles, CA 90045<br>
-                  <p><a href="javascript:void();" class="text-danger" data-bs-toggle="modal" data-bs-target="#importantInfoModal">IMPORTANT INFORMATION</a></p><a href="https://www.google.com/maps/dir/34.1128172,-118.4399073/Airport+Courthouse,+11701+La+Cienega+Blvd,+Los+Angeles,+CA+90045/@34.0203271,-118.4884257,12z/data=!3m2!4b1!5s0x80c2eb0795f133af:0x837d1aae18446a98!4m17!1m6!3m5!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2sAirport+Courthouse!8m2!3d33.9281959!4d-118.371315!4m9!1m1!4e1!1m5!1m1!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2m2!1d-118.371315!2d33.9281959!3e0" target="_blank">Get Directions <i class="fa-solid fa-location-dot mt-1"></i></a><br><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#court-info-Modal">General info: Parking, Services, More <i class="fa-solid fa-magnifying-glass-location"></i></a>
+                  <p><a href="javascript:void();" class="text-danger" data-bs-toggle="modal" data-bs-target="#importantInfoModal">IMPORTANT INFORMATION</a></p><a href="https://www.google.com/maps/dir/34.1128172,-118.4399073/Airport+Courthouse,+11701+La+Cienega+Blvd,+Los+Angeles,+CA+90045/@34.0203271,-118.4884257,12z/data=!3m2!4b1!5s0x80c2eb0795f133af:0x837d1aae18446a98!4m17!1m6!3m5!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2sAirport+Courthouse!8m2!3d33.9281959!4d-118.371315!4m9!1m1!4e1!1m5!1m1!1s0x80c2b6be7f4ff417:0x8d238d4a018af802!2m2!1d-118.371315!2d33.9281959!3e0" target="_blank">Get Directions <i class="fa-solid fa-location-dot mt-1"></i></a><br><a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#generalInfoModal">General info: Parking, Services, More <i class="fa-solid fa-magnifying-glass-location"></i></a>
                   <p></p>
                   <p class="mb-0 pb-0"><span class="fw-bold">Request Change(s)</span></p>
                   <ul>
@@ -136,11 +136,11 @@
           </div>
         </div>
         <!--court info Modal-->
-        <div class="modal fade" id="court-info-Modal" tabindex="-1" aria-labelledby="court-info-ModalLabel" aria-hidden="true">
+        <div class="modal fade" id="generalInfoModal" tabindex="-1" aria-labelledby="generalInfoModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
             <div class="modal-content border-2 border-info">
               <div class="modal-header bg-info">
-                <h1 class="modal-title fs-5" id="court-info-ModalLabel">More Court Info</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="generalInfoModalLabel">More Court Info</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="container-fluid">
@@ -697,11 +697,11 @@
       </div>
     </div>
     <!--quiz modal-->
-    <div class="modal fade" id="videoModalToggle" aria-hidden="true" aria-labelledby="videoModalToggleLabel" tabindex="-1">
+    <div class="modal fade" id="videoModal" aria-hidden="true" aria-labelledby="videoModalLabel" tabindex="-1">
       <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
         <div class="modal-content border-2 border-info">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="videoModalToggleLabel">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="videoModalLabel">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p>The law requires that you participate in the orientation process each time you are summoned for jury service to ensure you understand your role and responsibilities as a trial juror. You must complete the orientation prior to reporting for jury service.</p>
@@ -720,16 +720,16 @@
             </ul>
             </p>
           </div>
-          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#videoModalToggle2" data-bs-toggle="modal">Watch Video</button></div>
+          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#videoModal2" data-bs-toggle="modal">Watch Video</button></div>
         </div>
       </div>
     </div>
     <!--video modal-->
-    <div class="modal fade" id="videoModalToggle2" aria-hidden="true" aria-labelledby="videoModalToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="videoModal2" aria-hidden="true" aria-labelledby="videoModalLabel2" tabindex="-1">
       <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
         <div class="modal-content border-2 border-info">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="videoModalToggleLabel2">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="videoModalLabel2">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body"><iframe width="100%" height="400px" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           <div class="modal-footer bg-light"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button></div>
