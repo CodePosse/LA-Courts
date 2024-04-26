@@ -19,7 +19,7 @@
       <div class="container py-1">
         <div class="row">
           <div class="col-md-9"><a href="./"><img src="./img/lacourt_logo_white.png" alt="" style="max-height:80px" class="img-fluid"><span class="sr-only">Return to home page</span></a></div>
-          <div class="col-md-3 d-flex justify-content-end mt-4 pe-md-5"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope position-relative fs-2 text-dkblue"><span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" data-bs-toggle="modal" data-bs-target="#dangerModal" class="fa-solid fa-bullhorn ms-4 position-relative fs-2 text-dkblue"><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"><span class="visually-hidden">New alerts</span> </span></a><a class="fa-solid fa-comments fs-2 ms-4 text-dkblue" href="#" title="Suggestion Box" data-bs-toggle="modal" data-bs-target="#suggestionModal"></a></div>
+          <div class="col-md-3 d-flex justify-content-end mt-4 pe-md-5"><a href="#" data-bs-toggle="modal" data-bs-target="#inboxModal" class="fa-solid fa-envelope position-relative fs-2 text-dkblue"><span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger fs-6">9+ <span class="visually-hidden">unread messages</span> </span></a><a href="#" data-bs-toggle="modal" data-bs-target="#announceModal" class="fa-solid fa-bullhorn ms-4 position-relative fs-2 text-dkblue"><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"><span class="visually-hidden">New alerts</span> </span></a><a class="fa-solid fa-comments fs-2 ms-4 text-dkblue" href="#" title="Suggestion Box" data-bs-toggle="modal" data-bs-target="#suggestionModal"></a></div>
         </div>
       </div>
       <div class="container-fluid">
@@ -646,11 +646,11 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal fade" id="announceModal" tabindex="-1" aria-labelledby="announceModalLabel" aria-hidden="true" data-bs-backdrop="static">
       <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header bg-warning text-dark">
-            <h5 class="modal-title" id="dangerModalLabel">Court Announcements <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5><a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
+            <h5 class="modal-title" id="announceModalLabel">Court Announcements <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5><a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
           </div>
           <div class="modal-body">
             <div class="card border-warning rounded-2 mb-3">
@@ -949,7 +949,7 @@
     <script>
       window.onload = () =>
       {
-        $("#dangerModal").modal("show");
+        $("#announceModal").modal("show");
         $('.laborcode').hide();
       };
       $(document).ready(function()

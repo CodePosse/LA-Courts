@@ -340,12 +340,12 @@
         </div>
       </div>
     </div>
-    <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dangerModal">Launch demo modal</button>
-    <div class="modal fade" id="dangerModal" tabindex="-1" aria-labelledby="dangerModalLabel" aria-hidden="true">
+    <div class="chatbot"><span class="badge rounded-pill bg-court-ltblue">Chatbot <i class="fa-solid fa-comment-dots"></i></span></div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#announceModal">Launch demo modal</button>
+    <div class="modal fade" id="announceModal" tabindex="-1" aria-labelledby="announceModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header bg-danger text-white">
-            <h5 class="modal-title" id="dangerModalLabel">COURT ANNOUNCEMENTS <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5><a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
+            <h5 class="modal-title" id="announceModalLabel">COURT ANNOUNCEMENTS <i class="fa-solid fa-triangle-exclamation text-warning"></i></h5><a type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></a>
           </div>
           <div class="modal-body">
             <div class="container">
@@ -400,7 +400,7 @@
     <script>
       window.onload = () =>
       {
-        $("#dangerModal").modal("show")
+        $("#announceModal").modal("show")
       };
       (function blink()
       {
