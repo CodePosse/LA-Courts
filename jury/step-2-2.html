@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-12 row d-flex justify-content-center m-0 p-0">
                   <div class="col-md-8 mt-3"><a href="#preplist" class="btn btn-info w-100 border-primary">Juror Checklist</a></div>
-                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#quizModalToggle">Watch Orientation Video</button></div>
+                  <div class="col-md-8 my-3"><button type="button" class="btn btn-info w-100 border-primary" data-bs-toggle="modal" data-bs-target="#quizModal">Watch Orientation Video</button></div>
                   <hr><span>Additional information:</span>
                   <div class="col-md-8 mt-3"><a href="#specialhandling" class="btn btn-info w-100">Special Handling</a></div>
                   <div class="col-md-8 mt-3"><a href="#faqs" class="btn btn-info w-100">FAQs</a></div>
@@ -595,25 +595,25 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="quizModalToggle" aria-hidden="true" aria-labelledby="quizModalToggleLabel" tabindex="-1">
+    <div class="modal fade" id="quizModal" aria-hidden="true" aria-labelledby="quizModalLabel" tabindex="-1">
       <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
         <div class="modal-content border-2 border-info">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="quizModalToggleLabel">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="quizModalLabel">Orientation Video</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body"><iframe width="100%" height="auto" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="lofi hip hop radio - beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#quizModalToggle2" data-bs-toggle="modal">Take Quiz</button></div>
+          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#quizModal2" data-bs-toggle="modal">Take Quiz</button></div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="quizModalToggle2" aria-hidden="true" aria-labelledby="quizModalToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="quizModal2" aria-hidden="true" aria-labelledby="quizModalLabel2" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content border-2 border-info">
           <div class="modal-header bg-info">
-            <h5 class="modal-title" id="quizModalToggleLabel2">Orientation Quiz</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="quizModalLabel2">Orientation Quiz</h5><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">Quiz step 1 here.</div>
-          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#quizModalToggle" data-bs-toggle="modal">Rewatch Video</button> <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button></div>
+          <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-target="#quizModal" data-bs-toggle="modal">Rewatch Video</button> <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button></div>
         </div>
       </div>
     </div>
