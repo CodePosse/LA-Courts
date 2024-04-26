@@ -84,7 +84,7 @@
                   <p>We need you to answer some questions to determine if you are eligible for Jury Duty or not.</p>
                 </div>
                 <div class="col"><strong>Your Status:</strong> <span class="badge rounded-pill bg-danger">Not done yet <a href="javascript:void();" class="fa-solid fa-circle-question text-decoration-none" data-bs-toggle=" tooltip " data-bs-placement=" bottom " title=" Tooltip on bottom"></a></span></div>
-                <div class="col-12 mt-3 text-center"><button class="btn btn-primary btn-lg" data-bs-target="#questToggle" data-bs-toggle="modal">Answer</button></div>
+                <div class="col-12 mt-3 text-center"><button class="btn btn-primary btn-lg" data-bs-target="#summonsToggle" data-bs-toggle="modal">Answer</button></div>
               </div>
             </div>
           </div>
@@ -523,11 +523,11 @@
       </div>
     </footer>
     <!--summons modal-->
-    <div class="modal fade" id="questToggle" aria-hidden="true" aria-labelledby="questToggleLabel" tabindex="-1">
+    <div class="modal fade" id="summonsToggle" aria-hidden="true" aria-labelledby="summonsToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header bg-info">
-            <h1 class="modal-title fs-5" id="questToggleLabel">Jury Summons</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="summonsToggleLabel">Jury Summons</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form class="container needs-validation" novalidate id="questionnaire">
@@ -715,17 +715,17 @@
                 </div>
               </div>
             </form>
-            <div class="modal-footer"><button class="btn btn-primary btn-lg my-1" class="btn btn-primary" data-bs-target="#questToggle2" data-bs-toggle="modal" id="submit-elgibility">Next</button> <button class="btn btn-primary btn-lg my-1" type="reset">Cancel</button></div>
+            <div class="modal-footer"><button class="btn btn-primary btn-lg my-1" class="btn btn-primary" data-bs-target="#summonsToggle2" data-bs-toggle="modal" id="submit-elgibility">Next</button> <button class="btn btn-primary btn-lg my-1" type="reset">Cancel</button></div>
           </div>
         </div>
       </div>
     </div>
     <!--summons 2 modal-->
-    <div class="modal fade" id="questToggle2" aria-hidden="true" aria-labelledby="questToggleLabel2" tabindex="-1">
+    <div class="modal fade" id="summonsToggle2" aria-hidden="true" aria-labelledby="summonsToggleLabel2" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header bg-info">
-            <h1 class="modal-title fs-5" id="questToggleLabel2">Contact Info</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="summonsToggleLabel2">Contact Info</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body row">
             <div class="col-md-6 py-2 px-1">
@@ -816,16 +816,16 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer"><button class="btn btn-primary btn-lg my-1" data-bs-target="#questToggle" data-bs-toggle="modal">Back</button> <button class="btn btn-primary btn-lg my-1" type="reset" data-bs-toggle="modal" data-bs-target="#question2Modal">Submit</button> <button class="btn btn-primary btn-lg my-1" type="reset" data-bs-dismiss="modal">Cancel</button></div>
+          <div class="modal-footer"><button class="btn btn-primary btn-lg my-1" data-bs-target="#summonsToggle" data-bs-toggle="modal">Back</button> <button class="btn btn-primary btn-lg my-1" type="reset" data-bs-toggle="modal" data-bs-target="#summonsEndModal">Submit</button> <button class="btn btn-primary btn-lg my-1" type="reset" data-bs-dismiss="modal">Cancel</button></div>
         </div>
       </div>
     </div>
     <!--summons 3 modal-->
-    <div class="modal fade" id="question2Modal" tabindex="-1" aria-labelledby="question2ModalLabel" aria-hidden="true">
+    <div class="modal fade" id="summonsEndModal" tabindex="-1" aria-labelledby="summonsEndModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-fullscreen-md-down">
         <div class="modal-content border border-success">
           <div class="modal-header bg-success">
-            <h1 class="modal-title fs-5 text-white" id="question2ModalLabel">Jury Summons</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5 text-white" id="summonsEndModalLabel">Jury Summons</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="row">
