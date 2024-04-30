@@ -16,10 +16,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="theme-color" content="#012362">
     <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+    <style>
+        .row.border.border-primary>p{background-color: lightcyan;font-size:1.25rem}
+    </style>
 </head>
 
-<body>
-    <main class="p-5">
+<body class="bg-light">
+    <main class="container">
         <div>
             <h1>modals</h1>
             <div class="col">
@@ -33,8 +36,8 @@
                 </ul>
             </div>
         </div>
-        <div id="global" class="container border border-primary">
-            <div class="row bg-light mb-3">
+        <div id="global" class="row border border-primary">
+            <div class="col-12 bg-white mb-3">
                 <h2>global</h2>
             </div>
             <p href="javascript:void();" data-bs-target="#inboxModal">inbox</p>
@@ -388,11 +391,11 @@
                 </div>
             </div>
         </div>
-        <div id="login" class="container border border-primary">
-            <div class="row bg-light mb-3">
+        <div id="login" class="row border border-primary">
+            <div class="col-12 bg-white mb-3">
                 <h2>login</h2>
             </div>
-            <a data-bs-target="#forgotJIDModal" href="javascript:void();">Forgot JID/PIN</a>
+            <p>Forgot JID/PIN</p>
             <!--forgot JID Modal-->
             <div class="" id="forgotJIDModal" tabindex="-1" aria-labelledby="forgotJIDModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -453,11 +456,11 @@
                 </div>
             </div>
         </div>
-        <div id="st1" class="container border border-primary">
-            <div class="row bg-light mb-3">
+        <div id="st1" class="row border border-primary">
+            <div class="col-12 bg-white mb-3">
                 <h2>step 1</h2>
             </div>
-            <a href="javascript:void();" data-bs-target="#personalInfoModal">Verify Personal Information</a>
+            <p>Verify Personal Information</p>
             <!--personal info modal-->
             <div class="" id="personalInfoModal" tabindex="-1" aria-labelledby="personalInfoModalLabel"
                 aria-hidden="true">
@@ -926,7 +929,7 @@
                     </div>
                 </div>
             </div>
-            <a href="javascript:void();" data-bs-target="#summonsModal">Verify Personal Information</a>
+            <p>Verify Personal Information</p>
             <!--summons modal-->
             <div class="" id="summonsModal" aria-hidden="true" aria-labelledby="summonsModalLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
@@ -1584,8 +1587,8 @@
                 </div>
             </div>
         </div>
-        <div id="st2" class="container border border-primary">
-            <div class="row bg-light mb-3">
+        <div id="st2" class="row border border-primary">
+            <div class="col-12 bg-white mb-3">
                 <h2>step 2</h2>
             </div>
             <p>FTA</p>
@@ -2448,14 +2451,14 @@
                 </div>
             </div>
         </div>
-        <div id="st3" class="container border border-primary">
-            <div class="row bg-light mb-3">
+        <div id="st3" class="row border border-primary">
+            <div class="col-12 bg-white mb-3">
                 <h2>step 3</h2>
                 many of these are in globals because they appear in 3-4
             </div>
         </div>
-        <div id="st4" class="container border border-primary">
-            <div class="row bg-light mb-3">
+        <div id="st4" class="row border border-primary">
+            <div class="col-12 bg-white mb-3">
                 <h2>step 4</h2>
             </div>
             <p>deceased forms</p>
