@@ -253,3 +253,5 @@ button:disabled {
 .progressbar li.danger:before {
   border: 5px solid red;
 }
+
+.modal-footer {justify-content: start;}
