@@ -42,9 +42,9 @@
             <div class="col-12 bg-white mb-3">
                 <h2>global</h2>
             </div>
-            <p href="javascript:void();" data-bs-target="#inboxModal">inbox</p>
+            <p>inbox <a href data-bs-target="#inboxModal" data-bs-toggle="modal">trigger</a></p>
             <!--inbox modal-->
-            <div class="" id="inboxModal" tabindex="-1" aria-labelledby="inboxModalLabel" aria-hidden="true">
+            <div class="modal fade" id="inboxModal" tabindex="-1" aria-labelledby="inboxModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen-md-down modal-lg modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header bg-ltblue">
@@ -122,9 +122,9 @@
                     </div>
                 </div>
             </div>
-            <p href="javascript:void();" data-bs-target="#suggestionModal">suggestions</p>
+            <p>suggestions <a href data-bs-target="#suggestionModal" data-bs-toggle="modal">trigger</a></p>
             <!--suggestion Modal-->
-            <div class="" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+            <div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen-md-down modal-lg modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header bg-ltblue">
@@ -151,9 +151,9 @@
                     </div>
                 </div>
             </div>
-            <p href="javascript:void();" data-bs-target="#announceModal">announcements</p>
+            <p>announcements <a href data-bs-target="#announceModal" data-bs-toggle="modal">trigger</a></p>
             <!--announcements Modal-->
-            <div class="" id="announceModal" tabindex="-1" aria-labelledby="announceModalLabel" aria-hidden="true"
+            <div class="modal fade" id="announceModal" tabindex="-1" aria-labelledby="announceModalLabel" aria-hidden="true"
                 data-bs-backdrop="static">
                 <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
                     <div class="modal-content">
@@ -180,9 +180,9 @@
                     </div>
                 </div>
             </div>
-            <p>court info</p>
+            <p>court info <a href data-bs-target="#generalInfoModal" data-bs-toggle="modal">trigger</a></p>
             <!--court info Modal-->
-            <div class="" id="generalInfoModal" tabindex="-1" aria-labelledby="generalInfoModalLabel"
+            <div class="modal fade" id="generalInfoModal" tabindex="-1" aria-labelledby="generalInfoModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
                     <div class="modal-content border-2 border-info">
@@ -1460,13 +1460,13 @@
             <div class="col-12 bg-white mb-3">
                 <h2>step 2</h2>
             </div>
-            <p>FTA</p>
+            <p>FTA <a href data-bs-target="#FTAmodal" data-bs-toggle="modal">trigger</a></p>
             <!--FTA Modal -->
-            <div class="" id="FTa.m.odal" tabindex="-1" aria-labelledby="FTa.m.odalLabel" aria-hidden="true">
+            <div class="modal fade" id="FTAmodal" tabindex="-1" aria-labelledby="FTAmodalLabel" aria-hidden="true">
                 <div class="modal-dialog border border-danger">
                     <div class="modal-content">
                         <div class="modal-header bg-danger text-white">
-                            <h1 class="modal-title fs-5" id="FTa.m.odalLabel">Failure to Appear</h1>
+                            <h1 class="modal-title fs-5" id="FTAmodalLabel">Failure to Appear</h1>
                             <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
@@ -1484,9 +1484,9 @@
                 </div>
             </div>
 
-            <p>req 2 b excuse</p>
+            <p>req 2 b excuse <a href data-bs-target="#excuseModal" data-bs-toggle="modal">trigger</a></p>
             <!--excuse modal-->
-            <div class="" id="excuseModal" tabindex="-1" aria-labelledby="excuseModalLabel" aria-hidden="true">
+            <div class="modal fade" id="excuseModal" tabindex="-1" aria-labelledby="excuseModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
                     <div class="modal-content">
                         <div class="modal-header bg-info">
@@ -1849,9 +1849,9 @@
                     </div>
                 </div>
             </div>
-            <p>postpone</p>
+            <p>postpone <a href data-bs-target="#postponeModal" data-bs-toggle="modal">trigger</a></p>
             <!--postpone modal-->
-            <div class="" id="postponeModal" tabindex="-1" aria-labelledby="postponeModalLabel" aria-hidden="true">
+            <div class="modal fade" id="postponeModal" tabindex="-1" aria-labelledby="postponeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
                     <div class="modal-content">
                         <div class="modal-header bg-info">
@@ -2012,7 +2012,7 @@
                                         postponement, click the "Cancel" button.<div class="py-2"><button type="submit"
                                                 value="Submit" class="btn btn-primary my-1">Postpone My
                                                 Reporting Week</button> <button type="button" value="Cancel"
-                                                class="btn btn-primary my-1">Cancel</button></div>
+                                                class="btn btn-primary my-1" data-bs-dismiss="modal">Cancel</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -2020,9 +2020,9 @@
                     </div>
                 </div>
             </div>
-            <p>transfer</p>
+            <p>transfer <a href data-bs-target="#transferModal" data-bs-toggle="modal">trigger</a></p>
             <!--transfer modal-->
-            <div class="" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
+            <div class="modal fade" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
                     <div class="modal-content">
                         <div class="modal-header bg-info">
@@ -2301,14 +2301,14 @@
                         </div>
                         <div class="modal-footer d-flex justify-content-start bg-light"><button type="submit"
                                 class="btn btn-primary" name="$Submitbtn" value="Submit Request">Submit Request</button>
-                            <button type="button" class="btn btn-primary" value="Cancel">Cancel</button>
+                            <button type="button" class="btn btn-primary" value="Cancel" data-bs-dismiss="modal">Cancel</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <p>important info</p>
+            <p>important info <a href data-bs-target="#importantInfoModal" data-bs-toggle="modal">trigger</a></p>
             <!-- Important Info Modal -->
-            <div class="" id="importantInfoModal" tabindex="-1" aria-labelledby="importantInfoModalLabel"
+            <div class="modal fade" id="importantInfoModal" tabindex="-1" aria-labelledby="importantInfoModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen-xl-down">
                     <div class="modal-content">
@@ -2338,9 +2338,9 @@
             <div class="col-12 bg-white mb-3">
                 <h2>step 4</h2>
             </div>
-            <p>deceased forms</p>
+            <p>deceased forms <a href data-bs-target="#deceasedFormModal" data-bs-toggle="modal">In LA trigger</a> | <a href data-bs-target="#deceasedNotLamodalToggle" data-bs-toggle="modal">Not in LA trigger</a></p>
             <!--deceased modal-->
-            <div class="" id="deceasedFormModal" aria-hidden="true" aria-labelledby="deceasedFormModalLabel"
+            <div class="modal face" id="deceasedFormModal" aria-hidden="true" aria-labelledby="deceasedFormModalLabel"
                 tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
@@ -2410,12 +2410,12 @@
                             </div>
                         </div>
                         <div class="modal-footer bg-light"><button class="btn btn-primary"
-                                data-bs-target="#deceasedFormModal2">Submit</button></div>
+                                data-bs-target="#deceasedFormModal2" data-bs-toggle="modal">Submit</button></div>
                     </div>
                 </div>
             </div>
             <!--deceased 2 modal-->
-            <div class="" id="deceasedFormModal2" aria-hidden="true" aria-labelledby="deceasedFormModalLabel2"
+            <div class="modal fade" id="deceasedFormModal2" aria-hidden="true" aria-labelledby="deceasedFormModalLabel2"
                 tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -2438,12 +2438,12 @@
                 </div>
             </div>
             <!--deceased outside la modal-->
-            <div class="" id="deceasedNotLa.m.odalToggle" aria-labelledby="deceasedNotLa.m.odalToggleLabel"
+            <div class="" id="deceasedNotLamodalToggle" aria-labelledby="deceasedNotLamodalToggleLabel"
                 tabindex="-1" aria-modal="true" role="dialog" style="display: block;">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header bg-info">
-                            <h1 class="modal-title fs-5" id="deceasedNotLa.m.odalToggleLabel">Juror died outside Los
+                            <h1 class="modal-title fs-5" id="deceasedNotLamodalToggleLabel">Juror died outside Los
                                 Angeles County</h1><button type="button" class="btn-close bg-white"
                                 data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -2483,7 +2483,7 @@
                             </div>
                         </div>
                         <div class="modal-footer bg-light"><button class="btn btn-primary"
-                                data-bs-target="#deceasedNotLa.m.odalToggle2" data-bs-toggle="modal">Submit</button>
+                                data-bs-target="#deceasedNotLamodalToggle2" data-bs-toggle="modal">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -2495,64 +2495,10 @@
     <script src="./js/global.js"></script>
     <script>
 
-        $(document).unload(function () {
-            $(".laborcode, .citizen, .nonresident, .under18, .malfeasance, .JID, .ESL, .MIL, .compose").hide();
-
-            $(".inbox").click(function () {
-                $(".compose, .read, .inboxfooter").toggle();
-            });
-            $(".readme").click(function () {
-                $(".readme").hide();
-                $(".bd-callout-success").addClass("bg-light");
-                $(".bd-callout.bd-callout-success").removeClass("bd-callout bd-callout-success");
-            });
-            $(".addyPO, .addyForeign, .addyOutside").hide();
-            $("#addyPO").click(function () {
-                $(".addyLocal, .addyForeign, .addyOutside").hide();
-                $(".addyPO").show();
-            });
-            $("#addyForeign").click(function () {
-                $(".addyLocal, .addyPO, .addyOutside").hide();
-                $(".addyForeign").show();
-            });
-            $("#addyLocal").click(function () {
-                $(".addyPO, .addyForeign, .addyOutside").hide();
-                $(".addyLocal").show();
-            });
-            $("#addyOutside").click(function () {
-                $(".addyForeign, .addyPO, .addyLocal").hide();
-                $(".addyOutside").show();
-            });
-            $("#citizen").focus(function () {
-                $(".citizen").show()
-            }), $("#citizen").blur(function () {
-                $(".citizen").hide()
-            }), $("#nonresident").focus(function () {
-                $(".nonresident").show()
-            }), $("#nonresident").blur(function () {
-                $(".nonresident").hide()
-            }), $("#under18").focus(function () {
-                $(".under18").show()
-            }), $("#under18").blur(function () {
-                $(".under18").hide()
-            }), $("#malfeasance").focus(function () {
-                $(".malfeasance").show()
-            }), $("#malfeasance").blur(function () {
-                $(".malfeasance").hide()
-            }), $("#JID").focus(function () {
-                $(".JID").show()
-            }), $("#JID").blur(function () {
-                $(".JID").hide()
-            }), $("#ESL").focus(function () {
-                $(".ESL").show()
-            }), $("#ESL").blur(function () {
-                $(".ESL").hide()
-            }), $("#MIL").focus(function () {
-                $(".MIL").show()
-            }), $("#MIL").blur(function () {
-                $(".MIL").hide()
-            })
-        });
+window.onload = () =>
+      {
+        $("#announceModal").modal("show");
+      };
     </script>
 </body>
 
