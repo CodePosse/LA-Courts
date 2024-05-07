@@ -31,7 +31,6 @@
             <div class="col">
                 <ul>
                     <li><a href="#global">global</a></li>
-                    <li><a href="#login">login</a></li>
                     <li><a href="#st1">step 1</a></li>
                     <li><a href="#st2">step 2</a></li>
                     <li><a href="#st3">step 3</a></li>
@@ -147,9 +146,8 @@
                                     suggestions (limit 1000 characters):</label> <textarea class="form-control"
                                     id="exampleFormControlTextarea1" rows="3"></textarea></div>
                         </div>
-                        <div class="modal-footer"><button type="button"
-                            class="btn btn-primary">Submit</button> <button type="button" class="btn btn-primary"
-                                data-bs-dismiss="modal">Cancel</button> </div>
+                        <div class="modal-footer bg-light"><button type="button" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button> </div>
                     </div>
                 </div>
             </div>
@@ -203,9 +201,8 @@
                                             <div class="card-body">
                                                 <p>Airport Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045
                                                 </p>
-                                                <div><img
-                                                        src="img/Airport_loc_1.jpg"
-                                                        class="img-fluid" alt="Courthouse Photo"></div>
+                                                <div><img src="img/Airport_loc_1.jpg" class="img-fluid"
+                                                        alt="Courthouse Photo"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -215,10 +212,13 @@
                                                     class="fa-solid fa-door-open float-end mt-1"></i></div>
                                             <div class="card-body">
                                                 <p>Room 401B</p><strong>Hours of Operation</strong>
-                                                <p>Monday through Friday, 8:00 a.m. to 4:30 p.m. The jury assembly room office is closed from 12:00 noon through 1:30 p.m. for staff lunches.</p><strong>Phone
+                                                <p>Monday through Friday, 8:00 a.m. to 4:30 p.m. The jury assembly room
+                                                    office is closed from 12:00 noon through 1:30 p.m. for staff
+                                                    lunches.</p><strong>Phone
                                                     Number</strong>
                                                 <p>(310) 725-3033</p><strong>Phone Hours</strong>
-                                                <p>Monday through Friday 11:00 a.m. - 12:00 p.m. and 2:00 p.m. - 4:00 p.m.</p>
+                                                <p>Monday through Friday 11:00 a.m. - 12:00 p.m. and 2:00 p.m. - 4:00
+                                                    p.m.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -229,10 +229,10 @@
                                             <div class="card-body">
                                                 <p> YOU MUST BRING YOUR JURY SUMMONS OR JUROR BADGE TO ACCESS FREE
                                                     PARKING. </p>
-                                                <p> Parking is provided at the Disney Concert Hall Garage located at:
-                                                    111 S. Grand Avenue, (Corner of Grand and 2nd Street). Entrances are
-                                                    located at 2nd Street just West of Grand, and at Lower Grand Avenue
-                                                    just North of Gen.T. Kosciuszko Way. </p>
+                                                <p>Free juror parking is provided in the parking structure located near
+                                                    the front entrance of the building. Entrance to the parking
+                                                    structure is on Pacific Concourse. Show your jury summons or badge
+                                                    to the attendant for entry. </p>
                                                 <p> Jurors must bring in their summons or badge to enter and exit the
                                                     parking structure. Jurors must scan their summons/badge bar code at
                                                     the bar code scanner located at the parking entrance or exit. Jurors
@@ -251,18 +251,18 @@
                                                     class="fa-solid fa-info float-end mt-1"></i>
                                             </div>
                                             <div class="card-body">
-                                                <p>Snack Bars are located on the 1st, 2nd and 4th floors of the
-                                                    building. The cafeteria is located on the 9th floor. Please look at
-                                                    the "Places to Eat" Icon on the homepage for a listing of other
-                                                    eateries in the area. </p>
-                                              
+                                                <p>Jurors may proceed to the front of the weapon screening line with a
+                                                    jury summons or badge. A cafeteria is located on the first floor of
+                                                    the building and vending machines are located in the jury assembly
+                                                    room. </p>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer"><button type="button" class="btn btn-primary"
+                        <div class="modal-footer bg-light"><button type="button" class="btn btn-primary"
                                 data-bs-dismiss="modal">Close</button></div>
                     </div>
                 </div>
@@ -320,16 +320,31 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe></div>
                         <div class="modal-footer bg-light"><button type="button" class="btn btn-primary"
-                                data-bs-dismiss="modal">Close</button></div>
+                                data-bs-target="#videoModal3">Next</button></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="login" class="row border border-primary">
-            <div class="col-12 bg-white mb-3">
-                <h2>login</h2>
+            <!--video 3 modal-->
+            <div class="" id="video3Modal" aria-hidden="true" aria-labelledby="video3ModalLabel" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-fullscreen-xl-down">
+                    <div class="modal-content border-2 border-info">
+                        <div class="modal-header bg-info">
+                            <h5 class="modal-title" id="video3ModalLabel">Orientation Video</h5><button type="button"
+                                class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Congratulations, you have completed Juror Orientation</p>
+                            <hr noshade="">
+                            <p><strong>Optional Videos</strong>
+                                <br><a href="#" title="COMING SOON">Welcome from the Presiding Judge</a>
+                                <br><a href="#" data-bs-target="#videoModal2">Watch Orientation Video Again</a>
+                            </p>
+                        </div>
+                        <div class="modal-footer bg-light"><button class="btn btn-primary my-1" type="close"
+                                data-bs-dismiss="modal" aria-label="Close">Close</button></div>
+                    </div>
+                </div>
             </div>
-
         </div>
         <div id="st1" class="row border border-primary">
             <div class="col-12 bg-white mb-3">
@@ -530,7 +545,7 @@
                                                                                 required.
                                                                             </div>
                                                                         </div>
-                                                               
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -631,7 +646,7 @@
                                                                                 required.
                                                                             </div>
                                                                         </div>
-                                                                      
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -646,7 +661,7 @@
                                                                             <div class="invalid-feedback">Please enter
                                                                                 information.</div>
                                                                         </div>
-                                                                     
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -679,7 +694,7 @@
                                                                                 required.
                                                                             </div>
                                                                         </div>
-                                                                      
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -771,11 +786,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-footer bg-white"><button class="btn btn-primary my-1"
-                                            type="Submit">Confirm Your Info</button> <button
-                                            class="btn btn-primary my-1" type="reset">Reset</button></div>
                                 </div>
                             </form>
+                        </div>
+                        <div class="card-footer bg-light"><button class="btn btn-primary my-1" type="Submit">Confirm
+                                Your Info</button> <button class="btn btn-primary my-1" type="reset">Reset</button>
                         </div>
                     </div>
                 </div>
@@ -1236,11 +1251,11 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="modal-footer"><button class="btn btn-primary my-1"
-                                    class="btn btn-primary" data-bs-target="#summonsModal2"
-                                    id="submit-elgibility">Next</button> <button class="btn btn-primary my-1"
-                                    type="reset">Cancel</button></div>
                         </div>
+                        <div class="modal-footer bg-light"><button class="btn btn-primary my-1" class="btn btn-primary"
+                                data-bs-target="#summonsModal2" id="submit-elgibility">Next</button> <button
+                                class="btn btn-primary my-1" type="reset">Cancel</button></div>
+
                     </div>
                 </div>
             </div>
@@ -1294,8 +1309,8 @@
                                                     id="occtype" class="form-control" required>
                                                 <div class="invalid-feedback">Please provide valid data.</div>
                                             </div>
-                                            <div class="col-md-6 mb-2"><label for="covered"
-                                                    class="form-label">Title (e.g., Doctor, Teacher)</label>
+                                            <div class="col-md-6 mb-2"><label for="covered" class="form-label">Title
+                                                    (e.g., Doctor, Teacher)</label>
                                                 <input id="covered" class="form-control" required>
                                                 <div class="invalid-feedback">Please provide valid data.</div>
                                             </div>
@@ -1324,8 +1339,12 @@
                                                 <input id="covered" class="form-control" required>
                                                 <div class="invalid-feedback">Please provide valid data.</div>
                                             </div>
-                                            <div class="col-md-7 mb-2"><label for="covered" class="form-label">Number of days that your employer pays for jury duty (you pay yourself, if self-employed).</label> <input id="covered" class="form-control"
-                                                    required> <div><small>Contact your supervisor or Human Resources Department to ask if you receive jury benefits.</small></div>
+                                            <div class="col-md-7 mb-2"><label for="covered" class="form-label">Number of
+                                                    days that your employer pays for jury duty (you pay yourself, if
+                                                    self-employed).</label> <input id="covered" class="form-control"
+                                                    required>
+                                                <div><small>Contact your supervisor or Human Resources Department to ask
+                                                        if you receive jury benefits.</small></div>
                                                 <div class="invalid-feedback">Please provide a valid date range.</div>
                                             </div>
                                             <div class="col-md-5 mb-2">
@@ -1398,7 +1417,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer"><button class="btn btn-primary my-1"
+                        <div class="modal-footer bg-light"><button class="btn btn-primary my-1"
                                 data-bs-target="#summonsModal">Back</button> <button class="btn btn-primary my-1"
                                 type="reset" data-bs-target="#question2Modal">Submit</button> <button
                                 class="btn btn-primary my-1" type="reset" data-bs-dismiss="modal">Cancel</button>
@@ -1425,13 +1444,14 @@
                                             change
                                             if eligible.</p>
                                         <p>Click OK and go to the "Juror
-                                                Checklist"</p>
+                                            Checklist"</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><button class="btn btn-success my-1" type="close"
-                                    data-bs-dismiss="modal" aria-label="Close">OK</button></div>
+
                         </div>
+                        <div class="modal-footer bg-light"><button class="btn btn-success my-1" type="close"
+                                data-bs-dismiss="modal" aria-label="Close">OK</button></div>
                     </div>
                 </div>
             </div>
@@ -1457,7 +1477,7 @@
                             instructions during your reporting week as instructed on even one day may result in a
                             Failure to Appear notice
                             to be mailed to you and your jury service will be rescheduled. </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer bg-light">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -1483,7 +1503,8 @@
                                     <p>Please note that it is perjury to provide any false information on this form.
                                         Please select the reason(s) that describes your current situation.</p>
                                     <p>If your situation is not covered by the selections listed, please call (213)
-                                        972-0970 to speak to an agent during the hours of 8:00 a.m. to 4:30 p.m., Monday through Friday.</p>
+                                        972-0970 to speak to an agent during the hours of 8:00 a.m. to 4:30 p.m., Monday
+                                        through Friday.</p>
                                 </div>
                                 <hr><label for="select_excuse">Excuse Types:</label><select class="form-select"
                                     id="select_excuse">
@@ -1573,7 +1594,8 @@
                             <div class="p-1 obl box">
                                 <div><strong>Personal Obligation</strong></div>
                                 <p>I have a personal obligation to provide full time care to a relative from the hours
-                                    of 8:00 a.m. to 5:00 p.m., Monday through Friday. Please complete the information in the
+                                    of 8:00 a.m. to 5:00 p.m., Monday through Friday. Please complete the information in
+                                    the
                                     boxes below.</p>
                                 <p>Please note that if you are a paid professional care provider, you may not be
                                     eligible for this excuse. If you are a paid professional care provider and jury duty
@@ -1820,7 +1842,7 @@
                                 <p>If you do not wish to request an excuse, click the "Cancel" button.</p>
                             </div>
                         </div>
-                        <div class="modal-footer d-flex justify-content-start"><button type="button"
+                        <div class="modal-footer bg-light d-flex justify-content-start"><button type="button"
                                 class="btn btn-primary">Submit Request</button> <button type="button"
                                 class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
                         </div>
@@ -1982,14 +2004,14 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        <div><img src="img/foltzmap.png" alt="" class="img-fluid"></div>
                                     </div>
                                     <div class="border border-danger my-3 py-2 rounded">By clicking the "Postpone My
                                         Reporting Week" button below, you understand that you are requesting a
                                         postponement from your jury service week. If you do not wish to request a
                                         postponement, click the "Cancel" button.<div class="py-2"><button type="submit"
                                                 value="Submit" class="btn btn-primary my-1">Postpone My
-                                                Reporting Week</button> <button
-                                                type="button" value="Cancel"
+                                                Reporting Week</button> <button type="button" value="Cancel"
                                                 class="btn btn-primary my-1">Cancel</button></div>
                                     </div>
                                 </div>
@@ -2074,7 +2096,8 @@
                                         </div>
                                         <div class="row py-1">
                                             <p>The mileage was computed based on the current address we have for you
-                                                shown below. If your address has changed, please click on the "Personal Info" link and enter your new address on the page.
+                                                shown below. If your address has changed, please click on the "Personal
+                                                Info" link and enter your new address on the page.
                                                 Return back to this page to complete this process.</p>
                                         </div>
                                         <div class="row">
@@ -2107,10 +2130,11 @@
                                         <div class="row">
                                             <p><strong>Health reasons</strong></p>
                                             <div class="col-12">
-                                                <p><input
-                                                    type="checkbox" class="form-check-input pe-3" id="iii" required=""
-                                                    aria-label="xyz"> I have a health/medical issue that requires me to be close to my
-                                                    home, my health care provider or health care facility.</p> To complete my request, I will also mail in my
+                                                <p><input type="checkbox" class="form-check-input pe-3" id="iii"
+                                                        required="" aria-label="xyz"> I have a health/medical issue that
+                                                    requires me to be close to my
+                                                    home, my health care provider or health care facility.</p> To
+                                                complete my request, I will also mail in my
                                                 summons.
                                             </div>
                                         </div>
@@ -2126,8 +2150,9 @@
                                                 <p><strong>Los Angeles Superior Court</strong><br>Juror Services
                                                     Division<br>PO Box 53378<br>Los Angeles, CA 90053-0378</p>
                                             </div>
-                                            <div class="col-md-6 pb-3"><img src="../jury/img/sec-e.jpg" class="img-respinsive"
-                                                    alt="This is an example of section E image"></div>
+                                            <div class="col-md-6 pb-3"><img src="../jury/img/sec-e.jpg"
+                                                    class="img-respinsive" alt="This is an example of section E image">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2274,7 +2299,7 @@
                                 <p>If you do not wish to request a transfer, click the "Cancel" button.</p>
                             </div>
                         </div>
-                        <div class="modal-footer d-flex justify-content-start"><button type="submit"
+                        <div class="modal-footer d-flex justify-content-start bg-light"><button type="submit"
                                 class="btn btn-primary" name="$Submitbtn" value="Submit Request">Submit Request</button>
                             <button type="button" class="btn btn-primary" value="Cancel">Cancel</button>
                         </div>
@@ -2293,9 +2318,10 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>All reporting jurors must be ready to serve at the Beverly Hills Courthouse or Santa Monica Courthouse.</p>
+                            <p>All reporting jurors must be ready to serve at the Beverly Hills Courthouse or Santa
+                                Monica Courthouse.</p>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer bg-light">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -2383,13 +2409,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer"><button class="btn btn-primary"
+                        <div class="modal-footer bg-light"><button class="btn btn-primary"
                                 data-bs-target="#deceasedFormModal2">Submit</button></div>
                     </div>
                 </div>
             </div>
             <!--deceased 2 modal-->
-            <div class="" id="deceasedFormModal2" aria-hidden="true" aria-labelledby="deceasedFormModalLabel2" tabindex="-1">
+            <div class="" id="deceasedFormModal2" aria-hidden="true" aria-labelledby="deceasedFormModalLabel2"
+                tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header bg-success">
@@ -2405,44 +2432,62 @@
                             <p>Thank you for your time and for using the "My Jury Duty Portal".</p>
                             <p class="card-text">- Juror Services</p>
                         </div>
-                        <div class="modal-footer"><button class="btn btn-primary" data-bs-dismiss="modal"
+                        <div class="modal-footer bg-light"><button class="btn btn-primary" data-bs-dismiss="modal"
                                 aria-label="Close">Close</button></div>
                     </div>
                 </div>
             </div>
             <!--deceased outside la modal-->
-            <div class="" id="deceasedNotLa.m.odalToggle" aria-labelledby="deceasedNotLa.m.odalToggleLabel" tabindex="-1" aria-modal="true" role="dialog" style="display: block;">
+            <div class="" id="deceasedNotLa.m.odalToggle" aria-labelledby="deceasedNotLa.m.odalToggleLabel"
+                tabindex="-1" aria-modal="true" role="dialog" style="display: block;">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header bg-info">
-                      <h1 class="modal-title fs-5" id="deceasedNotLa.m.odalToggleLabel">Juror died outside Los Angeles County</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>If the juror is deceased and he/she died outside of Los Angeles County, family members must return a copy of the death certificate and the completed jury summons.</p>
-                      <p>Please complete the following sections of the jury summons form:</p>
-                      <ul>
-                        <li>In Section D, indicate that the juror is deceased.</li>
-                        <li>Sign your name and date Section G.</li>
-                      </ul>
-                      <p>Mail the completed jury summons and death certificate to this address:</p>
-                      <p class="text-secondary">Los Angeles Superior Court<br>Juror Services Division<br>PO Box 53378<br>Los Angeles, CA 90053-0378</p>
-                      <p>Once the requested documentation is received, it will take approximately (20) business days to process this information.</p>
-                      <hr noshade="noshade">
-                      <p>I declare that <span class="text-secondary"><em>Bob Smith</em></span> died outside of Los Angeles County</p>
-                      <div class="bd-callout bd-callout-danger col-12 my-3">
-                        <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
-                        <div class="ps-2 py-2 row">
-                          <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="$certifybox"><label for="certifybox" id="lblCertifyBox">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)).</label></div>
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h1 class="modal-title fs-5" id="deceasedNotLa.m.odalToggleLabel">Juror died outside Los
+                                Angeles County</h1><button type="button" class="btn-close bg-white"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="ps-2 row">
-                          <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="$signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use this as my electronic signature.</label></div>
+                        <div class="modal-body">
+                            <p>If the juror is deceased and he/she died outside of Los Angeles County, family members
+                                must return a copy of the death certificate and the completed jury summons.</p>
+                            <p>Please complete the following sections of the jury summons form:</p>
+                            <ul>
+                                <li>In Section D, indicate that the juror is deceased.</li>
+                                <li>Sign your name and date Section G.</li>
+                            </ul>
+                            <p>Mail the completed jury summons and death certificate to this address:</p>
+                            <p class="text-secondary">Los Angeles Superior Court<br>Juror Services Division<br>PO Box
+                                53378<br>Los Angeles, CA 90053-0378</p>
+                            <p>Once the requested documentation is received, it will take approximately (20) business
+                                days to process this information.</p>
+                            <hr noshade="noshade">
+                            <p>I declare that <span class="text-secondary"><em>Bob Smith</em></span> died outside of Los
+                                Angeles County</p>
+                            <div class="bd-callout bd-callout-danger col-12 my-3">
+                                <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury
+                                        is a felony punishable by up to four years in state prison (PC Sec.
+                                        126).</strong></div>
+                                <div class="ps-2 py-2 row">
+                                    <div class="form-check"><input id="certifybox" type="checkbox"
+                                            class="form-check-input" name="$certifybox"><label for="certifybox"
+                                            id="lblCertifyBox">I certify under penalty of perjury under the laws of the
+                                            State of California that the foregoing is true and correct (Code of Civil
+                                            Procedure Sec. 2015.5(b)).</label></div>
+                                </div>
+                                <div class="ps-2 row">
+                                    <div class="form-check"><input id="signaturecb" type="checkbox"
+                                            class="form-check-input" name="$signaturecb"> <label for="signaturecb"
+                                            id="Label31">I allow the Court to use this as my electronic
+                                            signature.</label></div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="modal-footer bg-light"><button class="btn btn-primary"
+                                data-bs-target="#deceasedNotLa.m.odalToggle2" data-bs-toggle="modal">Submit</button>
+                        </div>
                     </div>
-                    <div class="modal-footer"><button class="btn btn-primary" data-bs-target="#deceasedNotLa.m.odalToggle2" data-bs-toggle="modal">Submit</button></div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
