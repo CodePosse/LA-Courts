@@ -2410,6 +2410,39 @@
                     </div>
                 </div>
             </div>
+            <!--deceased outside la modal-->
+            <div class="" id="deceasedNotLAModalToggle" aria-labelledby="deceasedNotLAModalToggleLabel" tabindex="-1" aria-modal="true" role="dialog" style="display: block;">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-info">
+                      <h1 class="modal-title fs-5" id="deceasedNotLAModalToggleLabel">Juror died outside Los Angeles County</h1><button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>If the juror is deceased and he/she died outside of Los Angeles County, family members must return a copy of the death certificate and the completed jury summons.</p>
+                      <p>Please complete the following sections of the jury summons form:</p>
+                      <ul>
+                        <li>In Section D, indicate that the juror is deceased.</li>
+                        <li>Sign your name and date Section G.</li>
+                      </ul>
+                      <p>Mail the completed jury summons and death certificate to this address:</p>
+                      <p class="text-secondary">Los Angeles Superior Court<br>Juror Services Division<br>PO Box 53378<br>Los Angeles, CA 90053-0378</p>
+                      <p>Once the requested documentation is received, it will take approximately (20) business days to process this information.</p>
+                      <hr noshade="noshade">
+                      <p>I declare that <span class="text-secondary"><em>Bob Smith</em></span> died outside of Los Angeles County</p>
+                      <div class="bd-callout bd-callout-danger col-12 my-3">
+                        <div class="pb-1"><strong>It is perjury to falsify any information on this form. Perjury is a felony punishable by up to four years in state prison (PC Sec. 126).</strong></div>
+                        <div class="ps-2 py-2 row">
+                          <div class="form-check"><input id="certifybox" type="checkbox" class="form-check-input" name="$certifybox"><label for="certifybox" id="lblCertifyBox">I certify under penalty of perjury under the laws of the State of California that the foregoing is true and correct (Code of Civil Procedure Sec. 2015.5(b)).</label></div>
+                        </div>
+                        <div class="ps-2 row">
+                          <div class="form-check"><input id="signaturecb" type="checkbox" class="form-check-input" name="$signaturecb"> <label for="signaturecb" id="Label31">I allow the Court to use this as my electronic signature.</label></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary" data-bs-target="#deceasedNotLAModalToggle2" data-bs-toggle="modal">Submit</button></div>
+                  </div>
+                </div>
+              </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
