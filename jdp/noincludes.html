@@ -1,67 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>JS include substitute</title>
-    <style>
-      body
-      {
-        font-family: Verdana
+
+<head>
+  <title>JS include substitute</title>
+  <style>
+    body {
+      font-family: Verdana
+    }
+  </style>
+  <script type="text/javascript">
+    function addLoadEvent(o) {
+      var n = window.onload;
+      "function" != typeof window.onload ? window.onload = o : window.onload = function () {
+        n(), o()
       }
-    </style>
-    <script type="text/javascript">
-      function addLoadEvent(o)
-      {
-        var n = window.onload;
-        "function" != typeof window.onload ? window.onload = o : window.onload = function()
-        {
-          n(), o()
-        }
-      }
-    </script>
-    <link href="js/syntax/syntax.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h2>Making includes without server-side code.</h2>
-    <p>As you may know, having code on one site appear on multiple external is not always possible using the include schema. By using one JS file, you can publish content across multiple sites.</p>
-    <p>Let's start with a blank text file, call it "<b>content.js</b>". It will hold your common content across multiple sites.</p>
-    <p>Inside the file we will use the document.write method. The code is very simple and looks like this: <b>document.write('hello world!')</b>. Each item you add must be on ONE LINE, so turn wordwrap off in your editor.</p>
-    <p>To prevent it from breaking when you add content containing quote <b>"</b> marks, you need to use the backslash technique. <b>"\</b></p>
-    <p><b>document.write('<a href="\http:/www.yahoo.com/mylink.htm/\">URL Link</a> | <a href="mylink.htm">plain link</a>')</b></p>
-    <p>Download the sample: <a href="common.js">common.js</a></p>
-    <p>the code inside looks like this:</p><pre class="brush: js;">
+    }
+  </script>
+  <link href="js/syntax/syntax.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h2>Making includes without server-side code.</h2>
+  <p>As you may know, having code on one site appear on multiple external is not always possible using the include
+    schema. By using one JS file, you can publish content across multiple sites.</p>
+  <p>Let's start with a blank text file, call it "<b>content.js</b>". It will hold your common content across multiple
+    sites.</p>
+  <p>Inside the file we will use the document.write method. The code is very simple and looks like this:
+    <b>document.write('hello world!')</b>. Each item you add must be on ONE LINE, so turn wordwrap off in your editor.
+  </p>
+  <p>To prevent it from breaking when you add content containing quote <b>"</b> marks, you need to use the backslash
+    technique. <b>"\</b></p>
+  <p><b>document.write('<a href="\http:/www.yahoo.com/mylink.htm/\">URL Link</a> | <a href="mylink.htm">plain
+        link</a>')</b></p>
+  <p>Download the sample: <a href="common.js">common.js</a></p>
+  <p>the code inside looks like this:</p>
+  <pre class="brush: js;">
 document.write('hello world') 
 document.write('<br>') 
 document.write('a href="\http:/www.yahoo.com/mylink.htm\">URL Link | <a href="mylink.htm">plain link</a>')
 </pre>
-    <p>but renders like this:</p>
-    <p>
-    <table>
-      <tr>
-        <td>
-          <script src="common.js"></script>
-        </td>
-      </tr>
-    </table>
-    </p>
-    <p>Now that you have added all this content to your file, remember that unless you put in p or br or other formatting it will just wind up in the exact spot you place it.</p>
-    <p>Adding to a page once you have written your JS is VERY easy, just plug this in <b>
-        <script src="http://www.mysite.com/common.js"></script>
-      </b>wherever you want it to appear.</p>
-    <p>Here is an example of me including a common item to link back to the table of contents:</p>
-    <script type="text/javascript" src="js/syntax/shCore.js"></script>
-    <script type="text/javascript" src="js/syntax/shBrushXml.js"></script>
-    <script type="text/javascript" src="js/syntax/shBrushJScript.js"></script>
-    <script type="text/javascript" src="js/syntax/shBrushCss.js"></script>
-    <script type="text/javascript" src="js/syntax/shBrushPlain.js"></script>
-    <script type="text/javascript" src="js/syntax/shBrushSql.js"></script>
-    <script type="text/javascript">
-      ! function()
-      {
-        document.createElement("link");
-        var t = document.createElement("link"),
-          i = "js/syntax/shThemeDefault.css";
-        t.setAttribute ? (t.setAttribute("rel", "stylesheet"), t.setAttribute("type", "text/css"), t.setAttribute("href", i)) : (t.rel = "stylesheet", t.href = i), document.getElementsByTagName("head")[0].appendChild(t)
-      }(), SyntaxHighlighter.config.clipboardSwf = "clipboard.swf", SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
-    </script>
-  </body>
+  <p>but renders like this:</p>
+  <p>
+  <table>
+    <tr>
+      <td>
+        <script src="common.js"></script>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>Now that you have added all this content to your file, remember that unless you put in p or br or other formatting
+    it will just wind up in the exact spot you place it.</p>
+  <p>Adding to a page once you have written your JS is VERY easy, just plug this in <b>
+      <script src="http://www.mysite.com/common.js"></script>
+    </b>wherever you want it to appear.</p>
+  <p>Here is an example of me including a common item to link back to the table of contents:</p>
+  <script type="text/javascript" src="js/syntax/shCore.js"></script>
+  <script type="text/javascript" src="js/syntax/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/syntax/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/syntax/shBrushCss.js"></script>
+  <script type="text/javascript" src="js/syntax/shBrushPlain.js"></script>
+  <script type="text/javascript" src="js/syntax/shBrushSql.js"></script>
+  <script type="text/javascript">
+    ! function () {
+      document.createElement("link");
+      var t = document.createElement("link"),
+        i = "js/syntax/shThemeDefault.css";
+      t.setAttribute ? (t.setAttribute("rel", "stylesheet"), t.setAttribute("type", "text/css"), t.setAttribute("href", i)) : (t.rel = "stylesheet", t.href = i), document.getElementsByTagName("head")[0].appendChild(t)
+    }(), SyntaxHighlighter.config.clipboardSwf = "clipboard.swf", SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
+  </script>
+</body>
+
 </html>
