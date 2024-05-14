@@ -4,8 +4,8 @@ html {
   font-size: 16px;
   --blue-dark: #011853;
   --blue-mid: #022362;
-  --blue-pale: #bed9f0;
-  --blue-border: blue;
+  --blue-pale: #F2F6FA;
+  --blue-border: #BED9F0;
   --blue-other: #005994;
   --grey: #ddd;
   font-family: calibri, Tahoma, Arial, monotype;
@@ -18,6 +18,7 @@ button {
 a {
   color: #0573bc;
 }
+.border-blue-other{border-color: var(--blue-other) !important;}
 .bg-blue-dark {
   color: #fff;
   background-color: var(--blue-dark);
@@ -45,8 +46,8 @@ a.block {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
-  color: #0573bc;
-  border: 1px solid var(--blue-pale);
+  color: var(--blue-other);
+  border: 3px solid var(--blue-pale);
   &:hover {
     background-color: var(--grey);
     color: #fff;
