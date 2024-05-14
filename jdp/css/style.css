@@ -264,3 +264,6 @@ button:disabled {
 .under18 {
   display: none
 }
+.box {
+  display: none
+}
