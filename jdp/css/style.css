@@ -255,3 +255,12 @@ button:disabled {
 }
 
 .modal-footer {justify-content: start;}
+.ESL,
+.JID,
+.MIL,
+.citizen,
+.malfeasance,
+.nonresident,
+.under18 {
+  display: none
+}

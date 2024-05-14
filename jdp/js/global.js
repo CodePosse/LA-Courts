@@ -17,3 +17,62 @@ a = {
   Site: location.hostname
 };
 console.dir(a);
+$(document).ready(function () {
+  $(".compose").hide();
+  $(".inbox").click(function () {
+    $(".compose, .read, .inboxfooter").toggle();
+  });
+  $(".readme").click(function () {
+    $(".readme").hide();
+    $(".bd-callout-success").addClass("bg-light");
+    $(".bd-callout.bd-callout-success").removeClass("bd-callout bd-callout-success");
+  });
+  $(".addyPO, .addyForeign, .addyOutside").hide();
+  $("#addyPO").click(function () {
+    $(".addyLocal, .addyForeign, .addyOutside").hide();
+    $(".addyPO").show();
+  });
+  $("#addyForeign").click(function () {
+    $(".addyLocal, .addyPO, .addyOutside").hide();
+    $(".addyForeign").show();
+  });
+  $("#addyLocal").click(function () {
+    $(".addyPO, .addyForeign, .addyOutside").hide();
+    $(".addyLocal").show();
+  });
+  $("#addyOutside").click(function () {
+    $(".addyForeign, .addyPO, .addyLocal").hide();
+    $(".addyOutside").show();
+  });
+});
+$(function () {
+  $("#citizen").focus(function () {
+    $(".citizen").show()
+  }), $("#citizen").blur(function () {
+    $(".citizen").hide()
+  }), $("#nonresident").focus(function () {
+    $(".nonresident").show()
+  }), $("#nonresident").blur(function () {
+    $(".nonresident").hide()
+  }), $("#under18").focus(function () {
+    $(".under18").show()
+  }), $("#under18").blur(function () {
+    $(".under18").hide()
+  }), $("#malfeasance").focus(function () {
+    $(".malfeasance").show()
+  }), $("#malfeasance").blur(function () {
+    $(".malfeasance").hide()
+  }), $("#JID").focus(function () {
+    $(".JID").show()
+  }), $("#JID").blur(function () {
+    $(".JID").hide()
+  }), $("#ESL").focus(function () {
+    $(".ESL").show()
+  }), $("#ESL").blur(function () {
+    $(".ESL").hide()
+  }), $("#MIL").focus(function () {
+    $(".MIL").show()
+  }), $("#MIL").blur(function () {
+    $(".MIL").hide()
+  })
+})
