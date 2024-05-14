@@ -74,5 +74,17 @@ $(function () {
     $(".MIL").show()
   }), $("#MIL").blur(function () {
     $(".MIL").hide()
+  });
+  $("#select_transfer").change(function () {
+    $(this).find("option:selected").each(function () {
+      var e = $(this).attr("value");
+      e ? ($(".box").not("." + e).hide(), $("." + e).show()) : $(".box").hide()
+    })
+  }).change();
+  $("#select_excuse").change(function () {
+  $(this).find("option:selected").each(function () {
+    var e = $(this).attr("value");
+    e ? ($(".box").not("." + e).hide(), $("." + e).show()) : $(".box").hide()
   })
+}).change();
 })

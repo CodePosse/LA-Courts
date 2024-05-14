@@ -254,16 +254,16 @@ button:disabled {
   border: 5px solid red;
 }
 
-.modal-footer {justify-content: start;}
+.modal-footer {
+  justify-content: start;
+}
 .ESL,
 .JID,
 .MIL,
 .citizen,
 .malfeasance,
 .nonresident,
-.under18 {
-  display: none
-}
+.under18,
 .box {
-  display: none
+  display: none;
 }
