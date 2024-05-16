@@ -4,21 +4,23 @@ html {
   font-size: 16px;
   --blue-dark: #011853;
   --blue-mid: #022362;
-  --blue-pale: #F2F6FA;
-  --blue-border: #BED9F0;
+  --blue-pale: #f2f6fa;
+  --blue-border: #bed9f0;
   --blue-other: #005994;
-  --grey: #DDDDDD;
+  --grey: #dddddd;
   font-family: calibri, Tahoma, Arial, monotype;
   font-display: swap;
 }
 button {
   background-color: var(--blue-other);
-  color:#fff
+  color: #fff;
 }
 a {
   color: #0573bc;
 }
-.border-blue-other{border-color: var(--blue-other) !important;}
+.border-blue-other {
+  border-color: var(--blue-other) !important;
+}
 .bg-blue-dark {
   color: #fff;
   background-color: var(--blue-dark);
@@ -53,6 +55,15 @@ a.block {
     color: #fff;
   }
 }
-.blue-box{background-color: var(--blue-pale);border: 1px solid var(--blue-border);padding:10px;}
-.accordion{border-color:#B3B3B3;}
-.accordion-button:not(.collapsed),.accordion-body {background-color: #fafafa !important;}
+.blue-box {
+  background-color: var(--blue-pale);
+  border: 1px solid var(--blue-border);
+  padding: 10px;
+}
+.accordion {
+  border-color: #b3b3b3;
+}
+.accordion-button:not(.collapsed),
+.accordion-body {
+  background-color: #fafafa !important;
+}
