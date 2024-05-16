@@ -18,10 +18,11 @@ a = {
 };
 console.dir(a);
 $(document).ready(function () {
-  $(".compose").hide();
+  $(".compose, #editAddr").hide();
   $(".inbox").click(function () {
     $(".compose, .read, .inboxfooter").toggle();
   });
+
   $(".readme").click(function () {
     $(".readme").hide();
     $(".bd-callout-success").addClass("bg-light");
