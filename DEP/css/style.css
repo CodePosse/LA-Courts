@@ -7,7 +7,7 @@ html {
   --blue-pale: #F2F6FA;
   --blue-border: #BED9F0;
   --blue-other: #005994;
-  --grey: #ddd;
+  --grey: #DDDDDD;
   font-family: calibri, Tahoma, Arial, monotype;
   font-display: swap;
 }
@@ -53,3 +53,6 @@ a.block {
     color: #fff;
   }
 }
+.blue-box{background-color: var(--blue-pale);border: 1px solid var(--blue-border);padding:10px;}
+.accordion{border-color:#B3B3B3;}
+.accordion-button:not(.collapsed),.accordion-body {background-color: #fafafa !important;}
