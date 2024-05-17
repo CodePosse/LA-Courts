@@ -12,7 +12,6 @@ html {
   font-display: swap;
 }
 button {
-  background-color: var(--blue-other);
   color: #fff;
 }
 a {
@@ -40,10 +39,11 @@ a {
   background-color: var(--grey);
 }
 
-
 .accordion {
   border-color: #b3b3b3;
-  .box-blue {border-width: 1px;}
+  .box-blue {
+    border-width: 1px;
+  }
 }
 .accordion-button:not(.collapsed),
 .accordion-body {
@@ -60,7 +60,7 @@ a {
 a.box-button {
   border: 2px solid #bed9f0;
   color: #0366d6;
-  padding:15px 30px;
+  padding: 15px 30px;
   text-decoration: none;
   &:hover {
     background-color: #767676;
