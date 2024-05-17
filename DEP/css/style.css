@@ -35,9 +35,7 @@ a {
     color: #fff;
   }
 }
-.bg-blue-pale {
-  background-color: var(--blue-pale);
-}
+
 .bg-grey {
   background-color: var(--grey);
 }
@@ -55,15 +53,30 @@ a.block {
     color: #fff;
   }
 }
-.blue-box {
-  background-color: var(--blue-pale);
-  border: 1px solid var(--blue-border);
-  padding: 10px;
-}
+
 .accordion {
   border-color: #b3b3b3;
+  .box-blue {border-width: 1px;}
 }
 .accordion-button:not(.collapsed),
 .accordion-body {
   background-color: #fafafa !important;
+}
+.box-white {
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.box-blue {
+  border: 4px solid #bed9f0;
+  background-color: #f2f6fb;
+}
+a.box-button {
+  border: 2px solid #bed9f0;
+  color: #0366d6;
+  padding:15px 30px;
+  text-decoration: none;
+  &:hover {
+    background-color: #767676;
+    color: #fff;
+  }
 }
