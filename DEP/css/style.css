@@ -39,20 +39,7 @@ a {
 .bg-grey {
   background-color: var(--grey);
 }
-a.block {
-  width: 305px !important;
-  height: 70px;
-  padding: 20px 10px 20px 10px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 700;
-  color: var(--blue-other);
-  border: 3px solid var(--blue-pale);
-  &:hover {
-    background-color: var(--grey);
-    color: #fff;
-  }
-}
+
 
 .accordion {
   border-color: #b3b3b3;
