@@ -267,3 +267,6 @@ button:disabled {
 .box {
   display: none;
 }
+.indicated {
+  border: 1px solid var(--court-black);
+}
