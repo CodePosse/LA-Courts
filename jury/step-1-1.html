@@ -41,9 +41,11 @@
             class="badge rounded-pill bg-primary fs-6 text-white">1</span> <span class="px-2 pt-1">Summons</span> <i
             class="fa-solid fa-location-dot float-end mt-2 fs-5"></i></div>
         <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">2</span>
-          <span class="px-2 pt-1 d-none d-md-inline">Prepare</span></div>
+          <span class="px-2 pt-1 d-none d-md-inline">Prepare</span>
+        </div>
         <div class="col border p-2 d-flex bg-light"><span class="badge rounded-pill bg-primary fs-6 text-white">3</span>
-          <span class="px-2 pt-1 d-none d-md-inline">Service Week</span></div>
+          <span class="px-2 pt-1 d-none d-md-inline">Service Week</span>
+        </div>
         <div class="col border rounded-end p-2 d-flex bg-light"><span
             class="badge rounded-pill bg-primary fs-6 text-white">4</span> <span
             class="px-2 pt-1 d-none d-md-inline">Completion</span></div>
@@ -900,7 +902,8 @@
                                     <option value>1/2</option>
                                     <option value>1/3</option>
                                     <option value>1/4</option>
-                                  </select></div>
+                                  </select>
+                                </div>
                                 <div class="col-md-1 py-2"><label for="direction" class="form-label">Direction</label>
                                   <select name id="direction" class="form-select">
                                     <option value></option>
@@ -912,7 +915,8 @@
                                     <option value>SW</option>
                                     <option value>NE</option>
                                     <option value>SE</option>
-                                  </select></div>
+                                  </select>
+                                </div>
                                 <div class="col-md-4 py-2"><label for="stname" class="form-label">Street name</label>
                                   <input type class="form-control" id="stname" required>
                                   <div class="invalid-feedback">Please enter a street name.</div>
@@ -1076,12 +1080,15 @@
                       <div class="row">
                         <div class="col-md-4 mb-2"><label for="homePhone" class="form-label">Home phone number</label>
                           <input type="number" class="form-control" id="homePhone" placeholder value min="2012222222"
-                            max="9989989999"></div>
+                            max="9989989999">
+                        </div>
                         <div class="col-md-4 mb-2"><label for="workPhone" class="form-label">Work phone number</label>
                           <input type="number" class="form-control" id="workPhone" placeholder value min="2012222222"
-                            max="9989989999"></div>
+                            max="9989989999">
+                        </div>
                         <div class="col-md-2 mb-2"><label for="workExtPhone" class="form-label">Work extension</label>
-                          <input type="number" class="form-control" id="workExtPhone" placeholder value size="7"></div>
+                          <input type="number" class="form-control" id="workExtPhone" placeholder value size="7">
+                        </div>
                         <div class="col-md-4 mb-2"><label for="mobilePhone" class="form-label">Mobile phone
                             number</label> <input type="number" class="form-control" id="mobilePhone" placeholder value
                             min="2012222222" max="9989989999"></div>
@@ -1418,9 +1425,9 @@
             <div class="mb-3"><label for="askq" class="form-label">Subject</label> <input class="form-control"
                 aria-label="Default select example" id="askq" maxlength="64"></div>
             <div class="mb-3"><label for="exampleFormControlTextarea1" class="form-label">Ask your question</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></div><button
-              type="submit" class="btn btn-primary inbox">Submit</button> <button type="button" class="btn btn-primary"
-              data-bs-dismiss="modal">Close</button>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div><button type="submit" class="btn btn-primary inbox">Submit</button> <button type="button"
+              class="btn btn-primary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
         <div class="modal-footer inboxfooter bg-light"><button type="button"

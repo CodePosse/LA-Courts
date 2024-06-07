@@ -81,3 +81,6 @@ a.box-button {
   height: 100%;
   margin-top: -3rem !important;
 }
+.accordion {
+  p, ul {padding-left:5px; list-style: none;}
+}
