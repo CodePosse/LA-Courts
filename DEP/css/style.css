@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 :root,
 body,
 html {
@@ -8,7 +9,7 @@ html {
   --blue-border: #bed9f0;
   --blue-other: #005994;
   --grey: #dddddd;
-  font-family: calibri, Tahoma, Arial, monotype;
+  font-family: "Lato", calibri, Tahoma, Arial, monotype;
   font-display: swap;
 }
 button {
