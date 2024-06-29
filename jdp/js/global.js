@@ -8,6 +8,11 @@ $(".callout-hide").click(function () { $(this).closest(".bd-callout").hide() });
 //toasts
 $(".toast").show();
 $(".toast button").click(function () { $(this).closest(".toast").hide() });
+console.info(
+  "%c Yeah, I got a GitHub and this is a stupid dev trick. If you saw this in console, congrats " +
+    "Now expand the object below.",
+  "background: #222; color: #bada55"
+);
 var title = "codeposse";
 a = {
   Author: "T. Hunold",
