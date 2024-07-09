@@ -16,14 +16,24 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <meta name="theme-color" content="#012362">
   <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+  <style>
+    .card-header.bg-primary {
+      background-color: #232f3d !important;
+    }
+
+    .border-primary {
+      border-color: #232f3d !important
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-light">
+  <div class="container-fluid court-topbar fs-4">Jury Duty Portal</div>
   <div class="container my-2 bg-light py-0 my-0">
     <div class="row">
       <div class="col-md-5 card border-primary p-0">
         <div class="card-header bg-primary text-white">User Flow</div>
-        <div class="card-body text-primary">
+        <div class="card-body bg-white">
           <h5 class="card-title">Steps and States</h5>
           <ol>
             <li>Step 1: Summons
