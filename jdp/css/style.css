@@ -149,11 +149,11 @@ button:disabled {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border: 1px solid #e9ecef;
-  border-left-width: 0.35rem;
-  border-radius: 0.35rem;
+  border-left-width: 0.45rem;
+  border-radius: 0.45rem;
 }
 .bd-callout-primary {
-  border-color: var(--court-dkblue) !important;
+  border-color: var(--court-primary) !important;
 }
 .bd-callout-danger {
   border-color: red !important;
