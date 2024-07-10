@@ -157,9 +157,15 @@ button:disabled {
 }
 .bd-callout-danger {
   border-color: red !important;
+  h5 {
+    color: red;
+  }
 }
 .bd-callout-success {
   border-color: green !important;
+  h5 {
+    color: green;
+  }
 }
 .bd-callout-info {
   border-color: var(--court-ltblue) !important;
