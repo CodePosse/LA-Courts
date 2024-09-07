@@ -156,7 +156,8 @@
                                 evidence by
                                 watching
                                 the following tutorial:
-                                <a href="" class="bg-warning">Watch Video Tutorial</a>
+                                <a href="javascript:void();" class="bg-warning" data-bs-toggle="modal"
+                                    data-bs-target="#watchVideo">Watch Video Tutorial</a>
                             </p>
 
                         </div>
@@ -785,7 +786,27 @@
         </div>
     </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="watchVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header bg-blue-mid">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Video Tutorial</h1>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 bg-dark">
+                    <div class="video-container">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/62x7JqBXbEE"
+                            title="How to Upload and Share Evidence Using the Digital Evidence Portal for Litigants"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="bg-primary"></footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
