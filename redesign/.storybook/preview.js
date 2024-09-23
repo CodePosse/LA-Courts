@@ -1,4 +1,7 @@
-/** @type { import('@storybook/html').Preview } */
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../theme/style.css";
+
+/** @type { import("@storybook/html").Preview } */
 const preview = {
   parameters: {
     controls: {

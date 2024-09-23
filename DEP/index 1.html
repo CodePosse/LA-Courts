@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Google Analytics-->
+    <script src="/commonv4/scripts/analytics.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <title>Digital Evidence Portal</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="follow, index">
+    <meta name="description" content="Los Angeles Superior Court Digital Evidence Portal" />
+    <meta name="author" content="t. hunold codeposse">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.lacourt.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Los Angeles Superior Court Digital Evidence Portal">
+    <meta property="og:description" content="Los Angeles Superior Court Digital Evidence Portal">
+    <meta property="og:image" content="">
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:label1" content="Est. reading time" />
+    <meta property="twitter:data1" content="10 minutes" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://www.lacourt.org/">
+    <meta name="twitter:creator" content="@LASuperiorCourt">
+    <meta name="twitter:title" content="Los Angeles Superior Court Digital Evidence Portal">
+    <meta name="twitter:description" content="Los Angeles Superior Court Digital Evidence Portal">
+    <meta name="twitter:image" content="">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <meta name="theme-color" content="#012362" />
+</head>
+
+<body>
+    <div class="container-fluid bg-grey">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col text-end">
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-blue-mid">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-4">
+                    <a href="./" class="link-underline link-underline-opacity-0">
+                        <img src="./img/lacourt_logo_transparent 1.png" alt="court logo" class="img-fluid">
+                        <div class="sr-only">Return to homepage</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-blue-mid px-0">
+        <div class="container-fluid">
+            <div class="row text-center py-5 splash position-relative">
+                <div class="my-0 my-md-5 z-1">
+                    <h1>Digital Evidence Portal</h1>
+                    <h2>Small Claims</h2>
+                </div>
+                <div class="mega-over position-absolute">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6 mb-1 mb-md-2">
+                    <div class="box-blue px-3 px-md-5 py-4 h-100">
+                        <div>
+                            <h2 class="text-center">What is the Digital Evidence Portal?
+                            </h2>
+                            <p>
+                                The Digital Evidence Portal is a software application that allows Small Claims
+                                litigants to upload, share, view, and present evidence for a specific hearing. </p>
+                            <p>Evidence uploaded to the Digital Evidence Portal is securely stored and will be
+                                available on your hearing date to present; eliminating the need to bring copies of
+                                your evidence to the Court.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-1 mb-md-2">
+                    <div class="box-blue px-3 px-md-5 py-4 h-100">
+                        <div>
+                            <h2 class="text-center">Upload Your Evidence</h2>
+                            <p>You may upload your evidence if you are a party in a Small Claims matter and will
+                                present
+                                evidence at the hearing. The use of the Digital Evidence Portal is not mandatory,
+                                however, you are strongly encouraged to upload your evidence to the portal.</p>
+                        </div>
+                        <div class="d-flex justify-content-center pt-3"><button disabled
+                                class="btn btn-primary mx-3">Coming
+                                Soon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 text-center">
+                <div class="col-md-6 fs-4"><i class="fa-solid fa-check text-success me-2"></i> Easily share evidence
+                    using the Court's portal.
+                </div>
+                <div class="col-md-6 fs-4"><i class="fa-solid fa-check text-success me-2"></i> Eliminate the need to
+                    bring in heavy binders.
+                </div>
+                <div class="col-md-6 fs-4"><i class="fa-solid fa-check text-success me-2"></i> Avoid paying for
+                    multiple copies and postage.
+                </div>
+                <div class="col-md-6 fs-4"><i class="fa-solid fa-check text-success me-2"></i> Manage and view your
+                    own evidence online.
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-5">
+                <div class="col-auto py-4"><a href="#start" class="box-button">Getting Started</a></div>
+                <div class="col-auto py-4"><a href="#faq" class="box-button">Frequently Asked Questions</a></div>
+                <div class="col-auto py-4"><a href="#tech" class="box-button">Technical Requirements</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-grey py-4">
+        <div class="container" id="start">
+            <div class="row py-2">
+                <div class="col-12 py-2 text-center">
+                    <h3>Getting Started &mdash; How to Use the Digital Evidence Portal
+                    </h3>
+                </div>
+                <div class="col-md-6 px-0 py-1 px-md-2 py-md-2">
+                    <div class="box-white p-3 h-100">
+                        <div class="col-12 d-flex justify-content-start"><i class="fa-solid fa-bullhorn fs-3 me-4"></i>
+                            <h4 class="fw-bold">How do I create a digital evidence account?</h4>
+                        </div>
+                        <div class="col-12 pt-2">
+
+                            <p>First, be sure to have the following information available:</p>
+                            <ul class="mx-2">
+                                <li>Case number</li>
+                                <li>Name of party to the case</li>
+                                <li>Hearing date (this must be a future or current date)</li>
+                                <li>Your email address or cell phone number</li>
+                            </ul>
+
+                            <p>Next, on the portal's landing page, you will click on
+                                <strong>Sign-Up</strong>.
+                                Then, you will need to identify your case by the case number and hearing date.
+                            </p>
+                            <p>Once your case has been found, follow the prompts to finalize your account creation.
+                            </p>
+                            <p>Learn how to create an account, as well as how to upload and share
+                                evidence by
+                                watching
+                                the following tutorial:
+                                <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#watchVideo">Watch
+                                    Video Tutorial</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 px-0 py-1 px-md-2 py-md-2">
+                    <div class="box-white p-3 h-100">
+                        <div class="col-12 d-flex justify-content-start"><i class="fa-solid fa-bullhorn fs-3 me-4"></i>
+                            <h4 class="fw-bold">Am I required to share my evidence?
+                            </h4>
+                        </div>
+                        <div class="col-12 pt-2">
+                            <p>Yes, if you are a party to the case that wishes to submit evidence in support of your
+                                respective position, you are required to provide copies of the evidence to the opposing
+                                side at least ten (10) days prior to the hearing date. </p>
+                            <p>In lieu of mailing to the Court and to the opposing party, evidence may be uploaded via
+                                the Digital Evidence Portal for cases with a future hearing date.
+                            </p>
+                            <p>If you upload your evidence to the digital portal, you may share the evidence
+                                electronically without having to mail a physical copy to the Court and to the opposing
+                                side. </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 px-0 py-1 px-md-2 py-md-2">
+                    <div class="box-white p-3 h-100">
+                        <div class="col-12 d-flex justify-content-start"><i class="fa-solid fa-bullhorn fs-3 me-4"></i>
+                            <h4 class="fw-bold">What are the benefits of using the digital evidence portal?</h4>
+                        </div>
+                        <div class="col-12 pt-2">
+
+                            <p>The digital evidence portal allows the litigant to:</p>
+                            <ul class="mx-2">
+                                <li class="fw-bold">Find their case(s) and upload images and documents
+                                    electronically
+                                    for the case(s).
+                                </li>
+                                <li>Time stamp evidence uploaded to the system.</li>
+                                <li>Share the evidence with the opposing party.</li>
+                                <li>Download the evidence.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 px-0 py-1 px-md-2 py-md-2">
+                    <div class="box-white p-3 h-100">
+                        <div class="col-12 d-flex justify-content-start"><i class="fa-solid fa-bullhorn fs-3 me-4"></i>
+                            <h4 class="fw-bold">I will be presenting evidence at the hearing. By when do I have to
+                                upload the evidence?
+                            </h4>
+                        </div>
+                        <div class="col-12 pt-2">
+
+                            <p>Any evidence you plan on offering to support your position must be shared with the
+                                opposing party and the Court at least ten (10) days prior to the hearing. </p>
+                            <p>In lieu of mailing to the Court and to the opposing party, evidence may be uploaded via
+                                the Digital Evidence Portal for cases with a future hearing date and shared with the
+                                opposing party through the conclusion of the hearing and a ruling has been entered. </p>
+                            <p class="d-none">For more information, you may access the operative Standing Order re:
+                                Evidence
+                                Exchange by clicking <a href="" class="bg-warning">here</a>.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="faq">
+        <div class="container">
+            <div class="row d-flex justify-content-center py-2">
+                <div class="col-12 text-center my-0 my-md-4">
+                    <h3>Frequently Asked Questions</h3>
+                </div>
+                <div class="col-12 px-0 px-md-1">
+                    <div class="accordion mb-4" id="getStarted">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsegetStarted" aria-expanded="false"
+                                    aria-controls="collapsegetStarted">
+                                    Getting Started, continued
+                                </button>
+                            </h2>
+                            <div id="collapsegetStarted" class="accordion-collapse collapse"
+                                data-bs-parent="#accordiongetStarted">
+                                <div class="accordion-body px-1 px-md-5">
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> Do I need to upload all of my
+                                            evidence at one time?</div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>No, evidence may be uploaded in multiple sessions. For the Court to
+                                                consider the evidence, all documents/images must be uploaded at least
+                                                ten (10)
+                                                days prior to the scheduled hearing date. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> What if I do not upload and
+                                            share
+                                            my
+                                            evidence at least 10 days prior to the hearing? </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Pursuant to the operative <a
+                                                    href="https://www.lacourt.org/division/smallclaims/pdf/1stAmendSOreEvidenceExchange.pdf"
+                                                    target="_blank">
+                                                    Standing Order re: Evidence
+                                                    Exchange</a>, a party's
+                                                failure to share evidence at least ten (10) days prior to the hearing
+                                                date may result in the evidence not being considered by the Court. If
+                                                evidence is not exchanged in advance of the hearing, the matter may
+                                                proceed without the evidence or continued to allow parties to exchange
+                                                evidence. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> What if I don't have
+                                            sufficient contact information to share the evidence with the opposing side?
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>The party's First Name, Last Name and an Email Address or Cell Phone are
+                                                required to share digital evidence. If you do not have the necessary
+                                                information, you may upload evidence to the portal for the benefit of
+                                                yourself and the Court. </p>
+                                            <p>You would still be required to mail evidence to the opposing party and
+                                                complete <a
+                                                    href="https://lascpubstorage.blob.core.windows.net/forms/Forms%20Comprehensive%20List/LASC%20CIV%20278.pdf"
+                                                    download>LASC local form LACIV 278</a>
+                                                Exchange and Submission of Evidence (Small Claims). </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> Can I still submit evidence in
+                                            person?</div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Parties must comply with the operative Standing Order re: Evidence
+                                                Exchange. A party's failure to submit evidence to the Court at least ten
+                                                (10) days prior to the hearing date may result in the evidence not being
+                                                considered by the Court. If evidence is not exchanged in advance of the
+                                                hearing, the matter may be continued to allow parties to exchange
+                                                evidence. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> I am a business owner and file
+                                            multiple
+                                            cases. Do I need to create a separate account for each case?</div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>No, a separate Digital Evidence account is not required. You may upload
+                                                to different cases if you are able to provide the required information.
+                                            </p>
+                                            <p class="mx-2"><strong>I have created a Court ID to register for Online
+                                                    Dispute Resolution (ODR) and LACourtConnect (LACC). Can the same
+                                                    account be used to upload my digital evidence? </strong></p>
+                                            <p>No, a unique account will be created for the Digital Evidence Portal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> I have created a Court ID to
+                                            register for Online Dispute Resolution (ODR) and LACourtConnect (LACC). Can
+                                            the
+                                            same account be used to upload my digital evidence?</div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>No, a unique account will be created for the Digital
+                                                Evidence Portal.</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> If there are multiple
+                                            plaintiffs
+                                            and/or multiple defendants, does each party need to upload evidence?</div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>No, parties on the same side may upload evidence individually or upload
+                                                evidence jointly. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0"> What does it mean to
+                                            upload evidence jointly?</div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>a. When there are multiple plaintiffs or defendants, one party can upload
+                                                evidence on
+                                                behalf of more than one party.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion mb-4" id="accordionprepare">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseprepare" aria-expanded="false"
+                                    aria-controls="collapseprepare">
+                                    Preparing for My Hearing
+                                </button>
+                            </h2>
+                            <div id="collapseprepare" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionprepare">
+                                <div class="accordion-body px-1 px-md-5">
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>How will my evidence be identified? </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Once the evidence has been successfully submitted to the Digital Evidence
+                                                Portal with a brief description of the item, it will be identified with
+                                                a unique “Exhibit Number.” When presenting the evidence during the
+                                                hearing, the party must refer to that exhibit number. The exhibit number
+                                                can be obtained by printing either the “Exhibit Receipt” or the “Exhibit
+                                                List”. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>Can I print a list of the evidence that I have uploaded? </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Yes, you can print an Exhibit Receipt and/or an Exhibit List. The
+                                                Exhibit Receipt may include a
+                                                copy of the images depending on the format. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>Can I print a copy of the image once it has been uploaded to the
+                                                portal? </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Yes, JPGs/PNGs (i.e., images) can be downloaded and printed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>If I accidentally upload something that is personal and not related
+                                                to my case. How can it
+                                                be removed/deleted from the Digital Evidence Portal?
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>
+                                                If you inadvertently upload evidence to the portal that you decide is
+                                                not relevant and will not be used in court to support your position, you
+                                                will have the opportunity to delete/remove any exhibits during “Step2 –
+                                                Upload Files” process. </p>
+
+
+                                            <p>
+                                                Once evidence is uploaded and successfully submitted to the Digital
+                                                Evidence Portal, it cannot be removed/deleted from the portal until the
+                                                case has been completed, at which time the evidence is no longer
+                                                available. You may choose not to share those documents/images with the
+                                                opposing side if they are not relevant and will not be used to support
+                                                your position. </p>
+
+
+                                            <p>
+                                                Parties will receive notification when the evidence is scheduled to be
+                                                purged from the system. It will contain a link to the digital evidence
+                                                portal, allowing them to download their evidence if they choose. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>If I mail my evidence to the opposing party and the Court, am I still
+                                                required to upload my
+                                                evidence?
+                                            </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Each party is ordered to comply with the operative Standing Order re:
+                                                Protocol for Exchange and Submission of Evidence. If you have mailed
+                                                your evidence to the Court and the opposing side, you are not required
+                                                to upload your evidence. Use of the Digital Evidence Portal is not
+                                                mandatory. However, you are strongly encouraged to upload your evidence
+                                                to the portal. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>My evidence does not appear in the correct order. How can I sort the
+                                                images? </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>The evidence can be reordered by the uploader during the upload
+                                                process. </p>
+                                            <p>Once the uploader confirms the process is completed, no further editing
+                                                will be permitted.</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>I am not proficient in English; can I still use the Digital Evidence
+                                                Portal to upload by evidence?
+                                            </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Yes, the Digital Evidence Portal includes a feature that will
+                                                translate the instructions into Spanish. However,
+                                                the description for your evidence must be entered in English. </p>
+                                            <p>In the upper right-hand corner, click the down arrow on the “Select a
+                                                Language” button to translate the instructions into Spanish. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>My hearing date was continued/postponed after I uploaded my evidence.
+                                                Will the evidence be
+                                                available for the new hearing date?
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>
+                                                Yes. If the case was continued/postponed to a future hearing date of the
+                                                same hearing type, the evidence will be moved to the new hearing date.
+                                                It is recommended that you verify the case number and future hearing
+                                                date are listed within the “Court Hearings” panel.
+                                            </p>
+                                            <p>
+                                                Click the “View” button to display the evidence that has been uploaded
+                                                to your case. If you need to add additional evidence, click the “Upload”
+                                                button, and proceed. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion mb-4" id="accordionepresent">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsepresent" aria-expanded="false"
+                                    aria-controls="collapsepresent">
+                                    Presenting My Evidence During the Hearing
+                                </button>
+                            </h2>
+                            <div id="collapsepresent" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionepresent">
+                                <div class="accordion-body px-1 px-md-5">
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>How do I present my evidence at the hearing?
+                                            </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>
+                                                If your evidence was mailed to the Court at least 10 days prior to the
+                                                hearing date, the envelope containing your evidence will be given to the
+                                                judicial officer when your case is called.
+                                            </p>
+                                            <p>
+                                                If your evidence was uploaded via the Digital Evidence Portal at least
+                                                10 days prior to the hearing date, the judicial officer will login to
+                                                the portal and view your evidence electronically.
+                                            </p>
+                                            <p>
+                                                When your case is called, provide the judicial officer with an overview
+                                                of the case, and briefly state the facts of your dispute. You will need
+                                                to refer to the evidence in a meaningful way and logical order to
+                                                support your claim. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>Will my evidence be displayed for the audience or only for the
+                                                judicial officer and other
+                                                court staff?</p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p> Although some courtrooms may be equipped with Digital Evidence
+                                                Presentation Systems, Small Claims evidence is generally not displayed
+                                                for the audience. The judicial officer and court staff will be able to
+                                                view the evidence electronically that was uploaded for your case.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion mb-4" id="accordionafterHearing">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseafterHearing" aria-expanded="false"
+                                    aria-controls="collapseafterHearing">
+                                    After the Hearing
+                                </button>
+                            </h2>
+                            <div id="collapseafterHearing" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionafterHearing">
+                                <div class="accordion-body px-1 px-md-5">
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>How long will the Court store my digital evidence?
+                                            </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>The Court will not have access to the evidence after the ruling. Once the
+                                                case has been marked “completed”, an email notification will be sent to
+                                                the party that uploaded the evidence regarding the purging of exhibits.
+                                                The uploader may download any evidence within 60 days from the
+                                                notification date by clicking on the link provided in the email
+                                                notification, if desired. </p>
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>Will I be notified if the Court intends to purge my digital evidence?
+                                            </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>The party that uploaded the evidence will receive a notification at least
+                                                60 days prior to the Court's intent to purge digital evidence from the
+                                                portal. During the 60-day period, the evidence may be accessed and
+                                                downloaded, if desired. </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                        <div class="col-1 d-none d-md-block"><i
+                                                class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                        <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                            <p>Can I receive my evidence after the hearing has concluded?
+                                            </p>
+                                        </div>
+                                        <div class="col-11 px-2 px-md-5 offset-md-1">
+                                            <p>Yes. The Digital Evidence Portal allows you to download your
+                                                evidence up to 60 days after the case
+                                                has been completed. After 60 days, the evidence will be purged from
+                                                the portal. If the evidence is
+                                                not downloaded during this time frame, it will be lost.
+                                            </p>
+                                            <p><a href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCHumanResources-77-DigitalEvidencePortalforLitigants.pdf"
+                                                    target="_blank">Reference Guide</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-0 px-md-4"></div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid bg-grey" id="tech">
+        <div class="container">
+            <div class="row d-flex justify-content-center py-2">
+                <div class="row py-2">
+                    <div class="col-12 py-2 text-center">
+                        <h3>Technical Requirements - Troubleshooting</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between pb-4 px-0">
+                    <div class="col-md-6 px-0 py-1 px-md-2 py-md-2">
+                        <div class="box-white p-3 h-100">
+                            <div class="col-12 d-flex justify-content-start"><i
+                                    class="fa-solid fa-bullhorn fs-3 me-4"></i>
+                                <h4>What browsers are required to use the Digital Evidence Portal?</h4>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <p>It is recommended to use the Digital Evidence Portal with the following browsers:
+                                </p>
+                                <ul class="mx-2">
+                                    <li>Google Chrome</li>
+                                    <li>Microsoft Edge</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 px-0 py-1 px-md-2 py-md-2">
+                        <div class="box-white p-3 h-100">
+                            <div class="col-12 d-flex justify-content-start"><i
+                                    class="fa-solid fa-bullhorn fs-3 me-4"></i>
+                                <h4>What digital format is required to upload my evidence?
+                                </h4>
+                            </div>
+                            <div class="col-12 pt-2">
+                                <p>
+                                <p>The Digital Evidence Portal supports a variety of file formats. <a
+                                        href="./doc/LASC - Portal Supported File Format.pdf">Click
+                                        here to see a list <div class="sr-only">of supported file formats</a>.
+                            </div>
+
+                            </p>
+                            <p>Size limitation for evidence uploads are &mdash; 100GB per file</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-0 px-md-1">
+                <div class="accordion mb-4" id="accordiontroubleShoot">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsetroubleShoot" aria-expanded="false"
+                                aria-controls="collapsetroubleShoot">
+                                Technical Requirements: Troubleshooting
+                            </button>
+                        </h2>
+                        <div id="collapsetroubleShoot" class="accordion-collapse collapse"
+                            data-bs-parent="#accordiontroubleShoot">
+                            <div class="accordion-body px-1 px-md-5">
+                                <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                    <div class="col-1 d-none d-md-block"><i
+                                            class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                    <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                        <p>Can I use my cell phone to create an account and upload evidence?
+                                        </p>
+                                    </div>
+                                    <div class="col-11 px-2 px-md-5 offset-md-1">
+                                        <p>Yes, if your cell phone has access to the internet and documents and/or
+                                            images, it may be used to upload evidence. However, a desktop device or
+                                            laptop is recommended for a better viewing experience. Certain features will
+                                            not be available (e.g., hover over icons) on your cell phone. </p>
+                                    </div>
+                                </div>
+                                <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                    <div class="col-1 d-none d-md-block"><i
+                                            class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                    <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                        <p>I uploaded my evidence and now want to share it with the opposing
+                                            side, but I do not see my evidence
+                                            on the case. What should I do?
+                                        </p>
+                                    </div>
+                                    <div class="col-11 px-2 px-md-5 offset-md-1">
+                                        <p>There are a couple of situations in which your evidence may not have been
+                                            uploaded to your case: the system may have timed out before the upload
+                                            process was completed or you may have inadvertently clicked the back-button
+                                            or refreshed the page.
+                                        </p>
+                                        <p>
+                                            Verify the case number and information is listed within the “Court Hearings”
+                                            panel.
+                                        </p>
+                                        <p>
+                                            If the case number is not listed, you will need to add the case number and
+                                            upload your evidence to that case. If the case number is listed, click the
+                                            “View” button to display the evidence that has been uploaded to your case.
+                                            If you need to add additional evidence, click the “Upload” button, and
+                                            proceed.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="box-blue m-0 my-1 my-md-4 p-2 row">
+                                    <div class="col-1 d-none d-md-block"><i
+                                            class="fa-solid fa-circle-info float-start fs-5 my-2 mx-4"></i></div>
+                                    <div class="col-11 fw-bold fs-4 mb-2 ps-md-0">
+                                        <p>Who do I contact if I need specific information regarding my case?</p>
+                                    </div>
+                                    <div class="col-11 px-2 px-md-5 offset-md-1">
+                                        <p>If you need specific information regarding your case, you may check the
+                                            Court's website or contact the courthouse where your case is scheduled to be
+                                            heard. Please have the case number available.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-md-3 px-1 px-md-1">
+                <div class="box-blue m-0 m-md-2 py-3 text-center">
+                    <p class="fw-bold"> Call the Service Desk for Assistance</p>
+                    <p class="px-md-5">If you are experiencing technical difficulties and need assistance with creating
+                        an account,
+                        resetting your password, or uploading your evidence through the Digital Evidence Portal, you can
+                        call 213-830-0400 during normal Court business hours
+                        Monday &mdash; Friday between 8:30 AM and 4:30 PM (except holidays). </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="watchVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header bg-blue-mid">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Video Tutorial</h1>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 bg-dark">
+                    <div class="video-container">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/62x7JqBXbEE"
+                            title="How to Upload and Share Evidence Using the Digital Evidence Portal for Litigants"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary"></footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en'
+                }, 'google_translate_element');
+        };
+        console.info("%c domain: " + location.hostname, "background: #222; color: yellow");
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
