@@ -1,0 +1,20 @@
+.plain-accordion {
+  --bs-accordion-bg: #fff;
+  --bs-accordion-active-bg: var(--bs-accordion-bg);
+  --bs-accordion-border-width: 0;
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-inner-border-radius: var(--bs-accordion-border-radius);
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-body-padding-y: 4px;
+}
+
+.plain-accordion .accordion-button {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  color: #111B2B;
+  font-weight: 500;
+}
+
+.plain-accordion .accordion-body {
+  font-size: 14px;
+}
