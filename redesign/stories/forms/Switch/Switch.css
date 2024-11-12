@@ -1,0 +1,46 @@
+.form-check-input:checked[type=checkbox],
+.form-switch .form-check-input:focus,
+.form-switch .form-check-input:checked,
+.form-switch .form-check-input {
+  --bs-form-switch-bg: url("/stories/assets/switch_handle_uncheck.svg");
+  background-size: cover;
+}
+
+.form-switch .form-check-input {
+  --bs-form-switch-bg: url("/stories/assets/switch_handle_uncheck.svg");
+}
+
+.form-switch .form-check-input:checked {
+  --bs-form-switch-bg: url("/stories/assets/switch_handle_check.svg");
+}
+
+.switch .form-check-input {
+  width: 46px;
+  height: 24px;
+  border-radius: 6px;
+  background-size: cover;
+}
+
+.switch .error-message {
+  color: #BD002A;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.switch .error-message img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.switch .help-text {
+  font-size: 14px;
+  color: #67728A;
+}
+
+.switch .form-check-label {
+  /*font-size: 14px;*/
+  font-weight: 500;
+  margin-left: 12px;
+  margin-top: 5px;
+}

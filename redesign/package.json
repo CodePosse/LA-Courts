@@ -24,6 +24,7 @@
     "@types/node": "^22.5.5",
     "eslint": "^9.11.0",
     "globals": "^15.9.0",
+    "lodash": "^4.17.21",
     "storybook": "^8.3.2"
   },
   "dependencies": {

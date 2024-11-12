@@ -1,0 +1,21 @@
+.pk-card-1.card,
+.pk-card-1 .card-body {
+  background: #F5E49D;
+  border-radius: 12px;
+}
+
+.pk-card-1 .card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.pk-card-1 .card-text {
+  font-size: 12px;
+  color: #000000;
+}
+
+.pk-card-1.card .button span {
+  font-size: 14px;
+  font-weight: 500;
+}

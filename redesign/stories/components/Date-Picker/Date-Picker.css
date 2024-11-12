@@ -1,0 +1,78 @@
+.date-picker input {
+  border: 1px solid #CFD9E0;
+}
+
+.date-picker .input-group {
+  width: 306px;
+}
+
+.date-picker input:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #CFD9E0;
+}
+
+.datepicker:after,
+.datepicker:before {
+  display: none;
+}
+
+.datepicker {
+  margin-top: 12px;
+}
+
+.datepicker.dropdown-menu {
+  padding: 12px;
+  box-shadow: 0px 0px 0px 1px rgba(25, 37, 50, 0.1), 0px 3px 7px -3px rgba(25, 37, 50, 0.1), 0px 6px 12px -2px rgba(25, 37, 50, 0.1);
+  border-radius: 6px;
+  border-color: transparent;
+}
+
+.datepicker .datepicker-days thead tr {
+  color: #5A657C;
+}
+
+.datepicker .datepicker-days tbody tr td,
+.datepicker .datepicker-days thead tr th.datepicker-switch {
+  font-weight: 400;
+  color: #111B2B;
+  font-size: 14px;
+}
+
+.datepicker .datepicker-days thead tr th {
+  font-weight: 400;
+}
+
+.datepicker .datepicker-days tbody tr td:focus {
+  box-shadow: 0px 0px 0px 3px #98CBFF;
+}
+
+.datepicker .datepicker-days tbody tr td {
+  border-radius: 50%;
+}
+
+.datepicker .datepicker-days tbody tr td:hover {
+  background-color: #E8F5FF;
+}
+
+.datepicker .datepicker-days tbody tr td.old {
+  color: transparent;
+  pointer-events: none;
+}
+
+.datepicker .datepicker-days tbody tr td.new {
+  display: none;
+}
+
+.datepicker tbody tr td span.active,
+.datepicker tbody tr td.active,
+.datepicker tbody tr td span.active:hover,
+.datepicker tbody tr td.active:hover {
+  background: #0059C8;
+  color: white;
+}
+
+.datepicker td, .datepicker th {
+  width: 40px;
+  height: 40px
+}
