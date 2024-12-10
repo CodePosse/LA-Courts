@@ -33,6 +33,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+    </style>
 </head>
 
 <body id="prog">
@@ -138,11 +143,21 @@
                         </a>
                     </p>
                     <p>
-                        <a href="https://lascpubstorage.blob.core.windows.net/cpw/LIBOPSCivil-128-MediatorProfiles%E2%80%93SortedbyCivilCaseCoverSheetCaseType.pdf"
-                            class="btn w-100 btn-primary text-center d-flex" title="Mediator Profiles PDF File">
+                    <div class="dropdown">
+                        <button class="btn btn-primary w-100 dropdown-toggle py-2 d-flex" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="p-1 flex-shrink-1"> <i class="fa-solid fa-people-group"></i></span> <span
                                 class="p-1 w-100">Mediator Profiles </span>
-                        </a>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://lascpubstorage.blob.core.windows.net/cpw/LIBOPSCivil-129-MediatorProfiles–SortedbyLastName.pdf">Sorted
+                                    by Last Name</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://lascpubstorage.blob.core.windows.net/cpw/LIBOPSCivil-128-MediatorProfiles–SortedbyCivilCaseCoverSheetCaseType.pdf">Sorted
+                                    by Civil Case Cover Sheet Case Type</a></li>
+                        </ul>
+                    </div>
                     </p>
                     <p>
                         <a href="https://forms.office.com/g/UHEgDYEVSB" class="btn w-100 btn-primary text-center d-flex"
