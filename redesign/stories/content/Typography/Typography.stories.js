@@ -71,55 +71,55 @@ export const H3 = {
 export const H4 = {
   args: {
     variant: "h4",
-    text: "H4 - Hanken Grotesk",
+    text: "H4 - Lato",
   },
 };
 
 export const H5 = {
   args: {
     variant: "h5",
-    text: "H5 - Hanken Grotesk",
+    text: "H5 - Lato",
   },
 };
 
 export const H6 = {
   args: {
     variant: "h6",
-    text: "H6 - Hanken Grotesk",
+    text: "H6 - Lato",
   },
 };
 
 export const Paragraph = {
   args: {
     variant: "paragraph",
-    text: "Paragraph - Hanken Grotesk",
+    text: "Paragraph - Lato",
   },
 };
 
 export const ParagraphLarge = {
   args: {
     variant: "paragraph-large",
-    text: "Paragraph Large - Hanken Grotesk",
+    text: "Paragraph Large - Lato",
   },
 };
 
 export const ParagraphMedium = {
   args: {
     variant: "paragraph-medium",
-    text: "Paragraph Medium - Hanken Grotesk",
+    text: "Paragraph Medium - Lato",
   },
 };
 
 export const ParagraphSmall = {
   args: {
     variant: "paragraph-small",
-    text: "Paragraph Small - Hanken Grotesk",
+    text: "Paragraph Small - Lato",
   },
 };
 
 export const CardHeading = {
   args: {
     variant: "card-heading",
-    text: "Card Heading - Hanken Grotesk",
+    text: "Card Heading - Lato",
   },
 };

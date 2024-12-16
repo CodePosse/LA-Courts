@@ -1,5 +1,4 @@
 .button {
-  font-family: "Hanken Grotesk", sans-serif;
   display: flex;
   align-items: center;
   border-radius: 6px;
@@ -45,53 +44,53 @@
 .button.primary {
   color: #ffffff;
   background-color: #005994;
-  border-color: #036FE3;
+  border-color: #036fe3;
 }
 
 .button.primary:hover {
-  background-color: #0073C0;
-  border-color: #0059C8;
+  background-color: #0073c0;
+  border-color: #0059c8;
 }
 
 .button.primary:active {
-  background-color: #004B7D;
-  border-color: #0041AB;
+  background-color: #004b7d;
+  border-color: #0041ab;
 }
 
 .button.primary:focus {
-  box-shadow: 0 0 0 3px #98CBFF;
+  box-shadow: 0 0 0 3px #98cbff;
 }
 
 .button.primary:disabled {
   opacity: 0.5;
-  background-color: #036FE3;
+  background-color: #036fe3;
 }
 
 /* Secondary button */
 
 .button.secondary {
   color: #333333;
-  background-color: #F7F9FA;
-  border-color: #CFD9E0;
+  background-color: #f7f9fa;
+  border-color: #cfd9e0;
 }
 
 .button.secondary:hover {
-  background-color: #E7EBEE;
-  border-color: #CFD9E0;
+  background-color: #e7ebee;
+  border-color: #cfd9e0;
 }
 
 .button.secondary:active {
-  background-color: #F7F9FA;
-  border-color: #CFD9E0;
+  background-color: #f7f9fa;
+  border-color: #cfd9e0;
 }
 
 .button.secondary:focus {
-  box-shadow: 0px 0px 0px 3px #98CBFF;
+  box-shadow: 0px 0px 0px 3px #98cbff;
 }
 
 .button.secondary:disabled {
   opacity: 0.5;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Positive button */
@@ -99,21 +98,21 @@
 .button.positive {
   color: #ffffff;
   background-color: #008539;
-  border-color: #00A372;
+  border-color: #00a372;
 }
 
 .button.positive:hover {
-  background-color: #006D23;
-  border-color: #00B37A;
+  background-color: #006d23;
+  border-color: #00b37a;
 }
 
 .button.positive:active {
-  background-color: #00550C;
-  border-color: #008F63;
+  background-color: #00550c;
+  border-color: #008f63;
 }
 
 .button.positive:focus {
-  box-shadow: 0px 0px 0px 3px #9ED696;
+  box-shadow: 0px 0px 0px 3px #9ed696;
 }
 
 .button.positive:disabled {
@@ -124,9 +123,9 @@
 /* Negative button */
 
 .button.negative {
-  color: #FFFFFF;
-  background-color: #BD002A;
-  border-color: #BD002A;
+  color: #ffffff;
+  background-color: #bd002a;
+  border-color: #bd002a;
 }
 
 .button.negative:hover {
@@ -135,17 +134,17 @@
 }
 
 .button.negative:active {
-  background-color: #7F0010;
-  border-color: #7F0010;
+  background-color: #7f0010;
+  border-color: #7f0010;
 }
 
 .button.negative:focus {
-  box-shadow: 0px 0px 0px 3px #FFB1B2;
+  box-shadow: 0px 0px 0px 3px #ffb1b2;
 }
 
 .button.negative:disabled {
   opacity: 0.5;
-  background-color: #BD002A;
+  background-color: #bd002a;
 }
 
 /* Transparent button */
@@ -157,7 +156,7 @@
 }
 
 .button.transparent:hover {
-  background-color: #F7F9FA;
+  background-color: #f7f9fa;
   border-color: #ffffff;
 }
 
@@ -167,7 +166,7 @@
 }
 
 .button.transparent:focus {
-  box-shadow: 0px 0px 0px 3px #98CBFF;
+  box-shadow: 0px 0px 0px 3px #98cbff;
 }
 
 .button.transparent:disabled {

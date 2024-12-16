@@ -1,5 +1,5 @@
 .badge {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Comic Sans, sans-serif;
   line-height: 18px;
   letter-spacing: 1.6px;
   padding: 4px 10px;
@@ -17,62 +17,61 @@
 }
 
 .badge.primary {
-  background-color: #CEECFF;
-  color: #0059C8;
+  background-color: #ceecff;
+  color: #0059c8;
 }
 
 .badge.primary-filled {
-  background-color: #0059C8;
+  background-color: #0059c8;
   color: #fff;
 }
 
-
 .badge.positive {
-  background-color: #CDF3C6;
-  color: #006D23;
+  background-color: #cdf3c6;
+  color: #006d23;
 }
 
 .badge.positive-filled {
-  background-color: #006D23;
+  background-color: #006d23;
   color: #fff;
 }
 
 .badge.negative {
-  background-color: #FFE0E0;
-  color: #BD002A;
+  background-color: #ffe0e0;
+  color: #bd002a;
 }
 
 .badge.negative-filled {
-  background-color: #BD002A;
+  background-color: #bd002a;
   color: #fff;
 }
 
 .badge.warning {
-  background-color: #FDE5C0;
-  color: #B12D00;
+  background-color: #fde5c0;
+  color: #b12d00;
 }
 
 .badge.warning-filled {
-  background-color: #B12D00;
+  background-color: #b12d00;
   color: #fff;
 }
 
 .badge.secondary {
-  background-color: #E7EBEE;
-  color: #414D63;
+  background-color: #e7ebee;
+  color: #414d63;
 }
 
 .badge.secondary-filled {
-  background-color: #414D63;
+  background-color: #414d63;
   color: #fff;
 }
 
 .badge.featured {
-  background-color: #EDE3FF;
-  color: #6C3ECF;
+  background-color: #ede3ff;
+  color: #6c3ecf;
 }
 
 .badge.featured-filled {
-  background-color: #6C3ECF;
+  background-color: #6c3ecf;
   color: #fff;
 }

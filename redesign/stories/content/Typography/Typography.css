@@ -1,12 +1,12 @@
 .typography {
-  color: #111B2B;
+  color: #111b2b;
   margin: 0;
 }
 
 .typography.h1,
 .typography.h2,
 .typography.h3 {
-  font-family: "Newsreader", serif;
+  font-family: "Lato", serif;
 }
 
 .typography.h4,
@@ -17,7 +17,7 @@
 .typography.paragraph-medium,
 .typography.paragraph-small,
 .typography.card-heading {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Lato", Comic Sans, sans-serif;
 }
 
 .typography.h1 {
