@@ -276,3 +276,17 @@ button:disabled {
 .indicated {
   border: 1px solid var(--court-black);
 }
+.chatbot {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  font-size: 1.5rem;
+  background-color: var(--court-primary);
+  border-radius: 20px !important;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
