@@ -57,12 +57,48 @@ body {
   background-size: cover;
   border-radius: 15px;
 }
-.homenewssplash {background: rgba(48, 95, 152, 0.8);
-  url("../img/homenewssplash.png") no-repeat left top;
-  background-size: cover;}
-.homemapsplash{background: rgba(243, 247, 254, 0.9);
+.homenewssplash {
+  background: rgba(48, 95, 152, 0.8) url("../img/homenewssplash.png") no-repeat left top;
+  background-size: cover;
 }
-
+.homemapsplash {
+  background: rgba(243, 247, 254, 0.9);
+}
+.minicard {
+  background-color: navy;
+  width: 346px;
+  height: 243px;
+  border-radius: 20px;
+  img {
+    width: 344px;
+    height: 241px;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 222, 0.6);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    height: 10px;
+  }
+}
+.bigger {
+  width: 100%;
+  height: 200px;
+  background-image: url("https://picsum.photos/344/241");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.smaller {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
 .installation {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
