@@ -57,6 +57,12 @@ body {
   background-size: cover;
   border-radius: 15px;
 }
+.homenewssplash {background: rgba(48, 95, 152, 0.8);
+  url("../img/homenewssplash.png") no-repeat left top;
+  background-size: cover;}
+.homemapsplash{background: rgba(243, 247, 254, 0.9);
+}
+
 .installation {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
