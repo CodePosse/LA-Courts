@@ -306,7 +306,7 @@ table {
 }
 
 .pk-card-home {
-  width: 375px;
+  max-width: 375px;
   height: 333px;
   position: relative;
   *:not(.btn) {
