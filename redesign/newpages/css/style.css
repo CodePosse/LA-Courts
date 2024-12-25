@@ -306,7 +306,7 @@ table {
 }
 
 .pk-card-home {
-  * {
+  *:not(.btn) {
     border-radius: 20px;
   }
   width: 375px;
@@ -327,6 +327,15 @@ table {
     position: relative;
     margin-top: -50px;
     padding: 10px 20px;
+    &.first {
+      background: #cedded;
+    }
+    &.second {
+      background: #dbe4e7;
+    }
+    &.third {
+      background: #f5e49d;
+    }
   }
   .pk-card-title {
     font-size: 18px;
