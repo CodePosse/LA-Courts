@@ -306,12 +306,12 @@ table {
 }
 
 .pk-card-home {
-  *:not(.btn) {
-    border-radius: 20px;
-  }
   width: 375px;
   height: 333px;
   position: relative;
+  *:not(.btn) {
+    border-radius: 20px;
+  }
   .pk-img {
     width: 316px;
     height: 147px;
