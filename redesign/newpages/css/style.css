@@ -52,7 +52,11 @@ body {
 .home h3 {
   font-size: 1.5em;
 }
-
+.homesplash {
+  background: navy url("../img/homesplash.png") no-repeat left top;
+  background-size: cover;
+  border-radius: 15px;
+}
 .installation {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
