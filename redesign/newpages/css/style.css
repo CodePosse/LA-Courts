@@ -336,6 +336,10 @@ table {
     &.third {
       background: #f5e49d;
     }
+    .btn {
+      position: absolute;
+      bottom: 20px;
+    }
   }
   .pk-card-title {
     font-size: 18px;
