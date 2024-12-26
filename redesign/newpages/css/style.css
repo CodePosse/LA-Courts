@@ -81,7 +81,6 @@ body,
   background: rgba(243, 247, 254, 0.9);
 }
 .minicard {
-  background-color: navy;
   width: 346px;
   height: 243px;
   border-radius: 20px;
@@ -89,19 +88,8 @@ body,
     width: 344px;
     height: 241px;
   }
-  .overlay {
-    background-color: rgba(0, 0, 222, 0.6);
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    z-index: 1;
-    height: 10px;
-  }
 }
 .bigger {
-  width: 100%;
-  height: 200px;
-  background-image: url("https://picsum.photos/344/241");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -109,11 +97,19 @@ body,
 .smaller {
   width: 100%;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(18, 32, 92, 0.9);
   position: absolute;
   bottom: 0;
-  text-align: center;
   color: white;
+  border-radius: 0 0 20px 20px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 20px;
 }
 .installation {
   margin-bottom: 1.5em;
@@ -423,12 +419,20 @@ table {
   border-color: var(--primary);
 }
 .case-cards {
-  div.col-md-4 > div {
+  .col-md-4 > div {
     width: 346px;
-    height: 137px;
+    min-height: 137px;
+    padding: 20px;
   }
   .title {
     font-size: 20px;
     font-weight: bold;
+    i {
+      padding: 0 10px 15px 5px;
+    }
   }
+}
+.communications {
+  width: 277px;
+  height: 301px;
 }
