@@ -5,7 +5,7 @@ body,
   color: #222;
   line-height: 1.5;
   font-size: 16px;
-  --primary: rgb(0, 89, 148);
+  --primary: rgba(18, 32, 92, 1);
 }
 @media (min-width: 1400px) {
   .container,
@@ -421,4 +421,14 @@ table {
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
+}
+.case-cards {
+  div.col-md-4 > div {
+    width: 346px;
+    height: 137px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
