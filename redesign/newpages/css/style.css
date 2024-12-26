@@ -367,7 +367,7 @@ table {
     z-index: 2;
   }
   .pk-body {
-    width: 375px;
+    width: clamp (350px, 375px);
     height: 261px;
     background-color: teal;
     position: relative;
@@ -391,4 +391,10 @@ table {
     font-size: 18px;
     margin-top: 70px;
   }
+}
+.rounded {
+  border-radius: 20px !important;
+}
+.btn {
+  border-radius: 10px;
 }
