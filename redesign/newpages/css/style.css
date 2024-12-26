@@ -56,6 +56,11 @@ body {
   background: navy url("../img/homesplash.png") no-repeat left top;
   background-size: cover;
   border-radius: 15px;
+  max-height: 445px;
+  color: white;
+  .hero-search {
+    background: rgba(0, 52, 111, 0.8);
+  }
 }
 .homenewssplash {
   background: rgba(48, 95, 152, 0.8) url("../img/homenewssplash.png") no-repeat left top;
