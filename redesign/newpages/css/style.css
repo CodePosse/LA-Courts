@@ -5,6 +5,9 @@ body {
   line-height: 1.5;
   font-size: 16px;
 }
+:root {
+  --primary: rgb(0, 89, 148);
+}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -402,4 +405,11 @@ table {
 }
 .btn {
   border-radius: 10px;
+}
+.primary {
+  color: var(--primary);
+}
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
