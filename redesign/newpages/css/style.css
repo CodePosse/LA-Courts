@@ -436,3 +436,20 @@ table {
   width: 277px;
   height: 301px;
 }
+.maps {
+  width: 954px;
+  height: 412px;
+  background-color: #e4e4e4;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid #999;
+  margin: 20px auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
