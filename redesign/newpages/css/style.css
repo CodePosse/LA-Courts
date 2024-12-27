@@ -6,6 +6,7 @@ body,
   line-height: 1.5;
   font-size: 16px;
   --primary: rgba(18, 32, 92, 1);
+  --warning: rgba(248, 229, 160, 1);
 }
 @media (min-width: 1400px) {
   .container,
@@ -146,6 +147,11 @@ a {
   background-color: var(--primary);
   border-color: var(--primary);
 }
+.bg-warning,
+.btn-warning {
+  background-color: var(--warning) !important;
+  border-color: var(--warning);
+}
 .case-cards {
   .col-md-4 > div {
     width: 346px;
@@ -167,10 +173,10 @@ a {
 .maps {
   width: 954px;
   height: 412px;
-  background-color: #e4e4e4;
+  background-color: #fff;
   margin: auto;
   border-radius: 10px;
-  border: 1px solid #999;
+  border: 1px solid #c0c0c0;
   margin: 20px auto;
 }
 h1,
