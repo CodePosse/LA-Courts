@@ -152,6 +152,9 @@ a {
     min-height: 137px;
     padding: 20px;
   }
+  i {
+    color: var(--primary);
+  }
   .title {
     font-size: 20px;
     font-weight: bold;
