@@ -39,11 +39,17 @@ body,
   bottom: -75px;
 }
 .homenewssplash {
-  background: rgba(48, 95, 152, 0.8) url("../img/homenewssplash.png") no-repeat left top;
+  background: linear-gradient(rgba(50, 104, 168, 0.9), rgba(50, 104, 168, 0.9)),
+    url("../img/Court_ComunicationsBG.jpg") no-repeat center bottom;
   background-size: cover;
 }
 .homemapsplash {
-  background: rgba(243, 247, 254, 0.9);
+  background: linear-gradient(rgba(243, 247, 254, 0.9), rgba(243, 247, 254, 0.9)),
+    url("../img/LocateaCourthouse-BG.jpg") no-repeat center bottom;
+  background-size: cover;
+}
+.atcourtsplash {
+  background: #fff url("../img/CourtSeal-cropped.png") no-repeat left top;
 }
 .minicard {
   width: 346px;
