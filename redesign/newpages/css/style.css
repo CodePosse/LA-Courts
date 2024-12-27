@@ -51,6 +51,9 @@ body,
 .atcourtsplash {
   background: #fff url("../img/CourtSeal-cropped.png") no-repeat left top;
 }
+img.icon {
+  width: 30px;
+}
 .minicard {
   width: 346px;
   min-height: 243px;
@@ -152,6 +155,11 @@ a {
 }
 .btn-primary {
   background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-outline-primary {
+  background-color: tansparent;
+  color: var(--primary);
   border-color: var(--primary);
 }
 .bg-warning,
