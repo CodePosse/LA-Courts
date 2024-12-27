@@ -20,7 +20,7 @@ body,
 }
 
 .homesplash {
-  background: navy url("../img/homesplash.png") no-repeat left top;
+  background: navy url("../img/homesplash.jpg") no-repeat left top;
   background-size: cover;
   border-radius: 15px;
   max-height: 445px;
