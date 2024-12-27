@@ -47,7 +47,7 @@ body,
 }
 .minicard {
   width: 346px;
-  height: 243px;
+  min-height: 243px;
   border-radius: 20px;
   img {
     width: 344px;
