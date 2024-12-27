@@ -50,8 +50,8 @@ body,
   min-height: 243px;
   border-radius: 20px;
   img {
-    width: 344px;
-    height: 241px;
+    width: 346px;
+    height: 243px;
   }
 }
 .bigger {
@@ -60,11 +60,12 @@ body,
   position: relative;
 }
 .smaller {
-  width: 100%;
+  width: calc(100% - 4px);
   height: 50px;
   background: rgba(18, 32, 92, 0.9);
   position: absolute;
   bottom: 0;
+  left: 14px;
   color: white;
   border-radius: 0 0 20px 20px;
   font-family: Lato;
