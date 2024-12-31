@@ -18,7 +18,7 @@
     <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
 </head>
 
-<body>
+<body style="width:100vw;">
     <div class="container-xxl homesplash p-5 mb-5">
         <div class="row">
             <div class="col-lg-6 px-md-5">
@@ -56,8 +56,14 @@
             </div>
         </div>
     </div>
-
-    <div class="container pt-md-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-4 border-start"><a href="#news">Recent<br>News</a></div>
+            <div class="col-4 border-start"><a href="#areas">Areas<br>of Law</a></div>
+            <div class="col-4 border-start border-end"><a href="#map">Courthouse<br>Locations</a></div>
+        </div>
+    </div>
+    <div class="container pt-md-5" id="see">
         <div class="row text-center py-3">
             <h2 class="fs-4 primary">See What Else You Can Do At The Court</h2>
         </div>
@@ -101,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="container news-announce homenewssplash py-5 px-md-5">
+    <div class="container news-announce homenewssplash py-5 px-md-5" id="news">
         <div class="row">
             <div class="col text-center text-white mb-5">
                 <h2>Court Communications</h2>
@@ -145,7 +151,7 @@
                     Visit Court Communications</a></div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" id="areas">
         <div class="row">
             <div class="col text-center primary">
                 <h2>Types of Cases</h2>
@@ -212,7 +218,7 @@
             </div>
         </div>
     </div>
-    <div class="container homemapsplash mt-5 py-5">
+    <div class="container homemapsplash mt-5 py-5" id="map">
         <div class="row">
             <div class="col text-center primary">
                 <h2>Locate a Courthouse</h2>
