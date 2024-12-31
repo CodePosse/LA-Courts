@@ -200,3 +200,6 @@ h5,
 h6 {
   font-weight: bold;
 }
+.mobile-hotlink a:active {
+  background-color: #c4c4c4;
+}
