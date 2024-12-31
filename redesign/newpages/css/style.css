@@ -200,6 +200,20 @@ h5,
 h6 {
   font-weight: bold;
 }
-.mobile-hotlink a:active {
+.mobile-hotlink a:hover,
+.case-cards .border:hover {
   background-color: #c4c4c4;
+}
+@media (max-width: 500px) {
+  .case-cards {
+    .col-md-4 {
+      padding: 0px !important;
+      width: 100% !important;
+    }
+    .rounded {
+      border-radius: 0 !important;
+      width: 100% !important;
+      margin: 0px;
+    }
+  }
 }
