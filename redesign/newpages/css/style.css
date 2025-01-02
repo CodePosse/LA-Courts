@@ -7,6 +7,7 @@ body,
   font-size: 16px;
   --primary: rgba(18, 32, 92, 1);
   --warning: rgba(248, 229, 160, 1);
+  background-color: #f2f6fc;
 }
 @media (min-width: 1400px) {
   .container,
