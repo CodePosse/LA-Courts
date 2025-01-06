@@ -148,6 +148,9 @@ a {
 .rounded {
   border-radius: 20px !important;
 }
+.rounded-br {
+  border-radius: 0 0 20px 0 !important;
+}
 .btn {
   border-radius: 10px;
 }
