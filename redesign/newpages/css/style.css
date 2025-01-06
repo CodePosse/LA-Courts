@@ -220,4 +220,13 @@ h6 {
       margin: 0px;
     }
   }
+  .homesplash {
+    .col-lg-6 {
+      padding: 0;
+      .hero-search {
+        top: 100px;
+        position: relative;
+      }
+    }
+  }
 }
