@@ -70,12 +70,11 @@ img.icon {
   position: relative;
 }
 .smaller {
-  width: calc(100% - 4px);
+  width: calc(100% - 2px);
   height: 50px;
   background: rgba(18, 32, 92, 0.9);
   position: absolute;
   bottom: 0;
-  left: 14px;
   color: white;
   border-radius: 0 0 20px 20px;
   font-family: Lato;
