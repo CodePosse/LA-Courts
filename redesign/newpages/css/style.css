@@ -30,6 +30,10 @@ footer {
   .brands a {
     margin-right: 15px;
   }
+  .last-line a {
+    text-decoration: underline;
+    padding: 0 10px;
+  }
 }
 .homesplash {
   background: navy url("../img/homesplash.jpg") no-repeat left top;
