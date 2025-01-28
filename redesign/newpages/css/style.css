@@ -56,7 +56,7 @@ footer {
   margin: auto;
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.25);
   position: relative;
-  bottom: -100px;
+  bottom: -80px;
 }
 .homenewssplash {
   background: linear-gradient(rgba(50, 104, 168, 0.9), rgba(50, 104, 168, 0.9)),
@@ -95,7 +95,7 @@ img.icon {
   position: absolute;
   bottom: 0;
   color: white;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
   font-family: Lato;
   font-size: 16px;
   font-weight: 700;
@@ -159,13 +159,13 @@ a {
     }
   }
   .pk-card-title {
-    font-size: 18px;
+    font-size: 23px;
     margin-top: 70px;
     font-weight: bold;
   }
 }
 .rounded {
-  border-radius: 20px !important;
+  border-radius: 10px !important;
 }
 .rounded-br {
   border-radius: 0 0 20px 0 !important;
@@ -193,15 +193,17 @@ a {
 .case-cards {
   .col-md-4 > div {
     width: 346px;
-    min-height: 137px;
+    min-height: 188px;
     padding: 20px;
   }
   i {
     color: var(--primary);
   }
   .title {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
+    padding: 5px 0 10px;
+
     i {
       padding: 0 10px 15px 5px;
     }
