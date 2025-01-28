@@ -3,8 +3,8 @@ body,
 :root {
   font-family: "Lato", Tahoma, sans-serif;
   color: #222;
-  line-height: 1.5;
-  font-size: 16px;
+  line-height: 29px;
+  font-size: 18px;
   --primary: rgba(18, 32, 92, 1);
   --warning: rgba(248, 229, 160, 1);
   background-color: #f2f6fc;
@@ -26,13 +26,17 @@ footer {
   color: #fff;
   a {
     color: #fff;
+    font-size: 0.75rem;
+    &:hover {
+      text-decoration: underline;
+      color: inherit;
+    }
   }
   .brands a {
     margin-right: 20px;
   }
   .last-line a {
     text-decoration: underline;
-    padding: 0 10px;
   }
 }
 .homesplash {
@@ -93,7 +97,7 @@ img.icon {
   color: white;
   border-radius: 0 0 20px 20px;
   font-family: Lato;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 48px;
   text-align: left;
