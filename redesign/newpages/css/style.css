@@ -5,7 +5,7 @@ body,
   color: #222;
   line-height: 29px;
   font-size: 18px;
-  --primary: rgba(18, 32, 92, 1);
+  --primary: rgb(18, 32, 92, 1);
   --warning: rgba(248, 229, 160, 1);
   background-color: #f2f6fc;
 }
@@ -69,18 +69,17 @@ footer {
   background-size: cover;
 }
 .atcourtsplash {
-  background: #fff url("../img/CourtSeal-cropped.png") no-repeat left top;
+  background: linear-gradient(rgba(50, 104, 168, 0.19), rgba(50, 104, 168, 0.19)),
+    #fff url("../img/CourtSeal-cropped.png") no-repeat left top;
 }
 img.icon {
   width: 30px;
 }
 .minicard {
-  width: 365px;
-  min-height: 243px;
+  width: 100%;
   border-radius: 20px;
   img {
-    width: 365px;
-    height: 243px;
+    width: 100%;
   }
 }
 .bigger {
@@ -165,7 +164,10 @@ a {
   }
 }
 .rounded {
-  border-radius: 10px !important;
+  border-radius: 20px !important;
+  div.rounded {
+    border-radius: 10px !important;
+  }
 }
 .rounded-br {
   border-radius: 0 0 20px 0 !important;
@@ -250,4 +252,12 @@ h6 {
       }
     }
   }
+}
+.bg-grey-phantom {
+  background-color: rgba(255, 255, 255, 0.75);
+  align-content: center;
+}
+/* align vertically center */
+.align-vcenter {
+  align-content: center;
 }
