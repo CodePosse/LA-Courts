@@ -168,7 +168,8 @@ a {
 }
 .rounded {
   border-radius: 20px !important;
-  div.rounded {
+  div.rounded,
+  img.rounded {
     border-radius: 10px !important;
   }
 }
