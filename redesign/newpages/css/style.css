@@ -6,6 +6,7 @@ body,
   line-height: 29px;
   font-size: 18px;
   --primary: rgb(18, 32, 92, 1);
+  --blue3: #005994;
   --warning: rgba(248, 229, 160, 1);
   background-color: #f2f6fc;
 }
@@ -179,6 +180,14 @@ a {
 }
 .primary {
   color: var(--primary);
+}
+.blue3,
+h2.primary,
+h3.primary,
+h4.primary,
+h5.primary,
+h6.primary {
+  color: var(--blue3);
 }
 .btn-primary {
   background-color: var(--primary);
