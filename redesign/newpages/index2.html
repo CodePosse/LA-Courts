@@ -17,7 +17,22 @@
     <meta name="theme-color" content="#012362">
     <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
     <style>
-        body div {}
+        .debug {
+            div {
+                outline: 1px dashed rgba(0, 199, 3, 0.95);
+            }
+        }
+
+        .bug {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 9999;
+            color: blue;
+            border-radius: 20px;
+            background-color: rgba(215, 25, 0, .5);
+            padding: 2px 5px;
+        }
     </style>
 </head>
 
@@ -393,7 +408,12 @@
     </footer>
     <div class="container text-center py-2">Copyright &copy;2025 Superior Court of California County of Los Angeles
     </div>
-    <script>$(body).toggleClass('body div')</script>
+    <div class="bug"><i class="fa-solid fa-bug-slash"></i></div>
+    <script>
+        $(".bug").on("click", function () {
+            $("body").toggleClass("debug");
+        });
+    </script>
 </body>
 
 </html>
