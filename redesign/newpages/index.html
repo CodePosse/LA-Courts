@@ -16,10 +16,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="theme-color" content="#012362">
     <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
+    <style>
+        .debug {
+            div {
+                outline: 1px dashed rgba(0, 199, 3, 0.95);
+            }
+        }
+
+        .bug {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 9999;
+            color: blue;
+            border-radius: 20px;
+            background-color: rgba(215, 25, 0, .5);
+            padding: 2px 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-xxl homesplash p-5 mb-5">
+    <div class="container-xxl homesplash p-5 mb-0 mb-md-5">
         <div class="row">
             <div class="col-lg-6 px-md-5">
                 <div class="hero-search rounded px-4 py-2 my-md-5">
@@ -34,147 +52,178 @@
                 </div>
             </div>
         </div>
-        <div class="row d-none d-lg-block ">
+        <div class="row d-none d-lg-block">
             <div class="col">
                 <div class="hero-linkbar rounded row py-2 px-4 text-black">
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-people-line me-2"></i> <a href="">Jury Duty</a>
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-people-line me-2"></i> <a href="#">Jury Duty</a>
                     </div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-car me-2"></i> <a href="">Traffic Citations</a>
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-car me-2"></i> <a href="#">Traffic Citations</a>
                     </div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-file-circle-question me-2"></i> <a href="">Find a
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-file-circle-question me-2"></i> <a href="#">Find a
                             Case</a></div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-file-pen me-2"></i> <a href="">Forms</a></div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-shield-halved me-2"></i> <a href="">Protective
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-file-pen me-2"></i> <a href="#">Forms</a></div>
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-shield-halved me-2"></i> <a href="#">Protective
                             Orders</a>
                     </div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-laptop me-2"></i> <a href="">Remote Hearings</a>
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-laptop me-2"></i> <a href="#">Remote Hearings</a>
                     </div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-globe me-2"></i> <a href="">Language Access</a>
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-globe me-2"></i> <a href="#">Language Access</a>
                     </div>
-                    <div class="col-md-3 p-2"><i class="fa-solid fa-wheelchair me-2"></i> <a href="">ADA</a></div>
+                    <div class="col-md-3 p-2"><i class="fa-solid fa-wheelchair me-2"></i> <a href="#">ADA</a></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row text-center mobile-hotlink d-xs-block d-sm-block d-md-none">
-            <div class="col-4 border-start p-0 m-0"><a href="#news" class="d-block py-2"><i
-                        class="fa-solid fa-newspaper"></i><br>Recent<br>News</a>
+        <div class="row text-center mobile-hotlink d-xs-block d-sm-block d-md-none mt-5 pt-4">
+            <div class="col-4 p-0 m-0"><a href="#news" class="d-block py-2"><i
+                        class="fa-solid fa-people-line"></i><br>Jury<br>Duty</a>
             </div>
-            <div class="col-4 border-start p-0 m-0"><a href="#areas" class="d-block py-2"><i
-                        class="fa-solid fa-scale-balanced"></i><br>Areas<br>of
-                    Law</a></div>
-            <div class="col-4 border-start border-end p-0 m-0"><a href="#map" class="d-block py-2"><i
-                        class=" fa-solid fa-landmark"></i><br>Courthouse<br>Locations</a></div>
+            <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
+                        class="fa-solid fa-car"></i><br>Traffic<br>Citations</a></div>
+            <div class="col-4 p-0 m-0"><a href="#map" class="d-block py-2"><i
+                        class=" fa-solid fa-file-circle-question"></i><br>Find<br>a Case</a></div>
+            <div class="col-4 p-0 m-0"><a href="#news" class="d-block py-2"><i
+                        class="fa-solid fa-file-pen"></i><br>Forms<br></a>
+            </div>
+            <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
+                        class="fa-solid fa-shield-halved"></i><br>Protective<br>Orders</a></div>
+            <div class="col-4 p-0 m-0"><a href="#map" class="d-block py-2"><i
+                        class=" fa-solid fa-laptop"></i><br>Remote<br>Hearings</a></div>
+            <div class="col-4 p-0 m-0"><a href="#news" class="d-block py-2"><i
+                        class="fa-solid fa-globe"></i><br>Language<br>Access</a>
+            </div>
+            <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
+                        class="fa-solid fa-wheelchair me-2"></i><br>ADA<br></a></div>
+            <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
+                        class="fa-solid fa-newspaper me-2"></i><br>Recent<br>News</a></div>
         </div>
     </div>
-    <div class="container pt-md-5" id="see">
-        <div class="row text-center py-3">
-            <h2 class="fs-4 primary">See What Else You Can Do At The Court</h2>
+    <div class="container pt-md-4" id="see">
+        <div class="row text-center py-2">
+            <h2 class="blue3">See What Else You Can Do At The Court</h2>
         </div>
-        <div class="row pb-5">
-            <div class="col-lg-4 p-0 my-4 mt-md-2 d-flex justify-content-center">
-                <div class="pk-card-home">
+        <div class="row pb-5 d-flex justify-content-center">
+            <div class="col-xl-4 col-md-6 p-0 my-4 mt-md-2 d-flex justify-content-center">
+                <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/pk-card-1.png" alt="" class="pk-img"></div>
                     <div class="pk-body first">
                         <h4 class="pk-card-title">Alternative Dispute Resolution</h4>
-                        <p>Learn about settlement programs to resolve your case.</p><a href=""
+                        <p>Learn about settlement programs to resolve your case.</p><a href="#"
                             class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 p-0 my-4 mt-md-2 d-flex justify-content-center">
-                <div class="pk-card-home">
+            <div class="col-xl-4 col-md-6 p-0 my-4 mt-md-2 d-flex justify-content-center">
+                <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/pk-card-2.png" alt="" class="pk-img"></div>
                     <div class="pk-body second">
                         <h4 class="pk-card-title">CARE Court</h4>
-                        <p>A new mental health resource fostering recovery and empowerment.</p><a href=""
+                        <p>A new mental health resource fostering recovery and empowerment.</p><a href="#"
                             class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 p-0 my-4 mt-md-2 d-flex justify-content-center">
-                <div class="pk-card-home">
+            <div class="col-xl-4 col-md-6 p-0 my-4 mt-md-2 d-flex justify-content-center">
+                <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/pk-card-3.png" alt="" class="pk-img"></div>
                     <div class="pk-body third">
                         <h4 class="pk-card-title">LACourtConnect</h4>
-                        <p>You can schedule a remote appearance for your case hearing.</p><a href=""
+                        <p>You can schedule a remote appearance for your case hearing.</p><a href="#"
                             class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container pt-5 pb-3">
+    <div class="container pb-3">
         <div class="row">
             <div class="col text-center">
                 <button type="button" class="btn btn-outline-primary">View All</button>
             </div>
         </div>
     </div>
-    <div class="container news-announce homenewssplash py-5 px-md-5" id="news">
+    <div class="container news-announce rounded homenewssplash py-4 px-3 px-md-5 my-5" id="news">
         <div class="row">
-            <div class="col text-center text-white mb-5">
+            <div class="col text-center text-white mb-2">
                 <h2>Court Communications</h2>
             </div>
         </div>
-        <div class="row px-md-5 mx-md-5 text-white">
-            <div class="col-lg-4 d-none d-lg-block"><img src="img/communications.png" alt=""
-                    class="img-fluid rounded-br">
-            </div>
-            <div class="col-lg-6">
-                <p>
-                <div class="badge rounded-pill bg-warning text-dark">General News</div> April 24, 2024</p>
-                <h2>Electronic Certification of Probate Letters Available May 1</h2>
-                <p>Public Notice (Effective Wednesday, May 1, individuals will have the ability to electronically
-                    certify Probate Letters issued for decedent, guardianship and conservatorship matters.)</p>
-                <p><a href="" class="btn btn-primary">Read More</a></p>
+        <div class="row bg-white rounded px-2 py-3 m-0 mx-md-2">
+            <div class="row px-md-0 mx-md-0">
+                <div class="col-lg-6 d-none d-lg-block"><img src="img/Court Communications.png" alt=""
+                        class="w-100 h-100 rounded">
+                </div>
+                <div class="col-lg-6 mx-3 m-md-0">
+                    <p>
+                    <div class="badge rounded-pill bg-warning text-dark">General News </div>
+                    </p>
+                    <h3 class="blue3">Electronic Certification of Probate Letters Available May 1</h3>
+                    <p>Public Notice (Effective Wednesday, May 1, individuals will have the ability to electronically
+                        certify Probate Letters issued for decedent, guardianship and conservatorship matters.)
+                        <br>April
+                        24, 2024
+                    </p>
+
+                    <p><a href="#" class="btn btn-primary mb-0">Read More</a></p>
+                </div>
             </div>
         </div>
-        <div class="row px-md-5 m-md-5 mb-0 bg-white rounded">
-            <div class="col-12 text-center mt-3 mb-2">
-                <h4>Recent Announcements</h4>
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 px-md-2 m-md-2 mb-0 row">
+                <div class="col-12 text-center text-white mt-3 mb-2">
+                    <h4>Recent Announcements</h4>
+                </div>
             </div>
+        </div>
+        <div class="row py-3 m-0">
             <div class="col-md-4">
-                <div class="badge rounded-pill bg-warning text-dark">General News</div>
-                <p>Superior Court of Los Angeles County launches new CARE COURT webpage <br>
-                    <small> April 2nd, 2024</small>
+                <div class="bg-grey-phantom rounded p-3 h-100">
+                    <div class="badge rounded-pill bg-warning text-dark mb-2">General News</div>
+                    <p>Superior Court of Los Angeles County launches new CARE COURT webpage <br>
+                        April 2nd, 2024
+                </div>
                 </p>
             </div>
             <div class="col-md-4">
-                <div class="badge rounded-pill bg-warning text-dark">General News</div>
-                <p>New Dashboard provides access to data regarding new Pre-Arraignment Release Protocols in Los Angeles
-                    County <br><small>Jan 22, 2024</small></p>
+                <div class="bg-grey-phantom rounded p-3 h-100">
+                    <div class="badge rounded-pill bg-warning text-dark mb-2">General News</div>
+                    <p>New Dashboard provides access to data regarding new Pre-Arraignment Release Protocols in Los
+                        Angeles
+                        County <br>Jan 22, 2024</p>
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="badge rounded-pill bg-warning text-dark">General News</div>
-                <p>Superior Court of Los Angeles County launches new CARE COURT webpage <br><small>April 2nd,
-                        2024</small></p>
+                <div class="bg-grey-phantom rounded p-3 h-100">
+                    <div class="badge rounded-pill bg-warning text-dark mb-2">General News</div>
+                    <p>Superior Court of Los Angeles County launches new CARE COURT webpage <br>April 2nd,
+                        2024</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col text-center mt-3"><a href="" class="btn btn-outline-light">
+            <div class="col text-center mt-3"><a href="#" class="btn btn-outline-light">
                     Visit Court Communications</a></div>
         </div>
     </div>
-    <div class="container mt-5" id="areas">
+    <div class="container my-5 px-3 pt-3 px-md-5" id="areas">
         <div class="row">
             <div class="col text-center primary">
-                <h2>Types of Cases</h2>
+                <h2 class="primary">Types of Cases</h2>
             </div>
         </div>
         <div class="row p-md-3 px-md-5 case-cards">
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="" class="d-block">
-                        <div class="title"><img src="img/icons/Civil.png" alt="" class="icon"> Civil</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="#" class="d-block">
+                        <div class="title"><i class="fa fa-scale-balanced"></i> Civil</div>
                         <div>A court system for private parties to resolve Disputes, Lawsuits, Evictions, Collections.
                         </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="" class="d-block">
-                        <div class="title"><img src="img/icons/Criminal.png" alt="" class="icon"> Criminal</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="#" class="d-block">
+                        <div class="title"><i class="fa fa-scale-balanced"></i> Criminal</div>
                         <div>Criminal offenses fall into one of three categories: Infractions, Misdemeanors, or
                             Felonies.
                         </div>
@@ -182,8 +231,8 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="" class="d-block">
-                        <div class="title"><img src="img/icons/FLaw.png" alt="" class="icon"> Family Law</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="#" class="d-block">
+                        <div class="title"><i class="fa fa-people-roof"></i> Family Law</div>
                         <div>Child Custody, Child and Spousal Support, Divorce, Domestic Violence, Parentage,
                             Restraining
                             Orders.</div>
@@ -191,8 +240,8 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="" class="d-block">
-                        <div class="title"><img src="img/icons/Juvenile.png" alt="" class="icon"> Juvenile</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="#" class="d-block">
+                        <div class="title"><i class="fa fa-child-reaching"></i> Juvenile</div>
                         <div>For cases that involve children under 18 years old. Dependency Court and Juvenile Justice
                             Court
                             fall under this category.</div>
@@ -200,8 +249,8 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="" class="d-block">
-                        <div class="title"><img src="img/icons/Mental_health.png" alt="" class="icon"> Mental Health
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="#" class="d-block">
+                        <div class="title"><i class="fa fa-hand-holding-heart"></i> Mental Health
                         </div>
                         <div>A centralized court for cases involving mental disorders and mental health legal issues.
                         </div>
@@ -209,22 +258,22 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="" class="d-block">
-                        <div class="title"><img src="img/icons/probate.png" alt="" class="icon"> Probate</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="#" class="d-block">
+                        <div class="title"><i class="fa fa-gavel"></i> Probate</div>
                         <div>Descendent's estates, Trusts, Guardianship, Conservatorships and Minor's compromises </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="small claims" class="d-block">
-                        <div class="title"><img src="img/icons/small_claims.png" alt="" class="icon"> Small Claims</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="small claims" class="d-block">
+                        <div class="title"><i class="fa fa-scroll"></i> Small Claims</div>
                         <div>A civil court handling disputes of $12,500 or less.</div>
                     </a>
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="Traffic" class="d-block">
-                        <div class="title"><img src="img/icons/traffic.png" alt="" class="icon"> Traffic</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="Traffic" class="d-block">
+                        <div class="title"><i class="fa fa-traffic-light"></i> Traffic</div>
                         <div>Involves a citation or ticket written by a law enforcement officer. Violations: Traffic
                             laws
                             and other non-traffic offenses.</div>
@@ -232,64 +281,139 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex justify-content-center">
-                <div class="rounded border py-2 px-4 m-md-2"><a href="Appellate" class="d-block">
-                        <div class="title"><img src="img/icons/Appellate.png" alt="" class="icon"> Appellate</div>
+                <div class="rounded border py-2 px-4 m-md-2 bg-light"><a href="Appellate" class="d-block">
+                        <div class="title"><i class="fa fa-building-columns"></i> Appellate</div>
                         <div>The Appellate Division reviews the trial court decisions, and all evidence presented.</div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container homemapsplash mt-5 py-5" id="map">
+    <div class="container homemapsplash rounded my-5 py-4 px-3 px-md-5" id="map">
         <div class="row">
             <div class="col text-center primary">
-                <h2>Locate a Courthouse</h2>
+                <h2 class="blue3">Locate a Courthouse</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div class="maps">
-                    <h1>coming soon</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 px-md-5">
+                <div class="maps p-2">
+                    <iframe width="100%" height="480" frameborder="0" style="border:0"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBA7S7HJzynoui_BeR_QegVT2FB1IHgndI&q=court+house"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container py-5 atcourtsplash">
-        <div class="row mb-5">
-            <div class="col text-center primary">
-                <h2>At the Court</h2>
+    <div class="container py-4 rounded atcourtsplash px-3 px-md-5 my-5">
+        <div class="row px-md-5 mx-md-5">
+            <div class="col-12 text-center primary mb-4">
+                <h2 class="blue3">At the Court</h2>
             </div>
         </div>
+        <div class="row bg-white rounded px-2 py-3 m-0 mx-md-2">
+            <div class="col-lg-6 mx-3 m-md-0 align-vcenter">
+                <h3 class="blue3">Community Outreach</h3>
+                <p>The Court is guided by the California Standards of Judicial
+                    Administration, Standard 10.5(a), “Judicial participation in community outreach activities should be
+                    considered an official judicial function to promote public understanding of and confidence in the
+                    administration of justice.”</p>
+                <p class="w-50"><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block"><img src="img/At the court.png" alt="" class="w-100 rounded">
+            </div>
+        </div>
+        <div class="row mt-5 mb-4 d-flex justify-content-center">
+            <div class="col-xl-4 col-md-6">
+                <div class="minicard bigger mt-3"><a href="#">
+                        <img src="img/minicard-1.png" alt="" class="rounded border">
+                        <div class="smaller">Reports & Publications</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="minicard bigger mt-3"><a href="#">
+                        <img src="img/minicard-2.png" alt="" class="rounded border">
+                        <div class="smaller">Jobs</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="minicard bigger mt-3"><a href="#">
+                        <img src="img/minicard-3.png" alt="" class="rounded border">
+                        <div class="smaller">Digital Divide</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-lg-8"><i></i>
-                <h4>Community Outreach</h4>
-                <div class="col-lg-8 pb-1 pb-md-5">Lorem ipsum dolor sit amet consectetur. Fermentum sociis convallis
-                    sed amet
-                    congue. Turpis vel a
-                    velit cras vel ut mi eget. Tristique sem vene Turpis vel a velit cras vel ut mi eget. Fermentum
-                    sociis</div>
-                <p class="w-50"><a href="" class="btn btn-primary m-1">Learn More</a> <a href=""
-                        class="btn btn-outline-primary m-1">View
-                        All</a></p>
-            </div>
-            <div class="col-lg-4 d-none d-lg-block "><img src="img/atcourt.png" alt="" class="img-fluid rounded-br">
-            </div>
-        </div>
-        <div class="row my-5 d-flex justify-content-evenly">
-            <div class="minicard bigger my-2">
-                <img src="img/minicard-1.png" alt="" class="rounded border">
-                <div class="smaller">Reports & Publications</div>
-            </div>
-            <div class="minicard bigger my-2">
-                <img src="img/minicard-2.png" alt="" class="rounded border">
-                <div class="smaller">Jobs</div>
-            </div>
-            <div class="minicard bigger my-2">
-                <img src="img/minicard-3.png" alt="" class="rounded border">
-                <div class="smaller">Digital Divide</div>
+            <div class="col text-center">
+                <button type="button" class="btn btn-outline-primary">View All Programs</button>
             </div>
         </div>
     </div>
+    <footer class="container footer rounded px-3 px-md-5 py-4 mt-5">
+        <div class="row">
+            <div class="col-md-6"><a href="#"><img src="img/footer-logo.png" alt="logo.png" class="w-60">
+                    <div class="sr-only">Home</div>
+                </a></div>
+            <div class="col-md-6 mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end text-nowrap">
+                <div class="me-3 mx-md-4 me-md-5"><strong class="">At the Court</strong>
+                    <p class="mt-1"><a href="#">Courthouses</a><br><a href="#">Jury
+                            Duty</a></p>
+                </div>
+                <div class="mx-md-5"><strong>Services</strong>
+                    <p class="mt-1"><a href="#">Online Services</a><br><a href="#">Self-Help Center</a><br><a
+                            href="#">Attorneys</a></p>
+                </div>
+                <div class="mx-2 ms-md-4"><strong>About</strong>
+                    <p class="mt-1"><a href="#">About the Court</a><br><a href="#">Court Holidays</a><br><a
+                            href="#">Jobs</a></p>
+                </div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-md-6 ps-md-4">
+                <div><strong class="sixteen">Follow the Court on:</strong></div>
+                <div class="brands">
+                    <a href="#"><i class="fa-brands fa-facebook"></i>
+                        <div class="sr-only">Facebook</div>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i>
+                        <div class="sr-only">Twitter/X</div>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i>
+                        <div class="sr-only">LinkedIn</div>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-google"></i>
+                        <div class="sr-only">Google</div>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i>
+                        <div class="sr-only">YouTube</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 row last-line">
+                <div><strong class="sixteen">&nbsp;</strong></div>
+                <div class="col-12 text-center text-md-end pe-0">
+                    <a href="#" class="">Privacy Statement</a> |
+                    <a href="#" class="">Website Disclaimer</a> |
+                    <a href="#" class="">Comment On Our Website</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="container text-center py-2">Copyright &copy;2025 Superior Court of California County of Los Angeles
+    </div>
+    <div class="bug"><i class="fa-solid fa-bug-slash"></i></div>
+    <script>
+        $(".bug").on("click", function () {
+            $("body").toggleClass("debug");
+        });
+    </script>
 </body>
 
 </html>
