@@ -16,7 +16,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="theme-color" content="#012362">
     <link rel="manifest" href="./site.webmanifest" crossorigin="use-credentials">
-
+    <style>
+        body div {}
+    </style>
 </head>
 
 <body>
@@ -86,8 +88,8 @@
         <div class="row text-center py-2">
             <h2 class="blue3">See What Else You Can Do At The Court</h2>
         </div>
-        <div class="row pb-5">
-            <div class="col-xl-4 p-0 my-4 mt-md-2 d-flex justify-content-center">
+        <div class="row pb-5 d-flex justify-content-center">
+            <div class="col-xl-4 col-md-6 p-0 my-4 mt-md-2 d-flex justify-content-center">
                 <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/pk-card-1.png" alt="" class="pk-img"></div>
                     <div class="pk-body first">
@@ -97,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 p-0 my-4 mt-md-2 d-flex justify-content-center">
+            <div class="col-xl-4 col-md-6 p-0 my-4 mt-md-2 d-flex justify-content-center">
                 <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/pk-card-2.png" alt="" class="pk-img"></div>
                     <div class="pk-body second">
@@ -107,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 p-0 my-4 mt-md-2 d-flex justify-content-center">
+            <div class="col-xl-4 col-md-6 p-0 my-4 mt-md-2 d-flex justify-content-center">
                 <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/pk-card-3.png" alt="" class="pk-img"></div>
                     <div class="pk-body third">
@@ -343,16 +345,16 @@
             <div class="col-md-6"><a href="#"><img src="img/footer-logo.png" alt="logo.png" class="w-60">
                     <div class="sr-only">Home</div>
                 </a></div>
-            <div class="col-md-6 row mt-3 mt-md-0">
-                <div class="col-4"><strong class="">At the Court</strong>
+            <div class="col-md-6 mt-3 mt-md-0 d-flex justify-content-end">
+                <div class="mx-4"><strong class="">At the Court</strong>
                     <p class="mt-1"><a href="#">Courthouses</a><br><a href="#">Jury
                             Duty</a></p>
                 </div>
-                <div class="col-4"><strong>Services</strong>
+                <div class="mx-4"><strong>Services</strong>
                     <p class="mt-1"><a href="#">Online Services</a><br><a href="#">Self-Help Center</a><br><a
                             href="#">Attorneys</a></p>
                 </div>
-                <div class="col-4"><strong>About</strong>
+                <div class="mx-4"><strong>About</strong>
                     <p class="mt-1"><a href="#">About the Court</a><br><a href="#">Court Holidays</a><br><a
                             href="#">Jobs</a></p>
                 </div>
@@ -380,7 +382,7 @@
             </div>
             <div class="col-md-6 row last-line">
                 <div><strong class="sixteen">&nbsp;</strong></div>
-                <div class="col-12">
+                <div class="col-12 text-end me-4">
                     <a href="#" class="">Privacy Statement</a> |
                     <a href="#" class="">Website Disclaimer</a> |
                     <a href="#" class="">Comment On Our Website</a>
@@ -391,6 +393,7 @@
     </footer>
     <div class="container text-center py-2">Copyright &copy;2025 Superior Court of California County of Los Angeles
     </div>
+    <script>$(body).toggleClass('body div')</script>
 </body>
 
 </html>
