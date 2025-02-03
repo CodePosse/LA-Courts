@@ -244,9 +244,6 @@ h5 {
     min-height: 188px;
     padding: 20px;
   }
-  i {
-    color: var(--primary);
-  }
   .title {
     font-size: 23px;
     font-weight: bold;
