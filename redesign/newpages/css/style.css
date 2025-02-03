@@ -7,7 +7,7 @@ body,
   --primary: rgb(18, 32, 92, 1);
   --blue3: #005994;
   --warning: rgba(248, 229, 160, 1);
-  background-color: #f2f6fc;
+  background-color: #fff !important;
 }
 @media (min-width: 1400px) {
   .container,
@@ -232,6 +232,12 @@ h5 {
   border-color: var(--warning);
 }
 .case-cards {
+  .border {
+    border-color: var(--blue3) !important;
+  }
+  .rounded.border.border-2.py-2.px-4.m-md-2:hover {
+    background-color: #f2f6fc;
+  }
   .col-md-4 > div {
     width: 346px;
     min-height: 188px;
