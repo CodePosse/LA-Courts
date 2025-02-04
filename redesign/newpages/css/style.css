@@ -99,8 +99,10 @@ footer .last-line a {
     #fff url("../img/CourtSeal-cropped.png") no-repeat left top;
 }
 
-img.icon {
-  width: 30px;
+img.icons {
+  width: 22px;
+  height: 22px;
+  margin: 0 5px 5px 0;
 }
 
 .minicard {
@@ -281,10 +283,6 @@ h5 {
 .case-cards .title {
   font-size: 23px;
   font-weight: bold;
-}
-
-.case-cards .title i {
-  padding: 0 10px 0px 5px;
 }
 
 .maps {
