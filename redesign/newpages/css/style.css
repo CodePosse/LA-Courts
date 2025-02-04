@@ -105,7 +105,7 @@ img.icon {
   height: 107px;
   background: rgba(18, 32, 92, 0.9);
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
   color: white;
   border-radius: 0 0 10px 10px;
   font-family: Lato;
