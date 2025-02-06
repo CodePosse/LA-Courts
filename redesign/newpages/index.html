@@ -54,7 +54,8 @@
     <header class="container-xxl d-none d-md-block p-5">
         <div class="row d-flex justify-content-between px-5">
             <div class="col-2 bg-secondary">LOGO</div>
-            <div class="col-3 bg-secondary text-end">MENU AND MORE</div>
+            <div class="col-3 bg-secondary text-end">MENU AND MORE <div id="google_translate_element"></div>
+            </div>
         </div>
     </header>
     <nav class="container-xxl d-none d-md-block">
@@ -494,6 +495,17 @@
             $("body").toggleClass("debug");
         });
     </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en'
+                }, 'google_translate_element');
+        };
+        console.info("%c Google translate code executed on domain: " + location.hostname, "background: #222; color: yellow;font-size: 18px;");
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
+     cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
