@@ -10,31 +10,57 @@ body,
   --warning: rgba(248, 229, 160, 1);
   background-color: #fff !important;
 }
+
 nav {
   background-color: #232f3d;
   border-bottom: 5px solid #f5c04f;
   border-radius: 20px 20px 0 0;
   padding: 10px;
+}
+
+nav a,
+footer a {
+  color: #fff;
+}
+
+.nav-search {
+  border-radius: 10px !important;
+  font-size: 14px;
+}
+
+.nav-search .form-control::placeholder,
+.nav-search value,
+.nav-search input {
+  font-style: italic;
+}
+
+.nav-search i {
+  font-style: normal;
+}
+
+.navbar .megamenu {
+  padding: 1rem;
+}
+
+@media all and (min-width: 992px) {
   a.nav-link {
     color: #fff;
+    padding: 10px 0.25rem !important;
   }
-  .nav-search {
-    background-color: rgba(255, 255, 255, 0.125) !important;
-    border-radius: 10px !important;
-    color: #fff !important;
-    font-size: 14px;
-    .form-control::placeholder,
-    i,
-    value,
-    input {
-      color: #fff !important;
-      font-style: italic;
-    }
-    i {
-      font-style: normal;
-    }
+  .col-megamenu a {
+    color: black;
+  }
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
   }
 }
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -57,12 +83,8 @@ footer strong {
   letter-spacing: 0.5px !important;
 }
 
-footer .sixteen {
-  font-size: 16px;
-}
-
+footer .sixteen,
 footer a {
-  color: #fff;
   font-size: 16px;
 }
 
@@ -173,6 +195,7 @@ a {
   color: #0d3523;
   text-decoration: none;
 }
+
 .pk-card-home {
   max-width: 375px;
   height: 333px;

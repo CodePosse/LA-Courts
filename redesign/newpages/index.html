@@ -6,31 +6,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
-
     <meta name="theme-color" content="#012362">
     <meta property="og:type" content="website">
     <meta property="og:title" content="LA Superior Court">
     <meta property="og:description"
         content="The Los Angeles Superior Court is dedicated to serving our community by providing equal access to justice through the fair, timely and efficient resolution of all cases.">
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:label1" content="Est. reading time" />
-    <meta property="twitter:data1" content="10 minutes" />
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:label1" content="Est. reading time">
+    <meta property="twitter:data1" content="10 minutes">
     <meta name="twitter:title" content="LA Superior Court">
-    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@LASuperiorCourt">
     <meta property="twitter:description"
         content="The Los Angeles Superior Court is dedicated to serving our community by providing equal access to justice through the fair, timely and efficient resolution of all cases.">
     <style>
-        .debug {
-            div {
-                outline: 1px dashed rgba(0, 199, 3, 0.95);
-            }
+        .debug div {
+            outline: 1px dashed rgba(0, 199, 3, 0.95);
         }
 
         .bug {
@@ -50,35 +47,324 @@
     <header class="container-xxl d-none d-md-block p-5">
         <div class="row d-flex justify-content-between px-5">
             <div class="col-3 bg-secondary ps-0"><a href="./">LOGO</a></div>
-            <div class="col-5 bg-secondary d-flex justify-content-end pe-0"><a href="" class="me-3">Attorneys</a> <a
-                    href="" class="me-3">Justice
-                    Partners &
-                    Professionals</a>
+            <div class="col-5 bg-info d-flex justify-content-end pe-0">
+                <a href="" class="me-3">Attorneys</a>
+                <a href="" class="me-3">Justice Partners & Professionals</a>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <span class="input-group border-none">
+                        <input type="search" class="form-control pe-0 me-0" placeholder="How can we help you?"
+                            aria-label="Search">
+                        <button class="btn" type="button" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i><span class="sr-only">search</span></button>
+                    </span>
+                </form>
                 <div id="google_translate_element"></div>
             </div>
         </div>
     </header>
-    <nav class="container-xxl d-none d-md-block">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start px-5">
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 nav-toplink">
-                    <li><a href="#" class="nav-link ps-2 pe-3 link-body-emphasis">Online Services</a></li>
-                    <li><a href="#" class="nav-link px-3 link-body-emphasis">Self-Help</a></li>
-                    <li><a href="#" class="nav-link px-3 link-body-emphasis">Types of Cases</a></li>
-                    <li><a href="#" class="nav-link px-3 link-body-emphasis">General Information</a></li>
-                    <li><a href="#" class="nav-link px-3 link-body-emphasis">Jury Duty</a></li>
-                </ul>
+    <nav class="container-xxl navbar navbar-expand-lg px-5">
+        <div class="container-fluid mx-3">
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Online Services</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <span class="input-group border-none nav-search">
-                        <input type="search" class="form-control bg-transparent border-0 pe-0 me-0 "
-                            placeholder="How can we help you?" aria-label="Search"><button class="btn" type="button"
-                            id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i><span
-                                class="sr-only">search</span></button></span>
-                </form>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Self-Help</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Online
+                            Services</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <ul class="list-unstyled">
+
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Self-Help</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Types of
+                            Cases</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-3 link-body-emphasis">Jury Duty</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Attorneys</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Justice Partners &
+                            Professionals</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                            <li><a href="#">Custom Menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+
     <div class="container-xxl homesplash p-5 mb-0 mb-md-5">
         <div class="row">
             <div class="col-lg-6 px-md-5">
@@ -90,8 +376,7 @@
                         <button class="btn btn-warning" type="button" id="button-addon2"><i
                                 class="fa-solid fa-magnifying-glass"></i><span class="sr-only">search</span></button>
                     </div>
-                    <div class="my-1 ps-2"><small>Examples: request an interpreter, divorce, restraining
-                            orders</small>
+                    <div class="my-1 ps-2"><small>Examples: request an interpreter, divorce, restraining orders</small>
                     </div>
                 </div>
             </div>
@@ -100,26 +385,19 @@
             <div class="col">
                 <div class="hero-linkbar rounded row py-2 px-4 text-black">
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_JuryDuty.svg" class="icons" alt=""> <a
-                            href="#">Jury Duty</a>
-                    </div>
+                            href="#">Jury Duty</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_TrafficCitations.svg" class="icons"
-                            alt=""> <a href="#">Traffic Citations</a>
-                    </div>
+                            alt=""> <a href="#">Traffic Citations</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_FindCase.svg" class="icons" alt=""> <a
-                            href="#">Find a
-                            Case</a></div>
+                            href="#">Find a Case</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_Forms.svg" class="icons" alt=""> <a
                             href="#">Forms</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_ProtectionOrders.svg" class="icons"
-                            alt=""> <a href="#">Protective
-                            Orders</a>
-                    </div>
+                            alt=""> <a href="#">Protective Orders</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_Remote.svg" class="icons" alt=""> <a
-                            href="#">Remote Hearings</a>
-                    </div>
+                            href="#">Remote Hearings</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_Language.svg" class="icons" alt=""> <a
-                            href="#">Language Access</a>
-                    </div>
+                            href="#">Language Access</a></div>
                     <div class="col-md-3 p-2"><img src="img/icons/LASC_WebIcon_ADA.svg" class="icons" alt=""> <a
                             href="#">ADA</a></div>
                 </div>
@@ -129,22 +407,19 @@
     <div class="container">
         <div class="row text-center mobile-hotlink d-xs-block d-sm-block d-md-none mt-5 pt-4">
             <div class="col-4 p-0 m-0"><a href="#news" class="d-block py-2"><i
-                        class="fa-solid fa-people-line"></i><br>Jury<br>Duty</a>
-            </div>
+                        class="fa-solid fa-people-line"></i><br>Jury<br>Duty</a></div>
             <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
                         class="fa-solid fa-car"></i><br>Traffic<br>Citations</a></div>
             <div class="col-4 p-0 m-0"><a href="#map" class="d-block py-2"><i
-                        class=" fa-solid fa-file-circle-question"></i><br>Find<br>a Case</a></div>
+                        class="fa-solid fa-file-circle-question"></i><br>Find<br>a Case</a></div>
             <div class="col-4 p-0 m-0"><a href="#news" class="d-block py-2"><i
-                        class="fa-solid fa-file-pen"></i><br>Forms<br></a>
-            </div>
+                        class="fa-solid fa-file-pen"></i><br>Forms<br></a></div>
             <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
                         class="fa-solid fa-shield-halved"></i><br>Protective<br>Orders</a></div>
             <div class="col-4 p-0 m-0"><a href="#map" class="d-block py-2"><i
-                        class=" fa-solid fa-laptop"></i><br>Remote<br>Hearings</a></div>
+                        class="fa-solid fa-laptop"></i><br>Remote<br>Hearings</a></div>
             <div class="col-4 p-0 m-0"><a href="#news" class="d-block py-2"><i
-                        class="fa-solid fa-globe"></i><br>Language<br>Access</a>
-            </div>
+                        class="fa-solid fa-globe"></i><br>Language<br>Access</a></div>
             <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
                         class="fa-solid fa-wheelchair me-2"></i><br>ADA<br></a></div>
             <div class="col-4 p-0 m-0"><a href="#areas" class="d-block py-2"><i
@@ -160,9 +435,9 @@
                 <div class="pk-card-home mt-3 mx-2">
                     <div class="pk-img"><img src="img/alternate-dispute-resolution.jpg" alt="" class="pk-img"></div>
                     <div class="pk-body first">
-                        <h5 class="pk-card-title">Alternative Dispute Resolution</h4>
-                            <p>Learn about settlement programs to resolve your case.</p><a href="#"
-                                class="btn btn-sm btn-primary">Learn More</a>
+                        <h5 class="pk-card-title">Alternative Dispute Resolution</h5>
+                        <p>Learn about settlement programs to resolve your case.</p><a href="#"
+                            class="btn btn-sm btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -204,18 +479,15 @@
         <div class="row px-0 py-3 m-0 mx-md-0">
             <div class="row px-md-0 mx-md-0 p-0">
                 <div class="col-lg-6 d-none d-lg-block p-0"><img src="img/Court-Communications.jpg" alt=""
-                        class="img-fluid rounded">
-                </div>
+                        class="img-fluid rounded"></div>
                 <div class="col-lg-6 mx-3 m-md-0 px-md-5 text-white">
                     <p>
-                    <div class="badge rounded-pill bg-warning text-dark">General News </div>
+                    <div class="badge rounded-pill bg-warning text-dark">General News</div>
                     </p>
                     <div class="fs-4">Electronic Certification of Probate Letters Available May 1</div>
                     <p>Public Notice (Effective Wednesday, May 1, individuals will have the ability to electronically
-                        certify Probate Letters issued for decedent, guardianship and conservatorship matters.)
-                        <br>April
-                        24, 2024
-                    </p>
+                        certify Probate Letters issued for decedent, guardianship and conservatorship matters.)<br>April
+                        24, 2024</p>
                     <p><a href="#" class="btn btn-sm btn-primary mb-0">Read More</a></p>
                 </div>
             </div>
@@ -231,30 +503,26 @@
             <div class="col-md-6 col-lg-4 p-1">
                 <div class="bg-white rounded p-3 me-md-4 h-100">
                     <div class="badge rounded-pill bg-warning text-dark mb-2">General News</div>
-                    <p>Superior Court of Los Angeles County launches new CARE COURT webpage <br>
-                        April 2nd, 2024
+                    <p>Superior Court of Los Angeles County launches new CARE COURT webpage<br>April 2nd, 2024</p>
                 </div>
-                </p>
             </div>
             <div class="col-md-6 col-lg-4 p-1">
                 <div class="bg-white rounded p-3 mx-md-4 h-100">
                     <div class="badge rounded-pill bg-warning text-dark mb-2">General News</div>
                     <p>New Dashboard provides access to data regarding new Pre-Arraignment Release Protocols in Los
-                        Angeles
-                        County <br>Jan 22, 2024</p>
+                        Angeles County<br>Jan 22, 2024</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 p-1">
                 <div class="bg-white rounded p-3 ms-md-4 h-100">
                     <div class="badge rounded-pill bg-warning text-dark mb-2">General News</div>
-                    <p>Superior Court of Los Angeles County launches new CARE COURT webpage <br>April 2nd,
-                        2024</p>
+                    <p>Superior Court of Los Angeles County launches new CARE COURT webpage<br>April 2nd, 2024</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col text-center mt-3"><a href="#" class="btn btn-sm btn-outline-light border-2">
-                    Visit Court Communications</a></div>
+            <div class="col text-center mt-3"><a href="#" class="btn btn-sm btn-outline-light border-2">Visit Court
+                    Communications</a></div>
         </div>
     </div>
     <div class="container my-5 px-3 pt-0 px-md-5" id="areas">
@@ -267,8 +535,7 @@
             <div class="col-lg-4 col-md-6 d-flex justify-content-center p-1 p-md-0">
                 <a href="" class="rounded border border-2 py-2 px-4 m-md-2"><span class="d-block">
                         <div class="title pt-2">
-                            <h5><img src="img/icons/LASC_WebIcon_Civil.svg" class="icons" alt="">
-                                Civil</h5>
+                            <h5><img src="img/icons/LASC_WebIcon_Civil.svg" class="icons" alt=""> Civil</h5>
                         </div>
                         <div>A court system for private parties to resolve Disputes, Lawsuits, Evictions, Collections.
                         </div>
@@ -281,8 +548,7 @@
                             <h5><img src="img/icons/LASC_WebIcon_Criminal.svg" class="icons" alt=""> Criminal</h5>
                         </div>
                         <div>Criminal offenses fall into one of three categories: Infractions, Misdemeanors, or
-                            Felonies.
-                        </div>
+                            Felonies.</div>
                     </span>
                 </a>
             </div>
@@ -292,20 +558,18 @@
                             <h5><img src="img/icons/LASC_WebIcon_FamilyLaw.svg" class="icons" alt=""> Family Law</h5>
                         </div>
                         <div>Child Custody, Child and Spousal Support, Divorce, Domestic Violence, Parentage,
-                            Restraining
-                            Orders.</div>
+                            Restraining Orders.</div>
                     </span>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 d-flex justify-content-center p-1 p-md-0">
-                <a href="" class="rounded border border-2 py-2 px-4 m-md-2"><spanclass="d-block">
+                <a href="" class="rounded border border-2 py-2 px-4 m-md-2"><span class="d-block">
                         <div class="title pt-2">
                             <h5><img src="img/icons/LASC_WebIcon_Juvenile.svg" class="icons" alt=""> Juvenile</h5>
                         </div>
                         <div>For cases that involve children under 18 years old. Dependency Court and Juvenile Justice
-                            Court
-                            fall under this category.</div>
-                        </spanclass=>
+                            Court fall under this category.</div>
+                    </span>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 d-flex justify-content-center p-1 p-md-0">
@@ -344,8 +608,7 @@
                             <h5><img src="img/icons/LASC_WebIcon_Traffic.svg" class="icons" alt=""> Traffic</h5>
                         </div>
                         <div>Involves a citation or ticket written by a law enforcement officer. Violations: Traffic
-                            laws
-                            and other non-traffic offenses.</div>
+                            laws and other non-traffic offenses.</div>
                     </span>
                 </a>
             </div>
@@ -387,15 +650,13 @@
         <div class="row px-2 py-3 m-0 mx-md-2">
             <div class="col-lg-6 mx-3 m-md-0 px-md-5 align-vcenter">
                 <h4 class="blue3">Community Outreach</h4>
-                <p>The Court is guided by the California Standards of Judicial
-                    Administration, Standard 10.5(a), “Judicial participation in community outreach activities should be
-                    considered an official judicial function to promote public understanding of and confidence in the
-                    administration of justice.”</p>
+                <p>The Court is guided by the California Standards of Judicial Administration, Standard 10.5(a),
+                    “Judicial participation in community outreach activities should be considered an official judicial
+                    function to promote public understanding of and confidence in the administration of justice.”</p>
                 <p class="w-50"><a href="#" class="btn btn-sm btn-primary">Learn More</a></p>
             </div>
             <div class="col-lg-6 d-none d-lg-block p-0"><img src="img/at-the-court.jpg" alt=""
-                    class="img-fluid rounded">
-            </div>
+                    class="img-fluid rounded"></div>
         </div>
         <div class="row mt-5 mb-4 d-flex justify-content-center">
             <div class="col-xl-4 col-md-6">
@@ -444,8 +705,7 @@
             <div class="col-md-6 mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end text-nowrap">
                 <div class="me-3 mx-md-4 me-md-5">
                     <h6>At the Court</h6>
-                    <p class="mt-1"><a href="#">Courthouses</a><br><a href="#">Jury
-                            Duty</a></p>
+                    <p class="mt-1"><a href="#">Courthouses</a><br><a href="#">Jury Duty</a></p>
                 </div>
                 <div class="mx-md-5">
                     <h6>Services</h6>
@@ -494,6 +754,17 @@
         $(".bug").on("click", function () {
             $("body").toggleClass("debug");
         });
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+        // DOMContentLoaded  end
     </script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
