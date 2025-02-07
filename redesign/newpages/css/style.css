@@ -44,7 +44,7 @@ footer a {
 
 @media all and (min-width: 992px) {
   a.nav-link {
-    color: #fff;
+    color: #fff !important;
     padding: 10px 0.25rem !important;
   }
   .col-megamenu a {
