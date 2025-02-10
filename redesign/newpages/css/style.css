@@ -40,8 +40,12 @@ footer a {
 
 .navbar .megamenu {
   padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 0px rgba(0, 0, 0, 0.25);
 }
-
+.megamenu .bg-ltblue {
+  background-color: rgb(206, 221, 237);
+}
 @media all and (min-width: 992px) {
   a.nav-link {
     color: #fff !important;
