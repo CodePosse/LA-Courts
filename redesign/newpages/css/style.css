@@ -50,10 +50,15 @@ footer a {
 @media all and (min-width: 992px) {
   a.nav-link {
     color: #fff !important;
-    padding: 10px 0.25rem !important;
+    font-size: 16px;
+    padding: 10px 0.75rem 10px 0.5rem !important;
+  }
+  .megamenu h6.title {
+    font-size: 16px;
   }
   .col-megamenu a {
     color: black;
+    font-size: 14px;
   }
   .megamenu a:hover {
     color: var(--blue3);
@@ -302,7 +307,10 @@ h4,
 h5 {
   letter-spacing: 0.5px !important;
 }
-
+.fs-22 {
+  font-size: 22px;
+  font-weight: bold;
+}
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
