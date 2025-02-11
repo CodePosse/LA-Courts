@@ -56,6 +56,10 @@ footer a {
   .megamenu h6.title {
     font-size: 16px;
   }
+  .megamenu ul {
+    padding-left: 15px;
+    list-style: disc;
+  }
   .col-megamenu a {
     color: black;
     font-size: 14px;
