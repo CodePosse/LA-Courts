@@ -860,8 +860,7 @@
         $(".bug").on("click", function () {
             $("body").toggleClass("debug");
             $('a[href="#"]').toggleClass("null");
-
-            console.log("%c Debug mode toggled with " + emptycount + " broken links. ", "background: lightyellow; color: red;",);
+            console.log("%c Debug mode toggled with " + emptycount + " broken links. ", "background: lightyellow; color: red;font-family: Tahoma;font-size:16px",);
         });
     </script>
     <script type="text/javascript">
@@ -882,7 +881,7 @@
                     pageLanguage: 'en'
                 }, 'google_translate_element');
         };
-        console.info("%c Google translate code executed on domain: " + location.hostname, "background: #222; color: yellow;font-size: 18px;");
+        console.info("%c Google translate code executed on domain: " + location.hostname, "background: #222; color: yellow;font-family: Tahoma;font-size:16px");
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
      cb=googleTranslateElementInit"></script>
