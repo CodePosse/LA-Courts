@@ -856,10 +856,12 @@
     </div>
     <div class="bug"><i class="fa-solid fa-bug-slash"></i></div>
     <script>
+        var emptycount = $('a[href="#"]').length;
         $(".bug").on("click", function () {
             $("body").toggleClass("debug");
             $('a[href="#"]').toggleClass("null");
-            console.log("%c Debug mode toggled", "background: red; color: yellow;");
+
+            console.log("%c Debug mode toggled with " + emptycount + " broken links. ", "background: lightyellow; color: red;",);
         });
     </script>
     <script type="text/javascript">
