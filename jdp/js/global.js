@@ -10,7 +10,7 @@ $(".toast").show();
 $(".toast button").click(function () { $(this).closest(".toast").hide() });
 console.info(
   "%c Yeah, I got a GitHub and this is a stupid dev trick. If you saw this in console, congrats " +
-    "Now expand the object below.",
+  "Now expand the object below.",
   "background: #222; color: #bada55"
 );
 var title = "codeposse";
@@ -27,7 +27,7 @@ $(document).ready(function () {
   $(".inbox").click(function () {
     $(".compose, .read, .inboxfooter").toggle();
   });
-
+  $('#editButton').click(function () { $('.addyLocal input').addClass("border-danger"); alert("yes") });
   $(".readme").click(function () {
     $(".readme").hide();
     $(".bd-callout-success").addClass("bg-light");
@@ -88,9 +88,9 @@ $(function () {
     })
   }).change();
   $("#select_excuse").change(function () {
-  $(this).find("option:selected").each(function () {
-    var e = $(this).attr("value");
-    e ? ($(".box").not("." + e).hide(), $("." + e).show()) : $(".box").hide()
-  })
-}).change();
+    $(this).find("option:selected").each(function () {
+      var e = $(this).attr("value");
+      e ? ($(".box").not("." + e).hide(), $("." + e).show()) : $(".box").hide()
+    })
+  }).change();
 })
