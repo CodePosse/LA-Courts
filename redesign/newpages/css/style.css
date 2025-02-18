@@ -394,6 +394,9 @@ h5 {
 .w-70 {
   width: 70%;
 }
+.w-80 {
+  width: 80%;
+}
 
 /* this is the menu that pushes from the right */
 .offcanvas.show {
