@@ -50,12 +50,12 @@
 </head>
 
 <body>
-    <header class="container-xxl d-none d-md-block py-3 px-1 px-xl-5">
+    <header class="container-xxl py-3 px-1 px-xl-5">
         <div class="row d-flex justify-content-between px-4 px-xl-5">
-            <div class="col-4 ps-0"><a href="./"><img src="img/logo.png" alt="LA Superior Court Logo"
+            <div class="col-9 col-lg-4 ps-0"><a href="./"><img src="img/logo.png" alt="LA Superior Court Logo"
                         class="img-fluid"></a>
             </div>
-            <div class="col-5 d-flex justify-content-end pe-0">
+            <div class="col-5 d-flex d-none d-md-block justify-content-end pe-0">
                 <form class="col-12 col-lg-auto mt-3" role="search">
                     <span class="input-group border-none">
                         <input type="search" class="form-control pe-0 me-0" placeholder="How can we help you?"
@@ -66,8 +66,27 @@
                 </form>
                 <div id="google_translate_element"></div>
             </div>
+            <div class="col-3 d-md-non text-center"><button class="navbar-toggler" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars fs-1"></i><br>Menu</button>
+            </div>
         </div>
     </header>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div id="offcanvasRightLabel"><a href="./"><img src="img/logo.png" alt="LA Superior Court Logo"
+                        class="w-70"></a></div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mob-trans py-2 bg-info">
+                <div id="google_translate_element2"></div>
+            </div>
+            <div class="mob-search bg-dark py-2">
+
+            </div>
+        </div>
+    </div>
     <nav class="container-xxl navbar navbar-expand-lg px-xl-5 px-lg-0" role="navigation" aria-label="Main Navigation">
         <div class="container-fluid mx-0 mx-xl-3">
             <div class="collapse navbar-collapse" id="main_nav">
@@ -879,7 +898,7 @@
             new google.translate.TranslateElement(
                 {
                     pageLanguage: 'en'
-                }, 'google_translate_element');
+                }, 'google_translate_element', 'google_translate_element2');
         };
         console.info("%c Google translate code executed on domain: " + location.hostname, "background: #222; color: yellow;font-family: Tahoma;font-size:16px");
     </script>
