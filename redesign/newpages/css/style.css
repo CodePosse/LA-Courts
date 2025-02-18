@@ -396,11 +396,7 @@ h5 {
 }
 
 /* this is the menu that pushes from the right */
-.offcanvas.show,
-.mob-trans {
+.offcanvas.show {
   width: 100vw;
-}
-.navbar-toggler-icon {
-  color: #000 !important;
-  border: 1px solid #000;
+  --bs-offcanvas-padding-x: 0;
 }
