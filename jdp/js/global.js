@@ -27,7 +27,7 @@ $(document).ready(function () {
   $(".inbox").click(function () {
     $(".compose, .read, .inboxfooter").toggle();
   });
-  $('#editButton').click(function () { $('.addyLocal input').addClass("border-danger"); alert("yes") });
+  $('#editButton').click(function () { $('.addyLocal input').addClass("border-danger"); alert("see the validation failed note") });
   $(".readme").click(function () {
     $(".readme").hide();
     $(".bd-callout-success").addClass("bg-light");
