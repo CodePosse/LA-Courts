@@ -408,6 +408,7 @@ h5 {
   }
   h2.accordion-header button {
     color: var(--blue3) !important;
+    font-weight: bold;
   }
   h2.accordion-button::after {
     background: linear-gradient(rgba(50, 104, 168, 0.9), rgba(50, 104, 168, 0.9)) !important;
