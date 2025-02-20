@@ -43,6 +43,7 @@ footer a {
   border-radius: 0 0 20px 20px;
   box-shadow: 0 10px 0px rgba(0, 0, 0, 0.5);
   background-color: rgb(206, 221, 237);
+  border-top: 5px solid #f5c04f;
 }
 .megamenu .bg-ltblue {
   background-color: rgb(206, 221, 237);
