@@ -45,7 +45,8 @@ footer a {
   background-color: rgb(206, 221, 237);
   border-top: 5px solid #f5c04f;
 }
-.megamenu .bg-ltblue {
+.megamenu .bg-ltblue,
+.bg-ltblue {
   background-color: rgb(206, 221, 237);
 }
 @media all and (min-width: 992px) {
@@ -132,7 +133,9 @@ footer .last-line a {
 .homesplash .hero-search {
   background: rgba(0, 52, 111, 0.8);
 }
-
+.hero {
+  border-radius: 0 0 20px 20px;
+}
 .hero-linkbar {
   background-color: rgb(206, 221, 237);
   max-width: 975px;
