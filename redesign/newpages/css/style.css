@@ -405,7 +405,10 @@ h5 {
 .w-80 {
   width: 80%;
 }
-
+/* not exactly the 55 characters per line, but close enough */
+.maxchar-55 * {
+  max-width: 55ch;
+}
 /* this is the menu that pushes from the right */
 @media all and (max-width: 992px) {
   .offcanvas.show {
