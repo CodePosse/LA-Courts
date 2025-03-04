@@ -279,6 +279,9 @@ a {
 .rounded-br {
   border-radius: 0 0 20px 0 !important;
 }
+.rounded-bl {
+  border-radius: 0 0 0 20px !important;
+}
 
 .btn {
   border-radius: 10px;
