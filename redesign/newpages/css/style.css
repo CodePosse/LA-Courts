@@ -6,6 +6,7 @@ body,
   color: #222;
   font-size: 18px;
   --primary: rgb(18, 32, 92, 1);
+  --blue-pale: rgba(244, 247, 252, 1);
   --blue3: #005994;
   --warning: rgba(248, 229, 160, 1);
   background-color: #fff !important;
@@ -48,6 +49,9 @@ footer a {
 .megamenu .bg-ltblue,
 .bg-ltblue {
   background-color: rgb(206, 221, 237);
+}
+.bg-blue-pale {
+  background: var(--blue-pale);
 }
 @media all and (min-width: 992px) {
   a.nav-link {
