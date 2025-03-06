@@ -95,7 +95,9 @@ footer a {
     max-width: 1440px;
   }
 }
-
+.breadcrumb-item > img {
+  margin-top: -0.4rem;
+}
 footer {
   border-radius: 10px;
   margin-top: 10px;
@@ -411,6 +413,7 @@ h5 {
 }
 /* not exactly the 55 characters per line, but close enough */
 .maxchar-55 * {
+  width: 100vw;
   max-width: 55ch;
 }
 /* this is the menu that pushes from the right */
