@@ -67,6 +67,9 @@ footer a {
   .megamenu ul {
     padding-left: 15px;
     list-style: disc;
+    li {
+      padding-top: 5px;
+    }
   }
   .col-megamenu a {
     color: black;
