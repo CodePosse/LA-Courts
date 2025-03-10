@@ -450,6 +450,7 @@ h5 {
 }
 @media (max-width: 1439px) {
   nav,
+  .hero,
   .homesplash,
   .container-xxl.rounded {
     border-radius: 0 !important;
