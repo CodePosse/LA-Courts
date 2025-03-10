@@ -448,3 +448,9 @@ h5 {
   position: absolute;
   bottom: 0;
 }
+@media (max-width: 1399px) {
+  nav,
+  .container-xxl.rounded {
+    border-radius: 0 !important;
+  }
+}
