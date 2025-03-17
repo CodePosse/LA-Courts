@@ -420,6 +420,7 @@ h5 {
   width: 100vw;
   max-width: 55ch;
 }
+
 /* this is the menu that pushes from the right */
 @media all and (max-width: 992px) {
   .offcanvas.show {
@@ -439,7 +440,7 @@ h5 {
   }
 }
 
-.blue-accordion .accordion-button::after {
+.accordion.blue-accordion .accordion-button::after {
   background-color: #232f3d;
   border-radius: 4px;
   padding: 15px;
