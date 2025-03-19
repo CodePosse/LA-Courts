@@ -455,7 +455,7 @@ h5 {
     border-radius: 0 !important;
   }
 }
-.maps .list-group-item a {
+.maps .list-group a {
   strong {
     text-decoration: underline;
     font-weight: 500;
