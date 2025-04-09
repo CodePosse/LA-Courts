@@ -1,6 +1,7 @@
 :root {
+  font-weight: 400;
   /* CTS Colors */
-  --midnightNavy: #232f3d;
+  --mutedMidnight: #232f3d;
   --strongBlue: #0013a5;
   --deepBlue: #207ec6;
   --boldBlue: #0085eb;
@@ -30,10 +31,30 @@
   /* Court Stack Colors */
   --LogoBlue: #2d6eb4;
   --LogoGrey: #727272;
-}
 
-.bg-midnightNavy {
-  background-color: var(--midnightNavy);
+  /* Font Sizes */
+  --header-allcaps: 26px;
+  --header-sentencecase: 26px;
+  --tabheader-allcaps: 24px;
+  --paragraphtitle: 24px;
+  --paragraph: 18px;
+  --paragraphbold: 18px;
+  --progressbar-allcaps: 20px;
+  --paragraphsmall: 14px;
+  --paragraphsmallbold: 14px;
+  --button: 16.5px;
+  --buttonsmall: 16px;
+  --mainnavbuttontext: 16px;
+  --textbold: 13px;
+  --text: 13px;
+  --textlink: 13px;
+  --textbold: 11.5px;
+  --text: 11.5px;
+  --textlink: 11.5px;
+}
+/** Colors for background, text, and borders */
+.bg-mutedMidnight {
+  background-color: var(--mutedMidnight);
   color: #fff;
 }
 .bg-strongBlue {
@@ -121,8 +142,8 @@
   color: #fff;
 }
 
-.midnightNavy {
-  color: var(--midnightNavy);
+.mutedMidnight {
+  color: var(--mutedMidnight);
 }
 .strongBlue {
   color: var(--strongBlue);
@@ -200,8 +221,8 @@
   color: var(--LogoGrey);
 }
 
-.border-midnightNavy {
-  border-color: var(--midnightNavy);
+.border-mutedMidnight {
+  border-color: var(--mutedMidnight);
 }
 .border-strongBlue {
   border-color: var(--strongBlue);
@@ -277,4 +298,82 @@
 }
 .border-LogoGrey {
   border-color: var(--LogoGrey);
+}
+/* Font Sizes */
+.header-allcaps {
+  font-size: var(--header-allcaps);
+  line-height: 1.076923;
+}
+.header-sentencecase {
+  font-size: var(--header-sentencecase);
+  line-height: 1.076923;
+}
+.tabheader-allcaps {
+  font-size: var(--tabheader-allcaps);
+  line-height: 1.083333;
+  font-weight: 700;
+}
+.paragraphtitle {
+  font-size: var(--paragraphtitle);
+  line-height: 1.083333;
+}
+.paragraph {
+  font-size: var(--paragraph);
+  line-height: 1.111111;
+}
+.paragraphbold {
+  font-size: var(--paragraphbold);
+  line-height: 1.111111;
+  font-weight: 700;
+}
+.progressbar-allcaps {
+  font-size: var(--progressbar-allcaps);
+  line-height: 1.1;
+}
+.paragraphsmall {
+  font-size: var(--paragraphsmall);
+  line-height: 1.285714;
+}
+.paragraphsmallbold {
+  font-size: var(--paragraphsmallbold);
+  line-height: 1.285714;
+  font-weight: 700;
+}
+.button {
+  font-size: var(--button);
+  line-height: 1.212121;
+}
+.buttonsmall {
+  font-size: var(--buttonsmall);
+  line-height: 1.25;
+}
+.mainnavbuttontext {
+  font-size: var(--mainnavbuttontext);
+  line-height: 1.25;
+}
+.textbold {
+  font-size: var(--textbold);
+  line-height: 1.230769;
+  font-weight: 700;
+}
+.text {
+  font-size: var(--text);
+  line-height: 1.230769;
+}
+.textlink {
+  font-size: var(--textlink);
+  line-height: 1.230769;
+}
+.textbold {
+  font-size: var(--textbold);
+  line-height: 1.217391;
+  font-weight: 700;
+}
+.text {
+  font-size: var(--text);
+  line-height: 1.217391;
+}
+.textlink {
+  font-size: var(--textlink);
+  line-height: 1.217391;
 }
