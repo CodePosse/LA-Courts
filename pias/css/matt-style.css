@@ -7,6 +7,7 @@ body {
   font-family: "Lato", sans-serif !important;
   font-weight: 400;
   font-size: 16px;
+
   /* CTS Colors */
   --mutedMidnight: #232f3d;
   --strongBlue: #0013a5;
@@ -52,12 +53,17 @@ body {
   --button: 16.5px;
   --buttonsmall: 16px;
   --mainnavbuttontext: 16px;
-  --textbold: 13px;
-  --text: 13px;
-  --textlink: 13px;
-  --textbold: 11.5px;
-  --text: 11.5px;
-  --textlink: 11.5px;
+  --formTextBold: 13px;
+  --formText: 13px;
+  --formTextLink: 13px;
+  --calendarTextBold: 11.5px;
+  --calendarText: 11.5px;
+  --calendarTextLink: 11.5px;
+
+  /* utilities */
+  --border-radius: 8px;
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 /** Colors for background, text, and borders */
 .bg-mutedMidnight {
@@ -346,14 +352,6 @@ body {
   line-height: 1.285714;
   font-weight: 700;
 }
-.button {
-  font-size: var(--button);
-  line-height: 1.212121;
-}
-.buttonsmall {
-  font-size: var(--buttonsmall);
-  line-height: 1.25;
-}
 .mainnavbuttontext {
   font-size: var(--mainnavbuttontext);
   line-height: 1.25;
@@ -383,4 +381,52 @@ body {
 .textlink {
   font-size: var(--textlink);
   line-height: 1.217391;
+}
+
+/* buttons */
+button,
+.button {
+  font-size: var(--button);
+  line-height: 1.212121;
+  color: #000;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--vaporSlate);
+  border-color: var(--vaporSlate);
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+.buttonsmall {
+  font-size: var(--buttonsmall);
+  line-height: 1.25;
+  &:hover {
+  }
+  &:active {
+  }
+}
+
+/* tables */
+table {
+}
+form table {
+  font-size: var(--formText);
+  strong {
+    font-size: var(--formTextBold);
+  }
+  a {
+    color: var(--formTextLink);
+  }
+}
+.calendar {
+  font-size: var(--calendarText);
+  strong {
+    font-size: var(--calendarTextBold);
+  }
+  a {
+    color: var(--calendarTextLink);
+  }
 }
