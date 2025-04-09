@@ -1,0 +1,201 @@
+:root {
+  /* CTS Colors */
+  --midnightNavy: #232f3d;
+  --strongBlue: #0013a5;
+  --deepBlue: #207ec6;
+  --boldBlue: #0085eb;
+  --brightBlue: #33a4fb;
+  --lightBrightBlue: #aad5f6;
+  --highlightBrightBlue: #e7f5ff;
+  --HoverBlue: #f4faff;
+  --limeGreenMedium: #7aaf35;
+  --limeGreenLight: #9ee640;
+  --darkerSlate: #475063;
+  --darkSlate: #5a657c;
+  --medSlate: #8690a4;
+  --lightSlate: #c7ccd6;
+  --minimalSlate: #e5e7ec;
+  --vaporSlate: #f1f2f5;
+  --ghostSlate: #f7f7fa;
+  --deepRed: #bc2113;
+  --brightRed: #f33a29;
+  --boldGold: #f3c629;
+
+  /* Court Canon Colors */
+  --DarkBlue: #012362;
+  --LightBlue: #93b2dd;
+  --Yellow: #f3c727;
+  --Grey: #95a3ab;
+
+  /* Court Stack Colors */
+  --LogoBlue: #2d6eb4;
+  --LogoGrey: #727272;
+}
+
+.bg-midnightNavy {
+  background-color: var(--midnightNavy);
+  color: #fff;
+}
+.bg-strongBlue {
+  background-color: var(--strongBlue);
+  color: #fff;
+}
+.bg-deepBlue {
+  background-color: var(--deepBlue);
+}
+.bg-boldBlue {
+  background-color: var(--boldBlue);
+  color: #fff;
+}
+.bg-brightBlue {
+  background-color: var(--brightBlue);
+}
+.bg-lightBrightBlue {
+  background-color: var(--lightBrightBlue);
+}
+.bg-highlightBrightBlue {
+  background-color: var(--highlightBrightBlue);
+}
+.bg-HoverBlue {
+  background-color: var(--HoverBlue);
+}
+.bg-limeGreenMedium {
+  background-color: var(--limeGreenMedium);
+}
+.bg-limeGreenLight {
+  background-color: var(--limeGreenLight);
+}
+.bg-darkerSlate {
+  background-color: var(--darkerSlate);
+  color: #fff;
+}
+.bg-darkSlate {
+  background-color: var(--darkSlate);
+  color: #fff;
+}
+.bg-medSlate {
+  background-color: var(--medSlate);
+}
+.bg-lightSlate {
+  background-color: var(--lightSlate);
+}
+.bg-minimalSlate {
+  background-color: var(--minimalSlate);
+}
+.bg-vaporSlate {
+  background-color: var(--vaporSlate);
+}
+.bg-ghostSlate {
+  background-color: var(--ghostSlate);
+}
+.bg-deepRed {
+  background-color: var(--deepRed);
+  color: #fff;
+}
+.bg-brightRed {
+  background-color: var(--brightRed);
+  color: #fff;
+}
+.bg-boldGold {
+  background-color: var(--boldGold);
+}
+.bg-DarkBlue {
+  background-color: var(--DarkBlue);
+  color: #fff;
+}
+.bg-LightBlue {
+  background-color: var(--LightBlue);
+}
+.bg-Yellow {
+  background-color: var(--Yellow);
+}
+.bg-Grey {
+  background-color: var(--Grey);
+}
+.bg-LogoBlue {
+  background-color: var(--LogoBlue);
+  color: #fff;
+}
+.bg-LogoGrey {
+  background-color: var(--LogoGrey);
+  color: #fff;
+}
+
+.midnightNavy {
+  color: var(--midnightNavy);
+}
+.strongBlue {
+  color: var(--strongBlue);
+}
+.deepBlue {
+  color: var(--deepBlue);
+}
+.boldBlue {
+  color: var(--boldBlue);
+}
+.brightBlue {
+  color: var(--brightBlue);
+}
+.lightBrightBlue {
+  color: var(--lightBrightBlue);
+}
+.highlightBrightBlue {
+  color: var(--highlightBrightBlue);
+}
+.HoverBlue {
+  color: var(--HoverBlue);
+}
+.limeGreenMedium {
+  color: var(--limeGreenMedium);
+}
+.limeGreenLight {
+  color: var(--limeGreenLight);
+}
+.darkerSlate {
+  color: var(--darkerSlate);
+}
+.darkSlate {
+  color: var(--darkSlate);
+}
+.medSlate {
+  color: var(--medSlate);
+}
+.lightSlate {
+  color: var(--lightSlate);
+}
+.minimalSlate {
+  color: var(--minimalSlate);
+}
+.vaporSlate {
+  color: var(--vaporSlate);
+}
+.ghostSlate {
+  color: var(--ghostSlate);
+}
+.deepRed {
+  color: var(--deepRed);
+}
+.brightRed {
+  color: var(--brightRed);
+}
+.boldGold {
+  color: var(--boldGold);
+}
+.DarkBlue {
+  color: var(--DarkBlue);
+}
+.LightBlue {
+  color: var(--LightBlue);
+}
+.Yellow {
+  color: var(--Yellow);
+}
+.Grey {
+  color: var(--Grey);
+}
+.LogoBlue {
+  color: var(--LogoBlue);
+}
+.LogoGrey {
+  color: var(--LogoGrey);
+}
