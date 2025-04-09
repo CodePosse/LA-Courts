@@ -199,3 +199,82 @@
 .LogoGrey {
   color: var(--LogoGrey);
 }
+
+.border-midnightNavy {
+  border-color: var(--midnightNavy);
+}
+.border-strongBlue {
+  border-color: var(--strongBlue);
+}
+.border-deepBlue {
+  border-color: var(--deepBlue);
+}
+.border-boldBlue {
+  border-color: var(--boldBlue);
+}
+.border-brightBlue {
+  border-color: var(--brightBlue);
+}
+.border-lightBrightBlue {
+  border-color: var(--lightBrightBlue);
+}
+.border-highlightBrightBlue {
+  border-color: var(--highlightBrightBlue);
+}
+.border-HoverBlue {
+  border-color: var(--HoverBlue);
+}
+.border-limeGreenMedium {
+  border-color: var(--limeGreenMedium);
+}
+.border-limeGreenLight {
+  border-color: var(--limeGreenLight);
+}
+.border-darkerSlate {
+  border-color: var(--darkerSlate);
+}
+.border-darkSlate {
+  border-color: var(--darkSlate);
+}
+.border-medSlate {
+  border-color: var(--medSlate);
+}
+.border-lightSlate {
+  border-color: var(--lightSlate);
+}
+.border-minimalSlate {
+  border-color: var(--minimalSlate);
+}
+.border-vaporSlate {
+  border-color: var(--vaporSlate);
+}
+.border-ghostSlate {
+  border-color: var(--ghostSlate);
+}
+.border-deepRed {
+  border-color: var(--deepRed);
+}
+.border-brightRed {
+  border-color: var(--brightRed);
+}
+.border-boldGold {
+  border-color: var(--boldGold);
+}
+.border-DarkBlue {
+  border-color: var(--DarkBlue);
+}
+.border-LightBlue {
+  border-color: var(--LightBlue);
+}
+.border-Yellow {
+  border-color: var(--Yellow);
+}
+.border-Grey {
+  border-color: var(--Grey);
+}
+.border-LogoBlue {
+  border-color: var(--LogoBlue);
+}
+.border-LogoGrey {
+  border-color: var(--LogoGrey);
+}
