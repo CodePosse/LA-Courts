@@ -62,10 +62,7 @@ body {
 
   /* utilities */
   --border-radius: 8px;
-  --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-/** Colors for background, text, and borders */
+  --shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 .bg-mutedMidnight {
   background-color: var(--mutedMidnight);
   color: #fff;
@@ -390,14 +387,19 @@ button,
   line-height: 1.212121;
   color: #000;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow);
   background-color: var(--vaporSlate);
-  border-color: var(--vaporSlate);
+  border: 1px solid var(--vaporSlate);
   &:hover {
     opacity: 0.8;
+    background-color: var(--darkSlate);
+    border: 1px solid var(--darkSlate);
+    color:#fff;
   }
   &:active {
-    box-shadow: none;
+    background-color: var(--darkerSlate);
+    border: 1px solid var(--darkerSlate);
+    box-shadow: none !important;
   }
 }
 .buttonsmall {
