@@ -414,12 +414,7 @@ button,
 }
 
 /* tables */
-td.valigntop {
-  border: none !important;
-}
-.ctstable,
-.valigntop table {
-  /*border-collapse: unset !important;*/
+.ctstable {
   margin: 20px;
   overflow: hidden;
   border-radius: var(--border-radius) !important;
@@ -438,7 +433,6 @@ td.valigntop {
   }
   td {
     overflow: hidden;
-    width: 50%;
   }
 }
 .calendar {
