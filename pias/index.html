@@ -45,8 +45,97 @@
     <div class="container py-md-4 mb-2">
         <div class="container">
             <div class="row">
+                <div class="col-md-6 px-md-5 bg-info">
+                    <h5>Existing</h5>
+                    <table _ngcontent-ng-c74110296 border="1">
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Party Address:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Party City:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Party Zipcode:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Zone:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Language:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Probate Investigator:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Death Notice Date:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field">2000-01-01T00:00:00</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="col-md-6 px-md-5">
-                    first piece here <button>text</button>
+                    <h5>Revised</h5>
+                    <table class="col-12 ctstable fullradius">
+                        <tr>
+                            <td class="text-caption col-6">www</td>
+                            <td class="text-field col-6">www</td>
+                        </tr>
+                        <tr>
+                            <td class="text-caption col-6">www</td>
+                            <td class="text-field col-6">www</td>
+                        </tr>
+                        <tr>
+                            <td class="text-caption col-6">www</td>
+                            <td class="text-field col-6">www</td>
+                        </tr>
+                        <tr>
+                            <td class="text-caption col-6">www</td>
+                            <td class="text-field col-6">www</td>
+                        </tr>
+                        <tr>
+                            <td class="text-caption col-6">www</td>
+                            <td class="text-field col-6">www</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -54,9 +143,111 @@
     <div class="container">
         <div class="row p-0">
             <div class="col p-0">
+                <h5 class="ms-3">Existing <small>(highlighter adds a &lt;tbody&gt; but ng-prime does not)</small></h5>
+                <p>Changelog:</p>
+                <ol>
+                    <li>Table has <code>border</code> attribute and value remove, and classes added
+                        <code>ctstable fullradius</code>
+                    </li>
+                    <li><code>&lt;tbody&gt;</code> added</li>
+                    <li><code>text-caption</code> and <code>text-field</code> are now classes on the <code>td</code>
+                    </li>
+                    <li>"<code>_ngcontent</code>" attributes will still be added by Angular/NG-Prime</li>
+                </ol>
                 <pre class="brush: html;">
-                    first piece here
+                    <table _ngcontent-ng-c74110296 border="1">
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Party Address:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Party City:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Party Zipcode:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Zone:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Language:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Probate Investigator:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field"><input _ngcontent-ng-c74110296
+                                        type="text" class="ng-untouched ng-pristine ng-valid"></div>
+                            </td>
+                        </tr>
+                        <tr _ngcontent-ng-c74110296>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-caption">Death Notice Date:</div>
+                            </td>
+                            <td _ngcontent-ng-c74110296>
+                                <div _ngcontent-ng-c74110296 class="text-field">2000-01-01T00:00:00</div>
+                            </td>
+                        </tr>
+                    </table>
             </pre>
+                <hr>
+                <h5 class="ms-3">Revised</h5>
+                <pre class="brush: html;">
+                    <table class="col-12 ctstable fullradius">
+                        <tbody>
+                            <tr>
+                                <td class="text-caption col-6">www</td>
+                                <td class="text-field col-6">www</td>
+                            </tr>
+                            <tr>
+                                <td class="text-caption col-6">www</td>
+                                <td class="text-field col-6">www</td>
+                            </tr>
+                            <tr>
+                                <td class="text-caption col-6">www</td>
+                                <td class="text-field col-6">www</td>
+                            </tr>
+                            <tr>
+                                <td class="text-caption col-6">www</td>
+                                <td class="text-field col-6">www</td>
+                            </tr>
+                            <tr>
+                                <td class="text-caption col-6">www</td>
+                                <td class="text-field col-6">www</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </pre>
             </div>
         </div>
     </div>
@@ -73,9 +264,12 @@
     <div class="container text-center">
         <div class="row d-flex justify-content-center mb-3">
             <h4>Swatches</h4>
-            <div class="col-6">Use the name as a class but for backgrounds, add bg- before the name and for borders use
+            <div class="col-6">Use the name as a class but for backgrounds, add bg- before the name and for borders
+                use
                 border-.
-                <a href="css/matt-style.css">link to CSS</a>. Where appropriate I defaulted the text color
+                <a href="css/matt-style.css">link to working CSS</a> and the old as an example <a
+                    href="css/styles-RW7HNRU5.css">transpiled version here</a>. Where appropriate I defaulted the text
+                color
                 inside the fields to white.
             </div>
             <p>/* CTS Colors */</p>
