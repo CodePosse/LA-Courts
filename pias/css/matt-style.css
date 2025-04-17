@@ -60,6 +60,23 @@ body {
   --calendarText: 11.5px;
   --calendarTextLink: 11.5px;
 
+  /* layout */
+  .container-cts {
+    background-color: transparent;
+    border-radius: var(--border-radius) !important;
+    border: 1px solid var(--darkSlate) !important;
+    overflow: hidden;
+    .title {
+      background-color: var(--medSlate);
+      color: #fff;
+      padding: 0.25rem 0.5rem;
+      font-size: 24px;
+      line-height: 18px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
   /* utilities */
   --border-radius: 8px;
   --shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
