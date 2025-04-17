@@ -414,7 +414,16 @@ button,
 }
 
 /* tables */
+.table thead tr {
+  background-color: var(--darkSlate);
+  color: #fff;
+}
+tfoot {
+  background-color: var(--minimalSlate);
+}
 .table-striped {
+  border-radius: var(--border-radius);
+  overflow: hidden;
   tbody {
     tr:nth-child(odd) {
       background-color: white !important;
