@@ -438,7 +438,10 @@ button,
 tfoot {
   background-color: var(--minimalSlate);
 }
-.table-striped {
+.ctstable-striped {
+  background-color: transparent;
+  border-radius: var(--border-radius) !important;
+  border: 1px solid var(--darkSlate) !important;
   overflow: hidden;
   tbody {
     tr:nth-child(odd) {
