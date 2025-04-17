@@ -491,12 +491,17 @@ tfoot {
   margin-bottom: -1px !important;
   a,
   .nav-link {
+    font-size: 18px;
     border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
     border: 1px solid var(--medSlate) !important;
     background-color: var(--ghostSlate);
     &.active {
       background-color: #fff;
       border-bottom: 1px solid #fff !important;
+    }
+    &:not(.active) {
+      padding: 0.35rem 1rem !important;
+      margin-top: 4px;
     }
   }
 }
