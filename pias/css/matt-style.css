@@ -414,6 +414,19 @@ button,
 }
 
 /* tables */
+.table-striped {
+  tbody {
+    tr:nth-child(odd) {
+      background-color: white !important;
+    }
+    tr:nth-child(even) {
+      background-color: var(--vaporSlate) !important;
+    }
+    tr {
+      border-bottom: 1px solid var(--lightSlate) !important;
+    }
+  }
+}
 .ctstable {
   margin: 20px;
   overflow: hidden;
