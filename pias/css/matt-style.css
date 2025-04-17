@@ -64,7 +64,7 @@ body {
   .container-cts {
     background-color: transparent;
     border-radius: var(--border-radius) !important;
-    border: 1px solid var(--darkSlate) !important;
+    outline: 1px solid var(--darkSlate) !important;
     overflow: hidden;
     .title {
       background-color: var(--medSlate);
@@ -460,7 +460,7 @@ tfoot {
   overflow: hidden;
   border-radius: var(--border-radius) !important;
   background-color: var(--darkerSlate) !important;
-  border: 1px solid var(--darkerSlate) !important;
+  outline: 1px solid var(--darkerSlate) !important;
   box-shadow: var(--shadow) !important;
   font-size: var(--formText);
   strong {
