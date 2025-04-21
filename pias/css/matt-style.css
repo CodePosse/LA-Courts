@@ -1,3 +1,4 @@
+@import "/css/styles-SMQGJB3T.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700;&display=swap");
 :root,
 *,
@@ -409,6 +410,8 @@ button,
   box-shadow: var(--shadow);
   background-color: var(--vaporSlate);
   border: 1px solid var(--vaporSlate);
+  padding: 12px 20px;
+  text-decoration: none;
   &:hover {
     opacity: 0.8;
     background-color: var(--darkSlate);
