@@ -417,6 +417,7 @@ button,
     background-color: var(--darkSlate);
     border: 1px solid var(--darkSlate);
     color: #fff;
+    opacity: 1;
   }
   &:active {
     background-color: var(--darkerSlate);
@@ -430,6 +431,27 @@ button,
   &:hover {
   }
   &:active {
+  }
+}
+.btn-red {
+  border: 1px solid var(--brightRed) !important;
+  &:hover {
+    background-color: var(--brightRed);
+  }
+  &:active {
+    background-color: var(--deepRed);
+    border-color: var(--deepRed);
+  }
+}
+
+.btn-blue {
+  border: 1px solid var(--brightBlue) !important;
+  &:hover {
+    background-color: var(--brightBlue);
+  }
+  &:active {
+    background-color: var(--deepBlue);
+    border-color: var(--deepBlue);
   }
 }
 
