@@ -267,6 +267,9 @@ a {
 .pk-card-home .pk-body.third {
   background: #f5e49d;
 }
+.pk-card-home .pk-body.fourth {
+  background: #ddead1;
+}
 
 .pk-card-home .btn {
   position: absolute;
