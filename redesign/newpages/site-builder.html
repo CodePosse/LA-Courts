@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="theme-color" content="#712cf9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body class="bg-body-tertiary py-3">
+    <div class="container">
+        <div class="row col-5">This can probably be a wizard
+            <div>Site Builder Specifications
+
+                <p>Overview <br>
+
+                    The Site Builder is a core feature that allows users to construct and manage the navigational and
+                    content
+                    structure of their websites. Each website corresponds to a unique subdomain on the platform. The
+                    Site
+                    Builder enables users to control page structure, design, visibility, and publication status with an
+                    easy-to-use drag-and-drop interface.
+                </p>
+                <p> Objective <br>
+
+                    The Site Builder aims to provide users with a streamlined interface to manage their website’s
+                    structure,
+                    layout, and content. It will allow for full control over navigation, page organization, visibility,
+                    and
+                    future dynamic content integration.</p>
+
+                <p>
+                    <strong>Website Navigation Defaults
+                        <br>
+                        The following default pages are generated when the website is created:</strong>
+                <ul>
+                    <li>
+                        Home (User-defined)
+                    </li>
+                    <li>
+                        Programs
+                    </li>
+                    <li>
+                        Jobs
+                    </li>
+                    <li>
+                        Give (Donations)
+                    </li>
+                    <li>
+                        About Us
+                    </li>
+                    <li>
+                        News
+                    </li>
+                    <li>
+                        Gallery (Not MVP)
+                    </li>
+                    <li>
+                        Contact Us</li>
+                </ul>
+
+                These default pages cannot be deleted, but can be edited or hidden. Hiding does not affect dynamically
+                generated content.
+
+
+
+
+
+                </p>
+
+
+
+                <p> 3. Navigation Settings
+
+                    Users can:
+                <ul>
+                    <li>
+                        Choose whether a page appears in the navigational header.
+                    </li>
+                    <li>
+                        Set visibility rules for each page (public, logged-in users only, admin only).</li>
+                </ul>
+                </p>
+
+                <p>
+                    4. Page Design
+                <ul>
+                    <li>
+                        Users design individual pages using an embedded BeeFree template designer.
+                    </li>
+                    <li>
+                        Users can preview pages within the BeeFree interface before publishing.</li>
+                </ul>
+                </p>
+                <p>
+                    5. Publish/Unpublish Workflow
+                <ul>
+                    <li>
+                        Pages can be saved as drafts or published.
+                    </li>
+                    <li>
+                        Users can unpublish pages at any time, removing them from public view. The page’s status should
+                        reflect whether it’s published or unpublished.
+                    </li>
+                    <li>
+                        All actions should trigger a confirmation alert, and an alert should be shown when publishing or
+                        unpublishing.
+                    </li>
+                    <li>
+                        When a page is published, it should be displayed as "Published" with an option to unpublish.
+                    </li>
+                </ul>
+                </p>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+            <div class="row d-flex justify-content-center border">
+                <div class="col-8 py-3">
+                    <h4>Step 1</h4>Select church: <select class="form-select" aria-label="Default select example">
+                        <option value="1">St Francis</option>
+                        <option value="2">Holy Mary</option>
+                        <option value="3">Jubilee</option>
+                    </select>
+                </div>
+
+                <div class="col-8 py-3">Add new: <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="subdomain" aria-label="subdomain"
+                            aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">.fireworks.church</span> <button><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row d-flex justify-content-center border">
+                <div class="col-8 py-3">
+                    <h4>Step 2</h4>Page Manager: (maybe AG-Grid?)
+                    <p>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Page Name</th>
+                                <th>Published</th>
+                                <th>Visibility</th>
+                                <th>Parent</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>Home</td>
+                                <td><i class="fa-solid fa-square-check"></i></td>
+                                <td>Menu</td>
+                                <td></td>
+                                <td><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-pen-to-square"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Contact</td>
+                                <td><i class="fa-solid fa-square-check"></i></td>
+                                <td>Menu</td>
+                                <td></td>
+                                <td><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-pen-to-square"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Forms</td>
+                                <td><i class="fa-solid fa-square-check"></i></td>
+                                <td>Hidden, Public</td>
+                                <td>Contact</td>
+                                <td><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-pen-to-square"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Directory</td>
+                                <td><i class="fa-solid fa-square-check"></i></td>
+                                <td>Hidden, Admin Only</td>
+                                <td>Home</td>
+                                <td><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-pen-to-square"></i></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="text-end p-2">[Pagination] <button><i
+                                            class="fa-solid fa-plus"></i></button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    </p>
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row d-flex justify-content-center border">
+                <div class="col-8 py-3">
+                    <h4>Step 3</h4> Page Composer:
+                </div>
+                <div class="col-10 py-3">
+                    <p> <strong>Themes:</strong> [insert theme select here] like we did for beefree.</p>
+                    <p>[beefree]</p>
+                    <div class="row">
+                        <div class="col-4 border rounded">
+                            <strong>Options:</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                <label class="form-check-label" for="checkDefault">
+                                    Homepage
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                <label class="form-check-label" for="checkChecked">
+                                    Publicly Accessible
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                <label class="form-check-label" for="checkChecked">
+                                    In Top Nav Menu
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 border rounded">
+                            <strong>Visibility:</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                <label class="form-check-label" for="radioDefault1">
+                                    Members Only
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2"
+                                    checked>
+                                <label class="form-check-label" for="radioDefault2">
+                                    Admins Only
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3"
+                                    checked>
+                                <label class="form-check-label" for="radioDefault3">
+                                    All
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 border rounded"><strong>Parent/Child:</strong>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>No Parent</option>
+                                <option value="1">Home</option>
+                                <option value="2">Contact</option>
+                                <option value="3">Forms</option>
+                                <option value="3">Forms</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 py-3 d-flex">
+                        <div class="flex-grow-1"></div>
+                        <div class="pe-2"><button type="submit" class="btn btn-outline-primary">Publish</button></div>
+                        <div>
+                            <button type="reset" class="btn btn-outline-danger">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>
