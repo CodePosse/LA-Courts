@@ -203,7 +203,7 @@ img.icons {
 
 .smaller {
   width: calc(100% - 24px);
-  height: 107px;
+  /*height: 107px;*/
   background: rgba(18, 32, 92, 0.9);
   position: absolute;
   bottom: 0px;
