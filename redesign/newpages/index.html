@@ -66,19 +66,16 @@
     <header class="container-xxl py-3 px-1 px-xl-3">
         <div class="row d-flex justify-content-between px-4 px-xl-3">
             <div class="col-9 col-lg-4 ps-0"><a href="./"><img src="img/logo.png" alt="LA Superior Court Logo"
-                        class="img-fluid"></a>
+                        class="img-fluid">
+                    <div class="sr-only">Home</div>
+                </a>
             </div>
-            <div class="col-3 d-flex d-none d-lg-block justify-content-end pe-0">
-                <form class="col-12 col-lg-auto mt-3 border rounded-1" role="search">
-                    <span class="input-group">
-                        <input type="search" class="form-control pe-0 me-0 border-0" placeholder="How can we help you?"
-                            aria-label="Search">
-                        <button class="btn" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass border-none"></i><span
-                                class="sr-only">search</span></button>
-                    </span>
-                </form>
-                <div id="google_translate_element" aria-hidden="true" tabindex="-1"></div>
+            <div class="col-3 d-none d-lg-block text-end pe-0 fs-6 mt-4">
+                <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                <button data-bs-toggle="modal" data-bs-target="#translateModal" class="border-0 bg-transparent">
+                    <i class="fa fa-globe fs-4" data-bs-toggle="modal" data-bs-target="translateModal"></i>
+                    Translate
+                    Page</button>
             </div>
             <div class="col-3 d-sm-block d-lg-none text-center pt-1"><button class="navbar-toggler" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
@@ -91,7 +88,9 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header px-2">
             <div id="offcanvasRightLabel"><a href="./"><img src="img/logo.png" alt="LA Superior Court Logo"
-                        class="w-80"></a></div>
+                        class="w-80">
+                    <div class="sr-only">Home</div>
+                </a></div>
             <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
                     class="fa-solid fa-xmark fs-1 text-dark"></i></button>
         </div>
@@ -1662,7 +1661,25 @@
     <!--end footer-->
     <div class="container text-center py-2">Copyright &copy;2025 Superior Court of California County of Los Angeles
     </div>
-
+    <!--translate modal-->
+    <div class="modal fade" id="translateModal" tabindex="-1" aria-labelledby="translateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="translateModalLabel"><i class="fa-solid fa-globe"></i> Translate
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <span>title</span>
+                        <div id="google_translate_element" aria-hidden="true" tabindex="-1"></div>
+                    </div>
+                    <div>footer</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--debugger-->
     <div class="bug"><i class="fa-solid fa-bug-slash"></i></div>
     <script>
