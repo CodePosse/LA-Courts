@@ -73,7 +73,7 @@
             <div class="col-3 d-none d-lg-block text-end pe-0 fs-6 mt-4">
                 <i class="fa-solid fa-magnifying-glass fs-4"></i>
                 <button data-bs-toggle="modal" data-bs-target="#translateModal" class="border-0 bg-white">
-                    <i class="fa fa-globe fs-4" data-bs-toggle="modal" data-bs-target="translateModal"></i>
+                    <i class="fa fa-globe fs-4"></i>
                     Translate
                     Page</button>
             </div>
@@ -95,8 +95,8 @@
                     class="fa-solid fa-xmark fs-1 text-dark"></i></button>
         </div>
         <div class="offcanvas-body">
-            <div class="mob-trans py-2 bg-info">[translate]
-                <div id="google_translate_element2"></div>
+            <div class="mob-trans py-2 bg-info d-none">[translate]
+                <div id="google_translate_element2222222222"></div>
             </div>
             <div class="mob-search bg-dark p-2">
                 <form class="col m-3" role="search">
@@ -1710,12 +1710,12 @@
             new google.translate.TranslateElement(
                 {
                     pageLanguage: 'en'
-                }, 'google_translate_element', 'google_translate_element2');
+                }, 'google_translate_element');
         };
-        console.info("%c Google translate code executed on domain: " + location.hostname, "background: #222; color: yellow;font-family: Tahoma;font-size:16px");
+        console.info("%c domain: " + location.hostname, "background: #222; color: yellow");
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
-     cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"></script>
     <!--end google translate-->
 </body>
 
