@@ -71,7 +71,11 @@
                 </a>
             </div>
             <div class="col-3 d-none d-lg-block text-end pe-0 fs-6 mt-4">
-                <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                <button class="border-0 bg-white" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                    <div class="sr-only">SEARCH MODAL</div>
+                </button>
+
                 <button data-bs-toggle="modal" data-bs-target="#translateModal" class="border-0 bg-white">
                     <i class="fa fa-globe fs-4"></i>
                     Translate
@@ -103,8 +107,9 @@
                     <span class="input-group border-none">
                         <input type="search" class="form-control pe-0 me-0" placeholder="How can we help you?"
                             aria-label="Search">
-                        <button class="btn btn-warning" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i><span class="sr-only">search</span></button>
+                        <button class="btn btn-warning" type="button" id="button-addon2" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i><span
+                                class="sr-only">search</span></button>
                     </span>
                 </form>
             </div>
@@ -1021,12 +1026,13 @@
         <div class="row">
             <div class="col-lg-6 px-md-5">
                 <div class="hero-search rounded px-4 pt-2 pb-1 my-md-5 me-md-5">
-                    <hdiv class="m-0 p-0 ps-2 fs-22">How can we help you?</hdiv>
-                    <div class="input-group mt-2">
+                    <div class="m-0 p-0 ps-2 fs-22">How can we help you?</div>
+                    <div class="mt-2 d-flex">
                         <input type="text" class="form-control ps-2" placeholder="Pay my traffic ticket"
                             aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-warning" type="button" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i><span class="sr-only">search</span></button>
+                        <button class="btn btn-warning ms-2" type="button" id="button-addon2" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass px-2"></i><span
+                                class="sr-only">search</span></button>
                     </div>
                     <div class="my-1 ps-2"><small>Examples: request an interpreter, divorce, restraining orders</small>
                     </div>
@@ -1688,6 +1694,32 @@
             </div>
         </div>
     </div>
+    <!-- search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content h-100">
+                <div class="modal-header bg-blue3">
+                    <h1 class="modal-title fs-5" id="searchModalLabel">CourtHelp <span class="fst-italic">(Beta)</span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <form action="" class="container row px-0 mx-0">
+                        <div class="col d-flex px-0">
+                            <input type="text" class="form-control ps-2" placeholder="Pay my traffic ticket"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-warning ms-2" type="button" id="button-addon2" data-bs-toggle="modal"
+                                data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass px-2"></i><span
+                                    class="sr-only">search</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--debugger-->
     <div class="bug"><i class="fa-solid fa-bug-slash"></i></div>
     <script>
@@ -1725,6 +1757,8 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"></script>
     <!--end google translate-->
+
+
 </body>
 
 </html>
