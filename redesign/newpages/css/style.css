@@ -485,7 +485,7 @@ small {
 
 /* callouts */
 .alert {
-  z-index: 1;
+  z-index: 3;
 }
 .callout {
   background-color: var(--blue-pale);
