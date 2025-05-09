@@ -436,6 +436,10 @@ h5 {
 
 /* this is the menu that pushes from the right */
 @media all and (max-width: 992px) {
+  .alert {
+    width: calc(100vw - 1rem);
+    margin: 3rem 0 !important;
+  }
   .offcanvas.show {
     width: 100vw;
     --bs-offcanvas-padding-x: 0;
@@ -480,6 +484,9 @@ small {
 }
 
 /* callouts */
+.alert {
+  z-index: 1;
+}
 .callout {
   background-color: var(--blue-pale);
   border: 0px solid #ddd;
