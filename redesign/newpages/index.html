@@ -56,8 +56,12 @@
         <div class="d-flex align-items-center">
             <div class="flex-shrink-0"><i class="fa-solid fa-circle-info"></i>
             </div>
-            <div class="flex-grow-1 ms-3"><a href="javascript:null;"><small>Sylmar Juvenile Courthouse will be closed
-                        tomorrow.</small></a>
+            <div class="flex-grow-1 ms-3"><button class="border-0 bg-transparent" data-bs-toggle="modal"
+                    data-bs-target="#alertModal">
+                    <small>Sylmar Juvenile Courthouse
+                        will be closed
+                        tomorrow.</small>
+                </button>
             </div>
             <div class="flex-shrink-0"> <button type="button" class="btn-close" data-bs-dismiss="alert"
                     aria-label="Close"></button></div>
@@ -1720,6 +1724,33 @@
                                     class="sr-only">search</span></button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alert Modal -->
+    <div class="modal modal-lg fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="alertModalLabel"><i
+                            class="fa-solid fa-circle-exclamation text-danger me-1"></i> Courthouse Closure</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum tenetur explicabo,
+                        provident deleniti voluptatem aperiam temporibus similique eius commodi exercitationem
+                        perspiciatis ipsam tempora reiciendis ipsum eum consequatur nisi aliquid!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum tenetur explicabo,
+                        provident deleniti voluptatem aperiam temporibus similique eius commodi exercitationem
+                        perspiciatis ipsam tempora reiciendis ipsum eum consequatur nisi aliquid! Lorem ipsum dolor, sit
+                        amet consectetur adipisicing elit. Ad consequuntur fugiat repellat harum praesentium excepturi
+                        doloribus repudiandae quis eligendi officiis ullam enim dolore esse maxime, autem vitae ab
+                        quaerat dolorum.</p>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-success">Learn More</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+
                 </div>
             </div>
         </div>
