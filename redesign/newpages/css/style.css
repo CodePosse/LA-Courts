@@ -155,6 +155,9 @@ footer .last-line a {
 }
 .hero {
   border-radius: 0 0 20px 20px;
+  img {
+    max-height: 336px;
+  }
 }
 .hero-linkbar {
   background-color: rgb(206, 221, 237);
