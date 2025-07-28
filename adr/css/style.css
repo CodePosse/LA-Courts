@@ -14,13 +14,25 @@ body {
   --court-ltgrey: #eee;
   --court-gold: #f5c04f;
   font-family: Lato, calibri, Tahoma, Arial, monotype;
-  color:#4C525A !important;
+  color: #4c525a !important;
   font-display: swap;
 }
-h1{font-size: 48px !important;color: var(--court-black)}
-h2{font-size: 24px !important;color: var(--court-black)}
-h3{font-size: 18px !important;color: var(--court-black)}
-h4{font-size: 16px !important;color: var(--court-black)}
+h1 {
+  font-size: 48px !important;
+  color: var(--court-black);
+}
+h2 {
+  font-size: 24px !important;
+  color: var(--court-black);
+}
+h3 {
+  font-size: 18px !important;
+  color: var(--court-black);
+}
+h4 {
+  font-size: 16px !important;
+  color: var(--court-black);
+}
 a {
   color: var(--court-primary);
 }
@@ -126,7 +138,9 @@ button:disabled {
 .card-img-top {
   border-radius: 0 !important;
 }
-.card-text{color:#4C525A !important;}
+.card-text {
+  color: #4c525a !important;
+}
 .card-transparent,
 .card-transparent .card-header {
   background: transparent;
@@ -169,7 +183,7 @@ footer .card-header {
     .row {
       padding: 0px !important;
     }
-   #prog .border-bottom,
+    #prog .border-bottom,
     #prog .card {
       border: none !important;
     }
@@ -185,4 +199,8 @@ footer .card-header {
   .hide-desktop {
     display: none;
   }
+}
+
+.jumbotron {
+  border-radius: 0 0 25px 25px;
 }
