@@ -3,7 +3,7 @@
 :root,
 html,
 body {
-  font-size: 16px;
+  font-size: 18px;
   --court-primary: #005498;
   --court-black: #231f20;
   --court-ltblue: rgb(212, 229, 245);
@@ -40,8 +40,96 @@ a {
   border-color: var(--court-primary) !important;
 }
 nav {
-  background-color: #fff;
+  background-color: #232f3d;
+  border-bottom: 5px solid #f5c04f;
+  border-radius: 20px 20px 0 0;
 }
+nav {
+  background-color: #232f3d;
+  border-bottom: 5px solid #f5c04f;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+}
+
+nav a,
+footer a {
+  color: #fff;
+}
+
+.nav-search {
+  border-radius: 10px !important;
+  font-size: 14px;
+}
+
+.nav-search .form-control::placeholder,
+.nav-search value,
+.nav-search input {
+  font-style: italic;
+}
+
+.nav-search i {
+  font-style: normal;
+}
+
+.navbar .megamenu {
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 5px 0px rgba(0, 0, 0, 0.25); */
+  background-color: rgb(206, 221, 237);
+  border-top: 5px solid #f5c04f;
+}
+.megamenu .bg-ltblue,
+.bg-ltblue {
+  background-color: rgb(206, 221, 237);
+}
+.bg-blue-pale {
+  background: var(--blue-pale);
+}
+
+.megamenu :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: bold;
+}
+
+@media all and (min-width: 992px) {
+  a.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0.75rem 10px 0.5rem !important;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+  .megamenu h6.title {
+    font-size: 16px;
+  }
+  .megamenu ul {
+    padding-left: 15px;
+    list-style: disc;
+    li {
+      padding-top: 5px;
+    }
+  }
+  .col-megamenu a {
+    color: black;
+    font-size: 14px;
+  }
+  .megamenu a:hover {
+    color: var(--blue3);
+  }
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 .court-topbar {
   background-color: var(--court-dkblue);
   color: #fff;
@@ -61,17 +149,7 @@ footer a {
 .jumbotron i {
   font-size: 8rem;
 }
-footer {
-  background-color: #000 !important;
-  color: #fff;
-}
-footer a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-footer .list-group-item {
-  padding: 0.125rem;
-}
+
 .splash {
   background: silver url("../img/splash4.jpg");
   background-position: center bottom;
@@ -203,4 +281,48 @@ footer .card-header {
 
 .jumbotron {
   border-radius: 0 0 25px 25px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px !important;
+}
+
+.rounded {
+  border-radius: 20px !important;
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px !important;
+  }
+}
+.w-70 {
+  width: 70%;
+}
+/* footer */
+
+footer {
+  background-color: var(--court-dkblue) !important;
+  color: #fff;
+  .brands a {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  a {
+    font-size: 16px;
+  }
+  .last-line a {
+    text-decoration: underline;
+  }
+}
+footer .list-group-item {
+  padding: 0.125rem;
 }
