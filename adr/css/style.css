@@ -39,11 +39,7 @@ a {
 .border-primary {
   border-color: var(--court-primary) !important;
 }
-nav {
-  background-color: #232f3d;
-  border-bottom: 5px solid #f5c04f;
-  border-radius: 20px 20px 0 0;
-}
+
 nav {
   background-color: #232f3d;
   border-bottom: 5px solid #f5c04f;
