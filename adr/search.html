@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -33,15 +33,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <style>
-        .youtube-video {
-            aspect-ratio: 16 / 9;
-            width: 100%;
-        }
-    </style>
 </head>
 
-<body>
+<body id="prog">
     <!--header-->
     <header class="container-xxl py-3 px-1 px-xl-3">
         <div class="row d-flex justify-content-between px-4 px-xl-3">
@@ -1137,293 +1131,141 @@
         </div>
     </nav>
     <!--end main nav-->
+
     <!--jumbotron-->
-    <div class="container bg-paleblue jumbotron py-3 rounded-bottom">
-        <!--breadcrumbs-->
+    <div class="container bg-paleblue jumbotron rounded-bottom pt-3"> <!--breadcrumbs-->
+
         <div class="container breadcrumbs">
             <div class="row">
-                <div class="col"> <a href="/"><i class="fa fa-home fa-xs"></i> Home </a> <span
-                        class="hide-mobile mx-1">/</span> ADR
+                <div class="col ps-md-4"><a href="/"><i class="fa fa-home fa-xs"></i> Home </a> <span
+                        class="hide-mobile mx-1">/</span> <a href="./">ADR</a>
+                    <span class="hide-mobile mx-1">/</span>
+                    <span class="hide-mobile"><a href="mvp.html">MVP</a></span>
+                    <span class="hide-mobile mx-1">/</span>
+                    <span class="hide-mobile">About Mediator Profiles</span>
                 </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="row d-flex justify-content-between">
+            <div class="row">
                 <div class="col-md-10">
-                    <h1 class="mb-md-4">Alternative Dispute Resolution (ADR)</h1>
-                    <p class="col-md-6">ADR can help you settle your case without going to trial. Learn more about
-                        settlement programs
-                        for civil, family law, and probate cases. </p>
+                    <h1 class="mb-md-4">&nbsp;Mediator Profiles</h1>
+                    <p class="col-md-6">Parties may search mediators by keyword or filter by subject expertise or
+                        language. Expertise areas correspond to case types from the Civil Case Cover Sheet Addendum and
+                        Statement of Location (LASC CIV 109). Click a mediator's name to view their full profile.</p>
                 </div>
                 <div class="col-2 d-none d-md-block d-lg-block"><i class="fa-regular fa-handshake"></i></div>
             </div>
         </div>
     </div>
 
-
-    <!--what is adr-->
-    <div class="container py-2 py-md-4 px-md-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-5">
-
-                    <div class="my-3 mt-md-5 mb-md-3 col-md-6">
-                        <h3 class="text-primary text-center pb-md-2">ADR Quick Links &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        </h3>
-                        <div>
-                            <a href="programs.html" class="btn btn-primary text-center d-block my-2">
-                                &nbsp; &nbsp; View all ADR
-                                Programs &nbsp; &nbsp;
-                            </a>
-                            <a href="https://lascpubstorage.blob.core.windows.net/forms/Forms%20Comprehensive%20List/LASC%20CIV%20271.pdf"
-                                title="PDF file" target="_blank" class="btn btn-primary text-center d-block my-2">
-                                ADR Information Package &nbsp;
-                            </a>
-                            <a href="mvp.html" class="btn btn-primary text-center w-100 d-block my-2">
-                                Mediation Volunteer Panel
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 xs-nopad">
-                    <h3 class="text-center">What's New in ADR?</h3>
-                    <span><iframe class="youtube-video" src="https://www.youtube.com/embed/q15h49qaA5w"
-                            title="Mediation Volunteer Panel for Litigants and Attorneys" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe></span>
-                    <em>Video: Mediation Volunteer Panel for Litigants and Attorneys</em>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--settle my case-->
-    <div class="container rounded bg-ltgrey py-2 py-md-4 px-md-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h2 class="">I Want to Settle My Case</h2>
-                </div>
-                <div class="col-md-5 p-md-0">
-                    <h3>Learn about how to settle your case</h2>
-                        <p>The court offers a number of programs to assist with settling your case out of court.
-                            Select
-                            a type of case from the dropdown to view what options are available to you.</p>
-                </div>
-                <div class="col-md-5 pb-2">
-
-                    <div class="col-lg-7 pt-md-3">
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle w-100" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Select your Case Type
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><strong class="mx-2">Select Case Type</strong></li>
-                                <li><a class="dropdown-item" href="programs.html">All</a></li>
-                                <li><a class="dropdown-item" href="programs.html?tab=sc">Small Claims</a></li>
-                                <li><a class="dropdown-item" href="programs.html?tab=ud">Unlawful Detainer</a>
-                                </li>
-                                <li><a class="dropdown-item" href="programs.html?tab=lc">Limited Civil</a></li>
-                                <li><a class="dropdown-item" href="programs.html?tab=uc">Unlimited Civil</a>
-                                </li>
-                                <li><a class="dropdown-item" href="programs.html?tab=ch">Civil Harassment</a>
-                                </li>
-                                <li><a class="dropdown-item" href="programs.html?tab=fl">Family Law</a></li>
-                                <li><a class="dropdown-item" href="programs.html?tab=prob">Probate</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--why adr-->
-    <div class="container py-2 py-md-4 px-md-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h2 class="">Why ADR?</h2>
-                </div>
-                <div class="col-md-10 row d-flex justify-content-between px-md-1">
-                    <div class="col-md-4 py-0 px-md-2 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <img loading="lazy" src="./img/why1.jpg" class="card-img-top d-none d-md-block d-lg-block"
-                                alt="">
-                            <div class="card-body">
-                                <h3 class="">Save time and money</h3>
-                                <p class="card-text">Utilizing ADR methods is often
-                                    faster than going to trial and parties can save on court costs, attorney's
-                                    fees, and
-                                    other charges.</p>
+    <div class="container rounded jumbotron py-3">
+        <div class="container p-0 px-md-3">
+            <div class="row"><!--searchbox-->
+                <div class="col-md-3">
+                    <div class="mvpsearch row rounded px-2 py-3">
+                        <div class="col-12 mb-5"> <label for="Search_By" class="form-label fw-bold">Search
+                                By</label>
+                            <input type="text" class="form-control" id="Search_By" placeholder="1234 Main St"
+                                required="">
+                            <div data-lastpass-icon-root=""
+                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 py-0 px-md-2 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <img loading="lazy" src="./img/why2.jpg" class="card-img-top d-none d-md-block d-lg-block"
-                                alt="">
-                            <div class="card-body">
-                                <h3 class="">Reduce stress and protect privacy</h3>
-                                <p class="card-text">ADR is conducted outside
-                                    of a courtroom setting and does not involve a public trial.</p>
-                            </div>
+                        <div class="col-12 mb-5"> <label for="Case_Type" class="form-label fw-bold">Civil Case Cover
+                                Sheet Case
+                                Types</label> <select class="form-select" id="Case_Type" required="">
+                                <option value="">Show All</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-5"> <label for="language" class="form-label fw-bold">Language</label>
+                            <select class="form-select" id="language" required="">
+                                <option value="">Show All</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div class="col-12 d-flex justify-content-around mb-2"><button type="submit"
+                                class="btn btn-primary w-40">Search</button>
+                            <button type="reset" class="btn btn-cancel border-dark w-40">Clear Filters</button>
                         </div>
                     </div>
-                    <div class="col-md-4 py-0 px-md-2 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <img loading="lazy" src="./img/why3.jpg" class="card-img-top d-none d-md-block d-lg-block"
-                                alt="">
-                            <div class="card-body">
-                                <h3 class="">Help parties maintain control</h3>
-                                <p class="card-text">For many types of ADR, parties
-                                    may choose their ADR process and provider.</p>
+                    <div class="mt-4"><strong>Important:</strong><br>
+                        The plaintiff must submit the online <a
+                            href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFr_5R54NeJpPozWUIRWxBnhUNkdRRkRFUUpISlQ0R1laUzlXQlI0UzRWQi4u&route=shorturl"
+                            target="_blank">Response Form</a> within 15 calendar days to identify the
+                        mutually agreed-upon mediator or request the ADR Office to assign a mediator. The ADR Office
+                        will issue a Notice of Mediator Assignment to all parties.
+                    </div>
+                </div>
+                <!--results-->
+                <div class="col-md-9">
+                    <div class="row sortbar ps-3 pe-4 pb-3">
+                        <div class="col-8">Sort by: pill | pill | pill</div>
+                        <div class="col-4 text-end">options</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-3 rounded">
+                                <div class="d-flex justify-content-around">
+                                    <div class="p-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                            <label class="form-check-label sr-only" for="checkDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="card-body pe-md-4">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="card-title">Johnson Alice</h5>
+                                                <div><span class="d-sm-block d-md-none">California State
+                                                        Bar#:</span>
+                                                    252026</div>
+                                            </div>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary"><a
+                                                    href="mailto:alice.johnson@company.com">alice.johnson@company.com</a><br><a
+                                                    href="tel:408-333-9955">408-333-9955</a> | Italian, English |
+                                                Hourly: $600 </h6>
+
+                                            <p class="card-text"><strong>Civil Case Cover Sheet Case Type:</strong><br>
+                                                Antitrust/Trade Regulation, Breach of Contract/Warranty, Business Tort,
+                                                Civil Rights, Defamation, Fraud, Other Contract, Other Judicial Review,
+                                                Other Personal Injury/Property Damage/Wrongful Death, Other Real
+                                                Property, Partnership Corporation Governance, Professional Negligence,
+                                                RICO, Unlawful DetainerCommercial, Writ of Mandate, Wrongful
+                                                Termination, Miscellaneous-Cannabis, MiscellaneousCopyright,
+                                                Miscellaneous-Privacy, Miscellaneous-Trademarks, Miscellaneous-Unfair
+                                                Competition.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--types of adr-->
-    <div class="container rounded bg-ltgrey py-2 py-md-4 px-md-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h2 class="">Types of ADR</h2>
-                </div>
-                <div class="col-md-10 row d-flex justify-content-between p-0">
-                    <div class="col-md-6 m-2 m-md-0 p-md-1 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <div class="row g-0">
-                                <div class="col">
-                                    <div class="card-body pt-md-3">
-                                        <h3 class="">Negotiation</h3>
-                                        <p class="card-text">Parties may talk with each other about resolving
-                                            their case
-                                            at
-                                            any time. If the parties have attorneys, they will negotiate for
-                                            their
-                                            clients.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 m-2 m-md-0 p-md-1 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <div class="row g-0">
-                                <div class="col">
-                                    <div class="card-body pt-md-3">
-                                        <h3 class="">Mediation</h3>
-                                        <p class="card-text">Mediation may be appropriate for parties who want
-                                            to work
-                                            out a
-                                            solution but need help from a neutral third party. A mediator can
-                                            help the
-                                            parties reach a mutually acceptable resolution.
 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 m-2 m-md-0 p-md-1 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <div class="row g-0">
-                                <div class="col">
-                                    <div class="card-body pt-md-3">
-                                        <h3 class="">Settlement Conferences</h3>
-                                        <p class="card-text">A judge or qualified settlement officer assists the
-                                            parties
-                                            in
-                                            evaluating the strengths and weaknesses of the case and in
-                                            negotiating a
-                                            settlement. In some cases, voluntary settlement conferences may be
-                                            requested
-                                            by
-                                            the parties.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 m-2 m-md-0 p-md-1 mb-md-3">
-                        <div class="card h-100 shadow1">
-                            <div class="row g-0">
-                                <div class="col">
-                                    <div class="card-body pt-md-3">
-                                        <h3 class="text-black">Arbitration</h3>
-                                        <p class="card-text">Less formal than a trial, parties present evidence
-                                            and
-                                            arguments to an arbitrator who decides the outcome. In "binding"
-                                            arbitration,
-                                            the arbitrator's decision is final; there is no right to trial. In
-                                            "nonbinding"
-                                            arbitration, any party can request a trial after the arbitrator's
-                                            decision.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Mediation Volunteer Panel-->
-    <div class="container bg-white py-2 py-md-4 px-md-0 d-none">
+    <div class="container my-2">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <h2 class="">Mediation Volunteer Panel</h2>
-                </div>
-                <div class="col-md-5 p-md-0">
-                    <h3>Parties:</h3>
-                    <p>Has your case been referred to the MVP program?</p>
-                    <p>
-                    <ul class="ps-1 ms-1">
-                        <li><a href="https://lascpubstorage.blob.core.windows.net/cpw/LIBOPSCivil-129-MediatorProfiles%E2%80%93SortedbyLastName.pdf"
-                                target="_blank" title="PDF File">Review Mediator Profiles - Sorted by Last
-                                Name</a></li>
-                        <li><a href="https://lascpubstorage.blob.core.windows.net/cpw/LIBOPSCivil-128-MediatorProfiles%E2%80%93SortedbyCivilCaseCoverSheetCaseType.pdf"
-                                target="_blank" title="PDF File">Review Mediator Profiles - Sorted by Civil Case
-                                Cover
-                                Sheet Case Type</a></li>
-                        <li><a
-                                href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFr_5R54NeJpPozWUIRWxBnhUNkdRRkRFUUpISlQ0R1laUzlXQlI0UzRWQi4u&route=shorturl">Submit
-                                Response to Notice of Mediation</a></li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="col-md-5 p-md-0">
-                    <h3>Attorneys:</h3>
-                    <p>Apply to serve on the court's Mediation Volunteer Panel</p>
-                    <p>
-                    <ul class="ps-1 ms-1">
-                        <li><a href="https://lascpubstorage.blob.core.windows.net/forms/Forms%20Comprehensive%20List/1984-LASC%20CIV%20308.pdf"
-                                target="_blank" title="PDF File">Review the Qualifications and Requirements for
-                                Applicants to the Mediation Volunteer
-                                Panel</a></li>
-                        <li><a href="https://lascpubstorage.blob.core.windows.net/forms/Forms%20Comprehensive%20List/1983-LASC%20CIV%20307.pdf"
-                                target="_blank" title="PDF File">Download the Application for Appointment to
-                                Mediation Volunteer Panel</a></li>
-                        <li><a href="https://lascpubstorage.blob.core.windows.net/cpw/LIBOPSCivil-127-GeneralOrder%E2%80%93MediationVolunteerPanel.pdf"
-                                target="_blank" title="PDF File">Review the General Order - Mediation Volunteer
-                                Panel</a></li>
-                        <li><a href="https://www.courts.ca.gov/cms/rules/index.cfm?title=three&linkid=rule3_850"
-                                target="_blank">Review the Rules of Conduct for Panel
-                                Mediators</a></li>
-                        <li><a href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFr_5R54NeJpPozWUIRWxBnhUQkFPQzZPUkdURkFDT1kyQ0VaME9US1Q3Qy4u&route=shorturl"
-                                target="_blank">Mediators: Submit the Post-Mediation Status Report</a></li>
-                    </ul>
-                    </p>
+                <div class="col"><small>
+                        <strong>Disclaimer:</strong><br>
+                        Information is provided by each mediator and not independently verified by the Superior Court of
+                        California, County of Los Angeles. The Court offers this list as a public service and does not
+                        endorse or guarantee any mediator's qualifications. Inclusion is based on mediator
+                        representations.
+                        The Court assumes no responsibility or liability for any mediator's actions or
+                        omissions.</small>
                 </div>
             </div>
         </div>
@@ -1439,8 +1281,8 @@
                     <p class="mt-1">
                         <a href="/pages/cp/gi-courthouses-all"> Courthouses </a><br>
                         <a href="/pages/lp/juror-services"> Jury Duty </a><br>
-                        <a target="_blank"
-                            href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCExecutiveSupport-333-2025-GEN-002-00_CourtSecurity_010225.pdf">
+                        <a href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCExecutiveSupport-333-2025-GEN-002-00_CourtSecurity_010225.pdf"
+                            target="_blank" title="PDF file: Prohibited Items">
                             Prohibited Items </a><br>
                     </p>
                 </div>
@@ -1502,6 +1344,7 @@
     </footer>
     <div class="container-xxl text-center py-2"> Copyright &copy; 2025 Superior Court of California County of Los
         Angeles </div>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/global.js"></script>
     <script type="text/javascript">
