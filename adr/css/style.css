@@ -377,7 +377,8 @@ footer .list-group-item {
 
 /* ADR STUFF */
 
-.mvpsearch {
+.mvpsearch,
+.mvpprofile {
   background-color: rgba(243, 243, 243, 1);
 }
 .mvpresults {
@@ -386,4 +387,6 @@ footer .list-group-item {
     font-size: 14px;
     font-weight: 400;
   }
+}
+.mvpprofile {
 }
