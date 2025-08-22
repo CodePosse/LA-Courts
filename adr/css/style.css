@@ -39,7 +39,7 @@ a {
 .border-primary {
   border-color: var(--court-primary) !important;
 }
-nav {
+nav:not(.adr-pagination) {
   background-color: #232f3d;
   border-bottom: 5px solid #f5c04f;
   border-radius: 20px 20px 0 0;
@@ -186,6 +186,7 @@ button[type="reset"] {
 .card-img-top {
   border-radius: 0 !important;
 }
+
 .card-text {
   color: #4c525a !important;
 }
@@ -238,6 +239,9 @@ button[type="reset"] {
         padding-left: 8px;
       }
     }
+  }
+  h5.card-title {
+    display: inline;
   }
 }
 @media (width > 640px) {
