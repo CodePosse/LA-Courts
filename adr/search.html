@@ -1161,29 +1161,28 @@
     </div>
 
     <div class="container rounded jumbotron py-3">
-        <div class="container p-0 px-md-3">
-            <div class="row"><!--searchbox-->
+        <div class="container p-0 px-3">
+            <div class="row">
+                <!--searchbox column-->
                 <div class="col-md-3">
-                    <div class="mvpsearch row rounded px-2 py-3">
-                        <div class="col-12 mb-5"> <label for="Search_By" class="form-label fw-bold">Search
+                    <div class="mvpsearch row rounded px-2 py-3 px-md-2">
+                        <div class="col-12 mb-2 mb-md-5"> <label for="Search_By" class="form-label fw-bold">Search
                                 By</label>
-                            <input type="text" class="form-control" id="Search_By" placeholder="1234 Main St"
-                                required="">
-                            <div data-lastpass-icon-root=""
-                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
-                            </div>
+                            <input type="text" class="form-control" id="Search_By" required="">
                             <div class="invalid-feedback">
                                 Please enter your shipping address.
                             </div>
                         </div>
-                        <div class="col-12 mb-5"> <label for="Case_Type" class="form-label fw-bold">Civil Case Cover
+                        <div class="col-12 mb-2 mb-md-5"> <label for="Case_Type" class="form-label fw-bold">Civil Case
+                                Cover
                                 Sheet Case
                                 Types</label> <select class="form-select" id="Case_Type" required="">
                                 <option value="">Show All</option>
                                 <option>United States</option>
                             </select>
                         </div>
-                        <div class="col-12 mb-5"> <label for="language" class="form-label fw-bold">Language</label>
+                        <div class="col-12 mb-2 mb-md-5"> <label for="language"
+                                class="form-label fw-bold">Language</label>
                             <select class="form-select" id="language" required="">
                                 <option value="">Show All</option>
                                 <option>United States</option>
@@ -1194,7 +1193,7 @@
                             <button type="reset" class="btn btn-cancel border-dark w-40">Clear Filters</button>
                         </div>
                     </div>
-                    <div class="mt-4"><strong>Important:</strong><br>
+                    <div class="mt-1 mt-md-4"><strong>Important:</strong><br>
                         The plaintiff must submit the online <a
                             href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFr_5R54NeJpPozWUIRWxBnhUNkdRRkRFUUpISlQ0R1laUzlXQlI0UzRWQi4u&route=shorturl"
                             target="_blank">Response Form</a> within 15 calendar days to identify the
@@ -1202,7 +1201,7 @@
                         will issue a Notice of Mediator Assignment to all parties.
                     </div>
                 </div>
-                <!--results-->
+                <!--results column-->
                 <div class="col-md-9">
                     <div class="row sortbar ps-3 pe-4 pb-3">
                         <div class="col-8">Sort by: pill | pill | pill</div>
@@ -1224,8 +1223,7 @@
                                         <div class="card-body pe-md-4">
                                             <div class="d-flex justify-content-between">
                                                 <h5 class="card-title">Johnson Alice</h5>
-                                                <div><span class="d-sm-block d-md-none">California State
-                                                        Bar#:</span>
+                                                <div>
                                                     252026</div>
                                             </div>
                                             <h6 class="card-subtitle mb-2 text-body-secondary"><a
@@ -1247,29 +1245,58 @@
                                 </div>
                             </div>
                         </div>
-
-
+                        <!--pagination-->
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <nav aria-label="Page navigation example" class="adr-pagination mx-2">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="form-group row mx-2 d-flex">
+                                    <label for="inputEmail3" class="col col-form-label text-end pe-0">Results</label>
+                                    <div class="col text-start ps-0">
+                                        <select class="form-select mx-2" aria-label="Default select example">
+                                            <option selected value="1">10</option>
+                                            <option value="2">25</option>
+                                            <option value="3">50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--disclaimer-->
+                        <div class="row">
+                            <div class="col-12 px-4"><small>
+                                    <strong>Disclaimer:</strong><br>
+                                    Information is provided by each mediator and not independently verified by the
+                                    Superior Court of
+                                    California, County of Los Angeles. The Court offers this list as a public service
+                                    and does not
+                                    endorse or guarantee any mediator's qualifications. Inclusion is based on mediator
+                                    representations.
+                                    The Court assumes no responsibility or liability for any mediator's actions or
+                                    omissions.</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container my-2">
-        <div class="container">
-            <div class="row">
-                <div class="col"><small>
-                        <strong>Disclaimer:</strong><br>
-                        Information is provided by each mediator and not independently verified by the Superior Court of
-                        California, County of Los Angeles. The Court offers this list as a public service and does not
-                        endorse or guarantee any mediator's qualifications. Inclusion is based on mediator
-                        representations.
-                        The Court assumes no responsibility or liability for any mediator's actions or
-                        omissions.</small>
-                </div>
-            </div>
-        </div>
-    </div>
     <footer class="container-xxl footer rounded px-3 px-md-5 py-4 mt-5">
         <div class="row">
             <div class="col-lg-6"><img class="w-70"
