@@ -1193,6 +1193,7 @@
                             <button type="reset" class="btn btn-cancel border-dark w-40">Clear Filters</button>
                         </div>
                     </div>
+                    <!--important-->
                     <div class="mt-1 mt-md-4"><strong>Important:</strong><br>
                         The plaintiff must submit the online <a
                             href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFr_5R54NeJpPozWUIRWxBnhUNkdRRkRFUUpISlQ0R1laUzlXQlI0UzRWQi4u&route=shorturl"
@@ -1200,19 +1201,47 @@
                         mutually agreed-upon mediator or request the ADR Office to assign a mediator. The ADR Office
                         will issue a Notice of Mediator Assignment to all parties.
                     </div>
+                    <!--volunteer accordion-->
+                    <div class="mt-1 mt-md-4">
+                        <div class="accordion mvpprofile" id="accordionExample">
+                            <div class="accordion-item mvpprofile">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed mvpprofile" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Volunteer Time and Compensation
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-white">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--results column-->
                 <div class="col-md-9">
-                    <div class="row sortbar ps-3 pe-4 pb-3 mvpresults">
-                        <div class="col-8">Sort by: <span class="badge rounded-pill text-bg-primary border"><i
-                                    class="fa-solid fa-user"></i> Last Name</span> |
-                            <span class="badge rounded-pill text-bg-light border"><i
-                                    class="fa-solid fa-dollar-sign"></i>
-                                Hourly Rate</span> | <span class="badge rounded-pill text-bg-light border"><i
-                                    class="fa-solid fa-star"></i> My
-                                List</span>
+                    <div class="row sortbar ps-3 pe-4 pb-3 mvpresults d-flex justify-content-between">
+                        <div class="col-6 col-md-4"><select class="form-select" aria-label="Default select example">
+                                <option selected>Sort</option>
+                                <option value="1">Last Name</option>
+                                <option value="2">Hourly Rate</option>
+                            </select>
                         </div>
-                        <div class="col-4 text-end"><a href="#"><i class="fa-solid fa-envelope fs-5"></i></a>
+                        <div class="col-4 text-end d-inline">
+                            <span class="badge rounded-pill text-bg-light border me-1"><i class="fa-solid fa-star"></i>
+                                My
+                                List</span>
+                            <span href="#"><i class="fa-solid fa-envelope fs-3"></i></a></span>
                         </div>
                     </div>
                     <div class="row">
