@@ -381,12 +381,19 @@ footer .list-group-item {
 .mvpprofile {
   background-color: rgba(243, 243, 243, 1);
 }
-.mvpresults {
+.mvpresults,
+.card {
   .badge,
   i {
     font-size: 14px;
     font-weight: 400;
   }
-}
-.mvpprofile {
+  .badge:hover {
+    background-color: var(--court-primary) !important;
+    color: #fff !important;
+    cursor: pointer;
+    i {
+      color: yellow;
+    }
+  }
 }
