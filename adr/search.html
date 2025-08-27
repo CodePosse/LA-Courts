@@ -1241,7 +1241,8 @@
                             <span class="badge rounded-pill text-bg-light border me-1"><i class="fa-solid fa-star"></i>
                                 My
                                 List</span>
-                            <span href="#"><i class="fa-solid fa-envelope fs-3"></i></a></span>
+                            <a data-bs-toggle="modal" data-bs-target="#emailModal" href="javascript:void(0);"><span
+                                    class="sr-only">Send mail</span><i class="fa-solid fa-envelope fs-3"></i></a></span>
                         </div>
                     </div>
                     <div class="row">
@@ -1403,6 +1404,97 @@
     </footer>
     <div class="container-xxl text-center py-2"> Copyright &copy; 2025 Superior Court of California County of Los
         Angeles </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="emailModalLabel">Send Email</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <label for="emailInput" class="col-md-3 col-form-label text-end">To:</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="emailInput"
+                                placeholder="Enter recipient's email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="ccemailInput" class="col-md-3 col-form-label text-end">CC:</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="ccemailInput" placeholder="Enter CC email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="subjectInput" class="col-md-3 col-form-label text-end">Subject:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="subjectInput" placeholder="Enter the subject">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="fromemailInput" class="col-md-3 col-form-label text-end">From:</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="fromemailInput" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="messageInput" class="col-md-3 col-form-label text-end">Message:</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" id="messageInput" rows="4"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3 px-3">
+                        <div class="col-12 border-bottom py-2">
+                            <div>
+                                <h5 class="fw-bold p-0 m-0">Johnson Alice</h5>
+                            </div>
+                            <div>
+                                <a href="mailto:alice.johnson@company.com">alice.johnson@company.com</a>
+                            </div>
+                            <div class="col-12"><a href="tel:408-333-9955">408-333-9955</a> |
+                                Italian, English |
+                                Hourly: $600</div>
+                        </div>
+                        <div class="col-12 border-bottom py-2">
+                            <div>
+                                <h5 class="fw-bold p-0 m-0">Johnson Alice</h5>
+                            </div>
+                            <div>
+                                <a href="mailto:alice.johnson@company.com">alice.johnson@company.com</a>
+                            </div>
+                            <div class="col-12"><a href="tel:408-333-9955">408-333-9955</a> |
+                                Italian, English |
+                                Hourly: $600</div>
+                        </div>
+                        <div class="col-12 border-bottom py-2">
+                            <div>
+                                <h5 class="fw-bold p-0 m-0">Johnson Alice</h5>
+                            </div>
+                            <div>
+                                <a href="mailto:alice.johnson@company.com">alice.johnson@company.com</a>
+                            </div>
+                            <div class="col-12"><a href="tel:408-333-9955">408-333-9955</a> |
+                                Italian, English |
+                                Hourly: $600</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Send</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/global.js"></script>

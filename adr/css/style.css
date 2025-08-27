@@ -398,8 +398,19 @@ footer .list-group-item {
   }
   .mvpdetails {
     .col-md-6 .p-2 {
-      border-bottom: 1px solid red;
-      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--court-dkblue);
+      margin: 1rem 0;
+    }
+  }
+}
+#emailModal {
+  .modal-header {
+    background-color: var(--court-primary);
+    .modal-title {
+      color: #fff !important;
+    }
+    button.btn-close {
+      background-color: #fff !important;
     }
   }
 }
