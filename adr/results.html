@@ -1141,8 +1141,8 @@
                         class="hide-mobile mx-1">/</span> <a href="./">ADR</a>
                     <span class="hide-mobile mx-1">/</span>
                     <span class="hide-mobile"><a href="mvp.html">MVP</a></span>
-                    <span class="hide-mobile mx-1">/</span>
-                    <span class="hide-mobile">About Mediator Profiles</span>
+                    <span class="hide-mobile mx-1 d-none">/</span>
+                    <span class="hide-mobile d-none">About Mediator Profiles</span>
                 </div>
             </div>
         </div>
@@ -1160,7 +1160,7 @@
         </div>
     </div>
 
-    <div class="container rounded jumbotron py-3">
+    <div class="container rounded jumbotron py-3 mvpresults">
         <div class="container p-0 px-md-3">
             <div class="row">
                 <!--results-->
@@ -1169,9 +1169,13 @@
                         <div class="col-8"><a href="search.html">&lt; Back to
                                 Search
                                 Results</a></div>
-                        <div class="col-4 text-end"><a data-bs-toggle="modal" data-bs-target="#emailModal"
-                                href="javascript:void(0);"><span class="sr-only">Send mail</span><i
-                                    class="fa-solid fa-envelope fs-3"></i></a></div>
+                        <div class="col-4 text-end d-inline">
+                            <span class="badge rounded-pill text-bg-light border me-1"><i class="fa-solid fa-star"></i>
+                                My
+                                List</span>
+                            <a data-bs-toggle="modal" data-bs-target="#emailModal" href="javascript:void(0);"><span
+                                    class="sr-only">Send mail</span><i class="fa-solid fa-envelope fs-3"></i></a></span>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
@@ -1344,8 +1348,8 @@
 
     <div class="container my-2">
         <div class="container">
-            <div class="row">
-                <div class="col"><small>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-7"><small>
                         <strong>Disclaimer:</strong><br>
                         Information is provided by each mediator and not independently verified by the Superior Court of
                         California, County of Los Angeles. The Court offers this list as a public service and does not
@@ -1435,7 +1439,7 @@
     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-primary">
                     <h1 class="modal-title fs-5" id="emailModalLabel">Send Email</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -1473,28 +1477,6 @@
                         </div>
                     </div>
                     <div class="row mb-3 px-3">
-                        <div class="col-12 border-bottom py-2">
-                            <div>
-                                <h5 class="fw-bold p-0 m-0">Johnson Alice</h5>
-                            </div>
-                            <div>
-                                <a href="mailto:alice.johnson@company.com">alice.johnson@company.com</a>
-                            </div>
-                            <div class="col-12"><a href="tel:408-333-9955">408-333-9955</a> |
-                                Italian, English |
-                                Hourly: $600</div>
-                        </div>
-                        <div class="col-12 border-bottom py-2">
-                            <div>
-                                <h5 class="fw-bold p-0 m-0">Johnson Alice</h5>
-                            </div>
-                            <div>
-                                <a href="mailto:alice.johnson@company.com">alice.johnson@company.com</a>
-                            </div>
-                            <div class="col-12"><a href="tel:408-333-9955">408-333-9955</a> |
-                                Italian, English |
-                                Hourly: $600</div>
-                        </div>
                         <div class="col-12 border-bottom py-2">
                             <div>
                                 <h5 class="fw-bold p-0 m-0">Johnson Alice</h5>

@@ -382,6 +382,7 @@ footer .list-group-item {
   background-color: rgba(243, 243, 243, 1);
 }
 .mvpresults,
+.mvpprofile,
 .card {
   .badge,
   i {

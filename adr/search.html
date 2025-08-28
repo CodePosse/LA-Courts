@@ -1141,8 +1141,8 @@
                         class="hide-mobile mx-1">/</span> <a href="./">ADR</a>
                     <span class="hide-mobile mx-1">/</span>
                     <span class="hide-mobile"><a href="mvp.html">MVP</a></span>
-                    <span class="hide-mobile mx-1">/</span>
-                    <span class="hide-mobile">About Mediator Profiles</span>
+                    <span class="hide-mobile mx-1 d-none">/</span>
+                    <span class="hide-mobile d-none">About Mediator Profiles</span>
                 </div>
             </div>
         </div>
@@ -1231,11 +1231,13 @@
                 <!--results column-->
                 <div class="col-md-9">
                     <div class="row sortbar ps-3 pe-4 pb-3 mvpresults d-flex justify-content-between">
-                        <div class="col-6 col-md-4"><select class="form-select" aria-label="Default select example">
-                                <option selected>Sort</option>
-                                <option value="1">Last Name</option>
-                                <option value="2">Hourly Rate</option>
-                            </select>
+                        <div class="col-6 col-md-4 text-inline">
+                            <form class="d-flex flex-row align-items-center flex-wrap"><label class="my-1 me-2"
+                                    for="inlineFormCustomSelectPref">Sort:</label>
+                                <select class="form-select my-1 me-sm-2 w-auto" id="inlineFormCustomSelectPref">
+                                    <option selected value="0">Last Name</option>
+                                    <option value="1">Language</option>
+                                </select>
                         </div>
                         <div class="col-4 text-end d-inline">
                             <span class="badge rounded-pill text-bg-light border me-1"><i class="fa-solid fa-star"></i>
@@ -1312,7 +1314,7 @@
                     </div>
                     <!--disclaimer-->
                     <div class="row">
-                        <div class="col-12 px-4"><small>
+                        <div class="col-12 px-5"><small>
                                 <strong>Disclaimer:</strong><br>
                                 Information is provided by each mediator and not independently verified by the
                                 Superior Court of
@@ -1413,7 +1415,7 @@
     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-primary">
                     <h1 class="modal-title fs-5" id="emailModalLabel">Send Email</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
