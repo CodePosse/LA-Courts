@@ -405,7 +405,7 @@ footer .list-group-item {
 }
 #emailModal {
   .modal-header {
-    background-color: var(--court-primary);
+    background-color: #c8c8c8;
     .modal-title {
       color: #fff !important;
     }
