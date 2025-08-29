@@ -414,3 +414,23 @@ footer .list-group-item {
     }
   }
 }
+.pagination {
+  .page-item:is(:first-child) {
+    margin-right: 2rem;
+  }
+  .page-link {
+    color: rgba(var(--court-ltblue), 0.9);
+    border-radius: 10px !important;
+  }
+  .page-item:is(:last-child) {
+    margin-left: 2rem;
+  }
+  .page-item:not(:first-child):not(:last-child) {
+    margin: 0 0.5rem;
+    border: 1px solid transparent !important;
+    .page-link {
+      background-color: transparent;
+      border: 1px solid transparent !important;
+    }
+  }
+}
