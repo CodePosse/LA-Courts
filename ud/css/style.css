@@ -5,6 +5,7 @@ html,
 body {
   font-size: 16px;
   --court-primary: #005498;
+  --court-deepblue: #0085eb;
   --court-black: #231f20;
   --court-ltblue: rgb(212, 229, 245);
   --court-paleblue: #f0f4fc;
@@ -38,6 +39,9 @@ a {
 }
 .border-primary {
   border-color: var(--court-primary) !important;
+}
+.border-deepblue {
+  border-color: var(--court-deepblue) !important;
 }
 
 nav:not(.adr-pagination) {
@@ -105,6 +109,16 @@ button:disabled {
 }
 .btn-primary {
   border-color: var(--court-primary);
+}
+.bd-deepblue,
+.btn-deepblue,
+.bg-deepblue {
+  background-color: var(--court-deepblue) !important;
+  border-color: var(--court-deepblue) !important;
+  color: #fff;
+}
+.btn-deepblue {
+  border-color: var(--court-deepblue);
 }
 .text-primary {
   color: var(--court-primary) !important;
