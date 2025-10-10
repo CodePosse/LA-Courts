@@ -391,11 +391,6 @@ footer .list-group-item {
 .mvpresults,
 .mvpprofile,
 .card {
-  .badge,
-  i {
-    font-size: 14px;
-    font-weight: 400;
-  }
   .badge:hover {
     background-color: var(--court-primary) !important;
     color: #fff !important;
