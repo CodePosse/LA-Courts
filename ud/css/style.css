@@ -39,6 +39,7 @@ a {
 .border-primary {
   border-color: var(--court-primary) !important;
 }
+
 nav:not(.adr-pagination) {
   background-color: #232f3d;
   border-bottom: 5px solid #f5c04f;
