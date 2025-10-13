@@ -282,15 +282,16 @@ button[type="reset"] {
 }
 /* footer */
 
-.footer {
+footer {
   background-color: #232f3d;
   color: #fff;
   font-weight: bold;
+  margin: auto;
 }
 
-footer strong {
-  letter-spacing: 0.5px !important;
-}
-
-@media all and (min-width: 992px) {
+@media all and (max-width: 992px) {
+  .container {
+    width: calc(100vw - 5px) !important;
+    overflow-x: hidden;
+  }
 }
