@@ -282,7 +282,7 @@ button[type="reset"] {
 }
 /* footer */
 
-footer {
+.footer {
   background-color: #232f3d;
   color: #fff;
   font-weight: bold;
