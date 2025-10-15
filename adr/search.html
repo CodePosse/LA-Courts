@@ -1171,9 +1171,7 @@
                                 Please enter your shipping address.
                             </div>
                         </div>
-                        <div class="col-12 mb-2 mb-md-5"> <label for="Case_Type" class="form-label fw-bold">Civil Case
-                                Cover
-                                Sheet Case
+                        <div class="col-12 mb-2 mb-md-5"> <label for="Case_Type" class="form-label fw-bold">Case
                                 Types</label> <select class="form-select" id="Case_Type" required="">
                                 <option value="">Show All</option>
                                 <option>United States</option>
@@ -1233,8 +1231,10 @@
                             <form class="d-flex flex-row align-items-center flex-wrap"><label class="my-1 me-2"
                                     for="inlineFormCustomSelectPref">Sort By:</label>
                                 <select class="form-select my-1 me-sm-2 w-auto" id="inlineFormCustomSelectPref">
-                                    <option selected value="0">Last Name</option>
-                                    <option value="1">Language</option>
+                                    <option selected value="0">Last Name (A-Z)</option>
+                                    <option value="1">Last Name (Z-A)</option>
+                                    <option value="2">$ Hourly Rate Low to High</option>
+                                    <option value="3">$ Hourly Rate High to Low</option>
                                 </select>
                         </div>
                         <div class="col-4 text-end d-flex justify-content-end pb-3">
@@ -1244,7 +1244,7 @@
                             <div>
                                 <a data-bs-toggle="modal" data-bs-target="#emailModal" href="javascript:void(0);"
                                     class=""><span class="sr-only">Send mail</span><i
-                                        class="fa-solid fa-envelope fs-3"></i></a></span>
+                                        class="fa-solid fa-envelope fs-3 fw-bold"></i></a></span>
                             </div>
                         </div>
                     </div>
@@ -1255,18 +1255,23 @@
                                 <div class="row card-body mx-2 mx-md-1 my-2">
                                     <div class="col-md-3 mb-0 m-md-auto">
                                         <div>
-                                            <h5 class="fw-bold p-0 m-0">Johnson, Alice</h5>
+                                            <h5 class="fw-bold p-0 m-0">Alice Johnson</h5>
                                         </div>
                                         <div>
                                             California State Bar &num; 252026</div>
                                         <div>
-                                            <a href="mailto:alice.johnson@company.com">alice.johnson@company.com</a>
+                                            <a href="mailto:alice.johnson@company.com">alice.johnson@company.com <i
+                                                    class="fa-solid fa-envelope fw-bold"></i></a>
 
                                         </div>
                                         <div class="row">
-                                            <div class="col col-md-12"><a href="tel:408-333-9955">408-333-9955</a></div>
-                                            <div class="col col-md-12">Italian, English </div>
+                                            <div class="col col-md-12"><a href="tel:408-333-9955">408-333-9955 <i
+                                                        class="fa-solid fa-phone fw-bold"></i></a></div>
                                             <div class="col col-md-12">Hourly: $600</div>
+                                            <div class="col col-md-12">Italian, English </div>
+                                            <div class="col-12"><strong><i class="fa-solid fa-handshake fw-bold"></i>
+                                                    Mediator
+                                                    Mentor</strong></div>
                                             <div class="col-12"><span
                                                     class="badge rounded-pill text-bg-light border my-2"><i
                                                         class="fa-solid fa-star"></i>
@@ -1277,7 +1282,7 @@
 
                                     <div class="col-md-9">
 
-                                        <p class="card-text"><strong>Civil Case Cover Sheet Case Type:</strong><br>
+                                        <p class="card-text"><strong>Case Types:</strong><br>
                                             Antitrust/Trade Regulation, Breach of Contract/Warranty, Business Tort,
                                             Civil Rights, Defamation, Fraud, Other Contract, Other Judicial Review,
                                             Other Personal Injury/Property Damage/Wrongful Death, Other Real
