@@ -217,6 +217,14 @@ button[type="reset"] {
 }
 
 @media (width < 640px) {
+  .btn-responsive {
+    .note {
+      display: none;
+    }
+    .note-alt {
+      display: visible;
+    }
+  }
   .shadow1 {
     box-shadow: 0 0 0 transparent;
     border-right: none;
@@ -248,10 +256,26 @@ button[type="reset"] {
   .hide-desktop {
     display: none;
   }
+  .btn-responsive {
+    border-color: transparent !important;
+    padding: 0;
+    color: black;
+    .note-alt {
+      display: none;
+    }
+    .note {
+      display: visible;
+    }
+  }
 }
 
-.rounded {
+.rounded,
+.accordion {
   border-radius: 20px !important;
+}
+
+.accordion-button {
+  background-color: rgba(243, 243, 243, 1);
 }
 
 @media (min-width: 1400px) {
@@ -378,7 +402,8 @@ footer .list-group-item {
 /* ADR STUFF */
 
 .mvpsearch,
-.mvpprofile {
+.mvpprofile,
+.accordion-button {
   background-color: rgba(243, 243, 243, 1);
 }
 .mvpresults,
