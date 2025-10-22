@@ -20,7 +20,10 @@ a = {
   Site: location.hostname
 };
 console.dir(a);
-
+//dismiss popouts
+const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+});
 
 // filters for program page
 
@@ -40,14 +43,14 @@ $(function () {
   // https://www.url.com/page.html?tab=MYVALUE
   const urlParams = new URLSearchParams(queryString);
   const classParam = urlParams.get('tab');
-  if (classParam == "sc"){$("#mobileselect span").html("Small Claims")}
-  else if (classParam == "ud"){$("#mobileselect span").html("Unlawful Detainer")}
-  else if (classParam == "lc"){$("#mobileselect span").html("Limited Civil")}
-  else if (classParam == "uc"){$("#mobileselect span").html("Unimited Civil")}
-  else if (classParam == "ch"){$("#mobileselect span").html("Civil Harassment")}
-  else if (classParam == "fl"){$("#mobileselect span").html("Family Law")}
-  else if (classParam == "prob"){$("#mobileselect span").html("Probate")}
-  else if (classParam == null){$("#mobileselect span").html("Learn More")}
+  if (classParam == "sc") { $("#mobileselect span").html("Small Claims") }
+  else if (classParam == "ud") { $("#mobileselect span").html("Unlawful Detainer") }
+  else if (classParam == "lc") { $("#mobileselect span").html("Limited Civil") }
+  else if (classParam == "uc") { $("#mobileselect span").html("Unimited Civil") }
+  else if (classParam == "ch") { $("#mobileselect span").html("Civil Harassment") }
+  else if (classParam == "fl") { $("#mobileselect span").html("Family Law") }
+  else if (classParam == "prob") { $("#mobileselect span").html("Probate") }
+  else if (classParam == null) { $("#mobileselect span").html("Learn More") }
   // matches it with classes on cards to show them and hide others
   $(".programs .card:not(classParam)").hide();
   $(".programs .card." + classParam).show();
