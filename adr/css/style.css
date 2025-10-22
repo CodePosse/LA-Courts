@@ -459,3 +459,18 @@ footer .list-group-item {
     }
   }
 }
+.custom-popover {
+  background-color: var(--court-black);
+  border: 1px solid var(--court-dkblue);
+  border-radius: 10px;
+  padding: 0;
+
+  .popover-body {
+    color: #fff !important;
+    padding: 0.25rem 1rem;
+  }
+}
+.bs-popover-auto[data-popper-placement] > .popover-arrow::after,
+.bs-popover-end > .popover-arrow::after {
+  border-right-color: var(--court-black);
+}
