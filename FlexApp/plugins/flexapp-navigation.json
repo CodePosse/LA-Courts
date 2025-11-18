@@ -12,7 +12,7 @@
       "appNameRedirect": "/attorney/dashboard",
       "standaloneMenuItems": [
         {
-          "route": "./",
+          "route": "/",
           "name": "Home",
           "icon": "home"
         }
@@ -34,43 +34,43 @@
                 "items": [
                   {
                     "name": "buttons",
-                    "route": "./fa-button",
+                    "route": "/fa-button",
                     "icon": "smart_button",
                     "description": "Interactive button components"
                   },
                   {
                     "name": "radio buttons",
-                    "route": "./fa-radio-buttons",
+                    "route": "/fa-radio-buttons",
                     "icon": "radio_button_checked",
                     "description": "Single selection radio controls"
                   },
                   {
                     "name": "checkbox",
-                    "route": "./fa-checkbox",
+                    "route": "/fa-checkbox",
                     "icon": "check_box",
                     "description": "Multi-selection checkbox controls"
                   },
                   {
                     "name": "multi select buttons",
-                    "route": "./fa-multi-radio-buttons",
+                    "route": "/fa-multi-radio-buttons",
                     "icon": "toggle_on",
                     "description": "Multiple selection toggle buttons"
                   },
                   {
                     "name": "dropdown",
-                    "route": "./fa-dropdown",
+                    "route": "/fa-dropdown",
                     "icon": "arrow_drop_down",
                     "description": "Dropdown selection menus"
                   },
                   {
                     "name": "date picker",
-                    "route": "./fa-datepicker",
+                    "route": "/fa-datepicker",
                     "icon": "calendar_month",
                     "description": "Date selection components"
                   },
                   {
                     "name": "switch toggle",
-                    "route": "./fa-switch-toggle",
+                    "route": "/fa-switch-toggle",
                     "icon": "toggle_on",
                     "description": "On/off toggle switches"
                   }
@@ -92,19 +92,19 @@
                 "items": [
                   {
                     "name": "form fields",
-                    "route": "./fa-formfield",
+                    "route": "/fa-formfield",
                     "icon": "text_fields",
                     "description": "Text input form fields"
                   },
                   {
                     "name": "read only",
-                    "route": "./fa-readonly",
+                    "route": "/fa-readonly",
                     "icon": "input",
                     "description": "Non-editable display fields"
                   },
                   {
                     "name": "tel input",
-                    "route": "./fa-tel-input",
+                    "route": "/fa-tel-input",
                     "icon": "phone",
                     "description": "Telephone number input fields"
                   }
@@ -126,25 +126,25 @@
                 "items": [
                   {
                     "name": "data grid",
-                    "route": "./fa-data-grid",
+                    "route": "/fa-data-grid",
                     "icon": "table_chart",
                     "description": "Tabular data presentation"
                   },
                   {
                     "name": "table list",
-                    "route": "./fa-table-list",
+                    "route": "/fa-table-list",
                     "icon": "table_chart",
                     "description": "Table list components"
                   },
                   {
                     "name": "tabs",
-                    "route": "./fa-tabs",
+                    "route": "/fa-tabs",
                     "icon": "tab",
                     "description": "Tabbed content organization"
                   },
                   {
                     "name": "chips",
-                    "route": "./fa-chips",
+                    "route": "/fa-chips",
                     "icon": "label",
                     "description": "Tag and label components"
                   }
@@ -166,31 +166,31 @@
                 "items": [
                   {
                     "name": "loader",
-                    "route": "./fa-loader",
+                    "route": "/fa-loader",
                     "icon": "refresh",
                     "description": "Loading state indicators"
                   },
                   {
                     "name": "soft warning",
-                    "route": "./fa-soft-warning",
+                    "route": "/fa-soft-warning",
                     "icon": "warning",
                     "description": "Non-intrusive warning messages"
                   },
                   {
                     "name": "toaster",
-                    "route": "./fa-toaster",
+                    "route": "/fa-toaster",
                     "icon": "notifications",
                     "description": "Toast notification messages"
                   },
                   {
                     "name": "dialog",
-                    "route": "./fa-dialog-box",
+                    "route": "/fa-dialog-box",
                     "icon": "dialog_box",
                     "description": "Modal dialog components"
                   },
                   {
                     "name": "tooltip",
-                    "route": "./fa-tooltip",
+                    "route": "/fa-tooltip",
                     "icon": "info",
                     "description": "Tooltip components"
                   }
@@ -212,7 +212,7 @@
                 "items": [
                   {
                     "name": "icons",
-                    "route": "./fa-icons",
+                    "route": "/fa-icons",
                     "icon": "emoji_symbols",
                     "description": "Icon library and usage"
                   }
@@ -230,42 +230,42 @@
             "extensionName": "Form Controls",
             "menu": [
               {
-                "route": "./fa-button",
+                "route": "/fa-button",
                 "name": "buttons",
                 "icon": "smart_button"
               },
               {
-                "route": "./fa-radio-buttons",
+                "route": "/fa-radio-buttons",
                 "name": "radio buttons",
                 "icon": "radio_button_checked"
               },
               {
-                "route": "./fa-checkbox",
+                "route": "/fa-checkbox",
                 "name": "checkbox",
                 "icon": "check_box"
               },
               {
-                "route": "./fa-multi-radio-buttons",
+                "route": "/fa-multi-radio-buttons",
                 "name": "multi select buttons",
                 "icon": "toggle_on"
               },
               {
-                "route": "./fa-dropdown",
+                "route": "/fa-dropdown",
                 "name": "dropdown",
                 "icon": "arrow_drop_down"
               },
               {
-                "route": "./fa-datepicker",
+                "route": "/fa-datepicker",
                 "name": "date picker",
                 "icon": "calendar_month"
               },
               {
-                "route": "./fa-switch-toggle",
+                "route": "/fa-switch-toggle",
                 "name": "switch toggle",
                 "icon": "toggle_on"
               },
               {
-                "route": "./fa-searchbar",
+                "route": "/fa-searchbar",
                 "name": "search bar",
                 "icon": "search"
               }
@@ -275,17 +275,17 @@
             "extensionName": "Inputs",
             "menu": [
               {
-                "route": "./fa-formfield",
+                "route": "/fa-formfield",
                 "name": "form fields",
                 "icon": "text_fields"
               },
               {
-                "route": "./fa-readonly",
+                "route": "/fa-readonly",
                 "name": "read only",
                 "icon": "input"
               },
               {
-                "route": "./fa-tel-input",
+                "route": "/fa-tel-input",
                 "name": "tel input",
                 "icon": "phone"
               }
@@ -295,32 +295,32 @@
             "extensionName": "Data Display",
             "menu": [
               {
-                "route": "./fa-data-grid",
+                "route": "/fa-data-grid",
                 "name": "data grid",
                 "icon": "table_chart"
               },
               {
-                "route": "./fa-table-list",
+                "route": "/fa-table-list",
                 "name": "table list",
                 "icon": "table_chart"
               },
               {
-                "route": "./fa-tabs",
+                "route": "/fa-tabs",
                 "name": "tabs",
                 "icon": "tab"
               },
               {
-                "route": "./fa-chips",
+                "route": "/fa-chips",
                 "name": "chips",
                 "icon": "label"
               },
               {
-                "route": "./fa-ui-blocks",
+                "route": "/fa-ui-blocks",
                 "name": "ui blocks",
                 "icon": "blocks"
               },
               {
-                "route": "./fa-tabs-container",
+                "route": "/fa-tabs-container",
                 "name": "tabs container",
                 "icon": "tab"
               }
@@ -330,22 +330,22 @@
             "extensionName": "Feedback",
             "menu": [
               {
-                "route": "./fa-loader",
+                "route": "/fa-loader",
                 "name": "loader",
                 "icon": "refresh"
               },
               {
-                "route": "./fa-soft-warning",
+                "route": "/fa-soft-warning",
                 "name": "soft warning",
                 "icon": "warning"
               },
               {
-                "route": "./fa-toaster",
+                "route": "/fa-toaster",
                 "name": "toaster",
                 "icon": "notifications"
               },
               {
-                "route": "./fa-dialog-box",
+                "route": "/fa-dialog-box",
                 "name": "dialog",
                 "icon": "dialog_box"
               }
@@ -355,7 +355,7 @@
             "extensionName": "Assets",
             "menu": [
               {
-                "route": "./fa-icons",
+                "route": "/fa-icons",
                 "name": "icons",
                 "icon": "emoji_symbols"
               }
