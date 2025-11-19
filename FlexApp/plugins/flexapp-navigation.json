@@ -5,7 +5,7 @@
      "appName": "Flexapp Components Library",
        "headerImageWidth": "120px",
       "headerImageHeight": "48px",
-      "courtSealPath": "./plugins/image.png",
+      "courtSealPath": "plugins/image.png",
       "hideSidenavRoutes": [
         "/error"
       ],
