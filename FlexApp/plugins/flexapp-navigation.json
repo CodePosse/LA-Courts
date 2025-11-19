@@ -5,7 +5,7 @@
      "appName": "Flexapp Components Library",
        "headerImageWidth": "120px",
       "headerImageHeight": "48px",
-      "courtSealPath": "/plugins/LASC_Seal_Title_4x.png",
+      "courtSealPath": "./plugins/LASC_Seal_Title_4x.png",
       "hideSidenavRoutes": [
         "/error"
       ],
@@ -34,19 +34,19 @@
                 "items": [
                   {
                     "name": "buttons",
-                    "route": "/fa-button",
+                    "route": "./fa-button",
                     "icon": "smart_button",
                     "description": "Interactive button components"
                   },
                   {
                     "name": "radio buttons",
-                    "route": "/fa-radio-buttons",
+                    "route": "./fa-radio-buttons",
                     "icon": "radio_button_checked",
                     "description": "Single selection radio controls"
                   },
                   {
                     "name": "checkbox",
-                    "route": "/fa-checkbox",
+                    "route": "./fa-checkbox",
                     "icon": "check_box",
                     "description": "Multi-selection checkbox controls"
                   },
