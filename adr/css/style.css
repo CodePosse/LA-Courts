@@ -474,3 +474,21 @@ footer .list-group-item {
 .bs-popover-end > .popover-arrow::after {
   border-right-color: var(--court-black);
 }
+
+/* info pages */
+.module_cthouse {
+  background-color: var(--court-ltgrey);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  .card {
+    border-radius: 10px !important;
+    a {
+      text-decoration: none;
+    }
+    i {
+      font-weight: 600;
+      color: var(--court-primary);
+    }
+  }
+}
