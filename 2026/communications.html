@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Google Analytics-->
+
+    <title>Courtrooms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="../adr/js/jquery-3.7.1.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../adr/css/style.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header class="container-xxl py-3 px-1 px-xl-3">
+        <div class="row d-flex justify-content-between px-4 px-xl-3">
+            <div class="col-9 col-lg-4 ps-0"><a href="/"><img
+                        src="https://lascpubstorage.blob.core.windows.net/cpw/LIBWEBRESOURCE-8-LacourtHeaderLogo.png"
+                        alt="LA Superior Court Logo" class="img-fluid">
+                    <div class="sr-only">Home</div>
+                </a>
+            </div>
+            <div class="col-3 d-none d-lg-block text-end pe-0 fs-6 mt-4 d-inline">
+
+                <div class="d-none d-md-block d-lg-block">
+                    <div id="google_translate_element"></div>
+                </div>
+
+            </div>
+            <div class="col-3 d-sm-block d-lg-none text-center pt-1 pe-0 d-flex justify-content-end d-none"><button
+                    class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><i class="fa-solid fa-bars fs-1"></i><br>Menu</button>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+    <!--push menu-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header px-2">
+            <div id="offcanvasRightLabel"><a href="/"><img
+                        src="https://lascpubstorage.blob.core.windows.net/cpw/LIBWEBRESOURCE-8-LacourtHeaderLogo.png"
+                        alt="LA Superior Court Logo" class="w-80">
+                    <div class="sr-only">Home</div>
+                </a></div>
+            <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark fs-1 text-dark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="mob-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOnlineServices">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOnlineServices" aria-expanded="false"
+                                aria-controls="flush-collapseOnlineServices">
+                                Online Services
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOnlineServices" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOnlineServices">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Case Information</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Find a Case</a></li>
+                                            <li role="menuitem"><a href="#">Case Number Search</a></li>
+                                            <li role="menuitem"><a href="#">Case Calendar</a></li>
+                                            <li role="menuitem"><a href="#">Probate Notes</a></li>
+                                            <li role="menuitem"><a href="#">Tentative Rulings</a></li>
+                                            <li role="menuitem"><a href="#">Respond to a Traffic Citation</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Access Court Documents</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Divorce Documents</a></li>
+                                            <li role="menuitem"><a href="#">Case Documents</a></li>
+                                            <li role="menuitem"><a href="#">Transcript Requests</a>
+                                            </li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/obtaining-copies-of-court-records">Court
+                                                    Record Requests</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Court Forms &amp; Filing</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Court Forms</a></li>
+                                            <li role="menuitem"><a href="#">Filing Court Locator</a></li>
+                                            <li role="menuitem"><a href="#">E-Filing</a></li>
+                                            <li role="menuitem"><a href="#">File at Home</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Courtroom Services</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Remote Hearings</a></li>
+                                            <li role="menuitem"><a href="#">Interpreter Requests</a></li>
+                                            <li role="menuitem"><a href="#">Hearing Reminders </a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/exhibits">Exhibits</a>
+                                            </li>
+                                        </ul>
+                                        <h6 class="title mt-4">Make an Appointment</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Clerk's Office Appointments</a></li>
+                                            <li role="menuitem"><a href="#">Self-Help Center Appointments</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSelfHelp">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSelfHelp" aria-expanded="false"
+                                aria-controls="flush-collapseSelfHelp">
+                                Self-Help
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSelfHelp" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSelfHelp">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Abuse &amp; Harassment</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C04">Protective
+                                                    Restraining Orders</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C17">Gun
+                                                    Violence
+                                                    Restraining Orders</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Divorce &amp; Separation</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C01">Divorce</a>
+                                            </li>
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C02">Child
+                                                    Custody &amp; Visitation</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C05">Child
+                                                    Support</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Families &amp; Children</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C07">Guardianship</a>
+                                            </li>
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C08">Conservatorship</a>
+                                            </li>
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C14">Adoption</a>
+                                            </li>
+                                            <li role="menuitem"><a href="#">Care Court</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://selfhelp.lacourt.org/service-catalog/C06">Parentage</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Additional Topics</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Evictions, Landlords &amp; Tenants</a>
+                                            </li>
+                                            <li role="menuitem"><a href="#">Consumer Debt</a></li>
+                                            <li role="menuitem"><a href="#">Name or Gender Change</a></li>
+                                            <li role="menuitem"><a href="#">Small Claims</a></li>
+                                            <li role="menuitem"><a href="#">Traffic Violations</a></li>
+                                            <li role="menuitem"><a href="#">Wills, Estates &amp; Trusts</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTypesOfCases">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTypesOfCases" aria-expanded="false"
+                                aria-controls="flush-collapseTypesOfCases">
+                                Types of Cases
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTypesOfCases" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTypesOfCases">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-3">
+
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/civil">Civil</a>
+                                            </li>
+                                            <li role="menuitem"><a href="#">Criminal</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/family-law">Family
+                                                    Law</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Juvenile</a></li>
+                                            <li role="menuitem"><a href="#">Mental Health</a></li>
+                                            <li role="menuitem"><a href="#">Probate</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Small Claims</a></li>
+                                            <li role="menuitem"><a href="#">Traffic</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/Appeals-and-Appellate/">Appellate</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingCourtInfo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseCourtInfo" aria-expanded="false"
+                                aria-controls="flush-collapseCourtInfo">
+                                General Info
+                            </button>
+                        </h2>
+                        <div id="flush-collapseCourtInfo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingCourtInfo">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Contacts &amp; Locations</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Courthouses</a></li>
+                                            <li role="menuitem"><a href="#">Courtroom Telephone Directory</a></li>
+                                            <li role="menuitem"><a href="#">Judicial Officer Search</a></li>
+                                        </ul>
+                                        <h6 class="title mt-3">About</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/court-communications/tp/about-the-court">About
+                                                    the Court</a></li>
+                                            <li role="menuitem"><a href="#">Court Holidays</a></li>
+                                            <li role="menuitem"><a href="#">Court Hours</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Announcements and Notices</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/court-communications">Court
+                                                    Communications</a></li>
+                                        </ul>
+                                        <h6 class="title mt-3">Research &amp; Reports</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Publications</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/research-and-statistics">Reports
+                                                    and Statistics</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Employment</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Jobs</a></li>
+                                            <li role="menuitem"><a href="#">Volunteers, and Internships</a></li>
+                                        </ul>
+                                        <h6 class="title mt-3">Community Focus </h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Community Outreach</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Court Resources</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/archives-and-records-center">Archives
+                                                    and Records Center</a></li>
+                                            <li role="menuitem"><a href="#">Court Date Calculator</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/rule-10-500-requests-for-judicial-administrative-records">Public
+                                                    Notice &amp; Inquiry</a></li>
+                                            <li role="menuitem"><a href="#">Local Court Rules</a></li>
+                                            <li role="menuitem"><a href="#">Official Reporting Services</a></li>
+                                            <li role="menuitem"><a href="#">Court Interpreters</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/americans-with-disabilities-act-ada">Americans
+                                                    with Disabilities Act</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingJuryDuty">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseJuryDuty" aria-expanded="false"
+                                aria-controls="flush-collapseJuryDuty">
+                                Jury Duty
+                            </button>
+                        </h2>
+                        <div id="flush-collapseJuryDuty" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingJuryDuty">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6 class="title">Jury Duty</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Jury Home</a></li>
+                                            <li role="menuitem"><a href="#">My Jury Duty Portal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingAttorneys">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseAttorneys" aria-expanded="false"
+                                aria-controls="flush-collapseAttorneys">
+                                Attorneys
+                            </button>
+                        </h2>
+                        <div id="flush-collapseAttorneys" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingAttorneys">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Online Services</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Attorney Portal</a></li>
+                                            <li role="menuitem"><a href="#">Case Access</a></li>
+                                            <li role="menuitem"><a href="#">Case Calendar</a></li>
+                                            <li role="menuitem"><a href="#">Search for Case by Name</a></li>
+                                            <li role="menuitem"><a href="#">Search for Case by Defendant Name</a>
+                                            </li>
+                                            <li role="menuitem"><a href="#">Probate Notes</a></li>
+                                            <li role="menuitem"><a href="#">Tentative Rulings</a></li>
+                                            <li role="menuitem"><a href="#">Transcript Requests</a>
+                                            </li>
+                                            <li role="menuitem"><a href="#">Clerk's Office Appointments</a></li>
+                                            <li role="menuitem"><a href="#">Remote Hearings</a></li>
+                                            <li role="menuitem"><a href="#">Hearing Reminders - (HRS)</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Court Information and Tools</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Courthouses</a></li>
+                                            <li role="menuitem"><a href="#">Courtroom Telephone Directory</a></li>
+                                            <li role="menuitem"><a href="#">Judicial Officer Search</a></li>
+                                            <li role="menuitem"><a href="#">Court Date Calculator</a></li>
+                                            <li role="menuitem"><a href="#">Court Hours and Holidays</a></li>
+                                        </ul>
+                                        <h6 class="title mt-2">Announcements &amp; Notices</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://www.lacourt.org/newsmedia/notices/attorneynotice">Notices
+                                                    for Attorneys</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://www.lacourt.org/newsmedia/notices/newsrelease">News
+                                                    Releases</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://www.lacourt.org/newsmedia/notices/publicnotices">Public
+                                                    Notices</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Forms &amp; Filing</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">State Forms</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3">
+
+                                        <h6 class="title">Court Resources</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a href="#">Hearing Reminder Service</a></li>
+                                            <li role="menuitem"><a href="#">Tools for Litigators</a></li>
+                                            <li role="menuitem"><a href="#">Digital Evidence Presentation System
+                                                    (DEPS)</a></li>
+                                        </ul>
+                                        <h6 class="title mt-2">Attorney Community</h6>
+                                        <ul class="list">
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/judicial-mentor-program">Judicial
+                                                    Mentor Program</a></li>
+                                            <li role="menuitem"><a href="#">Commissioner References</a></li>
+                                            <li role="menuitem"><a
+                                                    href="https://mydev.lacourt.org/pubweb3/pages/lp/temporary-judge-program">Temporary
+                                                    Judge Program</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-bottom">
+                        <h2 class="accordion-header" id="flush-headingJusticePartners">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseJusticePartners" aria-expanded="false"
+                                aria-controls="flush-collapseJusticePartners">
+                                Justice Partners &amp; Professionals
+                            </button>
+                        </h2>
+                        <div id="flush-collapseJusticePartners" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingJusticePartners">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <h6 class="title">Justice Partner Portal</h6>
+                                        <p><a href="#">Providing access to vital court information for the court's
+                                                justice partners.</a></p>
+                                        <h6 class="title mt-4">PACE</h6>
+                                        <p><a href="#">The Professional Appointee Court Expenditure program (PACE) is a
+                                                county program used to pay attorneys, doctors, investigators, experts,
+                                                and other professionals appointed by the Superior Court of California,
+                                                County of Los Angeles. ePACE is a web application that allows PACE
+                                                claims to be submitted to the Court for payment.</a></p>
+                                        <h6 class="title">Media Access Portal</h6>
+                                        <p><a href="#">Providing court information to news agencies and reporters.</a>
+                                        </p>
+                                        <h6 class="title">Shared Procurement Services</h6>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></p>
+
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <h6 class="title">Criminal Record Request</h6>
+                                        <p><a href="#">This online records request portal offers access to government
+                                                agencies for official requests of court criminal records. Requests
+                                                submitted through this portal by individuals or non-government agencies
+                                                will not be fulfilled.</a></p>
+                                        <h6 class="title">Mediation Panel</h6>
+                                        <p><a href="#">The ADR Office will develop a panel of volunteer mediators for
+                                                civil cases with the possibility of expansion to other litigation areas
+                                                based on availability of volunteer resources.</a></p>
+                                        <h6 class="title">Purchasing Contracts Administration</h6>
+                                        <p><a href="#">Lorem ipsum</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end push menu-->
+    <!--main nav-->
+    <nav class="container-xxl navbar navbar-expand-lg px-xl-3 px-lg-0" role="navigation" aria-label="Main Navigation">
+        <div class="container-fluid mx-0 mx-xl-3">
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-haspopup="true" aria-controls="megamenu1">Online Services</a>
+                        <div class="dropdown-menu megamenu p-0 m-0" role="menu" id="megamenu1">
+                            <div class="row">
+                                <div class="col-lg-3 rounded-bl">
+                                    <div class="bg-white h-100 rounded-bl py-3 px-3 px-xl-5">
+                                        <h5 class="title text-underline p-0">Online Services</h5>
+                                        <hr class="border border-primary border opacity-75 w-75 p-0 mt-1">
+                                        <p>Things you can do online without coming to a courthouse.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 row">
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="337Dz8mCyjzds661e0geGa">Case
+                                                Information</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/access-a-case"
+                                                        data-contentful-entry-id="1LEentNIQQmY5VuCtwV8cQ">Access a
+                                                        Case</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/access-a-case/tp/os-access-court-documents"
+                                                        data-contentful-entry-id="1T7Z2xCL5SMv409TeUIlUg">Access Court
+                                                        Documents</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/transcript-requests-and-court-reporter-electronic-recording-information"
+                                                        data-contentful-entry-id="4dP6NvThuIWU2EEwvTlIeX">Transcripts
+                                                        and Recordings</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/obtaining-copies-of-court-records"
+                                                        data-contentful-entry-id="69JJTy8kNPBzoLG2VDqdcI">Obtain Copies
+                                                        of Other Court Records</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="1XDnTsSxvyA4D3l7e2qSiQ">Make an
+                                                Appointment</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://mycourtservices.lacourt.org/Appointment/Schedule"
+                                                        data-contentful-entry-id="2IOzgWbO5e2lsTIzCS3ttw">Clerk's Office
+                                                        Appointments</a></li>
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://selfhelp.lacourt.org/"
+                                                        data-contentful-entry-id="1Vef9Xr04FdWiaoEAV6wVJ">Self-Help
+                                                        Center Appointments</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="5hMWjO4CHzqd9NE0M70PVQ">Court
+                                                Forms &amp; Filing</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/fo-forms"
+                                                        data-contentful-entry-id="2Y1UI67NPtLRYjBwdkdxL1">Find a Court
+                                                        Form</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/online-services/tp/os-court-forms-and-filing/cp/os-filing-court-locator"
+                                                        data-contentful-entry-id="7xC9nqYybQF8oW058Z2TLg">Filing Court
+                                                        Locator</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/efiling"
+                                                        data-contentful-entry-id="7hAPWKb3nd9mBHcGHFJRw6">EFiling</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/lp/file-at-home"
+                                                        data-contentful-entry-id="5LBcpxMRim31cOUok3RJ51">File at
+                                                        Home</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="6yxjLQL6NOyfwTvnoUy7NW">
+                                                Courtroom Services</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://my.lacourt.org/laccwelcome"
+                                                        data-contentful-entry-id="2k56nIJ08GYVBj1SkEhCMh">Remote
+                                                        Hearings</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/language-access-services"
+                                                        data-contentful-entry-id="5czzxhCe4gKiWqRrILuPUh">Request an
+                                                        Interpreter</a></li>
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://hrs.courts.ca.gov/la"
+                                                        data-contentful-entry-id="38a5U96zAXCKGp8ADhb8i6">Hearing
+                                                        Reminders</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/exhibits"
+                                                        data-contentful-entry-id="xcRUp0KYzaQw7Sd8miZrE">Exhibits</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="javascript:void();"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                            aria-controls="megamenu2">Self-Help</a>
+                        <div class="dropdown-menu megamenu p-0 m-0" role="menu" id="megamenu2">
+                            <div class="row">
+                                <div class="col-lg-3 rounded-bl">
+                                    <div class="bg-white h-100 rounded-bl py-3 px-3 px-xl-5">
+                                        <h5 class="title text-underline p-0">Self-Help</h5>
+                                        <hr class="border border-primary border opacity-75 w-75 p-0 mt-1">
+                                        <p>Assisting individuals who need to proceed on their own without an attorney.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 row">
+                                    <div class="col-md-6 px-2 py-3">
+                                        <div class="col-megamenu">
+                                            <a target="_blank" href="https://selfhelp.lacourt.org/"
+                                                data-contentful-entry-id="5FVRrXTagiWs6FTUCLWC4K">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="5FVRrXTagiWs6FTUCLWC4K">Self-Help Service
+                                                    Catalog</h6>
+                                            </a>
+                                            <p><a target="_blank" href="https://selfhelp.lacourt.org/"
+                                                    data-contentful-entry-id="5FVRrXTagiWs6FTUCLWC4K">Start here
+                                                    for information about Self-Help Center services, locations and
+                                                    hours, legal education, other resources for self-represented
+                                                    individuals and more. </a></p>
+                                            <a target="_blank"
+                                                href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCSelfHelp-19-LASCJRQRCLandingPage-ENG.pdf"
+                                                data-contentful-entry-id="3p6LtzcRnjVzgOT9n2VPQb">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="3p6LtzcRnjVzgOT9n2VPQb">Judicial Referrals
+                                                </h6>
+                                            </a>
+                                            <p><a target="_blank"
+                                                    href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCSelfHelp-19-LASCJRQRCLandingPage-ENG.pdf"
+                                                    data-contentful-entry-id="3p6LtzcRnjVzgOT9n2VPQb">To get
+                                                    online Self-Help information and resources for the item numbers a
+                                                    Judge marked on the Judicial Referral form or told you to get help
+                                                    to complete.</a></p>
+                                            <a href="/./pages/lp/file-at-home"
+                                                data-contentful-entry-id="70FtEubQsKyRM70Sn0pT6s">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="70FtEubQsKyRM70Sn0pT6s">File at Home</h6>
+                                            </a>
+                                            <p><a href="/./pages/lp/file-at-home"
+                                                    data-contentful-entry-id="70FtEubQsKyRM70Sn0pT6s">Guided
+                                                    interviews that will help you fill out legal forms on your own on a
+                                                    range of topics.</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 px-2 py-3">
+                                        <div class="col-megamenu"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="javascript:void();"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                            aria-controls="megamenu3">Types of Cases</a>
+                        <div class="dropdown-menu megamenu p-0 m-0" role="menu" id="megamenu3">
+                            <div class="row">
+                                <div class="col-lg-3 rounded-bl">
+                                    <div class="bg-white h-100 rounded-bl py-3 px-3 px-xl-5">
+                                        <h5 class="title text-underline p-0">Types of Cases</h5>
+                                        <hr class="border border-primary border opacity-75 w-75 p-0 mt-1">
+                                        <p>Legal matters are handled in one of LA Court's 9 divisions
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 row">
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/Appeals-and-Appellate"
+                                                        data-contentful-entry-id="UdInkRJ8xI7QQqxhAMNFV">Appellate</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/lp/civil"
+                                                        data-contentful-entry-id="2Z2jj7ZJpUGhNYynjUUUlJ">Civil</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/lp/criminal"
+                                                        data-contentful-entry-id="POnDdxbtpBg3oK6dBmVIb">Criminal</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/family-law"
+                                                        data-contentful-entry-id="7DoKTKoMNqHwHFNnr4v1oo">Family
+                                                        Law</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/juvenile-division"
+                                                        data-contentful-entry-id="4E9ZFU6tvC76u3ASrtNZxE">Juvenile</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/lp/mental-health"
+                                                        data-contentful-entry-id="6pa87OqkSLL7BdIjsU0MKM">Mental
+                                                        Health</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/probate"
+                                                        data-contentful-entry-id="22EPczP7TdabcucuM1wbNS">Probate</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/lp/small-claims"
+                                                        data-contentful-entry-id="4Kz40NrzqEHmBlR6dQmXd9">Small
+                                                        Claims</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/traffic"
+                                                        data-contentful-entry-id="6mPIuN8Q7T3UXREKEiLfi9">Traffic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="javascript:void();"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
+                            aria-controls="megamenu4">General Info</a>
+                        <div class="dropdown-menu megamenu p-0 m-0" role="menu" id="megamenu4">
+                            <div class="row">
+                                <div class="col-lg-3 rounded-bl">
+                                    <div class="bg-white h-100 rounded-bl py-3 px-3 px-xl-5">
+                                        <h5 class="title text-underline p-0">General Info</h5>
+                                        <hr class="border border-primary border opacity-75 w-75 p-0 mt-1">
+                                        <p>Find information about the court.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 row">
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="7EtintPlQw7E1qFmi1XWOp">Contacts
+                                                &amp; Locations</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/cp/gi-courthouses-all"
+                                                        data-contentful-entry-id="ZoQsDun2te2WtGgf4k6nE">Courthouses</a>
+                                                </li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/court-communications/tp/about-the-court/cp/contact-the-court"
+                                                        data-contentful-entry-id="5v9kTugDxu6Ppnn94qvLo4">Contact the
+                                                        Court</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/cp/gi-directory-of-courtrooms-by-courthouse"
+                                                        data-contentful-entry-id="7v14fKgFy93vr7WtnpKSEm">Courtroom
+                                                        Telephone Directory</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-judicial-officer-search"
+                                                        data-contentful-entry-id="Ai4mcScorA3lBo04XyclA">Judicial
+                                                        Officer Search</a></li>
+                                            </ul>
+                                            <h6 class="title mt-4" data-contentful-entry-id="5vogy11KoGSnMAst2I42vi">
+                                                About</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/court-communications/tp/about-the-court"
+                                                        data-contentful-entry-id="7zR020o1r6yOO5V0kV2y1R">About the
+                                                        Court</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/budget"
+                                                        data-contentful-entry-id="5wZZZ6hlWSkvgp6IA5prSg">Budget</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-court-holidays"
+                                                        data-contentful-entry-id="6izQ5Kn6gcUXn8yDU7e2rW">Court
+                                                        Holidays</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/court-communications/tp/about-the-court/cp/court-hours"
+                                                        data-contentful-entry-id="O0aaWWhDwtWVX9MSnnyfJ">Court
+                                                        Hours</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="352FqnL7TBZwTA6eJnQ2b6">
+                                                Announcements and Notices</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/court-communications"
+                                                        data-contentful-entry-id="1Cf8sPDjKF43WbyZgyLl4X">Court
+                                                        Communications</a></li>
+                                            </ul>
+                                            <h6 class="title mt-4" data-contentful-entry-id="5vbBFJkLfA80dSViLK4mPE">
+                                                Research and Statistics</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/court-communications/tp/news-center/cp/co-publications"
+                                                        data-contentful-entry-id="1eVbfcxjnGu0qFtYKcqvEG">Publications</a>
+                                                </li>
+                                                <li role="menuitem"><a href="/./pages/lp/research-and-statistics"
+                                                        data-contentful-entry-id="6veUkpVjFSFYMYVgFCIXeA">Research and
+                                                        Statistics</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="2eenk81KBaovuWMwtiplgy">
+                                                Employment</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/careers"
+                                                        data-contentful-entry-id="2dqPZXznJuFkIPKA0IZv4I">Careers</a>
+                                                </li>
+                                            </ul>
+                                            <h6 class="title mt-4" data-contentful-entry-id="JlhQnGqmeG18zBaa0RrK4">
+                                                Community Focus</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/community-outreach"
+                                                        data-contentful-entry-id="2iyEfrJr8oPByC6lWbQmYp">Community
+                                                        Outreach</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="6klMFFXpLCjcPFOd2UwUq4">Court
+                                                Resources</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/archives-and-records-center"
+                                                        data-contentful-entry-id="7w2DUnYjKp5WOVT6nICGLh">Archives and
+                                                        Records Center</a></li>
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://www.lacourt.org/adr/"
+                                                        data-contentful-entry-id="7DxlO5stTW9EcpFhPFiG8X">Alternative
+                                                        Dispute Resolution</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/americans-with-disabilities-act-ada"
+                                                        data-contentful-entry-id="6H7aQeHbyB5TK8WEG0a4jr">Americans with
+                                                        Disabilities Act</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-court-date-calculator"
+                                                        data-contentful-entry-id="5TAaeSETFesAUZvbh7wvW1">Court Date
+                                                        Calculator</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/california-values-act"
+                                                        data-contentful-entry-id="5NBIPcGk01zekzTZoPH5nk">California
+                                                        Values Act</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/complaints-and-suggestions"
+                                                        data-contentful-entry-id="1LJgQskNj3vBuvwgjtll1r">Complaints
+                                                        &amp; Suggestions</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/filing-fees"
+                                                        data-contentful-entry-id="7dN276NLZSEztstR1wyAWb">Filing
+                                                        Fees</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/rule-10-500-requests-for-judicial-administrative-records"
+                                                        data-contentful-entry-id="1q4Pv3YXmkYy0c1BUiewtQ">10.500
+                                                        Requests</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-court-rules"
+                                                        data-contentful-entry-id="1Rkq0UCyqgCLzXr197Nbkh">General
+                                                        Orders/Local Rules</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/language-access-services"
+                                                        data-contentful-entry-id="1R89QH58P4BonSmFIDPGGh">Court
+                                                        Interpreters</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/transcript-requests-and-court-reporter-electronic-recording-information"
+                                                        data-contentful-entry-id="68phVqHGhJS0S7v9OKrKsU">Transcripts
+                                                        &amp; Recordings</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-3 link-body-emphasis">Jury Duty</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="javascript:void();" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-haspopup="true" aria-controls="megamenu5" aria-hidden="true"
+                            tabindex="-1">Attorneys</a>
+                        <div class="dropdown-menu megamenu p-0 m-0" role="menu" id="megamenu5">
+                            <div class="row">
+                                <div class="col-lg-3 rounded-bl">
+                                    <div class="bg-white h-100 rounded-bl py-3 px-3 px-xl-5">
+                                        <h5 class="title text-underline p-0">Attorneys</h5>
+                                        <hr class="border border-primary border opacity-75 w-75 p-0 mt-1">
+                                        <p>Assisting individuals who need to proceed on their own without an attorney.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 row">
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="20hSbnDzWRIOLhYhzoFrvc">Online
+                                                Services</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://my.lacourt.org/attorney/#/"
+                                                        data-contentful-entry-id="2Iei5tli1GBUKgquhI9YyV">Attorney
+                                                        Portal</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/access-a-case"
+                                                        data-contentful-entry-id="2pcDMDZ9ZgBRG39puNZ1hU">Access a
+                                                        Case</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/probate/cp/probate-notes"
+                                                        data-contentful-entry-id="4UWhx8FLIN5tAuas6KYN5x">Probate
+                                                        Notes</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/access-a-case/tp/online-services-tentative-rulings"
+                                                        data-contentful-entry-id="3Wpva9xsXOzgtilRAzlEWI">Tentative
+                                                        Rulings</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/transcript-requests-and-court-reporter-electronic-recording-information"
+                                                        data-contentful-entry-id="1UopNJP91Z3QkYIdTYjiDy">Transcripts
+                                                        and Recordings</a></li>
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://mycourtservices.lacourt.org/Appointment/Schedule"
+                                                        data-contentful-entry-id="4fAumOEpMuCaIPSyJ8I2AX">Clerk's Office
+                                                        Appointments</a></li>
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://my.lacourt.org/laccwelcome"
+                                                        data-contentful-entry-id="6dbqbcOkJfGYYXNXKIaL9M">Remote
+                                                        Hearings</a></li>
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://hrs.courts.ca.gov/la"
+                                                        data-contentful-entry-id="1mc6yXSG7JJinxXbJ905L8">Hearing
+                                                        Reminders</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="44KUVHTU9S4dvLzy5pvj27">Court
+                                                Information and Tools</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/cp/gi-courthouses-all"
+                                                        data-contentful-entry-id="5KSHfsnusMxwDlRMbOnN4x">Courthouses</a>
+                                                </li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/cp/gi-directory-of-courtrooms-by-courthouse"
+                                                        data-contentful-entry-id="7MmktcXdB6Xdhhr0eMVFT">Courtroom
+                                                        Telephone Directory</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-judicial-officer-search"
+                                                        data-contentful-entry-id="44ZQq3a7DIyFxIYl1xpkHk">Judicial
+                                                        Officer Search</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-court-date-calculator"
+                                                        data-contentful-entry-id="5uiE2IcQhO5iRhM7xUl01h">Court Date
+                                                        Calculator</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-court-holidays"
+                                                        data-contentful-entry-id="3mV9zr6WpZJtoNw7kfzTil">Court
+                                                        Holidays</a></li>
+                                                <li role="menuitem"><a
+                                                        href="/./pages/lp/civil/tp/tools-for-court-users-and-attorneys/cp/cv-courtroom-information"
+                                                        data-contentful-entry-id="3IL2opxVhBtFgMp7WlpAsN">Courtroom
+                                                        Information</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="7j9qPjTTH7JROv5IsRgtno">Court
+                                                Resources</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a target="_blank"
+                                                        href="https://www.lacourt.org/digitalevidence/"
+                                                        data-contentful-entry-id="4TvBvLkbaINpWUfnQYEqeV">Digital
+                                                        Evidence System</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/gi-court-rules"
+                                                        data-contentful-entry-id="355K5vG4BhUC5IcpCQwxDv">Local Court
+                                                        Rules</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/fo-forms"
+                                                        data-contentful-entry-id="4jERtJd3pNu1VycLq04ubX">Find a Court
+                                                        Form</a></li>
+                                            </ul>
+                                            <h6 class="title mt-4" data-contentful-entry-id="6dPZUQpks6QKT5Q5ngpyCr">
+                                                Announcements &amp; Notices</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/court-communications"
+                                                        data-contentful-entry-id="1Cf8sPDjKF43WbyZgyLl4X">Court
+                                                        Communications</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 px-2 pt-3 pb-4">
+                                        <div class="col-megamenu">
+                                            <h6 class="title" data-contentful-entry-id="3UciIMzIkcHV8TsOoq6NaW">Attorney
+                                                Community</h6>
+                                            <ul class="list">
+                                                <li role="menuitem"><a href="/./pages/lp/judicial-mentor-program"
+                                                        data-contentful-entry-id="39fp6Q2W5DizfyLOkGmBzM">Judicial
+                                                        Mentor Program</a></li>
+                                                <li role="menuitem"><a href="/./pages/lp/temporary-judge-program"
+                                                        data-contentful-entry-id="3nxMlVtq0hGXHkHTa0OhSo">Temporary
+                                                        Judge Program</a></li>
+                                                <li role="menuitem"><a href="/./pages/cp/at-commissioner-references"
+                                                        data-contentful-entry-id="21Hy5vitn774z2RlAaOPbi">Commissioner
+                                                        References</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle pe-0" href="javascript:void();" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-haspopup="true" aria-controls="megamenu6">Justice Partners &
+                            Professionals</a>
+                        <div class="dropdown-menu megamenu p-0 m-0" role="menu" id="megamenu6">
+                            <div class="row">
+                                <div class="col-lg-3 rounded-bl">
+                                    <div class="bg-white h-100 rounded-bl py-3 px-3 px-xl-5">
+                                        <h5 class="title text-underline p-0">Justice Partners and Professionals</h5>
+                                        <hr class="border border-primary border opacity-75 w-75 p-0 mt-1">
+                                        <p>Access the latest court information and programs.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 row">
+                                    <div class="col-md-6 px-2 py-3">
+                                        <div class="col-megamenu">
+                                            <a target="_blank" href="https://my.lacourt.org/jpp/#/home"
+                                                data-contentful-entry-id="E5ObJJ2QRLuYXcTifmuZY">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="E5ObJJ2QRLuYXcTifmuZY">Justice Partner
+                                                    Portal</h6>
+                                            </a>
+                                            <p><a target="_blank" href="https://my.lacourt.org/jpp/#/home"
+                                                    data-contentful-entry-id="E5ObJJ2QRLuYXcTifmuZY">Providing
+                                                    access to vital court information for the Court's justice
+                                                    partners.</a></p>
+                                            <a target="_blank" href="https://paceportal.lacourt.org/"
+                                                data-contentful-entry-id="5x8Uzxo2FcPWErWZaVCOaz">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="5x8Uzxo2FcPWErWZaVCOaz">PACE</h6>
+                                            </a>
+                                            <p><a target="_blank" href="https://paceportal.lacourt.org/"
+                                                    data-contentful-entry-id="5x8Uzxo2FcPWErWZaVCOaz">The
+                                                    Professional Appointee Court Expenditure program (PACE) is a county
+                                                    program used to pay attorneys, doctors, investigators, experts and
+                                                    other professionals appointed by the Superior Court of California,
+                                                    County of Los Angeles. </a></p>
+                                            <a target="_blank" href="https://media.lacourt.org/"
+                                                data-contentful-entry-id="3bW2Vkyw4veCI8jRXM7oP5">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="3bW2Vkyw4veCI8jRXM7oP5">Media Access
+                                                    Portal</h6>
+                                            </a>
+                                            <p><a target="_blank" href="https://media.lacourt.org/"
+                                                    data-contentful-entry-id="3bW2Vkyw4veCI8jRXM7oP5">Provides
+                                                    case information to media agencies and reporters. A subscription is
+                                                    required. </a></p>
+                                            <a href="/./pages/lp/procurement/tp/shared-procurement-services-sps-program"
+                                                data-contentful-entry-id="6PH98Zeaibd7uwnrWx3oCn">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="6PH98Zeaibd7uwnrWx3oCn">Shared Procurement
+                                                    Services</h6>
+                                            </a>
+                                            <p><a href="/./pages/lp/procurement/tp/shared-procurement-services-sps-program"
+                                                    data-contentful-entry-id="6PH98Zeaibd7uwnrWx3oCn">Access
+                                                    shared procurement services program.</a></p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 px-2 py-3">
+                                        <div class="col-megamenu">
+                                            <a href="/./pages/cp/jp-criminal-record-request"
+                                                data-contentful-entry-id="7w5RfTpCHGlXPjKomXdbF4">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="7w5RfTpCHGlXPjKomXdbF4">Criminal Record
+                                                    Request</h6>
+                                            </a>
+                                            <p><a href="/./pages/cp/jp-criminal-record-request"
+                                                    data-contentful-entry-id="7w5RfTpCHGlXPjKomXdbF4">This online
+                                                    records request portal provides official court criminal records to
+                                                    government agencies only. Requests from individuals or
+                                                    non-government agencies will not be fulfilled. </a></p>
+                                            <a target="_blank" href="https://www.lacourt.org/adr/"
+                                                data-contentful-entry-id="5CovR9BiGG0Lf1aHsxbLwr">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="5CovR9BiGG0Lf1aHsxbLwr">Alternative
+                                                    Dispute Resolution </h6>
+                                            </a>
+                                            <p><a target="_blank" href="https://www.lacourt.org/adr/"
+                                                    data-contentful-entry-id="5CovR9BiGG0Lf1aHsxbLwr">The Court
+                                                    offers a variety of volunteer-based programs to help settle
+                                                    disputes. </a></p>
+                                            <a href="/./pages/lp/procurement"
+                                                data-contentful-entry-id="6UWMsjveGtcGbxVVikBTtI">
+                                                <h6 class="title pubweb3-verbose-header-title"
+                                                    data-contentful-entry-id="6UWMsjveGtcGbxVVikBTtI">Purchasing
+                                                    Contracts Administration</h6>
+                                            </a>
+                                            <p><a href="/./pages/lp/procurement"
+                                                    data-contentful-entry-id="6UWMsjveGtcGbxVVikBTtI">Information
+                                                    for contractors and vendors.</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end main nav-->
+    <!--jumbotron-->
+    <div class="container bg-paleblue jumbotron py-3 rounded-bottom">
+        <!--breadcrumbs-->
+        <div class="container breadcrumbs">
+            <div class="row">
+                <div class="col"> <a href="/"><i class="fa fa-home fa-xs"></i> Home </a> <span
+                        class="hide-mobile mx-1">/</span> Placeholder
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-10">
+                    <h1 class="mb-md-4">Section Main Title (title)</h1>
+                    <p class="col-md-6">Description area of the jumbotron. Learn more about
+                        settlement programs
+                        for civil, family law, and probate cases. </p>
+                </div>
+                <div class="col-2 d-none d-md-block d-lg-block"><i class="fa-regular fa-handshake"></i></div>
+            </div>
+        </div>
+    </div>
+    <!--end jumbotron-->
+
+
+    <!--footer-->
+    <footer class="container-xxl footer rounded px-3 px-md-5 py-4 mt-5">
+        <div class="row">
+            <div class="col-lg-6"><img class="w-70"
+                    src="https://lascpubstorage.blob.core.windows.net/cpw/LIBWEBRESOURCE-9-LacourtFooterLogo.png"
+                    alt="la court"></div>
+            <div class="col-lg-6 mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end text-nowrap">
+                <div class="me-3 mx-md-4 me-md-5">
+                    <h6>At The Court</h6>
+                    <p class="mt-1">
+                        <a href="/pages/cp/gi-courthouses-all"> Courthouses </a><br>
+                        <a href="/pages/lp/juror-services"> Jury Duty </a><br>
+                        <a target="_blank"
+                            href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCExecutiveSupport-333-2025-GEN-002-00_CourtSecurity_010225.pdf">
+                            Prohibited Items </a><br>
+                    </p>
+                </div>
+                <div class="mx-md-5">
+                    <h6>Services</h6>
+                    <p class="mt-1">
+                        <a href="/pages/lp/online-services"> Online Services </a><br>
+                        <a target="_blank" href="https://selfhelp.lacourt.org/"> Self
+                            Help Center </a><br>
+                        <a target="_blank" href="https://my.lacourt.org/attorney/#/">
+                            Attorneys </a><br>
+                    </p>
+                </div>
+                <div class="mx-2 ms-md-4">
+                    <h6>About</h6>
+                    <p class="mt-1">
+                        <a href="/pages/lp/court-communications/tp/about-the-court"> About the Court </a><br>
+                        <a href="/pages/cp/gi-court-holidays"> Court Holidays </a><br>
+                        <a href="/pages/lp/careers"> Careers </a><br>
+                        <a href="/pages/lp/court-communications/tp/about-the-court/cp/contact-the-court"> Contact
+                            the Court </a><br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-md-6 ps-md-4 ms-md-2">
+                <div><span class="sixteen">Follow us on:</span></div>
+                <div class="brands">
+                    <a href="https://www.instagram.com/lasuperiorcourt/?hl=en" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-instagram"></i>
+                        <div class="sr-only">Instagram</div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/los-angeles-superior-court" target="_blank"
+                        rel="noopener"><i class="fa-brands fa-linkedin"></i>
+                        <div class="sr-only">LinkedIn</div>
+                    </a>
+                    <a href="https://x.com/LASuperiorCourt" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-x-twitter"></i>
+                        <div class="sr-only">X</div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtFdtVOpK45CjOvNPKQdaLw" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-youtube"></i>
+                        <div class="sr-only">YouTube</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 row last-line">
+                <div><strong class="sixteen">&nbsp;</strong></div>
+                <div class="col-12 text-center text-md-end pe-0">
+                    <a target="_blank" href="/pages/cp/privacy-statement" class="me-2">Privacy
+                        Statement</a><span>|</span>&nbsp;
+                    <a target="_blank" href="/pages/cp/disclaimer" class="me-2">Disclaimer</a><span>|</span>&nbsp;
+                    <a target="_blank"
+                        href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFjTUcWm2q91GndSz9pms0btUN1JLTlU1R1pBOUlDWDYwNzdNV0pKV0Q1WS4u&amp;route=shorturl"
+                        class="me-2">Comment On Our Website</a>&nbsp;
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-xxl text-center py-2"> Copyright &copy; 2025 Superior Court of California County of Los
+        Angeles </div>
+    <!--end footer-->
+    <script src="../adr/js/bootstrap.bundle.min.js"></script>
+    <script src="../adr/js/global.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en'
+                }, 'google_translate_element');
+        };
+        console.info("%c domain: " + location.hostname, "background: #222; color: yellow");
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+</body>
+
+</html>
