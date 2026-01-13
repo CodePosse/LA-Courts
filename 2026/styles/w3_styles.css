@@ -1,16 +1,151 @@
 /* colors */
+/* as of Jan 13 2026 */
+:root,
+*,
+body,
+html {
+  --w3-Classic-court-black: #231f20;
+  --w3-Classic-court-dkblue: #232f3d;
+  --w3-Classic-court-gold: #f5c04f;
+  --w3-Classic-court-grey: #95a3ab;
+  --w3-Classic-court-ltblue: #d4e5f5;
+  --w3-Classic-court-ltgrey: #eeeeee;
+  --w3-Classic-court-paleblue: #f0f4fc;
+  --w3-Classic-court-primary: #005498;
+  --w3-Classic-court-yellow: #f3c727;
+  --w3-FA-Accent-Blue: #0085eb;
+  --w3-FA-Accent-BlueLight: #f4faff;
+  --w3-FA-Accent-Gold: #f3c629;
+  --w3-FA-Accent-GoldLight: #fdf4d4;
+  --w3-FA-Accent-Green: #7aaf35;
+  --w3-FA-Accent-GreenLIght: #cadfae;
+  --w3-FA-Accent-Orange: #fb9500;
+  --w3-FA-Accent-OrangeLight: #ffcd85;
+  --w3-FA-Accent-Red: #dc2626;
+  --w3-FA-Accent-RedLight: #f2d3d0;
+  --w3-FA-ButtonGreen: #437305;
+  --w3-FA-ButtonRed: #bc2113;
+  --w3-FA-PrimaryBlue: #0573bc;
+  --w3-FA-darkSlate: #5a657c;
+  --w3-FA-darkerSlate: #475063;
+  --w3-FA-ghostSlate: #f7f7fa;
+  --w3-FA-highlightBlue: #e7f5ff;
+  --w3-FA-lightBrightBlue: #aad5f6;
+  --w3-FA-lightSlate: #c7ccd6;
+  --w3-FA-medSlate: #8690a4;
+  --w3-FA-minimalSlate: #e5e7ec;
+  --w3-FA-mutedMidnight: #232f3d;
+  --w3-FA-vaporSlate: #f1f2f5;
+  --w3-Off-White: #ffffff;
+  --w3-White: #ffffff;
+}
+/* text */
+.w3-text-court-black {
+  color: var(--w3-Classic-court-black) !important;
+}
+.w3-text-court-dkblue {
+  color: var(--w3-Classic-court-dkblue) !important;
+}
+.w3-text-court-gold {
+  color: var(--w3-Classic-court-gold) !important;
+}
+.w3-text-court-grey {
+  color: var(--w3-Classic-court-grey) !important;
+}
+.w3-text-court-ltblue {
+  color: var(--w3-Classic-court-ltblue) !important;
+}
+.w3-text-court-ltgrey {
+  color: var(--w3-Classic-court-ltgrey) !important;
+}
+
+.w3-text-court-paleblue {
+  color: var(--w3-Classic-court-paleblue) !important;
+}
+.w3-text-court-primary {
+  color: var(--w3-Classic-court-primary) !important;
+}
+.w3-text-court-yellow {
+  color: var(--w3-Classic-court-yellow) !important;
+}
+/* background colors */
+.w3-bg-court-black {
+  background-color: var(--w3-Classic-court-black) !important;
+}
+.w3-bg-court-dkblue {
+  background-color: var(--w3-Classic-court-dkblue) !important;
+}
+.w3-bg-court-gold {
+  background-color: var(--w3-Classic-court-gold) !important;
+}
+.w3-bg-court-grey {
+  background-color: var(--w3-Classic-court-grey) !important;
+}
+.w3-bg-court-ltblue {
+  background-color: var(--w3-Classic-court-ltblue) !important;
+}
+.w3-bg-court-highlightBlue {
+  background-color: var(--w3-FA-highlightBlue) !important;
+}
+.w3-bg-court-ltgrey {
+  background-color: var(--w3-Classic-court-ltgrey) !important;
+}
+.w3-bg-court-paleblue {
+  background-color: var(--w3-Classic-court-paleblue) !important;
+}
+.w3-bg-court-primary {
+  background-color: var(--w3-Classic-court-primary) !important;
+}
+.w3-bg-court-yellow {
+  background-color: var(--w3-Classic-court-yellow) !important;
+}
+/* buttons */
+.w3-btn-court-primary {
+  background-color: var(--w3-Classic-court-primary);
+  color: var(--w3-Off-White);
+}
+.w3-btn-court-primary:hover {
+  background-color: var(--w3-Classic-court-dkblue);
+  color: var(--w3-Off-White);
+}
+/* borders */
+.w3-bd-court-black {
+  border-color: var(--w3-Classic-court-black) !important;
+}
+.w3-bd-court-dkblue {
+  border-color: var(--w3-Classic-court-dkblue) !important;
+}
+.w3-bd-court-gold {
+  border-color: var(--w3-Classic-court-gold) !important;
+}
+.w3-bd-court-grey {
+  border-color: var(--w3-Classic-court-grey) !important;
+}
+.w3-bd-court-ltblue {
+  border-color: var(--w3-Classic-court-ltblue) !important;
+}
+.w3-bd-court-ltgrey {
+  border-color: var(--w3-Classic-court-ltgrey) !important;
+}
+.w3-bd-court-paleblue {
+  border-color: var(--w3-Classic-court-paleblue) !important;
+}
+.w3-bd-court-primary {
+  border-color: var(--w3-Classic-court-primary) !important;
+}
+.w3-bd-court-yellow {
+  border-color: var(--w3-Classic-court-yellow) !important;
+}
 
 /* info pages */
-.w3-module_cthouse {
-  background-color: var(--court-ltgrey);
-  border-radius: 20px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+.w3-module_cths_details {
+  background-color: var(--w3-Classic-court-ltgrey);
+  a {
+    text-decoration: none !important;
+  }
   .card {
     border-radius: 10px !important;
-    a {
-      text-decoration: none;
-    }
+
     i {
       font-weight: 600;
       color: var(--court-primary);
@@ -18,13 +153,13 @@
   }
 }
 .w3_cthse_tile {
+  margin-bottom: 1rem;
   small,
   i {
     font-size: 0.75rem;
     color: #717182;
   }
-
   .dept_bar {
-    background-color: #eff6ff;
+    background-color: var(--w3-FA-highlightBlue);
   }
 }
