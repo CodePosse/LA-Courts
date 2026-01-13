@@ -137,7 +137,9 @@ html {
   border-color: var(--w3-Classic-court-yellow) !important;
 }
 
-/* info pages */
+/* info pages modules */
+
+/* courtroom details module */
 .w3-module_cths_details {
   background-color: var(--w3-Classic-court-ltgrey);
   a {
@@ -156,15 +158,16 @@ html {
       color: var(--court-primary);
     }
   }
-}
-.w3_cthse_tile {
-  margin-bottom: 1rem;
-  small,
-  i {
-    font-size: 0.75rem;
-    color: #717182;
-  }
-  .dept_bar {
-    background-color: var(--w3-FA-highlightBlue);
+
+  .w3_cthse_tile {
+    margin-bottom: 1rem;
+    small,
+    i {
+      font-size: 0.75rem;
+      color: #717182;
+    }
+    .dept_bar {
+      background-color: var(--w3-FA-highlightBlue);
+    }
   }
 }
