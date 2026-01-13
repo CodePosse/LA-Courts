@@ -145,7 +145,12 @@ html {
   }
   .card {
     border-radius: 10px !important;
-
+    button {
+      background-color: var(--w3-Classic-court-dkblue) !important;
+    }
+    button i {
+      color: #fff;
+    }
     i {
       font-weight: 600;
       color: var(--court-primary);
