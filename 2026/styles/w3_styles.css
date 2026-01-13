@@ -1,0 +1,30 @@
+/* colors */
+
+/* info pages */
+.w3-module_cthouse {
+  background-color: var(--court-ltgrey);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  .card {
+    border-radius: 10px !important;
+    a {
+      text-decoration: none;
+    }
+    i {
+      font-weight: 600;
+      color: var(--court-primary);
+    }
+  }
+}
+.w3_cthse_tile {
+  small,
+  i {
+    font-size: 0.75rem;
+    color: #717182;
+  }
+
+  .dept_bar {
+    background-color: #eff6ff;
+  }
+}
