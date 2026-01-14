@@ -180,6 +180,11 @@ html {
     }
   }
 }
+/* typography */
+small,
+.fs-sm {
+  font-size: 0.75rem;
+}
 
 /* utilities */
 .rounded {
