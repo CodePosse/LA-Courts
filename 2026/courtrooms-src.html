@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Google Analytics-->
+
+    <title>Courtrooms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="../adr/js/jquery-3.7.1.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../adr/css/style.css">
+    <link rel="stylesheet" href="./styles/w3_styles.css">
+    <link href="../JDP/js/syntax/syntax.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!--jumbotron-->
+    <div class="container-xxl w3-bg-court-paleblue mb-0 mb-md-5 rounded-bottom">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-8 px-md-5">
+                <div class="d-none d-lg-block pt-md-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa fa-home fa-xs"></i>
+                        </li>
+                        <li class="breadcrumb-item"><a href="./">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Courtrooms</li>
+                    </ol>
+                </div>
+                <h1 class="mb-md-4">Courtrooms</h1>
+                <p class="col-md-6">Directory of courtrooms for this location.</p>
+            </div>
+            <div class="col-lg-4 p-0 m-0 d-flex justify-content-end rounded-bottom">
+                <img src="img/Locations_Perspective.png" alt="Map illustration showing courthouse locations"
+                    class="img-fluid rounded-br d-none d-lg-block" role="img">
+            </div>
+        </div>
+    </div>
+    <!--end jumbotron-->
+    <!--courtroom directory-->
+    <div class="container px-md-5">
+        <div class="container px-md-5 py-4 mt-5 w3-module_cths_details rounded">
+            <div class="row">
+                <!--sidebar column-->
+                <div class="col-md-4 px-3 px-md-1 pe-md-5 ps-md-0">
+                    <div class="card rounded shadow1 mb-3 p-3">
+                        <form class="row g-2">
+                            <div class="mb-2"><small><i class="fa-regular fa-building"></i> Courthouse</small></div>
+                            <div class="mb-2"><select class="form-select" aria-label="Default select example">
+                                    <option selected>Airport Courthouse</option>
+                                    <option value="1">Alameda Courthouse</option>
+                                    <option value="2">Torrance Courthouse</option>
+                                    <option value="3">Central Arraignment Courthouse</option>
+                                </select></div>
+                            <div class="col-auto mb-2">
+                                <label for="deptnumber" class="visually-hidden">Enter Department Number</label>
+                                <input type="text" class="form-control" id="deptnumber" placeholder="Enter Dept. #">
+                            </div>
+                            <div class="col-auto mb-2">
+                                <button type="submit" class="btn btn-primary"><i
+                                        class="fa-solid fa-arrow-right"></i><span
+                                        class="visually-hidden">Submit</span></button>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">
+                                        Digital Evidence Presentation system (DEPS)
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <img src="../adr/img/why1.jpg" alt="" class="rounded img-fluid shadow1 mb-3 w-100">
+                    <div class="card rounded shadow1 mb-3 p-1">
+                        <div class="card-body row">
+                            <div class="col-1"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="col">
+                                <a href="">Airport Courthouse</a> <br>11701 S. La Cienega Blvd. <br>Los Angeles, CA
+                                90045
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow1 mb-3 p-1">
+                        <div class="card-body row">
+                            <div class="col-1"><i class="fa-solid fa-phone"></i></div>
+                            <div class="col">
+                                <a href="">(310) 725-3000</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow1 mb-3 p-1">
+                        <div class="card-body row">
+                            <div class="col-1"><i class="fa-solid fa-user"></i></div>
+                            <div class="col">
+                                <a href="">Juror Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow1 mb-3 p-1">
+                        <div class="card-body row">
+                            <div class="col-1"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div class="col">
+                                <a href="">Courtrooms at this location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--directory column-->
+                <div class="col-md-8">
+                    <div class="mb-3 py-0 px-3 px-md-0">
+                        <div>Showing 10 results</div>
+                    </div>
+                    <div class="card rounded shadow1 w3_cthse_tile">
+                        <div class="card-body">
+                            <div><small><i class="fa-regular fa-building"></i> Courthouse</small></div>
+                            <h4>Airport Courthouse</h4>
+                            <hr>
+                            <div class="dept_bar shadow1 rounded mb-3 px-3 py-2">
+                                <div><small>Department Number</small></div>
+                                <h5>23</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 mb-1"><small>Floor</small><br>7</div>
+                                <div class="col-6 mb-1"><small>Room Number</small><br>701</div>
+                                <div class="col-6 mb-1"><small>DEPS</small><br>Yes</div>
+                                <div class="col-6 mb-1"><small><i class="fa-solid fa-phone"></i>
+                                        Telephone</small><br>(310)
+                                    725-3096</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end directory column-->
+            </div>
+        </div>
+    </div>
+    <!--end courtroom directory-->
+
+    <!--code samples-->
+    <div class="container my-5 bg-body-tertiary p-4 rounded">
+        <div class="row">
+            <div class="">
+                <h2>Courthouse Tile</h2>
+                with code, needs to be inside a container with the class <code>w3-module_cths_details</code>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 w3-module_cths_details">
+                <div class="card rounded shadow1 w3_cthse_tile">
+                    <div class="card-body">
+                        <div><small><i class="fa-regular fa-building"></i> Courthouse</small></div>
+                        <h4>Airport Courthouse</h4>
+                        <hr>
+                        <div class="dept_bar shadow1 rounded mb-3 px-3 py-2">
+                            <div><small>Department Number</small></div>
+                            <h5>23</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb-1"><small>Floor</small><br>7</div>
+                            <div class="col-6 mb-1"><small>Room Number</small><br>701</div>
+                            <div class="col-6 mb-1"><small>DEPS</small><br>Yes</div>
+                            <div class="col-6 mb-1"><small><i class="fa-solid fa-phone"></i>
+                                    Telephone</small><br>(310)
+                                725-3096</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-0">
+                <pre class="brush: js;">
+        <div class="card rounded shadow1 w3_cthse_tile">
+            <div class="card-body">
+                <div><small><i class="fa-regular fa-building"></i> Courthouse</small></div>
+                <h4>Airport Courthouse</h4>
+                <hr>
+                <div class="dept_bar shadow1 rounded mb-3 px-3 py-2">
+                    <div><small>Department Number</small></div>
+                    <h5>23</h5>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-1"><small>Floor</small><br>7</div>
+                    <div class="col-6 mb-1"><small>Room Number</small><br>701</div>
+                    <div class="col-6 mb-1"><small>DEPS</small><br>Yes</div>
+                    <div class="col-6 mb-1"><small><i class="fa-solid fa-phone"></i>
+                            Telephone</small><br>(310)
+                        725-3096</div>
+                </div>
+            </div>
+        </div>
+        </pre>
+            </div>
+        </div>
+    </div>
+    <script src="../adr/js/bootstrap.bundle.min.js"></script>
+    <script src="../adr/js/global.js"></script>
+    <script type="text/javascript" src="../JDP/js/syntax/shCore.js"></script>
+    <script type="text/javascript" src="../JDP/js/syntax/shBrushXml.js"></script>
+    <script type="text/javascript" src="../JDP/js/syntax/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../JDP/js/syntax/shBrushCss.js"></script>
+    <script type="text/javascript" src="../JDP/js/syntax/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../JDP/js/syntax/shBrushSql.js"></script>
+    <script type="text/javascript">
+        ! function () {
+            document.createElement("link");
+            var t = document.createElement("link"),
+                i = "js/syntax/shThemeDefault.css";
+            t.setAttribute ? (t.setAttribute("rel", "stylesheet"), t.setAttribute("type", "text/css"), t.setAttribute("href", i)) : (t.rel = "stylesheet", t.href = i), document.getElementsByTagName("head")[0].appendChild(t)
+        }(), SyntaxHighlighter.config.clipboardSwf = "clipboard.swf", SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
+    </script>
+</body>
+
+</html>
