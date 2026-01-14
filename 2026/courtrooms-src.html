@@ -147,6 +147,85 @@
     <div class="container my-5 bg-body-tertiary p-4 rounded">
         <div class="row">
             <div class="">
+                <h2>Courthouse Search Layout</h2>
+                This is the main, two-col layout
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                    <div class="container px-md-5 py-4 mt-5 w3-module_cths_details rounded">
+                        <div class="row">
+                            <!--sidebar column-->
+                            <div class="col-md-4 px-3 px-md-1 pe-md-5 ps-md-0">
+                                <div class="card rounded shadow1 mb-3 p-3">
+                                    <form class="row g-2">
+                                        <div class="mb-2"><small><i class="fa-regular fa-building"></i> Courthouse</small></div>
+                                        <div class="mb-2"><select class="form-select" aria-label="Default select example">
+                                                <option selected>option</option>
+                                                <option value="1">option/option>
+                                            </select></div>
+                                        <div class="col-auto mb-2">
+                                            <label for="deptnumber" class="visually-hidden">Enter Department Number</label>
+                                            <input type="text" class="form-control" id="deptnumber" placeholder="Enter Dept. #">
+                                        </div>
+                                        <div class="col-auto mb-2">
+                                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i><span
+                                                    class="visually-hidden">Submit</span></button>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                                <label class="form-check-label" for="checkDefault">
+                                                    Digital Evidence Presentation system (DEPS)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <img src="../adr/img/why1.jpg" alt="" class="rounded img-fluid shadow1 mb-3 w-100">
+                                <div class="card rounded shadow1 mb-3 p-1">
+                                    <div class="card-body row">
+                                        <div class="col-1"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="col">
+                                            <a href="">[meta data card with link]
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--directory column-->
+                            <div class="col-md-8">
+                                <div class="mb-3 py-0 px-3 px-md-0">
+                                    <div>Showing 10 results</div>
+                                </div>
+                                <div class="card rounded shadow1 w3_cthse_tile">
+                                    <div class="card-body">
+                                        <div><small><i class="fa-regular fa-building"></i> Courthouse</small></div>
+                                        <h4>[name of courthouse]/h4>
+                                            <hr>
+                                            <div class="dept_bar shadow1 rounded mb-3 px-3 py-2">
+                                                <div><small>Department Number</small></div>
+                                                <h5>[num]</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 mb-1"><small>Floor</small><br>[num]</div>
+                                                <div class="col-6 mb-1"><small>Room Number</small><br>[num]</div>
+                                                <div class="col-6 mb-1"><small>DEPS</small><br>[y/n]</div>
+                                                <div class="col-6 mb-1"><small><i class="fa-solid fa-phone"></i>
+                                                        Telephone</small><br>[num]</div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end directory column-->
+                        </div>
+                    </div>
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="">
                 <h2>Courthouse Search Card</h2>
                 with code, needs to be inside a container with the class <code>w3-module_cths_details</code>
             </div>
