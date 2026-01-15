@@ -182,6 +182,10 @@ html {
 }
 /* courthouse directory module */
 .w3-module_cths_dir {
+  a {
+    text-decoration: none !important;
+    color: var(--w3-Classic-court-black);
+  }
   .w3_cths_tile {
     background-color: var(--w3-FA-highlightBlue);
     border: none;
