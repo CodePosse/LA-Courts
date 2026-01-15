@@ -180,7 +180,11 @@ html {
     }
   }
 }
-/* courthouse directory module */
+/* courthouse directory modules */
+.w3_cthse_filters {
+  border-radius: 20px;
+  padding: 1rem;
+}
 .w3-module_cths_dir {
   a {
     text-decoration: none !important;
