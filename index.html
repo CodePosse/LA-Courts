@@ -22,6 +22,27 @@
     <meta name="twitter:title" content="Tim Hunold's Prototypes">
     <meta name="twitter:creator" content="@LASuperiorCourt">
     <meta property="twitter:description" content="Latest redesigns and prototypes for the Los Angeles Superior Court">
+    <style>
+        .goober {
+            --angle: 0deg;
+            border: 2px solid;
+            border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 10;
+
+            animation: 10s rotate linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                --angle: 360deg;
+            }
+        }
+
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+    </style>
 
 </head>
 
@@ -141,7 +162,7 @@
                 </div>
             </div>
             <div class="col-md-3 my-1">
-                <div class="card border-secondary mb-1 h-100">
+                <div class="card border-secondary mb-1 h-100 goober">
                     <div class="card-header bg-secondary text-white">2026 redesigns</div>
                     <div class="card-body">
                         <p class="card-text"><a href="2026/courthouse-directory.html">courthouse directory</a></p>
