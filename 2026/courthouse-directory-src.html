@@ -14,6 +14,7 @@
     <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://lascproduction.blob.core.windows.net/static-assets/wg_pubweb3_v0.9.5.css">
     <link rel="stylesheet" href="./styles/w3_styles.css">
+    <link href="../jdp/js/syntax/syntax.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -1138,98 +1139,376 @@
         </div>
     </div>
     <!--end jumbotron-->
+    <!--layout-->
+    <div class="container px-md-5">
+        <div class="container px-1 py-4 mt-5 w3-module_cths_dir rounded">
+            <div class="row">
+                <form action="">
+                    <div class="col-12">
+                        <div class="border w3_cthse_filters row">
+                            <div class="col-md-3 pb-3 pb-md-0"> <label for="chse" class="form-label"><i
+                                        class="fa-regular fa-building"></i> Courthouse</label> <select
+                                    class="form-select" id="chse">
+                                    <option value="">All Courthouses</option>
+                                    <option>United States</option>
+                                </select>
 
+                            </div>
+                            <div class="col-md-3 pb-3 pb-md-0"> <label for="casetype" class="form-label"><i
+                                        class="fa-solid fa-layer-group"></i> Case Types <i
+                                        class="fa-solid fa-circle-info ms-2" data-bs-toggle="tooltip"
+                                        data-bs-title="Default tooltip"></i></label> <select class="form-select"
+                                    id="casetype">
+                                    <option value="">Select Division</option>
+                                    <option>United States</option>
+                                </select>
 
-    <!--footer-->
-    <footer class="container-xxl footer rounded px-3 px-md-5 py-4 mt-5">
+                            </div>
+                            <div class="col-md-3"> <label for="search" class="form-label"><i
+                                        class="fa-solid fa-magnifying-glass"></i> Search</label> <input type="text"
+                                    class="form-control" id="search" placeholder="" value="">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-label">&nbsp;</div><button class="btn btn-primary w-100">Search
+                                    <small><i class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end layout-->
+
+    <!--code samples-->
+    <div class="container my-5 bg-body-tertiary p-4 rounded">
         <div class="row">
-            <div class="col-lg-6"><img class="w-70"
-                    src="https://lascpubstorage.blob.core.windows.net/cpw/LIBWEBRESOURCE-9-LacourtFooterLogo.png"
-                    alt="la court"></div>
-            <div class="col-lg-6 mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end text-nowrap">
-                <div class="me-3 mx-md-4 me-md-5">
-                    <h6>At The Court</h6>
-                    <p class="mt-1">
-                        <a href="/pages/cp/gi-courthouses-all"> Courthouses </a><br>
-                        <a href="/pages/lp/juror-services"> Jury Duty </a><br>
-                        <a target="_blank"
-                            href="https://lascpubstorage.blob.core.windows.net/cpw/LIBSVCExecutiveSupport-333-2025-GEN-002-00_CourtSecurity_010225.pdf">
-                            Prohibited Items </a><br>
-                    </p>
-                </div>
-                <div class="mx-md-5">
-                    <h6>Services</h6>
-                    <p class="mt-1">
-                        <a href="/pages/lp/online-services"> Online Services </a><br>
-                        <a target="_blank" href="https://selfhelp.lacourt.org/"> Self
-                            Help Center </a><br>
-                        <a target="_blank" href="https://my.lacourt.org/attorney/#/">
-                            Attorneys </a><br>
-                    </p>
-                </div>
-                <div class="mx-2 ms-md-4">
-                    <h6>About</h6>
-                    <p class="mt-1">
-                        <a href="/pages/lp/court-communications/tp/about-the-court"> About the Court </a><br>
-                        <a href="/pages/cp/gi-court-holidays"> Court Holidays </a><br>
-                        <a href="/pages/lp/careers"> Careers </a><br>
-                        <a href="/pages/lp/court-communications/tp/about-the-court/cp/contact-the-court"> Contact
-                            the Court </a><br>
-                    </p>
-                </div>
+            <div>
+                <h2>Courthouse Directory Layout</h2>
             </div>
-            <div class="col-12"></div>
-            <div class="col-md-6 ps-md-4 ms-md-2">
-                <div><span class="sixteen">Follow us on:</span></div>
-                <div class="brands">
-                    <a href="https://www.instagram.com/lasuperiorcourt/?hl=en" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-instagram"></i>
-                        <div class="sr-only">Instagram</div>
-                    </a>
-                    <a href="https://www.linkedin.com/company/los-angeles-superior-court" target="_blank"
-                        rel="noopener"><i class="fa-brands fa-linkedin"></i>
-                        <div class="sr-only">LinkedIn</div>
-                    </a>
-                    <a href="https://x.com/LASuperiorCourt" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-x-twitter"></i>
-                        <div class="sr-only">X</div>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCtFdtVOpK45CjOvNPKQdaLw" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-youtube"></i>
-                        <div class="sr-only">YouTube</div>
-                    </a>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                        <div class="container px-md-5">
+                            <div class="container px-1 py-4 mt-5 w3-module_cths_dir rounded">
+                                <div class="row">
+                                    <form action="">
+                                        <div class="col-12">
+                                            <div class="border w3_cthse_filters row">
+                                                <div class="col-md-3 pb-3 pb-md-0"> <label for="chse" class="form-label"><i
+                                                            class="fa-regular fa-building"></i> Courthouse</label> <select class="form-select"
+                                                        id="chse">
+                                                        <option value="">All Courthouses</option>
+                                                        <option>United States</option>
+                                                    </select>
+                        
+                                                </div>
+                                                <div class="col-md-3 pb-3 pb-md-0"> <label for="casetype" class="form-label"><i
+                                                            class="fa-solid fa-layer-group"></i> Case Types <i
+                                                            class="fa-solid fa-circle-info ms-2" data-bs-toggle="tooltip"
+                                                            data-bs-title="Default tooltip"></i></label> <select class="form-select"
+                                                        id="casetype">
+                                                        <option value="">Select Division</option>
+                                                        <option>United States</option>
+                                                    </select>
+                        
+                                                </div>
+                                                <div class="col-md-3"> <label for="search" class="form-label"><i
+                                                            class="fa-solid fa-magnifying-glass"></i> Search</label> <input type="text"
+                                                        class="form-control" id="search" placeholder="" value="">
+                        
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-label">&nbsp;</div><button class="btn btn-primary w-100">Search
+                                                        <small><i class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row d-flex justify-content-around">
+                                    <div class="col-md-4 p-3 p-md-4">
+                                        <a href="courtrooms.html">
+                                            <div class="card w3_cths_tile">
+                                                <div class="row">
+                                                    <div class="col-5 p-0 m-0">
+                                                        <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                                            alt="" class="img-fluid rounded-start col-6">
+                                                    </div>
+                                                    <div class="col-7 p-2">Airport
+                                                        Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-3 p-md-4">
+                                        <a href="courtrooms.html">
+                                            <div class="card w3_cths_tile">
+                                                <div class="row">
+                                                    <div class="col-5 p-0 m-0">
+                                                        <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                                            alt="" class="img-fluid rounded-start col-6">
+                                                    </div>
+                                                    <div class="col-7 p-2">Airport
+                                                        Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-3 p-md-4">
+                                        <a href="courtrooms.html">
+                                            <div class="card w3_cths_tile">
+                                                <div class="row">
+                                                    <div class="col-5 p-0 m-0">
+                                                        <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                                            alt="" class="img-fluid rounded-start col-6">
+                                                    </div>
+                                                    <div class="col-7 p-2">Airport
+                                                        Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-3 p-md-4">
+                                        <a href="courtrooms.html">
+                                            <div class="card w3_cths_tile">
+                                                <div class="row">
+                                                    <div class="col-5 p-0 m-0">
+                                                        <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                                            alt="" class="img-fluid rounded-start col-6">
+                                                    </div>
+                                                    <div class="col-7 p-2">Airport
+                                                        Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-3 p-md-4">
+                                        <a href="courtrooms.html">
+                                            <div class="card w3_cths_tile">
+                                                <div class="row">
+                                                    <div class="col-5 p-0 m-0">
+                                                        <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                                            alt="" class="img-fluid rounded-start col-6">
+                                                    </div>
+                                                    <div class="col-7 p-2">Airport
+                                                        Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+                </pre>
             </div>
-            <div class="col-md-6 row last-line">
-                <div><strong class="sixteen">&nbsp;</strong></div>
-                <div class="col-12 text-center text-md-end pe-0">
-                    <a target="_blank" href="/pages/cp/privacy-statement" class="me-2">Privacy
-                        Statement</a><span>|</span>&nbsp;
-                    <a target="_blank" href="/pages/cp/disclaimer" class="me-2">Disclaimer</a><span>|</span>&nbsp;
-                    <a target="_blank"
-                        href="https://forms.office.com/pages/responsepage.aspx?id=x8OU3Ei7_0CTBeRz_W9qFjTUcWm2q91GndSz9pms0btUN1JLTlU1R1pBOUlDWDYwNzdNV0pKV0Q1WS4u&amp;route=shorturl"
-                        class="me-2">Comment On Our Website</a>&nbsp;
+        </div>
+        <hr>
+        <div class="row">
+            <div>
+                <h2>Filter Bar</h2>
+                with code, needs to be inside a container with the class <code>w3-module_cths_dir</code>
+            </div>
+            <div class="w3-module_cths_dir bg-white">
+                <div class="border w3_cthse_filters row">
+                    <div class="col-md-3 pb-3 pb-md-0"> <label for="chse" class="form-label"><i
+                                class="fa-regular fa-building"></i> Courthouse</label> <select class="form-select"
+                            id="chse">
+                            <option value="">All Courthouses</option>
+                            <option>United States</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-3 pb-3 pb-md-0"> <label for="casetype" class="form-label"><i
+                                class="fa-solid fa-layer-group"></i> Case Types <i class="fa-solid fa-circle-info ms-2"
+                                data-bs-toggle="tooltip" data-bs-title="Default tooltip"></i></label> <select
+                            class="form-select" id="casetype">
+                            <option value="">Select Division</option>
+                            <option>United States</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-3"> <label for="search" class="form-label"><i
+                                class="fa-solid fa-magnifying-glass"></i> Search</label> <input type="text"
+                            class="form-control" id="search" placeholder="" value="">
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-label">&nbsp;</div><button class="btn btn-primary w-100">Search
+                            <small><i class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </footer>
-    <div class="container-xxl text-center py-2"> Copyright &copy; 2026 Superior Court of California County of Los
-        Angeles </div>
-    <!--end footer-->
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                    <div class="border w3_cthse_filters row">
+                        <div class="col-md-3 pb-3 pb-md-0"> <label for="chse" class="form-label"><i class="fa-regular fa-building"></i>
+                                Courthouse</label> <select class="form-select" id="chse">
+                                <option value="">All Courthouses</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 pb-3 pb-md-0"> <label for="casetype" class="form-label"><i class="fa-solid fa-layer-group"></i>
+                                Case Types <i class="fa-solid fa-circle-info ms-2" data-bs-toggle="tooltip"
+                                    data-bs-title="Default tooltip"></i></label> <select class="form-select" id="casetype">
+                                <option value="">Select Division</option>
+                                <option>United States</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3"> <label for="search" class="form-label"><i class="fa-solid fa-magnifying-glass"></i>
+                                Search</label> <input type="text" class="form-control" id="search" placeholder="" value="">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-label">&nbsp;</div><button class="btn btn-primary w-100">Search
+                                <small><i class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                        </div>     
+                    </div>                      
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div>
+                <h2>Courthouse Tile</h2>
+                with code, needs to be inside a container with the class <code>w3-module_cths_dir</code> and they are
+                encapsulated in <code>col</code> tags for responsive spacing. There is also a parent container with the
+                classes for <code>d-flex justify-content-around</code> to make sure things line up.
+            </div>
+            <div class="w3-module_cths_dir">
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                <div class="col-md-4 p-3 p-md-4">
+                    <a href="courtrooms.html">
+                        <div class="card w3_cths_tile">
+                            <div class="row">
+                                <div class="col-5 p-0 m-0">
+                                    <img src="https://www.lacourt.ca.gov/Courthouse/images/courthouses/Airport_loc_1.jpg"
+                                        alt="" class="img-fluid rounded-start col-6">
+                                </div>
+                                <div class="col-7 p-2">Airport
+                                    Courthouse<br>11701 S. La Cienega<br>Los Angeles, CA 90045</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                </pre>
+            </div>
+        </div>
+    </div>
     <script src="../adr/js/bootstrap.bundle.min.js"></script>
     <script src="../adr/js/global.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shCore.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushXml.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushCss.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushSql.js"></script>
     <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {
-                    pageLanguage: 'en'
-                }, 'google_translate_element');
-        };
-        console.info("%c domain: " + location.hostname, "background: #222; color: yellow");
+        ! function () {
+            document.createElement("link");
+            var t = document.createElement("link"),
+                i = "js/syntax/shThemeDefault.css";
+            t.setAttribute ? (t.setAttribute("rel", "stylesheet"), t.setAttribute("type", "text/css"), t.setAttribute("href", i)) : (t.rel = "stylesheet", t.href = i), document.getElementsByTagName("head")[0].appendChild(t)
+        }(), SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-</script>
 </body>
 
 </html>
