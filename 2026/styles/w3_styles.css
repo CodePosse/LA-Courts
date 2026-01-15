@@ -180,6 +180,20 @@ html {
     }
   }
 }
+/* courthouse directory module */
+.w3-module_cths_dir {
+  .w3_cths_tile {
+    background-color: var(--w3-FA-highlightBlue);
+    border: none;
+    border-radius: 20px;
+    height: 127px;
+
+    img {
+      height: 127px;
+      width: auto;
+    }
+  }
+}
 /* typography */
 small,
 .fs-sm {
@@ -192,6 +206,12 @@ small,
 }
 .rounded-bottom {
   border-radius: 0 0 20px 20px !important;
+}
+.rounded-start {
+  border-radius: 20px 0 0 20px !important;
+}
+.rounded-end {
+  border-radius: 0 20px 20px 0 !important;
 }
 .rounded div.rounded,
 .rounded img.rounded {
