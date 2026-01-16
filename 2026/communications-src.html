@@ -14,6 +14,7 @@
     <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://lascproduction.blob.core.windows.net/static-assets/wg_pubweb3_v0.9.5.css">
     <link rel="stylesheet" href="./styles/w3_styles.css">
+    <link href="../jdp/js/syntax/syntax.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -1122,20 +1123,206 @@
                         <li class="breadcrumb-item"><i class="fa fa-home fa-xs"></i>
                         </li>
                         <li class="breadcrumb-item"><a href="./">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Courtrooms</li>
+                        <li class="breadcrumb-item"><a href="./">Court Communications</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">News Center</li>
                     </ol>
                 </div>
-                <h1 class="mb-md-4">Courtrooms</h1>
-                <p class="col-md-6">Directory of courtrooms for this location.</p>
+                <h1 class="mb-md-4">News Releases</h1>
+                <p class="col-md-8">News Releases detail important news on Court announcements, programs and initiatives
+                    that may be of interest to the media.</p>
             </div>
-            <div class="col-lg-4 p-0 m-0 d-flex justify-content-end rounded-bottom">
-                <img src="img/Locations_Perspective.png" alt="Map illustration showing courthouse locations"
-                    class="img-fluid rounded-br d-none d-lg-block" role="img">
-            </div>
+
         </div>
     </div>
     <!--end jumbotron-->
+    <!--courtroom newsroom communications-->
+    <div class="container px-md-5">
+        <div class="container px-md-5 py-4 mt-5 w3-module_cths_news rounded">
+            <!--filter-->
+            <form action=""></form>
+            <div class="row">
+                <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
+                    please
+                    <a href="#">click here</a>.
+                </div>
+                <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
+                            class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
+                        id="timeframe" required="">
+                        <option value="">12 months</option>
+                        <option>24 months</option>
+                    </select>
+                </div>
+                <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
+                        class="form-label visually-hidden">Search</label>
+                    <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
+                        aria-label="search">
+                </div>
+                <div class="col-md-4 mb-2"><button class="btn btn-primary">Search <small><i
+                                class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                </div>
+            </div>
+            </form>
+            <!--end filter-->
+            <div class="row">
+                <div class="col-12">
+                    <!-- newsroom communication tiles-->
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end courtroom newsroom communications-->
+    <!--code samples-->
+    <div class="container my-5 bg-body-tertiary p-4 rounded">
+        <div class="row">
+            <div>
+                <h2>Courthouse Newsroom Communications Layout</h2>
+                This is a nested container inside a container to maintain the proper alignment with the rest of the page
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+    <div class="container px-md-5">
+        <div class="container px-md-5 py-4 mt-5 w3-module_cths_news rounded">
+            <!--filter-->
+            <form action=""></form>
+            <div class="row">
+                <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
+                    please
+                    <a href="#">click here</a>.
+                </div>
+                <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
+                            class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
+                        id="timeframe" required="">
+                        <option value="">12 months</option>
+                        <option>24 months</option>
+                    </select>
+                </div>
+                <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
+                        class="form-label visually-hidden">Search</label>
+                    <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
+                        aria-label="search">
+                </div>
+                <div class="col-md-4 mb-2"><button class="btn btn-primary">Search <small><i
+                                class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                </div>
+            </div>
+            </form>
+            <!--end filter-->
+            <div class="row">
+                <div class="col-12">
+                    <!-- newsroom communication tiles-->
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div>
+                <h2>Filter Section</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+        <div class="row w3-module_cths_news">
+            <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
+                please
+                <a href="#">click here</a>.
+            </div>
+            <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
+                        class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
+                    id="timeframe" required="">
+                    <option value="">12 months</option>
+                    <option>24 months</option>
+                </select>
+            </div>
+            <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
+                    class="form-label visually-hidden">Search</label>
+                <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
+                    aria-label="search">
+            </div>
+            <div class="col-md-4 mb-2"><button class="btn btn-primary">Search <small><i
+                            class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+            </div>
+        </div>
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div>
+                <h2>News Tiles</h2>
+                These are pretty basic <code>.card</code> classes from Bootstrap with a bit of custom styling.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                    <div class="card rounded shadow2 mb-3">
+                        <div class="card-body row">
+                            <div class="col-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                            </div>
+                            <div class="col-3"><span class="w3-text-FA-mediumSlate">Published: 12/29/2025</span></div>
+                        </div>
+                    </div>
+                </pre>
+            </div>
+        </div>
 
+    </div>
 
     <!--footer-->
     <footer class="container-xxl footer rounded px-3 px-md-5 py-4 mt-5">
@@ -1215,18 +1402,20 @@
     <!--end footer-->
     <script src="../adr/js/bootstrap.bundle.min.js"></script>
     <script src="../adr/js/global.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shCore.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushXml.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushCss.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../jdp/js/syntax/shBrushSql.js"></script>
     <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {
-                    pageLanguage: 'en'
-                }, 'google_translate_element');
-        };
-        console.info("%c domain: " + location.hostname, "background: #222; color: yellow");
+        ! function () {
+            document.createElement("link");
+            var t = document.createElement("link"),
+                i = "js/syntax/shThemeDefault.css";
+            t.setAttribute ? (t.setAttribute("rel", "stylesheet"), t.setAttribute("type", "text/css"), t.setAttribute("href", i)) : (t.rel = "stylesheet", t.href = i), document.getElementsByTagName("head")[0].appendChild(t)
+        }(), SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-</script>
 </body>
 
 </html>
