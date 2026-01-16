@@ -68,6 +68,9 @@ html {
 .w3-text-court-yellow {
   color: var(--w3-Classic-court-yellow) !important;
 }
+.w3-text-FA-mediumSlate {
+  color: var(--w3-FA-medSlate) !important;
+}
 /* background colors */
 .w3-bg-court-black {
   background-color: var(--w3-Classic-court-black) !important;
@@ -156,9 +159,7 @@ html {
   }
   .card {
     border-radius: 10px !important;
-    button {
-      background-color: var(--w3-Classic-court-dkblue) !important;
-    }
+
     button i {
       color: #fff;
     }
@@ -202,6 +203,27 @@ html {
     }
   }
 }
+
+/* courthouse newsroom communications modules */
+.w3-module_cths_news {
+  background-color: var(--w3-Classic-court-ltgrey);
+  a {
+    text-decoration: none !important;
+  }
+  /* courthouse tiles */
+  .w3_cths_tile {
+    background-color: var(--w3-FA-highlightBlue);
+    border: none;
+    border-radius: 20px;
+    height: 127px;
+
+    img {
+      height: 127px;
+      width: auto;
+    }
+  }
+}
+
 /* typography */
 small,
 .fs-sm {
@@ -209,6 +231,13 @@ small,
 }
 
 /* utilities */
+button {
+  background-color: var(--w3-Classic-court-dkblue) !important;
+}
+.breadcrumb-item a {
+  text-decoration: none !important;
+  color: var(--w3-Classic-court-black);
+}
 .rounded {
   border-radius: 20px !important;
 }
