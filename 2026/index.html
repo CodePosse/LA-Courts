@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDESIGNS</title>
+    <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://lascproduction.blob.core.windows.net/static-assets/wg_pubweb3_v0.9.5.css?exp-3">
+    <link rel="stylesheet" href="./styles/w3_styles.css">
+    <style>
+        code {
+            color: red !important;
+            background-color: #f4f4f4;
+        }
+
+        .goober {
+            --angle: 90deg;
+            border: 2px solid;
+            border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, rebeccapurple, magenta) 1;
+            border-radius: 20px;
+            animation: 10s rotate linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                --angle: 360deg;
+            }
+        }
+
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 my-1">
+                <div class="card border-secondary mb-1 h-100 goober">
+                    <div class="card-header bg-secondary text-white">2026 redesigns</div>
+                    <div class="card-body">
+                        <p class="card-text"><a href="./styles/w3_styles.css" target="_blank">Custom CSS</a></p>
+                        <p class="card-text"><a href="./courthouse-directory.html">courthouse directory</a></p>
+                        <p class="card-text"><a href="./courthouse-directory-src.html">courthouse directory
+                            </a> <code>source</code></p>
+                        <p class="card-text"><a href="./courtrooms.html">courtrooms</a></p>
+                        <p class="card-text"><a href="./courtrooms-src.html">courtrooms </a> <code>source</code></p>
+                        <p class="card-text"><a href="./communications.html">communications</a></p>
+                        <p class="card-text"><a href="./communications-src.html">communications
+                            </a> <code>source</code></p>
+                        <p class="card-text"><a href="bootstrap.html">Font scratchpad</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
