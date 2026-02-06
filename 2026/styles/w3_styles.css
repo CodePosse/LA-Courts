@@ -160,6 +160,9 @@ html {
 .w3-bd-court-yellow {
   border-color: var(--w3-Classic-court-yellow) !important;
 }
+.w3-bd-accent-blue {
+  border-color: var(--w3-FA-Accent-Blue) !important;
+}
 
 /* info pages modules */
 
