@@ -75,6 +75,9 @@ html {
   color: var(--w3-FA-darkerSlate) !important;
 }
 /* background colors */
+.w3-bg-ghostSlate {
+  background-color: var(--w3-FA-ghostSlate) !important;
+}
 .w3-bg-court-black {
   background-color: var(--w3-Classic-court-black) !important;
 }
@@ -113,6 +116,12 @@ html {
 }
 .w3-bg-Classic-court-ltblue {
   background-color: var(--w3-Classic-court-ltblue) !important;
+}
+.w3-bg-Accent-Blue {
+  background-color: var(--w3-FA-Accent-Blue) !important;
+}
+.w3-bg-FA-minimalSlate {
+  background-color: var(--w3-FA-minimalSlate) !important;
 }
 /* buttons */
 .w3-btn-court-primary {
