@@ -105,13 +105,13 @@ html {
 .w3-bg-court-yellow {
   background-color: var(--w3-Classic-court-yellow) !important;
 }
-.w3-FA-lightBrightBlue {
+.w3-bg-FA-lightBrightBlue {
   background-color: var(--w3-FA-lightBrightBlue) !important;
 }
-.w3-FA-highlightBlue {
+.w3-bg-FA-highlightBlue {
   background-color: var(--w3-FA-highlightBlue) !important;
 }
-.w3-Classic-court-ltblue {
+.w3-bg-Classic-court-ltblue {
   background-color: var(--w3-Classic-court-ltblue) !important;
 }
 /* buttons */
