@@ -65,6 +65,9 @@ html {
 .w3-text-court-primary {
   color: var(--w3-Classic-court-primary) !important;
 }
+.w3-text-Accent-Blue {
+  color: var(--w3-FA-Accent-Blue) !important;
+}
 .w3-text-court-yellow {
   color: var(--w3-Classic-court-yellow) !important;
 }
