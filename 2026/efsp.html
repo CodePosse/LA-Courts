@@ -4,7 +4,7 @@
 <head>
     <!--Google Analytics-->
 
-    <title>SAMPLE: Template</title>
+    <title>SAMPLE: EFSP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://lascproduction.blob.core.windows.net/static-assets/wg_pubweb3_v0.9.5.css">
-    <link rel="stylesheet" href="styles/w3_styles.css">
+    <link rel="stylesheet" href="https://lascproduction.blob.core.windows.net/static-assets/web3_design_v0.1.css">
 </head>
 
 
@@ -1135,162 +1135,41 @@
 <!--content-->
 <div class="container px-md-5">
 
-    <div class="container px-md-5 py-4 mt-5 w3-module_cths_news rounded">
-        <form action="">
-            <div class="row">
-                <div class="col-12">
-                    <div class="my-3"><strong class="w3-text-court-primary">Requestor Information</strong></div>
-                    <div class="card rounded shadow2 mb-3">
-                        <div class="card-body row">
-                            <div class="col-md-7 mb-3">
-                                <label for="courtName" class="form-label">Court Name</label>
-                                <input type="text" class="form-control" id="courtName">
-                            </div>
-                            <div class="col-md-7 mb-3">
-                                <label for="agencyName" class="form-label">Agency Name</label>
-                                <input type="text" class="form-control" id="agencyName">
-                            </div>
-                            <div class="col-md-7 mb-3">
-                                <label for="requestorName" class="form-label">Name of Requestor</label>
-                                <input type="text" class="form-control" id="requestorName">
-                            </div>
-                            <div class="col-md-7 mb-3">
-                                <label for="Email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="Email">
-                            </div>
-                        </div>
+    <div class="container px-md-5 py-4 mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-2">Attorneys are required to eFile all documents pursuant to Superior Court of <a
+                    href="#">Los Angeles County Local Rule 3.4</a>.</div>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center"><img src="img/efsp-card.png" alt="EFSP Card" class="img-fluid">
+                        <p><a href="">Logo name</a></p>
                     </div>
-                    <div class="my-3"><strong class="w3-text-court-primary">Mailing Address</strong></div>
-                    <div class="card rounded shadow2 mb-3">
-                        <div class="card-body row">
-                            <div class="col-md-7"> <label for="staddress" class="form-label">Street Address</label>
-                                <input type="text" class="form-control" id="staddress">
-
-                            </div>
-                            <div class="col-md-7"> <label for="address" class="form-label">Address</label> <input
-                                    type="text" class="form-control" id="address">
-
-                            </div>
-                            <div class="col-md-7"> <label for="city" class="form-label">City</label> <input type="text"
-                                    class="form-control" id="city">
-
-                            </div>
-                            <div class="col-md-7 row pe-md-0">
-                                <div class="col-md-7"><label for="state" class="form-label">State</label> <select
-                                        class="form-select" id="state">
-                                        <option value="">Choose...</option>
-                                        <option>California</option>
-                                    </select></div>
-                                <div class="col-md-5 pe-md-0"><label for="zip" class="form-label">Zip Code</label>
-                                    <input type="text" class="form-control" id="zip">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3"><strong class="w3-text-court-primary">Requested Documents</strong>
-                        <p>I am requesting the following documents:</p>
-                    </div>
-                    <div class="card rounded shadow2 mb-3">
-                        <div class="card-body">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
-                                <label class="form-check-label" for="checkDefault2">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault3">
-                                <label class="form-check-label" for="checkDefault3">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault4">
-                                <label class="form-check-label" for="checkDefault4">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault5">
-                                <label class="form-check-label" for="checkDefault5">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault6">
-                                <label class="form-check-label" for="checkDefault6">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault8">
-                                <label class="form-check-label" for="checkDefault8">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault9">
-                                <label class="form-check-label" for="checkDefault9">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault0">
-                                <label class="form-check-label" for="checkDefault0">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                <label class="form-check-label" for="checkDefault">
-                                    checkbox
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3"><strong class="w3-text-court-primary">Certification</strong>
-                        <p>I am requesting the following certification:</p>
-                    </div>
-                    <div class="card rounded shadow2 mb-3">
-                        <div class="card-body">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefaultc">
-                                <label class="form-check-label" for="checkDefaultc">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkChecked">
-                                <label class="form-check-label" for="checkChecked">
-                                    checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkChecked1">
-                                <label class="form-check-label" for="checkChecked1">
-                                    checkbox
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="row">
-                            <div class="col-7"><button type="button"
-                                    class="btn w3-bg-court-primary text-white px-5">Submit</button> <button
-                                    class="btn w3-bg-FA-minimalSlate px-3">Cancel</button></div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </form>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center"><img src="img/efsp-card.png" alt="EFSP Card" class="img-fluid">
+                        <p><a href="">Logo name</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center"><img src="img/efsp-card.png" alt="EFSP Card" class="img-fluid">
+                        <p><a href="">Logo name</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--end content-->
 
 
 <!--footer-->
-<footer class=" container-xxl footer rounded px-3 px-md-5 py-4 mt-5">
+<footer class="container-xxl footer rounded px-3 px-md-5 py-4 mt-5">
     <div class="row">
         <div class="col-lg-6"><img class="w-70"
                 src="https://lascpubstorage.blob.core.windows.net/cpw/LIBWEBRESOURCE-9-LacourtFooterLogo.png"
@@ -1319,12 +1198,10 @@
             <div class="mx-2 ms-md-4">
                 <h6>About</h6>
                 <p class="mt-1">
-                    <a href="/pages/lp/court-communications/tp/about-the-court"> About
-                        the Court </a><br>
+                    <a href="/pages/lp/court-communications/tp/about-the-court"> About the Court </a><br>
                     <a href="/pages/cp/gi-court-holidays"> Court Holidays </a><br>
                     <a href="/pages/lp/careers"> Careers </a><br>
-                    <a href="/pages/lp/court-communications/tp/about-the-court/cp/contact-the-court">
-                        Contact
+                    <a href="/pages/lp/court-communications/tp/about-the-court/cp/contact-the-court"> Contact
                         the Court </a><br>
                 </p>
             </div>
@@ -1364,8 +1241,7 @@
         </div>
     </div>
 </footer>
-<div class="container-xxl text-center py-2"> Copyright &copy; 2026 Superior Court of
-    California County of Los
+<div class="container-xxl text-center py-2"> Copyright &copy; 2026 Superior Court of California County of Los
     Angeles </div>
 <!--end footer-->
 <script src="../adr/js/bootstrap.bundle.min.js"></script>
