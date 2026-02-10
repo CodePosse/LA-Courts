@@ -126,6 +126,9 @@ html {
 .w3-bg-FA-minimalSlate {
   background-color: var(--w3-FA-minimalSlate) !important;
 }
+.w3-bg-FA-darkerSlate {
+  background-color: var(--w3-FA-darkerSlate) !important;
+}
 /* buttons */
 .w3-btn-court-primary {
   background-color: var(--w3-Classic-court-primary);
@@ -280,12 +283,21 @@ button[type="reset"] {
     background-color: var(--w3-FA-highlightBlue) !important;
   }
 }
+.w3-court-rules {
+  .accordion-button::after,
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+}
 .breadcrumb-item a {
   text-decoration: none !important;
   color: var(--w3-Classic-court-black);
 }
 .rounded {
   border-radius: 20px !important;
+}
+.rounded-top {
+  border-radius: 20px 20px 0 0 !important;
 }
 .rounded-bottom {
   border-radius: 0 0 20px 20px !important;
@@ -328,5 +340,28 @@ button[type="reset"] {
     &:hover {
       background-color: var(--w3-FA-minimalSlate);
     }
+  }
+}
+.resource-accordion table tr:hover {
+  background-color: #f5c04f;
+  cursor: pointer;
+}
+.resource-accordion .accordion-button:after {
+  background-color: #232f3d;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  display: flex;
+  transform: rotate(0deg);
+}
+.resource-accordion .accordion-button:not(.collapsed):after {
+  transform: rotate(-180deg);
+}
+.accordion {
+  a,
+  ::marker {
+    color: var(--w3-Classic-court-primary);
+    text-decoration: none;
   }
 }
