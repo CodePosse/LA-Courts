@@ -25,7 +25,7 @@ html {
   --w3-FA-Accent-RedLight: #f2d3d0;
   --w3-FA-ButtonGreen: #437305;
   --w3-FA-ButtonRed: #bc2113;
-  --w3-FA-PrimaryBlue: #0573bc;
+  --w3-FA-PrimaryBlue: #005498;
   --w3-FA-darkSlate: #5a657c;
   --w3-FA-darkerSlate: #475063;
   --w3-FA-ghostSlate: #f7f7fa;
@@ -255,7 +255,24 @@ small,
 
 /* utilities */
 button {
-  background-color: var(--w3-Classic-court-dkblue) !important;
+  background-color: var(--w3-Classic-court-dkblue);
+}
+button[type="submit"] {
+  color: #fff !important;
+  background-color: var(--w3-Classic-court-primary) !important;
+  &:hover {
+    background-color: var(--w3-Classic-court-dkblue) !important;
+  }
+}
+button[type="reset"] {
+  background-color: transparent !important;
+  border: 1px solid black !important;
+  color: black;
+  &:hover {
+    color: var(--w3-Classic-court-dkblue) !important;
+    border-color: inherit !important;
+    background-color: var(--w3-FA-highlightBlue) !important;
+  }
 }
 .breadcrumb-item a {
   text-decoration: none !important;
