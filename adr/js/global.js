@@ -1,5 +1,20 @@
 //Globals
-
+// accessibility for google translate
+$(function () {
+  const observer = new MutationObserver(function () {
+    $('[id^="goog-gt-"]').each(function () {
+      $(this).attr({
+        'aria-hidden': 'true',
+        'tabindex': '-1',
+        'aria-label': this.id
+      });
+    });
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
 
 //tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -20,6 +35,7 @@ a = {
   Site: location.hostname
 };
 console.dir(a);
+
 //dismiss popouts
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
@@ -60,3 +76,5 @@ $(function () {
     $(".programs .card").show();
   };
 });
+
+
