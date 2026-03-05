@@ -4,7 +4,7 @@
 <head>
     <!--Google Analytics-->
 
-    <title>SAMPLE: Judicial Officers</title>
+    <title>SAMPLE: Judicial Officers 5609</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://lascproduction.blob.core.windows.net/static-assets/wg_pubweb3_v0.9.5.css">
-    <link rel="stylesheet" href="./styles/w3_styles.css">
+    <link rel="stylesheet" href="./styles/w3_styles - Copy.css">
 </head>
 
 
@@ -1136,11 +1136,11 @@
 <!--end jumbotron-->
 <!--content-->
 
-<div class="container px-md-5 py-4 mt-5 w3-module_cths_details rounded">
+<div class="container px-md-5 py-4 mt-5 w3-bg-FA-ghostSlate rounded">
     <div class="row">
         <!--sidebar column-->
         <div class="col-md-4 px-3 px-md-1 pe-md-5 ps-md-0">
-            <div class="card rounded mb-3 p-3">
+            <div class="card w3-bd-FA-lightSlate rounded mb-3 p-3">
                 <form class="row g-2">
                     <div class="col-12"> <label for="firstName" class="form-label">First name</label> <input type="text"
                             class="form-control" id="firstName" placeholder="" value="">
@@ -1164,7 +1164,7 @@
                         </select>
                     </div>
                     <div class="col-7"><button class="btn w3-bg-court-primary text-white w-100" type="submit">Search
-                            <i class="fa-solid fa-magnifying-glass ms-2"></i></button></div>
+                            <i class="fa-solid fa-magnifying-glass ms-2 text-white"></i></button></div>
                     <div class="col-5"><button class="btn w-100" type="reset">Clear</button>
                     </div>
                 </form>
@@ -1186,14 +1186,14 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-right mt-md-4"><button type="button"
-                        class="btn w3-bd-accent-blue w3-bg-ghostSlate text-dark border-2" onclick="window.print()"><i
+                        class="btn w3-bd-FA-Accent-Blue w3-bg-White text-dark border-2" onclick="window.print()"><i
                             class="fa-solid fa-print me-2 btn-outline"></i> Print
                         Directory</button></div>
             </div>
             <div class="mb-3 py-0 px-3 px-md-0">
                 <div>Showing 10 results</div>
             </div>
-            <div class="card rounded w3-bd-ltslate w3_cthse_tile">
+            <div class="card w3-bd-FA-lightSlate rounded mb-3 p-1">
                 <div class="card-body">
                     <div class="dept_bar rounded mb-3 px-3 py-2">
 
@@ -1216,6 +1216,25 @@
         <!--end directory column-->
     </div>
 </div>
+
+<div class="container">
+    <nav aria-label="Page navigation" class="w3_pagination p-0 row d-flex justify-content-between">
+        <a class="page-link col-auto" href="#" aria-label="Previous">
+            <i class="fa-solid fa-arrow-left me-2"></i> Previous
+        </a>
+        <div class="col flex-grow-1 d-flex justify-content-center">
+            <div class="page-item"><a class="page-link" href="#">1</a></div>
+            <div class="page-item"><a class="page-link" href="#">2</a></div>
+            <div class="page-item"><a class="page-link" href="#">3</a></div>
+            <div class="page-item"><a class="page-link" href="#">...</a></div>
+        </div>
+        <a class="page-link col-auto" href="#" aria-label="Next">
+            Next <span aria-hidden="true"><i class="fa-solid fa-arrow-right ms-2"></i></span>
+        </a>
+    </nav>
+</div>
+
+
 
 <!--end content-->
 
