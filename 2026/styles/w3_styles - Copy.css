@@ -55,6 +55,10 @@ html {
     color: var(--w3-FA-PrimaryBlue);
   }
   .card {
+    i {
+      font-weight: 600;
+      color: var(--court-primary);
+    }
     .dept_bar {
       background-color: var(--w3-FA-highlightBlue);
     }
@@ -481,14 +485,6 @@ html {
 /* info pages modules */
 
 /* courtroom details module */
-
-.card {
-  border-radius: 10px !important;
-  i {
-    font-weight: 600;
-    color: var(--court-primary);
-  }
-}
 
 .w3_cthse_tile {
   margin-bottom: 1rem;
