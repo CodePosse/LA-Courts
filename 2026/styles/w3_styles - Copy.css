@@ -1,0 +1,657 @@
+/* colors */
+/* as of Jan 13 2026 */
+:root,
+*,
+body,
+html {
+  --w3-Classic-court-black: #231f20;
+  --w3-Classic-court-dkblue: #232f3d;
+  --w3-Classic-court-gold: #f5c04f;
+  --w3-Classic-court-grey: #95a3ab;
+  --w3-Classic-court-ltblue: #d4e5f5;
+  --w3-Classic-court-ltgrey: #eeeeee;
+  --w3-Classic-court-paleblue: #f0f4fc;
+  --w3-Classic-court-primary: #005498;
+  --w3-Classic-court-yellow: #f3c727;
+  --w3-FA-Accent-Blue: #0085eb;
+  --w3-FA-Accent-BlueLight: #f4faff;
+  --w3-FA-Accent-Gold: #f3c629;
+  --w3-FA-Accent-GoldLight: #fdf4d4;
+  --w3-FA-Accent-Green: #7aaf35;
+  --w3-FA-Accent-GreenLIght: #cadfae;
+  --w3-FA-Accent-Orange: #fb9500;
+  --w3-FA-Accent-OrangeLight: #ffcd85;
+  --w3-FA-Accent-Red: #dc2626;
+  --w3-FA-Accent-RedLight: #f2d3d0;
+  --w3-FA-ButtonGreen: #437305;
+  --w3-FA-ButtonRed: #bc2113;
+  --w3-FA-PrimaryBlue: #005498;
+  --w3-FA-darkSlate: #5a657c;
+  --w3-FA-darkerSlate: #475063;
+  --w3-FA-ghostSlate: #f7f7fa;
+  --w3-FA-highlightBlue: #e7f5ff;
+  --w3-FA-LeadspaceBlue: #f4f7fc;
+  --w3-FA-lightBrightBlue: #aad5f6;
+  --w3-FA-lightSlate: #c7ccd6;
+  --w3-FA-medSlate: #8690a4;
+  --w3-FA-minimalSlate: #e5e7ec;
+  --w3-FA-mutedMidnight: #232f3d;
+  --w3-FA-vaporSlate: #f1f2f5;
+  --w3-White: #ffffff;
+  color: var(--w3-Classic-court-black);
+}
+a {
+  text-decoration: none !important;
+  color: var(--w3-FA-PrimaryBlue) !important;
+  &:hover,
+  &:focus {
+    color: var(--w3-Classic-court-dkblue) !important;
+    text-decoration: underline !important;
+  }
+}
+/* text */
+.w3-text-court-black {
+  color: var(--w3-Classic-court-black);
+}
+
+.w3-text-court-dkblue {
+  color: var(--w3-Classic-court-dkblue);
+}
+
+.w3-text-court-gold {
+  color: var(--w3-Classic-court-gold);
+}
+
+.w3-text-court-grey {
+  color: var(--w3-Classic-court-grey);
+}
+
+.w3-text-court-ltblue {
+  color: var(--w3-Classic-court-ltblue);
+}
+
+.w3-text-court-ltgrey {
+  color: var(--w3-Classic-court-ltgrey);
+}
+
+.w3-text-court-paleblue {
+  color: var(--w3-Classic-court-paleblue);
+}
+
+.w3-text-court-primary {
+  color: var(--w3-Classic-court-primary);
+}
+
+.w3-text-court-yellow {
+  color: var(--w3-Classic-court-yellow);
+}
+
+.w3-text-FA-Accent-Blue {
+  color: var(--w3-FA-Accent-Blue);
+}
+
+.w3-text-FA-Accent-BlueLight {
+  color: var(--w3-FA-Accent-BlueLight);
+}
+
+.w3-text-FA-Accent-Gold {
+  color: var(--w3-FA-Accent-Gold);
+}
+
+.w3-text-FA-Accent-GoldLight {
+  color: var(--w3-FA-Accent-GoldLight);
+}
+
+.w3-text-FA-Accent-Green {
+  color: var(--w3-FA-Accent-Green);
+}
+
+.w3-text-FA-Accent-GreenLight {
+  color: var(--w3-FA-Accent-GreenLight);
+}
+
+.w3-text-FA-Accent-Orange {
+  color: var(--w3-FA-Accent-Orange);
+}
+
+.w3-text-FA-Accent-OrangeLight {
+  color: var(--w3-FA-Accent-OrangeLight);
+}
+
+.w3-text-FA-Accent-Red {
+  color: var(--w3-FA-Accent-Red);
+}
+
+.w3-text-FA-Accent-RedLight {
+  color: var(--w3-FA-Accent-RedLight);
+}
+
+.w3-text-FA-ButtonGreen {
+  color: var(--w3-FA-ButtonGreen);
+}
+
+.w3-text-FA-ButtonRed {
+  color: var(--w3-FA-ButtonRed);
+}
+
+.w3-text-FA-PrimaryBlue {
+  color: var(--w3-FA-PrimaryBlue);
+}
+
+.w3-text-FA-darkSlate {
+  color: var(--w3-FA-darkSlate);
+}
+
+.w3-text-FA-darkerSlate {
+  color: var(--w3-FA-darkerSlate);
+}
+
+.w3-text-FA-ghostSlate {
+  color: var(--w3-FA-ghostSlate);
+}
+
+.w3-text-FA-highlightBlue {
+  color: var(--w3-FA-highlightBlue);
+}
+
+.w3-text-FA-leadspaceBlue {
+  color: var(--w3-FA-LeadspaceBlue);
+}
+
+.w3-text-FA-lightBrightBlue {
+  color: var(--w3-FA-lightBrightBlue);
+}
+
+.w3-text-FA-lightSlate {
+  color: var(--w3-FA-lightSlate);
+}
+
+.w3-text-FA-medSlate {
+  color: var(--w3-FA-medSlate);
+}
+
+.w3-text-FA-minimalSlate {
+  color: var(--w3-FA-minimalSlate);
+}
+
+.w3-text-FA-mutedMidnight {
+  color: var(--w3-FA-mutedMidnight);
+}
+
+.w3-text-FA-vaporSlate {
+  color: var(--w3-FA-vaporSlate);
+}
+
+.w3-text-White {
+  color: var(--w3-White);
+}
+/* background colors */
+.w3-bg-court-black {
+  background-color: var(--w3-Classic-court-black);
+}
+
+.w3-bg-court-dkblue {
+  background-color: var(--w3-Classic-court-dkblue);
+}
+
+.w3-bg-court-gold {
+  background-color: var(--w3-Classic-court-gold);
+}
+
+.w3-bg-court-grey {
+  background-color: var(--w3-Classic-court-grey);
+}
+
+.w3-bg-court-ltblue {
+  background-color: var(--w3-Classic-court-ltblue);
+}
+
+.w3-bg-court-ltgrey {
+  background-color: var(--w3-Classic-court-ltgrey);
+}
+
+.w3-bg-court-paleblue {
+  background-color: var(--w3-Classic-court-paleblue);
+}
+
+.w3-bg-court-primary {
+  background-color: var(--w3-Classic-court-primary);
+}
+
+.w3-bg-court-yellow {
+  background-color: var(--w3-Classic-court-yellow);
+}
+
+.w3-bg-FA-Accent-Blue {
+  background-color: var(--w3-FA-Accent-Blue);
+}
+
+.w3-bg-FA-Accent-BlueLight {
+  background-color: var(--w3-FA-Accent-BlueLight);
+}
+
+.w3-bg-FA-Accent-Gold {
+  background-color: var(--w3-FA-Accent-Gold);
+}
+
+.w3-bg-FA-Accent-GoldLight {
+  background-color: var(--w3-FA-Accent-GoldLight);
+}
+
+.w3-bg-FA-Accent-Green {
+  background-color: var(--w3-FA-Accent-Green);
+}
+
+.w3-bg-FA-Accent-GreenLight {
+  background-color: var(--w3-FA-Accent-GreenLight);
+}
+
+.w3-bg-FA-Accent-Orange {
+  background-color: var(--w3-FA-Accent-Orange);
+}
+
+.w3-bg-FA-Accent-OrangeLight {
+  background-color: var(--w3-FA-Accent-OrangeLight);
+}
+
+.w3-bg-FA-Accent-Red {
+  background-color: var(--w3-FA-Accent-Red);
+}
+
+.w3-bg-FA-Accent-RedLight {
+  background-color: var(--w3-FA-Accent-RedLight);
+}
+
+.w3-bg-FA-ButtonGreen {
+  background-color: var(--w3-FA-ButtonGreen);
+}
+
+.w3-bg-FA-ButtonRed {
+  background-color: var(--w3-FA-ButtonRed);
+}
+
+.w3-bg-FA-PrimaryBlue {
+  background-color: var(--w3-FA-PrimaryBlue);
+}
+
+.w3-bg-FA-darkSlate {
+  background-color: var(--w3-FA-darkSlate);
+}
+
+.w3-bg-FA-darkerSlate {
+  background-color: var(--w3-FA-darkerSlate);
+}
+
+.w3-bg-FA-ghostSlate {
+  background-color: var(--w3-FA-ghostSlate);
+}
+
+.w3-bg-FA-highlightBlue {
+  background-color: var(--w3-FA-highlightBlue);
+}
+
+.w3-bg-FA-LeadspaceBlue {
+  background-color: var(--w3-FA-LeadspaceBlue);
+}
+
+.w3-bg-FA-lightBrightBlue {
+  background-color: var(--w3-FA-lightBrightBlue);
+}
+
+.w3-bg-FA-lightSlate {
+  background-color: var(--w3-FA-lightSlate);
+}
+
+.w3-bg-FA-medSlate {
+  background-color: var(--w3-FA-medSlate);
+}
+
+.w3-bg-FA-minimalSlate {
+  background-color: var(--w3-FA-minimalSlate);
+}
+
+.w3-bg-FA-mutedMidnight {
+  background-color: var(--w3-FA-mutedMidnight);
+}
+
+.w3-bg-FA-vaporSlate {
+  background-color: var(--w3-FA-vaporSlate);
+}
+
+.w3-bg-White {
+  background-color: var(--w3-White);
+}
+/* buttons */
+.w3-btn-court-primary {
+  background-color: var(--w3-Classic-court-primary);
+  color: var(--w3-White);
+  & :hover,
+  :focus {
+    background-color: var(--w3-Classic-court-dkblue);
+    color: var(--w3-White);
+  }
+}
+/* borders */
+.w3-bd-court-black {
+  border-color: var(--w3-Classic-court-black);
+}
+
+.w3-bd-court-dkblue {
+  border-color: var(--w3-Classic-court-dkblue);
+}
+
+.w3-bd-court-gold {
+  border-color: var(--w3-Classic-court-gold);
+}
+
+.w3-bd-court-grey {
+  border-color: var(--w3-Classic-court-grey);
+}
+
+.w3-bd-court-ltblue {
+  border-color: var(--w3-Classic-court-ltblue);
+}
+
+.w3-bd-court-ltgrey {
+  border-color: var(--w3-Classic-court-ltgrey);
+}
+
+.w3-bd-court-paleblue {
+  border-color: var(--w3-Classic-court-paleblue);
+}
+
+.w3-bd-court-primary {
+  border-color: var(--w3-Classic-court-primary);
+}
+
+.w3-bd-court-yellow {
+  border-color: var(--w3-Classic-court-yellow);
+}
+
+.w3-bd-FA-Accent-Blue {
+  border-color: var(--w3-FA-Accent-Blue);
+}
+
+.w3-bd-FA-Accent-BlueLight {
+  border-color: var(--w3-FA-Accent-BlueLight);
+}
+
+.w3-bd-FA-Accent-Gold {
+  border-color: var(--w3-FA-Accent-Gold);
+}
+
+.w3-bd-FA-Accent-GoldLight {
+  border-color: var(--w3-FA-Accent-GoldLight);
+}
+
+.w3-bd-FA-Accent-Green {
+  border-color: var(--w3-FA-Accent-Green);
+}
+
+.w3-bd-FA-Accent-GreenLight {
+  border-color: var(--w3-FA-Accent-GreenLight);
+}
+
+.w3-bd-FA-Accent-Orange {
+  border-color: var(--w3-FA-Accent-Orange);
+}
+
+.w3-bd-FA-Accent-OrangeLight {
+  border-color: var(--w3-FA-Accent-OrangeLight);
+}
+
+.w3-bd-FA-Accent-Red {
+  border-color: var(--w3-FA-Accent-Red);
+}
+
+.w3-bd-FA-Accent-RedLight {
+  border-color: var(--w3-FA-Accent-RedLight);
+}
+
+.w3-bd-FA-ButtonGreen {
+  border-color: var(--w3-FA-ButtonGreen);
+}
+
+.w3-bd-FA-ButtonRed {
+  border-color: var(--w3-FA-ButtonRed);
+}
+
+.w3-bd-FA-PrimaryBlue {
+  border-color: var(--w3-FA-PrimaryBlue);
+}
+
+.w3-bd-FA-darkSlate {
+  border-color: var(--w3-FA-darkSlate);
+}
+
+.w3-bd-FA-darkerSlate {
+  border-color: var(--w3-FA-darkerSlate);
+}
+
+.w3-bd-FA-ghostSlate {
+  border-color: var(--w3-FA-ghostSlate);
+}
+
+.w3-bd-FA-highlightBlue {
+  border-color: var(--w3-FA-highlightBlue);
+}
+
+.w3-bd-FA-LeadspaceBlue {
+  border-color: var(--w3-FA-LeadspaceBlue);
+}
+
+.w3-bd-FA-lightBrightBlue {
+  border-color: var(--w3-FA-lightBrightBlue);
+}
+
+.w3-bd-FA-lightSlate {
+  border-color: var(--w3-FA-lightSlate);
+}
+
+.w3-bd-FA-medSlate {
+  border-color: var(--w3-FA-medSlate);
+}
+
+.w3-bd-FA-minimalSlate {
+  border-color: var(--w3-FA-minimalSlate);
+}
+
+.w3-bd-FA-mutedMidnight {
+  border-color: var(--w3-FA-mutedMidnight);
+}
+
+.w3-bd-FA-vaporSlate {
+  border-color: var(--w3-FA-vaporSlate);
+}
+
+.w3-bd-White {
+  border-color: var(--w3-White);
+}
+/* info pages modules */
+
+/* courtroom details module */
+
+.card {
+  border-radius: 10px !important;
+  i {
+    font-weight: 600;
+    color: var(--court-primary);
+  }
+  .dept_bar {
+    background-color: var(--w3-FA-highlightBlue);
+  }
+}
+
+.w3_cthse_tile {
+  margin-bottom: 1rem;
+  small,
+  i {
+    font-size: 0.75rem;
+    color: #717182;
+  }
+  .dept_bar {
+    background-color: var(--w3-FA-highlightBlue);
+  }
+}
+
+/* courthouse directory modules */
+.w3_cthse_filters {
+  border-radius: 20px;
+  padding: 1rem;
+}
+.w3-module_cths_dir {
+  a {
+    text-decoration: none !important;
+    color: var(--w3-Classic-court-black);
+  }
+  .w3_cths_tile {
+    background-color: var(--w3-FA-highlightBlue);
+    border: none;
+    border-radius: 20px;
+    height: 127px;
+
+    img {
+      height: 127px;
+      width: auto;
+    }
+  }
+}
+
+/* courthouse newsroom communications modules */
+.w3-module_cths_news {
+  background-color: var(--w3-FA-ghostSlate);
+  a {
+    text-decoration: none !important;
+    color: var(--w3-FA-PrimaryBlue);
+  }
+  > a {
+    color: var(--w3-Classic-court-primary) !important;
+  }
+  /* courthouse tiles */
+  .w3_cths_tile {
+    background-color: var(--w3-FA-highlightBlue);
+    border: none;
+    border-radius: 20px;
+    height: 127px;
+
+    img {
+      height: 127px;
+      width: auto;
+    }
+  }
+}
+/* EFSP Content */
+.efsp-content {
+  .card img {
+    max-width: 300px;
+    max-height: 150px;
+  }
+}
+/* typography */
+small,
+.fs-sm {
+  font-size: 0.75rem;
+}
+
+/* utilities */
+button {
+  background-color: var(--w3-Classic-court-dkblue);
+}
+button[type="submit"] {
+  color: #fff !important;
+  background-color: var(--w3-Classic-court-primary) !important;
+  &:hover {
+    background-color: var(--w3-Classic-court-dkblue) !important;
+  }
+}
+button[type="reset"] {
+  background-color: transparent !important;
+  border: 1px solid black !important;
+  color: black;
+  &:hover {
+    color: var(--w3-Classic-court-dkblue) !important;
+    border-color: inherit !important;
+    background-color: var(--w3-FA-highlightBlue) !important;
+  }
+}
+.w3-court-rules {
+  .accordion-button::after,
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+}
+.breadcrumb-item a {
+  text-decoration: none !important;
+  color: var(--w3-Classic-court-black);
+}
+.rounded {
+  border-radius: 20px !important;
+}
+.rounded-top {
+  border-radius: 20px 20px 0 0 !important;
+}
+.rounded-bottom {
+  border-radius: 0 0 20px 20px !important;
+}
+.rounded-start {
+  border-radius: 20px 0 0 20px !important;
+}
+.rounded-end {
+  border-radius: 0 20px 20px 0 !important;
+}
+.rounded div.rounded,
+.rounded img.rounded {
+  border-radius: 20px !important;
+}
+
+.rounded-br {
+  border-radius: 0 0 20px 0 !important;
+}
+.rounded-bl {
+  border-radius: 0 0 0 20px !important;
+}
+.shadow2 {
+  box-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.3),
+    0 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+.w3_pagination {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 1rem 0 0;
+  padding: 0 1rem;
+  .page-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 2px;
+    text-align: center;
+    line-height: 38px;
+    &:hover {
+      background-color: var(--w3-FA-minimalSlate);
+    }
+  }
+}
+.resource-accordion table tr:hover {
+  background-color: #f5c04f;
+  cursor: pointer;
+}
+.resource-accordion .accordion-button:after {
+  background-color: #232f3d;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  display: flex;
+  transform: rotate(0deg);
+}
+.resource-accordion .accordion-button:not(.collapsed):after {
+  transform: rotate(-180deg);
+}
+.accordion {
+  a ::marker {
+    color: var(--w3-Classic-court-primary);
+    text-decoration: none;
+  }
+}
