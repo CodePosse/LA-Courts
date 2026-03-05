@@ -40,6 +40,7 @@ html {
   --w3-White: #ffffff;
   color: var(--w3-Classic-court-black);
 }
+/* inside a w3 container with bg color */
 .w3-bg-FA-ghostSlate {
   a {
     text-decoration: none !important;
@@ -52,6 +53,11 @@ html {
   }
   ::marker {
     color: var(--w3-FA-PrimaryBlue);
+  }
+  .card {
+    .dept_bar {
+      background-color: var(--w3-FA-highlightBlue);
+    }
   }
 }
 /* text */
@@ -482,9 +488,6 @@ html {
     font-weight: 600;
     color: var(--court-primary);
   }
-  .dept_bar {
-    background-color: var(--w3-FA-highlightBlue);
-  }
 }
 
 .w3_cthse_tile {
@@ -493,9 +496,6 @@ html {
   i {
     font-size: 0.75rem;
     color: #717182;
-  }
-  .dept_bar {
-    background-color: var(--w3-FA-highlightBlue);
   }
 }
 
