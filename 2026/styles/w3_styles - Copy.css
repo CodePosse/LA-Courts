@@ -40,13 +40,18 @@ html {
   --w3-White: #ffffff;
   color: var(--w3-Classic-court-black);
 }
-a {
-  text-decoration: none !important;
-  color: var(--w3-FA-PrimaryBlue) !important;
-  &:hover,
-  &:focus {
-    color: var(--w3-Classic-court-dkblue) !important;
-    text-decoration: underline !important;
+.w3-bg-FA-ghostSlate {
+  a {
+    text-decoration: none !important;
+    color: var(--w3-FA-PrimaryBlue) !important;
+    &:hover,
+    &:focus {
+      color: var(--w3-Classic-court-dkblue) !important;
+      text-decoration: underline !important;
+    }
+  }
+  ::marker {
+    color: var(--w3-FA-PrimaryBlue);
   }
 }
 /* text */
