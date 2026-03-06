@@ -30,179 +30,480 @@ html {
   --w3-FA-darkerSlate: #475063;
   --w3-FA-ghostSlate: #f7f7fa;
   --w3-FA-highlightBlue: #e7f5ff;
+  --w3-FA-LeadspaceBlue: #f4f7fc;
   --w3-FA-lightBrightBlue: #aad5f6;
   --w3-FA-lightSlate: #c7ccd6;
   --w3-FA-medSlate: #8690a4;
   --w3-FA-minimalSlate: #e5e7ec;
   --w3-FA-mutedMidnight: #232f3d;
   --w3-FA-vaporSlate: #f1f2f5;
-  --w3-Off-White: #ffffff;
   --w3-White: #ffffff;
 }
-/* text */
-.w3-text-court-black {
-  color: var(--w3-Classic-court-black) !important;
+input,
+select,
+textarea {
+  border: 1px solid var(--w3-FA-lightSlate) !important;
 }
-.w3-text-court-dkblue {
-  color: var(--w3-Classic-court-dkblue) !important;
-}
-.w3-text-court-gold {
-  color: var(--w3-Classic-court-gold) !important;
-}
-.w3-text-court-grey {
-  color: var(--w3-Classic-court-grey) !important;
-}
-.w3-text-court-ltblue {
-  color: var(--w3-Classic-court-ltblue) !important;
-}
-.w3-text-court-ltgrey {
-  color: var(--w3-Classic-court-ltgrey) !important;
-}
-
-.w3-text-court-paleblue {
-  color: var(--w3-Classic-court-paleblue) !important;
-}
-.w3-text-court-primary {
-  color: var(--w3-Classic-court-primary) !important;
-}
-.w3-text-Accent-Blue {
-  color: var(--w3-FA-Accent-Blue) !important;
-}
-.w3-text-court-yellow {
-  color: var(--w3-Classic-court-yellow) !important;
-}
-.w3-text-FA-mediumSlate {
-  color: var(--w3-FA-ghostSlate) !important;
-}
-.w3-text-FA-darkerlate {
-  color: var(--w3-FA-darkerSlate) !important;
-}
-/* background colors */
-.w3-bg-ghostSlate {
-  background-color: var(--w3-FA-ghostSlate) !important;
-}
-.w3-bg-court-black {
-  background-color: var(--w3-Classic-court-black) !important;
-}
-.w3-bg-court-dkblue {
-  background-color: var(--w3-Classic-court-dkblue) !important;
-}
-.w3-bg-court-gold {
-  background-color: var(--w3-Classic-court-gold) !important;
-}
-.w3-bg-court-grey {
-  background-color: var(--w3-Classic-court-grey) !important;
-}
-.w3-bg-court-ltblue {
-  background-color: var(--w3-Classic-court-ltblue) !important;
-}
-.w3-bg-court-highlightBlue {
-  background-color: var(--w3-FA-highlightBlue) !important;
-}
-.w3-bg-court-ltgrey {
-  background-color: var(--w3-Classic-court-ltgrey) !important;
-}
-.w3-bg-court-paleblue {
-  background-color: var(--w3-Classic-court-paleblue) !important;
-}
-.w3-bg-court-primary {
-  background-color: var(--w3-Classic-court-primary) !important;
-}
-.w3-bg-court-yellow {
-  background-color: var(--w3-Classic-court-yellow) !important;
-}
-.w3-bg-FA-lightBrightBlue {
-  background-color: var(--w3-FA-lightBrightBlue) !important;
-}
-.w3-bg-FA-highlightBlue {
-  background-color: var(--w3-FA-highlightBlue) !important;
-}
-.w3-bg-Classic-court-ltblue {
-  background-color: var(--w3-Classic-court-ltblue) !important;
-}
-.w3-bg-Accent-Blue {
-  background-color: var(--w3-FA-Accent-Blue) !important;
-}
-.w3-bg-FA-minimalSlate {
-  background-color: var(--w3-FA-minimalSlate) !important;
-}
-.w3-bg-FA-darkerSlate {
-  background-color: var(--w3-FA-darkerSlate) !important;
-}
-/* buttons */
-.w3-btn-court-primary {
-  background-color: var(--w3-Classic-court-primary);
-  color: var(--w3-Off-White);
-}
-.w3-btn-court-primary:hover {
-  background-color: var(--w3-Classic-court-dkblue);
-  color: var(--w3-Off-White);
-}
-/* borders */
-.w3-bd-court-black {
-  border-color: var(--w3-Classic-court-black) !important;
-}
-.w3-bd-court-dkblue {
-  border-color: var(--w3-Classic-court-dkblue) !important;
-}
-.w3-bd-court-gold {
-  border-color: var(--w3-Classic-court-gold) !important;
-}
-.w3-bd-court-grey {
-  border-color: var(--w3-Classic-court-grey) !important;
-}
-.w3-bd-court-ltblue {
-  border-color: var(--w3-Classic-court-ltblue) !important;
-}
-.w3-bd-court-ltgrey {
-  border-color: var(--w3-Classic-court-ltgrey) !important;
-}
-.w3-bd-court-paleblue {
-  border-color: var(--w3-Classic-court-paleblue) !important;
-}
-.w3-bd-court-primary {
-  border-color: var(--w3-Classic-court-primary) !important;
-}
-.w3-bd-court-yellow {
-  border-color: var(--w3-Classic-court-yellow) !important;
-}
-.w3-bd-accent-blue {
-  border-color: var(--w3-FA-Accent-Blue) !important;
-}
-
-/* info pages modules */
-
-/* courtroom details module */
-.w3-module_cths_details {
-  background-color: var(--w3-FA-ghostSlate);
+/* inside a w3 container with bg color */
+.w3-bg-FA-ghostSlate {
   a {
     text-decoration: none !important;
     color: var(--w3-FA-PrimaryBlue) !important;
+    &:hover,
+    &:focus {
+      color: var(--w3-Classic-court-dkblue) !important;
+      text-decoration: underline !important;
+    }
+  }
+  ::marker {
+    color: var(--w3-FA-PrimaryBlue);
   }
   .card {
-    border-radius: 10px !important;
-
-    button i {
-      color: #fff;
-    }
+    border: 1px solid var(--w3-FA-lightSlate);
     i {
       font-weight: 600;
       color: var(--court-primary);
     }
+    small {
+      color: var(--w3-FA-darkSlate);
+    }
   }
-
-  .w3_cthse_tile {
-    margin-bottom: 1rem;
-    small,
-    i {
-      font-size: 0.75rem;
-      color: #717182;
-    }
-    .dept_bar {
-      background-color: var(--w3-FA-highlightBlue);
-    }
+  .dept_bar {
+    background-color: var(--w3-FA-highlightBlue);
+    border: 1px solid var(--w3-FA-lightSlate);
   }
 }
+/* text */
+.w3-text-court-black {
+  color: var(--w3-Classic-court-black);
+}
+
+.w3-text-court-dkblue {
+  color: var(--w3-Classic-court-dkblue);
+}
+
+.w3-text-court-gold {
+  color: var(--w3-Classic-court-gold);
+}
+
+.w3-text-court-grey {
+  color: var(--w3-Classic-court-grey);
+}
+
+.w3-text-court-ltblue {
+  color: var(--w3-Classic-court-ltblue);
+}
+
+.w3-text-court-ltgrey {
+  color: var(--w3-Classic-court-ltgrey);
+}
+
+.w3-text-court-paleblue {
+  color: var(--w3-Classic-court-paleblue);
+}
+
+.w3-text-court-primary {
+  color: var(--w3-Classic-court-primary);
+}
+
+.w3-text-court-yellow {
+  color: var(--w3-Classic-court-yellow);
+}
+
+.w3-text-FA-Accent-Blue {
+  color: var(--w3-FA-Accent-Blue);
+}
+
+.w3-text-FA-Accent-BlueLight {
+  color: var(--w3-FA-Accent-BlueLight);
+}
+
+.w3-text-FA-Accent-Gold {
+  color: var(--w3-FA-Accent-Gold);
+}
+
+.w3-text-FA-Accent-GoldLight {
+  color: var(--w3-FA-Accent-GoldLight);
+}
+
+.w3-text-FA-Accent-Green {
+  color: var(--w3-FA-Accent-Green);
+}
+
+.w3-text-FA-Accent-GreenLight {
+  color: var(--w3-FA-Accent-GreenLight);
+}
+
+.w3-text-FA-Accent-Orange {
+  color: var(--w3-FA-Accent-Orange);
+}
+
+.w3-text-FA-Accent-OrangeLight {
+  color: var(--w3-FA-Accent-OrangeLight);
+}
+
+.w3-text-FA-Accent-Red {
+  color: var(--w3-FA-Accent-Red);
+}
+
+.w3-text-FA-Accent-RedLight {
+  color: var(--w3-FA-Accent-RedLight);
+}
+
+.w3-text-FA-ButtonGreen {
+  color: var(--w3-FA-ButtonGreen);
+}
+
+.w3-text-FA-ButtonRed {
+  color: var(--w3-FA-ButtonRed);
+}
+
+.w3-text-FA-PrimaryBlue {
+  color: var(--w3-FA-PrimaryBlue);
+}
+
+.w3-text-FA-darkSlate {
+  color: var(--w3-FA-darkSlate);
+}
+
+.w3-text-FA-darkerSlate {
+  color: var(--w3-FA-darkerSlate);
+}
+
+.w3-text-FA-ghostSlate {
+  color: var(--w3-FA-ghostSlate);
+}
+
+.w3-text-FA-highlightBlue {
+  color: var(--w3-FA-highlightBlue);
+}
+
+.w3-text-FA-leadspaceBlue {
+  color: var(--w3-FA-LeadspaceBlue);
+}
+
+.w3-text-FA-lightBrightBlue {
+  color: var(--w3-FA-lightBrightBlue);
+}
+
+.w3-text-FA-lightSlate {
+  color: var(--w3-FA-lightSlate);
+}
+
+.w3-text-FA-medSlate {
+  color: var(--w3-FA-medSlate);
+}
+
+.w3-text-FA-minimalSlate {
+  color: var(--w3-FA-minimalSlate);
+}
+
+.w3-text-FA-mutedMidnight {
+  color: var(--w3-FA-mutedMidnight);
+}
+
+.w3-text-FA-vaporSlate {
+  color: var(--w3-FA-vaporSlate);
+}
+
+.w3-text-White {
+  color: var(--w3-White);
+}
+/* background colors */
+.w3-bg-court-black {
+  background-color: var(--w3-Classic-court-black);
+}
+
+.w3-bg-court-dkblue {
+  background-color: var(--w3-Classic-court-dkblue);
+}
+
+.w3-bg-court-gold {
+  background-color: var(--w3-Classic-court-gold);
+}
+
+.w3-bg-court-grey {
+  background-color: var(--w3-Classic-court-grey);
+}
+
+.w3-bg-court-ltblue {
+  background-color: var(--w3-Classic-court-ltblue);
+}
+
+.w3-bg-court-ltgrey {
+  background-color: var(--w3-Classic-court-ltgrey);
+}
+
+.w3-bg-court-paleblue {
+  background-color: var(--w3-Classic-court-paleblue);
+}
+
+.w3-bg-court-primary {
+  background-color: var(--w3-Classic-court-primary);
+}
+
+.w3-bg-court-yellow {
+  background-color: var(--w3-Classic-court-yellow);
+}
+
+.w3-bg-FA-Accent-Blue {
+  background-color: var(--w3-FA-Accent-Blue);
+}
+
+.w3-bg-FA-Accent-BlueLight {
+  background-color: var(--w3-FA-Accent-BlueLight);
+}
+
+.w3-bg-FA-Accent-Gold {
+  background-color: var(--w3-FA-Accent-Gold);
+}
+
+.w3-bg-FA-Accent-GoldLight {
+  background-color: var(--w3-FA-Accent-GoldLight);
+}
+
+.w3-bg-FA-Accent-Green {
+  background-color: var(--w3-FA-Accent-Green);
+}
+
+.w3-bg-FA-Accent-GreenLight {
+  background-color: var(--w3-FA-Accent-GreenLight);
+}
+
+.w3-bg-FA-Accent-Orange {
+  background-color: var(--w3-FA-Accent-Orange);
+}
+
+.w3-bg-FA-Accent-OrangeLight {
+  background-color: var(--w3-FA-Accent-OrangeLight);
+}
+
+.w3-bg-FA-Accent-Red {
+  background-color: var(--w3-FA-Accent-Red);
+}
+
+.w3-bg-FA-Accent-RedLight {
+  background-color: var(--w3-FA-Accent-RedLight);
+}
+
+.w3-bg-FA-ButtonGreen {
+  background-color: var(--w3-FA-ButtonGreen);
+}
+
+.w3-bg-FA-ButtonRed {
+  background-color: var(--w3-FA-ButtonRed);
+}
+
+.w3-bg-FA-PrimaryBlue {
+  background-color: var(--w3-FA-PrimaryBlue);
+}
+
+.w3-bg-FA-darkSlate {
+  background-color: var(--w3-FA-darkSlate);
+}
+
+.w3-bg-FA-darkerSlate {
+  background-color: var(--w3-FA-darkerSlate);
+}
+
+.w3-bg-FA-ghostSlate {
+  background-color: var(--w3-FA-ghostSlate);
+}
+
+.w3-bg-FA-highlightBlue {
+  background-color: var(--w3-FA-highlightBlue);
+}
+
+.w3-bg-FA-LeadspaceBlue {
+  background-color: var(--w3-FA-LeadspaceBlue);
+}
+
+.w3-bg-FA-lightBrightBlue {
+  background-color: var(--w3-FA-lightBrightBlue);
+}
+
+.w3-bg-FA-lightSlate {
+  background-color: var(--w3-FA-lightSlate);
+}
+
+.w3-bg-FA-medSlate {
+  background-color: var(--w3-FA-medSlate);
+}
+
+.w3-bg-FA-minimalSlate {
+  background-color: var(--w3-FA-minimalSlate);
+}
+
+.w3-bg-FA-mutedMidnight {
+  background-color: var(--w3-FA-mutedMidnight);
+}
+
+.w3-bg-FA-vaporSlate {
+  background-color: var(--w3-FA-vaporSlate);
+}
+
+.w3-bg-White {
+  background-color: var(--w3-White);
+}
+/* buttons */
+.w3-btn-court-primary {
+  background-color: var(--w3-Classic-court-primary);
+  color: var(--w3-White);
+  & :hover,
+  :focus {
+    background-color: var(--w3-Classic-court-dkblue);
+    color: var(--w3-White);
+  }
+}
+/* borders */
+.w3-bd-court-black {
+  border-color: var(--w3-Classic-court-black);
+}
+
+.w3-bd-court-dkblue {
+  border-color: var(--w3-Classic-court-dkblue);
+}
+
+.w3-bd-court-gold {
+  border-color: var(--w3-Classic-court-gold);
+}
+
+.w3-bd-court-grey {
+  border-color: var(--w3-Classic-court-grey);
+}
+
+.w3-bd-court-ltblue {
+  border-color: var(--w3-Classic-court-ltblue);
+}
+
+.w3-bd-court-ltgrey {
+  border-color: var(--w3-Classic-court-ltgrey);
+}
+
+.w3-bd-court-paleblue {
+  border-color: var(--w3-Classic-court-paleblue);
+}
+
+.w3-bd-court-primary {
+  border-color: var(--w3-Classic-court-primary);
+}
+
+.w3-bd-court-yellow {
+  border-color: var(--w3-Classic-court-yellow);
+}
+
+.w3-bd-FA-Accent-Blue {
+  border-color: var(--w3-FA-Accent-Blue);
+}
+
+.w3-bd-FA-Accent-BlueLight {
+  border-color: var(--w3-FA-Accent-BlueLight);
+}
+
+.w3-bd-FA-Accent-Gold {
+  border-color: var(--w3-FA-Accent-Gold);
+}
+
+.w3-bd-FA-Accent-GoldLight {
+  border-color: var(--w3-FA-Accent-GoldLight);
+}
+
+.w3-bd-FA-Accent-Green {
+  border-color: var(--w3-FA-Accent-Green);
+}
+
+.w3-bd-FA-Accent-GreenLight {
+  border-color: var(--w3-FA-Accent-GreenLight);
+}
+
+.w3-bd-FA-Accent-Orange {
+  border-color: var(--w3-FA-Accent-Orange);
+}
+
+.w3-bd-FA-Accent-OrangeLight {
+  border-color: var(--w3-FA-Accent-OrangeLight);
+}
+
+.w3-bd-FA-Accent-Red {
+  border-color: var(--w3-FA-Accent-Red);
+}
+
+.w3-bd-FA-Accent-RedLight {
+  border-color: var(--w3-FA-Accent-RedLight);
+}
+
+.w3-bd-FA-ButtonGreen {
+  border-color: var(--w3-FA-ButtonGreen);
+}
+
+.w3-bd-FA-ButtonRed {
+  border-color: var(--w3-FA-ButtonRed);
+}
+
+.w3-bd-FA-PrimaryBlue {
+  border-color: var(--w3-FA-PrimaryBlue);
+}
+
+.w3-bd-FA-darkSlate {
+  border-color: var(--w3-FA-darkSlate);
+}
+
+.w3-bd-FA-darkerSlate {
+  border-color: var(--w3-FA-darkerSlate);
+}
+
+.w3-bd-FA-ghostSlate {
+  border-color: var(--w3-FA-ghostSlate);
+}
+
+.w3-bd-FA-highlightBlue {
+  border-color: var(--w3-FA-highlightBlue);
+}
+
+.w3-bd-FA-LeadspaceBlue {
+  border-color: var(--w3-FA-LeadspaceBlue);
+}
+
+.w3-bd-FA-lightBrightBlue {
+  border-color: var(--w3-FA-lightBrightBlue);
+}
+
+.w3-bd-FA-lightSlate {
+  border-color: var(--w3-FA-lightSlate);
+}
+
+.w3-bd-FA-medSlate {
+  border-color: var(--w3-FA-medSlate);
+}
+
+.w3-bd-FA-minimalSlate {
+  border-color: var(--w3-FA-minimalSlate);
+}
+
+.w3-bd-FA-mutedMidnight {
+  border-color: var(--w3-FA-mutedMidnight);
+}
+
+.w3-bd-FA-vaporSlate {
+  border-color: var(--w3-FA-vaporSlate);
+}
+
+.w3-bd-White {
+  border-color: var(--w3-White);
+}
+/* info pages modules */
+
+/* courtroom details module */
+
+.w3_cthse_tile {
+  margin-bottom: 1rem;
+  small,
+  i {
+    font-size: 0.75rem;
+    color: var(--w3-FA-darkSlate);
+  }
+}
+
 /* courthouse directory modules */
 .w3_cthse_filters {
   border-radius: 20px;
@@ -259,23 +560,24 @@ html {
 /* typography */
 small,
 .fs-sm {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 /* utilities */
-button {
-  background-color: var(--w3-Classic-court-dkblue);
+button,
+.btn-primary {
+  background-color: var(--w3-FA-mutedMidnight);
 }
 button[type="submit"] {
   color: #fff !important;
-  background-color: var(--w3-Classic-court-primary) !important;
+  background-color: var(--w3-FA-mutedMidnight) !important;
   &:hover {
-    background-color: var(--w3-Classic-court-dkblue) !important;
+    background-color: var(--w3-FA-PrimaryBlue) !important;
   }
 }
 button[type="reset"] {
   background-color: transparent !important;
-  border: 1px solid black !important;
+  border: 1px solid var(--w3-FA-lightSlate);
   color: black;
   &:hover {
     color: var(--w3-Classic-court-dkblue) !important;
@@ -359,8 +661,7 @@ button[type="reset"] {
   transform: rotate(-180deg);
 }
 .accordion {
-  a,
-  ::marker {
+  a ::marker {
     color: var(--w3-Classic-court-primary);
     text-decoration: none;
   }
