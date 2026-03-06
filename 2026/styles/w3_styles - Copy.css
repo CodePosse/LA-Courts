@@ -64,6 +64,9 @@ textarea {
       font-weight: 600;
       color: var(--court-primary);
     }
+    small {
+      color: var(--w3-FA-darkSlate);
+    }
   }
   .dept_bar {
     background-color: var(--w3-FA-highlightBlue);
@@ -497,7 +500,7 @@ textarea {
   small,
   i {
     font-size: 0.75rem;
-    color: #717182;
+    color: var(--w3-FA-darkSlate);
   }
 }
 
@@ -557,7 +560,7 @@ textarea {
 /* typography */
 small,
 .fs-sm {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 /* utilities */
