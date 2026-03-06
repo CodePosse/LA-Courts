@@ -577,7 +577,7 @@ button[type="submit"] {
 }
 button[type="reset"] {
   background-color: transparent !important;
-  border: 1px solid black !important;
+  border: 1px solid var(--w3-FA-lightSlate);
   color: black;
   &:hover {
     color: var(--w3-Classic-court-dkblue) !important;
