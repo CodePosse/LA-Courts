@@ -40,6 +40,11 @@ html {
   --w3-White: #ffffff;
   color: var(--w3-Classic-court-black);
 }
+input,
+select,
+textarea {
+  border: 1px solid var(--w3-FA-lightSlate) !important;
+}
 /* inside a w3 container with bg color */
 .w3-bg-FA-ghostSlate {
   a {
@@ -55,13 +60,15 @@ html {
     color: var(--w3-FA-PrimaryBlue);
   }
   .card {
+    border: 1px solid var(--w3-FA-lightSlate);
     i {
       font-weight: 600;
       color: var(--court-primary);
     }
-    .dept_bar {
-      background-color: var(--w3-FA-highlightBlue);
-    }
+  }
+  .dept_bar {
+    background-color: var(--w3-FA-highlightBlue);
+    border: 1px solid var(--w3-FA-lightSlate);
   }
 }
 /* text */
@@ -555,14 +562,15 @@ small,
 }
 
 /* utilities */
-button {
-  background-color: var(--w3-Classic-court-dkblue);
+button,
+.btn-primary {
+  background-color: var(--w3-FA-mutedMidnight);
 }
 button[type="submit"] {
   color: #fff !important;
-  background-color: var(--w3-Classic-court-primary) !important;
+  background-color: var(--w3-FA-mutedMidnight) !important;
   &:hover {
-    background-color: var(--w3-Classic-court-dkblue) !important;
+    background-color: var(--w3-FA-PrimaryBlue) !important;
   }
 }
 button[type="reset"] {
