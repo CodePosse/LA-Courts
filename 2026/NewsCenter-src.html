@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="../adr/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://lascproduction.blob.core.windows.net/static-assets/wg_pubweb3_v0.9.5.css">
-    <link rel="stylesheet" href="./styles/w3_styles.css">
+    <link rel="stylesheet" href="./styles/w3_styles - Copy.css">
     <link href="../jdp/js/syntax/syntax.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -1127,43 +1127,53 @@
                         </li>
                     </ol>
                 </div>
-                <h1 class="mb-md-4">News Releases</h1>
-                <p class="col-md-8">News Releases detail important news on Court announcements, programs and initiatives
-                    that may be of interest to the media.</p>
+                <h1 class="mb-md-4">Public Notices</h1>
+                <p class="col-md-8">Public Notices detail important updates and developments from the Court that impact
+                    court users.</p>
             </div>
-
+            <div class="col-lg-4 p-0 m-0 d-flex justify-content-end rounded-bottom">
+                <img src="https://lascpubstorage.blob.core.windows.net/cpw/LIBWEBRESOURCE-1383-2602_Leadspace-press.jpg"
+                    alt="Public Notices" class="img-fluid rounded-br d-none d-lg-block" role="img">
+            </div>
         </div>
     </div>
     <!--end jumbotron-->
     <!--courtroom newsroom communications-->
-    <div class="container px-md-5 py-4 mt-5 w3-module_cths_news rounded">
-        <!--filter-->
-        <form action=""></form>
-        <div class="row">
-            <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
-                please
-                <a href="#">click here</a>.
+    <div class="container px-md-5 py-4 mt-5 w3-bg-FA-ghostSlate rounded">
+        <form action="">
+            <div class="row">
+                <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
+                    please
+                    <a href="#">click here</a>.
+                </div>
+                <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
+                            class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
+                        id="timeframe" required="">
+                        <option value="">12 months</option>
+                        <option>24 months</option>
+                    </select>
+                </div>
+                <div class="col-8 mb-2 mb-md-3 px-0">
+                    <div class="row m-0 p-0">
+                        <div class="col-10"><label for="search-term" class="form-label visually-hidden">Search</label>
+                            <input type="text" class="form-control" id="search-term"
+                                placeholder="Search news releases..." aria-label="search">
+                        </div>
+                        <div class="col-2 text-nowrap d-flex justify-content-between">
+                            <button class="btn d-inline-flex text-white" type="submit"> <i
+                                    class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> <span
+                                    class="d-none d-md-block">Search</span>
+                            </button> &nbsp;
+                            <button class="btn d-inline-flex" type="reset"><i
+                                    class="fa-solid fa-xmark mt-1 me-md-2"></i><span class="d-none d-md-block">
+                                    Clear</span></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
-                        class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
-                    id="timeframe" required="">
-                    <option value="">12 months</option>
-                    <option>24 months</option>
-                </select>
-            </div>
-            <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
-                    class="form-label visually-hidden">Search</label>
-                <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
-                    aria-label="search">
-            </div>
-            <div class="col-md-4 mb-2"><button class="btn" type="submit">Search <small><i
-                            class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
-            </div>
-        </div>
         </form>
-        <!--end filter-->
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-9">
                 <!-- newsroom communication tiles-->
                 <div class="card rounded mb-3">
                     <div class="card-body row">
@@ -1193,25 +1203,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <nav aria-label="Page navigation" class="w3_pagination p-0 row d-flex justify-content-between">
-            <a class="page-link col-auto" href="#" aria-label="Previous">
-                <i class="fa-solid fa-arrow-left me-2"></i> Previous
-            </a>
-            <div class="col flex-grow-1 d-flex justify-content-center">
-                <div class="page-item"><a class="page-link" href="#">1</a></div>
-                <div class="page-item"><a class="page-link" href="#">2</a></div>
-                <div class="page-item"><a class="page-link" href="#">3</a></div>
-                <div class="page-item"><a class="page-link" href="#">...</a></div>
+            <div class="col-md-9">
+                <nav aria-label="Page navigation" class="w3_pagination p-0 row d-flex justify-content-between">
+                    <a class="page-link col-auto" href="#" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left me-2"></i> Previous
+                    </a>
+                    <div class="col flex-grow-1 d-flex justify-content-center">
+                        <div class="page-item"><a class="page-link" href="#">1</a></div>
+                        <div class="page-item"><a class="page-link" href="#">2</a></div>
+                        <div class="page-item"><a class="page-link" href="#">3</a></div>
+                        <div class="page-item"><a class="page-link" href="#">...</a></div>
+                    </div>
+                    <a class="page-link col-auto" href="#" aria-label="Next">
+                        Next <span aria-hidden="true"><i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </a>
+                </nav>
             </div>
-            <a class="page-link col-auto" href="#" aria-label="Next">
-                Next <span aria-hidden="true"><i class="fa-solid fa-arrow-right ms-2"></i></span>
-            </a>
-
-
-        </nav>
+        </div>
     </div>
     <!--end courtroom newsroom communications-->
     <!--code samples-->
@@ -1225,9 +1233,8 @@
         <div class="row">
             <div class="col-12 px-0">
                 <pre class="brush: html;">
-        <div class="container px-md-5 py-4 mt-5 w3-module_cths_news rounded">
-            <!--filter-->
-            <form action=""></form>
+    <div class="container px-md-5 py-4 mt-5 w3-bg-FA-ghostSlate rounded">
+        <form action="">
             <div class="row">
                 <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
                     please
@@ -1240,47 +1247,74 @@
                         <option>24 months</option>
                     </select>
                 </div>
-                <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
-                        class="form-label visually-hidden">Search</label>
-                    <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
-                        aria-label="search">
-                </div>
-                <div class="col-md-4 mb-2"><button class="btn" type="submit">Search <small><i
-                                class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
+                <div class="col-8 mb-2 mb-md-3 px-0">
+                    <div class="row m-0 p-0">
+                        <div class="col-10"><label for="search-term" class="form-label visually-hidden">Search</label>
+                            <input type="text" class="form-control" id="search-term"
+                                placeholder="Search news releases..." aria-label="search">
+                        </div>
+                        <div class="col-2 text-nowrap d-flex justify-content-between">
+                            <button class="btn d-inline-flex text-white" type="submit"> <i
+                                    class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> <span
+                                    class="d-none d-md-block">Search</span>
+                            </button> &nbsp;
+                            <button class="btn d-inline-flex" type="reset"><i
+                                    class="fa-solid fa-xmark mt-1 me-md-2"></i><span class="d-none d-md-block">
+                                    Clear</span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </form>
-            <!--end filter-->                    <!-- newsroom communication tiles-->
-            <div class="row">
-                <div class="col-12">
-
-                    <div class="card rounded mb-3">
-                        <div class="card-body row">
-                            <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
-                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
-                            </div>
-                            <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span></div>
+        </form>
+        <div class="row">
+            <div class="col-md-9">
+                <!-- newsroom communication tiles-->
+                <div class="card rounded mb-3">
+                    <div class="card-body row">
+                        <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
                         </div>
-                    </div>
-                    <div class="card rounded mb-3">
-                        <div class="card-body row">
-                            <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
-                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
-                            </div>
-                            <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span></div>
-                        </div>
-                    </div>
-                    <div class="card rounded mb-3">
-                        <div class="card-body row">
-                            <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
-                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
-                            </div>
-                            <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span></div>
+                        <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span>
                         </div>
                     </div>
                 </div>
+                <div class="card rounded mb-3">
+                    <div class="card-body row">
+                        <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                        </div>
+                        <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded mb-3">
+                    <div class="card-body row">
+                        <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
+                                Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+                        </div>
+                        <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <nav aria-label="Page navigation" class="w3_pagination p-0 row d-flex justify-content-between">
+                    <a class="page-link col-auto" href="#" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left me-2"></i> Previous
+                    </a>
+                    <div class="col flex-grow-1 d-flex justify-content-center">
+                        <div class="page-item"><a class="page-link" href="#">1</a></div>
+                        <div class="page-item"><a class="page-link" href="#">2</a></div>
+                        <div class="page-item"><a class="page-link" href="#">3</a></div>
+                        <div class="page-item"><a class="page-link" href="#">...</a></div>
+                    </div>
+                    <a class="page-link col-auto" href="#" aria-label="Next">
+                        Next <span aria-hidden="true"><i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </a>
+                </nav>
             </div>
         </div>
+    </div>
                 </pre>
             </div>
         </div>
