@@ -356,6 +356,9 @@ textarea {
   }
 }
 /* accordion */
+.accordion.rounded {
+  border: 1px solid var(--w3-FA-lightSlate);
+}
 .accordion.rounded button.accordion-button.collapsed {
   border-radius: 20px !important;
 }
@@ -644,14 +647,4 @@ button[type="reset"] {
   justify-content: center;
   background-position: center;
   display: flex;
-  transform: rotate(0deg);
-}
-.resource-accordion .accordion-button:not(.collapsed):after {
-  transform: rotate(-180deg);
-}
-.accordion {
-  a ::marker {
-    color: var(--w3-Classic-court-primary);
-    text-decoration: none;
-  }
 }
