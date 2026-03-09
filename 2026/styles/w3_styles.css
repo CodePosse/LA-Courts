@@ -355,8 +355,20 @@ textarea {
     color: var(--w3-White);
   }
 }
+/* accordion */
+.accordion.rounded button.accordion-button.collapsed {
+  border-radius: 20px !important;
+}
+.accordion.rounded button.accordion-button:not(.collapsed) {
+  border-radius: 20px 20px 0 0 !important;
+}
+.accordion-item .accordion-button {
+  background-color: var(--w3-FA-darkerSlate) !important;
+  color: var(--w3-White) !important;
+}
 button.w3-bg-FA-darkerSlate::after {
   filter: brightness(0) invert(1) !important;
+  color: var(--w3-White) !important;
 }
 /* borders */
 .w3-bd-court-black {
@@ -365,6 +377,7 @@ button.w3-bg-FA-darkerSlate::after {
 
 .w3-bd-court-dkblue {
   border-color: var(--w3-Classic-court-dkblue);
+  color: var(--w3-White) !important;
 }
 
 .w3-bd-court-gold {
