@@ -348,7 +348,7 @@ textarea {
 /* buttons */
 .w3-btn-court-primary {
   background-color: var(--w3-Classic-court-primary);
-  color: var(--w3-White);
+  color: var(--w3-White) !important;
   & :hover,
   :focus {
     background-color: var(--w3-Classic-court-dkblue);
@@ -567,6 +567,10 @@ small,
 button,
 .btn-primary {
   background-color: var(--w3-FA-mutedMidnight);
+  color: var(--w3-White);
+  i {
+    color: var(--w3-White) !important;
+  }
 }
 button[type="submit"] {
   color: #fff !important;
@@ -583,6 +587,9 @@ button[type="reset"] {
     color: var(--w3-Classic-court-dkblue) !important;
     border-color: inherit !important;
     background-color: var(--w3-FA-highlightBlue) !important;
+  }
+  i {
+    color: var(--w3-Classic-court-black) !important;
   }
 }
 .w3-court-rules {
