@@ -511,7 +511,7 @@ button.w3-bg-FA-darkerSlate::after {
 
 /* courtroom details module */
 
-.w3_cthse_tile {
+.w3_cthse_tilexxx {
   margin-bottom: 1rem;
   small,
   i {
@@ -521,16 +521,16 @@ button.w3-bg-FA-darkerSlate::after {
 }
 
 /* courthouse directory modules */
-.w3_cthse_filters {
+.w3_cthse_filtersxxx {
   border-radius: 20px;
   padding: 1rem;
 }
-.w3-module_cths_dir {
+.w3-module_cths_dirxxx {
   a {
     text-decoration: none !important;
     color: var(--w3-Classic-court-black);
   }
-  .w3_cths_tile {
+  .w3_cths_tilexxx {
     background-color: var(--w3-FA-highlightBlue);
     border: none;
     border-radius: 20px;
@@ -544,7 +544,7 @@ button.w3-bg-FA-darkerSlate::after {
 }
 
 /* courthouse newsroom communications modules */
-.w3-module_cths_news {
+.w3-module_cths_newsxxx {
   background-color: var(--w3-FA-ghostSlate);
   a {
     text-decoration: none !important;
@@ -554,7 +554,7 @@ button.w3-bg-FA-darkerSlate::after {
     color: var(--w3-Classic-court-primary) !important;
   }
   /* courthouse tiles */
-  .w3_cths_tile {
+  .w3_cths_tilexxx {
     background-color: var(--w3-FA-highlightBlue);
     border: none;
     border-radius: 20px;
