@@ -1170,7 +1170,78 @@
     <!--end ALERT-->
     <div class="row">
         <div class="col-md-4 px-3 px-md-1 pe-md-5 ps-md-0">
-            [left column]
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="card rounded mb-3 p-3">
+                        <form class="row g-2">
+                            <div class="mb-2 text-lowercase">SEARCH FOR THE LASC DISTRICT & COURTHOUSE
+                                WHERE YOUR CASE
+                                BELONGS. Enter a
+                                city/community, a zip code, or both and click search.</div>
+                            <label for="ccom"><small>City/Community</small></label>
+
+
+                            <div class="mb-2">
+                                <select class="form-select" id="ccom">
+                                    <option selected="">Airport Courthouse</option>
+                                    <option value="1">Alameda Courthouse</option>
+                                    <option value="2">Torrance Courthouse</option>
+                                    <option value="3">Central Arraignment Courthouse</option>
+                                </select>
+                            </div> <label for="zip"><small>Zip Code</small></label>
+                            <div class="col-12 mb-2 text-nowrap d-flex justify-content-between">
+                                <input type="number" class="form-control me-1" id="zip" placeholder="Enter Zip Code"
+                                    maxlength="5">
+
+                                <button class="btn w3-bg-court-primary text-white" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass me-2 text-white"></i>Search
+                                </button>
+                                <button class="btn" type="reset"><i class="fa-solid fa-xmark me-2"></i>
+                                    Clear</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button w3-bg-FA-darkerSlate text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Instructions
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Note that results of your search may differ according to whether you have an
+                                        'Unlimited Civil' case (including claims over $25,000.00, Family and Probate
+                                        cases), or a 'Limited Civil' case (including claims for $25,000.00 or less,
+                                        Unlawful Detainer and Small Claims). Please also be aware that adjustments in
+                                        caseload distributions in the San Fernando Valley and East Los Angeles areas,
+                                        and in the North Central District may require your civil or probate case to be
+                                        filed or heard in a different district than that indicated by this locator. If
+                                        your case is from these areas, you should check with the Clerk's Office in order
+                                        to be sure you have the correct information.
+                                    </p>
+                                    <p>
+                                        The fact that the address you select happens to fall within a particular
+                                        district location does not necessarily mean your case is or must be assigned to
+                                        that district. Criteria for assignment of cases to court locations can be found
+                                        in the Los Angeles Superior Court Local Rules Chapter 2.
+                                    </p>
+                                    <p>
+                                        When the results of your search specify that a filing location is to the North,
+                                        South, East or West of a named street, the boundary of the district is the
+                                        centerline of that street.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--details column-->
         <div class="col-md-8">
@@ -1183,8 +1254,8 @@
                     <div class="alert alert-warning alert-dismissible fade show row" role="alert">
                         <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
                         <div class="col-10">
-                            A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a
-                            click if you like.
+                            When the results of your search specify that a filing location is to the North, South, East
+                            or West of a named street, the boundary of the district is the centerline of that street.
                         </div>
                         <div class="col-1">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

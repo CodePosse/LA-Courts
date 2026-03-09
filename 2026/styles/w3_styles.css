@@ -303,7 +303,7 @@ textarea {
 }
 
 .w3-bg-FA-darkerSlate {
-  background-color: var(--w3-FA-darkerSlate);
+  background-color: var(--w3-FA-darkerSlate) !important;
 }
 
 .w3-bg-FA-ghostSlate {
@@ -354,6 +354,9 @@ textarea {
     background-color: var(--w3-Classic-court-dkblue);
     color: var(--w3-White);
   }
+}
+button.w3-bg-FA-darkerSlate::after {
+  filter: brightness(0) invert(1) !important;
 }
 /* borders */
 .w3-bd-court-black {
