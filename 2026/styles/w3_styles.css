@@ -636,6 +636,9 @@ button[type="reset"] {
     }
   }
 }
+
+/* resource accordion */
+/* Override Bootstrap 5 Accordion to contain a table */
 .resource-accordion {
   overflow: hidden;
 }
