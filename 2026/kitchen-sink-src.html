@@ -17,7 +17,7 @@
     <link href="../jdp/js/syntax/syntax.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<>
     <!--header-->
     <header class="container-xxl py-3 px-1 px-xl-3">
         <div class="row d-flex justify-content-between px-4 px-xl-3">
@@ -1152,6 +1152,10 @@
         <div class="row">
             <div>
                 <h2>1 Column Layout</h2>
+                <p>You can change the col from <code>col-12</code> to any other column size like <code>col-md-8</code>
+                    when it is left rail but empty to the right.
+
+                </p>
             </div>
         </div>
         <div class="row">
@@ -1203,7 +1207,7 @@
         </div>
         <hr>
         <!--end layout 2col-->
-        <!--filter section-->
+        <!--filter section (news center)-->
         <div class="row">
             <div class="col-12">
                 <h2>Filter Section</h2>
@@ -1261,7 +1265,7 @@
             </div>
         </div>
         <hr>
-        <!--end filter section-->
+        <!--end filter section (news center)-->
         <!--news tiles section-->
         <div class="row">
             <div class="col-12">
@@ -1483,8 +1487,6 @@
         <hr>
         <!--end accordion with table and neg margin-->
 
-
-
         <!--card courthouse metadata-->
         <div class="row">
             <div class="">
@@ -1522,7 +1524,6 @@
         <!--card courthouse metadata-->
 
         <!--card additional service details-->
-
         <div class="row">
             <div class="col-12">
                 <h2>Additional service tiles</h2>
@@ -1556,7 +1557,6 @@
             </div>
         </div>
         <hr>
-
         <!--end card additional service details-->
 
         <!--card additional information-->
@@ -1603,13 +1603,11 @@
             </div>
         </div>
         <hr>
-
         <!--end card additional information-->
-
 
         <!--card courthouse details tile-->
         <div class="row">
-            <div class="">
+            <div class="col-12">
                 <h2>Courthouse Tile</h2>
                 with code, needs to be inside a container with the class <code>w3-bg-FA-ghostSlate</code>
             </div>
@@ -1662,6 +1660,66 @@
         </div>
         <hr>
         <!--end card courthouse details tile-->
+        <!--alerts-->
+        <div class="row">
+            <div class="col-8">
+                <h2>Dismissable Alerts</h2>
+                Use class <code>.alert-danger</code> but it follows the
+                standard <a href="https://getbootstrap.com/docs/5.0/components/alerts/" target="_blank">Bootstrap alert
+                    structure</a> for colors. There is jQuery used to make these dismissable on clicking the "x" when we
+                add the
+                class <code>.alert-dismissible</code>.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 my-2">
+                <div class="alert alert-danger alert-dismissible fade show row" role="alert">
+                    <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
+                    <div class="col-10">
+                        <ul>
+                            <li>
+                                Please be aware that a mailing address may not be a proper indicator of true geographic
+                                location. Mailing addresses sometimes use the name of a nearby community where the post
+                                office
+                                is located, instead of the actual city or unincorporated area where the case originated.
+                            </li>
+                            <li>
+                                If you are unsure about the true name of the community in which an address is located,
+                                consult a
+                                map or other resource that accurately shows municipal boundaries.
+                            </li>
+                            <li>
+                                You may locate and identify names of unincorporated areas of Los Angeles County at
+                                the <a href="https://www.lacounty.gov/region-planning/" target="_blank"
+                                    class="alert-link">Department of Regional
+                                    Planning</a> website.
+                            </li>
+                            <li>
+                                You may find the zip code for an address at the <a href="https://tools.usps.com/"
+                                    target="_blank" class="alert-link">US Postal Service</a> website.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                    <div class="alert alert-danger alert-dismissible fade show row" role="alert">
+                        <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
+                        <div class="col-10">
+                            [alert body]
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </pre>
+            </div>
+        </div>
+        <!-- end alerts-->
     </div>
 
     <!--footer-->
@@ -1757,6 +1815,6 @@
         }(), SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
     </script>
     <script src="js/OG.js"></script>
-</body>
+    </body>
 
 </html>
