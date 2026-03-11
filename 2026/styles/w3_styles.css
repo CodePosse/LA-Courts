@@ -18,7 +18,7 @@ html {
   --w3-FA-Accent-Gold: #f3c629;
   --w3-FA-Accent-GoldLight: #fdf4d4;
   --w3-FA-Accent-Green: #7aaf35;
-  --w3-FA-Accent-GreenLIght: #cadfae;
+  --w3-FA-Accent-GreenLight: #cadfae;
   --w3-FA-Accent-Orange: #fb9500;
   --w3-FA-Accent-OrangeLight: #ffcd85;
   --w3-FA-Accent-Red: #dc2626;
@@ -29,10 +29,10 @@ html {
   --w3-FA-darkSlate: #5a657c;
   --w3-FA-darkerSlate: #475063;
   --w3-FA-ghostSlate: #f7f7fa;
-  --w3-FA-highlightBlue: #e7f5ff;
+  --w3-FA-highLightBlue: #e7f5ff;
   --w3-FA-LeadspaceBlue: #f4f7fc;
-  --w3-FA-lightBrightBlue: #aad5f6;
-  --w3-FA-lightSlate: #c7ccd6;
+  --w3-FA-LightBrightBlue: #aad5f6;
+  --w3-FA-LightSlate: #c7ccd6;
   --w3-FA-medSlate: #8690a4;
   --w3-FA-minimalSlate: #e5e7ec;
   --w3-FA-mutedMidnight: #232f3d;
@@ -42,7 +42,7 @@ html {
 input,
 select,
 textarea {
-  border: 1px solid var(--w3-FA-lightSlate) !important;
+  border: 1px solid var(--w3-FA-LightSlate) !important;
 }
 /* inside a w3 container with bg color */
 .w3-bg-FA-ghostSlate {
@@ -59,7 +59,7 @@ textarea {
     color: var(--w3-FA-PrimaryBlue);
   }
   .card {
-    border: 1px solid var(--w3-FA-lightSlate);
+    border: 1px solid var(--w3-FA-LightSlate);
     i {
       font-weight: 600;
       color: var(--court-primary);
@@ -69,8 +69,8 @@ textarea {
     }
   }
   .dept_bar {
-    background-color: var(--w3-FA-highlightBlue);
-    border: 1px solid var(--w3-FA-lightSlate);
+    background-color: var(--w3-FA-highLightBlue);
+    border: 1px solid var(--w3-FA-LightSlate);
   }
 }
 /* text */
@@ -174,20 +174,20 @@ textarea {
   color: var(--w3-FA-ghostSlate);
 }
 
-.w3-text-FA-highlightBlue {
-  color: var(--w3-FA-highlightBlue);
+.w3-text-FA-highLightBlue {
+  color: var(--w3-FA-highLightBlue);
 }
 
 .w3-text-FA-leadspaceBlue {
   color: var(--w3-FA-LeadspaceBlue);
 }
 
-.w3-text-FA-lightBrightBlue {
-  color: var(--w3-FA-lightBrightBlue);
+.w3-text-FA-LightBrightBlue {
+  color: var(--w3-FA-LightBrightBlue);
 }
 
-.w3-text-FA-lightSlate {
-  color: var(--w3-FA-lightSlate);
+.w3-text-FA-LightSlate {
+  color: var(--w3-FA-LightSlate);
 }
 
 .w3-text-FA-medSlate {
@@ -310,20 +310,20 @@ textarea {
   background-color: var(--w3-FA-ghostSlate);
 }
 
-.w3-bg-FA-highlightBlue {
-  background-color: var(--w3-FA-highlightBlue);
+.w3-bg-FA-highLightBlue {
+  background-color: var(--w3-FA-highLightBlue);
 }
 
 .w3-bg-FA-LeadspaceBlue {
   background-color: var(--w3-FA-LeadspaceBlue);
 }
 
-.w3-bg-FA-lightBrightBlue {
-  background-color: var(--w3-FA-lightBrightBlue);
+.w3-bg-FA-LightBrightBlue {
+  background-color: var(--w3-FA-LightBrightBlue);
 }
 
-.w3-bg-FA-lightSlate {
-  background-color: var(--w3-FA-lightSlate);
+.w3-bg-FA-LightSlate {
+  background-color: var(--w3-FA-LightSlate);
 }
 
 .w3-bg-FA-medSlate {
@@ -360,7 +360,7 @@ textarea {
   box-shadow: none;
 }
 .accordion.rounded {
-  border: 1px solid var(--w3-FA-lightSlate);
+  border: 1px solid var(--w3-FA-LightSlate);
 }
 .accordion.rounded button.accordion-button.collapsed {
   border-radius: 20px !important;
@@ -475,20 +475,20 @@ button.w3-bg-FA-darkerSlate::after {
   border-color: var(--w3-FA-ghostSlate);
 }
 
-.w3-bd-FA-highlightBlue {
-  border-color: var(--w3-FA-highlightBlue);
+.w3-bd-FA-highLightBlue {
+  border-color: var(--w3-FA-highLightBlue);
 }
 
 .w3-bd-FA-LeadspaceBlue {
   border-color: var(--w3-FA-LeadspaceBlue);
 }
 
-.w3-bd-FA-lightBrightBlue {
-  border-color: var(--w3-FA-lightBrightBlue);
+.w3-bd-FA-LightBrightBlue {
+  border-color: var(--w3-FA-LightBrightBlue);
 }
 
-.w3-bd-FA-lightSlate {
-  border-color: var(--w3-FA-lightSlate);
+.w3-bd-FA-LightSlate {
+  border-color: var(--w3-FA-LightSlate);
 }
 
 .w3-bd-FA-medSlate {
@@ -523,7 +523,7 @@ button.w3-bg-FA-darkerSlate::after {
     color: var(--w3-Classic-court-black);
   }
   .w3_cths_tile {
-    background-color: var(--w3-FA-highlightBlue);
+    background-color: var(--w3-FA-highLightBlue);
     border: none;
     border-radius: 20px;
     height: 127px;
@@ -566,12 +566,12 @@ button[type="submit"] {
 }
 button[type="reset"] {
   background-color: transparent !important;
-  border: 1px solid var(--w3-FA-lightSlate);
+  border: 1px solid var(--w3-FA-LightSlate);
   color: black;
   &:hover {
     color: var(--w3-Classic-court-dkblue) !important;
     border-color: inherit !important;
-    background-color: var(--w3-FA-highlightBlue) !important;
+    background-color: var(--w3-FA-highLightBlue) !important;
   }
   i {
     color: var(--w3-Classic-court-black) !important;
