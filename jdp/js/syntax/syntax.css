@@ -28,10 +28,11 @@
 	text-shadow:none !important;
 }
 .syntaxhighlighter {
-	width:99% !important;
+	width:100% !important;
 	margin:1em 0 1em 0 !important;
 	padding:1px !important;
 	position:relative !important;
+	outline:2px solid #0FFFC7 !important;
 }
 .syntaxhighlighter code {
 	display:inline !important;
@@ -219,6 +220,7 @@ background:none !important;
 .syntaxhighlighter .line.alt2 {
 	background-color:#F8F8F8 !important;
 }
+.syntaxhighlighter .line:hover{background-color: hsl(142, 100%, 90%) !important;}
 .syntaxhighlighter .toolbar {
 	background-color:#F8F8F8 !important;
 	border:#eee solid 1px !important;
