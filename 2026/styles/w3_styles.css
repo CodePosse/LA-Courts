@@ -671,4 +671,4 @@ button[type="reset"] {
 }
 
 /* legacy rounded fix */
-div[class*='w3-bg-'] .rounded {border-radius:20px ! important;}
+div[class*='w3-bg-'], .accordion { .rounded, &.rounded {border-radius:20px ! important;}}
