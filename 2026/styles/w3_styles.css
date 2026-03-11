@@ -671,4 +671,5 @@ button[type="reset"] {
 }
 
 /* legacy rounded fix */
+/* a random accordion may be outside a new w3 bg container, so we need to target both */
 div[class*='w3-bg-'], .accordion { .rounded, &.rounded {border-radius:20px ! important;}}
