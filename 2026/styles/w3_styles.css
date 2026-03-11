@@ -553,8 +553,8 @@ button,
 .btn-primary {
   background-color: var(--w3-FA-mutedMidnight);
   color: var(--w3-White);
-  i {
-    color: var(--w3-White);
+  &:not[type=button] i {
+    color: var(--w3-White) !important;
   }
 }
 button[type="submit"] {
