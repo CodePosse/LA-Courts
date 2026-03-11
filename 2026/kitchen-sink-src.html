@@ -17,7 +17,7 @@
     <link href="../jdp/js/syntax/syntax.css" rel="stylesheet" type="text/css">
 </head>
 
-<>
+<body>
     <!--header-->
     <header class="container-xxl py-3 px-1 px-xl-3">
         <div class="row d-flex justify-content-between px-4 px-xl-3">
@@ -1207,6 +1207,7 @@
         </div>
         <hr>
         <!--end layout 2col-->
+
         <!--filter section (news center)-->
         <div class="row">
             <div class="col-12">
@@ -1266,6 +1267,7 @@
         </div>
         <hr>
         <!--end filter section (news center)-->
+
         <!--news tiles section-->
         <div class="row">
             <div class="col-12">
@@ -1299,6 +1301,7 @@
         </div>
         <hr>
         <!--end news tiles section-->
+
         <!--pagination-->
         <div class="row">
             <div class="col-12">
@@ -1346,6 +1349,7 @@
         </div>
         <hr>
         <!--end pagination-->
+
         <!--accordion sample-->
         <div class="row">
             <div class="col-12">
@@ -1660,6 +1664,7 @@
         </div>
         <hr>
         <!--end card courthouse details tile-->
+
         <!--alerts-->
         <div class="row">
             <div class="col-8">
@@ -1668,12 +1673,12 @@
                 standard <a href="https://getbootstrap.com/docs/5.0/components/alerts/" target="_blank">Bootstrap alert
                     structure</a> for colors. There is jQuery used to make these dismissable on clicking the "x" when we
                 add the
-                class <code>.alert-dismissible</code>.
+                class <code>.alert-dismissible rounded</code>.
             </div>
         </div>
         <div class="row">
             <div class="col-md-7 my-2">
-                <div class="alert alert-danger alert-dismissible fade show row" role="alert">
+                <div class="alert alert-danger alert-dismissible rounded fade show row" role="alert">
                     <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
                     <div class="col-10">
                         <ul>
@@ -1707,7 +1712,7 @@
             </div>
             <div class="col-12 px-0">
                 <pre class="brush: html;">
-                    <div class="alert alert-danger alert-dismissible fade show row" role="alert">
+                    <div class="alert alert-danger alert-dismissible rounded fade show row" role="alert">
                         <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
                         <div class="col-10">
                             [alert body]
@@ -1719,7 +1724,182 @@
                 </pre>
             </div>
         </div>
+        <hr>
         <!-- end alerts-->
+
+        <!--address form-->
+        <div class="row">
+            <div class="col-12">
+                <h2>Address Form</h2>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="my-3">
+                        <h5>Address Form</h5>
+                    </div>
+                    <div class="card rounded mb-3">
+                        <div class="card-body row">
+                            <div class="col-md-7"> <label for="staddress" class="form-label">Street Address</label>
+                                <input type="text" class="form-control" id="staddress">
+
+                            </div>
+                            <div class="col-md-7"> <label for="address" class="form-label">Address</label> <input
+                                    type="text" class="form-control" id="address">
+
+                            </div>
+                            <div class="col-md-7"> <label for="city" class="form-label">City</label> <input type="text"
+                                    class="form-control" id="city">
+
+                            </div>
+                            <div class="col-md-7 row pe-md-0">
+                                <div class="col-md-7"><label for="state" class="form-label">State</label> <select
+                                        class="form-select" id="state">
+                                        <option value="">Choose...</option>
+                                        <option>California</option>
+                                    </select></div>
+                                <div class="col-md-5 pe-md-0"><label for="zip" class="form-label">Zip Code</label>
+                                    <input type="text" class="form-control" id="zip">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+                <div class="row">
+                    <div class="my-3">
+                        <h5>Section title</h5>
+                    </div>
+                    <div class="card rounded mb-3">
+                        <div class="card-body row">
+                            <div class="col-md-7"> <label for="staddress" class="form-label">Street Address</label>
+                                <input type="text" class="form-control" id="staddress">
+
+                            </div>
+                            <div class="col-md-7"> <label for="address" class="form-label">Address</label> <input
+                                    type="text" class="form-control" id="address">
+                            </div>
+                            <div class="col-md-7"> <label for="city" class="form-label">City</label> <input type="text"
+                                    class="form-control" id="city">
+
+                            </div>
+                            <div class="col-md-7 row pe-md-0">
+                                <div class="col-md-7"><label for="state" class="form-label">State</label> <select
+                                        class="form-select" id="state">
+                                        <option value="">Choose...</option>
+                                        <option>California</option>
+                                    </select></div>
+                                <div class="col-md-5 pe-md-0"><label for="zip" class="form-label">Zip Code</label>
+                                    <input type="text" class="form-control" id="zip">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <!--end address form-->
+
+        <!--buttons-->
+        <div class="row">
+            <div class="col-12">
+                <h2>Buttons (no icons)</h2>
+                <p>Try to use <code>type="submit"</code> or <code>type="reset"</code> because the CSS has them defined,
+                    but classes work too</p>
+            </div>
+            <div class="col-12">
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-7">
+                            <button type="submit" class="btn w3-bg-court-primary text-white px-5">Submit</button>
+                            <button class="btn px-3" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <h2>Buttons (optional icons)</h2>
+                <p>Try to use <code>type="submit"</code> or <code>type="reset"</code> because the CSS has them defined,
+                    but classes work too. Remove the text if you want icons only. We use <a
+                        href="https://fontawesome.com/v6/search" target="_blank">FontAwesome 6.x</a></p>
+            </div>
+            <div class="col-12">
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-7">
+                            <button type="submit" class="btn w3-bg-court-primary text-white px-5"><i
+                                    class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> Search</button>
+                            <button class="btn px-3" type="reset"><i class="fa-solid fa-xmark mt-1 me-md-2"></i>
+                                Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html">
+                    <div class="my-3">
+                        <div class="row">
+                            <div class="col-7">
+                                <button type="submit" class="btn w3-bg-court-primary text-white px-5">
+                                    <i class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> Submit
+                                </button> 
+                                <button class="btn px-3" type="reset"><i class="fa-solid fa-xmark mt-1 me-md-2"></i> Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Buttons (responsive)</h2>
+                <p>Icons only on mobile, they are inline with a flex behaviour</p>
+            </div>
+            <div class="col-md-4">
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-3 col-md-7 d-flex justify-content-between">
+                            <button class="btn d-inline-flex text-white" type="submit"> <i
+                                    class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> <span
+                                    class="d-none d-md-block">Search</span>
+                            </button> &nbsp;
+                            <button class="btn d-inline-flex" type="reset"><i
+                                    class="fa-solid fa-xmark mt-1 me-md-2"></i><span class="d-none d-md-block">
+                                    Clear</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html">
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-3 col-md-7 d-flex justify-content-between">
+                            <button class="btn d-inline-flex text-white" type="submit">
+                                <i class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> <span class="d-none d-md-block">Search</span>
+                            </button> 
+                                &nbsp;
+                            <button class="btn d-inline-flex" type="reset">
+                                <i class="fa-solid fa-xmark mt-1 me-md-2"></i><span class="d-none d-md-block">Clear</span></button>
+                        </div>
+                    </div>
+                </div>
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <!--end buttons-->
     </div>
 
     <!--footer-->
@@ -1815,6 +1995,6 @@
         }(), SyntaxHighlighter.config.strings.expandSource = "show source", SyntaxHighlighter.config.strings.viewSource = "view source", SyntaxHighlighter.config.strings.copyToClipboard = "copy to clipboard", SyntaxHighlighter.config.strings.copyToClipboardConfirmation = "The code is in your clipboard now", SyntaxHighlighter.config.strings.print = "print", SyntaxHighlighter.config.strings.help = "?", SyntaxHighlighter.config.strings.alert = "SyntaxHighlighter\n\n", SyntaxHighlighter.config.strings.noBrush = "Can't find brush for: ", SyntaxHighlighter.config.strings.brushNotHtmlScript = "Brush wasn't configured for html-script option: ", SyntaxHighlighter.all()
     </script>
     <script src="js/OG.js"></script>
-    </body>
+</body>
 
 </html>

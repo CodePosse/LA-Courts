@@ -1147,23 +1147,24 @@
 
     <!--code samples-->
     <div class="container my-5 w3-bg-FA-ghostSlate p-4 rounded">
+
+        <!--layout 2col-->
         <div class="row">
             <div>
-                <h2>Courthouse Newsroom Communications Layout</h2>
+                <h2>2 column Layout</h2>
+                <p>This has a lead space with an alert area.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12 px-0">
                 <pre class="brush: html;">
                     <div class="container px-md-5 py-4 mt-5 w3-bg-FA-ghostSlate rounded">
-                        <!--ALERT-->
                         <div class="row">
                             <div class="col-md-8 mb-2">
                                 [alert]
                             </div>
                         </div>
-                        <!--end ALERT-->
-                            <div class="row">
+                        <div class="row">
                             <!--filters and meta column-->
                             <div class="col-md-4 px-3 px-md-1 pe-md-5 ps-md-0">
                                 [left column]
@@ -1172,9 +1173,14 @@
                             <!--content column-->
                             <div class="col-md-8">
                                 <div class="row px-0 mb-4">
-                                    <div class="col">
-                                        [right column]
-                                    </div>                            
+                                    <div class="col-12">[text above 2nd alert]</div>
+                                    <div class="col-12 my-0 my-md-3">[2nd alert]</div>
+                                    <div class="col-12 mb-3">
+                                        <small>[result count]</small>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        [cards]
+                                    </div>                          
                                 </div>
                             </div>
                             <!--end content column-->
@@ -1184,139 +1190,144 @@
             </div>
         </div>
         <hr>
+        <!--end layout 2col-->
+
+
+
+
+        <!--search sample-->
         <div class="row">
             <div class="col-12">
-                <h2>Filter Section</h2>
+                <h2>Search</h2>
             </div>
-            <div class="col-8">
-                <div class="row">
-                    <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles
-                        County,
-                        please
-                        <a href="#">click here</a>.
-                    </div>
-                    <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
-                                class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
-                            id="timeframe" required="">
-                            <option value="">12 months</option>
-                            <option>24 months</option>
-                        </select>
-                    </div>
-                    <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
-                            class="form-label visually-hidden">Search</label>
-                        <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
-                            aria-label="search">
-                    </div>
-                    <div class="col-md-4 mb-2"><button class="btn" type="submit">Search <small><i
-                                    class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 px-0">
-                <pre class="brush: html;">
-        <div class="row">
-            <div class="col-12 mb-2 mb-md-3">To receive news releases from the Superior Court of Los Angeles County,
-                please
-                <a href="#">click here</a>.
-            </div>
-            <div class="col-md-5 mb-2 mb-md-3"> <label for="timeframe" class="form-label"><i
-                        class="fa-regular fa-calendar me-2"></i> Timeframe </label> <select class="form-select"
-                    id="timeframe" required="">
-                    <option value="">12 months</option>
-                    <option>24 months</option>
-                </select>
-            </div>
-            <div class="col-md-8 mb-2 mb-md-3"><label for="search-term"
-                    class="form-label visually-hidden">Search</label>
-                <input type="text" class="form-control" id="search-term" placeholder="Search news releases..."
-                    aria-label="search">
-            </div>
-            <div class="col-md-4 mb-2"><button class="btn" type="submit">Search <small><i
-                            class="fa-solid fa-magnifying-glass ms-2"></i></small></button>
-            </div>
-        </div>
-                </pre>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-12">
-                <h2>News Tiles</h2>
-                These are pretty basic <code>.card</code> classes from Bootstrap with a bit of custom styling.
-            </div>
-            <div class="col-8">
-                <div class="card rounded mb-3">
-                    <div class="card-body row">
-                        <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
-                                Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
-                        </div>
-                        <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 px-0">
-                <pre class="brush: html;">
-                    <div class="card rounded mb-3">
-                        <div class="card-body row">
-                            <div class="col-md-9"><a href="">Superior Court of Los Angeles County Announces New Expanded
-                                    Divorce Option for Parties Seeking Amicable Divorce, Beginning Jan. 1, 2026</a>
+            <div class="col-4">
+                <div class="col-12 mb-3">
+                    <div class="card rounded mb-3 p-3">
+                        <form class="">
+                            <div class="row">
+                                <div class="mb-2">Search for The LASC District &amp; Courthouse where your
+                                    case belongs. Enter a city/community, a zip code, or both and click Search.</div>
+                                <label for="ccom"><small>City/Community</small></label>
+                                <div class="mb-2">
+                                    <select class="form-select" id="ccom">
+                                        <option selected="">Airport Courthouse</option>
+                                        <option value="1">Alameda Courthouse</option>
+                                        <option value="2">Torrance Courthouse</option>
+                                        <option value="3">Central Arraignment Courthouse</option>
+                                    </select>
+                                </div>
+                                <label for="zip"><small>Zip Code</small></label>
+                                <div class="row pe-3">
+                                    <div class="col-9 col-md-5 pe-1">
+                                        <input type="number" class="form-control w-100" id="zip" placeholder=""
+                                            aria-label="search" size="5" maxlength="5">
+                                    </div>
+                                    <div class="col-3 col-md-7 d-flex justify-content-between">
+                                        <button class="btn d-inline-flex text-white" type="submit"> <i
+                                                class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> <span
+                                                class="d-none d-md-block">Search</span>
+                                        </button> &nbsp;
+                                        <button class="btn d-inline-flex" type="reset"><i
+                                                class="fa-solid fa-xmark mt-1 me-md-2"></i><span
+                                                class="d-none d-md-block">
+                                                Clear</span></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3"><span class="w3-text-FA-darkerSlate">Published: 12/29/2025</span></div>
-                        </div>
+                        </form>
                     </div>
-                </pre>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-12">
-                <h2>Pagination</h2>
-                This is a <code>nav</code> element with flexbox styling to space out the previous and next buttons.
-            </div>
-            <div class="col-12">
-                <div class="container">
-                    <nav aria-label="Page navigation" class="w3_pagination p-0 row d-flex justify-content-between">
-                        <a class="page-link col-auto" href="#" aria-label="Previous">
-                            <i class="fa-solid fa-arrow-left me-2"></i> Previous
-                        </a>
-                        <div class="col flex-grow-1 d-flex justify-content-center">
-                            <div class="page-item"><a class="page-link" href="#">1</a></div>
-                            <div class="page-item"><a class="page-link" href="#">2</a></div>
-                            <div class="page-item"><a class="page-link" href="#">3</a></div>
-                            <div class="page-item"><a class="page-link" href="#">...</a></div>
-                        </div>
-                        <a class="page-link col-auto" href="#" aria-label="Next">
-                            Next <span aria-hidden="true"><i class="fa-solid fa-arrow-right ms-2"></i></span>
-                        </a>
-                    </nav>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12 px-0">
-                <pre class="brush: html">
-                    <nav aria-label="Page navigation" class="w3_pagination p-0 row d-flex justify-content-between">
-                        <a class="page-link col-auto" href="#" aria-label="Previous">
-                            <i class="fa-solid fa-arrow-left me-2"></i> Previous
-                        </a>
-                        <div class="col flex-grow-1 d-flex justify-content-center">
-                            <div class="page-item"><a class="page-link" href="#">1</a></div>
-                            <div class="page-item"><a class="page-link" href="#">2</a></div>
-                            <div class="page-item"><a class="page-link" href="#">3</a></div>
-                            <div class="page-item"><a class="page-link" href="#">...</a></div>
-                        </div>
-                        <a class="page-link col-auto" href="#" aria-label="Next">
-                            Next <span aria-hidden="true"><i class="fa-solid fa-arrow-right ms-2"></i></span>
-                        </a>
-                    </nav>
+                <pre class="brush: html;">
+					<div class="col-12 mb-3">
+                    <div class="card rounded mb-3 p-3">
+                        <form class="">
+                            <div class="row">
+                                <div class="mb-2">Search for The LASC District &amp; Courthouse where your
+                                    case belongs. Enter a city/community, a zip code, or both and click Search.</div>
+                                <label for="ccom"><small>City/Community</small></label>
+                                <div class="mb-2">
+                                    <select class="form-select" id="ccom">
+                                        <option selected="">Airport Courthouse</option>
+                                        <option value="1">Alameda Courthouse</option>
+                                        <option value="2">Torrance Courthouse</option>
+                                        <option value="3">Central Arraignment Courthouse</option>
+                                    </select>
+                                </div> 
+                                <label for="zip"><small>Zip Code</small></label>
+                                <div class="row pe-3">
+                                    <div class="col-9 col-md-5 pe-1">
+                                        <input type="number" class="form-control w-100" id="zip" placeholder="" aria-label="search" size="5" maxlength="5">
+                                    </div>
+                                    <div class="col-3 col-md-7 d-flex justify-content-between">
+                                        <button class="btn d-inline-flex text-white" type="submit"> <i class="fa-solid fa-magnifying-glass me-md-2 mt-1 text-white"></i> <span class="d-none d-md-block">Search</span>
+                                        </button> &nbsp;
+                                        <button class="btn d-inline-flex" type="reset"><i class="fa-solid fa-xmark mt-1 me-md-2"></i><span class="d-none d-md-block">
+                                                Clear</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 </pre>
             </div>
         </div>
         <hr>
+        <!--end search sample-->
+
+        <!--accordion sample-->
+        <div class="row">
+            <div class="col-12">
+                <h2>Accordion</h2>
+            </div>
+            <div class="col-8">
+                <div class="accordion rounded" id="SAMPLE">
+                    <div class="accordion-item rounded">
+                        <h2 class="accordion-header text-white">
+                            <button class="accordion-button w3-bg-FA-darkerSlate text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                [name]
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#SAMPLE">
+                            <div class="accordion-body">
+                                <p>[text]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+            <div class="accordion rounded" id="SAMPLE">
+                <div class="accordion-item rounded">
+                    <h2 class="accordion-header text-white">
+                        <button class="accordion-button w3-bg-FA-darkerSlate text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Special Notices
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#SAMPLE">
+                        <div class="accordion-body">
+                            <p>Some sample text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </pre>
+            </div>
+        </div>
+        <hr>
+        <!--end accordion sample-->
+
         <!--alerts-->
         <div class="row">
             <div class="col-8">
@@ -1325,37 +1336,15 @@
                 standard <a href="https://getbootstrap.com/docs/5.0/components/alerts/" target="_blank">Bootstrap alert
                     structure</a> for colors. There is jQuery used to make these dismissable on clicking the "x" when we
                 add the
-                class <code>.alert-dismissible</code>.
+                class <code>.alert-dismissible rounded</code>.
             </div>
         </div>
         <div class="row">
             <div class="col-md-7 my-2">
-                <div class="alert alert-danger alert-dismissible fade show row" role="alert">
+                <div class="alert alert-danger alert-dismissible rounded fade show row" role="alert">
                     <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
                     <div class="col-10">
-                        <ul>
-                            <li>
-                                Please be aware that a mailing address may not be a proper indicator of true geographic
-                                location. Mailing addresses sometimes use the name of a nearby community where the post
-                                office
-                                is located, instead of the actual city or unincorporated area where the case originated.
-                            </li>
-                            <li>
-                                If you are unsure about the true name of the community in which an address is located,
-                                consult a
-                                map or other resource that accurately shows municipal boundaries.
-                            </li>
-                            <li>
-                                You may locate and identify names of unincorporated areas of Los Angeles County at
-                                the <a href="https://www.lacounty.gov/region-planning/" target="_blank"
-                                    class="alert-link">Department of Regional
-                                    Planning</a> website.
-                            </li>
-                            <li>
-                                You may find the zip code for an address at the <a href="https://tools.usps.com/"
-                                    target="_blank" class="alert-link">US Postal Service</a> website.
-                            </li>
-                        </ul>
+                        [alert body]
                     </div>
                     <div class="col-1">
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -1364,7 +1353,7 @@
             </div>
             <div class="col-12 px-0">
                 <pre class="brush: html;">
-                    <div class="alert alert-danger alert-dismissible fade show row" role="alert">
+                    <div class="alert alert-danger alert-dismissible rounded fade show row" role="alert">
                         <div class="col-1"><i class="fa-solid fa-triangle-exclamation fs-lg"></i></div>
                         <div class="col-10">
                             [alert body]
@@ -1376,7 +1365,44 @@
                 </pre>
             </div>
         </div>
+        <hr>
         <!-- end alerts-->
+
+        <!--cards-->
+        <div class="row">
+            <div class="col-8">
+                <h2>Cards for this page</h2>
+                <p>Repeating divs for the items</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card w3-bd-FA-lightSlate rounded mb-4">
+                    <div class="card-body">
+                        <div class="dept_bar rounded mb-3 px-3 py-2">
+                            <h5>[court name]</h5>
+                            <div class="fs-sm">Zip Code: ######</div>
+                        </div>
+                        <div class="mb-1"><a href="">[serv type]</a><br> [court name]</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-0">
+                <pre class="brush: html;">
+			<div class="card w3-bd-FA-lightSlate rounded mb-4">
+				<div class="card-body">
+					<div class="dept_bar rounded mb-3 px-3 py-2">
+						<h5>[court name]</h5>
+						<div class="fs-sm">Zip Code: ######</div>
+					</div>
+					<div class="mb-1"><a href="">[serv type]</a><br> [court name]</div>
+				</div>
+			</div>
+		</pre>
+            </div>
+        </div>
+        <hr>
+        <!--end cards-->
     </div>
 
     <!--footer-->
