@@ -554,7 +554,7 @@ button,
   background-color: var(--w3-FA-mutedMidnight);
   color: var(--w3-White);
   i {
-    color: var(--w3-White) !important;
+    color: var(--w3-White);
   }
 }
 button[type="submit"] {
