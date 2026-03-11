@@ -577,6 +577,11 @@ button[type="reset"] {
     color: var(--w3-Classic-court-black) !important;
   }
 }
+button[type="button"]{&:hover{background-color: var(--w3-FA-LightBrightBlue);}}
+
+
+
+
 .w3-court-rules {
   .accordion-button::after,
   .accordion-button:not(.collapsed)::after {
