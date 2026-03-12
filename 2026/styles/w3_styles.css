@@ -563,6 +563,9 @@ button[type="submit"] {
   &:hover {
     background-color: var(--w3-FA-PrimaryBlue) !important;
   }
+  i {
+    color: var(--w3-White) !important;
+  }
 }
 button[type="reset"] {
   background-color: transparent !important;
