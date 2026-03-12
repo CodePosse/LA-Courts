@@ -90,6 +90,7 @@
 	top:0px !important;
 	font-size:1px !important;
 	padding:8px 8px 8px 0 !important;
+	background-color: #e9ffcd !important;
 }
 .syntaxhighlighter.collapsed .toolbar {
 	font-size:80% !important;
@@ -103,6 +104,9 @@
 	background-repeat:no-repeat !important;
 	overflow:hidden !important;
 	text-indent:-5000px !important;
+		background-size: cover !important;
+	width:24px !important;	
+	height: 24px !important;
 }
 .syntaxhighlighter.collapsed .toolbar .item {
 	display:none !important;
@@ -205,7 +209,7 @@ background:none !important;
 }
 .syntaxhighlighter .line:hover{background-color: hsl(142, 100%, 90%) !important;}
 .syntaxhighlighter .toolbar {
-	background-color:#f8f8f8 !important;
+	background-color:#f8f8f8;
 	border:#999999 solid 1px !important;
   border-radius:0 0 0 10px;
 }
